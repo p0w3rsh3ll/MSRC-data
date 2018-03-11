@@ -11,7 +11,7 @@ There isn't any way to read previous release notes where known issues are listed
 Here's my list:
 
 ### February 2018
-https://portal.msrc.microsoft.com/en-us/security-guidance/releasenotedetail/487e3b17-7cdf-e711-a959-000d3a33c573
+https://portal.msrc.microsoft.com/en-us/security-guidance/releasenotedetail/879af9c3-970b-e811-a961-000d3a33c573
 
 ### January 2018
 https://portal.msrc.microsoft.com/en-us/security-guidance/releasenotedetail/858123b8-25ca-e711-a957-000d3a33cf99
