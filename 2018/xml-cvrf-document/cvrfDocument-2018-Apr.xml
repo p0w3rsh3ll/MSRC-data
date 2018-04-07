@@ -1,0 +1,451 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cvrf:cvrfdoc xmlns:cpe-lang="http://cpe.mitre.org/language/2.0" xmlns:scap-core="https://scap.nist.gov/schema/scap-core/1.0" xmlns:cvrf-common="http://www.icasi.org/CVRF/schema/common/1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:prod="http://www.icasi.org/CVRF/schema/prod/1.1" xmlns:cvssv2="https://scap.nist.gov/schema/cvss-v2/1.0" xmlns:vuln="http://www.icasi.org/CVRF/schema/vuln/1.1" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:cvrf="http://www.icasi.org/CVRF/schema/cvrf/1.1">
+  <cvrf:DocumentTitle>April 2018 Security Updates</cvrf:DocumentTitle>
+  <cvrf:DocumentType>Security Update</cvrf:DocumentType>
+  <cvrf:DocumentPublisher Type="Vendor">
+    <cvrf:ContactDetails>secure@microsoft.com</cvrf:ContactDetails>
+    <cvrf:IssuingAuthority>The Microsoft Security Response Center (MSRC) identifies, monitors, resolves, and responds to security incidents and Microsoft software security vulnerabilities. For more information, see http://www.microsoft.com/security/msrc.</cvrf:IssuingAuthority>
+  </cvrf:DocumentPublisher>
+  <cvrf:DocumentTracking>
+    <cvrf:Identification>
+      <cvrf:ID>2018-Apr</cvrf:ID>
+      <cvrf:Alias>2018-Apr</cvrf:Alias>
+    </cvrf:Identification>
+    <cvrf:Status>Final</cvrf:Status>
+    <cvrf:Version>1.0</cvrf:Version>
+    <cvrf:RevisionHistory>
+      <cvrf:Revision>
+        <cvrf:Number>1</cvrf:Number>
+        <cvrf:Date>2018-04-03T07:00:00</cvrf:Date>
+        <cvrf:Description>April 2018 Security Updates</cvrf:Description>
+      </cvrf:Revision>
+    </cvrf:RevisionHistory>
+    <cvrf:InitialReleaseDate>2018-04-03T07:00:00</cvrf:InitialReleaseDate>
+    <cvrf:CurrentReleaseDate>2018-04-03T07:00:00</cvrf:CurrentReleaseDate>
+  </cvrf:DocumentTracking>
+  <cvrf:DocumentNotes>
+    <cvrf:Note Title="Release Notes" Audience="Public" Type="Details" Ordinal="1">&lt;p&gt;The April 3, 2018 security release consists of security updates for the Microsoft Malware Protection Engine.&lt;/p&gt;
+</cvrf:Note>
+    <cvrf:Note Title="Legal Disclaimer" Audience="Public" Type="Legal Disclaimer" Ordinal="2">The information provided in the Microsoft Knowledge Base is provided "as is" without warranty of any kind. Microsoft disclaims all warranties, either express or implied, including the warranties of merchantability and fitness for a particular purpose. In no event shall Microsoft Corporation or its suppliers be liable for any damages whatsoever including direct, indirect, incidental, consequential, loss of business profits or special damages, even if Microsoft Corporation or its suppliers have been advised of the possibility of such damages. Some states do not allow the exclusion or limitation of liability for consequential or incidental damages so the foregoing limitation may not apply.</cvrf:Note>
+  </cvrf:DocumentNotes>
+  <prod:ProductTree>
+    <prod:Branch Type="Vendor" Name="Microsoft">
+      <prod:Branch Type="Product Family" Name="Exchange Server">
+        <prod:FullProductName ProductID="10804">Microsoft Exchange Server 2016</prod:FullProductName>
+        <prod:FullProductName ProductID="10431">Microsoft Exchange Server 2013</prod:FullProductName>
+      </prod:Branch>
+      <prod:Branch Type="Product Family" Name="System Center">
+        <prod:FullProductName ProductID="11431">Microsoft Forefront Endpoint Protection 2010</prod:FullProductName>
+        <prod:FullProductName ProductID="10013">Microsoft Security Essentials</prod:FullProductName>
+      </prod:Branch>
+      <prod:Branch Type="Product Family" Name="Windows">
+        <prod:FullProductName ProductID="251-10729">Windows Defender on Windows 10 for 32-bit Systems</prod:FullProductName>
+        <prod:FullProductName ProductID="251-10735">Windows Defender on Windows 10 for x64-based Systems</prod:FullProductName>
+        <prod:FullProductName ProductID="251-10789">Windows Defender on Windows 10 Version 1511 for 32-bit Systems</prod:FullProductName>
+        <prod:FullProductName ProductID="251-10788">Windows Defender on Windows 10 Version 1511 for x64-based Systems</prod:FullProductName>
+        <prod:FullProductName ProductID="251-10852">Windows Defender on Windows 10 Version 1607 for 32-bit Systems</prod:FullProductName>
+        <prod:FullProductName ProductID="251-10853">Windows Defender on Windows 10 Version 1607 for x64-based Systems</prod:FullProductName>
+        <prod:FullProductName ProductID="251-10951">Windows Defender on Windows 10 Version 1703 for 32-bit Systems</prod:FullProductName>
+        <prod:FullProductName ProductID="251-10952">Windows Defender on Windows 10 Version 1703 for x64-based Systems</prod:FullProductName>
+        <prod:FullProductName ProductID="251-11453">Windows Defender on Windows 10 Version 1709 for 32-bit Systems</prod:FullProductName>
+        <prod:FullProductName ProductID="251-11454">Windows Defender on Windows 10 Version 1709 for x64-based Systems</prod:FullProductName>
+        <prod:FullProductName ProductID="251-10047">Windows Defender on Windows 7 for 32-bit Systems Service Pack 1</prod:FullProductName>
+        <prod:FullProductName ProductID="251-10048">Windows Defender on Windows 7 for x64-based Systems Service Pack 1</prod:FullProductName>
+        <prod:FullProductName ProductID="251-10481">Windows Defender on Windows 8.1 for 32-bit systems</prod:FullProductName>
+        <prod:FullProductName ProductID="251-10482">Windows Defender on Windows 8.1 for x64-based systems</prod:FullProductName>
+        <prod:FullProductName ProductID="251-10484">Windows Defender on Windows RT 8.1</prod:FullProductName>
+        <prod:FullProductName ProductID="251-10050">Windows Defender on Windows Server 2008 R2 for Itanium-Based Systems Service Pack 1</prod:FullProductName>
+        <prod:FullProductName ProductID="251-10051">Windows Defender on Windows Server 2008 R2 for x64-based Systems Service Pack 1</prod:FullProductName>
+        <prod:FullProductName ProductID="251-10049">Windows Defender on Windows Server 2008 R2 for x64-based Systems Service Pack 1 (Server Core installation)</prod:FullProductName>
+        <prod:FullProductName ProductID="251-10378">Windows Defender on Windows Server 2012</prod:FullProductName>
+        <prod:FullProductName ProductID="251-10379">Windows Defender on Windows Server 2012 (Server Core installation)</prod:FullProductName>
+        <prod:FullProductName ProductID="251-10483">Windows Defender on Windows Server 2012 R2</prod:FullProductName>
+        <prod:FullProductName ProductID="251-10543">Windows Defender on Windows Server 2012 R2 (Server Core installation)</prod:FullProductName>
+        <prod:FullProductName ProductID="251-10816">Windows Defender on Windows Server 2016</prod:FullProductName>
+        <prod:FullProductName ProductID="251-10855">Windows Defender on Windows Server 2016  (Server Core installation)</prod:FullProductName>
+        <prod:FullProductName ProductID="251-11466">Windows Defender on Windows Server, version 1709  (Server Core Installation)</prod:FullProductName>
+        <prod:FullProductName ProductID="10334">Windows Intune Endpoint Protection</prod:FullProductName>
+      </prod:Branch>
+    </prod:Branch>
+    <prod:FullProductName ProductID="10431">Microsoft Exchange Server 2013</prod:FullProductName>
+    <prod:FullProductName ProductID="10804">Microsoft Exchange Server 2016</prod:FullProductName>
+    <prod:FullProductName ProductID="11431">Microsoft Forefront Endpoint Protection 2010</prod:FullProductName>
+    <prod:FullProductName ProductID="10013">Microsoft Security Essentials</prod:FullProductName>
+    <prod:FullProductName ProductID="251-10729">Windows Defender on Windows 10 for 32-bit Systems</prod:FullProductName>
+    <prod:FullProductName ProductID="251-10735">Windows Defender on Windows 10 for x64-based Systems</prod:FullProductName>
+    <prod:FullProductName ProductID="251-10789">Windows Defender on Windows 10 Version 1511 for 32-bit Systems</prod:FullProductName>
+    <prod:FullProductName ProductID="251-10788">Windows Defender on Windows 10 Version 1511 for x64-based Systems</prod:FullProductName>
+    <prod:FullProductName ProductID="251-10852">Windows Defender on Windows 10 Version 1607 for 32-bit Systems</prod:FullProductName>
+    <prod:FullProductName ProductID="251-10853">Windows Defender on Windows 10 Version 1607 for x64-based Systems</prod:FullProductName>
+    <prod:FullProductName ProductID="251-10951">Windows Defender on Windows 10 Version 1703 for 32-bit Systems</prod:FullProductName>
+    <prod:FullProductName ProductID="251-10952">Windows Defender on Windows 10 Version 1703 for x64-based Systems</prod:FullProductName>
+    <prod:FullProductName ProductID="251-11453">Windows Defender on Windows 10 Version 1709 for 32-bit Systems</prod:FullProductName>
+    <prod:FullProductName ProductID="251-11454">Windows Defender on Windows 10 Version 1709 for x64-based Systems</prod:FullProductName>
+    <prod:FullProductName ProductID="251-10047">Windows Defender on Windows 7 for 32-bit Systems Service Pack 1</prod:FullProductName>
+    <prod:FullProductName ProductID="251-10048">Windows Defender on Windows 7 for x64-based Systems Service Pack 1</prod:FullProductName>
+    <prod:FullProductName ProductID="251-10481">Windows Defender on Windows 8.1 for 32-bit systems</prod:FullProductName>
+    <prod:FullProductName ProductID="251-10482">Windows Defender on Windows 8.1 for x64-based systems</prod:FullProductName>
+    <prod:FullProductName ProductID="251-10484">Windows Defender on Windows RT 8.1</prod:FullProductName>
+    <prod:FullProductName ProductID="251-10050">Windows Defender on Windows Server 2008 R2 for Itanium-Based Systems Service Pack 1</prod:FullProductName>
+    <prod:FullProductName ProductID="251-10051">Windows Defender on Windows Server 2008 R2 for x64-based Systems Service Pack 1</prod:FullProductName>
+    <prod:FullProductName ProductID="251-10049">Windows Defender on Windows Server 2008 R2 for x64-based Systems Service Pack 1 (Server Core installation)</prod:FullProductName>
+    <prod:FullProductName ProductID="251-10378">Windows Defender on Windows Server 2012</prod:FullProductName>
+    <prod:FullProductName ProductID="251-10379">Windows Defender on Windows Server 2012 (Server Core installation)</prod:FullProductName>
+    <prod:FullProductName ProductID="251-10483">Windows Defender on Windows Server 2012 R2</prod:FullProductName>
+    <prod:FullProductName ProductID="251-10543">Windows Defender on Windows Server 2012 R2 (Server Core installation)</prod:FullProductName>
+    <prod:FullProductName ProductID="251-10816">Windows Defender on Windows Server 2016</prod:FullProductName>
+    <prod:FullProductName ProductID="251-10855">Windows Defender on Windows Server 2016  (Server Core installation)</prod:FullProductName>
+    <prod:FullProductName ProductID="251-11466">Windows Defender on Windows Server, version 1709  (Server Core Installation)</prod:FullProductName>
+    <prod:FullProductName ProductID="10334">Windows Intune Endpoint Protection</prod:FullProductName>
+  </prod:ProductTree>
+  <vuln:Vulnerability Ordinal="1">
+    <vuln:Title>Microsoft Malware Protection Engine Remote Code Execution Vulnerability</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="1">&lt;p&gt;A remote code execution vulnerability exists when the Microsoft Malware Protection Engine does not properly scan a specially crafted file, leading to memory corruption. An attacker who successfully exploited this vulnerability could execute arbitrary code in the security context of the LocalSystem account and take control of the system. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights.&lt;/p&gt;
+&lt;p&gt;To exploit this vulnerability, a specially crafted file must be scanned by an affected version of the Microsoft Malware Protection Engine. There are many ways that an attacker could place a specially crafted file in a location that is scanned by the Microsoft Malware Protection Engine. For example, an attacker could use a website to deliver a specially crafted file to the victim's system that is scanned when the website is viewed by the user. An attacker could also deliver a specially crafted file via an email message or in an Instant Messenger message that is scanned when the file is opened. In addition, an attacker could take advantage of websites that accept or host user-provided content, to upload a specially crafted file to a shared location that is scanned by the Malware Protection Engine running on the hosting server.&lt;/p&gt;
+&lt;p&gt;If the affected antimalware software has real-time protection turned on, the Microsoft Malware Protection Engine will scan files automatically, leading to exploitation of the vulnerability when the specially crafted file is scanned. If real-time scanning is not enabled, the attacker would need to wait until a scheduled scan occurs in order for the vulnerability to be exploited. All systems running an affected version of antimalware software are primarily at risk.&lt;/p&gt;
+&lt;p&gt;The update addresses the vulnerability by correcting the manner in which the Microsoft Malware Protection Engine scans specially crafted files.&lt;/p&gt;
+&lt;p&gt;Note: Typically, no action is required of enterprise administrators or end users to install updates for the Microsoft Malware Protection Engine, because the built-in mechanism for the automatic detection and deployment of updates will apply the update within 48 hours of release. The exact time frame depends on the software used, Internet connection, and infrastructure configuration.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="2">&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;References&lt;/th&gt;
+&lt;th&gt;Identification&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Last version of the Microsoft Malware Protection Engine affected by this vulnerability&lt;/td&gt;
+&lt;td&gt;Version 1.1.14600.4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;First version of the Microsoft Malware Protection Engine with this vulnerability addressed&lt;/td&gt;
+&lt;td&gt;Version 1.1.14700.5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;Why is no action required to install this update?&lt;/strong&gt;
+In response to a constantly changing threat landscape, Microsoft frequently updates malware definitions and the Microsoft Malware Protection Engine. In order to be effective in helping protect against new and prevalent threats, antimalware software must be kept up to date with these updates in a timely manner.&lt;/p&gt;
+&lt;p&gt;For enterprise deployments as well as end users, the default configuration in Microsoft antimalware software helps ensure that malware definitions and the Microsoft Malware Protection Engine are kept up to date automatically. Product documentation also recommends that products are configured for automatic updating.&lt;/p&gt;
+&lt;p&gt;Best practices recommend that customers regularly verify whether software distribution, such as the automatic deployment of Microsoft Malware Protection Engine updates and malware definitions, is working as expected in their environment.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How often are the Microsoft Malware Protection Engine and malware definitions updated?&lt;/strong&gt;
+Microsoft typically releases an update for the Microsoft Malware Protection Engine once a month or as needed to protect against new threats. Microsoft also typically updates the malware definitions three times daily and can increase the frequency when needed.&lt;/p&gt;
+&lt;p&gt;Depending on which Microsoft antimalware software is used and how it is configured, the software may search for engine and definition updates every day when connected to the Internet, up to multiple times daily. Customers can also choose to manually check for updates at any time.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What is the Microsoft Malware Protection Engine?&lt;/strong&gt;
+The Microsoft Malware Protection Engine, mpengine.dll, provides the scanning, detection, and cleaning capabilities for Microsoft antivirus and antispyware software.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Does this update contain any additional security-related changes to functionality?&lt;/strong&gt;
+Yes.  In addition to the changes that are listed for this vulnerability, this update includes defense-in-depth updates to help improve security-related features.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Where can I find more information about Microsoft antimalware technology?&lt;/strong&gt;
+For more information, visit the &lt;a href="https://www.microsoft.com/security/portal/"&gt;Microsoft Malware Protection Center&lt;/a&gt; website.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Suggested Actions&lt;/strong&gt;
+&lt;strong&gt;Verify that the update is installed&lt;/strong&gt;
+Customers should verify that the latest version of the Microsoft Malware Protection Engine and definition updates are being actively downloaded and installed for their Microsoft antimalware products.&lt;/p&gt;
+&lt;p&gt;For more information on how to verify the version number for the Microsoft Malware Protection Engine that your software is currently using, see the section, &amp;quot;Verifying Update Installation&amp;quot;, in &lt;a href="https://support.microsoft.com/kb/2510781"&gt;Microsoft Knowledge Base Article 2510781&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For affected software, verify that the Microsoft Malware Protection Engine version is 1.1.14700.5 or later.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;If necessary, install the update&lt;/strong&gt;
+Administrators of enterprise antimalware deployments should ensure that their update management software is configured to automatically approve and distribute engine updates and new malware definitions. Enterprise administrators should also verify that the latest version of the Microsoft Malware Protection Engine and definition updates are being actively downloaded, approved and deployed in their environment.&lt;/p&gt;
+&lt;p&gt;For end-users, the affected software provides built-in mechanisms for the automatic detection and deployment of this update. For these customers, the update will be applied within 48 hours of its availability. The exact time frame depends on the software used, Internet connection, and infrastructure configuration.&lt;/p&gt;
+&lt;p&gt;End users that do not wish to wait can manually update their antimalware software.&lt;/p&gt;
+&lt;p&gt;For more information on how to manually update the Microsoft Malware Protection Engine and malware definitions, refer to &lt;a href="https://support.microsoft.com/kb/2510781"&gt;Microsoft Knowledge Base Article 2510781&lt;/a&gt;.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Malware Protection Engine" Type="Tag" Ordinal="3">Microsoft Malware Protection Engine</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2018-0986</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>10013</vuln:ProductID>
+        <vuln:ProductID>10334</vuln:ProductID>
+        <vuln:ProductID>10431</vuln:ProductID>
+        <vuln:ProductID>10804</vuln:ProductID>
+        <vuln:ProductID>11431</vuln:ProductID>
+        <vuln:ProductID>251-10047</vuln:ProductID>
+        <vuln:ProductID>251-10048</vuln:ProductID>
+        <vuln:ProductID>251-10049</vuln:ProductID>
+        <vuln:ProductID>251-10050</vuln:ProductID>
+        <vuln:ProductID>251-10051</vuln:ProductID>
+        <vuln:ProductID>251-10378</vuln:ProductID>
+        <vuln:ProductID>251-10379</vuln:ProductID>
+        <vuln:ProductID>251-10481</vuln:ProductID>
+        <vuln:ProductID>251-10482</vuln:ProductID>
+        <vuln:ProductID>251-10483</vuln:ProductID>
+        <vuln:ProductID>251-10484</vuln:ProductID>
+        <vuln:ProductID>251-10543</vuln:ProductID>
+        <vuln:ProductID>251-10729</vuln:ProductID>
+        <vuln:ProductID>251-10735</vuln:ProductID>
+        <vuln:ProductID>251-10788</vuln:ProductID>
+        <vuln:ProductID>251-10789</vuln:ProductID>
+        <vuln:ProductID>251-10816</vuln:ProductID>
+        <vuln:ProductID>251-10852</vuln:ProductID>
+        <vuln:ProductID>251-10853</vuln:ProductID>
+        <vuln:ProductID>251-10855</vuln:ProductID>
+        <vuln:ProductID>251-10951</vuln:ProductID>
+        <vuln:ProductID>251-10952</vuln:ProductID>
+        <vuln:ProductID>251-11453</vuln:ProductID>
+        <vuln:ProductID>251-11454</vuln:ProductID>
+        <vuln:ProductID>251-11466</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>10804</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>251-10789</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>251-10048</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>251-11453</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>251-10788</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>251-11454</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>251-10047</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>10013</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>251-10482</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>251-10788</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>251-10047</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>251-10853</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>10334</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>251-10378</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>251-10735</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>251-10951</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>10334</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>251-10952</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>251-10051</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>251-10050</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>251-10735</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>251-10481</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>251-10481</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>251-11466</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>251-10729</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>251-10050</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>10431</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>251-11466</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11431</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>251-10378</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>251-10816</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>251-10049</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>251-10379</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>251-11454</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>251-10049</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>10431</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation Less Likely;Older Software Release:Exploitation Less Likely;</vuln:Description>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>251-10855</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>251-10543</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>251-10789</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>251-10379</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>251-10483</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>251-10855</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>251-10853</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>251-10484</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>251-10951</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>251-10952</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>251-10483</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>251-10816</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>251-10852</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>10804</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>251-11453</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>251-10051</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>251-10543</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>11431</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>251-10484</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>251-10852</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>251-10729</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>10013</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>251-10482</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>251-10048</vuln:ProductID>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations />
+    <vuln:Acknowledgments>
+      <vuln:Acknowledgment>
+        <vuln:Name>Thomas Dullien of Google Project Zero</vuln:Name>
+        <vuln:URL>https://www.google.com/</vuln:URL>
+      </vuln:Acknowledgment>
+    </vuln:Acknowledgments>
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2018-04-03T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+</cvrf:cvrfdoc>
