@@ -10,6 +10,9 @@ The Microsoft Security Response Center (MSRC) portal is located at https://porta
 There isn't any way to read previous release notes where known issues are listed.
 Here's my list:
 
+### April 2018
+https://portal.msrc.microsoft.com/en-us/security-guidance/releasenotedetail/abf77563-8612-e811-a966-000d3a33a34d
+
 ### March 2018
 https://portal.msrc.microsoft.com/en-us/security-guidance/releasenotedetail/6c8fa125-28f6-e711-a963-000d3a33a34d
 
@@ -94,5 +97,8 @@ https://portal.msrc.microsoft.com/en-us/security-guidance/releasenotedetail/c383
 
 # 2018-Jan
 'Could not determine the Maximum Severity from the Threats for ADV180003'
+
+# 2018-Apr
+'Missing Title for CVE-2018-1028'
 
 ```
