@@ -98,7 +98,4 @@ https://portal.msrc.microsoft.com/en-us/security-guidance/releasenotedetail/c383
 # 2018-Jan
 'Could not determine the Maximum Severity from the Threats for ADV180003'
 
-# 2018-Apr
-'Missing Title for CVE-2018-1028'
-
 ```
