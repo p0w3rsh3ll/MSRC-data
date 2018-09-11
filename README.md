@@ -10,6 +10,9 @@ The Microsoft Security Response Center (MSRC) portal is located at https://porta
 There isn't any way to read previous release notes where known issues are listed.
 Here's my list:
 
+### September 2018
+https://portal.msrc.microsoft.com/en-us/security-guidance/releasenotedetail/498f2484-a096-e811-a978-000d3a33c573
+
 ### August 2018
 https://portal.msrc.microsoft.com/en-us/security-guidance/releasenotedetail/ecb26425-583f-e811-a96f-000d3a33c573
 
@@ -118,4 +121,6 @@ https://portal.msrc.microsoft.com/en-us/security-guidance/releasenotedetail/c383
 'Missing Title for CVE-2018-8354'
 'Missing Description for CVE-2018-8354'
 
+# 2018-Sep
+'Get-MsrcCvrfDocument : HTTP Get failed with status code' when tls protocol isn't set to 1.2
 ```
