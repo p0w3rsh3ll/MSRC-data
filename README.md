@@ -10,6 +10,9 @@ The Microsoft Security Response Center (MSRC) portal is located at https://porta
 There isn't any way to read previous release notes where known issues are listed.
 Here's my list:
 
+### October 2018
+https://portal.msrc.microsoft.com/en-us/security-guidance/releasenotedetail/aa99ba28-e99f-e811-a978-000d3a33c573
+
 ### September 2018
 https://portal.msrc.microsoft.com/en-us/security-guidance/releasenotedetail/498f2484-a096-e811-a978-000d3a33c573
 
