@@ -1,0 +1,375 @@
+﻿<html>
+<head>
+    <!-- this is the css from the old bulletin site. Change this to better style your report to your liking -->
+    <link rel="stylesheet" href="https://i-technet.sec.s-msft.com/Combined.css?resources=0:ImageSprite,0:TopicResponsive,0:TopicResponsive.MediaQueries,1:CodeSnippet,1:ProgrammingSelector,1:ExpandableCollapsibleArea,0:CommunityContent,1:TopicNotInScope,1:FeedViewerBasic,1:ImageSprite,2:Header.2,2:HeaderFooterSprite,2:Header.MediaQueries,2:Banner.MediaQueries,3:megabladeMenu.1,3:MegabladeMenu.MediaQueries,3:MegabladeMenuSpriteCluster,0:Breadcrumbs,0:Breadcrumbs.MediaQueries,0:ResponsiveToc,0:ResponsiveToc.MediaQueries,1:NavSidebar,0:LibraryMemberFilter,4:StandardRating,2:Footer.2,5:LinkList,2:Footer.MediaQueries,0:BaseResponsive,6:MsdnResponsive,0:Tables.MediaQueries,7:SkinnyRatingResponsive,7:SkinnyRatingV2;/Areas/Library/Content:0,/Areas/Epx/Content/Css:1,/Areas/Epx/Themes/TechNet/Content:2,/Areas/Epx/Themes/Shared/Content:3,/Areas/Global/Content:4,/Areas/Epx/Themes/Base/Content:5,/Areas/Library/Themes/Msdn/Content:6,/Areas/Library/Themes/TechNet/Content:7&amp;v=9192817066EC5D087D15C766A0430C95">
+    
+    <!-- this style section changes cell widths in the exec header table so that the affected products at the end are wide enough to read -->
+    <style>
+        #execHeader td:first-child  { width: 10% ;}
+        #execHeader td:nth-child(5) { width: 37% ;}
+    </style>
+
+    <!-- this section defines explicit width for all cells in the affected software tables. This is so the column width is the same across each product -->
+    <style>
+        .affected_software td:first-child  { width: 34% ; }
+        .affected_software td:nth-child(2) { width: 14% ; }
+        .affected_software td:nth-child(3) { width: 6% ; }
+        .affected_software td:nth-child(4) { width: 6% ; }
+        .affected_software td:nth-child(5) { width: 7.5% ; }
+        .affected_software td:nth-child(6) { width: 28.5% ; }
+        .affected_software td:nth-child(7) { width: 4% ; }
+    </style>
+    
+    <!-- remove spacing between table of contents cells -->
+    <style>
+        #tableOfContents tr td { padding: 0px; }
+    </style>
+
+</head>
+
+<body lang=EN-US link=blue>
+<div id="documentWrapper" style="width: 90%; margin-left: auto; margin-right: auto;">
+
+<h1 id="top">Microsoft CVE Summary</h1>
+
+<p style="margin:0; padding:0">This report contains detail for the following vulnerabilities:</p>
+<table id="tableOfContents" style="width:65%; margin-top:5">
+ <tr>
+  <th>Tag</th>
+  <th>CVE ID</th>
+  <th>CVE Title</th>
+ </tr>
+ <tr><td>Microsoft Windows</td>    <td><a href="#ADV180028">ADV180028</a></td>    <td>Guidance for configuring BitLocker to enforce software encryption</td></tr>
+</table>
+<h1 id="ADV180028">ADV180028 - Guidance for configuring BitLocker to enforce software encryption</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>   
+  </tr>
+ </thead>
+ <tr>
+     <td>ADV180028<br><a href="http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=ADV180028">MITRE</a><br><a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=ADV180028">NVD</a></td>
+     <td>        <b>CVE Title:</b> Guidance for configuring BitLocker to enforce software encryption
+        <br>
+        <b>Description:</b> <br><p>Microsoft is aware of reports of vulnerabilities in the hardware encryption of certain self-encrypting drives (SEDs). Customers concerned about this issue should consider using the software only encryption provided by BitLocker Drive Encryption™.  On Windows computers with self-encrypting drives, BitLocker Drive Encryption™ manages encryption and will use hardware encryption by default. Administrators who want to force software encryption on computers with self-encrypting drives can accomplish this by deploying a Group Policy to override the default behavior. Windows will consult Group Policy to enforce software encryption only at the time of enabling BitLocker.</p>
+<p>To check the type of drive encryption being used (hardware or software):</p>
+<ol>
+<li>Run ‘manage-bde.exe -status’ from elevated command prompt.</li>
+<li>If none of the drives listed report &quot;Hardware Encryption&quot; for the <strong>Encryption Method</strong> field, then this device is using software encryption and is not affected by vulnerabilities associated with self-encrypting drive encryption.</li>
+</ol>
+<p>For drives that are encrypted using a vulnerable form of hardware encryption, you can mitigate the vulnerability by switching to software encryption using Bitlocker with a Group Policy.</p>
+<p><strong>Note</strong>: After a drive has been encrypted using hardware encryption, switching to software encryption on that drive will require that the drive be unencrypted first and then re-encrypted using software encryption. If you are using BitLocker Drive Encryption, changing the Group Policy value to enforce software encryption alone is not sufficient to re-encrypt existing data.</p>
+<p><strong>IMPORTANT</strong>: You do NOT need to reformat the drive or reinstall any applications after changing BitLocker settings.</p>
+<p>To mitigate vulnerabilities associated with self-encrypting drives on Windows systems:</p>
+<ol>
+<li>Configure and deploy a Group Policy to enable forced software encryption.</li>
+<li>Fully turn off BitLocker to decrypt the drive.</li>
+<li>Enable BitLocker again.</li>
+</ol>
+<p>For more information on Bitlocker and Group Policy settings to enforce software encryption:</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-overview">Bitlocker Overview</a></li>
+<li><a href="https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10">BitLocker Device Encryption in Windows 10</a></li>
+<li><a href="https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions">BitLocker frequently asked questions (FAQ)</a></li>
+<li><a href="https://docs.microsoft.com/en-us/windows/security/information-protection/encrypted-hard-drive">Bitlocker and Encrypted Hard Drives</a></li>
+<li><a href="https://docs.microsoft.com/en-us/previous-versions/windows/hardware/design/dn653989(v=vs.85)">Encrypted Hard Drive Device Guide</a></li>
+<li><a href="https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings">BitLocker Group Policy Settings</a></li>
+</ul>
+
+        <br>
+        <b>FAQ:</b><br>None
+        <br>
+        <b>Mitigations:</b><br>None
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp2018-11-06T08:00:00&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Unknown</td>
+     <td>Unknown</td>
+ </tr>
+</table>        <h2>Exploitability Index</h2>
+
+<p>The following table provides an exploitability assessment of each of the vulnerabilities addressed this month. The vulnerabilities are listed in order of bulletin ID then CVE ID. Only vulnerabilities that have a severity rating of Critical or Important in the bulletins are included.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment for Latest Software Release</b></td>
+   <td><b>Exploitability Assessment for Older Software Release</b></td>
+   <td><b>Denial of Service Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>   
+  </tr>
+ </thead>
+ <tr>
+     <td>Not Found</td>
+     <td>Not Found</td>
+     <td>Not Applicable</td>
+     <td>Yes</td>
+     <td>No</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="7"><b>ADV180028</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>                
+            <td><b>Severity</b></td>  
+            <td><b>Impact</b></td>  
+            <td><b>Supersedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Restart Required</b></td>
+        </tr>
+                <tr>
+                <td>Windows 10 for 32-bit Systems</td>
+                <td></td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>Unknown</td>
+        </tr>            <tr>
+                <td>Windows 10 for x64-based Systems</td>
+                <td></td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>Unknown</td>
+        </tr>            <tr>
+                <td>Windows 10 Version 1607 for 32-bit Systems</td>
+                <td></td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>Unknown</td>
+        </tr>            <tr>
+                <td>Windows 10 Version 1607 for x64-based Systems</td>
+                <td></td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>Unknown</td>
+        </tr>            <tr>
+                <td>Windows 10 Version 1703 for 32-bit Systems</td>
+                <td></td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>Unknown</td>
+        </tr>            <tr>
+                <td>Windows 10 Version 1703 for x64-based Systems</td>
+                <td></td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>Unknown</td>
+        </tr>            <tr>
+                <td>Windows 10 Version 1709 for 32-bit Systems</td>
+                <td></td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>Unknown</td>
+        </tr>            <tr>
+                <td>Windows 10 Version 1709 for ARM64-based Systems</td>
+                <td></td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>Unknown</td>
+        </tr>            <tr>
+                <td>Windows 10 Version 1709 for x64-based Systems</td>
+                <td></td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>Unknown</td>
+        </tr>            <tr>
+                <td>Windows 10 Version 1803 for 32-bit Systems</td>
+                <td></td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>Unknown</td>
+        </tr>            <tr>
+                <td>Windows 10 Version 1803 for ARM64-based Systems</td>
+                <td></td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>Unknown</td>
+        </tr>            <tr>
+                <td>Windows 10 Version 1803 for x64-based Systems</td>
+                <td></td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>Unknown</td>
+        </tr>            <tr>
+                <td>Windows 10 Version 1809 for 32-bit Systems</td>
+                <td></td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>Unknown</td>
+        </tr>            <tr>
+                <td>Windows 10 Version 1809 for ARM64-based Systems</td>
+                <td></td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>Unknown</td>
+        </tr>            <tr>
+                <td>Windows 10 Version 1809 for x64-based Systems</td>
+                <td></td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>Unknown</td>
+        </tr>            <tr>
+                <td>Windows 8.1 for 32-bit systems</td>
+                <td></td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>Unknown</td>
+        </tr>            <tr>
+                <td>Windows 8.1 for x64-based systems</td>
+                <td></td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>Unknown</td>
+        </tr>            <tr>
+                <td>Windows RT 8.1</td>
+                <td></td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>Unknown</td>
+        </tr>            <tr>
+                <td>Windows Server 2012</td>
+                <td></td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>Unknown</td>
+        </tr>            <tr>
+                <td>Windows Server 2012 (Server Core installation)</td>
+                <td></td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>Unknown</td>
+        </tr>            <tr>
+                <td>Windows Server 2012 R2</td>
+                <td></td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>Unknown</td>
+        </tr>            <tr>
+                <td>Windows Server 2012 R2 (Server Core installation)</td>
+                <td></td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>Unknown</td>
+        </tr>            <tr>
+                <td>Windows Server 2016</td>
+                <td></td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>Unknown</td>
+        </tr>            <tr>
+                <td>Windows Server 2016  (Server Core installation)</td>
+                <td></td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>Unknown</td>
+        </tr>            <tr>
+                <td>Windows Server 2019</td>
+                <td></td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>Unknown</td>
+        </tr>            <tr>
+                <td>Windows Server 2019  (Server Core installation)</td>
+                <td></td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>Unknown</td>
+        </tr>            <tr>
+                <td>Windows Server, version 1709  (Server Core Installation)</td>
+                <td></td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>Unknown</td>
+        </tr>            <tr>
+                <td>Windows Server, version 1803  (Server Core Installation)</td>
+                <td></td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>Unknown</td>
+        </tr>    
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>  
+    </tr>
+    </thead>
+ <tr>
+     <td>ADV180028</td>
+     <td>None</td>
+ </tr>
+</table>
+</div>
+<br>
+ </body>
+</html>
