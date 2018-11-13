@@ -10,6 +10,9 @@ The Microsoft Security Response Center (MSRC) portal is located at https://porta
 There isn't any way to read previous release notes where known issues are listed.
 Here's my list:
 
+### November 2018
+https://portal.msrc.microsoft.com/en-us/security-guidance/releasenotedetail/ff746aa5-06a0-e811-a978-000d3a33c573
+
 ### October 2018
 https://portal.msrc.microsoft.com/en-us/security-guidance/releasenotedetail/aa99ba28-e99f-e811-a978-000d3a33c573
 
@@ -126,4 +129,8 @@ https://portal.msrc.microsoft.com/en-us/security-guidance/releasenotedetail/c383
 
 # 2018-Sep
 'Get-MsrcCvrfDocument : HTTP Get failed with status code' when tls protocol isn't set to 1.2
+
+#2018-Nov
+'Could not determine the Impact from the Threats for ADV180028'
+
 ```
