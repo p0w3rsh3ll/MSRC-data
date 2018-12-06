@@ -1,0 +1,416 @@
+﻿<html>
+<head>
+    <!-- this is the css from the old bulletin site. Change this to better style your report to your liking -->
+    <link rel="stylesheet" href="https://i-technet.sec.s-msft.com/Combined.css?resources=0:ImageSprite,0:TopicResponsive,0:TopicResponsive.MediaQueries,1:CodeSnippet,1:ProgrammingSelector,1:ExpandableCollapsibleArea,0:CommunityContent,1:TopicNotInScope,1:FeedViewerBasic,1:ImageSprite,2:Header.2,2:HeaderFooterSprite,2:Header.MediaQueries,2:Banner.MediaQueries,3:megabladeMenu.1,3:MegabladeMenu.MediaQueries,3:MegabladeMenuSpriteCluster,0:Breadcrumbs,0:Breadcrumbs.MediaQueries,0:ResponsiveToc,0:ResponsiveToc.MediaQueries,1:NavSidebar,0:LibraryMemberFilter,4:StandardRating,2:Footer.2,5:LinkList,2:Footer.MediaQueries,0:BaseResponsive,6:MsdnResponsive,0:Tables.MediaQueries,7:SkinnyRatingResponsive,7:SkinnyRatingV2;/Areas/Library/Content:0,/Areas/Epx/Content/Css:1,/Areas/Epx/Themes/TechNet/Content:2,/Areas/Epx/Themes/Shared/Content:3,/Areas/Global/Content:4,/Areas/Epx/Themes/Base/Content:5,/Areas/Library/Themes/Msdn/Content:6,/Areas/Library/Themes/TechNet/Content:7&amp;v=9192817066EC5D087D15C766A0430C95">
+    
+    <!-- this style section changes cell widths in the exec header table so that the affected products at the end are wide enough to read -->
+    <style>
+        #execHeader td:first-child  { width: 10% ;}
+        #execHeader td:nth-child(5) { width: 37% ;}
+    </style>
+
+    <!-- this section defines explicit width for all cells in the affected software tables. This is so the column width is the same across each product -->
+    <style>
+        .affected_software td:first-child  { width: 34% ; }
+        .affected_software td:nth-child(2) { width: 14% ; }
+        .affected_software td:nth-child(3) { width: 6% ; }
+        .affected_software td:nth-child(4) { width: 6% ; }
+        .affected_software td:nth-child(5) { width: 7.5% ; }
+        .affected_software td:nth-child(6) { width: 28.5% ; }
+        .affected_software td:nth-child(7) { width: 4% ; }
+    </style>
+    
+    <!-- remove spacing between table of contents cells -->
+    <style>
+        #tableOfContents tr td { padding: 0px; }
+    </style>
+
+</head>
+
+<body lang=EN-US link=blue>
+<div id="documentWrapper" style="width: 90%; margin-left: auto; margin-right: auto;">
+
+<h1 id="top">Microsoft CVE Summary</h1>
+
+<p style="margin:0; padding:0">This report contains detail for the following vulnerabilities:</p>
+<table id="tableOfContents" style="width:65%; margin-top:5">
+ <tr>
+  <th>Tag</th>
+  <th>CVE ID</th>
+  <th>CVE Title</th>
+ </tr>
+ <tr><td>Adobe Flash Player</td>    <td><a href="#ADV180031">ADV180031</a></td>    <td>December 2018 Adobe Flash Security Update</td></tr>
+</table>
+<h1 id="ADV180031">ADV180031 - December 2018 Adobe Flash Security Update</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>   
+  </tr>
+ </thead>
+ <tr>
+     <td>ADV180031<br><a href="http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=ADV180031">MITRE</a><br><a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=ADV180031">NVD</a></td>
+     <td>        <b>CVE Title:</b> December 2018 Adobe Flash Security Update
+        <br>
+        <b>Description:</b> <br><p>This security update addresses the following vulnerabilities, which are described in Adobe Security Bulletin <a href="http://helpx.adobe.com/security/products/flash-player/apsb18-42.html">APSB18-42</a>:</p>
+<ul>
+<li>CVE-2018-15982</li>
+<li>CVE-2018-15983</li>
+</ul>
+
+        <br>
+        <b>FAQ:</b><br>None
+        <br>
+        <b>Mitigations:</b><br>
+        <br>
+        <b>Workarounds:</b><br><p>Workaround refers to a setting or configuration change that would help block known attack vectors before you apply the update.</p>
+<p><strong>Prevent Adobe Flash Player from running</strong>
+You can disable attempts to instantiate Adobe Flash Player in Internet Explorer and other applications that honor the kill bit feature, such as Office 2007 and Office 2010, by setting the kill bit for the control in the registry.</p>
+<p><strong>Warning</strong> If you use Registry Editor incorrectly, you may cause serious problems that may require you to reinstall your operating system. Microsoft cannot guarantee that you can solve problems that result from using Registry Editor incorrectly. Use Registry Editor at your own risk.
+To set the kill bit for the control in the registry, perform the following steps:</p>
+<ol>
+<li><p>Paste the following into a text file and save it with the .reg file extension.</p>
+<pre><code> Windows Registry Editor Version 5.00
+ [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{D27CDB6E-AE6D-11CF-96B8-444553540000}]
+ &quot;Compatibility Flags&quot;=dword:00000400
+
+ [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Internet Explorer\ActiveX Compatibility\{D27CDB6E-AE6D-11CF-96B8-444553540000}]
+ &quot;Compatibility Flags&quot;=dword:00000400
+</code></pre>
+</li>
+<li><p>Double-click the .reg file to apply it to an individual system.</p>
+<p>You can also apply this workaround across domains by using Group Policy. For more information about Group Policy, see the TechNet article, Group Policy collection.</p>
+</li>
+</ol>
+<p><strong>Note</strong> You must restart Internet Explorer for your changes to take effect.
+<strong>Impact of workaround</strong>. There is no impact as long as the object is not intended to be used in Internet Explorer.
+<strong>How to undo the workaround.</strong> Delete the registry keys that were added in implementing this workaround.
+<strong>Prevent Adobe Flash Player from running in Internet Explorer through Group Policy</strong>
+<strong>Note</strong> The Group Policy MMC snap-in can be used to set policy for a machine, for an organizational unit, or for an entire domain. For more information about Group Policy, visit the following Microsoft Web sites:</p>
+<p><a href="https://technet.microsoft.com/library/hh831791">Group Policy Overview</a>
+<a href="https://technet.microsoft.com/library/cc737816%28v=ws.10%29.aspx">What is Group Policy Object Editor?</a>
+<a href="https://technet.microsoft.com/library/cc784165%28v=ws.10%29.aspx">Core Group Policy tools and settings</a></p>
+<p>To disable Adobe Flash Player in Internet Explorer through Group Policy, perform the following steps:
+<strong>Note</strong> This workaround does not prevent Flash from being invoked from other applications, such as Microsoft Office 2007 or Microsoft Office 2010.</p>
+<ol>
+<li>Open the Group Policy Management Console and configure the console to work with the appropriate Group Policy object, such as local machine, OU, or domain GPO.</li>
+<li>Navigate to the following node:
+<strong>Administrative Templates -&gt; Windows Components -&gt; Internet Explorer -&gt; Security Features -&gt; Add-on Management</strong></li>
+<li>Double-click <strong>Turn off Adobe Flash in Internet Explorer and prevent applications from using Internet Explorer technology to instantiate Flash objects</strong>.</li>
+<li>Change the setting to Enabled.</li>
+<li>Click <strong>Apply</strong> and then click <strong>OK</strong> to return to the Group Policy Management Console.</li>
+<li>Refresh Group Policy on all systems or wait for the next scheduled Group Policy refresh interval for the settings to take effect.
+<strong>Prevent Adobe Flash Player from running in Office 2010 on affected systems</strong>
+<strong>Note</strong> This workaround does not prevent Adobe Flash Player from running in Internet Explorer.
+<strong>Warning</strong> If you use Registry Editor incorrectly, you may cause serious problems that may require you to reinstall your operating system. Microsoft cannot guarantee that you can solve problems that result from using Registry Editor incorrectly. Use Registry Editor at your own risk.
+For detailed steps that you can use to prevent a control from running in Internet Explorer, see Microsoft Knowledge Base Article 240797. Follow the steps in the article to create a Compatibility Flags value in the registry to prevent a COM object from being instantiated in Internet Explorer.</li>
+</ol>
+<p>To disable Adobe Flash Player in Office 2010 only, set the kill bit for the ActiveX control for Adobe Flash Player in the registry using the following steps:</p>
+<ol>
+<li>Create a text file named Disable_Flash.reg with the following contents:</li>
+</ol>
+<pre><code>		[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\Common\COM\Compatibility\{D27CDB6E-AE6D-11CF-96B8-444553540000}]
+	&quot;Compatibility Flags&quot;=dword:00000400
+</code></pre>
+<ol start="2">
+<li>Double-click the .reg file to apply it to an individual system.</li>
+<li><strong>Note</strong> You must restart Internet Explorer for your changes to take effect.
+You can also apply this workaround across domains by using Group Policy. For more information about Group Policy, see the TechNet article, <a href="http://go.microsoft.com/fwlink/?LinkID=215719">Group Policy collection</a>.
+<strong>Prevent ActiveX controls from running in Office 2007 and Office 2010</strong></li>
+</ol>
+<p>To disable all ActiveX controls in Microsoft Office 2007 and Microsoft Office 2010, including Adobe Flash Player in Internet Explorer, perform the following steps:</p>
+<ol>
+<li>Click File, click Options, click Trust Center, and then click Trust Center Settings.</li>
+<li>Click ActiveX Settings in the left-hand pane, and then select Disable all controls without notifications.</li>
+<li>Click OK to save your settings.
+<strong>Impact of workaround</strong>. Office documents that use embedded ActiveX controls may not display as intended.
+<strong>How to undo the workaround</strong>.</li>
+</ol>
+<p>To re-enable ActiveX controls in Microsoft Office 2007 and Microsoft Office 2010, perform the following steps:</p>
+<ol>
+<li>Click File, click Options, click Trust Center, and then click Trust Center Settings.</li>
+<li>Click ActiveX Settings in the left-hand pane, and then deselect Disable all controls without notifications.</li>
+<li>Click OK to save your settings.
+<strong>Set Internet and Local intranet security zone settings to &quot;High&quot; to block ActiveX Controls and Active Scripting in these zones</strong>
+You can help protect against exploitation of these vulnerabilities by changing your settings for the Internet security zone to block ActiveX controls and Active Scripting. You can do this by setting your browser security to High.</li>
+</ol>
+<p>To raise the browsing security level in Internet Explorer, perform the following steps:</p>
+<ol>
+<li>On the Internet Explorer <strong>Tools</strong> menu, click** Internet Option**s.</li>
+<li>In the <strong>Internet Options</strong> dialog box, click the <strong>Security</strong> tab, and then click <strong>Internet</strong>.</li>
+<li>Under <strong>Security level for this zone</strong>, move the slider to <strong>High</strong>. This sets the security level for all websites you visit to High.</li>
+<li>Click <strong>Local intranet</strong>.</li>
+<li>Under <strong>Security level for this zone</strong>, move the slider to <strong>High</strong>. This sets the security level for all websites you visit to High.</li>
+<li>Click <strong>OK</strong> to accept the changes and return to Internet Explorer.
+<strong>Note</strong> If no slider is visible, click <strong>Default Level</strong>, and then move the slider to <strong>High</strong>.
+<strong>Note</strong> Setting the level to High may cause some websites to work incorrectly. If you have difficulty using a website after you change this setting, and you are sure the site is safe to use, you can add that site to your list of trusted sites. This will allow the site to work correctly even with the security setting set to High.
+<strong>Impact of workaround</strong>. There are side effects to blocking ActiveX Controls and Active Scripting. Many websites on the Internet or an intranet use ActiveX or Active Scripting to provide additional functionality. For example, an online e-commerce site or banking site may use ActiveX Controls to provide menus, ordering forms, or even account statements. Blocking ActiveX Controls or Active Scripting is a global setting that affects all Internet and intranet sites. If you do not want to block ActiveX Controls or Active Scripting for such sites, use the steps outlined in &quot;Add sites that you trust to the Internet Explorer Trusted sites zone&quot;.
+<strong>Configure Internet Explorer to prompt before running Active Scripting or to disable Active Scripting in the Internet and Local intranet security zone</strong></li>
+</ol>
+<p>You can help protect against exploitation of these vulnerabilities by changing your settings to prompt before running Active Scripting or to disable Active Scripting in the Internet and Local intranet security zone. To do this, perform the following steps:</p>
+<ol>
+<li>In Internet Explorer, click <strong>Internet Options</strong> on the <strong>Tools</strong> menu.</li>
+<li>Click the <strong>Security</strong> tab.</li>
+<li>Click <strong>Internet</strong>, and then click <strong>Custom Level</strong>.</li>
+<li>Under <strong>Settings</strong>, in the <strong>Scripting</strong> section, under <strong>Active Scripting</strong>, click <strong>Prompt</strong> or <strong>Disable</strong>, and then click <strong>OK</strong>.</li>
+<li>Click <strong>Local intranet</strong>, and then click <strong>Custom Level</strong>.</li>
+<li>Under <strong>Settings</strong>, in the <strong>Scripting</strong> section, under <strong>Active Scripting</strong>, click <strong>Prompt</strong> or <strong>Disable</strong>, and then click <strong>OK</strong>.</li>
+<li>Click <strong>OK</strong> to return to Internet Explorer, and then click <strong>OK</strong> again.
+<strong>Note</strong> Disabling Active Scripting in the Internet and Local intranet security zones may cause some websites to work incorrectly. If you have difficulty using a website after you change this setting, and you are sure the site is safe to use, you can add that site to your list of trusted sites. This will allow the site to work correctly.
+<strong>Impact of workaround</strong>. There are side effects to prompting before running Active Scripting. Many websites that are on the Internet or on an intranet use Active Scripting to provide additional functionality. For example, an online e-commerce site or banking site may use Active Scripting to provide menus, ordering forms, or even account statements. Prompting before running Active Scripting is a global setting that affects all Internet and intranet sites. You will be prompted frequently when you enable this workaround. For each prompt, if you feel you trust the site that you are visiting, click <strong>Yes</strong> to run Active Scripting. If you do not want to be prompted for all these sites, use the steps outlined in &quot;Add sites that you trust to the Internet Explorer Trusted sites zone&quot;.
+<strong>Add sites that you trust to the Internet Explorer Trusted sites zone</strong>
+After you set Internet Explorer to require a prompt before it runs ActiveX controls and Active Scripting in the Internet zone and in the Local intranet zone, you can add sites that you trust to the Internet Explorer Trusted sites zone. This will allow you to continue to use trusted websites exactly as you do today, while helping to protect you from this attack on untrusted sites. We recommend that you add only sites that you trust to the Trusted sites zone.</li>
+</ol>
+<p>To do this, perform the following steps:</p>
+<ol>
+<li>In Internet Explorer, click <strong>Tools</strong>, click <strong>Internet Options</strong>, and then click the <strong>Security</strong> tab.</li>
+<li>In the <strong>Select a web content zone to specify its current security settings</strong> box, click <strong>Trusted Sites</strong>, and then click <strong>Sites</strong>.</li>
+<li>If you want to add sites that do not require an encrypted channel, click to clear the <strong>Require server verification (https:) for all sites in this zone</strong> check box.</li>
+<li>In the <strong>Add this website to the zone</strong> box, type the URL of a site that you trust, and then click <strong>Add</strong>.</li>
+<li>Repeat these steps for each site that you want to add to the zone.</li>
+<li>Click <strong>OK</strong> two times to accept the changes and return to Internet Explorer.
+<strong>Note</strong> Add any sites that you trust not to take malicious action on your system. Two sites in particular that you may want to add are *<strong>.windowsupdate.microsoft.com</strong> and *<strong>.update.microsoft.com</strong>. These are the sites that will host the update, and they require an ActiveX control to install the update.</li>
+</ol>
+
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp2018-12-05T08:00:00&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Critical</td>
+     <td>Remote Code Execution</td>
+ </tr>
+</table>        <h2>Exploitability Index</h2>
+
+<p>The following table provides an exploitability assessment of each of the vulnerabilities addressed this month. The vulnerabilities are listed in order of bulletin ID then CVE ID. Only vulnerabilities that have a severity rating of Critical or Important in the bulletins are included.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment for Latest Software Release</b></td>
+   <td><b>Exploitability Assessment for Older Software Release</b></td>
+   <td><b>Denial of Service Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>   
+  </tr>
+ </thead>
+ <tr>
+     <td>Not Found</td>
+     <td>Not Found</td>
+     <td>Not Applicable</td>
+     <td>No</td>
+     <td>No</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="7"><b>ADV180031</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>                
+            <td><b>Severity</b></td>  
+            <td><b>Impact</b></td>  
+            <td><b>Supersedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Restart Required</b></td>
+        </tr>
+                <tr>
+                <td>Adobe Flash Player on Windows 10 for 32-bit Systems</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4471331" >4471331 (Security Update)</td>
+                <td>Critical</td>
+                <td>Remote Code Execution</td>
+                <td>4467694</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>Yes</td>
+        </tr>            <tr>
+                <td>Adobe Flash Player on Windows 10 for x64-based Systems</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4471331" >4471331 (Security Update)</td>
+                <td>Critical</td>
+                <td>Remote Code Execution</td>
+                <td>4467694</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>Yes</td>
+        </tr>            <tr>
+                <td>Adobe Flash Player on Windows 10 Version 1607 for 32-bit Systems</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4471331" >4471331 (Security Update)</td>
+                <td>Critical</td>
+                <td>Remote Code Execution</td>
+                <td>4467694</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>Yes</td>
+        </tr>            <tr>
+                <td>Adobe Flash Player on Windows 10 Version 1607 for x64-based Systems</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4471331" >4471331 (Security Update)</td>
+                <td>Critical</td>
+                <td>Remote Code Execution</td>
+                <td>4467694</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>Yes</td>
+        </tr>            <tr>
+                <td>Adobe Flash Player on Windows 10 Version 1703 for 32-bit Systems</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4471331" >4471331 (Security Update)</td>
+                <td>Critical</td>
+                <td>Remote Code Execution</td>
+                <td>4467694</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>Yes</td>
+        </tr>            <tr>
+                <td>Adobe Flash Player on Windows 10 Version 1703 for x64-based Systems</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4471331" >4471331 (Security Update)</td>
+                <td>Critical</td>
+                <td>Remote Code Execution</td>
+                <td>4467694</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>Yes</td>
+        </tr>            <tr>
+                <td>Adobe Flash Player on Windows 10 Version 1709 for 32-bit Systems</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4471331" >4471331 (Security Update)</td>
+                <td>Critical</td>
+                <td>Remote Code Execution</td>
+                <td>4467694</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>Yes</td>
+        </tr>            <tr>
+                <td>Adobe Flash Player on Windows 10 Version 1709 for ARM64-based Systems</td>
+                <td><a href="" >4471331 (Security Update)</td>
+                <td>Critical</td>
+                <td>Remote Code Execution</td>
+                <td>4467694</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>Yes</td>
+        </tr>            <tr>
+                <td>Adobe Flash Player on Windows 10 Version 1709 for x64-based Systems</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4471331" >4471331 (Security Update)</td>
+                <td>Critical</td>
+                <td>Remote Code Execution</td>
+                <td>4467694</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>Yes</td>
+        </tr>            <tr>
+                <td>Adobe Flash Player on Windows 10 Version 1803 for 32-bit Systems</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4471331" >4471331 (Security Update)</td>
+                <td>Critical</td>
+                <td>Remote Code Execution</td>
+                <td>4467694</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>Yes</td>
+        </tr>            <tr>
+                <td>Adobe Flash Player on Windows 10 Version 1803 for ARM64-based Systems</td>
+                <td><a href="" >4471331 (Security Update)</td>
+                <td>Critical</td>
+                <td>Remote Code Execution</td>
+                <td>4467694</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>Yes</td>
+        </tr>            <tr>
+                <td>Adobe Flash Player on Windows 10 Version 1803 for x64-based Systems</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4471331" >4471331 (Security Update)</td>
+                <td>Critical</td>
+                <td>Remote Code Execution</td>
+                <td>4467694</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>Yes</td>
+        </tr>            <tr>
+                <td>Adobe Flash Player on Windows 10 Version 1809 for 32-bit Systems</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4471331" >4471331 (Security Update)</td>
+                <td>Critical</td>
+                <td>Remote Code Execution</td>
+                <td>4467694</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>Yes</td>
+        </tr>            <tr>
+                <td>Adobe Flash Player on Windows 10 Version 1809 for ARM64-based Systems</td>
+                <td><a href="" >4471331 (Security Update)</td>
+                <td>Critical</td>
+                <td>Remote Code Execution</td>
+                <td>4467694</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>Yes</td>
+        </tr>            <tr>
+                <td>Adobe Flash Player on Windows 10 Version 1809 for x64-based Systems</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4471331" >4471331 (Security Update)</td>
+                <td>Critical</td>
+                <td>Remote Code Execution</td>
+                <td>4467694</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>Yes</td>
+        </tr>            <tr>
+                <td>Adobe Flash Player on Windows 8.1 for 32-bit systems</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4471331" >4471331 (Security Update)</td>
+                <td>Critical</td>
+                <td>Remote Code Execution</td>
+                <td>4467694</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>Yes</td>
+        </tr>            <tr>
+                <td>Adobe Flash Player on Windows 8.1 for x64-based systems</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4471331" >4471331 (Security Update)</td>
+                <td>Critical</td>
+                <td>Remote Code Execution</td>
+                <td>4467694</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>Yes</td>
+        </tr>            <tr>
+                <td>Adobe Flash Player on Windows RT 8.1</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4471331" >4471331 (Security Update)</td>
+                <td>Critical</td>
+                <td>Remote Code Execution</td>
+                <td>4467694</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>Yes</td>
+        </tr>            <tr>
+                <td>Adobe Flash Player on Windows Server 2012</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4471331" >4471331 (Security Update)</td>
+                <td>Critical</td>
+                <td>Remote Code Execution</td>
+                <td>4467694</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>Yes</td>
+        </tr>            <tr>
+                <td>Adobe Flash Player on Windows Server 2012 R2</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4471331" >4471331 (Security Update)</td>
+                <td>Critical</td>
+                <td>Remote Code Execution</td>
+                <td>4467694</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>Yes</td>
+        </tr>            <tr>
+                <td>Adobe Flash Player on Windows Server 2016</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4471331" >4471331 (Security Update)</td>
+                <td>Critical</td>
+                <td>Remote Code Execution</td>
+                <td>4467694</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>Yes</td>
+        </tr>            <tr>
+                <td>Adobe Flash Player on Windows Server 2019</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4471331" >4471331 (Security Update)</td>
+                <td>Critical</td>
+                <td>Remote Code Execution</td>
+                <td>4467694</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>Yes</td>
+        </tr>    
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>  
+    </tr>
+    </thead>
+ <tr>
+     <td>ADV180031</td>
+     <td>None</td>
+ </tr>
+</table>
+</div>
+<br>
+ </body>
+</html>
