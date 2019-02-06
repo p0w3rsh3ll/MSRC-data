@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cvrf:cvrfdoc xmlns:cpe-lang="http://cpe.mitre.org/language/2.0" xmlns:scap-core="https://scap.nist.gov/schema/scap-core/1.0" xmlns:cvrf-common="http://www.icasi.org/CVRF/schema/common/1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:prod="http://www.icasi.org/CVRF/schema/prod/1.1" xmlns:cvssv2="https://scap.nist.gov/schema/cvss-v2/1.0" xmlns:vuln="http://www.icasi.org/CVRF/schema/vuln/1.1" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:cvrf="http://www.icasi.org/CVRF/schema/cvrf/1.1">
+  <cvrf:DocumentTitle>February 2019 Security Updates</cvrf:DocumentTitle>
+  <cvrf:DocumentType>Security Update</cvrf:DocumentType>
+  <cvrf:DocumentPublisher Type="Vendor">
+    <cvrf:ContactDetails>secure@microsoft.com</cvrf:ContactDetails>
+    <cvrf:IssuingAuthority>The Microsoft Security Response Center (MSRC) identifies, monitors, resolves, and responds to security incidents and Microsoft software security vulnerabilities. For more information, see http://www.microsoft.com/security/msrc.</cvrf:IssuingAuthority>
+  </cvrf:DocumentPublisher>
+  <cvrf:DocumentTracking>
+    <cvrf:Identification>
+      <cvrf:ID>2019-Feb</cvrf:ID>
+      <cvrf:Alias>2019-Feb</cvrf:Alias>
+    </cvrf:Identification>
+    <cvrf:Status>Final</cvrf:Status>
+    <cvrf:Version>1.0</cvrf:Version>
+    <cvrf:RevisionHistory>
+      <cvrf:Revision>
+        <cvrf:Number>2</cvrf:Number>
+        <cvrf:Date>2019-02-06T08:00:00</cvrf:Date>
+        <cvrf:Description>February 2019 Security Updates</cvrf:Description>
+      </cvrf:Revision>
+    </cvrf:RevisionHistory>
+    <cvrf:InitialReleaseDate>2019-02-05T08:00:00</cvrf:InitialReleaseDate>
+    <cvrf:CurrentReleaseDate>2019-02-06T08:00:00</cvrf:CurrentReleaseDate>
+  </cvrf:DocumentTracking>
+  <cvrf:DocumentNotes>
+    <cvrf:Note Title="Release Notes" Audience="Public" Type="Details" Ordinal="1">&lt;p&gt;The February 5th security release consists of ADV190007&lt;/p&gt;
+</cvrf:Note>
+    <cvrf:Note Title="Legal Disclaimer" Audience="Public" Type="Legal Disclaimer" Ordinal="2">The information provided in the Microsoft Knowledge Base is provided "as is" without warranty of any kind. Microsoft disclaims all warranties, either express or implied, including the warranties of merchantability and fitness for a particular purpose. In no event shall Microsoft Corporation or its suppliers be liable for any damages whatsoever including direct, indirect, incidental, consequential, loss of business profits or special damages, even if Microsoft Corporation or its suppliers have been advised of the possibility of such damages. Some states do not allow the exclusion or limitation of liability for consequential or incidental damages so the foregoing limitation may not apply.</cvrf:Note>
+  </cvrf:DocumentNotes>
+  <prod:ProductTree>
+    <prod:Branch Type="Vendor" Name="Microsoft">
+      <prod:Branch Type="Product Family" Name="Exchange Server">
+        <prod:FullProductName ProductID="11619">Microsoft Exchange Server 2013 Cumulative Update 22</prod:FullProductName>
+        <prod:FullProductName ProductID="11621">Microsoft Exchange Server 2019 Cumulative Update 1</prod:FullProductName>
+        <prod:FullProductName ProductID="11620">Microsoft Exchange Server 2016 Cumulative Update 12</prod:FullProductName>
+        <prod:FullProductName ProductID="11618">Microsoft Exchange Server 2010 Service Pack 3 Update Rollup 26</prod:FullProductName>
+      </prod:Branch>
+    </prod:Branch>
+    <prod:FullProductName ProductID="11618">Microsoft Exchange Server 2010 Service Pack 3 Update Rollup 26</prod:FullProductName>
+    <prod:FullProductName ProductID="11619">Microsoft Exchange Server 2013 Cumulative Update 22</prod:FullProductName>
+    <prod:FullProductName ProductID="11620">Microsoft Exchange Server 2016 Cumulative Update 12</prod:FullProductName>
+    <prod:FullProductName ProductID="11621">Microsoft Exchange Server 2019 Cumulative Update 1</prod:FullProductName>
+  </prod:ProductTree>
+  <vuln:Vulnerability Ordinal="1">
+    <vuln:Title>Guidance for "PrivExchange" Elevation of Privilege Vulnerability</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="1">&lt;p&gt;An elevation of privilege vulnerability exists in Microsoft Exchange Server. An attacker who successfully exploited this vulnerability could attempt to impersonate any other user of the Exchange server.
+To exploit the vulnerability, an attacker would need to execute a man-in-the-middle attack to forward an authentication request to a Microsoft Exchange Server, thereby allowing impersonation of another Exchange user.&lt;/p&gt;
+&lt;p&gt;To address this vulnerability, a Throttling Policy for EWSMaxSubscriptions could be defined and applied to the organization with a value of zero. This will prevent the Exchange server from sending EWS notifications, and prevent client applications which rely upon EWS notifications from functioning normally. Examples of impacted applications include Outlook for Mac, Skype for Business, notification reliant LOB applications, and some iOS native mail clients. Please see &lt;a href="https://docs.microsoft.com/en-us/powershell/module/exchange/server-health-and-performance/New-ThrottlingPolicy?view=exchange-ps"&gt;Throttling Policy&lt;/a&gt;, for more information.&lt;/p&gt;
+&lt;p&gt;An example:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;New-ThrottlingPolicy -Name AllUsersEWSSubscriptionBlockPolicy -EwsMaxSubscriptions 0 -ThrottlingPolicyScope Organization&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;A planned update is in development. If you determine that your system is at high risk then you should evaluate the proposed workaround.&lt;/p&gt;
+&lt;p&gt;After installing the update you can undo the above action with this command:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Remove-ThrottlingPolicy -Identity AllUsersEWSSubscriptionBlockPolicy&lt;/code&gt;&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Exchange Server" Type="Tag" Ordinal="2">Microsoft Exchange Server</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>ADV190007</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11618</vuln:ProductID>
+        <vuln:ProductID>11619</vuln:ProductID>
+        <vuln:ProductID>11620</vuln:ProductID>
+        <vuln:ProductID>11621</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>11621</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>11618</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>11619</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>Publicly Disclosed:Yes;Exploited:No;DOS:;</vuln:Description>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>11620</vuln:ProductID>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Mitigation">
+        <vuln:Description>&lt;ul&gt;
+&lt;li&gt;The issue described in the Blog post: &lt;a href="https://dirkjanm.io/abusing-exchange-one-api-call-away-from-domain-admin/"&gt;Abusing Exchange: One API call away from Domain Admin&lt;/a&gt; only affects OnPrem deployments. Exchange Online is not affected.&lt;/li&gt;
+&lt;li&gt;The attack scenario described in the blog referenced above requires NTLM. Systems that have disabled NTLM are not affected.&lt;/li&gt;
+&lt;li&gt;Attackers cannot compromise a Domain Admin account if an OnPrem deployment follows Microsoft’s security best practice guidance and has implemented Active Directory Split Permissions. For more information on using Active Directory Split Permissions with Exchange, see &lt;a href="https://docs.microsoft.com/en-us/exchange/understanding-split-permissions-exchange-2013-help"&gt;Understanding split permissions: Exchange 2013 Help&lt;/a&gt;. &lt;strong&gt;Note&lt;/strong&gt;: this document refers to Exchange Server 2013, but the same model can be used for later versions of Exchange Server.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;References&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd560653(v=ws.10)"&gt;Introducing the Restriction of NTLM Authentication&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://blogs.technet.microsoft.com/askds/2009/10/08/ntlm-blocking-and-you-application-analysis-and-auditing-methodologies-in-windows-7/"&gt;NTLM Blocking and You: Application Analysis and Auditing Methodologies in Windows 7&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/network-security-restrict-ntlm-outgoing-ntlm-traffic-to-remote-servers"&gt;Network security: Restrict NTLM: Add remote server exceptions for NTLM authentication&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</vuln:Description>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired />
+      </vuln:Remediation>
+      <vuln:Remediation Type="Workaround">
+        <vuln:Description>&lt;p&gt;One way to prevent EWS from leaking the Exchange server's NTLM credentials is to block EWS subscriptions from being created. This will negatively impact users who rely on EWS clients such as Outlook for Mac, and may also result in unexpected behavior from third-party software that relies on EWS. It may also reduce the number of EWS connections the server can support. Because throttling policies can be applied per user, it is possible to whitelist trusted users who require EWS functionality.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: Customers are strongly encouraged to test workarounds prior to deploying them into production to understand the potential impact.&lt;/p&gt;
+&lt;p&gt;To prevent EWS subscriptions from being created, use the following steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Create an organization-scoped policy that blocks all EWS subscriptions:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; `New-ThrottlingPolicy -Name NoEwsSubscriptions -ThrottlingPolicyScope Organization -EwsMaxSubscriptions 0`
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Create a regular-scoped policy, which can be used to whitelist trusted users who must have full EWS functionality:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; `New-ThrottlingPolicy -Name AllowEwsSubscriptions -ThrottlingPolicyScope Regular -EwsMaxSubscriptions 5000`
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Assign the regular policy to any such users:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  `Set-Mailbox User1 -ThrottlingPolicy AllowEwsSubscriptions`
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Note about this EWS Subscription throttling workaround&lt;/strong&gt;: A customer’s risk assessment must weigh the protections gained by the workaround as compared to the possible unwanted side effects of the workaround. The following are possible side effects of the EWS Subscription throttling policy:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This workaround may be disruptive to Outlook for Mac, Skype for Business Client, and Apple Mail Clients, causing them to not function properly. Importantly, the throttling policy won't block Autodiscover and Free/Busy requests. The EWS throttling policy will also negatively impact LOB and other third-party Applications that require EWS Notifications. A second policy can be created to whitelist trusted accounts.&lt;/em&gt;&lt;/p&gt;
+</vuln:Description>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired />
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2019-02-06T08:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Updated vulnerability description to change the command specified to undo the action after installing the update.  This is an informational change only.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2019-02-05T08:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+</cvrf:cvrfdoc>
