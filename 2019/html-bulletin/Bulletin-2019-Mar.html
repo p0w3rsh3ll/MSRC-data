@@ -70,7 +70,7 @@
 <tr><td>Microsoft Scripting Engine</td>    <td><a href="#CVE-2019-0772">CVE-2019-0772</a></td>    <td>Windows VBScript Engine Remote Code Execution Vulnerability</td></tr>
 <tr><td>Microsoft Scripting Engine</td>    <td><a href="#CVE-2019-0771">CVE-2019-0771</a></td>    <td>Scripting Engine Memory Corruption Vulnerability</td></tr>
 <tr><td>Microsoft Scripting Engine</td>    <td><a href="#CVE-2019-0770">CVE-2019-0770</a></td>    <td>Scripting Engine Memory Corruption Vulnerability</td></tr>
-<tr><td>Microsoft Scripting Engine</td>    <td><a href="#CVE-2019-0746">CVE-2019-0746</a></td>    <td>Chakra Scripting Engine Memory Corruption Vulnerability</td></tr>
+<tr><td>Microsoft Scripting Engine</td>    <td><a href="#CVE-2019-0746">CVE-2019-0746</a></td>    <td>Scripting Engine Information Disclosure Vulnerability</td></tr>
 <tr><td>Microsoft Scripting Engine</td>    <td><a href="#CVE-2019-0769">CVE-2019-0769</a></td>    <td>Scripting Engine Memory Corruption Vulnerability</td></tr>
 <tr><td>Microsoft Scripting Engine</td>    <td><a href="#CVE-2019-0639">CVE-2019-0639</a></td>    <td>Scripting Engine Memory Corruption Vulnerability</td></tr>
 <tr><td>Microsoft Windows</td>    <td><a href="#CVE-2019-0603">CVE-2019-0603</a></td>    <td>Windows Deployment Services TFTP Server Remote Code Execution Vulnerability</td></tr>
@@ -554,7 +554,7 @@
         <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp2019-03-12T07:00:00&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
 
         <br></td>
-     <td>Important</td>
+     <td>Low</td>
      <td>Information Disclosure</td>
  </tr>
 </table>        <h2>Exploitability Index</h2>
@@ -916,7 +916,8 @@
         <br>
         <b>Workarounds:</b><br>None
         <br>
-        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp2019-03-12T07:00:00&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+        <b>Revision:</b><br>1.1&nbsp&nbsp&nbsp&nbsp2019-03-20T07:00:00&nbsp&nbsp&nbsp&nbsp<p>Acknowledgement added.</p>
+<br />1.0&nbsp&nbsp&nbsp&nbsp2019-03-12T07:00:00&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
 
         <br></td>
      <td>Critical</td>
@@ -1036,7 +1037,7 @@
     </thead>
  <tr>
      <td>CVE-2019-0639</td>
-     <td>MoonLiang of Tencent Security Xuanwu Lab<br>https://xlab.tencent.com/<br><br><br>Yuki Chen of Qihoo 360 Vulcan Team<br>http://www.360.com/<br><br><br></td>
+     <td>Yuki Chen of Qihoo 360 Vulcan Team<br>http://www.360.com/<br><br><br>Yuki Chen of Qihoo 360 Vulcan Team<br>http://www.360.com/<br><br><br>MoonLiang of Tencent Security Xuanwu Lab<br>https://xlab.tencent.com/<br><br><br></td>
  </tr>
 </table><h1 id="CVE-2019-0678">CVE-2019-0678 - Microsoft Edge Elevation of Privilege Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
  <thead style="background-color: #ededed">
@@ -1240,7 +1241,7 @@
      <td>CVE-2019-0678</td>
      <td>Nikhil Mittal of Payatu Labs<br>https://payatu.com/<br><br><br></td>
  </tr>
-</table><h1 id="CVE-2019-0746">CVE-2019-0746 - Chakra Scripting Engine Memory Corruption Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+</table><h1 id="CVE-2019-0746">CVE-2019-0746 - Scripting Engine Information Disclosure Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
  <thead style="background-color: #ededed">
   <tr>
    <td><b>CVE ID</b></td>
@@ -1251,24 +1252,27 @@
  </thead>
  <tr>
      <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0746">CVE-2019-0746</a><br><a href="http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-0746">MITRE</a><br><a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2019-0746">NVD</a></td>
-     <td>        <b>CVE Title:</b> Chakra Scripting Engine Memory Corruption Vulnerability
+     <td>        <b>CVE Title:</b> Scripting Engine Information Disclosure Vulnerability
         <br>
-        <b>Description:</b> <br><p>A remote code execution vulnerability exists in the way that the Chakra scripting engine handles objects in memory in Microsoft Edge. The vulnerability could corrupt memory in such a way that an attacker could execute arbitrary code in the context of the current user. An attacker who successfully exploited the vulnerability could gain the same user rights as the current user. If the current user is logged on with administrative user rights, an attacker who successfully exploited the vulnerability could take control of an affected system. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights.</p>
-<p>In a web-based attack scenario, an attacker could host a specially crafted website that is designed to exploit the vulnerability through Microsoft Edge and then convince a user to view the website. The attacker could also take advantage of compromised websites and websites that accept or host user-provided content or advertisements. These websites could contain specially crafted content that could exploit the vulnerability.</p>
-<p>The security update addresses the vulnerability by modifying how the Chakra scripting engine handles objects in memory.</p>
+        <b>Description:</b> <br><p>An information disclosure vulnerability exists when the scripting engine does not properly handle objects in memory in Microsoft Edge. An attacker who successfully exploited the vulnerability could obtain information to further compromise the user’s system.</p>
+<p>In a web-based attack scenario, an attacker could host a website in an attempt to exploit the vulnerability. In addition, compromised websites and websites that accept or host user-provided content could contain specially crafted content that could exploit the vulnerability. However, in all cases an attacker would have no way to force a user to view the attacker-controlled content. Instead, an attacker would have to convince a user to take action. For example, an attacker could trick a user into clicking a link that takes the user to the attacker's site.</p>
+<p>The security update addresses the vulnerability by changing how the scripting engine handles objects in memory.</p>
 
         <br>
-        <b>FAQ:</b><br>None
+        <b>FAQ:</b><br><p><strong>What type of information could be disclosed by this vulnerability?</strong></p>
+<p>The type of information that could be disclosed if an attacker successfully exploited this vulnerability is uninitialized memory.</p>
+<br />
         <br>
         <b>Mitigations:</b><br>None
         <br>
         <b>Workarounds:</b><br>None
         <br>
         <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp2019-03-12T07:00:00&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+<br />1.1&nbsp&nbsp&nbsp&nbsp2019-03-20T07:00:00&nbsp&nbsp&nbsp&nbsp<p>Corrected the CVE title and description to address the vulnerability as Information Disclosure. In the Affected Products table, corrected the Impact to Information Disclosure. This is an informational change only.</p>
 
         <br></td>
-     <td>Important</td>
-     <td>Remote Code Execution</td>
+     <td>Low</td>
+     <td>Information Disclosure</td>
  </tr>
 </table>        <h2>Exploitability Index</h2>
 
@@ -1312,7 +1316,7 @@
                 <td>ChakraCore</td>
                 <td><a href="https://github.com/Microsoft/ChakraCore/releases/tag/v1.11.7" >Release Notes (Security Update)</td>
                 <td>Important</td>
-                <td>Remote Code Execution</td>
+                <td>Information Disclosure</td>
                 <td>None</td>
                 <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
                 <td>Maybe</td>
@@ -1320,7 +1324,7 @@
                 <td>Internet Explorer 10 on Windows Server 2012</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489873" >4489873 (IE Cumulative)<br /><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489891" >4489891 (Monthly Rollup)</td>
                 <td>Low</td>
-                <td>Remote Code Execution</td>
+                <td>Information Disclosure</td>
                 <td>4486474<br />4487025</td>
                 <td>Base: 6,40<br />Temporal: 5,80<br />Vector: CVSS:3.0/AV:N/AC:H/PR:H/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -1328,7 +1332,7 @@
                 <td>Internet Explorer 11 on Windows 10 for 32-bit Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489872" >4489872 (Security Update)</td>
                 <td>Important</td>
-                <td>Remote Code Execution</td>
+                <td>Information Disclosure</td>
                 <td>4487018</td>
                 <td>Base: 7,50<br />Temporal: 6,70<br />Vector: CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -1336,7 +1340,7 @@
                 <td>Internet Explorer 11 on Windows 10 for x64-based Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489872" >4489872 (Security Update)</td>
                 <td>Important</td>
-                <td>Remote Code Execution</td>
+                <td>Information Disclosure</td>
                 <td>4487018</td>
                 <td>Base: 7,50<br />Temporal: 6,70<br />Vector: CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -1344,7 +1348,7 @@
                 <td>Internet Explorer 11 on Windows 10 Version 1607 for 32-bit Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489882" >4489882 (Security Update)</td>
                 <td>Important</td>
-                <td>Remote Code Execution</td>
+                <td>Information Disclosure</td>
                 <td>4487026</td>
                 <td>Base: 7,50<br />Temporal: 6,70<br />Vector: CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -1352,7 +1356,7 @@
                 <td>Internet Explorer 11 on Windows 10 Version 1607 for x64-based Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489882" >4489882 (Security Update)</td>
                 <td>Important</td>
-                <td>Remote Code Execution</td>
+                <td>Information Disclosure</td>
                 <td>4487026</td>
                 <td>Base: 7,50<br />Temporal: 6,70<br />Vector: CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -1360,7 +1364,7 @@
                 <td>Internet Explorer 11 on Windows 10 Version 1703 for 32-bit Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489871" >4489871 (Security Update)</td>
                 <td>Important</td>
-                <td>Remote Code Execution</td>
+                <td>Information Disclosure</td>
                 <td>4487020</td>
                 <td>Base: 7,50<br />Temporal: 6,70<br />Vector: CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -1368,7 +1372,7 @@
                 <td>Internet Explorer 11 on Windows 10 Version 1703 for x64-based Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489871" >4489871 (Security Update)</td>
                 <td>Important</td>
-                <td>Remote Code Execution</td>
+                <td>Information Disclosure</td>
                 <td>4487020</td>
                 <td>Base: 7,50<br />Temporal: 6,70<br />Vector: CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -1376,7 +1380,7 @@
                 <td>Internet Explorer 11 on Windows 10 Version 1709 for 32-bit Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489886" >4489886 (Security Update)</td>
                 <td>Important</td>
-                <td>Remote Code Execution</td>
+                <td>Information Disclosure</td>
                 <td>4486996</td>
                 <td>Base: 7,50<br />Temporal: 6,70<br />Vector: CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -1384,7 +1388,7 @@
                 <td>Internet Explorer 11 on Windows 10 Version 1709 for ARM64-based Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489886" >4489886 (Security Update)</td>
                 <td>Important</td>
-                <td>Remote Code Execution</td>
+                <td>Information Disclosure</td>
                 <td>4486996</td>
                 <td>Base: 7,50<br />Temporal: 6,70<br />Vector: CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -1392,7 +1396,7 @@
                 <td>Internet Explorer 11 on Windows 10 Version 1709 for x64-based Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489886" >4489886 (Security Update)</td>
                 <td>Important</td>
-                <td>Remote Code Execution</td>
+                <td>Information Disclosure</td>
                 <td>4486996</td>
                 <td>Base: 7,50<br />Temporal: 6,70<br />Vector: CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -1400,7 +1404,7 @@
                 <td>Internet Explorer 11 on Windows 10 Version 1803 for 32-bit Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489868" >4489868 (Security Update)</td>
                 <td>Important</td>
-                <td>Remote Code Execution</td>
+                <td>Information Disclosure</td>
                 <td>4487017</td>
                 <td>Base: 7,50<br />Temporal: 6,70<br />Vector: CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -1408,7 +1412,7 @@
                 <td>Internet Explorer 11 on Windows 10 Version 1803 for ARM64-based Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489868" >4489868 (Security Update)</td>
                 <td>Important</td>
-                <td>Remote Code Execution</td>
+                <td>Information Disclosure</td>
                 <td>4487017</td>
                 <td>Base: 7,50<br />Temporal: 6,70<br />Vector: CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -1416,7 +1420,7 @@
                 <td>Internet Explorer 11 on Windows 10 Version 1803 for x64-based Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489868" >4489868 (Security Update)</td>
                 <td>Important</td>
-                <td>Remote Code Execution</td>
+                <td>Information Disclosure</td>
                 <td>4487017</td>
                 <td>Base: 7,50<br />Temporal: 6,70<br />Vector: CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -1424,7 +1428,7 @@
                 <td>Internet Explorer 11 on Windows 10 Version 1809 for 32-bit Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489899" >4489899 (Security Update)</td>
                 <td>Important</td>
-                <td>Remote Code Execution</td>
+                <td>Information Disclosure</td>
                 <td>4487044</td>
                 <td>Base: 7,50<br />Temporal: 6,70<br />Vector: CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -1432,7 +1436,7 @@
                 <td>Internet Explorer 11 on Windows 10 Version 1809 for ARM64-based Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489899" >4489899 (Security Update)</td>
                 <td>Important</td>
-                <td>Remote Code Execution</td>
+                <td>Information Disclosure</td>
                 <td>4487044</td>
                 <td>Base: 7,50<br />Temporal: 6,70<br />Vector: CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -1440,7 +1444,7 @@
                 <td>Internet Explorer 11 on Windows 10 Version 1809 for x64-based Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489899" >4489899 (Security Update)</td>
                 <td>Important</td>
-                <td>Remote Code Execution</td>
+                <td>Information Disclosure</td>
                 <td>4487044</td>
                 <td>Base: 7,50<br />Temporal: 6,70<br />Vector: CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -1448,7 +1452,7 @@
                 <td>Internet Explorer 11 on Windows 7 for 32-bit Systems Service Pack 1</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489878" >4489878 (Monthly Rollup)<br /><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489873" >4489873 (IE Cumulative)</td>
                 <td>Important</td>
-                <td>Remote Code Execution</td>
+                <td>Information Disclosure</td>
                 <td>4486563<br />4486474</td>
                 <td>Base: 7,50<br />Temporal: 6,70<br />Vector: CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -1456,7 +1460,7 @@
                 <td>Internet Explorer 11 on Windows 7 for x64-based Systems Service Pack 1</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489878" >4489878 (Monthly Rollup)<br /><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489873" >4489873 (IE Cumulative)</td>
                 <td>Important</td>
-                <td>Remote Code Execution</td>
+                <td>Information Disclosure</td>
                 <td>4486563<br />4486474</td>
                 <td>Base: 7,50<br />Temporal: 6,70<br />Vector: CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -1464,7 +1468,7 @@
                 <td>Internet Explorer 11 on Windows 8.1 for 32-bit systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489873" >4489873 (IE Cumulative)<br /><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489881" >4489881 (Monthly Rollup)</td>
                 <td>Important</td>
-                <td>Remote Code Execution</td>
+                <td>Information Disclosure</td>
                 <td>4486474<br />4487000</td>
                 <td>Base: 7,50<br />Temporal: 6,70<br />Vector: CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -1472,7 +1476,7 @@
                 <td>Internet Explorer 11 on Windows 8.1 for x64-based systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489873" >4489873 (IE Cumulative)<br /><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489881" >4489881 (Monthly Rollup)</td>
                 <td>Important</td>
-                <td>Remote Code Execution</td>
+                <td>Information Disclosure</td>
                 <td>4486474<br />4487000</td>
                 <td>Base: 7,50<br />Temporal: 6,70<br />Vector: CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -1480,7 +1484,7 @@
                 <td>Internet Explorer 11 on Windows RT 8.1</td>
                 <td><a href="" >4489881 (Monthly Rollup)</td>
                 <td>Important</td>
-                <td>Remote Code Execution</td>
+                <td>Information Disclosure</td>
                 <td>4487000</td>
                 <td>Base: 7,50<br />Temporal: 6,70<br />Vector: CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -1488,7 +1492,7 @@
                 <td>Internet Explorer 11 on Windows Server 2008 R2 for x64-based Systems Service Pack 1</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489878" >4489878 (Monthly Rollup)<br /><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489873" >4489873 (IE Cumulative)</td>
                 <td>Low</td>
-                <td>Remote Code Execution</td>
+                <td>Information Disclosure</td>
                 <td>4486563<br />4486474</td>
                 <td>Base: 6,40<br />Temporal: 5,80<br />Vector: CVSS:3.0/AV:N/AC:H/PR:H/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -1496,7 +1500,7 @@
                 <td>Internet Explorer 11 on Windows Server 2012 R2</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489873" >4489873 (IE Cumulative)<br /><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489881" >4489881 (Monthly Rollup)</td>
                 <td>Low</td>
-                <td>Remote Code Execution</td>
+                <td>Information Disclosure</td>
                 <td>4486474<br />4487000</td>
                 <td>Base: 6,40<br />Temporal: 5,80<br />Vector: CVSS:3.0/AV:N/AC:H/PR:H/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -1504,7 +1508,7 @@
                 <td>Internet Explorer 11 on Windows Server 2016</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489882" >4489882 (Security Update)</td>
                 <td>Low</td>
-                <td>Remote Code Execution</td>
+                <td>Information Disclosure</td>
                 <td>4487026</td>
                 <td>Base: 6,40<br />Temporal: 5,80<br />Vector: CVSS:3.0/AV:N/AC:H/PR:H/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -1512,7 +1516,7 @@
                 <td>Internet Explorer 11 on Windows Server 2019</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489899" >4489899 (Security Update)</td>
                 <td>Low</td>
-                <td>Remote Code Execution</td>
+                <td>Information Disclosure</td>
                 <td>4487044</td>
                 <td>Base: 6,40<br />Temporal: 5,80<br />Vector: CVSS:3.0/AV:N/AC:H/PR:H/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -1520,7 +1524,7 @@
                 <td>Internet Explorer 9 on Windows Server 2008 for 32-bit Systems Service Pack 2</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489880" >4489880 (Monthly Rollup)<br /><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489873" >4489873 (IE Cumulative)</td>
                 <td>Low</td>
-                <td>Remote Code Execution</td>
+                <td>Information Disclosure</td>
                 <td>4487023<br />4486474</td>
                 <td>Base: 6,40<br />Temporal: 5,80<br />Vector: CVSS:3.0/AV:N/AC:H/PR:H/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -1528,7 +1532,7 @@
                 <td>Internet Explorer 9 on Windows Server 2008 for x64-based Systems Service Pack 2</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489880" >4489880 (Monthly Rollup)<br /><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489873" >4489873 (IE Cumulative)</td>
                 <td>Low</td>
-                <td>Remote Code Execution</td>
+                <td>Information Disclosure</td>
                 <td>4487023<br />4486474</td>
                 <td>Base: 6,40<br />Temporal: 5,80<br />Vector: CVSS:3.0/AV:N/AC:H/PR:H/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -1536,7 +1540,7 @@
                 <td>Microsoft Edge on Windows 10 for 32-bit Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489872" >4489872 (Security Update)</td>
                 <td>Important</td>
-                <td>Remote Code Execution</td>
+                <td>Information Disclosure</td>
                 <td>4487018</td>
                 <td>Base: 4,20<br />Temporal: 3,80<br />Vector: CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:N/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -1544,7 +1548,7 @@
                 <td>Microsoft Edge on Windows 10 for x64-based Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489872" >4489872 (Security Update)</td>
                 <td>Important</td>
-                <td>Remote Code Execution</td>
+                <td>Information Disclosure</td>
                 <td>4487018</td>
                 <td>Base: 4,20<br />Temporal: 3,80<br />Vector: CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:N/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -1552,7 +1556,7 @@
                 <td>Microsoft Edge on Windows 10 Version 1607 for 32-bit Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489882" >4489882 (Security Update)</td>
                 <td>Important</td>
-                <td>Remote Code Execution</td>
+                <td>Information Disclosure</td>
                 <td>4487026</td>
                 <td>Base: 4,20<br />Temporal: 3,80<br />Vector: CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:N/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -1560,7 +1564,7 @@
                 <td>Microsoft Edge on Windows 10 Version 1607 for x64-based Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489882" >4489882 (Security Update)</td>
                 <td>Important</td>
-                <td>Remote Code Execution</td>
+                <td>Information Disclosure</td>
                 <td>4487026</td>
                 <td>Base: 4,20<br />Temporal: 3,80<br />Vector: CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:N/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -1568,7 +1572,7 @@
                 <td>Microsoft Edge on Windows 10 Version 1703 for 32-bit Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489871" >4489871 (Security Update)</td>
                 <td>Important</td>
-                <td>Remote Code Execution</td>
+                <td>Information Disclosure</td>
                 <td>4487020</td>
                 <td>Base: 4,20<br />Temporal: 3,80<br />Vector: CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:N/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -1576,7 +1580,7 @@
                 <td>Microsoft Edge on Windows 10 Version 1703 for x64-based Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489871" >4489871 (Security Update)</td>
                 <td>Important</td>
-                <td>Remote Code Execution</td>
+                <td>Information Disclosure</td>
                 <td>4487020</td>
                 <td>Base: 4,20<br />Temporal: 3,80<br />Vector: CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:N/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -1584,7 +1588,7 @@
                 <td>Microsoft Edge on Windows 10 Version 1709 for 32-bit Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489886" >4489886 (Security Update)</td>
                 <td>Important</td>
-                <td>Remote Code Execution</td>
+                <td>Information Disclosure</td>
                 <td>4486996</td>
                 <td>Base: 4,20<br />Temporal: 3,80<br />Vector: CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:N/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -1592,7 +1596,7 @@
                 <td>Microsoft Edge on Windows 10 Version 1709 for ARM64-based Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489886" >4489886 (Security Update)</td>
                 <td>Important</td>
-                <td>Remote Code Execution</td>
+                <td>Information Disclosure</td>
                 <td>4486996</td>
                 <td>Base: 4,20<br />Temporal: 3,80<br />Vector: CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:N/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -1600,7 +1604,7 @@
                 <td>Microsoft Edge on Windows 10 Version 1709 for x64-based Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489886" >4489886 (Security Update)</td>
                 <td>Important</td>
-                <td>Remote Code Execution</td>
+                <td>Information Disclosure</td>
                 <td>4486996</td>
                 <td>Base: 4,20<br />Temporal: 3,80<br />Vector: CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:N/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -1608,7 +1612,7 @@
                 <td>Microsoft Edge on Windows 10 Version 1803 for 32-bit Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489868" >4489868 (Security Update)</td>
                 <td>Important</td>
-                <td>Remote Code Execution</td>
+                <td>Information Disclosure</td>
                 <td>4487017</td>
                 <td>Base: 4,20<br />Temporal: 3,80<br />Vector: CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:N/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -1616,7 +1620,7 @@
                 <td>Microsoft Edge on Windows 10 Version 1803 for ARM64-based Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489868" >4489868 (Security Update)</td>
                 <td>Important</td>
-                <td>Remote Code Execution</td>
+                <td>Information Disclosure</td>
                 <td>4487017</td>
                 <td>Base: 4,20<br />Temporal: 3,80<br />Vector: CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:N/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -1624,7 +1628,7 @@
                 <td>Microsoft Edge on Windows 10 Version 1803 for x64-based Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489868" >4489868 (Security Update)</td>
                 <td>Important</td>
-                <td>Remote Code Execution</td>
+                <td>Information Disclosure</td>
                 <td>4487017</td>
                 <td>Base: 4,20<br />Temporal: 3,80<br />Vector: CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:N/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -1632,7 +1636,7 @@
                 <td>Microsoft Edge on Windows 10 Version 1809 for 32-bit Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489899" >4489899 (Security Update)</td>
                 <td>Important</td>
-                <td>Remote Code Execution</td>
+                <td>Information Disclosure</td>
                 <td>4487044</td>
                 <td>Base: 4,20<br />Temporal: 3,80<br />Vector: CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:N/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -1640,7 +1644,7 @@
                 <td>Microsoft Edge on Windows 10 Version 1809 for ARM64-based Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489899" >4489899 (Security Update)</td>
                 <td>Important</td>
-                <td>Remote Code Execution</td>
+                <td>Information Disclosure</td>
                 <td>4487044</td>
                 <td>Base: 4,20<br />Temporal: 3,80<br />Vector: CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:N/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -1648,7 +1652,7 @@
                 <td>Microsoft Edge on Windows 10 Version 1809 for x64-based Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489899" >4489899 (Security Update)</td>
                 <td>Important</td>
-                <td>Remote Code Execution</td>
+                <td>Information Disclosure</td>
                 <td>4487044</td>
                 <td>Base: 4,20<br />Temporal: 3,80<br />Vector: CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:N/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -1656,7 +1660,7 @@
                 <td>Microsoft Edge on Windows Server 2016</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489882" >4489882 (Security Update)</td>
                 <td>Low</td>
-                <td>Remote Code Execution</td>
+                <td>Information Disclosure</td>
                 <td>4487026</td>
                 <td>Base: 4,20<br />Temporal: 3,80<br />Vector: CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:N/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -1664,7 +1668,7 @@
                 <td>Microsoft Edge on Windows Server 2019</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489899" >4489899 (Security Update)</td>
                 <td>Low</td>
-                <td>Remote Code Execution</td>
+                <td>Information Disclosure</td>
                 <td>4487044</td>
                 <td>Base: 4,20<br />Temporal: 3,80<br />Vector: CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:N/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -1680,7 +1684,7 @@
     </thead>
  <tr>
      <td>CVE-2019-0746</td>
-     <td>working with Trend Micro's Zero Day Initiative<br>https://www.zerodayinitiative.com/<br><br><br>bo13oy of Qihoo 360 Vulcan Team​<br>https://twitter.com/bo13oy,https://www.360.com<br><br><br></td>
+     <td>bo13oy of Qihoo 360 Vulcan Team​<br>https://twitter.com/bo13oy,https://www.360.com<br><br><br>working with Trend Micro's Zero Day Initiative<br>https://www.zerodayinitiative.com/<br><br><br></td>
  </tr>
 </table><h1 id="CVE-2019-0748">CVE-2019-0748 - Microsoft Office Access Connectivity Engine Remote Code Execution Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
  <thead style="background-color: #ededed">
@@ -6003,7 +6007,7 @@
         <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp2019-03-12T07:00:00&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
 
         <br></td>
-     <td>Moderate</td>
+     <td>Critical</td>
      <td>Remote Code Execution</td>
  </tr>
 </table>        <h2>Exploitability Index</h2>
@@ -6200,7 +6204,7 @@
     </thead>
  <tr>
      <td>CVE-2019-0771</td>
-     <td>Qixun Zhao of Qihoo 360 Vulcan Team​<br>https://twitter.com/S0rryMybad,http://www.360.com/<br><br><br></td>
+     <td>Qixun Zhao of Qihoo 360 Vulcan Team​<br>https://twitter.com/S0rryMybad,http://www.360.com/<br><br><br>Yuki Chen of Qihoo 360 Vulcan Team<br>http://www.360.com/<br><br><br></td>
  </tr>
 </table><h1 id="CVE-2019-0772">CVE-2019-0772 - Windows VBScript Engine Remote Code Execution Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
  <thead style="background-color: #ededed">
@@ -8219,7 +8223,7 @@
         <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp2019-03-12T07:00:00&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
 
         <br></td>
-     <td>Low</td>
+     <td>Important</td>
      <td>Remote Code Execution</td>
  </tr>
 </table>        <h2>Exploitability Index</h2>
@@ -9025,7 +9029,7 @@
         <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp2019-03-12T07:00:00&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
 
         <br></td>
-     <td>Important</td>
+     <td>Low</td>
      <td>Remote Code Execution</td>
  </tr>
 </table>        <h2>Exploitability Index</h2>
@@ -10317,8 +10321,8 @@ If this policy is disabled, then users are allowed to make multiple simultaneous
         <br>
         <b>Workarounds:</b><br>None
         <br>
-        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp2019-03-12T07:00:00&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
-<br />1.1&nbsp&nbsp&nbsp&nbsp2019-03-13T07:00:00&nbsp&nbsp&nbsp&nbsp<p>Updated the Publicly Disclosed information.</p>
+        <b>Revision:</b><br>1.1&nbsp&nbsp&nbsp&nbsp2019-03-13T07:00:00&nbsp&nbsp&nbsp&nbsp<p>Updated the Publicly Disclosed information.</p>
+<br />1.0&nbsp&nbsp&nbsp&nbsp2019-03-12T07:00:00&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
 
         <br></td>
      <td>Important</td>
@@ -10633,18 +10637,18 @@ If this policy is disabled, then users are allowed to make multiple simultaneous
         <b>Workarounds:</b><br>None
         <br>
         <b>Revision:</b><br>3.2&nbsp&nbsp&nbsp&nbsp2018-12-12T08:00:00&nbsp&nbsp&nbsp&nbsp<p>Fixed a typo in the FAQ.</p>
-<br />5.1&nbsp&nbsp&nbsp&nbsp2019-02-13T08:00:00&nbsp&nbsp&nbsp&nbsp<p>In the Security Updates table, corrected the Servicing Stack Update (SSU) for Windows 10 Version 1809 for x64-based Systems to 4470788. This is an informational change only.</p>
-<br />4.0&nbsp&nbsp&nbsp&nbsp2019-01-08T08:00:00&nbsp&nbsp&nbsp&nbsp<p>A Servicing Stack Update has been released for Windows 10 Version 1703. See the FAQ section for more information.</p>
-<br />2.0&nbsp&nbsp&nbsp&nbsp2018-12-05T08:00:00&nbsp&nbsp&nbsp&nbsp<p>A Servicing Stack Update has been released for Windows 10 Version 1809 and Windows Server 2019. See the FAQ section for more information.</p>
-<br />1.0&nbsp&nbsp&nbsp&nbsp2018-11-13T08:00:00&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
-<br />1.1&nbsp&nbsp&nbsp&nbsp2018-11-14T08:00:00&nbsp&nbsp&nbsp&nbsp<p>Corrected the link to the Windows Server 2008 Servicing Stack Update. This is an informational change only.</p>
 <br />3.1&nbsp&nbsp&nbsp&nbsp2018-12-11T08:00:00&nbsp&nbsp&nbsp&nbsp<p>Updated supersedence information. This is an informational change only.</p>
-<br />1.2&nbsp&nbsp&nbsp&nbsp2018-12-03T08:00:00&nbsp&nbsp&nbsp&nbsp<p>FAQs have been added to further explain Security Stack Updates. The FAQs include a table that indicates the most recent SSU release for each Windows version. This is an informational change only.</p>
-<br />3.0&nbsp&nbsp&nbsp&nbsp2018-12-11T08:00:00&nbsp&nbsp&nbsp&nbsp<p>A Servicing Stack Update has been released for Windows 10 Version 1709, Windows Server, version 1709 (Server Core Installation), Windows 10 Version 1803, and Windows Server, version 1803 (Server Core Installation). See the FAQ section for more information.</p>
-<br />5.2&nbsp&nbsp&nbsp&nbsp2019-02-14T08:00:00&nbsp&nbsp&nbsp&nbsp<p>In the Security Updates table, corrected the Servicing Stack Update (SSU) for Windows 10 Version 1803 for x64-based Systems to 4485449. This is an informational change only.</p>
 <br />5.0&nbsp&nbsp&nbsp&nbsp2019-02-12T08:00:00&nbsp&nbsp&nbsp&nbsp<p>A Servicing Stack Update has been released for Windows 10 Version 1607, Windows Server 2016, and Windows Server 2016 (Server Core installation); Windows 10 Version 1703; Windows 10 Version 1709 and Windows Server, version 1709 (Server Core Installation); Windows 10 Version 1803, and Windows Server, version 1803 (Server Core Installation). See the FAQ section for more information.</p>
+<br />3.0&nbsp&nbsp&nbsp&nbsp2018-12-11T08:00:00&nbsp&nbsp&nbsp&nbsp<p>A Servicing Stack Update has been released for Windows 10 Version 1709, Windows Server, version 1709 (Server Core Installation), Windows 10 Version 1803, and Windows Server, version 1803 (Server Core Installation). See the FAQ section for more information.</p>
+<br />4.0&nbsp&nbsp&nbsp&nbsp2019-01-08T08:00:00&nbsp&nbsp&nbsp&nbsp<p>A Servicing Stack Update has been released for Windows 10 Version 1703. See the FAQ section for more information.</p>
+<br />1.1&nbsp&nbsp&nbsp&nbsp2018-11-14T08:00:00&nbsp&nbsp&nbsp&nbsp<p>Corrected the link to the Windows Server 2008 Servicing Stack Update. This is an informational change only.</p>
 <br />2.0&nbsp&nbsp&nbsp&nbsp2018-12-05T08:00:00&nbsp&nbsp&nbsp&nbsp<p>A Servicing Stack Update has been released for Windows 10 Version 1809 and Windows Server 2019. See the FAQ section for more information.</p>
+<br />2.0&nbsp&nbsp&nbsp&nbsp2018-12-05T08:00:00&nbsp&nbsp&nbsp&nbsp<p>A Servicing Stack Update has been released for Windows 10 Version 1809 and Windows Server 2019. See the FAQ section for more information.</p>
+<br />5.2&nbsp&nbsp&nbsp&nbsp2019-02-14T08:00:00&nbsp&nbsp&nbsp&nbsp<p>In the Security Updates table, corrected the Servicing Stack Update (SSU) for Windows 10 Version 1803 for x64-based Systems to 4485449. This is an informational change only.</p>
+<br />5.1&nbsp&nbsp&nbsp&nbsp2019-02-13T08:00:00&nbsp&nbsp&nbsp&nbsp<p>In the Security Updates table, corrected the Servicing Stack Update (SSU) for Windows 10 Version 1809 for x64-based Systems to 4470788. This is an informational change only.</p>
+<br />1.2&nbsp&nbsp&nbsp&nbsp2018-12-03T08:00:00&nbsp&nbsp&nbsp&nbsp<p>FAQs have been added to further explain Security Stack Updates. The FAQs include a table that indicates the most recent SSU release for each Windows version. This is an informational change only.</p>
 <br />6.0&nbsp&nbsp&nbsp&nbsp2019-03-12T07:00:00&nbsp&nbsp&nbsp&nbsp<p>A Servicing Stack Update has been released for Windows 7 and Windows Server 2008 R2 and Windows Server 2008 R2  (Server Core installation). See the FAQ section for more information.</p>
+<br />1.0&nbsp&nbsp&nbsp&nbsp2018-11-13T08:00:00&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
 
         <br></td>
      <td>Critical</td>
@@ -11118,7 +11122,7 @@ If this policy is disabled, then users are allowed to make multiple simultaneous
     </thead>
  <tr>
      <td>CVE-2019-0592</td>
-     <td>Zhenhuan Li(@zenhumany) of Tencent Zhanlu Lab<br>http://www.tencent.com/<br><br><br>MoonLiang of Tencent Security Xuanwu Lab<br>https://xlab.tencent.com/<br><br><br></td>
+     <td>MoonLiang of Tencent Security Xuanwu Lab<br>https://xlab.tencent.com/<br><br><br>Zhenhuan Li(@zenhumany) of Tencent Zhanlu Lab<br>http://www.tencent.com/<br><br><br>Yuki Chen of Qihoo 360 Vulcan Team<br>http://www.360.com/<br><br><br></td>
  </tr>
 </table><h1 id="CVE-2019-0603">CVE-2019-0603 - Windows Deployment Services TFTP Server Remote Code Execution Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
  <thead style="background-color: #ededed">
@@ -12480,7 +12484,7 @@ If this policy is disabled, then users are allowed to make multiple simultaneous
         </tr>            <tr>
                 <td>Internet Explorer 11 on Windows Server 2019</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4489899" >4489899 (Security Update)</td>
-                <td>Low</td>
+                <td>Important</td>
                 <td>Remote Code Execution</td>
                 <td>4487044</td>
                 <td>Base: 7,50<br />Temporal: 6,70<br />Vector: CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
@@ -12497,7 +12501,7 @@ If this policy is disabled, then users are allowed to make multiple simultaneous
     </thead>
  <tr>
      <td>CVE-2019-0665</td>
-     <td>working with Trend Micro's Zero Day Initiative<br>http://www.zerodayinitiative.com/<br><br><br>Yuki Chen of Qihoo 360 Vulcan Team<br>http://www.360.com/<br><br><br>Simon Zuckerbraun working with Trend Micro's Zero Day Initiative<br>http://www.zerodayinitiative.com/<br><br><br></td>
+     <td>Yuki Chen of Qihoo 360 Vulcan Team<br>http://www.360.com/<br><br><br>working with Trend Micro's Zero Day Initiative<br>http://www.zerodayinitiative.com/<br><br><br>Simon Zuckerbraun working with Trend Micro's Zero Day Initiative<br>http://www.zerodayinitiative.com/<br><br><br></td>
  </tr>
 </table><h1 id="CVE-2019-0666">CVE-2019-0666 - Windows VBScript Engine Remote Code Execution Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
  <thead style="background-color: #ededed">
@@ -13093,7 +13097,7 @@ If this policy is disabled, then users are allowed to make multiple simultaneous
     </thead>
  <tr>
      <td>CVE-2019-0667</td>
-     <td>ysuper<br><br><br>Yuki Chen of Qihoo 360 Vulcan Team<br>http://www.360.com/<br><br><br>Anonymous working with Trend Micro's Zero Day Initiative<br>https://www.zerodayinitiative.com/<br><br><br>Ivan Fratric of Google Project Zero<br>https://www.google.com/<br><br><br>Lei Cao<br><br><br></td>
+     <td>Anonymous working with Trend Micro's Zero Day Initiative<br>https://www.zerodayinitiative.com/<br><br><br>Yuki Chen of Qihoo 360 Vulcan Team<br>http://www.360.com/<br><br><br>Ivan Fratric of Google Project Zero<br>https://www.google.com/<br><br><br>Lei Cao<br><br><br>ysuper<br><br><br></td>
  </tr>
 </table><h1 id="CVE-2019-0680">CVE-2019-0680 - Scripting Engine Memory Corruption Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
  <thead style="background-color: #ededed">
@@ -13122,7 +13126,7 @@ If this policy is disabled, then users are allowed to make multiple simultaneous
         <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp2019-03-12T07:00:00&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
 
         <br></td>
-     <td>Critical</td>
+     <td>Moderate</td>
      <td>Remote Code Execution</td>
  </tr>
 </table>        <h2>Exploitability Index</h2>
@@ -13586,7 +13590,7 @@ If this policy is disabled, then users are allowed to make multiple simultaneous
         <br>
         <b>Description:</b> <br><p>An elevation of privilege vulnerability exists in Active Directory Forest trusts due to a default setting that lets an attacker in the trusting forest request delegation of a TGT for an identity from the trusted forest. To exploit this vulnerability, an attacker would first need to compromise an Active Directory forest.</p>
 <p>An attacker who successfully exploited this vulnerability could request delegation of a TGT for an identity from the trusted forest.</p>
-<p>This update addresses the vulnerability by ensuring Active Directory Forest trusts disable TGT delegation by default.</p>
+<p>This update addresses the vulnerability by ensuring new Active Directory Forest trusts disable TGT delegation by default. The update does not change existing TGT delegation configurations.</p>
 
         <br>
         <b>FAQ:</b><br>None
@@ -13595,7 +13599,8 @@ If this policy is disabled, then users are allowed to make multiple simultaneous
         <br>
         <b>Workarounds:</b><br>None
         <br>
-        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp2019-03-12T07:00:00&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+        <b>Revision:</b><br>1.1&nbsp&nbsp&nbsp&nbsp2019-03-14T07:00:00&nbsp&nbsp&nbsp&nbsp<p>Updated vulnerability description.</p>
+<br />1.0&nbsp&nbsp&nbsp&nbsp2019-03-12T07:00:00&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
 
         <br></td>
      <td>Important</td>
@@ -15145,7 +15150,7 @@ If this policy is disabled, then users are allowed to make multiple simultaneous
     </thead>
  <tr>
      <td>CVE-2019-0696</td>
-     <td>MSRC Vulnerabilities and Mitigations Team<br><br><br></td>
+     <td>Axel Souchet (@0vercl0k) of MSRC Vulnerabilities and Mitigations Team<br>https://twitter.com/0vercl0k<br><br><br></td>
  </tr>
 </table><h1 id="CVE-2019-0697">CVE-2019-0697 - Windows DHCP Client Remote Code Execution Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
  <thead style="background-color: #ededed">
@@ -16739,7 +16744,7 @@ If this policy is disabled, then users are allowed to make multiple simultaneous
     </thead>
  <tr>
      <td>CVE-2019-0704</td>
-     <td>Andrew Burkhardt of MSRC Vulnerabilities & Mitigations Team<br><br><br></td>
+     <td>Andrew Burkhardt of MSRC Vulnerabilities & Mitigations Team<br><br><br>Andrew Burkhardt of MSRC Vulnerabilities & Mitigations Team<br><br><br></td>
  </tr>
 </table><h1 id="CVE-2019-0726">CVE-2019-0726 - Windows DHCP Client Remote Code Execution Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
  <thead style="background-color: #ededed">
@@ -16893,7 +16898,7 @@ If this policy is disabled, then users are allowed to make multiple simultaneous
     </thead>
  <tr>
      <td>CVE-2019-0726</td>
-     <td>Hector Cuesta @HectorCuesta<br>https://twitter.com/HectorCuesta<br><br><br>Mark Barnes (@incanus) of MWR Labs<br>https://twitter.com/incanus<br><br><br>Saran Neti of Trend Micro<br><br><br>Mikhail Tsvetkov of Positive Technologies<br>https://www.ptsecurity.com<br><br><br></td>
+     <td>Hector Cuesta @HectorCuesta<br>https://twitter.com/HectorCuesta<br><br><br>Mikhail Tsvetkov of Positive Technologies<br>https://www.ptsecurity.com<br><br><br>Saran Neti of Trend Micro<br><br><br>Mark Barnes (@incanus) of MWR Labs<br>https://twitter.com/incanus<br><br><br></td>
  </tr>
 </table><h1 id="ADV190008">ADV190008 - March 2019 Adobe Flash Security Update</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
  <thead style="background-color: #ededed">
@@ -17276,6 +17281,7 @@ After you set Internet Explorer to require a prompt before it runs ActiveX contr
      <td>        <b>CVE Title:</b> Azure Linux Agent Information Disclosure Vulnerability
         <br>
         <b>Description:</b> <br><p>An information disclosure vulnerability exists in the way Azure WaLinuxAgent creates swap files on resource disks. An authenticated attacker who successfully exploited this vulnerability could view data in swap that is normally hidden.</p>
+<p>None of the Azure endorsed <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/linux/endorsed-distros">distros</a> are vulnerable to this issue by default, but this can occur on customer customized or modified images when swapfile is created by the Azure linux agent and python3 is enabled as the default python version.</p>
 <p>This update addresses this vulnerability by preventing how the swap information is accessed.</p>
 
         <br>
@@ -17283,11 +17289,12 @@ After you set Internet Explorer to require a prompt before it runs ActiveX contr
 <p>The type of information that could be disclosed if an attacker successfully exploited this vulnerability is	Kernel memory read - unintentional read access to memory contents in kernel space from a user mode process.</p>
 <br />
         <br>
-        <b>Mitigations:</b><br>None
+        <b>Mitigations:</b><br>
         <br>
         <b>Workarounds:</b><br>None
         <br>
         <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp2019-03-14T07:00:00&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+<br />1.1&nbsp&nbsp&nbsp&nbsp2019-03-20T07:00:00&nbsp&nbsp&nbsp&nbsp<p>Added details to the vulnerability description and added a mitigation. This is an informational change only.</p>
 
         <br></td>
      <td>Important</td>
