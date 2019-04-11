@@ -114,7 +114,7 @@
 <tr><td>Windows Kernel</td>    <td><a href="#CVE-2019-0859">CVE-2019-0859</a></td>    <td>Win32k Elevation of Privilege Vulnerability</td></tr>
 <tr><td>Windows Kernel</td>    <td><a href="#CVE-2019-0856">CVE-2019-0856</a></td>    <td>Windows Remote Code Execution Vulnerability</td></tr>
 <tr><td>Windows Kernel</td>    <td><a href="#CVE-2019-0844">CVE-2019-0844</a></td>    <td>Windows Kernel Information Disclosure Vulnerability</td></tr>
-<tr><td>Windows SMB Server</td>    <td><a href="#CVE-2019-0786">CVE-2019-0786</a></td>    <td>SMB Server Elevation of Privilege Vulnerability</td></tr>
+<tr><td>Windows SMB Server</td>    <td><a href="#CVE-2019-0786">CVE-2019-0786</a></td>    <td>Hyper-V vSMB Remote Code Execution Vulnerability</td></tr>
 </table>
 <h1 id="CVE-2019-0739">CVE-2019-0739 - Scripting Engine Memory Corruption Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
  <thead style="background-color: #ededed">
@@ -143,7 +143,7 @@
         <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp2019-04-09T07:00:00&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
 
         <br></td>
-     <td>Moderate</td>
+     <td>Critical</td>
      <td>Remote Code Execution</td>
  </tr>
 </table>        <h2>Exploitability Index</h2>
@@ -369,7 +369,7 @@
         <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp2019-04-09T07:00:00&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
 
         <br></td>
-     <td>Low</td>
+     <td>Important</td>
      <td>Tampering</td>
  </tr>
 </table>        <h2>Exploitability Index</h2>
@@ -6979,7 +6979,7 @@ The security update addresses the vulnerability by changing how Task Scheduler h
     </thead>
  <tr>
      <td>CVE-2019-0841</td>
-     <td>Nabeel Ahmed of Dimension Data Belgium<br>https://twitter.com/rogue_kdc,https://www.dimensiondata.com/<br><br><br>Anonymous working with Trend Micro's Zero Day Initiative<br>https://www.zerodayinitiative.com/<br><br><br>Wenxu Wu (@ma7h1as) of Tencent Security Xuanwu Lab<br>https://xlab.tencent.com/<br><br><br></td>
+     <td>Wenxu Wu (@ma7h1as) of Tencent Security Xuanwu Lab<br>https://xlab.tencent.com/<br><br><br>Nabeel Ahmed of Dimension Data Belgium<br>https://twitter.com/rogue_kdc,https://www.dimensiondata.com/<br><br><br>Anonymous working with Trend Micro's Zero Day Initiative<br>https://www.zerodayinitiative.com/<br><br><br></td>
  </tr>
 </table><h1 id="CVE-2019-0842">CVE-2019-0842 - Windows VBScript Engine Remote Code Execution Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
  <thead style="background-color: #ededed">
@@ -9729,10 +9729,11 @@ No, Active Directory and Exchange Server are not affected.</p>
         <b>Workarounds:</b><br>None
         <br>
         <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp2019-04-09T07:00:00&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+<br />1.1&nbsp&nbsp&nbsp&nbsp2019-04-10T07:00:00&nbsp&nbsp&nbsp&nbsp<p>In the Security Updates table, corrected the impact entries to Remote Code Execution. This is an informational change only. Customers who have successfully installed the update do not need to take any further action.</p>
 
         <br></td>
      <td>Important</td>
-     <td>Information Disclosure</td>
+     <td>Remote Code Execution</td>
  </tr>
 </table>        <h2>Exploitability Index</h2>
 
@@ -9776,7 +9777,7 @@ No, Active Directory and Exchange Server are not affected.</p>
                 <td>Windows 10 for 32-bit Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493475" >4493475 (Security Update)</td>
                 <td>Important</td>
-                <td>Information Disclosure</td>
+                <td>Remote Code Execution</td>
                 <td>4489872</td>
                 <td>Base: 7,80<br />Temporal: 7,00<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -9784,7 +9785,7 @@ No, Active Directory and Exchange Server are not affected.</p>
                 <td>Windows 10 for x64-based Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493475" >4493475 (Security Update)</td>
                 <td>Important</td>
-                <td>Information Disclosure</td>
+                <td>Remote Code Execution</td>
                 <td>4489872</td>
                 <td>Base: 7,80<br />Temporal: 7,00<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -9792,7 +9793,7 @@ No, Active Directory and Exchange Server are not affected.</p>
                 <td>Windows 10 Version 1607 for 32-bit Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493470" >4493470 (Security Update)</td>
                 <td>Important</td>
-                <td>Information Disclosure</td>
+                <td>Remote Code Execution</td>
                 <td>4489882</td>
                 <td>Base: 7,80<br />Temporal: 7,00<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -9800,7 +9801,7 @@ No, Active Directory and Exchange Server are not affected.</p>
                 <td>Windows 10 Version 1607 for x64-based Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493470" >4493470 (Security Update)</td>
                 <td>Important</td>
-                <td>Information Disclosure</td>
+                <td>Remote Code Execution</td>
                 <td>4489882</td>
                 <td>Base: 7,80<br />Temporal: 7,00<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -9808,7 +9809,7 @@ No, Active Directory and Exchange Server are not affected.</p>
                 <td>Windows 10 Version 1703 for 32-bit Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493474" >4493474 (Security Update)</td>
                 <td>Important</td>
-                <td>Information Disclosure</td>
+                <td>Remote Code Execution</td>
                 <td>4489871</td>
                 <td>Base: 7,80<br />Temporal: 7,00<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -9816,7 +9817,7 @@ No, Active Directory and Exchange Server are not affected.</p>
                 <td>Windows 10 Version 1703 for x64-based Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493474" >4493474 (Security Update)</td>
                 <td>Important</td>
-                <td>Information Disclosure</td>
+                <td>Remote Code Execution</td>
                 <td>4489871</td>
                 <td>Base: 7,80<br />Temporal: 7,00<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -9824,7 +9825,7 @@ No, Active Directory and Exchange Server are not affected.</p>
                 <td>Windows 10 Version 1709 for 32-bit Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493441" >4493441 (Security Update)</td>
                 <td>Important</td>
-                <td>Information Disclosure</td>
+                <td>Remote Code Execution</td>
                 <td>4489886</td>
                 <td>Base: 7,80<br />Temporal: 7,00<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -9832,7 +9833,7 @@ No, Active Directory and Exchange Server are not affected.</p>
                 <td>Windows 10 Version 1709 for ARM64-based Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493441" >4493441 (Security Update)</td>
                 <td>Important</td>
-                <td>Information Disclosure</td>
+                <td>Remote Code Execution</td>
                 <td>4489886</td>
                 <td>Base: 7,80<br />Temporal: 7,00<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -9840,7 +9841,7 @@ No, Active Directory and Exchange Server are not affected.</p>
                 <td>Windows 10 Version 1709 for x64-based Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493441" >4493441 (Security Update)</td>
                 <td>Important</td>
-                <td>Information Disclosure</td>
+                <td>Remote Code Execution</td>
                 <td>4489886</td>
                 <td>Base: 7,80<br />Temporal: 7,00<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -9848,7 +9849,7 @@ No, Active Directory and Exchange Server are not affected.</p>
                 <td>Windows 10 Version 1803 for 32-bit Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493464" >4493464 (Security Update)</td>
                 <td>Important</td>
-                <td>Information Disclosure</td>
+                <td>Remote Code Execution</td>
                 <td>4489868</td>
                 <td>Base: 7,80<br />Temporal: 7,00<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -9856,7 +9857,7 @@ No, Active Directory and Exchange Server are not affected.</p>
                 <td>Windows 10 Version 1803 for ARM64-based Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493464" >4493464 (Security Update)</td>
                 <td>Important</td>
-                <td>Information Disclosure</td>
+                <td>Remote Code Execution</td>
                 <td>4489868</td>
                 <td>Base: 7,80<br />Temporal: 7,00<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -9864,7 +9865,7 @@ No, Active Directory and Exchange Server are not affected.</p>
                 <td>Windows 10 Version 1803 for x64-based Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493464" >4493464 (Security Update)</td>
                 <td>Important</td>
-                <td>Information Disclosure</td>
+                <td>Remote Code Execution</td>
                 <td>4489868</td>
                 <td>Base: 7,80<br />Temporal: 7,00<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -9872,7 +9873,7 @@ No, Active Directory and Exchange Server are not affected.</p>
                 <td>Windows 10 Version 1809 for 32-bit Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493509" >4493509 (Security Update)</td>
                 <td>Important</td>
-                <td>Information Disclosure</td>
+                <td>Remote Code Execution</td>
                 <td>4489899</td>
                 <td>Base: 7,80<br />Temporal: 7,00<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -9880,7 +9881,7 @@ No, Active Directory and Exchange Server are not affected.</p>
                 <td>Windows 10 Version 1809 for ARM64-based Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493509" >4493509 (Security Update)</td>
                 <td>Important</td>
-                <td>Information Disclosure</td>
+                <td>Remote Code Execution</td>
                 <td>4489899</td>
                 <td>Base: 7,80<br />Temporal: 7,00<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -9888,7 +9889,7 @@ No, Active Directory and Exchange Server are not affected.</p>
                 <td>Windows 10 Version 1809 for x64-based Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493509" >4493509 (Security Update)</td>
                 <td>Important</td>
-                <td>Information Disclosure</td>
+                <td>Remote Code Execution</td>
                 <td>4489899</td>
                 <td>Base: 7,80<br />Temporal: 7,00<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -9896,7 +9897,7 @@ No, Active Directory and Exchange Server are not affected.</p>
                 <td>Windows 7 for 32-bit Systems Service Pack 1</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493472" >4493472 (Monthly Rollup)<br /><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493448" >4493448 (Security Only)</td>
                 <td>Important</td>
-                <td>Information Disclosure</td>
+                <td>Remote Code Execution</td>
                 <td>4489878<br /></td>
                 <td>Base: 7,80<br />Temporal: 7,00<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -9904,7 +9905,7 @@ No, Active Directory and Exchange Server are not affected.</p>
                 <td>Windows 7 for x64-based Systems Service Pack 1</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493448" >4493448 (Security Only)<br /><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493472" >4493472 (Monthly Rollup)</td>
                 <td>Important</td>
-                <td>Information Disclosure</td>
+                <td>Remote Code Execution</td>
                 <td><br />4489878</td>
                 <td>Base: 7,80<br />Temporal: 7,00<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -9912,7 +9913,7 @@ No, Active Directory and Exchange Server are not affected.</p>
                 <td>Windows 8.1 for 32-bit systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493467" >4493467 (Security Only)<br /><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493446" >4493446 (Monthly Rollup)</td>
                 <td>Important</td>
-                <td>Information Disclosure</td>
+                <td>Remote Code Execution</td>
                 <td><br />4489881</td>
                 <td>Base: 7,80<br />Temporal: 7,00<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -9920,7 +9921,7 @@ No, Active Directory and Exchange Server are not affected.</p>
                 <td>Windows 8.1 for x64-based systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493446" >4493446 (Monthly Rollup)<br /><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493467" >4493467 (Security Only)</td>
                 <td>Important</td>
-                <td>Information Disclosure</td>
+                <td>Remote Code Execution</td>
                 <td>4489881<br /></td>
                 <td>Base: 7,80<br />Temporal: 7,00<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -9928,7 +9929,7 @@ No, Active Directory and Exchange Server are not affected.</p>
                 <td>Windows RT 8.1</td>
                 <td><a href="" >4493446 (Monthly Rollup)</td>
                 <td>Important</td>
-                <td>Information Disclosure</td>
+                <td>Remote Code Execution</td>
                 <td>4489881</td>
                 <td>Base: 7,80<br />Temporal: 7,00<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -9936,7 +9937,7 @@ No, Active Directory and Exchange Server are not affected.</p>
                 <td>Windows Server 2008 for 32-bit Systems Service Pack 2</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493458" >4493458 (Security Only)<br /><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493471" >4493471 (Monthly Rollup)</td>
                 <td>Important</td>
-                <td>Information Disclosure</td>
+                <td>Remote Code Execution</td>
                 <td><br />4489880</td>
                 <td>Base: 7,80<br />Temporal: 7,00<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -9944,7 +9945,7 @@ No, Active Directory and Exchange Server are not affected.</p>
                 <td>Windows Server 2008 for 32-bit Systems Service Pack 2 (Server Core installation)</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493458" >4493458 (Security Only)<br /><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493471" >4493471 (Monthly Rollup)</td>
                 <td>Important</td>
-                <td>Information Disclosure</td>
+                <td>Remote Code Execution</td>
                 <td><br />4489880</td>
                 <td>Base: 7,80<br />Temporal: 7,00<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -9952,7 +9953,7 @@ No, Active Directory and Exchange Server are not affected.</p>
                 <td>Windows Server 2008 for Itanium-Based Systems Service Pack 2</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493458" >4493458 (Security Only)<br /><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493471" >4493471 (Monthly Rollup)</td>
                 <td>Important</td>
-                <td>Information Disclosure</td>
+                <td>Remote Code Execution</td>
                 <td><br />4489880</td>
                 <td>Base: 7,80<br />Temporal: 7,00<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -9960,7 +9961,7 @@ No, Active Directory and Exchange Server are not affected.</p>
                 <td>Windows Server 2008 for x64-based Systems Service Pack 2</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493458" >4493458 (Security Only)<br /><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493471" >4493471 (Monthly Rollup)</td>
                 <td>Important</td>
-                <td>Information Disclosure</td>
+                <td>Remote Code Execution</td>
                 <td><br />4489880</td>
                 <td>Base: 7,80<br />Temporal: 7,00<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -9968,7 +9969,7 @@ No, Active Directory and Exchange Server are not affected.</p>
                 <td>Windows Server 2008 for x64-based Systems Service Pack 2 (Server Core installation)</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493458" >4493458 (Security Only)<br /><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493471" >4493471 (Monthly Rollup)</td>
                 <td>Important</td>
-                <td>Information Disclosure</td>
+                <td>Remote Code Execution</td>
                 <td><br />4489880</td>
                 <td>Base: 7,80<br />Temporal: 7,00<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -9976,7 +9977,7 @@ No, Active Directory and Exchange Server are not affected.</p>
                 <td>Windows Server 2008 R2 for Itanium-Based Systems Service Pack 1</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493448" >4493448 (Security Only)<br /><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493472" >4493472 (Monthly Rollup)</td>
                 <td>Important</td>
-                <td>Information Disclosure</td>
+                <td>Remote Code Execution</td>
                 <td><br />4489878</td>
                 <td>Base: 7,80<br />Temporal: 7,00<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -9984,7 +9985,7 @@ No, Active Directory and Exchange Server are not affected.</p>
                 <td>Windows Server 2008 R2 for x64-based Systems Service Pack 1</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493448" >4493448 (Security Only)<br /><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493472" >4493472 (Monthly Rollup)</td>
                 <td>Important</td>
-                <td>Information Disclosure</td>
+                <td>Remote Code Execution</td>
                 <td><br />4489878</td>
                 <td>Base: 7,80<br />Temporal: 7,00<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -9992,7 +9993,7 @@ No, Active Directory and Exchange Server are not affected.</p>
                 <td>Windows Server 2008 R2 for x64-based Systems Service Pack 1 (Server Core installation)</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493448" >4493448 (Security Only)<br /><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493472" >4493472 (Monthly Rollup)</td>
                 <td>Important</td>
-                <td>Information Disclosure</td>
+                <td>Remote Code Execution</td>
                 <td><br />4489878</td>
                 <td>Base: 7,80<br />Temporal: 7,00<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -10000,7 +10001,7 @@ No, Active Directory and Exchange Server are not affected.</p>
                 <td>Windows Server 2012</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493450" >4493450 (Security Only)<br /><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493451" >4493451 (Monthly Rollup)</td>
                 <td>Important</td>
-                <td>Information Disclosure</td>
+                <td>Remote Code Execution</td>
                 <td><br />4489891</td>
                 <td>Base: 7,80<br />Temporal: 7,00<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -10008,7 +10009,7 @@ No, Active Directory and Exchange Server are not affected.</p>
                 <td>Windows Server 2012 (Server Core installation)</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493450" >4493450 (Security Only)<br /><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493451" >4493451 (Monthly Rollup)</td>
                 <td>Important</td>
-                <td>Information Disclosure</td>
+                <td>Remote Code Execution</td>
                 <td><br />4489891</td>
                 <td>Base: 7,80<br />Temporal: 7,00<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -10016,7 +10017,7 @@ No, Active Directory and Exchange Server are not affected.</p>
                 <td>Windows Server 2012 R2</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493446" >4493446 (Monthly Rollup)<br /><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493467" >4493467 (Security Only)</td>
                 <td>Important</td>
-                <td>Information Disclosure</td>
+                <td>Remote Code Execution</td>
                 <td>4489881<br /></td>
                 <td>Base: 7,80<br />Temporal: 7,00<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -10024,7 +10025,7 @@ No, Active Directory and Exchange Server are not affected.</p>
                 <td>Windows Server 2012 R2 (Server Core installation)</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493446" >4493446 (Monthly Rollup)<br /><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493467" >4493467 (Security Only)</td>
                 <td>Important</td>
-                <td>Information Disclosure</td>
+                <td>Remote Code Execution</td>
                 <td>4489881<br /></td>
                 <td>Base: 7,80<br />Temporal: 7,00<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -10032,7 +10033,7 @@ No, Active Directory and Exchange Server are not affected.</p>
                 <td>Windows Server 2016</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493470" >4493470 (Security Update)</td>
                 <td>Important</td>
-                <td>Information Disclosure</td>
+                <td>Remote Code Execution</td>
                 <td>4489882</td>
                 <td>Base: 7,80<br />Temporal: 7,00<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -10040,7 +10041,7 @@ No, Active Directory and Exchange Server are not affected.</p>
                 <td>Windows Server 2016  (Server Core installation)</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493470" >4493470 (Security Update)</td>
                 <td>Important</td>
-                <td>Information Disclosure</td>
+                <td>Remote Code Execution</td>
                 <td>4489882</td>
                 <td>Base: 7,80<br />Temporal: 7,00<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -10048,7 +10049,7 @@ No, Active Directory and Exchange Server are not affected.</p>
                 <td>Windows Server 2019</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493509" >4493509 (Security Update)</td>
                 <td>Important</td>
-                <td>Information Disclosure</td>
+                <td>Remote Code Execution</td>
                 <td>4489899</td>
                 <td>Base: 7,80<br />Temporal: 7,00<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -10056,7 +10057,7 @@ No, Active Directory and Exchange Server are not affected.</p>
                 <td>Windows Server 2019  (Server Core installation)</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493509" >4493509 (Security Update)</td>
                 <td>Important</td>
-                <td>Information Disclosure</td>
+                <td>Remote Code Execution</td>
                 <td>4489899</td>
                 <td>Base: 7,80<br />Temporal: 7,00<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -10064,7 +10065,7 @@ No, Active Directory and Exchange Server are not affected.</p>
                 <td>Windows Server, version 1709  (Server Core Installation)</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493441" >4493441 (Security Update)</td>
                 <td>Important</td>
-                <td>Information Disclosure</td>
+                <td>Remote Code Execution</td>
                 <td>4489886</td>
                 <td>Base: 7,80<br />Temporal: 7,00<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -10072,7 +10073,7 @@ No, Active Directory and Exchange Server are not affected.</p>
                 <td>Windows Server, version 1803  (Server Core Installation)</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4493464" >4493464 (Security Update)</td>
                 <td>Important</td>
-                <td>Information Disclosure</td>
+                <td>Remote Code Execution</td>
                 <td>4489868</td>
                 <td>Base: 7,80<br />Temporal: 7,00<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
@@ -10478,7 +10479,7 @@ No, Active Directory and Exchange Server are not affected.</p>
     </thead>
  <tr>
      <td>CVE-2019-0853</td>
-     <td>Axel Souchet (@0vercl0k) of MSRC Vulnerabilities and Mitigations Team<br>https://twitter.com/0vercl0k<br><br><br>Hossein Lotfi working with Trend Micro's Zero Day Initiative<br>https://www.zerodayinitiative.com/<br><br><br>Thomas Imbert (@masthoon) of MSRC Vulnerabilities and Mitigations Team<br>https://twitter.com/masthoon<br><br><br></td>
+     <td>Thomas Imbert (@masthoon) of MSRC Vulnerabilities and Mitigations Team<br>https://twitter.com/masthoon<br><br><br>Hossein Lotfi working with Trend Micro's Zero Day Initiative<br>https://www.zerodayinitiative.com/<br><br><br>Axel Souchet (@0vercl0k) of MSRC Vulnerabilities and Mitigations Team<br>https://twitter.com/0vercl0k<br><br><br></td>
  </tr>
 </table><h1 id="CVE-2019-0858">CVE-2019-0858 - Microsoft Exchange Spoofing Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
  <thead style="background-color: #ededed">
@@ -11465,20 +11466,20 @@ No, Active Directory and Exchange Server are not affected.</p>
         <br>
         <b>Workarounds:</b><br>None
         <br>
-        <b>Revision:</b><br>2.0&nbsp&nbsp&nbsp&nbsp2018-12-05T08:00:00&nbsp&nbsp&nbsp&nbsp<p>A Servicing Stack Update has been released for Windows 10 Version 1809 and Windows Server 2019. See the FAQ section for more information.</p>
-<br />1.0&nbsp&nbsp&nbsp&nbsp2018-11-13T08:00:00&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+        <b>Revision:</b><br>5.1&nbsp&nbsp&nbsp&nbsp2019-02-13T08:00:00&nbsp&nbsp&nbsp&nbsp<p>In the Security Updates table, corrected the Servicing Stack Update (SSU) for Windows 10 Version 1809 for x64-based Systems to 4470788. This is an informational change only.</p>
+<br />2.0&nbsp&nbsp&nbsp&nbsp2018-12-05T08:00:00&nbsp&nbsp&nbsp&nbsp<p>A Servicing Stack Update has been released for Windows 10 Version 1809 and Windows Server 2019. See the FAQ section for more information.</p>
 <br />3.1&nbsp&nbsp&nbsp&nbsp2018-12-11T08:00:00&nbsp&nbsp&nbsp&nbsp<p>Updated supersedence information. This is an informational change only.</p>
-<br />3.0&nbsp&nbsp&nbsp&nbsp2018-12-11T08:00:00&nbsp&nbsp&nbsp&nbsp<p>A Servicing Stack Update has been released for Windows 10 Version 1709, Windows Server, version 1709 (Server Core Installation), Windows 10 Version 1803, and Windows Server, version 1803 (Server Core Installation). See the FAQ section for more information.</p>
-<br />7.0&nbsp&nbsp&nbsp&nbsp2019-04-09T07:00:00&nbsp&nbsp&nbsp&nbsp<p>A Servicing Stack Update has been released for Windows Server 2008 and Windows Server 2008 (Server Core installation); Windows 10 version 1809, Windows Server 2019, and Windows Server 2019 (Server Core installation).  See the FAQ section for more information.</p>
+<br />5.2&nbsp&nbsp&nbsp&nbsp2019-02-14T08:00:00&nbsp&nbsp&nbsp&nbsp<p>In the Security Updates table, corrected the Servicing Stack Update (SSU) for Windows 10 Version 1803 for x64-based Systems to 4485449. This is an informational change only.</p>
 <br />1.2&nbsp&nbsp&nbsp&nbsp2018-12-03T08:00:00&nbsp&nbsp&nbsp&nbsp<p>FAQs have been added to further explain Security Stack Updates. The FAQs include a table that indicates the most recent SSU release for each Windows version. This is an informational change only.</p>
-<br />6.0&nbsp&nbsp&nbsp&nbsp2019-03-12T07:00:00&nbsp&nbsp&nbsp&nbsp<p>A Servicing Stack Update has been released for Windows 7 and Windows Server 2008 R2 and Windows Server 2008 R2  (Server Core installation). See the FAQ section for more information.</p>
+<br />1.0&nbsp&nbsp&nbsp&nbsp2018-11-13T08:00:00&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+<br />2.0&nbsp&nbsp&nbsp&nbsp2018-12-05T08:00:00&nbsp&nbsp&nbsp&nbsp<p>A Servicing Stack Update has been released for Windows 10 Version 1809 and Windows Server 2019. See the FAQ section for more information.</p>
+<br />3.0&nbsp&nbsp&nbsp&nbsp2018-12-11T08:00:00&nbsp&nbsp&nbsp&nbsp<p>A Servicing Stack Update has been released for Windows 10 Version 1709, Windows Server, version 1709 (Server Core Installation), Windows 10 Version 1803, and Windows Server, version 1803 (Server Core Installation). See the FAQ section for more information.</p>
 <br />3.2&nbsp&nbsp&nbsp&nbsp2018-12-12T08:00:00&nbsp&nbsp&nbsp&nbsp<p>Fixed a typo in the FAQ.</p>
 <br />5.0&nbsp&nbsp&nbsp&nbsp2019-02-12T08:00:00&nbsp&nbsp&nbsp&nbsp<p>A Servicing Stack Update has been released for Windows 10 Version 1607, Windows Server 2016, and Windows Server 2016 (Server Core installation); Windows 10 Version 1703; Windows 10 Version 1709 and Windows Server, version 1709 (Server Core Installation); Windows 10 Version 1803, and Windows Server, version 1803 (Server Core Installation). See the FAQ section for more information.</p>
+<br />6.0&nbsp&nbsp&nbsp&nbsp2019-03-12T07:00:00&nbsp&nbsp&nbsp&nbsp<p>A Servicing Stack Update has been released for Windows 7 and Windows Server 2008 R2 and Windows Server 2008 R2  (Server Core installation). See the FAQ section for more information.</p>
 <br />1.1&nbsp&nbsp&nbsp&nbsp2018-11-14T08:00:00&nbsp&nbsp&nbsp&nbsp<p>Corrected the link to the Windows Server 2008 Servicing Stack Update. This is an informational change only.</p>
 <br />4.0&nbsp&nbsp&nbsp&nbsp2019-01-08T08:00:00&nbsp&nbsp&nbsp&nbsp<p>A Servicing Stack Update has been released for Windows 10 Version 1703. See the FAQ section for more information.</p>
-<br />5.1&nbsp&nbsp&nbsp&nbsp2019-02-13T08:00:00&nbsp&nbsp&nbsp&nbsp<p>In the Security Updates table, corrected the Servicing Stack Update (SSU) for Windows 10 Version 1809 for x64-based Systems to 4470788. This is an informational change only.</p>
-<br />5.2&nbsp&nbsp&nbsp&nbsp2019-02-14T08:00:00&nbsp&nbsp&nbsp&nbsp<p>In the Security Updates table, corrected the Servicing Stack Update (SSU) for Windows 10 Version 1803 for x64-based Systems to 4485449. This is an informational change only.</p>
-<br />2.0&nbsp&nbsp&nbsp&nbsp2018-12-05T08:00:00&nbsp&nbsp&nbsp&nbsp<p>A Servicing Stack Update has been released for Windows 10 Version 1809 and Windows Server 2019. See the FAQ section for more information.</p>
+<br />7.0&nbsp&nbsp&nbsp&nbsp2019-04-09T07:00:00&nbsp&nbsp&nbsp&nbsp<p>A Servicing Stack Update has been released for Windows Server 2008 and Windows Server 2008 (Server Core installation); Windows 10 version 1809, Windows Server 2019, and Windows Server 2019 (Server Core installation).  See the FAQ section for more information.</p>
 
         <br></td>
      <td>Critical</td>
@@ -13943,6 +13944,7 @@ To exploit this vulnerability, an attacker would first have to log on to the sys
         <b>Workarounds:</b><br>None
         <br>
         <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp2019-04-09T07:00:00&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+<br />1.1&nbsp&nbsp&nbsp&nbsp2019-04-10T07:00:00&nbsp&nbsp&nbsp&nbsp<p>Updated acknowledgment. This is an informational change only.</p>
 
         <br></td>
      <td>Important</td>
@@ -14198,7 +14200,7 @@ To exploit this vulnerability, an attacker would first have to log on to the sys
     </thead>
  <tr>
      <td>CVE-2019-0752</td>
-     <td>HexKitchen of Trend Micro<br><br><br>Yuki Chen of Qihoo 360 Vulcan Team<br>http://www.360.com/<br><br><br></td>
+     <td>HexKitchen of Trend Micro's Zero Day Initiative<br>https://www.zerodayinitiative.com/<br><br><br>Yuki Chen of Qihoo 360 Vulcan Team<br>http://www.360.com/<br><br><br></td>
  </tr>
 </table><h1 id="CVE-2019-0753">CVE-2019-0753 - Scripting Engine Memory Corruption Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
  <thead style="background-color: #ededed">
@@ -14482,7 +14484,7 @@ To exploit this vulnerability, an attacker would first have to log on to the sys
      <td>CVE-2019-0753</td>
      <td>Yuki Chen of Qihoo 360 Vulcan Team<br>http://www.360.com/<br><br><br></td>
  </tr>
-</table><h1 id="CVE-2019-0786">CVE-2019-0786 - SMB Server Elevation of Privilege Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+</table><h1 id="CVE-2019-0786">CVE-2019-0786 - Hyper-V vSMB Remote Code Execution Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
  <thead style="background-color: #ededed">
   <tr>
    <td><b>CVE ID</b></td>
@@ -14493,11 +14495,11 @@ To exploit this vulnerability, an attacker would first have to log on to the sys
  </thead>
  <tr>
      <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0786">CVE-2019-0786</a><br><a href="http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-0786">MITRE</a><br><a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2019-0786">NVD</a></td>
-     <td>        <b>CVE Title:</b> SMB Server Elevation of Privilege Vulnerability
+     <td>        <b>CVE Title:</b> Hyper-V vSMB Remote Code Execution Vulnerability
         <br>
-        <b>Description:</b> <br><p>An elevation of privilege vulnerability exists in the Microsoft Server Message Block (SMB) Server when an attacker with valid credentials attempts to open a specially crafted file over the SMB protocol on the same machine. An attacker who successfully exploited this vulnerability could bypass certain security checks in the operating system.</p>
-<p>To exploit the vulnerability, an attacker would first have to log on to the system. An attacker could then run a specially crafted application that could exploit the vulnerability and take control of an affected system.</p>
-<p>The update addresses the vulnerability by correcting how Windows SMB Server handles such specially crafted files.</p>
+        <b>Description:</b> <br><p>A remote code execution vulnerability exists when Windows Hyper-V on a host server fails to properly validate vSMB packet data. An attacker who successfully exploited these vulnerabilities could execute arbitrary code on a target operating system.</p>
+<p>To exploit these vulnerabilities, an attacker running inside a virtual machine could run a specially crafted application that could cause the Hyper-V host operating system to execute arbitrary code.</p>
+<p>The update addresses the vulnerabilities by correcting how Windows Hyper-V validates vSMB packet data.</p>
 
         <br>
         <b>FAQ:</b><br>None
@@ -14506,7 +14508,8 @@ To exploit this vulnerability, an attacker would first have to log on to the sys
         <br>
         <b>Workarounds:</b><br>None
         <br>
-        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp2019-04-09T07:00:00&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+        <b>Revision:</b><br>1.1&nbsp&nbsp&nbsp&nbsp2019-04-10T07:00:00&nbsp&nbsp&nbsp&nbsp<p>In the Security Updates table, corrected the impact entries to Remote Code Execution. This is an informational change only. Customers who have successfully installed the update do not need to take any further action.</p>
+<br />1.0&nbsp&nbsp&nbsp&nbsp2019-04-09T07:00:00&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
 
         <br></td>
      <td>Critical</td>
@@ -15479,7 +15482,7 @@ To exploit this vulnerability, an attacker would first have to log on to the sys
         <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp2019-04-09T07:00:00&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
 
         <br></td>
-     <td>Moderate</td>
+     <td>Critical</td>
      <td>Remote Code Execution</td>
  </tr>
 </table>        <h2>Exploitability Index</h2>
@@ -16353,7 +16356,7 @@ To exploit this vulnerability, an attacker would first have to log on to the sys
         <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp2019-04-09T07:00:00&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
 
         <br></td>
-     <td>Important</td>
+     <td>Low</td>
      <td>Information Disclosure</td>
  </tr>
 </table>        <h2>Exploitability Index</h2>
@@ -16470,7 +16473,7 @@ To exploit this vulnerability, an attacker would first have to log on to the sys
         <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp2019-04-09T07:00:00&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
 
         <br></td>
-     <td>Important</td>
+     <td>Low</td>
      <td>Information Disclosure</td>
  </tr>
 </table>        <h2>Exploitability Index</h2>
@@ -17288,9 +17291,9 @@ To exploit this vulnerability, an attacker would first have to log on to the sys
      <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0856">CVE-2019-0856</a><br><a href="http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-0856">MITRE</a><br><a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2019-0856">NVD</a></td>
      <td>        <b>CVE Title:</b> Windows Remote Code Execution Vulnerability
         <br>
-        <b>Description:</b> <br><p>A remote code execution vulnerability exists when Windows improperly handles objects in memory. An attacker who successfully exploited these vulnerabilities could take control of an affected system.</p>
-<p>To exploit the vulnerabilities, an attacker would first have to log on to the target system and then run a specially crafted application.</p>
-<p>The updates address the vulnerabilities by correcting how Windows handles objects in memory.</p>
+        <b>Description:</b> <br><p>A remote code execution vulnerability exists when Windows improperly handles objects in memory. An attacker who successfully exploited the vulnerability could take control of an affected system.</p>
+<p>To exploit the vulnerability, an authenticated attacker could connect via the Windows Remote Registry Service, causing Windows to execute arbitrary code.</p>
+<p>The security update addresses the vulnerability by correcting how Windows handles objects in memory.</p>
 
         <br>
         <b>FAQ:</b><br>None
@@ -17300,6 +17303,7 @@ To exploit this vulnerability, an attacker would first have to log on to the sys
         <b>Workarounds:</b><br>None
         <br>
         <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp2019-04-09T07:00:00&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+<br />1.1&nbsp&nbsp&nbsp&nbsp2019-04-09T07:00:00&nbsp&nbsp&nbsp&nbsp<p>Corrected vulnerability description and updated one or more CVSS scores for the affected products. These are informational changes only.</p>
 
         <br></td>
      <td>Important</td>
@@ -17349,7 +17353,7 @@ To exploit this vulnerability, an attacker would first have to log on to the sys
                 <td>Important</td>
                 <td>Remote Code Execution</td>
                 <td>4489872</td>
-                <td>Base: 7,30<br />Temporal: 6,60<br />Vector: CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
+                <td>Base: 6,60<br />Temporal: 5,90<br />Vector: CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
         </tr>            <tr>
                 <td>Windows 10 for x64-based Systems</td>
@@ -17357,7 +17361,7 @@ To exploit this vulnerability, an attacker would first have to log on to the sys
                 <td>Important</td>
                 <td>Remote Code Execution</td>
                 <td>4489872</td>
-                <td>Base: 7,30<br />Temporal: 6,60<br />Vector: CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
+                <td>Base: 6,60<br />Temporal: 5,90<br />Vector: CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
         </tr>            <tr>
                 <td>Windows 10 Version 1607 for 32-bit Systems</td>
@@ -17365,7 +17369,7 @@ To exploit this vulnerability, an attacker would first have to log on to the sys
                 <td>Important</td>
                 <td>Remote Code Execution</td>
                 <td>4489882</td>
-                <td>Base: 7,30<br />Temporal: 6,60<br />Vector: CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
+                <td>Base: 6,60<br />Temporal: 5,90<br />Vector: CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
         </tr>            <tr>
                 <td>Windows 10 Version 1607 for x64-based Systems</td>
@@ -17373,7 +17377,7 @@ To exploit this vulnerability, an attacker would first have to log on to the sys
                 <td>Important</td>
                 <td>Remote Code Execution</td>
                 <td>4489882</td>
-                <td>Base: 7,30<br />Temporal: 6,60<br />Vector: CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
+                <td>Base: 6,60<br />Temporal: 5,90<br />Vector: CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
         </tr>            <tr>
                 <td>Windows 10 Version 1703 for 32-bit Systems</td>
@@ -17381,7 +17385,7 @@ To exploit this vulnerability, an attacker would first have to log on to the sys
                 <td>Important</td>
                 <td>Remote Code Execution</td>
                 <td>4489871</td>
-                <td>Base: 7,30<br />Temporal: 6,60<br />Vector: CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
+                <td>Base: 6,60<br />Temporal: 5,90<br />Vector: CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
         </tr>            <tr>
                 <td>Windows 10 Version 1703 for x64-based Systems</td>
@@ -17389,7 +17393,7 @@ To exploit this vulnerability, an attacker would first have to log on to the sys
                 <td>Important</td>
                 <td>Remote Code Execution</td>
                 <td>4489871</td>
-                <td>Base: 7,30<br />Temporal: 6,60<br />Vector: CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
+                <td>Base: 6,60<br />Temporal: 5,90<br />Vector: CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
         </tr>            <tr>
                 <td>Windows 10 Version 1709 for 32-bit Systems</td>
@@ -17397,7 +17401,7 @@ To exploit this vulnerability, an attacker would first have to log on to the sys
                 <td>Important</td>
                 <td>Remote Code Execution</td>
                 <td>4489886</td>
-                <td>Base: 7,30<br />Temporal: 6,60<br />Vector: CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
+                <td>Base: 6,60<br />Temporal: 5,90<br />Vector: CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
         </tr>            <tr>
                 <td>Windows 10 Version 1709 for ARM64-based Systems</td>
@@ -17405,7 +17409,7 @@ To exploit this vulnerability, an attacker would first have to log on to the sys
                 <td>Important</td>
                 <td>Remote Code Execution</td>
                 <td>4489886</td>
-                <td>Base: 7,30<br />Temporal: 6,60<br />Vector: CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
+                <td>Base: 6,60<br />Temporal: 5,90<br />Vector: CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
         </tr>            <tr>
                 <td>Windows 10 Version 1709 for x64-based Systems</td>
@@ -17413,7 +17417,7 @@ To exploit this vulnerability, an attacker would first have to log on to the sys
                 <td>Important</td>
                 <td>Remote Code Execution</td>
                 <td>4489886</td>
-                <td>Base: 7,30<br />Temporal: 6,60<br />Vector: CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
+                <td>Base: 6,60<br />Temporal: 5,90<br />Vector: CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
         </tr>            <tr>
                 <td>Windows 10 Version 1803 for 32-bit Systems</td>
@@ -17421,7 +17425,7 @@ To exploit this vulnerability, an attacker would first have to log on to the sys
                 <td>Important</td>
                 <td>Remote Code Execution</td>
                 <td>4489868</td>
-                <td>Base: 7,30<br />Temporal: 6,60<br />Vector: CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
+                <td>Base: 6,60<br />Temporal: 5,90<br />Vector: CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
         </tr>            <tr>
                 <td>Windows 10 Version 1803 for ARM64-based Systems</td>
@@ -17429,7 +17433,7 @@ To exploit this vulnerability, an attacker would first have to log on to the sys
                 <td>Important</td>
                 <td>Remote Code Execution</td>
                 <td>4489868</td>
-                <td>Base: 7,30<br />Temporal: 6,60<br />Vector: CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
+                <td>Base: 6,60<br />Temporal: 5,90<br />Vector: CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
         </tr>            <tr>
                 <td>Windows 10 Version 1803 for x64-based Systems</td>
@@ -17437,7 +17441,7 @@ To exploit this vulnerability, an attacker would first have to log on to the sys
                 <td>Important</td>
                 <td>Remote Code Execution</td>
                 <td>4489868</td>
-                <td>Base: 7,30<br />Temporal: 6,60<br />Vector: CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
+                <td>Base: 6,60<br />Temporal: 5,90<br />Vector: CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
         </tr>            <tr>
                 <td>Windows 10 Version 1809 for 32-bit Systems</td>
@@ -17445,7 +17449,7 @@ To exploit this vulnerability, an attacker would first have to log on to the sys
                 <td>Important</td>
                 <td>Remote Code Execution</td>
                 <td>4489899</td>
-                <td>Base: 7,30<br />Temporal: 6,60<br />Vector: CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
+                <td>Base: 6,60<br />Temporal: 5,90<br />Vector: CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
         </tr>            <tr>
                 <td>Windows 10 Version 1809 for ARM64-based Systems</td>
@@ -17453,7 +17457,7 @@ To exploit this vulnerability, an attacker would first have to log on to the sys
                 <td>Important</td>
                 <td>Remote Code Execution</td>
                 <td>4489899</td>
-                <td>Base: 7,30<br />Temporal: 6,60<br />Vector: CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
+                <td>Base: 6,60<br />Temporal: 5,90<br />Vector: CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
         </tr>            <tr>
                 <td>Windows 10 Version 1809 for x64-based Systems</td>
@@ -17461,7 +17465,7 @@ To exploit this vulnerability, an attacker would first have to log on to the sys
                 <td>Important</td>
                 <td>Remote Code Execution</td>
                 <td>4489899</td>
-                <td>Base: 7,30<br />Temporal: 6,60<br />Vector: CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
+                <td>Base: 6,60<br />Temporal: 5,90<br />Vector: CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
         </tr>            <tr>
                 <td>Windows 7 for 32-bit Systems Service Pack 1</td>
@@ -17469,7 +17473,7 @@ To exploit this vulnerability, an attacker would first have to log on to the sys
                 <td>Important</td>
                 <td>Remote Code Execution</td>
                 <td>4489878<br /></td>
-                <td>Base: 7,30<br />Temporal: 6,60<br />Vector: CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
+                <td>Base: 6,60<br />Temporal: 5,90<br />Vector: CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
         </tr>            <tr>
                 <td>Windows 7 for x64-based Systems Service Pack 1</td>
@@ -17477,7 +17481,7 @@ To exploit this vulnerability, an attacker would first have to log on to the sys
                 <td>Important</td>
                 <td>Remote Code Execution</td>
                 <td><br />4489878</td>
-                <td>Base: 7,30<br />Temporal: 6,60<br />Vector: CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
+                <td>Base: 6,60<br />Temporal: 5,90<br />Vector: CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
         </tr>            <tr>
                 <td>Windows 8.1 for 32-bit systems</td>
@@ -17485,7 +17489,7 @@ To exploit this vulnerability, an attacker would first have to log on to the sys
                 <td>Important</td>
                 <td>Remote Code Execution</td>
                 <td><br />4489881</td>
-                <td>Base: 7,30<br />Temporal: 6,60<br />Vector: CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
+                <td>Base: 6,60<br />Temporal: 5,90<br />Vector: CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
         </tr>            <tr>
                 <td>Windows 8.1 for x64-based systems</td>
@@ -17493,7 +17497,7 @@ To exploit this vulnerability, an attacker would first have to log on to the sys
                 <td>Important</td>
                 <td>Remote Code Execution</td>
                 <td>4489881<br /></td>
-                <td>Base: 7,30<br />Temporal: 6,60<br />Vector: CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
+                <td>Base: 6,60<br />Temporal: 5,90<br />Vector: CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
         </tr>            <tr>
                 <td>Windows RT 8.1</td>
@@ -17501,7 +17505,7 @@ To exploit this vulnerability, an attacker would first have to log on to the sys
                 <td>Important</td>
                 <td>Remote Code Execution</td>
                 <td>4489881</td>
-                <td>Base: 7,30<br />Temporal: 6,60<br />Vector: CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
+                <td>Base: 6,60<br />Temporal: 5,90<br />Vector: CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
         </tr>            <tr>
                 <td>Windows Server 2008 for 32-bit Systems Service Pack 2</td>
@@ -17509,7 +17513,7 @@ To exploit this vulnerability, an attacker would first have to log on to the sys
                 <td>Important</td>
                 <td>Remote Code Execution</td>
                 <td><br />4489880</td>
-                <td>Base: 7,30<br />Temporal: 6,60<br />Vector: CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
+                <td>Base: 6,60<br />Temporal: 5,90<br />Vector: CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
         </tr>            <tr>
                 <td>Windows Server 2008 for 32-bit Systems Service Pack 2 (Server Core installation)</td>
@@ -17517,7 +17521,7 @@ To exploit this vulnerability, an attacker would first have to log on to the sys
                 <td>Important</td>
                 <td>Remote Code Execution</td>
                 <td><br />4489880</td>
-                <td>Base: 7,30<br />Temporal: 6,60<br />Vector: CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
+                <td>Base: 6,60<br />Temporal: 5,90<br />Vector: CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
         </tr>            <tr>
                 <td>Windows Server 2008 for Itanium-Based Systems Service Pack 2</td>
@@ -17525,7 +17529,7 @@ To exploit this vulnerability, an attacker would first have to log on to the sys
                 <td>Important</td>
                 <td>Remote Code Execution</td>
                 <td><br />4489880</td>
-                <td>Base: 7,30<br />Temporal: 6,60<br />Vector: CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
+                <td>Base: 6,60<br />Temporal: 5,90<br />Vector: CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
         </tr>            <tr>
                 <td>Windows Server 2008 for x64-based Systems Service Pack 2</td>
@@ -17533,7 +17537,7 @@ To exploit this vulnerability, an attacker would first have to log on to the sys
                 <td>Important</td>
                 <td>Remote Code Execution</td>
                 <td><br />4489880</td>
-                <td>Base: 7,30<br />Temporal: 6,60<br />Vector: CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
+                <td>Base: 6,60<br />Temporal: 5,90<br />Vector: CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
         </tr>            <tr>
                 <td>Windows Server 2008 for x64-based Systems Service Pack 2 (Server Core installation)</td>
@@ -17541,7 +17545,7 @@ To exploit this vulnerability, an attacker would first have to log on to the sys
                 <td>Important</td>
                 <td>Remote Code Execution</td>
                 <td><br />4489880</td>
-                <td>Base: 7,30<br />Temporal: 6,60<br />Vector: CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
+                <td>Base: 6,60<br />Temporal: 5,90<br />Vector: CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
         </tr>            <tr>
                 <td>Windows Server 2008 R2 for Itanium-Based Systems Service Pack 1</td>
@@ -17549,7 +17553,7 @@ To exploit this vulnerability, an attacker would first have to log on to the sys
                 <td>Important</td>
                 <td>Remote Code Execution</td>
                 <td><br />4489878</td>
-                <td>Base: 7,30<br />Temporal: 6,60<br />Vector: CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
+                <td>Base: 6,60<br />Temporal: 5,90<br />Vector: CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
         </tr>            <tr>
                 <td>Windows Server 2008 R2 for x64-based Systems Service Pack 1</td>
@@ -17557,7 +17561,7 @@ To exploit this vulnerability, an attacker would first have to log on to the sys
                 <td>Important</td>
                 <td>Remote Code Execution</td>
                 <td><br />4489878</td>
-                <td>Base: 7,30<br />Temporal: 6,60<br />Vector: CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
+                <td>Base: 6,60<br />Temporal: 5,90<br />Vector: CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
         </tr>            <tr>
                 <td>Windows Server 2008 R2 for x64-based Systems Service Pack 1 (Server Core installation)</td>
@@ -17565,7 +17569,7 @@ To exploit this vulnerability, an attacker would first have to log on to the sys
                 <td>Important</td>
                 <td>Remote Code Execution</td>
                 <td><br />4489878</td>
-                <td>Base: 7,30<br />Temporal: 6,60<br />Vector: CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
+                <td>Base: 6,60<br />Temporal: 5,90<br />Vector: CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
         </tr>            <tr>
                 <td>Windows Server 2012</td>
@@ -17573,7 +17577,7 @@ To exploit this vulnerability, an attacker would first have to log on to the sys
                 <td>Important</td>
                 <td>Remote Code Execution</td>
                 <td><br />4489891</td>
-                <td>Base: 7,30<br />Temporal: 6,60<br />Vector: CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
+                <td>Base: 6,60<br />Temporal: 5,90<br />Vector: CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
         </tr>            <tr>
                 <td>Windows Server 2012 (Server Core installation)</td>
@@ -17581,7 +17585,7 @@ To exploit this vulnerability, an attacker would first have to log on to the sys
                 <td>Important</td>
                 <td>Remote Code Execution</td>
                 <td><br />4489891</td>
-                <td>Base: 7,30<br />Temporal: 6,60<br />Vector: CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
+                <td>Base: 6,60<br />Temporal: 5,90<br />Vector: CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
         </tr>            <tr>
                 <td>Windows Server 2012 R2</td>
@@ -17589,7 +17593,7 @@ To exploit this vulnerability, an attacker would first have to log on to the sys
                 <td>Important</td>
                 <td>Remote Code Execution</td>
                 <td>4489881<br /></td>
-                <td>Base: 7,30<br />Temporal: 6,60<br />Vector: CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
+                <td>Base: 6,60<br />Temporal: 5,90<br />Vector: CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
         </tr>            <tr>
                 <td>Windows Server 2012 R2 (Server Core installation)</td>
@@ -17597,7 +17601,7 @@ To exploit this vulnerability, an attacker would first have to log on to the sys
                 <td>Important</td>
                 <td>Remote Code Execution</td>
                 <td>4489881<br /></td>
-                <td>Base: 7,30<br />Temporal: 6,60<br />Vector: CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
+                <td>Base: 6,60<br />Temporal: 5,90<br />Vector: CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
         </tr>            <tr>
                 <td>Windows Server 2016</td>
@@ -17605,7 +17609,7 @@ To exploit this vulnerability, an attacker would first have to log on to the sys
                 <td>Important</td>
                 <td>Remote Code Execution</td>
                 <td>4489882</td>
-                <td>Base: 7,30<br />Temporal: 6,60<br />Vector: CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
+                <td>Base: 6,60<br />Temporal: 5,90<br />Vector: CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
         </tr>            <tr>
                 <td>Windows Server 2016  (Server Core installation)</td>
@@ -17613,7 +17617,7 @@ To exploit this vulnerability, an attacker would first have to log on to the sys
                 <td>Important</td>
                 <td>Remote Code Execution</td>
                 <td>4489882</td>
-                <td>Base: 7,30<br />Temporal: 6,60<br />Vector: CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
+                <td>Base: 6,60<br />Temporal: 5,90<br />Vector: CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
         </tr>            <tr>
                 <td>Windows Server 2019</td>
@@ -17621,7 +17625,7 @@ To exploit this vulnerability, an attacker would first have to log on to the sys
                 <td>Important</td>
                 <td>Remote Code Execution</td>
                 <td>4489899</td>
-                <td>Base: 7,30<br />Temporal: 6,60<br />Vector: CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
+                <td>Base: 6,60<br />Temporal: 5,90<br />Vector: CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
         </tr>            <tr>
                 <td>Windows Server 2019  (Server Core installation)</td>
@@ -17629,7 +17633,7 @@ To exploit this vulnerability, an attacker would first have to log on to the sys
                 <td>Important</td>
                 <td>Remote Code Execution</td>
                 <td>4489899</td>
-                <td>Base: 7,30<br />Temporal: 6,60<br />Vector: CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
+                <td>Base: 6,60<br />Temporal: 5,90<br />Vector: CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
         </tr>            <tr>
                 <td>Windows Server, version 1709  (Server Core Installation)</td>
@@ -17637,7 +17641,7 @@ To exploit this vulnerability, an attacker would first have to log on to the sys
                 <td>Important</td>
                 <td>Remote Code Execution</td>
                 <td>4489886</td>
-                <td>Base: 7,30<br />Temporal: 6,60<br />Vector: CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
+                <td>Base: 6,60<br />Temporal: 5,90<br />Vector: CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
         </tr>            <tr>
                 <td>Windows Server, version 1803  (Server Core Installation)</td>
@@ -17645,7 +17649,7 @@ To exploit this vulnerability, an attacker would first have to log on to the sys
                 <td>Important</td>
                 <td>Remote Code Execution</td>
                 <td>4489868</td>
-                <td>Base: 7,30<br />Temporal: 6,60<br />Vector: CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
+                <td>Base: 6,60<br />Temporal: 5,90<br />Vector: CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
                 <td>Yes</td>
         </tr>    
 </table>
@@ -17659,7 +17663,7 @@ To exploit this vulnerability, an attacker would first have to log on to the sys
     </thead>
  <tr>
      <td>CVE-2019-0856</td>
-     <td>None</td>
+     <td>Australian Cyber Security Centre - Australian Signals Directorate<br><br><br></td>
  </tr>
 </table><h1 id="CVE-2019-0857">CVE-2019-0857 - Azure DevOps Server Spoofing Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
  <thead style="background-color: #ededed">
@@ -18165,7 +18169,7 @@ To exploit this vulnerability, an attacker would first have to log on to the sys
         <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp2019-04-09T07:00:00&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
 
         <br></td>
-     <td>Moderate</td>
+     <td>Critical</td>
      <td>Remote Code Execution</td>
  </tr>
 </table>        <h2>Exploitability Index</h2>
@@ -20161,7 +20165,7 @@ After you set Internet Explorer to require a prompt before it runs ActiveX contr
     </thead>
  <tr>
      <td>CVE-2019-0876</td>
-     <td>Eduard Marin (The University of Birmingham, UK)<br><br><br>Flavio Garcia (The University of Birmingham, UK)<br><br><br>Jo van Bulck (imec-DistriNet, KU Leuven)<br><br><br>David Oswald (The University of Birmingham, UK)<br><br><br>Frank Piessens (imec-DistriNet, KU Leuven)<br><br><br>Mark Ryan (The University of Birmingham, UK)<br><br><br>Abdulla Aldoseri (The University of Birmingham, UK)<br><br><br></td>
+     <td>Jo van Bulck (imec-DistriNet, KU Leuven)<br><br><br>Abdulla Aldoseri (The University of Birmingham, UK)<br><br><br>Mark Ryan (The University of Birmingham, UK)<br><br><br>Flavio Garcia (The University of Birmingham, UK)<br><br><br>Frank Piessens (imec-DistriNet, KU Leuven)<br><br><br>Eduard Marin (The University of Birmingham, UK)<br><br><br>David Oswald (The University of Birmingham, UK)<br><br><br></td>
  </tr>
 </table>
 </div>
