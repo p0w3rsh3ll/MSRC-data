@@ -10,6 +10,9 @@ The Microsoft Security Response Center (MSRC) portal is located at https://porta
 There isn't any way to read previous release notes where known issues are listed.
 Here's my list:
 
+###August 2019
+https://portal.msrc.microsoft.com/en-us/security-guidance/releasenotedetail/312890cc-3673-e911-a991-000d3a33a34d
+
 ###July 2019
 https://portal.msrc.microsoft.com/en-us/security-guidance/releasenotedetail/48293f19-d662-e911-a98e-000d3a33c573
 
@@ -166,4 +169,7 @@ https://portal.msrc.microsoft.com/en-us/security-guidance/releasenotedetail/c383
 
 #2019-03
 'Could not determine the Impact from the Threats for ADV190010'
+
+#2019-08
+'Could not determine the Impact from the Threats for ADV190023'
 ```
