@@ -1,0 +1,163 @@
+﻿<html>
+<head>
+    <!-- this is the css from the old bulletin site. Change this to better style your report to your liking -->
+    <link rel="stylesheet" href="https://i-technet.sec.s-msft.com/Combined.css?resources=0:ImageSprite,0:TopicResponsive,0:TopicResponsive.MediaQueries,1:CodeSnippet,1:ProgrammingSelector,1:ExpandableCollapsibleArea,0:CommunityContent,1:TopicNotInScope,1:FeedViewerBasic,1:ImageSprite,2:Header.2,2:HeaderFooterSprite,2:Header.MediaQueries,2:Banner.MediaQueries,3:megabladeMenu.1,3:MegabladeMenu.MediaQueries,3:MegabladeMenuSpriteCluster,0:Breadcrumbs,0:Breadcrumbs.MediaQueries,0:ResponsiveToc,0:ResponsiveToc.MediaQueries,1:NavSidebar,0:LibraryMemberFilter,4:StandardRating,2:Footer.2,5:LinkList,2:Footer.MediaQueries,0:BaseResponsive,6:MsdnResponsive,0:Tables.MediaQueries,7:SkinnyRatingResponsive,7:SkinnyRatingV2;/Areas/Library/Content:0,/Areas/Epx/Content/Css:1,/Areas/Epx/Themes/TechNet/Content:2,/Areas/Epx/Themes/Shared/Content:3,/Areas/Global/Content:4,/Areas/Epx/Themes/Base/Content:5,/Areas/Library/Themes/Msdn/Content:6,/Areas/Library/Themes/TechNet/Content:7&amp;v=9192817066EC5D087D15C766A0430C95">
+    
+    <!-- this style section changes cell widths in the exec header table so that the affected products at the end are wide enough to read -->
+    <style>
+        #execHeader td:first-child  { width: 10% ;}
+        #execHeader td:nth-child(5) { width: 37% ;}
+    </style>
+
+    <!-- this section defines explicit width for all cells in the affected software tables. This is so the column width is the same across each product -->
+    <style>
+        .affected_software td:first-child  { width: 34% ; }
+        .affected_software td:nth-child(2) { width: 14% ; }
+        .affected_software td:nth-child(3) { width: 6% ; }
+        .affected_software td:nth-child(4) { width: 6% ; }
+        .affected_software td:nth-child(5) { width: 7.5% ; }
+        .affected_software td:nth-child(6) { width: 28.5% ; }
+        .affected_software td:nth-child(7) { width: 4% ; }
+    </style>
+    
+    <!-- remove spacing between table of contents cells -->
+    <style>
+        #tableOfContents tr td { padding: 0px; }
+    </style>
+
+</head>
+
+<body lang=EN-US link=blue>
+<div id="documentWrapper" style="width: 90%; margin-left: auto; margin-right: auto;">
+
+<h1 id="top">Microsoft CVE Summary</h1>
+
+<p style="margin:0; padding:0">This report contains detail for the following vulnerabilities:</p>
+<table id="tableOfContents" style="width:65%; margin-top:5">
+ <tr>
+  <th>Tag</th>
+  <th>CVE ID</th>
+  <th>CVE Title</th>
+ </tr>
+ <tr><td></td>    <td><a href="#ADV190026">ADV190026</a></td>    <td>Microsoft Guidance for cleaning up orphaned keys generated on vulnerable TPMs and used for Windows Hello for Business</td></tr>
+</table>
+<h1 id="ADV190026">ADV190026 - Microsoft Guidance for cleaning up orphaned keys generated on vulnerable TPMs and used for Windows Hello for Business</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>   
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV190026">ADV190026</a><br><a href="http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=ADV190026">MITRE</a><br><a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=ADV190026">NVD</a></td>
+     <td>        <b>CVE Title:</b> Microsoft Guidance for cleaning up orphaned keys generated on vulnerable TPMs and used for Windows Hello for Business
+        <br>
+        <b>Description:</b> <br><p>Microsoft is aware of an issue in Windows Hello for Business (WHfB) with public keys that persist after a device is removed from Active Directory, if the AD exists. After a user sets up Windows Hello for Business (WHfB), the WHfB public key is written to the on-premises Active Directory. The WHfB keys are tied to a user and a device that has been added to Azure AD, and if the device is removed, the corresponding WHfB key is considered orphaned. However, these orphaned keys are not deleted even when the device it was created on is no longer present. Any authentication to Azure AD using such an orphaned WHfB key will be rejected. However, some of these orphaned keys could lead to the following security issue in Active Directory 2016 or 2019, in either hybrid or on-premises environments.</p>
+<p>An authenticated attacker could obtain orphaned keys created on TPMs that were affected by <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-15361">CVE-2017-15361</a> (ROCA), discussed in <a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV170012">Microsoft Security Advisory ADV170012</a> to compute their WHfB private key from the orphaned public keys. The attacker could then impersonate the user by using the stolen private key to authenticate as the user within the domain using Public Key Cryptography for Initial Authentication (PKINIT).</p>
+<p>This attack is possible even if firmware and software updates have been applied to TPMs that were affected by <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-15361">CVE-2017-15361</a> because the corresponding public keys might still exist in Active Directory.</p>
+<p>This advisory provides guidance for cleaning up any orphaned public keys that were generated with an unpatched TPM (before firmware updates discussed in <a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV170012">ADV170012</a> were applied). Follow this guidance to identify and remove orphaned WHfB keys.</p>
+<p>This particular issue with orphaned public keys can be present when WHfB is set up in the following configurations:</p>
+<ul>
+<li>WHfB is deployed on Active Directory 2016 or 2019, either in hybrid mode or on-premises only.</li>
+<li>Currently have or have had in the past, WHfB keys generated on TPMs that were affected by CVE-2017-15361.</li>
+</ul>
+<p><strong>Important</strong>: Azure Active Directory (Azure AD) and Active Directory Federation Services (AD FS) are not affected by this issue. However, we strongly recommend that you follow the <strong>Recommended Actions</strong> section of ADV170012, and apply any firmware updates supplied by your TPM OEM, to avoid any exposure to Azure AD and AD FS. See Step #4 of the <strong>Recommended Actions</strong> for a list of OEMs and links to information for their updates.</p>
+
+        <br>
+        <b>FAQ:</b><br><p><strong>1. What systems are at risk?</strong></p>
+<p>Individual machines or servers are not affected by this WHfB issue. Affected environments are defined in the <strong>Mitigations</strong> section of this advisory.</p>
+<p><strong>2. Has this issue been publicly disclosed?</strong></p>
+<p>Yes, this issue has been disclosed.</p>
+<p><strong>3. Have there been any active attacks detected?</strong></p>
+<p>No. When this security advisory was issued, Microsoft had not received any information to indicate that this issue had been publicly used to attack customers.</p>
+<p><strong>4. How do I know if my TPMs are affected by CVE-2017-15361? How do I fix them?</strong></p>
+<p>Please refer to <a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV170012">Microsoft Security Advisory ADV170012</a> for more details on CVE-2017-15361. You must follow the guidance in ADV170012 and update your TPMs before applying the mitigations for identifying and removing the orphaned public keys.</p>
+<p><strong>5. I have updated all of my TPMs that were affected by CVE-2017-15361 with firmware provided by the OEM. Are my systems still affected?</strong></p>
+<p>Yes. Orphaned WHFB keys previously generated from those TPMs could still be stored in Active Directory.</p>
+<p><strong>6. My TPMs are not affected by CVE-2017-15361, but I do not enforce a policy to use TPMs for WHfB. Am I still affected?</strong></p>
+<p>In the absence of a hardware-required policy, WHFB will prefer using the TPM for storing the private key. If you do not have any TPMs that are affected by CVE-2017-15361, then you are not impacted. However, we recommend removing any orphaned keys in your directory by following the steps discussed in the <strong>Mitigations</strong> section of this advisory.</p>
+<p><strong>7. I am running pre-2016 versions of Active Directory. Do I also need to remove these orphaned keys?</strong></p>
+<p>While you are not affected by this WHFB issue, we strongly recommend removing these orphaned keys as a security hygiene measure.</p>
+<p><strong>8. I regularly audit and clean up stale devices in my environment. How did I end up with orphaned keys?</strong></p>
+<p>When a user provisions a WHFB credential, the public key is stored in the msDS-KeyCredentialLink attribute of the user object in Azure AD and on-premises Active Directory. If the device that was used to create the key is removed from Azure AD and Active Directory, the WHFB public key created for the user on that device is not automatically removed from the user object and it becomes an orphaned key.</p>
+<p><strong>9. I have deployed WHFB certificate trust in my environment and use certificates for authentication. Am I affected? Do I need to remove orphaned keys?</strong></p>
+<p>Yes. You are still affected by this issue if you have deployed certificate trust and have 2016 or 2019 DCs in your environment. These DC versions still support key-based authentication even if you have deployed end user certificates for authentication.</p>
+
+        <br>
+        <b>Mitigations:</b><br>
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp2019-12-03T08:00:00Z&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Unknown</td>
+     <td>Unknown</td>
+ </tr>
+</table>        <h2>Exploitability Index</h2>
+
+<p>The following table provides an exploitability assessment of each of the vulnerabilities addressed this month. The vulnerabilities are listed in order of bulletin ID then CVE ID. Only vulnerabilities that have a severity rating of Critical or Important in the bulletins are included.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment for Latest Software Release</b></td>
+   <td><b>Exploitability Assessment for Older Software Release</b></td>
+   <td><b>Denial of Service Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>   
+  </tr>
+ </thead>
+ <tr>
+     <td>Not Found</td>
+     <td>Not Found</td>
+     <td>Not Applicable</td>
+     <td>No</td>
+     <td>No</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="7"><b>ADV190026</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>                
+            <td><b>Severity</b></td>  
+            <td><b>Impact</b></td>  
+            <td><b>Supersedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Restart Required</b></td>
+        </tr>
+                <tr>
+                <td>None Available</td>
+                <td></td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>Unknown</td>
+        </tr>    
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>  
+    </tr>
+    </thead>
+ <tr>
+     <td>ADV190026</td>
+     <td><a href="https://www.dsinternals.com">Michael Grafnetter @MGrafnetter</a><br><br><br></td>
+ </tr>
+</table>
+</div>
+<br>
+ </body>
+</html>

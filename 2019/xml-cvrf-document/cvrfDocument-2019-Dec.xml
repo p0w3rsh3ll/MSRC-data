@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cvrf:cvrfdoc xmlns:cpe-lang="http://cpe.mitre.org/language/2.0" xmlns:scap-core="https://scap.nist.gov/schema/scap-core/1.0" xmlns:cvrf-common="http://www.icasi.org/CVRF/schema/common/1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:prod="http://www.icasi.org/CVRF/schema/prod/1.1" xmlns:cvssv2="https://scap.nist.gov/schema/cvss-v2/1.0" xmlns:vuln="http://www.icasi.org/CVRF/schema/vuln/1.1" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:cvrf="http://www.icasi.org/CVRF/schema/cvrf/1.1">
+  <cvrf:DocumentTitle>December 3, 2019 Security Updates</cvrf:DocumentTitle>
+  <cvrf:DocumentType>Security Update</cvrf:DocumentType>
+  <cvrf:DocumentPublisher Type="Vendor">
+    <cvrf:ContactDetails>secure@microsoft.com</cvrf:ContactDetails>
+    <cvrf:IssuingAuthority>The Microsoft Security Response Center (MSRC) identifies, monitors, resolves, and responds to security incidents and Microsoft software security vulnerabilities. For more information, see http://www.microsoft.com/security/msrc.</cvrf:IssuingAuthority>
+  </cvrf:DocumentPublisher>
+  <cvrf:DocumentTracking>
+    <cvrf:Identification>
+      <cvrf:ID>2019-Dec</cvrf:ID>
+      <cvrf:Alias>2019-Dec</cvrf:Alias>
+    </cvrf:Identification>
+    <cvrf:Status>Final</cvrf:Status>
+    <cvrf:Version>1.0</cvrf:Version>
+    <cvrf:RevisionHistory>
+      <cvrf:Revision>
+        <cvrf:Number>1</cvrf:Number>
+        <cvrf:Date>2019-12-03T08:00:00Z</cvrf:Date>
+        <cvrf:Description>December 3, 2019 Security Updates</cvrf:Description>
+      </cvrf:Revision>
+    </cvrf:RevisionHistory>
+    <cvrf:InitialReleaseDate>2019-12-03T08:00:00Z</cvrf:InitialReleaseDate>
+    <cvrf:CurrentReleaseDate>2019-12-03T08:00:00Z</cvrf:CurrentReleaseDate>
+  </cvrf:DocumentTracking>
+  <cvrf:DocumentNotes>
+    <cvrf:Note Title="Release Notes" Audience="Public" Type="Details" Ordinal="0">&lt;p&gt;This special release on December 3rd, 2019 is to publish &lt;a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV190026"&gt;ADV190026&lt;/a&gt;.&lt;/p&gt;
+</cvrf:Note>
+    <cvrf:Note Title="Legal Disclaimer" Audience="Public" Type="Legal Disclaimer" Ordinal="1">The information provided in the Microsoft Knowledge Base is provided "as is" without warranty of any kind. Microsoft disclaims all warranties, either express or implied, including the warranties of merchantability and fitness for a particular purpose. In no event shall Microsoft Corporation or its suppliers be liable for any damages whatsoever including direct, indirect, incidental, consequential, loss of business profits or special damages, even if Microsoft Corporation or its suppliers have been advised of the possibility of such damages. Some states do not allow the exclusion or limitation of liability for consequential or incidental damages so the foregoing limitation may not apply.</cvrf:Note>
+  </cvrf:DocumentNotes>
+  <prod:ProductTree>
+    <prod:Branch Type="Vendor" Name="Microsoft">
+      <prod:Branch Type="Product Family" Name="">
+        <prod:FullProductName ProductID="9237">None Available</prod:FullProductName>
+      </prod:Branch>
+    </prod:Branch>
+    <prod:FullProductName ProductID="9237">None Available</prod:FullProductName>
+  </prod:ProductTree>
+  <vuln:Vulnerability Ordinal="0">
+    <vuln:Title>Microsoft Guidance for cleaning up orphaned keys generated on vulnerable TPMs and used for Windows Hello for Business</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;Microsoft is aware of an issue in Windows Hello for Business (WHfB) with public keys that persist after a device is removed from Active Directory, if the AD exists. After a user sets up Windows Hello for Business (WHfB), the WHfB public key is written to the on-premises Active Directory. The WHfB keys are tied to a user and a device that has been added to Azure AD, and if the device is removed, the corresponding WHfB key is considered orphaned. However, these orphaned keys are not deleted even when the device it was created on is no longer present. Any authentication to Azure AD using such an orphaned WHfB key will be rejected. However, some of these orphaned keys could lead to the following security issue in Active Directory 2016 or 2019, in either hybrid or on-premises environments.&lt;/p&gt;
+&lt;p&gt;An authenticated attacker could obtain orphaned keys created on TPMs that were affected by &lt;a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-15361"&gt;CVE-2017-15361&lt;/a&gt; (ROCA), discussed in &lt;a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV170012"&gt;Microsoft Security Advisory ADV170012&lt;/a&gt; to compute their WHfB private key from the orphaned public keys. The attacker could then impersonate the user by using the stolen private key to authenticate as the user within the domain using Public Key Cryptography for Initial Authentication (PKINIT).&lt;/p&gt;
+&lt;p&gt;This attack is possible even if firmware and software updates have been applied to TPMs that were affected by &lt;a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-15361"&gt;CVE-2017-15361&lt;/a&gt; because the corresponding public keys might still exist in Active Directory.&lt;/p&gt;
+&lt;p&gt;This advisory provides guidance for cleaning up any orphaned public keys that were generated with an unpatched TPM (before firmware updates discussed in &lt;a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV170012"&gt;ADV170012&lt;/a&gt; were applied). Follow this guidance to identify and remove orphaned WHfB keys.&lt;/p&gt;
+&lt;p&gt;This particular issue with orphaned public keys can be present when WHfB is set up in the following configurations:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;WHfB is deployed on Active Directory 2016 or 2019, either in hybrid mode or on-premises only.&lt;/li&gt;
+&lt;li&gt;Currently have or have had in the past, WHfB keys generated on TPMs that were affected by CVE-2017-15361.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Important&lt;/strong&gt;: Azure Active Directory (Azure AD) and Active Directory Federation Services (AD FS) are not affected by this issue. However, we strongly recommend that you follow the &lt;strong&gt;Recommended Actions&lt;/strong&gt; section of ADV170012, and apply any firmware updates supplied by your TPM OEM, to avoid any exposure to Azure AD and AD FS. See Step #4 of the &lt;strong&gt;Recommended Actions&lt;/strong&gt; for a list of OEMs and links to information for their updates.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;1. What systems are at risk?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Individual machines or servers are not affected by this WHfB issue. Affected environments are defined in the &lt;strong&gt;Mitigations&lt;/strong&gt; section of this advisory.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2. Has this issue been publicly disclosed?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Yes, this issue has been disclosed.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3. Have there been any active attacks detected?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;No. When this security advisory was issued, Microsoft had not received any information to indicate that this issue had been publicly used to attack customers.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;4. How do I know if my TPMs are affected by CVE-2017-15361? How do I fix them?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Please refer to &lt;a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV170012"&gt;Microsoft Security Advisory ADV170012&lt;/a&gt; for more details on CVE-2017-15361. You must follow the guidance in ADV170012 and update your TPMs before applying the mitigations for identifying and removing the orphaned public keys.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;5. I have updated all of my TPMs that were affected by CVE-2017-15361 with firmware provided by the OEM. Are my systems still affected?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Yes. Orphaned WHFB keys previously generated from those TPMs could still be stored in Active Directory.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;6. My TPMs are not affected by CVE-2017-15361, but I do not enforce a policy to use TPMs for WHfB. Am I still affected?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In the absence of a hardware-required policy, WHFB will prefer using the TPM for storing the private key. If you do not have any TPMs that are affected by CVE-2017-15361, then you are not impacted. However, we recommend removing any orphaned keys in your directory by following the steps discussed in the &lt;strong&gt;Mitigations&lt;/strong&gt; section of this advisory.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;7. I am running pre-2016 versions of Active Directory. Do I also need to remove these orphaned keys?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;While you are not affected by this WHFB issue, we strongly recommend removing these orphaned keys as a security hygiene measure.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;8. I regularly audit and clean up stale devices in my environment. How did I end up with orphaned keys?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;When a user provisions a WHFB credential, the public key is stored in the msDS-KeyCredentialLink attribute of the user object in Azure AD and on-premises Active Directory. If the device that was used to create the key is removed from Azure AD and Active Directory, the WHFB public key created for the user on that device is not automatically removed from the user object and it becomes an orphaned key.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;9. I have deployed WHFB certificate trust in my environment and use certificates for authentication. Am I affected? Do I need to remove orphaned keys?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Yes. You are still affected by this issue if you have deployed certificate trust and have 2016 or 2019 DCs in your environment. These DC versions still support key-based authentication even if you have deployed end user certificates for authentication.&lt;/p&gt;
+</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>ADV190026</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>9237</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>9237</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>9237</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>Publicly Disclosed:No;Exploited:No</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Mitigation">
+        <vuln:Description>&lt;p&gt;Follow these steps to mitigate the issue with orphaned WHfB keys in your environment:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Ensure your TPMs affected by CVE-2017-15361 are patched. See &lt;a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV170012"&gt;Microsoft Security Advisory ADV170012&lt;/a&gt; for details.&lt;/li&gt;
+&lt;li&gt;Install the WHfBTools Windows PowerShell module. See &lt;a href="https://www.powershellgallery.com/packages/WHfBTools"&gt;WfHBTools&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Use the WHfBTools PowerShell scripts to identify and remove keys, which &lt;strong&gt;will&lt;/strong&gt; differ depending on whether your environment is a hybrid environment or an on-premises only environment. See &lt;a href="https://support.microsoft.com/help/4533501"&gt;Using WHFBTools PowerShell module for cleaning up orphaned Windows Hello for Business Keys for instructions&lt;/a&gt; for complete instructions.&lt;/p&gt;
+&lt;ol start="3"&gt;
+&lt;li&gt;Query your environment for orphaned WHfB keys and for keys affected by CVE-2017-15361 (ROCA).&lt;/li&gt;
+&lt;li&gt;You can then do one of the following, using the appropriate PowerShell script:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Delete orphaned WHfB keys.&lt;/li&gt;
+&lt;li&gt;Delete keys affected by CVE-2017-15361. &lt;strong&gt;Important&lt;/strong&gt; Be aware that if you delete ROCA vulnerable WHfB keys that are not orphaned yet, it will cause disruption to your users. You should ensure that these keys are orphaned before removing them from the directory.&lt;/li&gt;
+&lt;li&gt;Delete both orphaned keys and keys affected by CVE-2017-15361.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The scripts you will use to identify and remove keys differ depending on whether your environment is a hybrid environment or an on-premises only environment. See &lt;a href="https://support.microsoft.com/help/4533501"&gt;Using WHfBTools PowerShell module for cleaning up orphaned Windows Hello for Business Keys for instructions&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Hybrid environment:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A hybrid environment consists of Active Directory 2016 or 2019, with synchronization to Azure AD with or without AD FS.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If you haven’t updated your TPM first, simply deleting these keys from the directory is not sufficient to mitigate the issue. Setting up WHfB again will re-create keys that are affected by CVE-2017-15361.&lt;/li&gt;
+&lt;li&gt;Deleting keys in Azure AD will automatically remove them in Active Directory as part of the synchronization process between Active Directory and Azure AD. If you are in a hybrid environment deleting the keys from only Active Directory is not sufficient as they will be re-written from Azure AD as a part of the synchronization process.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;On-premises only environment:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;An on-premises only environment consists of Active Directory 2016 or 2019, both with AD FS.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;If you haven’t updated your TPM first, deleting these keys from the directory is not sufficient to mitigate the issue. Setting up WHfB again will re-create keys that are affected by CVE-2017-15361.&lt;/p&gt;
+</vuln:Description>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments>
+      <vuln:Acknowledgment>
+        <vuln:Name>&lt;a href="https://www.dsinternals.com"&gt;Michael Grafnetter @MGrafnetter&lt;/a&gt;</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+    </vuln:Acknowledgments>
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2019-12-03T08:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+</cvrf:cvrfdoc>
