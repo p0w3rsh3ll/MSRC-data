@@ -182,9 +182,9 @@ https://portal.msrc.microsoft.com/en-us/security-guidance/releasenotedetail/c383
 #2019-08
 'Could not determine the Impact from the Threats for ADV190023'
 
-#2019-09
+#2019-11
 'Could not determine the Impact from the Threats for ADV190024'
 
-#2019-10
-Could not determine the Impact from the Threats for ADV190026
+#2019-12
+'Could not determine the Impact from the Threats for ADV190026'
 ```
