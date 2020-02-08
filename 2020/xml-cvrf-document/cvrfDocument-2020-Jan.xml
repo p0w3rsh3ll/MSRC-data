@@ -15,13 +15,13 @@
     <cvrf:Version>1.0</cvrf:Version>
     <cvrf:RevisionHistory>
       <cvrf:Revision>
-        <cvrf:Number>3</cvrf:Number>
-        <cvrf:Date>2020-01-17T08:00:00Z</cvrf:Date>
+        <cvrf:Number>8</cvrf:Number>
+        <cvrf:Date>2020-02-07T08:00:00Z</cvrf:Date>
         <cvrf:Description>January 2020 Security Updates</cvrf:Description>
       </cvrf:Revision>
     </cvrf:RevisionHistory>
     <cvrf:InitialReleaseDate>2020-01-14T08:00:00Z</cvrf:InitialReleaseDate>
-    <cvrf:CurrentReleaseDate>2020-01-17T08:00:00Z</cvrf:CurrentReleaseDate>
+    <cvrf:CurrentReleaseDate>2020-02-07T08:00:00Z</cvrf:CurrentReleaseDate>
   </cvrf:DocumentTracking>
   <cvrf:DocumentNotes>
     <cvrf:Note Title="Release Notes" Audience="Public" Type="Details" Ordinal="0">&lt;p&gt;The January security release consists of security updates for the following software:&lt;/p&gt;
@@ -34,6 +34,7 @@
 &lt;li&gt;.NET Framework&lt;/li&gt;
 &lt;li&gt;OneDrive for Android&lt;/li&gt;
 &lt;li&gt;Microsoft Dynamics&lt;/li&gt;
+&lt;li&gt;Microsoft Edge (Chromium-based)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Please note the following information regarding the security updates:&lt;/p&gt;
 &lt;ul&gt;
@@ -292,6 +293,7 @@
         <prod:FullProductName ProductID="10486-11712">Internet Explorer 11 on Windows 10 Version 1909 for 32-bit Systems</prod:FullProductName>
         <prod:FullProductName ProductID="10486-11713">Internet Explorer 11 on Windows 10 Version 1909 for x64-based Systems</prod:FullProductName>
         <prod:FullProductName ProductID="10486-11714">Internet Explorer 11 on Windows 10 Version 1909 for ARM64-based Systems</prod:FullProductName>
+        <prod:FullProductName ProductID="11655">Microsoft Edge (Chromium-based)</prod:FullProductName>
       </prod:Branch>
       <prod:Branch Type="Product Family" Name="Microsoft Office">
         <prod:FullProductName ProductID="10836">Office Online Server</prod:FullProductName>
@@ -318,10 +320,9 @@
         <prod:FullProductName ProductID="11726">One Drive for Android</prod:FullProductName>
       </prod:Branch>
       <prod:Branch Type="Product Family" Name="Microsoft Dynamics">
-        <prod:FullProductName ProductID="0">Dynamics 365 Field Service (on-premises) v7 series</prod:FullProductName>
+        <prod:FullProductName ProductID="11727">Dynamics 365 Field Service (on-premises) v7 series</prod:FullProductName>
       </prod:Branch>
     </prod:Branch>
-    <prod:FullProductName ProductID="0">Dynamics 365 Field Service (on-premises) v7 series</prod:FullProductName>
     <prod:FullProductName ProductID="10047">Windows 7 for 32-bit Systems Service Pack 1</prod:FullProductName>
     <prod:FullProductName ProductID="10048">Windows 7 for x64-based Systems Service Pack 1</prod:FullProductName>
     <prod:FullProductName ProductID="10049">Windows Server 2008 R2 for x64-based Systems Service Pack 1 (Server Core installation)</prod:FullProductName>
@@ -458,6 +459,7 @@
     <prod:FullProductName ProductID="11650-11497">Microsoft .NET Framework 4.8 on Windows 10 Version 1803 for 32-bit Systems</prod:FullProductName>
     <prod:FullProductName ProductID="11650-11498">Microsoft .NET Framework 4.8 on Windows 10 Version 1803 for x64-based Systems</prod:FullProductName>
     <prod:FullProductName ProductID="11650-11499">Microsoft .NET Framework 4.8 on Windows Server, version 1803  (Server Core Installation)</prod:FullProductName>
+    <prod:FullProductName ProductID="11655">Microsoft Edge (Chromium-based)</prod:FullProductName>
     <prod:FullProductName ProductID="11661">.NET Core 3.0</prod:FullProductName>
     <prod:FullProductName ProductID="11676-11568">Microsoft .NET Framework 3.5 AND 4.8 on Windows 10 Version 1809 for 32-bit Systems</prod:FullProductName>
     <prod:FullProductName ProductID="11676-11569">Microsoft .NET Framework 3.5 AND 4.8 on Windows 10 Version 1809 for x64-based Systems</prod:FullProductName>
@@ -490,6 +492,7 @@
     <prod:FullProductName ProductID="11725-11453">Microsoft .NET Framework 3.5 AND 4.7.1/4.7.2 on Windows 10 Version 1709 for 32-bit Systems</prod:FullProductName>
     <prod:FullProductName ProductID="11725-11454">Microsoft .NET Framework 3.5 AND 4.7.1/4.7.2 on Windows 10 Version 1709 for x64-based Systems</prod:FullProductName>
     <prod:FullProductName ProductID="11726">One Drive for Android</prod:FullProductName>
+    <prod:FullProductName ProductID="11727">Dynamics 365 Field Service (on-premises) v7 series</prod:FullProductName>
     <prod:FullProductName ProductID="11728">ASP.NET Core 3.1</prod:FullProductName>
     <prod:FullProductName ProductID="11729">.NET Core 3.0</prod:FullProductName>
     <prod:FullProductName ProductID="11730">.NET Core 3.1</prod:FullProductName>
@@ -513,7 +516,7 @@
     <prod:FullProductName ProductID="9495-10050">Microsoft .NET Framework 3.5.1 on Windows Server 2008 R2 for Itanium-Based Systems Service Pack 1</prod:FullProductName>
     <prod:FullProductName ProductID="9495-10051">Microsoft .NET Framework 3.5.1 on Windows Server 2008 R2 for x64-based Systems Service Pack 1</prod:FullProductName>
   </prod:ProductTree>
-  <vuln:Vulnerability Ordinal="1">
+  <vuln:Vulnerability Ordinal="2">
     <vuln:Title>Windows CryptoAPI Spoofing Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;A spoofing vulnerability exists in the way Windows CryptoAPI (Crypt32.dll) validates Elliptic Curve Cryptography (ECC) certificates.&lt;/p&gt;
@@ -1120,7 +1123,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="6">
+  <vuln:Vulnerability Ordinal="7">
     <vuln:Title>Microsoft Graphics Components Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;An information disclosure vulnerability exists in the way that Microsoft Graphics Components handle objects in memory. An attacker who successfully exploited the vulnerability could obtain information that could be useful for further exploitation.&lt;/p&gt;
@@ -1932,7 +1935,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="7">
+  <vuln:Vulnerability Ordinal="8">
     <vuln:Title>Win32k Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;An information disclosure vulnerability exists when the win32k component improperly provides kernel information. An attacker who successfully exploited the vulnerability could obtain information to further compromise the user’s system.&lt;/p&gt;
@@ -2861,7 +2864,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="8">
+  <vuln:Vulnerability Ordinal="9">
     <vuln:Title>Windows Remote Desktop Gateway (RD Gateway) Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;A remote code execution vulnerability exists in Windows Remote Desktop Gateway (RD Gateway) when an unauthenticated attacker connects to the target system using RDP and sends specially crafted requests. This vulnerability is pre-authentication and requires no user interaction. An attacker who successfully exploited this vulnerability could execute arbitrary code on the target system. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights.&lt;/p&gt;
@@ -3056,7 +3059,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="9">
+  <vuln:Vulnerability Ordinal="10">
     <vuln:Title>Windows Remote Desktop Gateway (RD Gateway) Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;A remote code execution vulnerability exists in Windows Remote Desktop Gateway (RD Gateway) when an unauthenticated attacker connects to the target system using RDP and sends specially crafted requests. This vulnerability is pre-authentication and requires no user interaction. An attacker who successfully exploited this vulnerability could execute arbitrary code on the target system. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights.&lt;/p&gt;
@@ -3251,7 +3254,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="10">
+  <vuln:Vulnerability Ordinal="11">
     <vuln:Title>Remote Desktop Client Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;A remote code execution vulnerability exists in the Windows Remote Desktop Client when a user connects to a malicious server. An attacker who successfully exploited this vulnerability could execute arbitrary code on the computer of the connecting client. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights.&lt;/p&gt;
@@ -4077,7 +4080,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="11">
+  <vuln:Vulnerability Ordinal="12">
     <vuln:Title>Windows Remote Desktop Gateway (RD Gateway) Denial of Service Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;A denial of service vulnerability exists in Windows Remote Desktop Gateway (RD Gateway) when an attacker connects to the target system using RDP and sends specially crafted requests. An attacker who successfully exploited this vulnerability could cause the RD Gateway service on the target system to stop responding.&lt;/p&gt;
@@ -4184,7 +4187,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="12">
+  <vuln:Vulnerability Ordinal="13">
     <vuln:Title>Windows Search Indexer Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;An elevation of privilege vulnerability exists in the way that the Windows Search Indexer handles objects in memory. An attacker who successfully exploited the vulnerability could execute code with elevated permissions.&lt;/p&gt;
@@ -4847,7 +4850,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="13">
+  <vuln:Vulnerability Ordinal="14">
     <vuln:Title>Windows Search Indexer Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;An elevation of privilege vulnerability exists in the way that the Windows Search Indexer handles objects in memory. An attacker who successfully exploited the vulnerability could execute code with elevated permissions.&lt;/p&gt;
@@ -5510,7 +5513,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="14">
+  <vuln:Vulnerability Ordinal="15">
     <vuln:Title>Windows Common Log File System Driver Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;An information disclosure vulnerability exists in the Windows Common Log File System (CLFS) driver when it fails to properly handle objects in memory. An attacker who successfully exploited this vulnerability could potentially read data that was not intended to be disclosed. Note that this vulnerability would not allow an attacker to execute code or to elevate their user rights directly, but it could be used to obtain information that could be used to try to further compromise the affected system.&lt;/p&gt;
@@ -6439,7 +6442,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="15">
+  <vuln:Vulnerability Ordinal="16">
     <vuln:Title>Microsoft Windows Denial of Service Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;A denial of service vulnerability exists when Windows improperly handles hard links. An attacker who successfully exploited the vulnerability could cause a target system to stop responding.&lt;/p&gt;
@@ -6702,7 +6705,7 @@
         <vuln:URL />
       </vuln:Acknowledgment>
       <vuln:Acknowledgment>
-        <vuln:Name />
+        <vuln:Name>&lt;a href="https://twitter.com/edwardzpeng"&gt;Zhiniang Peng&lt;/a&gt; of Qihoo 360 Core security and Jiadong Lu</vuln:Name>
         <vuln:URL />
       </vuln:Acknowledgment>
     </vuln:Acknowledgments>
@@ -6715,7 +6718,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="16">
+  <vuln:Vulnerability Ordinal="17">
     <vuln:Title>Hyper-V Denial of Service Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;A denial of service vulnerability exists when Microsoft Hyper-V Virtual PCI on a host server fails to properly validate input from a privileged user on a guest operating system. To exploit the vulnerability, an attacker who already has a privileged account on a guest operating system, running as a virtual machine, could run a specially crafted application that causes a host machine to crash.&lt;/p&gt;
@@ -6988,7 +6991,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="33">
+  <vuln:Vulnerability Ordinal="34">
     <vuln:Title>Windows Subsystem for Linux Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;An elevation of privilege vulnerability exists in the way that the Windows Subsystem for Linux handles files. An attacker who successfully exploited the vulnerability could execute code with elevated privileges.&lt;/p&gt;
@@ -7153,6 +7156,10 @@
         <vuln:URL />
       </vuln:Acknowledgment>
       <vuln:Acknowledgment>
+        <vuln:Name>Jarvis_1oop of Pinduoduo Security Research Lab</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+      <vuln:Acknowledgment>
         <vuln:Name>Zhiniang Peng (&lt;a href="https://twitter.com/edwardzpeng"&gt;@edwardzpeng&lt;/a&gt;) of Qihoo 360 Core Security and Jiadong Lu</vuln:Name>
         <vuln:URL />
       </vuln:Acknowledgment>
@@ -7164,9 +7171,15 @@
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2020-01-29T08:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added an acknowledgement.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="34">
+  <vuln:Vulnerability Ordinal="35">
     <vuln:Title>Remote Desktop Web Access Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;An information disclosure vulnerability exists when Remote Desktop Web Access improperly handles credential information. An attacker who successfully exploited this vulnerability could obtain legitimate users' credentials.&lt;/p&gt;
@@ -7476,7 +7489,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="35">
+  <vuln:Vulnerability Ordinal="36">
     <vuln:Title>Update Notification Manager Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;An elevation of privilege vulnerability exists in the way the Update Notification Manager handles files.&lt;/p&gt;
@@ -7893,7 +7906,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="36">
+  <vuln:Vulnerability Ordinal="37">
     <vuln:Title>Windows Common Log File System Driver Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;An information disclosure vulnerability exists in the Windows Common Log File System (CLFS) driver when it fails to properly handle objects in memory. An attacker who successfully exploited this vulnerability could potentially read data that was not intended to be disclosed. Note that this vulnerability would not allow an attacker to execute code or to elevate their user rights directly, but it could be used to obtain information that could be used to try to further compromise the affected system.&lt;/p&gt;
@@ -8822,7 +8835,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="2">
+  <vuln:Vulnerability Ordinal="3">
     <vuln:Title>ASP.NET Core Denial of Service Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;A denial of service vulnerability exists when ASP.NET Core improperly handles web requests. An attacker who successfully exploited this vulnerability could cause a denial of service against an ASP.NET Core web application. The vulnerability can be exploited remotely, without authentication.&lt;/p&gt;
@@ -8903,7 +8916,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="3">
+  <vuln:Vulnerability Ordinal="4">
     <vuln:Title>ASP.NET Core Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;A remote code execution vulnerability exists in ASP.NET Core software when the software fails to handle objects in memory.&lt;/p&gt;
@@ -8978,7 +8991,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="4">
+  <vuln:Vulnerability Ordinal="5">
     <vuln:Title>.NET Framework Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;A remote code execution vulnerability exists in .NET software when the software fails to check the source markup of a file.&lt;/p&gt;
@@ -10110,7 +10123,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="5">
+  <vuln:Vulnerability Ordinal="6">
     <vuln:Title>.NET Framework Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;A remote code execution vulnerability exists in .NET software when the software fails to check the source markup of a file.&lt;/p&gt;
@@ -11241,7 +11254,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="17">
+  <vuln:Vulnerability Ordinal="18">
     <vuln:Title>Microsoft Cryptographic Services Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;An elevation of privilege vulnerability exists when Microsoft Cryptographic Services improperly handles files. An attacker could exploit the vulnerability to overwrite or modify a protected file leading to a privilege escalation.&lt;/p&gt;
@@ -12167,7 +12180,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="18">
+  <vuln:Vulnerability Ordinal="19">
     <vuln:Title>Windows Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;A security feature bypass vulnerability exists in Windows 10 when third party filters are called during a password update. Successful exploitation of the vulnerability could allow a user to make use of a blocked password for their account.&lt;/p&gt;
@@ -12448,7 +12461,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="19">
+  <vuln:Vulnerability Ordinal="20">
     <vuln:Title>Microsoft Graphics Component Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;An information disclosure vulnerability exists when the Microsoft Windows Graphics Component improperly handles objects in memory. An attacker who successfully exploited the vulnerability could obtain information to further compromise the user’s system.&lt;/p&gt;
@@ -12764,7 +12777,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="20">
+  <vuln:Vulnerability Ordinal="21">
     <vuln:Title>Windows Search Indexer Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;An elevation of privilege vulnerability exists in the way that the Windows Search Indexer handles objects in memory. An attacker who successfully exploited the vulnerability could execute code with elevated permissions.&lt;/p&gt;
@@ -13427,7 +13440,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="21">
+  <vuln:Vulnerability Ordinal="22">
     <vuln:Title>Win32k Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;An elevation of privilege vulnerability exists in Windows when the Win32k component fails to properly handle objects in memory. An attacker who successfully exploited this vulnerability could run arbitrary code in kernel mode. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights.&lt;/p&gt;
@@ -13609,7 +13622,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="22">
+  <vuln:Vulnerability Ordinal="23">
     <vuln:Title>Windows Search Indexer Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;An elevation of privilege vulnerability exists in the way that the Windows Search Indexer handles objects in memory. An attacker who successfully exploited the vulnerability could execute code with elevated permissions.&lt;/p&gt;
@@ -14535,7 +14548,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="23">
+  <vuln:Vulnerability Ordinal="24">
     <vuln:Title>Windows Search Indexer Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;An elevation of privilege vulnerability exists in the way that the Windows Search Indexer handles objects in memory. An attacker who successfully exploited the vulnerability could execute code with elevated permissions.&lt;/p&gt;
@@ -15461,7 +15474,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="24">
+  <vuln:Vulnerability Ordinal="25">
     <vuln:Title>Windows Search Indexer Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;An elevation of privilege vulnerability exists in the way that the Windows Search Indexer handles objects in memory. An attacker who successfully exploited the vulnerability could execute code with elevated permissions.&lt;/p&gt;
@@ -16387,7 +16400,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="25">
+  <vuln:Vulnerability Ordinal="26">
     <vuln:Title>Windows Search Indexer Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;An elevation of privilege vulnerability exists in the way that the Windows Search Indexer handles objects in memory. An attacker who successfully exploited the vulnerability could execute code with elevated permissions.&lt;/p&gt;
@@ -17313,7 +17326,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="26">
+  <vuln:Vulnerability Ordinal="27">
     <vuln:Title>Windows Search Indexer Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;An elevation of privilege vulnerability exists in the way that the Windows Search Indexer handles objects in memory. An attacker who successfully exploited the vulnerability could execute code with elevated permissions.&lt;/p&gt;
@@ -18239,7 +18252,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="27">
+  <vuln:Vulnerability Ordinal="28">
     <vuln:Title>Windows Search Indexer Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;An elevation of privilege vulnerability exists in the way that the Windows Search Indexer handles objects in memory. An attacker who successfully exploited the vulnerability could execute code with elevated permissions.&lt;/p&gt;
@@ -19148,7 +19161,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="28">
+  <vuln:Vulnerability Ordinal="29">
     <vuln:Title>Windows Search Indexer Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;An elevation of privilege vulnerability exists in the way that the Windows Search Indexer handles objects in memory. An attacker who successfully exploited the vulnerability could execute code with elevated permissions.&lt;/p&gt;
@@ -20074,7 +20087,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="29">
+  <vuln:Vulnerability Ordinal="30">
     <vuln:Title>Windows Search Indexer Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;An elevation of privilege vulnerability exists in the way that the Windows Search Indexer handles objects in memory. An attacker who successfully exploited the vulnerability could execute code with elevated permissions.&lt;/p&gt;
@@ -21000,7 +21013,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="30">
+  <vuln:Vulnerability Ordinal="31">
     <vuln:Title>Windows Search Indexer Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;An elevation of privilege vulnerability exists in the way that the Windows Search Indexer handles objects in memory. An attacker who successfully exploited the vulnerability could execute code with elevated permissions.&lt;/p&gt;
@@ -21498,7 +21511,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="31">
+  <vuln:Vulnerability Ordinal="32">
     <vuln:Title>Windows Common Log File System Driver Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;An elevation of privilege vulnerability exists when the &lt;a href="https://technet.microsoft.com/library/security/dn848375.aspx#CLFS"&gt;Windows Common Log File System (CLFS)&lt;/a&gt; driver improperly handles objects in memory. An attacker who successfully exploited this vulnerability could run processes in an elevated context.&lt;/p&gt;
@@ -22424,7 +22437,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="32">
+  <vuln:Vulnerability Ordinal="33">
     <vuln:Title>Windows Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;An elevation of privilege vulnerability exists in Microsoft Windows when Windows fails to properly handle certain symbolic links. An attacker who successfully exploited this vulnerability could potentially set certain items to run at a higher level and thereby elevate permissions.&lt;/p&gt;
@@ -23373,7 +23386,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="37">
+  <vuln:Vulnerability Ordinal="38">
     <vuln:Title>Internet Explorer Memory Corruption Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;A remote code execution vulnerability exists when Internet Explorer improperly accesses objects in memory. The vulnerability could corrupt memory in such a way that an attacker could execute arbitrary code in the context of the current user. An attacker who successfully exploited the vulnerability could gain the same user rights as the current user. If the current user is logged on with administrative user rights, the attacker could take control of an affected system. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights.&lt;/p&gt;
@@ -24075,7 +24088,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="42">
+  <vuln:Vulnerability Ordinal="43">
     <vuln:Title>.NET Framework Remote Code Execution Injection Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;A remote code execution vulnerability exists when the Microsoft .NET Framework fails to validate input properly. An attacker who successfully exploited this vulnerability could take control of an affected system. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights. Users whose accounts are configured to have fewer user rights on the system could be less impacted than users who operate with administrative user rights.&lt;/p&gt;
@@ -25189,7 +25202,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="43">
+  <vuln:Vulnerability Ordinal="44">
     <vuln:Title>Microsoft Office Online Spoofing Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;A spoofing vulnerability exists when Office Online does not validate origin in cross-origin communications correctly. An attacker could exploit the vulnerability by sending a specially crafted request to an affected site.&lt;/p&gt;
@@ -25247,7 +25260,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="44">
+  <vuln:Vulnerability Ordinal="45">
     <vuln:Title>Microsoft Excel Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;A remote code execution vulnerability exists in Microsoft Excel software when the software fails to properly handle objects in memory. An attacker who successfully exploited the vulnerability could run arbitrary code in the context of the current user. If the current user is logged on with administrative user rights, an attacker could take control of the affected system. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights. Users whose accounts are configured to have fewer user rights on the system could be less impacted than users who operate with administrative user rights.&lt;/p&gt;
@@ -25455,7 +25468,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="45">
+  <vuln:Vulnerability Ordinal="46">
     <vuln:Title>Microsoft Excel Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;A remote code execution vulnerability exists in Microsoft Excel software when the software fails to properly handle objects in memory. An attacker who successfully exploited the vulnerability could run arbitrary code in the context of the current user. If the current user is logged on with administrative user rights, an attacker could take control of the affected system. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights. Users whose accounts are configured to have fewer user rights on the system could be less impacted than users who operate with administrative user rights.&lt;/p&gt;
@@ -25663,7 +25676,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="46">
+  <vuln:Vulnerability Ordinal="47">
     <vuln:Title>Microsoft Office Memory Corruption Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;A remote code execution vulnerability exists in Microsoft Office software when the software fails to properly handle objects in memory. An attacker who successfully exploited the vulnerability could run arbitrary code in the context of the current user. If the current user is logged on with administrative user rights, an attacker could take control of the affected system. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights. Users whose accounts are configured to have fewer user rights on the system could be less impacted than users who operate with administrative user rights.&lt;/p&gt;
@@ -25845,7 +25858,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="47">
+  <vuln:Vulnerability Ordinal="48">
     <vuln:Title>Microsoft Excel Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;A remote code execution vulnerability exists in Microsoft Excel software when the software fails to properly handle objects in memory. An attacker who successfully exploited the vulnerability could run arbitrary code in the context of the current user. If the current user is logged on with administrative user rights, an attacker could take control of the affected system. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights. Users whose accounts are configured to have fewer user rights on the system could be less impacted than users who operate with administrative user rights.&lt;/p&gt;
@@ -25912,7 +25925,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="48">
+  <vuln:Vulnerability Ordinal="49">
     <vuln:Title>Microsoft OneDrive for Android Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;A security feature bypass vulnerability exists in Microsoft OneDrive App for Android.&lt;/p&gt;
@@ -25976,7 +25989,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="49">
+  <vuln:Vulnerability Ordinal="50">
     <vuln:Title>Microsoft Dynamics 365 (On-Premise) Cross Site Scripting Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;A cross site scripting vulnerability exists when Microsoft Dynamics 365 (on-premises) does not properly sanitize a specially crafted web request to an affected Dynamics server. An authenticated attacker could exploit the vulnerability by sending a specially crafted request to an affected Dynamics server.&lt;/p&gt;
@@ -25988,17 +26001,17 @@
     <vuln:CVE>CVE-2020-0656</vuln:CVE>
     <vuln:ProductStatuses>
       <vuln:Status Type="Known Affected">
-        <vuln:ProductID>0</vuln:ProductID>
+        <vuln:ProductID>11727</vuln:ProductID>
       </vuln:Status>
     </vuln:ProductStatuses>
     <vuln:Threats>
       <vuln:Threat Type="Impact">
         <vuln:Description>Spoofing</vuln:Description>
-        <vuln:ProductID>0</vuln:ProductID>
+        <vuln:ProductID>11727</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
         <vuln:Description>Important</vuln:Description>
-        <vuln:ProductID>0</vuln:ProductID>
+        <vuln:ProductID>11727</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Exploit Status">
         <vuln:Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation Less Likely;Older Software Release:Exploitation Less Likely</vuln:Description>
@@ -26009,7 +26022,7 @@
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>Relelase Notes</vuln:Description>
         <vuln:URL>https://mbs.microsoft.com/customersource/Global/365Enterprise/downloads/product-releases/365fieldservice7</vuln:URL>
-        <vuln:ProductID>0</vuln:ProductID>
+        <vuln:ProductID>11727</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
@@ -26030,7 +26043,109 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="38">
+  <vuln:Vulnerability Ordinal="1">
+    <vuln:Title>Chromium Security Updates for Microsoft Edge based on Chromium</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This advisory will be updated whenever Microsoft releases a version of Microsoft Edge which incorporates publicly disclosed security updates from the Chromium project.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;History of Microsoft Edge (Chromium-based) Security Updates&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;th&gt;Chrome Release Blog&lt;/th&gt;
+&lt;th&gt;Highest Severity Fix in Release&lt;/th&gt;
+&lt;th&gt;CVEs&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;80.0.361.48&lt;/td&gt;
+&lt;td&gt;2/7/2020&lt;/td&gt;
+&lt;td&gt;80.0.3987.87&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://chromereleases.googleblog.com/2020/02/stable-channel-update-for-desktop.html"&gt;Chrome Releases Blog&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;High&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-6381"&gt;CVE-2020-6381&lt;/a&gt;, &lt;a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-6382"&gt;CVE-2020-6382&lt;/a&gt;, &lt;a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-18197"&gt;CVE-2019-18197&lt;/a&gt;, &lt;a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-19926"&gt;CVE-2019-19926&lt;/a&gt;, &lt;a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-6385"&gt;CVE-2020-6385&lt;/a&gt;, &lt;a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-19880"&gt;CVE-2019-19880&lt;/a&gt;, &lt;a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-19925"&gt;CVE-2019-19925&lt;/a&gt;, &lt;a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-6387"&gt;CVE-2020-6387&lt;/a&gt;, &lt;a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-6388"&gt;CVE-2020-6388&lt;/a&gt;, &lt;a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-6389"&gt;CVE-2020-6389&lt;/a&gt;, &lt;a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-6390"&gt;CVE-2020-6390&lt;/a&gt;, &lt;a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-6391"&gt;CVE-2020-6391&lt;/a&gt;, &lt;a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202-6392"&gt;CVE-2020-6392&lt;/a&gt;, &lt;a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-6393"&gt;CVE-2020-6393&lt;/a&gt;, &lt;a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-6394"&gt;CVE-2020-6394&lt;/a&gt;, &lt;a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-6395"&gt;CVE-2020-6395&lt;/a&gt;, &lt;a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-6396"&gt;CVE-2020-6396&lt;/a&gt;, &lt;a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-6397"&gt;CVE-2020-6397&lt;/a&gt;, &lt;a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-6398"&gt;CVE-2020-6398&lt;/a&gt;, &lt;a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-6399"&gt;CVE-2020-6399&lt;/a&gt;, &lt;a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-6400"&gt;CVE-2020-6400&lt;/a&gt;, &lt;a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-6401"&gt;CVE-2020-6401&lt;/a&gt;, &lt;a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-6402"&gt;CVE-2020-6402&lt;/a&gt;, &lt;a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-6404"&gt;CVE-2020-6404&lt;/a&gt;, &lt;a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-220-6405"&gt;CVE-2020-6405&lt;/a&gt;, &lt;a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-6406"&gt;CVE-2020-6406&lt;/a&gt;, &lt;a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-19923"&gt;CVE-2019-19923&lt;/a&gt;, &lt;a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-6408"&gt;CVE-2020-6408&lt;/a&gt;, &lt;a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-6409"&gt;CVE-2020-6409&lt;/a&gt;, &lt;a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-6410"&gt;CVE-2020-6410&lt;/a&gt;, &lt;a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-6411"&gt;CVE-2020-6411&lt;/a&gt;, &lt;a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-6412"&gt;CVE-2020-6412&lt;/a&gt;, &lt;a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-6413"&gt;CVE-2020-6413&lt;/a&gt;, &lt;a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-6414"&gt;CVE-2020-6414&lt;/a&gt;, &lt;a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-6415"&gt;CVE-2020-6415&lt;/a&gt;, &lt;a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-6416"&gt;CVE-2020-6416&lt;/a&gt;, &lt;a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-6417"&gt;CVE-2020-6417&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;79.0.309.68&lt;/td&gt;
+&lt;td&gt;1/17/2020&lt;/td&gt;
+&lt;td&gt;79.0.3945.130&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://chromereleases.googleblog.com/2020/01/"&gt;Chrome Releases Blog&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Critical&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-6378"&gt;CVE-2020-6378&lt;/a&gt;, &lt;a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-6379"&gt;CVE-2020-6379&lt;/a&gt;, &lt;a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-6380"&gt;CVE-2020-6380&lt;/a&gt;, &lt;a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-0601"&gt;CVE-2020-0601&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge on Chromium" Type="Tag" Ordinal="20">Microsoft Edge on Chromium</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>ADV200002</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>Publicly Disclosed:No;Exploited:No;DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2020-01-28T08:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2020-01-29T08:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Updated link to release notes.  This is an informational change only.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.2</cvrf:Number>
+        <cvrf:Date>2020-01-30T08:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Updated details in the table in the description. This is an informational change only.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2020-02-07T08:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Updated advisory to announce a new version of Microsoft Edge (Chromium-based).  Please see the table for more information.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="39">
     <vuln:Title>Microsoft Windows Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;An elevation of privilege vulnerability exists in Windows Media Service that allows file creation in arbitrary locations.&lt;/p&gt;
@@ -26757,7 +26872,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="39">
+  <vuln:Vulnerability Ordinal="40">
     <vuln:Title>Win32k Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;An elevation of privilege vulnerability exists in Windows when the Win32k component fails to properly handle objects in memory. An attacker who successfully exploited this vulnerability could run arbitrary code in kernel mode. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights.&lt;/p&gt;
@@ -27683,7 +27798,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="40">
+  <vuln:Vulnerability Ordinal="41">
     <vuln:Title>Windows GDI+ Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;An information disclosure vulnerability exists in the way that the Windows Graphics Device Interface Plus (GDI+) handles objects in memory, allowing an attacker to retrieve information from a targeted system. By itself, the information disclosure does not allow arbitrary code execution; however, it could allow arbitrary code to be run if the attacker uses it in combination with another vulnerability.&lt;/p&gt;
@@ -28612,7 +28727,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="41">
+  <vuln:Vulnerability Ordinal="42">
     <vuln:Title>Windows Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;An elevation of privilege vulnerability exists when Microsoft Windows implements predictable memory section names. An attacker who successfully exploited this vulnerability could run arbitrary code as system. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights.&lt;/p&gt;
@@ -29346,10 +29461,10 @@
 </vuln:Note>
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Is there an update to address this vulnerability?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;No, Microsoft is aware of this vulnerability and working on a fix. Our standard policy is to release security updates on Update Tuesday, the second Tuesday of each month. This predictable schedule allows for partner quality assurance and IT planning, which helps maintain the Windows ecosystem as a reliable, secure choice for our customers.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Is Microsoft aware of attacks based on this vulnerabilty?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Is Microsoft aware of attacks based on this vulnerability?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Yes, Microsoft is aware of limited targeted attacks.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Is there a CVE assigned to this vulnerability?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Yes, Microsoft has assigned CVE-2020-0674 to this vulnerability&lt;/p&gt;
+&lt;p&gt;Yes, Microsoft has assigned CVE-2020-0674 to this vulnerability.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="Microsoft Scripting Engine" Type="Tag" Ordinal="20">Microsoft Scripting Engine</vuln:Note>
     </vuln:Notes>
@@ -29659,7 +29774,11 @@
         <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Workaround">
-        <vuln:Description>&lt;p&gt;&lt;strong&gt;Restrict access to JScript.dll&lt;/strong&gt;&lt;/p&gt;
+        <vuln:Description>&lt;p&gt;&lt;strong&gt;Impact of Workaround&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Please note:&lt;/strong&gt; Implementing these steps might result in reduced functionality for components or features that rely on jscript.dll. For example, depending on the environment, this could include client configurations that leverage proxy automatic configuration scripts (PAC scripts). These features and others may be impacted.&lt;/p&gt;
+&lt;p&gt;Microsoft recommends these mitigation steps only if there is  indication that you are under elevated risk.  If you implement the workaround, you will need to revert the mitigation steps before installing any future updates to continue to be protected.&lt;/p&gt;
+&lt;p&gt;By default, IE11, IE10, and IE9 uses Jscript9.dll which is not impacted by this vulnerability. This vulnerability only affects certain websites that utilize jscript as the scripting engine.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Restrict access to JScript.dll&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;For 32-bit systems, enter the following command at an administrative command prompt:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;    takeown /f %windir%\system32\jscript.dll
     cacls %windir%\system32\jscript.dll /E /P everyone:N
@@ -29670,9 +29789,6 @@
     takeown /f %windir%\system32\jscript.dll
     cacls %windir%\system32\jscript.dll /E /P everyone:N
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;Impact of Workaround&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Implementing these steps might result in reduced functionality for components or features that rely on jscript.dll. To be fully protected, Microsoft recommends the update be installed as soon as possible. Please revert the mitigation steps &lt;strong&gt;before&lt;/strong&gt; installing the update to return to a full state.&lt;/p&gt;
-&lt;p&gt;By default, IE11, IE10, and IE9 uses Jscript9.dll which is not impacted by this vulnerability. This vulnerability only affects certain websites that utilize jscript as the scripting engine.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;How to undo the workaround&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;For 32-bit systems, enter the following command at an administrative command prompt:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;    cacls %windir%\system32\jscript.dll /E /R everyone    
@@ -29691,7 +29807,7 @@
         <vuln:URL />
       </vuln:Acknowledgment>
       <vuln:Acknowledgment>
-        <vuln:Name>Ella Yu from Qihoo 360 </vuln:Name>
+        <vuln:Name>Yi Huang(@C0rk1_H) &amp; Kang Yang(@dnpushme) of Qihoo 360 ATA</vuln:Name>
         <vuln:URL />
       </vuln:Acknowledgment>
     </vuln:Acknowledgments>
@@ -29706,6 +29822,12 @@
         <cvrf:Number>1.1</cvrf:Number>
         <cvrf:Date>2020-01-17T08:00:00Z</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Added acknowledgements and an additional FAQ. This is an informational change only.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.2</cvrf:Number>
+        <cvrf:Date>2020-01-19T08:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Updated Workaround information. This is an informational change only.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
     </vuln:RevisionHistory>
