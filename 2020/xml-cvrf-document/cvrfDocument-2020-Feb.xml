@@ -19648,11 +19648,11 @@
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
   <vuln:Vulnerability Ordinal="31">
-    <vuln:Title>Microsoft Exchange Memory Corruption Vulnerability</vuln:Title>
+    <vuln:Title>Microsoft Exchange Validation Key Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
-      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;A remote code execution vulnerability exists in Microsoft Exchange software when the software fails to properly handle objects in memory. An attacker who successfully exploited the vulnerability could run arbitrary code in the context of the System user. An attacker could then install programs; view, change, or delete data; or create new accounts.&lt;/p&gt;
-&lt;p&gt;Exploitation of the vulnerability requires that a specially crafted email be sent to a vulnerable Exchange server.&lt;/p&gt;
-&lt;p&gt;The security update addresses the vulnerability by correcting how Microsoft Exchange handles objects in memory.&lt;/p&gt;
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;A remote code execution vulnerability exists in Microsoft Exchange Server when the server fails to properly create unique keys at install time.&lt;/p&gt;
+&lt;p&gt;Knowledge of a the validation key allows an authenticated user with a mailbox to pass arbitrary objects to be deserialized by the web application, which runs as SYSTEM.&lt;/p&gt;
+&lt;p&gt;The security update addresses the vulnerability by correcting how Microsoft Exchange creates the keys during install.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="Microsoft Exchange Server" Type="Tag" Ordinal="20">Microsoft Exchange Server</vuln:Note>
     </vuln:Notes>
@@ -19785,6 +19785,12 @@
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2020-02-11T08:00:00Z</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2020-02-11T08:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Corrected the CVE description and title. This is an informational change only.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
     </vuln:RevisionHistory>
@@ -21079,7 +21085,7 @@
         <vuln:URL />
       </vuln:Acknowledgment>
       <vuln:Acknowledgment>
-        <vuln:Name>Reegun Richard J</vuln:Name>
+        <vuln:Name>&lt;a href="https://twitter.com/reegun21/"&gt;Reegun Richard J&lt;/a&gt;</vuln:Name>
         <vuln:URL />
       </vuln:Acknowledgment>
     </vuln:Acknowledgments>
@@ -44148,6 +44154,18 @@
 &lt;p&gt;In a web-based attack scenario, an attacker could host a specially crafted website that is designed to exploit the vulnerability through Internet Explorer and then convince a user to view the website. An attacker could also embed an ActiveX control marked &amp;quot;safe for initialization&amp;quot; in an application or Microsoft Office document that hosts the IE rendering engine. The attacker could also take advantage of compromised websites and websites that accept or host user-provided content or advertisements. These websites could contain specially crafted content that could exploit the vulnerability.&lt;/p&gt;
 &lt;p&gt;The security update addresses the vulnerability by modifying how the scripting engine handles objects in memory.&lt;/p&gt;
 </vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;I applied the workaround to restrict access to JScript.dll as described in ADV200001. Do I need to undo the workaround before I apply the February security update?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Yes. Customers who applied the workaround need to undo it before applying the updates to address this vulnerability.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How do I undo the workaround?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Follow these steps to undo the workaround:&lt;/p&gt;
+&lt;p&gt;For 32-bit systems, enter the following command at an administrative command prompt:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    cacls %windir%\system32\jscript.dll /E /R everyone    
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For 64-bit systems, enter the following command at an administrative command prompt:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    cacls %windir%\system32\jscript.dll /E /R everyone    
+    cacls %windir%\syswow64\jscript.dll /E /R everyone
+&lt;/code&gt;&lt;/pre&gt;
+</vuln:Note>
       <vuln:Note Title="Internet Explorer" Type="Tag" Ordinal="20">Internet Explorer</vuln:Note>
     </vuln:Notes>
     <vuln:CVE>CVE-2020-0674</vuln:CVE>
@@ -44841,6 +44859,12 @@
       </vuln:Acknowledgment>
     </vuln:Acknowledgments>
     <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2020-02-11T08:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added FAQ to explain that the workaround must be undone before installing the updates for this vulnerability. This is an informational change only.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
       <vuln:Revision>
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2020-02-11T08:00:00Z</cvrf:Date>
@@ -45593,7 +45617,7 @@
     </vuln:Remediations>
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
-        <vuln:Name>Oleksandr Mirosh (@olekmirosh) and Alvaro Munoz (@pwntester) from Micro Focus Fortify</vuln:Name>
+        <vuln:Name>Anonymous</vuln:Name>
         <vuln:URL />
       </vuln:Acknowledgment>
     </vuln:Acknowledgments>
@@ -47258,7 +47282,7 @@
         <vuln:URL />
       </vuln:Acknowledgment>
       <vuln:Acknowledgment>
-        <vuln:Name />
+        <vuln:Name>zhong_sf of &lt;a href="https://www.360.com/"&gt;Qihoo 360 Vulcan Team&lt;/a&gt;</vuln:Name>
         <vuln:URL />
       </vuln:Acknowledgment>
       <vuln:Acknowledgment>
@@ -51259,7 +51283,7 @@
     </vuln:Remediations>
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
-        <vuln:Name>&lt;a href="https://twitter.com/flame36987044"&gt;liuxiaoliang &lt;/a&gt;</vuln:Name>
+        <vuln:Name>&lt;a href="https://twitter.com/flame36987044"&gt;liuxiaoliang&lt;/a&gt; and &lt;a href="http://weibo.com/jfpan"&gt;pjf&lt;/a&gt; of IceSword Lab , Qihoo 360&lt;/a&gt;</vuln:Name>
         <vuln:URL />
       </vuln:Acknowledgment>
       <vuln:Acknowledgment>
@@ -51623,7 +51647,7 @@
     </vuln:Remediations>
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
-        <vuln:Name>&lt;a href="https://twitter.com/flame36987044"&gt;liuxiaoliang &lt;/a&gt;</vuln:Name>
+        <vuln:Name>&lt;a href="https://twitter.com/flame36987044"&gt;liuxiaoliang&lt;/a&gt; and &lt;a href="http://weibo.com/jfpan"&gt;pjf&lt;/a&gt; of IceSword Lab , Qihoo 360&lt;/a&gt;</vuln:Name>
         <vuln:URL />
       </vuln:Acknowledgment>
     </vuln:Acknowledgments>
@@ -61920,7 +61944,7 @@
     </vuln:Remediations>
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
-        <vuln:Name>&lt;a href="https://twitter.com/flame36987044"&gt;liuxiaoliang &lt;/a&gt;</vuln:Name>
+        <vuln:Name>&lt;a href="https://twitter.com/flame36987044"&gt;liuxiaoliang&lt;/a&gt; and &lt;a href="http://weibo.com/jfpan"&gt;pjf&lt;/a&gt; of IceSword Lab , Qihoo 360&lt;/a&gt;</vuln:Name>
         <vuln:URL />
       </vuln:Acknowledgment>
     </vuln:Acknowledgments>
@@ -63289,6 +63313,1395 @@ After you set Internet Explorer to require a prompt before it runs ActiveX contr
       </vuln:Remediation>
     </vuln:Remediations>
     <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2020-02-11T08:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="100">
+    <vuln:Title>Remote Desktop Client Remote Code Execution Vulnerability</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;A remote code execution vulnerability exists in the Windows Remote Desktop Client when a user connects to a malicious server. An attacker who successfully exploited this vulnerability could execute arbitrary code on the computer of the connecting client. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights.&lt;/p&gt;
+&lt;p&gt;To exploit this vulnerability, an attacker would need to have control of a server and then convince a user to connect to it. An attacker would have no way of forcing a user to connect to the malicious server, they would need to trick the user into connecting via social engineering, DNS poisoning or using a Man in the Middle (MITM) technique. An attacker could also compromise a legitimate server, host malicious code on it, and wait for the user to connect.&lt;/p&gt;
+&lt;p&gt;The update addresses the vulnerability by correcting how the Windows Remote Desktop Client handles connection requests.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="Remote Desktop Client" Type="Tag" Ordinal="20">Remote Desktop Client</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2020-0817</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11497</vuln:ProductID>
+        <vuln:ProductID>11498</vuln:ProductID>
+        <vuln:ProductID>11499</vuln:ProductID>
+        <vuln:ProductID>11563</vuln:ProductID>
+        <vuln:ProductID>11568</vuln:ProductID>
+        <vuln:ProductID>11569</vuln:ProductID>
+        <vuln:ProductID>11570</vuln:ProductID>
+        <vuln:ProductID>11571</vuln:ProductID>
+        <vuln:ProductID>11572</vuln:ProductID>
+        <vuln:ProductID>11453</vuln:ProductID>
+        <vuln:ProductID>11454</vuln:ProductID>
+        <vuln:ProductID>11583</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:ProductID>10729</vuln:ProductID>
+        <vuln:ProductID>10735</vuln:ProductID>
+        <vuln:ProductID>10852</vuln:ProductID>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:ProductID>10481</vuln:ProductID>
+        <vuln:ProductID>10482</vuln:ProductID>
+        <vuln:ProductID>10484</vuln:ProductID>
+        <vuln:ProductID>10378</vuln:ProductID>
+        <vuln:ProductID>10379</vuln:ProductID>
+        <vuln:ProductID>10483</vuln:ProductID>
+        <vuln:ProductID>10543</vuln:ProductID>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11497</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11498</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11499</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11563</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11568</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11569</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11570</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11571</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11572</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11453</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11454</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11583</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11644</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11645</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11646</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11647</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>10729</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>10735</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>10852</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>10853</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>10816</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>10855</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>10481</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>10482</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>10484</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>10378</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>10379</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>10483</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>10543</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11712</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11713</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11714</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11715</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>11497</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>11498</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>11499</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>11563</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>11568</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>11569</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>11570</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>11571</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>11572</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>11453</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>11454</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>11583</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>11644</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>11645</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>11646</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>11647</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>10729</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>10735</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>10852</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>10853</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>10816</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>10855</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>10481</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>10482</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>10484</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>10378</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>10379</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>10483</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>10543</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>11712</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>11713</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>11714</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>11715</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation More Likely;Older Software Release:Exploitation More Likely;DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>6.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11497</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>6.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11498</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>6.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11499</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>6.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11563</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>6.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11568</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>6.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11569</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>6.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11570</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>6.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11571</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>6.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11572</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>6.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11453</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>6.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11454</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>6.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11583</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>6.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11644</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>6.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11645</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>6.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11646</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>6.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11647</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>6.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>10729</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>6.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>10735</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>6.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>10852</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>6.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>10853</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>6.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>10816</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>6.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>10855</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>6.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>10481</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>6.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>10482</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>6.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>10484</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>6.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>10378</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>6.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>10379</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>6.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>10483</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>6.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>10543</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>6.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11712</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>6.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11713</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>6.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11714</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>6.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11715</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>4537762</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4537762</vuln:URL>
+        <vuln:Supercedence>4534293</vuln:Supercedence>
+        <vuln:ProductID>11497</vuln:ProductID>
+        <vuln:ProductID>11498</vuln:ProductID>
+        <vuln:ProductID>11499</vuln:ProductID>
+        <vuln:ProductID>11563</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4537762</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4537762</vuln:URL>
+        <vuln:ProductID>11497</vuln:ProductID>
+        <vuln:ProductID>11498</vuln:ProductID>
+        <vuln:ProductID>11499</vuln:ProductID>
+        <vuln:ProductID>11563</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>4532691</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4532691</vuln:URL>
+        <vuln:Supercedence>4534273</vuln:Supercedence>
+        <vuln:ProductID>11568</vuln:ProductID>
+        <vuln:ProductID>11569</vuln:ProductID>
+        <vuln:ProductID>11570</vuln:ProductID>
+        <vuln:ProductID>11571</vuln:ProductID>
+        <vuln:ProductID>11572</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4532691</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4532691</vuln:URL>
+        <vuln:ProductID>11568</vuln:ProductID>
+        <vuln:ProductID>11569</vuln:ProductID>
+        <vuln:ProductID>11570</vuln:ProductID>
+        <vuln:ProductID>11571</vuln:ProductID>
+        <vuln:ProductID>11572</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>4537789</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4537789</vuln:URL>
+        <vuln:Supercedence>4534276</vuln:Supercedence>
+        <vuln:ProductID>11453</vuln:ProductID>
+        <vuln:ProductID>11454</vuln:ProductID>
+        <vuln:ProductID>11583</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4537789</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4537789</vuln:URL>
+        <vuln:ProductID>11453</vuln:ProductID>
+        <vuln:ProductID>11454</vuln:ProductID>
+        <vuln:ProductID>11583</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>4532693</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4532693</vuln:URL>
+        <vuln:Supercedence>4528760</vuln:Supercedence>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>4537776</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4537776</vuln:URL>
+        <vuln:Supercedence>4534306</vuln:Supercedence>
+        <vuln:ProductID>10729</vuln:ProductID>
+        <vuln:ProductID>10735</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4537776</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4537776</vuln:URL>
+        <vuln:ProductID>10729</vuln:ProductID>
+        <vuln:ProductID>10735</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>4537764</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4537764</vuln:URL>
+        <vuln:Supercedence>4534271</vuln:Supercedence>
+        <vuln:ProductID>10852</vuln:ProductID>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4537764</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4537764</vuln:URL>
+        <vuln:ProductID>10852</vuln:ProductID>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>4537821</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4537821</vuln:URL>
+        <vuln:Supercedence>4534297</vuln:Supercedence>
+        <vuln:ProductID>10481</vuln:ProductID>
+        <vuln:ProductID>10482</vuln:ProductID>
+        <vuln:ProductID>10484</vuln:ProductID>
+        <vuln:ProductID>10483</vuln:ProductID>
+        <vuln:ProductID>10543</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Monthly Rollup</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4537821</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4537821</vuln:URL>
+        <vuln:ProductID>10481</vuln:ProductID>
+        <vuln:ProductID>10482</vuln:ProductID>
+        <vuln:ProductID>10484</vuln:ProductID>
+        <vuln:ProductID>10483</vuln:ProductID>
+        <vuln:ProductID>10543</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>4537803</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4537803</vuln:URL>
+        <vuln:ProductID>10481</vuln:ProductID>
+        <vuln:ProductID>10482</vuln:ProductID>
+        <vuln:ProductID>10483</vuln:ProductID>
+        <vuln:ProductID>10543</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Only</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4537803</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4537803</vuln:URL>
+        <vuln:ProductID>10481</vuln:ProductID>
+        <vuln:ProductID>10482</vuln:ProductID>
+        <vuln:ProductID>10483</vuln:ProductID>
+        <vuln:ProductID>10543</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>4537814</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4537814</vuln:URL>
+        <vuln:Supercedence>4534283</vuln:Supercedence>
+        <vuln:ProductID>10378</vuln:ProductID>
+        <vuln:ProductID>10379</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Monthly Rollup</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4537814</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4537814</vuln:URL>
+        <vuln:ProductID>10378</vuln:ProductID>
+        <vuln:ProductID>10379</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>4537794</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4537794</vuln:URL>
+        <vuln:ProductID>10378</vuln:ProductID>
+        <vuln:ProductID>10379</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Only</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4537794</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4537794</vuln:URL>
+        <vuln:ProductID>10378</vuln:ProductID>
+        <vuln:ProductID>10379</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments>
+      <vuln:Acknowledgment>
+        <vuln:Name>&lt;a href="http://c00c.cc/" &gt;ZhangSen&lt;/a&gt; of &lt;a href="http://www.360.com/"&gt;Qihoo 360 Vulcan Team&lt;/a&gt;​</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+    </vuln:Acknowledgments>
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2020-02-11T08:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="101">
+    <vuln:Title>Windows Elevation of Privilege Vulnerability</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;An elevation of privilege vulnerability exists in the way that the sysmain.dll handles objects in memory. An attacker who successfully exploited the vulnerability could execute code with elevated permissions.&lt;/p&gt;
+&lt;p&gt;To exploit the vulnerability, a locally authenticated attacker could run a specially crafted application.&lt;/p&gt;
+&lt;p&gt;The security update addresses the vulnerability by ensuring the sysmain.dll properly handles objects in memory.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Windows" Type="Tag" Ordinal="20">Microsoft Windows</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2020-0818</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11497</vuln:ProductID>
+        <vuln:ProductID>11498</vuln:ProductID>
+        <vuln:ProductID>11499</vuln:ProductID>
+        <vuln:ProductID>11563</vuln:ProductID>
+        <vuln:ProductID>11568</vuln:ProductID>
+        <vuln:ProductID>11569</vuln:ProductID>
+        <vuln:ProductID>11570</vuln:ProductID>
+        <vuln:ProductID>11571</vuln:ProductID>
+        <vuln:ProductID>11572</vuln:ProductID>
+        <vuln:ProductID>11453</vuln:ProductID>
+        <vuln:ProductID>11454</vuln:ProductID>
+        <vuln:ProductID>11583</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:ProductID>10729</vuln:ProductID>
+        <vuln:ProductID>10735</vuln:ProductID>
+        <vuln:ProductID>10852</vuln:ProductID>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:ProductID>10481</vuln:ProductID>
+        <vuln:ProductID>10482</vuln:ProductID>
+        <vuln:ProductID>10484</vuln:ProductID>
+        <vuln:ProductID>10483</vuln:ProductID>
+        <vuln:ProductID>10543</vuln:ProductID>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>11497</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>11498</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>11499</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>11563</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>11568</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>11569</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>11570</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>11571</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>11572</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>11453</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>11454</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>11583</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>11644</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>11645</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>11646</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>11647</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>10729</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>10735</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>10852</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>10853</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>10816</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>10855</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>10481</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>10482</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>10484</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>10483</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>10543</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>11712</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>11713</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>11714</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>11715</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11497</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11498</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11499</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11563</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11568</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11569</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11570</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11571</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11572</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11453</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11454</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11583</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11644</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11645</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11646</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11647</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>10729</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>10735</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>10852</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>10853</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>10816</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>10855</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>10481</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>10482</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>10484</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>10483</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>10543</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11712</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11713</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11714</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11715</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation Less Likely;Older Software Release:Exploitation Less Likely;DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.0</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11497</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.0</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11498</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.0</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11499</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.0</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11563</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.0</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11568</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.0</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11569</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.0</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11570</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.0</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11571</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.0</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11572</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.0</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11453</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.0</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11454</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.0</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11583</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.0</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11644</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.0</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11645</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.0</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11646</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.0</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11647</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.0</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>10729</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.0</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>10735</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.0</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>10852</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.0</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>10853</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.0</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>10816</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.0</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>10855</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.0</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>10481</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.0</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>10482</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.0</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>10484</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.0</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>10483</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.0</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>10543</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.0</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11712</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.0</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11713</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.0</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11714</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.0</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11715</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>4537762</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4537762</vuln:URL>
+        <vuln:Supercedence>4534293</vuln:Supercedence>
+        <vuln:ProductID>11497</vuln:ProductID>
+        <vuln:ProductID>11498</vuln:ProductID>
+        <vuln:ProductID>11499</vuln:ProductID>
+        <vuln:ProductID>11563</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4537762</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4537762</vuln:URL>
+        <vuln:ProductID>11497</vuln:ProductID>
+        <vuln:ProductID>11498</vuln:ProductID>
+        <vuln:ProductID>11499</vuln:ProductID>
+        <vuln:ProductID>11563</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>4532691</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4532691</vuln:URL>
+        <vuln:Supercedence>4534273</vuln:Supercedence>
+        <vuln:ProductID>11568</vuln:ProductID>
+        <vuln:ProductID>11569</vuln:ProductID>
+        <vuln:ProductID>11570</vuln:ProductID>
+        <vuln:ProductID>11571</vuln:ProductID>
+        <vuln:ProductID>11572</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4532691</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4532691</vuln:URL>
+        <vuln:ProductID>11568</vuln:ProductID>
+        <vuln:ProductID>11569</vuln:ProductID>
+        <vuln:ProductID>11570</vuln:ProductID>
+        <vuln:ProductID>11571</vuln:ProductID>
+        <vuln:ProductID>11572</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>4537789</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4537789</vuln:URL>
+        <vuln:Supercedence>4534276</vuln:Supercedence>
+        <vuln:ProductID>11453</vuln:ProductID>
+        <vuln:ProductID>11454</vuln:ProductID>
+        <vuln:ProductID>11583</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4537789</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4537789</vuln:URL>
+        <vuln:ProductID>11453</vuln:ProductID>
+        <vuln:ProductID>11454</vuln:ProductID>
+        <vuln:ProductID>11583</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>4532693</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4532693</vuln:URL>
+        <vuln:Supercedence>4528760</vuln:Supercedence>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>4537776</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4537776</vuln:URL>
+        <vuln:Supercedence>4534306</vuln:Supercedence>
+        <vuln:ProductID>10729</vuln:ProductID>
+        <vuln:ProductID>10735</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4537776</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4537776</vuln:URL>
+        <vuln:ProductID>10729</vuln:ProductID>
+        <vuln:ProductID>10735</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>4537764</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4537764</vuln:URL>
+        <vuln:Supercedence>4534271</vuln:Supercedence>
+        <vuln:ProductID>10852</vuln:ProductID>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4537764</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4537764</vuln:URL>
+        <vuln:ProductID>10852</vuln:ProductID>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>4537821</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4537821</vuln:URL>
+        <vuln:Supercedence>4534297</vuln:Supercedence>
+        <vuln:ProductID>10481</vuln:ProductID>
+        <vuln:ProductID>10482</vuln:ProductID>
+        <vuln:ProductID>10484</vuln:ProductID>
+        <vuln:ProductID>10483</vuln:ProductID>
+        <vuln:ProductID>10543</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Monthly Rollup</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4537821</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4537821</vuln:URL>
+        <vuln:ProductID>10481</vuln:ProductID>
+        <vuln:ProductID>10482</vuln:ProductID>
+        <vuln:ProductID>10484</vuln:ProductID>
+        <vuln:ProductID>10483</vuln:ProductID>
+        <vuln:ProductID>10543</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>4537803</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4537803</vuln:URL>
+        <vuln:ProductID>10481</vuln:ProductID>
+        <vuln:ProductID>10482</vuln:ProductID>
+        <vuln:ProductID>10483</vuln:ProductID>
+        <vuln:ProductID>10543</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Only</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4537803</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4537803</vuln:URL>
+        <vuln:ProductID>10481</vuln:ProductID>
+        <vuln:ProductID>10482</vuln:ProductID>
+        <vuln:ProductID>10483</vuln:ProductID>
+        <vuln:ProductID>10543</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments>
+      <vuln:Acknowledgment>
+        <vuln:Name>&lt;a href="https://www.pentestpartners.com/"&gt; T Shiomitsu of Pen Test Partners&lt;/a&gt;</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+    </vuln:Acknowledgments>
     <vuln:RevisionHistory>
       <vuln:Revision>
         <cvrf:Number>1.0</cvrf:Number>
