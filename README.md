@@ -10,6 +10,9 @@ The Microsoft Security Response Center (MSRC) portal is located at https://porta
 There isn't any way to read previous release notes where known issues are listed.
 Here's my list:
 
+### March 2020
+https://portal.msrc.microsoft.com/en-us/security-guidance/releasenotedetail/2020-Mar
+
 ### February 2020
 https://portal.msrc.microsoft.com/en-us/security-guidance/releasenotedetail/2020-Feb
 
