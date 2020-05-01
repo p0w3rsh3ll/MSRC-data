@@ -90,7 +90,7 @@
 <tr><td>Microsoft Office SharePoint</td>    <td><a href="#CVE-2020-0971">CVE-2020-0971</a></td>    <td>Microsoft SharePoint Remote Code Execution Vulnerability</td></tr>
 <tr><td>Microsoft Office SharePoint</td>    <td><a href="#CVE-2020-0972">CVE-2020-0972</a></td>    <td>Microsoft SharePoint Spoofing Vulnerability</td></tr>
 <tr><td>Microsoft Office SharePoint</td>    <td><a href="#CVE-2020-0929">CVE-2020-0929</a></td>    <td>Microsoft SharePoint Remote Code Execution Vulnerability</td></tr>
-<tr><td>Microsoft Office SharePoint</td>    <td><a href="#CVE-2020-0933">CVE-2020-0933</a></td>    <td>Microsoft Office SharePoint XSS Vulnerability</td></tr>
+<tr><td>Microsoft Office SharePoint</td>    <td><a href="#CVE-2020-0933">CVE-2020-0933</a></td>    <td>Microsoft SharePoint Server Information Disclosure Vulnerability</td></tr>
 <tr><td>Microsoft Office SharePoint</td>    <td><a href="#CVE-2020-0974">CVE-2020-0974</a></td>    <td>Microsoft SharePoint Remote Code Execution Vulnerability</td></tr>
 <tr><td>Microsoft Office SharePoint</td>    <td><a href="#CVE-2020-0977">CVE-2020-0977</a></td>    <td>Microsoft SharePoint Spoofing Vulnerability</td></tr>
 <tr><td>Microsoft Office SharePoint</td>    <td><a href="#CVE-2020-0976">CVE-2020-0976</a></td>    <td>Microsoft SharePoint Spoofing Vulnerability</td></tr>
@@ -1848,7 +1848,7 @@ For more information, visit the <a href="https://www.microsoft.com/security/port
     </thead>
  <tr>
      <td>CVE-2020-0899</td>
-     <td>Gábor Selján (@GaborSeljan)<br><br><br>Zhiniang Peng (<a href="https://twitter.com/edwardzpeng">@edwardzpeng</a>) of Qihoo 360 Core security & Xuefeng Li<br><br><br><br><br>Tobias Neitzel of <a href="https://herolab.usd.de/security-advisories/">usd AG</a><br><br><br></td>
+     <td>Gábor Selján (<A href="https://twitter.com/GaborSeljan">@GaborSeljan</a>)<br><br><br>Zhiniang Peng (<a href="https://twitter.com/edwardzpeng">@edwardzpeng</a>) of Qihoo 360 Core security & Xuefeng Li<br><br><br><br><br>Tobias Neitzel of <a href="https://herolab.usd.de/security-advisories/">usd AG</a><br><br><br></td>
  </tr>
 </table><h1 id="CVE-2020-0906">CVE-2020-0906 - Microsoft Excel Remote Code Execution Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
  <thead style="background-color: #ededed">
@@ -4256,7 +4256,7 @@ For more information, visit the <a href="https://www.microsoft.com/security/port
      <td>CVE-2020-0932</td>
      <td>working with <a href="https://www.zerodayinitiative.com/">Trend Micro's Zero Day Initiative</a><br><br><br></td>
  </tr>
-</table><h1 id="CVE-2020-0933">CVE-2020-0933 - Microsoft Office SharePoint XSS Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+</table><h1 id="CVE-2020-0933">CVE-2020-0933 - Microsoft SharePoint Server Information Disclosure Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
  <thead style="background-color: #ededed">
   <tr>
    <td><b>CVE ID</b></td>
@@ -4267,11 +4267,11 @@ For more information, visit the <a href="https://www.microsoft.com/security/port
  </thead>
  <tr>
      <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0933">CVE-2020-0933</a><br><a href="http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-0933">MITRE</a><br><a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-0933">NVD</a></td>
-     <td>        <b>CVE Title:</b> Microsoft Office SharePoint XSS Vulnerability
+     <td>        <b>CVE Title:</b> Microsoft SharePoint Server Information Disclosure Vulnerability
         <br>
-        <b>Description:</b> <br><p>A cross-site-scripting (XSS) vulnerability exists when Microsoft SharePoint Server does not properly sanitize a specially crafted web request to an affected SharePoint server. An authenticated attacker could exploit the vulnerability by sending a specially crafted request to an affected SharePoint server.</p>
-<p>The attacker who successfully exploited the vulnerability could then perform cross-site scripting attacks on affected systems and run script in the security context of the current user. The attacks could allow the attacker to read content that the attacker is not authorized to read, use the victim's identity to take actions on the SharePoint site on behalf of the user, such as change permissions and delete content, and inject malicious content in the browser of the user.</p>
-<p>The security update addresses the vulnerability by helping to ensure that SharePoint Server properly sanitizes web requests.</p>
+        <b>Description:</b> <br><p>An information disclosure vulnerability exists in SharePoint Server. An attacker who exploited this vulnerability could read arbitrary files on the server.</p>
+<p>To exploit the vulnerability, an attacker would need to send a specially crafted request to a susceptible SharePoint Server instance.</p>
+<p>The update addresses the vulnerability by changing how affected APIs process requests.</p>
 
         <br>
         <b>FAQ:</b><br><p><strong>Is the Preview Pane an attack vector for this vulnerability?</strong></p>
@@ -4283,10 +4283,11 @@ For more information, visit the <a href="https://www.microsoft.com/security/port
         <b>Workarounds:</b><br>None
         <br>
         <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp2020-04-14T07:00:00Z&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+<br />1.1&nbsp&nbsp&nbsp&nbsp2020-04-22T07:00:00Z&nbsp&nbsp&nbsp&nbsp<p>Updated CVE description. This is an informational change only.</p>
 
         <br></td>
      <td>Important</td>
-     <td>Spoofing</td>
+     <td>Information Disclosure</td>
  </tr>
 </table>        <h2>Exploitability Index</h2>
 
@@ -4330,7 +4331,7 @@ For more information, visit the <a href="https://www.microsoft.com/security/port
                 <td>Microsoft SharePoint Enterprise Server 2016</td>
                 <td><a href="https://www.microsoft.com/download/details.aspx?familyid=287fd0bb-b3ce-4fe8-b4e4-c0396d3c82d4" >4484299 (Security Update)</td>
                 <td>Important</td>
-                <td>Spoofing</td>
+                <td>Information Disclosure</td>
                 <td>None</td>
                 <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
                 <td>Maybe</td>
@@ -4338,7 +4339,7 @@ For more information, visit the <a href="https://www.microsoft.com/security/port
                 <td>Microsoft SharePoint Foundation 2013 Service Pack 1</td>
                 <td><a href="https://www.microsoft.com/download/details.aspx?familyid=ab7bf381-3fc6-4c2f-bdcf-72022fa5be29" >4484321 (Security Update)</td>
                 <td>Important</td>
-                <td>Spoofing</td>
+                <td>Information Disclosure</td>
                 <td>None</td>
                 <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
                 <td>Maybe</td>
@@ -4346,7 +4347,7 @@ For more information, visit the <a href="https://www.microsoft.com/security/port
                 <td>Microsoft SharePoint Server 2019</td>
                 <td><a href="https://www.microsoft.com/download/details.aspx?familyid=bbb37530-d5f6-4160-ab9d-6257e98319cd" >4484292 (Security Update)</td>
                 <td>Important</td>
-                <td>Spoofing</td>
+                <td>Information Disclosure</td>
                 <td>None</td>
                 <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
                 <td>Maybe</td>
@@ -8964,7 +8965,7 @@ For more information, visit the <a href="https://www.microsoft.com/security/port
     </thead>
  <tr>
      <td>CVE-2020-0987</td>
-     <td>Zhihua Yao of DBAPPSecurity Zion  Lab<br><br><br>@expend20<br><br><br>Anonymous working with <a href="https://www.zerodayinitiative.com/">Trend Micro's Zero Day Initiative</a><br><br><br></td>
+     <td>Zhihua Yao of DBAPPSecurity Zion  Lab<br><br><br>@expend20<br><br><br>Anonymous working with <a href="https://www.zerodayinitiative.com/">Trend Micro's Zero Day Initiative</a><br><br><br>HAOLI of ADLab<br><br><br></td>
  </tr>
 </table><h1 id="CVE-2020-0988">CVE-2020-0988 - Jet Database Engine Remote Code Execution Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
  <thead style="background-color: #ededed">
@@ -10402,6 +10403,7 @@ For more information, visit the <a href="https://www.microsoft.com/security/port
         <b>Workarounds:</b><br>None
         <br>
         <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp2020-04-14T07:00:00Z&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+<br />1.1&nbsp&nbsp&nbsp&nbsp2020-04-22T07:00:00Z&nbsp&nbsp&nbsp&nbsp<p>Added acknowledgements. This is an informational change only.</p>
 
         <br></td>
      <td>Important</td>
@@ -10801,7 +10803,7 @@ For more information, visit the <a href="https://www.microsoft.com/security/port
     </thead>
  <tr>
      <td>CVE-2020-0994</td>
-     <td>Hossein Lotfi of <a href="https://www.zerodayinitiative.com/">Trend Micro's Zero Day Initiative</a><br><br><br></td>
+     <td>Bo Qu of <a href="https://www.paloaltonetworks.com/">Palo Alto Networks</a> and Heige of Knownsec 404 Security Team<br><br><br>Hossein Lotfi of <a href="https://www.zerodayinitiative.com/">Trend Micro's Zero Day Initiative</a><br><br><br></td>
  </tr>
 </table><h1 id="CVE-2020-0995">CVE-2020-0995 - Jet Database Engine Remote Code Execution Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
  <thead style="background-color: #ededed">
@@ -15362,7 +15364,7 @@ For more information, visit the <a href="https://www.microsoft.com/security/port
                 <td>Maybe</td>
         </tr>            <tr>
                 <td>Microsoft Dynamics NAV 2015</td>
-                <td><a href="https://www.microsoft.com/en-us/download/details.aspx?id=101090" >4557700 (Security Update)</td>
+                <td><a href="https://www.microsoft.com/en-us/download/details.aspx?id=101089" >4557700 (Security Update)</td>
                 <td>Important</td>
                 <td>Information Disclosure</td>
                 <td>None</td>
@@ -16284,6 +16286,7 @@ For more information, visit the <a href="https://www.microsoft.com/security/port
         <b>Workarounds:</b><br>None
         <br>
         <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp2020-04-14T07:00:00Z&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+<br />1.1&nbsp&nbsp&nbsp&nbsp2020-04-24T07:00:00Z&nbsp&nbsp&nbsp&nbsp<p>Added an acknowledgement. This is an informational change only.</p>
 
         <br></td>
      <td>Critical</td>
@@ -17343,6 +17346,7 @@ For more information, visit the <a href="https://www.microsoft.com/security/port
         <b>Workarounds:</b><br>None
         <br>
         <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp2020-04-14T07:00:00Z&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+<br />1.1&nbsp&nbsp&nbsp&nbsp2020-04-24T07:00:00Z&nbsp&nbsp&nbsp&nbsp<p>Updated acknowledgment. This is an informational change only.</p>
 
         <br></td>
      <td>Important</td>
@@ -17558,7 +17562,7 @@ For more information, visit the <a href="https://www.microsoft.com/security/port
     </thead>
  <tr>
      <td>CVE-2020-0888</td>
-     <td><a href="https://twitter.com/flame36987044">liuxiaoliang</a&gt; and <a href="http://weibo.com/jfpan">pjf</a&gt; of IceSword Lab , Qihoo 360</a><br><br><br></td>
+     <td><a href="https://twitter.com/flame36987044">liuxiaoliang</a> and <a href="http://weibo.com/jfpan">pjf</a> of IceSword Lab, Qihoo 360<br><br><br></td>
  </tr>
 </table><h1 id="CVE-2020-0889">CVE-2020-0889 - Jet Database Engine Remote Code Execution Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
  <thead style="background-color: #ededed">
@@ -18008,6 +18012,27 @@ For more information, visit the <a href="https://www.microsoft.com/security/port
         <br>
         <b>FAQ:</b><br><p><strong>Is the Preview Pane an attack vector for this vulnerability?</strong></p>
 <p>No, the Preview Pane is not an attack vector.</p>
+<br><p><strong>I am running Office 2019 or Office 365 ProPlus. How do I tell if the security update for this vulnerability is included in my version of Office?</strong></p>
+<p>The library containing this vulnerability was incorporated into the Office cumulative update on March 10, 2020. If either the March 2020 or April 2020 update is installed on your system you are protected from this vulnerability.</p>
+<p><strong>I have Paint 3D or 3D Viewer installed. How do I know if I have the security update installed?</strong></p>
+<p>The versions that contain the update for this vulnerability are as follows:</p>
+<ul>
+<li>3D Viewer: <strong>7.2003.11022.0</strong></li>
+<li>Paint3D: <strong>6.2003.4017.0</strong></li>
+</ul>
+<p><strong>To verify that you have the update installed</strong></p>
+<p>In the Paint 3D or 3D Viewer app:</p>
+<ol>
+<li>Click <strong>Menu</strong></li>
+<li>Click <strong>Settings</strong>. The version number appears in the upper right corner under <strong>About</strong></li>
+</ol>
+<p>Alternatively, from the <strong>Start</strong> menu you can:</p>
+<ol>
+<li>Select <strong>Start</strong>, then type <strong>Paint 3D</strong> or <strong>3D Viewer</strong>.</li>
+<li>Right-click on the App name to display the options menu.</li>
+<li>Click <strong>App settings</strong>.</li>
+<li>The installed version number is listed under <strong>Specifications</strong>.</li>
+</ol>
 
         <br>
         <b>Mitigations:</b><br>None
@@ -18015,6 +18040,8 @@ For more information, visit the <a href="https://www.microsoft.com/security/port
         <b>Workarounds:</b><br>None
         <br>
         <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp2020-04-21T07:00:00Z&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+<br />1.1&nbsp&nbsp&nbsp&nbsp2020-04-22T07:00:00Z&nbsp&nbsp&nbsp&nbsp<p>Corrected security updates table.  This is an informational change only.</p>
+<br />1.2&nbsp&nbsp&nbsp&nbsp2020-04-23T07:00:00Z&nbsp&nbsp&nbsp&nbsp<p>The following revisions have been made: 1. In the Security Update table, added 3D Viewer because it is affected by this vulnerability. The update is automatic for customers who are running 3D Viewer. 2. Added an FAQ to explain that the March 2020 cumulative updates for Office include the fix for this vulnerability. 3. Added an FAQ to provide the version numbers of Paint 3D and 3D Viewer that have this security update.</p>
 
         <br></td>
      <td>Important</td>
@@ -18059,21 +18086,13 @@ For more information, visit the <a href="https://www.microsoft.com/security/port
             <td><b>Restart Required</b></td>
         </tr>
                 <tr>
-                <td>Microsoft Office 2016 Click-to-Run (C2R) for 32-bit editions</td>
-                <td><a href="" >Click to Run (Security Update)</td>
+                <td>3D Viewer</td>
+                <td><a href="https://www.microsoft.com/en-us/p/paint-3d/9nblggh5fv99#activetab=pivot:overviewtab" >Release Notes (Security Update)</td>
                 <td>Important</td>
                 <td>Remote Code Execution</td>
                 <td>None</td>
                 <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
-                <td>No</td>
-        </tr>            <tr>
-                <td>Microsoft Office 2016 Click-to-Run (C2R) for 64-bit editions</td>
-                <td><a href="" >Click to Run (Security Update)</td>
-                <td>Important</td>
-                <td>Remote Code Execution</td>
-                <td>None</td>
-                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
-                <td>No</td>
+                <td>Maybe</td>
         </tr>            <tr>
                 <td>Microsoft Office 2019 for 32-bit editions</td>
                 <td><a href="" >Click to Run (Security Update)</td>
@@ -18126,7 +18145,7 @@ For more information, visit the <a href="https://www.microsoft.com/security/port
     </thead>
  <tr>
      <td>ADV200004</td>
-     <td>None</td>
+     <td><a href="https://twitter.com/n_joly">Nicolas Joly</a> of Microsoft Corporation<br><br><br></td>
  </tr>
 </table><h1 id="CVE-2020-0900">CVE-2020-0900 - Visual Studio Extension Installer Service Elevation of Privilege Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
  <thead style="background-color: #ededed">
@@ -20291,7 +20310,7 @@ For more information, visit the <a href="https://www.microsoft.com/security/port
         <b>Workarounds:</b><br>None
         <br>
         <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp2020-04-14T07:00:00Z&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
-<br />11.0&nbsp&nbsp&nbsp&nbsp2020-05-12T07:00:00Z&nbsp&nbsp&nbsp&nbsp<p>Updated acknowledgment. This is an informational change only.</p>
+<br />1.1&nbsp&nbsp&nbsp&nbsp2020-04-17T07:00:00Z&nbsp&nbsp&nbsp&nbsp<p>Updated acknowledgment. This is an informational change only.</p>
 
         <br></td>
      <td>Important</td>
@@ -30070,6 +30089,7 @@ Qixun Zhao of QiHoo 360 Vulcan team<br><br><br></td>
         <b>Workarounds:</b><br>None
         <br>
         <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp2020-04-14T07:00:00Z&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+<br />1.1&nbsp&nbsp&nbsp&nbsp2020-04-24T07:00:00Z&nbsp&nbsp&nbsp&nbsp<p>In the Security Updates Table, corrected the Download link for Microsoft Dynamics NAV 2015. This is an informational change only.</p>
 
         <br></td>
      <td>Critical</td>
@@ -30147,7 +30167,7 @@ Qixun Zhao of QiHoo 360 Vulcan team<br><br><br></td>
                 <td>Maybe</td>
         </tr>            <tr>
                 <td>Microsoft Dynamics NAV 2015</td>
-                <td><a href="https://www.microsoft.com/en-us/download/details.aspx?id=101090" >4557700 (Security Update)</td>
+                <td><a href="https://www.microsoft.com/en-us/download/details.aspx?id=101089" >4557700 (Security Update)</td>
                 <td>Critical</td>
                 <td>Remote Code Execution</td>
                 <td>None</td>
@@ -30693,7 +30713,7 @@ Qixun Zhao of QiHoo 360 Vulcan team<br><br><br></td>
 </tr>
 <tr>
 <td>Debian</td>
-<td><a href="https://www.debian.org/">https://www.debian.org/</a></td>
+<td><a href="https://security-tracker.debian.org/tracker/CVE-2020-1967">https://security-tracker.debian.org/tracker/CVE-2020-1967</a></td>
 </tr>
 <tr>
 <td>Oracle Linux</td>
@@ -30701,11 +30721,11 @@ Qixun Zhao of QiHoo 360 Vulcan team<br><br><br></td>
 </tr>
 <tr>
 <td>Red Hat Enterprise Linux</td>
-<td><a href="https://www.redhat.com/en">https://www.redhat.com/en</a></td>
+<td><a href="https://access.redhat.com/security/cve/CVE-2020-1967">https://access.redhat.com/security/cve/CVE-2020-1967</a></td>
 </tr>
 <tr>
 <td>SUSE Linux Enterprise</td>
-<td><a href="https://www.suse.com/">https://www.suse.com/</a></td>
+<td><a href="https://www.suse.com/security/cve/CVE-2020-1967/">https://www.suse.com/security/cve/CVE-2020-1967/</a></td>
 </tr>
 <tr>
 <td>openSUSE</td>
@@ -30713,7 +30733,7 @@ Qixun Zhao of QiHoo 360 Vulcan team<br><br><br></td>
 </tr>
 <tr>
 <td>Ubuntu</td>
-<td><a href="https://ubuntu.com/">https://ubuntu.com/</a></td>
+<td><a href="https://people.canonical.com/%7Eubuntu-security/cve/2020/CVE-2020-1967.html">https://people.canonical.com/~ubuntu-security/cve/2020/CVE-2020-1967.html</a></td>
 </tr>
 </tbody>
 </table>
@@ -30725,7 +30745,8 @@ Qixun Zhao of QiHoo 360 Vulcan team<br><br><br></td>
         <b>Workarounds:</b><br><p>Please refer to the <a href="https://www.openssl.org/news/secadv/20200421.txt">OpenSSL security advisory</a> for guidance.</p>
 
         <br>
-        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp2020-04-21T07:00:00Z&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+        <b>Revision:</b><br>1.1&nbsp&nbsp&nbsp&nbsp2020-04-22T07:00:00Z&nbsp&nbsp&nbsp&nbsp<p>Updated FAQ information. This is an informational change only.</p>
+<br />1.0&nbsp&nbsp&nbsp&nbsp2020-04-21T07:00:00Z&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
 
         <br></td>
      <td>Important</td>

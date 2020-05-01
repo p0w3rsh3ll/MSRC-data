@@ -15,7 +15,7 @@
     <cvrf:Version>1.0</cvrf:Version>
     <cvrf:RevisionHistory>
       <cvrf:Revision>
-        <cvrf:Number>4</cvrf:Number>
+        <cvrf:Number>8</cvrf:Number>
         <cvrf:Date>2020-05-12T07:00:00Z</cvrf:Date>
         <cvrf:Description>April 2020 Security Updates</cvrf:Description>
       </cvrf:Revision>
@@ -369,8 +369,6 @@ For a complete list of security update KBs, please see &lt;a href="https://suppo
         <prod:FullProductName ProductID="10525">Microsoft Office Web Apps 2010 Service Pack 2</prod:FullProductName>
         <prod:FullProductName ProductID="10608">Microsoft Office Web Apps 2013 Service Pack 1</prod:FullProductName>
         <prod:FullProductName ProductID="10495">Microsoft SharePoint Server 2010 Service Pack 2</prod:FullProductName>
-        <prod:FullProductName ProductID="10905">Microsoft Office 2016 Click-to-Run (C2R) for 32-bit editions</prod:FullProductName>
-        <prod:FullProductName ProductID="10906">Microsoft Office 2016 Click-to-Run (C2R) for 64-bit editions</prod:FullProductName>
         <prod:FullProductName ProductID="10949">Microsoft AutoUpdate for Mac</prod:FullProductName>
       </prod:Branch>
       <prod:Branch Type="Product Family" Name="Windows">
@@ -547,6 +545,7 @@ For a complete list of security update KBs, please see &lt;a href="https://suppo
       <prod:Branch Type="Product Family" Name="Apps">
         <prod:FullProductName ProductID="11753">Microsoft RMS Sharing for Mac</prod:FullProductName>
         <prod:FullProductName ProductID="11758">Paint 3D</prod:FullProductName>
+        <prod:FullProductName ProductID="11760">3D Viewer</prod:FullProductName>
         <prod:FullProductName ProductID="11754">Microsoft Remote Desktop for Mac</prod:FullProductName>
         <prod:FullProductName ProductID="11755">Microsoft Your Phone Companion App for Android</prod:FullProductName>
       </prod:Branch>
@@ -693,8 +692,6 @@ For a complete list of security update KBs, please see &lt;a href="https://suppo
     <prod:FullProductName ProductID="10852">Windows 10 Version 1607 for 32-bit Systems</prod:FullProductName>
     <prod:FullProductName ProductID="10853">Windows 10 Version 1607 for x64-based Systems</prod:FullProductName>
     <prod:FullProductName ProductID="10855">Windows Server 2016  (Server Core installation)</prod:FullProductName>
-    <prod:FullProductName ProductID="10905">Microsoft Office 2016 Click-to-Run (C2R) for 32-bit editions</prod:FullProductName>
-    <prod:FullProductName ProductID="10906">Microsoft Office 2016 Click-to-Run (C2R) for 64-bit editions</prod:FullProductName>
     <prod:FullProductName ProductID="10949">Microsoft AutoUpdate for Mac</prod:FullProductName>
     <prod:FullProductName ProductID="10950">Microsoft SharePoint Enterprise Server 2016</prod:FullProductName>
     <prod:FullProductName ProductID="11099">Microsoft SharePoint Enterprise Server 2013 Service Pack 1</prod:FullProductName>
@@ -750,6 +747,7 @@ For a complete list of security update KBs, please see &lt;a href="https://suppo
     <prod:FullProductName ProductID="11757">Dynamics 365 Server, version 9.0 (on-premises)</prod:FullProductName>
     <prod:FullProductName ProductID="11758">Paint 3D</prod:FullProductName>
     <prod:FullProductName ProductID="11759">OpenSSL 1.1.1g</prod:FullProductName>
+    <prod:FullProductName ProductID="11760">3D Viewer</prod:FullProductName>
     <prod:FullProductName ProductID="251-10047">Windows Defender on Windows 7 for 32-bit Systems Service Pack 1</prod:FullProductName>
     <prod:FullProductName ProductID="251-10048">Windows Defender on Windows 7 for x64-based Systems Service Pack 1</prod:FullProductName>
     <prod:FullProductName ProductID="251-10049">Windows Defender on Windows Server 2008 R2 for x64-based Systems Service Pack 1 (Server Core installation)</prod:FullProductName>
@@ -3795,7 +3793,7 @@ For more information, visit the &lt;a href="https://www.microsoft.com/security/p
     </vuln:Remediations>
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
-        <vuln:Name>Gábor Selján (@GaborSeljan)</vuln:Name>
+        <vuln:Name>Gábor Selján (&lt;A href="https://twitter.com/GaborSeljan"&gt;@GaborSeljan&lt;/a&gt;)</vuln:Name>
         <vuln:URL />
       </vuln:Acknowledgment>
       <vuln:Acknowledgment>
@@ -7050,11 +7048,11 @@ For more information, visit the &lt;a href="https://www.microsoft.com/security/p
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
   <vuln:Vulnerability Ordinal="31">
-    <vuln:Title>Microsoft Office SharePoint XSS Vulnerability</vuln:Title>
+    <vuln:Title>Microsoft SharePoint Server Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
-      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;A cross-site-scripting (XSS) vulnerability exists when Microsoft SharePoint Server does not properly sanitize a specially crafted web request to an affected SharePoint server. An authenticated attacker could exploit the vulnerability by sending a specially crafted request to an affected SharePoint server.&lt;/p&gt;
-&lt;p&gt;The attacker who successfully exploited the vulnerability could then perform cross-site scripting attacks on affected systems and run script in the security context of the current user. The attacks could allow the attacker to read content that the attacker is not authorized to read, use the victim's identity to take actions on the SharePoint site on behalf of the user, such as change permissions and delete content, and inject malicious content in the browser of the user.&lt;/p&gt;
-&lt;p&gt;The security update addresses the vulnerability by helping to ensure that SharePoint Server properly sanitizes web requests.&lt;/p&gt;
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;An information disclosure vulnerability exists in SharePoint Server. An attacker who exploited this vulnerability could read arbitrary files on the server.&lt;/p&gt;
+&lt;p&gt;To exploit the vulnerability, an attacker would need to send a specially crafted request to a susceptible SharePoint Server instance.&lt;/p&gt;
+&lt;p&gt;The update addresses the vulnerability by changing how affected APIs process requests.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Is the Preview Pane an attack vector for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;No, the Preview Pane is not an attack vector.&lt;/p&gt;
@@ -7071,15 +7069,15 @@ For more information, visit the &lt;a href="https://www.microsoft.com/security/p
     </vuln:ProductStatuses>
     <vuln:Threats>
       <vuln:Threat Type="Impact">
-        <vuln:Description>Spoofing</vuln:Description>
+        <vuln:Description>Information Disclosure</vuln:Description>
         <vuln:ProductID>10950</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Impact">
-        <vuln:Description>Spoofing</vuln:Description>
+        <vuln:Description>Information Disclosure</vuln:Description>
         <vuln:ProductID>11585</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Impact">
-        <vuln:Description>Spoofing</vuln:Description>
+        <vuln:Description>Information Disclosure</vuln:Description>
         <vuln:ProductID>10612</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
@@ -7139,6 +7137,12 @@ For more information, visit the &lt;a href="https://www.microsoft.com/security/p
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2020-04-14T07:00:00Z</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2020-04-22T07:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Updated CVE description. This is an informational change only.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
     </vuln:RevisionHistory>
@@ -14895,6 +14899,10 @@ For more information, visit the &lt;a href="https://www.microsoft.com/security/p
         <vuln:Name>Anonymous working with &lt;a href="https://www.zerodayinitiative.com/"&gt;Trend Micro's Zero Day Initiative&lt;/a&gt;</vuln:Name>
         <vuln:URL />
       </vuln:Acknowledgment>
+      <vuln:Acknowledgment>
+        <vuln:Name>HAOLI of ADLab</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
     </vuln:Acknowledgments>
     <vuln:RevisionHistory>
       <vuln:Revision>
@@ -18831,6 +18839,10 @@ For more information, visit the &lt;a href="https://www.microsoft.com/security/p
     </vuln:Remediations>
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
+        <vuln:Name>Bo Qu of &lt;a href="https://www.paloaltonetworks.com/"&gt;Palo Alto Networks&lt;/a&gt; and Heige of Knownsec 404 Security Team</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+      <vuln:Acknowledgment>
         <vuln:Name>Hossein Lotfi of &lt;a href="https://www.zerodayinitiative.com/"&gt;Trend Micro's Zero Day Initiative&lt;/a&gt;</vuln:Name>
         <vuln:URL />
       </vuln:Acknowledgment>
@@ -18840,6 +18852,12 @@ For more information, visit the &lt;a href="https://www.microsoft.com/security/p
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2020-04-14T07:00:00Z</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2020-04-22T07:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added acknowledgements. This is an informational change only.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
     </vuln:RevisionHistory>
@@ -27935,7 +27953,7 @@ For more information, visit the &lt;a href="https://www.microsoft.com/security/p
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4557700</vuln:Description>
-        <vuln:URL>https://www.microsoft.com/en-us/download/details.aspx?id=101090</vuln:URL>
+        <vuln:URL>https://www.microsoft.com/en-us/download/details.aspx?id=101089</vuln:URL>
         <vuln:ProductID>11747</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
@@ -30443,6 +30461,12 @@ For more information, visit the &lt;a href="https://www.microsoft.com/security/p
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2020-04-24T07:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added an acknowledgement. This is an informational change only.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
   <vuln:Vulnerability Ordinal="3">
@@ -32122,7 +32146,7 @@ For more information, visit the &lt;a href="https://www.microsoft.com/security/p
     </vuln:Remediations>
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
-        <vuln:Name>&lt;a href="https://twitter.com/flame36987044"&gt;liuxiaoliang&lt;/a&amp;gt; and &lt;a href="http://weibo.com/jfpan"&gt;pjf&lt;/a&amp;gt; of IceSword Lab , Qihoo 360&lt;/a&gt;</vuln:Name>
+        <vuln:Name>&lt;a href="https://twitter.com/flame36987044"&gt;liuxiaoliang&lt;/a&gt; and &lt;a href="http://weibo.com/jfpan"&gt;pjf&lt;/a&gt; of IceSword Lab, Qihoo 360</vuln:Name>
         <vuln:URL />
       </vuln:Acknowledgment>
     </vuln:Acknowledgments>
@@ -32131,6 +32155,12 @@ For more information, visit the &lt;a href="https://www.microsoft.com/security/p
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2020-04-14T07:00:00Z</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2020-04-24T07:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Updated acknowledgment. This is an informational change only.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
     </vuln:RevisionHistory>
@@ -33118,6 +33148,28 @@ For more information, visit the &lt;a href="https://www.microsoft.com/security/p
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Is the Preview Pane an attack vector for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;No, the Preview Pane is not an attack vector.&lt;/p&gt;
 </vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;I am running Office 2019 or Office 365 ProPlus. How do I tell if the security update for this vulnerability is included in my version of Office?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The library containing this vulnerability was incorporated into the Office cumulative update on March 10, 2020. If either the March 2020 or April 2020 update is installed on your system you are protected from this vulnerability.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;I have Paint 3D or 3D Viewer installed. How do I know if I have the security update installed?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The versions that contain the update for this vulnerability are as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;3D Viewer: &lt;strong&gt;7.2003.11022.0&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Paint3D: &lt;strong&gt;6.2003.4017.0&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;To verify that you have the update installed&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In the Paint 3D or 3D Viewer app:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Click &lt;strong&gt;Menu&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Settings&lt;/strong&gt;. The version number appears in the upper right corner under &lt;strong&gt;About&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Alternatively, from the &lt;strong&gt;Start&lt;/strong&gt; menu you can:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Select &lt;strong&gt;Start&lt;/strong&gt;, then type &lt;strong&gt;Paint 3D&lt;/strong&gt; or &lt;strong&gt;3D Viewer&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Right-click on the App name to display the options menu.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;App settings&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;The installed version number is listed under &lt;strong&gt;Specifications&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
       <vuln:Note Title="Microsoft Office" Type="Tag" Ordinal="20">Microsoft Office</vuln:Note>
     </vuln:Notes>
     <vuln:CVE>ADV200004</vuln:CVE>
@@ -33127,9 +33179,8 @@ For more information, visit the &lt;a href="https://www.microsoft.com/security/p
         <vuln:ProductID>11574</vuln:ProductID>
         <vuln:ProductID>11577</vuln:ProductID>
         <vuln:ProductID>11578</vuln:ProductID>
-        <vuln:ProductID>10905</vuln:ProductID>
-        <vuln:ProductID>10906</vuln:ProductID>
         <vuln:ProductID>11758</vuln:ProductID>
+        <vuln:ProductID>11760</vuln:ProductID>
       </vuln:Status>
     </vuln:ProductStatuses>
     <vuln:Threats>
@@ -33151,15 +33202,11 @@ For more information, visit the &lt;a href="https://www.microsoft.com/security/p
       </vuln:Threat>
       <vuln:Threat Type="Impact">
         <vuln:Description>Remote Code Execution</vuln:Description>
-        <vuln:ProductID>10905</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Remote Code Execution</vuln:Description>
-        <vuln:ProductID>10906</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Remote Code Execution</vuln:Description>
         <vuln:ProductID>11758</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11760</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
         <vuln:Description>Important</vuln:Description>
@@ -33179,15 +33226,11 @@ For more information, visit the &lt;a href="https://www.microsoft.com/security/p
       </vuln:Threat>
       <vuln:Threat Type="Severity">
         <vuln:Description>Important</vuln:Description>
-        <vuln:ProductID>10905</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Important</vuln:Description>
-        <vuln:ProductID>10906</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Important</vuln:Description>
         <vuln:ProductID>11758</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11760</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Exploit Status">
         <vuln:Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation Less Likely;Older Software Release:Exploitation Less Likely;DOS:N/A</vuln:Description>
@@ -33202,8 +33245,6 @@ For more information, visit the &lt;a href="https://www.microsoft.com/security/p
         <vuln:ProductID>11574</vuln:ProductID>
         <vuln:ProductID>11577</vuln:ProductID>
         <vuln:ProductID>11578</vuln:ProductID>
-        <vuln:ProductID>10905</vuln:ProductID>
-        <vuln:ProductID>10906</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:RestartRequired>No</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
@@ -33212,17 +33253,35 @@ For more information, visit the &lt;a href="https://www.microsoft.com/security/p
         <vuln:Description>Release Notes</vuln:Description>
         <vuln:URL>https://www.microsoft.com/en-us/p/paint-3d/9nblggh5fv99#activetab=pivot:overviewtab</vuln:URL>
         <vuln:ProductID>11758</vuln:ProductID>
+        <vuln:ProductID>11760</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
     </vuln:Remediations>
-    <vuln:Acknowledgments />
+    <vuln:Acknowledgments>
+      <vuln:Acknowledgment>
+        <vuln:Name>&lt;a href="https://twitter.com/n_joly"&gt;Nicolas Joly&lt;/a&gt; of Microsoft Corporation</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+    </vuln:Acknowledgments>
     <vuln:RevisionHistory>
       <vuln:Revision>
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2020-04-21T07:00:00Z</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2020-04-22T07:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Corrected security updates table.  This is an informational change only.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.2</cvrf:Number>
+        <cvrf:Date>2020-04-23T07:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;The following revisions have been made: 1. In the Security Update table, added 3D Viewer because it is affected by this vulnerability. The update is automatic for customers who are running 3D Viewer. 2. Added an FAQ to explain that the March 2020 cumulative updates for Office include the fix for this vulnerability. 3. Added an FAQ to provide the version numbers of Paint 3D and 3D Viewer that have this security update.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
     </vuln:RevisionHistory>
@@ -37459,8 +37518,8 @@ For more information, visit the &lt;a href="https://www.microsoft.com/security/p
 </cvrf:Description>
       </vuln:Revision>
       <vuln:Revision>
-        <cvrf:Number>11.0</cvrf:Number>
-        <cvrf:Date>2020-05-12T07:00:00Z</cvrf:Date>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2020-04-17T07:00:00Z</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Updated acknowledgment. This is an informational change only.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
@@ -57228,7 +57287,7 @@ Qixun Zhao of QiHoo 360 Vulcan team</vuln:Name>
     <vuln:Remediations>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4557700</vuln:Description>
-        <vuln:URL>https://www.microsoft.com/en-us/download/details.aspx?id=101090</vuln:URL>
+        <vuln:URL>https://www.microsoft.com/en-us/download/details.aspx?id=101089</vuln:URL>
         <vuln:ProductID>11747</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
@@ -57308,6 +57367,12 @@ Qixun Zhao of QiHoo 360 Vulcan team</vuln:Name>
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2020-04-14T07:00:00Z</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2020-04-24T07:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;In the Security Updates Table, corrected the Download link for Microsoft Dynamics NAV 2015. This is an informational change only.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
     </vuln:RevisionHistory>
@@ -58180,7 +58245,7 @@ Qixun Zhao of QiHoo 360 Vulcan team</vuln:Name>
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Debian&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://www.debian.org/"&gt;https://www.debian.org/&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://security-tracker.debian.org/tracker/CVE-2020-1967"&gt;https://security-tracker.debian.org/tracker/CVE-2020-1967&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Oracle Linux&lt;/td&gt;
@@ -58188,11 +58253,11 @@ Qixun Zhao of QiHoo 360 Vulcan team</vuln:Name>
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Red Hat Enterprise Linux&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://www.redhat.com/en"&gt;https://www.redhat.com/en&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://access.redhat.com/security/cve/CVE-2020-1967"&gt;https://access.redhat.com/security/cve/CVE-2020-1967&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;SUSE Linux Enterprise&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://www.suse.com/"&gt;https://www.suse.com/&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://www.suse.com/security/cve/CVE-2020-1967/"&gt;https://www.suse.com/security/cve/CVE-2020-1967/&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;openSUSE&lt;/td&gt;
@@ -58200,7 +58265,7 @@ Qixun Zhao of QiHoo 360 Vulcan team</vuln:Name>
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Ubuntu&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://ubuntu.com/"&gt;https://ubuntu.com/&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://people.canonical.com/%7Eubuntu-security/cve/2020/CVE-2020-1967.html"&gt;https://people.canonical.com/~ubuntu-security/cve/2020/CVE-2020-1967.html&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -58255,6 +58320,12 @@ Qixun Zhao of QiHoo 360 Vulcan team</vuln:Name>
       </vuln:Acknowledgment>
     </vuln:Acknowledgments>
     <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2020-04-22T07:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Updated FAQ information. This is an informational change only.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
       <vuln:Revision>
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2020-04-21T07:00:00Z</cvrf:Date>
