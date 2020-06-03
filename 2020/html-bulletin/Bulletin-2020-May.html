@@ -49,22 +49,23 @@
 <tr><td>Internet Explorer</td>    <td><a href="#CVE-2020-1062">CVE-2020-1062</a></td>    <td>Internet Explorer Memory Corruption Vulnerability</td></tr>
 <tr><td>Internet Explorer</td>    <td><a href="#CVE-2020-1092">CVE-2020-1092</a></td>    <td>Internet Explorer Memory Corruption Vulnerability</td></tr>
 <tr><td>Microsoft Dynamics</td>    <td><a href="#CVE-2020-1063">CVE-2020-1063</a></td>    <td>Microsoft Dynamics 365 (On-Premise) Cross Site Scripting Vulnerability</td></tr>
-<tr><td>Microsoft Edge</td>    <td><a href="#CVE-2020-1056">CVE-2020-1056</a></td>    <td>Microsoft Edge Elevation of Privilege Vulnerability</td></tr>
-<tr><td>Microsoft Edge</td>    <td><a href="#CVE-2020-1096">CVE-2020-1096</a></td>    <td>Microsoft Edge PDF Remote Code Execution Vulnerability</td></tr>
 <tr><td>Microsoft Edge</td>    <td><a href="#CVE-2020-1059">CVE-2020-1059</a></td>    <td>Microsoft Edge Spoofing Vulnerability</td></tr>
-<tr><td>Microsoft Graphics Component</td>    <td><a href="#CVE-2020-1135">CVE-2020-1135</a></td>    <td>Windows Graphics Component Elevation of Privilege Vulnerability</td></tr>
-<tr><td>Microsoft Graphics Component</td>    <td><a href="#CVE-2020-1140">CVE-2020-1140</a></td>    <td>DirectX Elevation of Privilege Vulnerability</td></tr>
-<tr><td>Microsoft Graphics Component</td>    <td><a href="#CVE-2020-1179">CVE-2020-1179</a></td>    <td>Windows GDI Information Disclosure Vulnerability</td></tr>
-<tr><td>Microsoft Graphics Component</td>    <td><a href="#CVE-2020-1054">CVE-2020-1054</a></td>    <td>Win32k Elevation of Privilege Vulnerability</td></tr>
+<tr><td>Microsoft Edge</td>    <td><a href="#CVE-2020-1096">CVE-2020-1096</a></td>    <td>Microsoft Edge PDF Remote Code Execution Vulnerability</td></tr>
+<tr><td>Microsoft Edge</td>    <td><a href="#CVE-2020-1056">CVE-2020-1056</a></td>    <td>Microsoft Edge Elevation of Privilege Vulnerability</td></tr>
+<tr><td>Microsoft Edge on Chromium</td>    <td><a href="#CVE-2020-1195">CVE-2020-1195</a></td>    <td>Microsoft Edge (Chromium-based) Elevation of Privilege Vulnerability</td></tr>
 <tr><td>Microsoft Graphics Component</td>    <td><a href="#CVE-2020-1117">CVE-2020-1117</a></td>    <td>Microsoft Color Management Remote Code Execution Vulnerability</td></tr>
+<tr><td>Microsoft Graphics Component</td>    <td><a href="#CVE-2020-1054">CVE-2020-1054</a></td>    <td>Win32k Elevation of Privilege Vulnerability</td></tr>
 <tr><td>Microsoft Graphics Component</td>    <td><a href="#CVE-2020-0963">CVE-2020-0963</a></td>    <td>Windows GDI Information Disclosure Vulnerability</td></tr>
 <tr><td>Microsoft Graphics Component</td>    <td><a href="#CVE-2020-1141">CVE-2020-1141</a></td>    <td>Windows GDI Information Disclosure Vulnerability</td></tr>
+<tr><td>Microsoft Graphics Component</td>    <td><a href="#CVE-2020-1179">CVE-2020-1179</a></td>    <td>Windows GDI Information Disclosure Vulnerability</td></tr>
 <tr><td>Microsoft Graphics Component</td>    <td><a href="#CVE-2020-1142">CVE-2020-1142</a></td>    <td>Windows GDI Elevation of Privilege Vulnerability</td></tr>
 <tr><td>Microsoft Graphics Component</td>    <td><a href="#CVE-2020-1145">CVE-2020-1145</a></td>    <td>Windows GDI Information Disclosure Vulnerability</td></tr>
 <tr><td>Microsoft Graphics Component</td>    <td><a href="#CVE-2020-1153">CVE-2020-1153</a></td>    <td>Microsoft Graphics Components Remote Code Execution Vulnerability</td></tr>
+<tr><td>Microsoft Graphics Component</td>    <td><a href="#CVE-2020-1140">CVE-2020-1140</a></td>    <td>DirectX Elevation of Privilege Vulnerability</td></tr>
+<tr><td>Microsoft Graphics Component</td>    <td><a href="#CVE-2020-1135">CVE-2020-1135</a></td>    <td>Windows Graphics Component Elevation of Privilege Vulnerability</td></tr>
+<tr><td>Microsoft JET Database Engine</td>    <td><a href="#CVE-2020-1051">CVE-2020-1051</a></td>    <td>Jet Database Engine Remote Code Execution Vulnerability</td></tr>
 <tr><td>Microsoft JET Database Engine</td>    <td><a href="#CVE-2020-1174">CVE-2020-1174</a></td>    <td>Jet Database Engine Remote Code Execution Vulnerability</td></tr>
 <tr><td>Microsoft JET Database Engine</td>    <td><a href="#CVE-2020-1176">CVE-2020-1176</a></td>    <td>Jet Database Engine Remote Code Execution Vulnerability</td></tr>
-<tr><td>Microsoft JET Database Engine</td>    <td><a href="#CVE-2020-1051">CVE-2020-1051</a></td>    <td>Jet Database Engine Remote Code Execution Vulnerability</td></tr>
 <tr><td>Microsoft JET Database Engine</td>    <td><a href="#CVE-2020-1175">CVE-2020-1175</a></td>    <td>Jet Database Engine Remote Code Execution Vulnerability</td></tr>
 <tr><td>Microsoft Office</td>    <td><a href="#CVE-2020-0901">CVE-2020-0901</a></td>    <td>Microsoft Excel Remote Code Execution Vulnerability</td></tr>
 <tr><td>Microsoft Office SharePoint</td>    <td><a href="#CVE-2020-1023">CVE-2020-1023</a></td>    <td>Microsoft SharePoint Remote Code Execution Vulnerability</td></tr>
@@ -1499,19 +1500,25 @@
 <p>An attacker who successfully exploited this vulnerability could cause the DNS Server service to become nonresponsive.</p>
 <p>To exploit this vulnerability an attacker would need to have access to at least one client and a domain that replies with a large volume of referral records, without glue records, that point to external victim sub domains. While resolving a name from the attacker client, for each referral record found, the resolver contacts the victim domain. This action can generate a large number of communications between the recursive resolver and the victim's authoritative DNS server to cause a Distributed Denial of Service (DDoS) attack.</p>
 <p>For more information see the <strong>Mitigations</strong> and <strong>Workaround</strong> sections of this advisory.</p>
+<p>See also <a href="https://support.microsoft.com/help/4564355">Guidance for DNS Amplification discussed in ADV200009</a>.</p>
 
         <br>
         <b>FAQ:</b><br><p><strong>Which versions of Windows are affected?</strong></p>
 <p>All supported versions of Windows Server are affected.</p>
+<p><strong>Do the mitigation and workaround summarized in this advisory apply to all versions of Windows Server?</strong></p>
+<p>No. The mitigation and workaround are not available for Windows Server 2012 or Windows Server 2012 R2. These earlier versions of Windows Server do not support the Response Rate Limit (RRL) feature, which reduces the amplification impact when a targeted DNS resolver queries your DNS Servers.</p>
+<p><strong>What should customers do if they have DNS Servers residing on edge networks that are running either Windows Server 2012 or Windows Server 2012 R2?</strong></p>
+<p>DNS Servers residing on edge networks that are running either Windows Server 2012 or Windows Server 2012 R2 should be upgraded to Windows Server 2016 or newer that support the RRL feature, which reduces the amplification impact when a targeted DNS resolver queries your DNS Servers.</p>
 
         <br>
         <b>Mitigations:</b><br>
         <br>
-        <b>Workarounds:</b><br><p><strong>Enable RRL on a DNS server</strong></p>
+        <b>Workarounds:</b><br><p><strong>Enable Response Rate Limiting on a DNS server</strong></p>
 <p>Please see <a href="https://docs.microsoft.com/en-us/powershell/module/dnsserver/set-dnsserverresponseratelimiting?view=win10-ps">DNS Server Response Rate Limiting</a> for more information.</p>
 
         <br>
         <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp2020-05-19T07:00:00Z&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+<br />1.1&nbsp&nbsp&nbsp&nbsp2020-05-29T07:00:00Z&nbsp&nbsp&nbsp&nbsp<p>Added FAQs section and added clarifying information to the Mitigations section. This is an informational change only.</p>
 
         <br></td>
      <td>Unknown</td>
@@ -2392,6 +2399,98 @@
  <tr>
      <td>CVE-2020-1010</td>
      <td>Zhiniang Peng (<a href="https://twitter.com/edwardzpeng">@edwardzpeng</a>) of Qihoo 360 Core Security & Jiadong Lu<br><br><br></td>
+ </tr>
+</table><h1 id="CVE-2020-1195">CVE-2020-1195 - Microsoft Edge (Chromium-based) Elevation of Privilege Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>   
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1195">CVE-2020-1195</a><br><a href="http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-1195">MITRE</a><br><a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-1195">NVD</a></td>
+     <td>        <b>CVE Title:</b> Microsoft Edge (Chromium-based) Elevation of Privilege Vulnerability
+        <br>
+        <b>Description:</b> <br><p>An elevation of privilege vulnerability exists in Microsoft Edge (Chromium-based) when the Feedback extension improperly validates input. An attacker who successfully exploited this vulnerability could write files to arbitrary locations and gain elevated privileges.</p>
+<p>The vulnerability by itself does not allow arbitrary code to run. However, this vulnerability could be used in conjunction with one or more vulnerabilities (for example a remote code execution vulnerability and another elevation of privilege vulnerability) to take advantage of the elevated privileges when running.</p>
+<p>The security update addresses the vulnerability by modifying how Microsoft Edge (Chromium-based) Feedback extension validates files.</p>
+
+        <br>
+        <b>FAQ:</b><br><p><strong>What version of Microsoft Edge (Chromium-base) contains the fix for this vulnerability?</strong></p>
+<p>The version that contains the update is 83.0.478.37.</p>
+
+        <br>
+        <b>Mitigations:</b><br>None
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp2020-05-21T07:00:00Z&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Moderate</td>
+     <td>Elevation of Privilege</td>
+ </tr>
+</table>        <h2>Exploitability Index</h2>
+
+<p>The following table provides an exploitability assessment of each of the vulnerabilities addressed this month. The vulnerabilities are listed in order of bulletin ID then CVE ID. Only vulnerabilities that have a severity rating of Critical or Important in the bulletins are included.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment for Latest Software Release</b></td>
+   <td><b>Exploitability Assessment for Older Software Release</b></td>
+   <td><b>Denial of Service Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>   
+  </tr>
+ </thead>
+ <tr>
+     <td>Exploitation Less Likely</td>
+     <td>N/A</td>
+     <td>N/A</td>
+     <td>No</td>
+     <td>No</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="7"><b>CVE-2020-1195</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>                
+            <td><b>Severity</b></td>  
+            <td><b>Impact</b></td>  
+            <td><b>Supersedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Restart Required</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Edge (Chromium-based)</td>
+                <td></td>
+                <td>Moderate</td>
+                <td>Elevation of Privilege</td>
+                <td>None</td>
+                <td>Base: 3,1<br />Temporal: 2,8<br />Vector: CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:L/A:N/E:P/RL:O/RC:C<br /></td>
+                <td>Unknown</td>
+        </tr>    
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>  
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2020-1195</td>
+     <td><a href="https://www.daviderceg.com/">David Erceg</a><br><br><br></td>
  </tr>
 </table><h1 id="CVE-2020-1035">CVE-2020-1035 - VBScript Remote Code Execution Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
  <thead style="background-color: #ededed">
@@ -15980,7 +16079,8 @@ An attacker who successfully exploited this vulnerability could deny dependent s
         <br>
         <b>Workarounds:</b><br>None
         <br>
-        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp2020-05-12T07:00:00Z&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+        <b>Revision:</b><br>1.1&nbsp&nbsp&nbsp&nbsp2020-05-27T07:00:00Z&nbsp&nbsp&nbsp&nbsp<p>Added acknowledgements. This is an informational change only.</p>
+<br />1.0&nbsp&nbsp&nbsp&nbsp2020-05-12T07:00:00Z&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
 
         <br></td>
      <td>Important</td>
@@ -16228,7 +16328,7 @@ An attacker who successfully exploited this vulnerability could deny dependent s
     </thead>
  <tr>
      <td>CVE-2020-1186</td>
-     <td>Anonymous Finder<br><br><br></td>
+     <td>Zhiniang Peng (<a href="https://twitter.com/edwardzpeng">@edwardzpeng</a>) of Qihoo 360 Core security and Fangming Gu (<a href="https://twitter.com/afang5472">@afang5472</a>)<br><br><br>Anonymous Finder<br><br><br></td>
  </tr>
 </table><h1 id="CVE-2020-1189">CVE-2020-1189 - Windows State Repository Service Elevation of Privilege Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
  <thead style="background-color: #ededed">
@@ -16254,7 +16354,8 @@ An attacker who successfully exploited this vulnerability could deny dependent s
         <br>
         <b>Workarounds:</b><br>None
         <br>
-        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp2020-05-12T07:00:00Z&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+        <b>Revision:</b><br>1.1&nbsp&nbsp&nbsp&nbsp2020-05-27T07:00:00Z&nbsp&nbsp&nbsp&nbsp<p>Added acknowledgements. This is an informational change only.</p>
+<br />1.0&nbsp&nbsp&nbsp&nbsp2020-05-12T07:00:00Z&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
 
         <br></td>
      <td>Important</td>
@@ -16502,7 +16603,7 @@ An attacker who successfully exploited this vulnerability could deny dependent s
     </thead>
  <tr>
      <td>CVE-2020-1189</td>
-     <td>Anonymous Finder<br><br><br></td>
+     <td>Zhiniang Peng (<a href="https://twitter.com/edwardzpeng">@edwardzpeng</a>) of Qihoo 360 Core security and Fangming Gu (<a href="https://twitter.com/afang5472">@afang5472</a>)<br><br><br>Anonymous Finder<br><br><br></td>
  </tr>
 </table><h1 id="CVE-2020-1190">CVE-2020-1190 - Windows State Repository Service Elevation of Privilege Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
  <thead style="background-color: #ededed">
@@ -16528,7 +16629,8 @@ An attacker who successfully exploited this vulnerability could deny dependent s
         <br>
         <b>Workarounds:</b><br>None
         <br>
-        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp2020-05-12T07:00:00Z&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+        <b>Revision:</b><br>1.1&nbsp&nbsp&nbsp&nbsp2020-05-27T07:00:00Z&nbsp&nbsp&nbsp&nbsp<p>Added acknowledgements. This is an informational change only.</p>
+<br />1.0&nbsp&nbsp&nbsp&nbsp2020-05-12T07:00:00Z&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
 
         <br></td>
      <td>Important</td>
@@ -16776,7 +16878,7 @@ An attacker who successfully exploited this vulnerability could deny dependent s
     </thead>
  <tr>
      <td>CVE-2020-1190</td>
-     <td>Anonymous Finder<br><br><br></td>
+     <td>Zhiniang Peng (<a href="https://twitter.com/edwardzpeng">@edwardzpeng</a>) of Qihoo 360 Core security and Fangming Gu (<a href="https://twitter.com/afang5472">@afang5472</a>)<br><br><br>Anonymous Finder<br><br><br></td>
  </tr>
 </table><h1 id="CVE-2020-1051">CVE-2020-1051 - Jet Database Engine Remote Code Execution Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
  <thead style="background-color: #ededed">
@@ -24450,7 +24552,7 @@ An attacker who successfully exploited this vulnerability could deny dependent s
     </thead>
  <tr>
      <td>CVE-2020-1112</td>
-     <td>Guido Principe Passini (<a href="https://twitter.com/divintzero">@DivIntZero</a> of <a href="">BawlSec</a> <br><br><br></td>
+     <td>Guido Principe Passini (<a href="https://twitter.com/divintzero">@DivIntZero</a>) of <a href="http://bawlsec.com/">BawlSec</a> <br><br><br></td>
  </tr>
 </table><h1 id="CVE-2020-1117">CVE-2020-1117 - Microsoft Color Management Remote Code Execution Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
  <thead style="background-color: #ededed">
@@ -29726,7 +29828,8 @@ An attacker who successfully exploited this vulnerability could deny dependent s
         <br>
         <b>Workarounds:</b><br>None
         <br>
-        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp2020-05-12T07:00:00Z&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+        <b>Revision:</b><br>1.1&nbsp&nbsp&nbsp&nbsp2020-05-27T07:00:00Z&nbsp&nbsp&nbsp&nbsp<p>Added acknowledgements. This is an informational change only.</p>
+<br />1.0&nbsp&nbsp&nbsp&nbsp2020-05-12T07:00:00Z&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
 
         <br></td>
      <td>Important</td>
@@ -29974,7 +30077,7 @@ An attacker who successfully exploited this vulnerability could deny dependent s
     </thead>
  <tr>
      <td>CVE-2020-1184</td>
-     <td>Anonymous Finder<br><br><br></td>
+     <td>Anonymous Finder<br><br><br>Zhiniang Peng (<a href="https://twitter.com/edwardzpeng">@edwardzpeng</a>) of Qihoo 360 Core security and Fangming Gu (<a href="https://twitter.com/afang5472">@afang5472</a>)<br><br><br></td>
  </tr>
 </table><h1 id="CVE-2020-1185">CVE-2020-1185 - Windows State Repository Service Elevation of Privilege Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
  <thead style="background-color: #ededed">
@@ -30000,7 +30103,8 @@ An attacker who successfully exploited this vulnerability could deny dependent s
         <br>
         <b>Workarounds:</b><br>None
         <br>
-        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp2020-05-12T07:00:00Z&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+        <b>Revision:</b><br>1.1&nbsp&nbsp&nbsp&nbsp2020-05-27T07:00:00Z&nbsp&nbsp&nbsp&nbsp<p>Added acknowledgements. This is an informational change only.</p>
+<br />1.0&nbsp&nbsp&nbsp&nbsp2020-05-12T07:00:00Z&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
 
         <br></td>
      <td>Important</td>
@@ -30248,7 +30352,7 @@ An attacker who successfully exploited this vulnerability could deny dependent s
     </thead>
  <tr>
      <td>CVE-2020-1185</td>
-     <td>Anonymous Finder<br><br><br></td>
+     <td>Zhiniang Peng (<a href="https://twitter.com/edwardzpeng">@edwardzpeng</a>) of Qihoo 360 Core security and Fangming Gu (<a href="https://twitter.com/afang5472">@afang5472</a>)<br><br><br>Anonymous Finder<br><br><br></td>
  </tr>
 </table><h1 id="CVE-2020-1187">CVE-2020-1187 - Windows State Repository Service Elevation of Privilege Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
  <thead style="background-color: #ededed">
@@ -30274,7 +30378,8 @@ An attacker who successfully exploited this vulnerability could deny dependent s
         <br>
         <b>Workarounds:</b><br>None
         <br>
-        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp2020-05-12T07:00:00Z&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+        <b>Revision:</b><br>1.1&nbsp&nbsp&nbsp&nbsp2020-05-27T07:00:00Z&nbsp&nbsp&nbsp&nbsp<p>Added acknowledgements. This is an informational change only.</p>
+<br />1.0&nbsp&nbsp&nbsp&nbsp2020-05-12T07:00:00Z&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
 
         <br></td>
      <td>Important</td>
@@ -30522,7 +30627,7 @@ An attacker who successfully exploited this vulnerability could deny dependent s
     </thead>
  <tr>
      <td>CVE-2020-1187</td>
-     <td>Anonymous Finder<br><br><br></td>
+     <td>Zhiniang Peng (<a href="https://twitter.com/edwardzpeng">@edwardzpeng</a>) of Qihoo 360 Core security and Fangming Gu (<a href="https://twitter.com/afang5472">@afang5472</a>)<br><br><br>Anonymous Finder<br><br><br></td>
  </tr>
 </table><h1 id="CVE-2020-1188">CVE-2020-1188 - Windows State Repository Service Elevation of Privilege Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
  <thead style="background-color: #ededed">
@@ -30548,7 +30653,8 @@ An attacker who successfully exploited this vulnerability could deny dependent s
         <br>
         <b>Workarounds:</b><br>None
         <br>
-        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp2020-05-12T07:00:00Z&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+        <b>Revision:</b><br>1.1&nbsp&nbsp&nbsp&nbsp2020-05-27T07:00:00Z&nbsp&nbsp&nbsp&nbsp<p>Added acknowledgements. This is an informational change only.</p>
+<br />1.0&nbsp&nbsp&nbsp&nbsp2020-05-12T07:00:00Z&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
 
         <br></td>
      <td>Important</td>
@@ -30796,7 +30902,7 @@ An attacker who successfully exploited this vulnerability could deny dependent s
     </thead>
  <tr>
      <td>CVE-2020-1188</td>
-     <td>Anonymous Finder<br><br><br></td>
+     <td>Zhiniang Peng (<a href="https://twitter.com/edwardzpeng">@edwardzpeng</a>) of Qihoo 360 Core security and Fangming Gu (<a href="https://twitter.com/afang5472">@afang5472</a>)<br><br><br>Anonymous Finder<br><br><br></td>
  </tr>
 </table><h1 id="CVE-2020-1191">CVE-2020-1191 - Windows State Repository Service Elevation of Privilege Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
  <thead style="background-color: #ededed">
@@ -30822,7 +30928,8 @@ An attacker who successfully exploited this vulnerability could deny dependent s
         <br>
         <b>Workarounds:</b><br>None
         <br>
-        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp2020-05-12T07:00:00Z&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+        <b>Revision:</b><br>1.1&nbsp&nbsp&nbsp&nbsp2020-05-27T07:00:00Z&nbsp&nbsp&nbsp&nbsp<p>Added acknowledgements. This is an informational change only.</p>
+<br />1.0&nbsp&nbsp&nbsp&nbsp2020-05-12T07:00:00Z&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
 
         <br></td>
      <td>Important</td>
@@ -31070,7 +31177,7 @@ An attacker who successfully exploited this vulnerability could deny dependent s
     </thead>
  <tr>
      <td>CVE-2020-1191</td>
-     <td>Anonymous Finder<br><br><br></td>
+     <td>Zhiniang Peng (<a href="https://twitter.com/edwardzpeng">@edwardzpeng</a>) of Qihoo 360 Core security and Fangming Gu (<a href="https://twitter.com/afang5472">@afang5472</a>)<br><br><br>Anonymous Finder<br><br><br></td>
  </tr>
 </table>
 </div>
