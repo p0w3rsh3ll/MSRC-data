@@ -15,13 +15,13 @@
     <cvrf:Version>1.0</cvrf:Version>
     <cvrf:RevisionHistory>
       <cvrf:Revision>
-        <cvrf:Number>1</cvrf:Number>
-        <cvrf:Date>2020-09-08T07:00:00Z</cvrf:Date>
+        <cvrf:Number>4</cvrf:Number>
+        <cvrf:Date>2020-09-16T07:00:00Z</cvrf:Date>
         <cvrf:Description>September 2020 Security Updates</cvrf:Description>
       </cvrf:Revision>
     </cvrf:RevisionHistory>
     <cvrf:InitialReleaseDate>2020-09-08T07:00:00Z</cvrf:InitialReleaseDate>
-    <cvrf:CurrentReleaseDate>2020-09-08T07:00:00Z</cvrf:CurrentReleaseDate>
+    <cvrf:CurrentReleaseDate>2020-09-16T07:00:00Z</cvrf:CurrentReleaseDate>
   </cvrf:DocumentTracking>
   <cvrf:DocumentNotes>
     <cvrf:Note Title="Release Notes" Audience="Public" Type="Details" Ordinal="0">&lt;p&gt;The September 2020 security release consists of security updates for the following software:&lt;/p&gt;
@@ -121,6 +121,10 @@
 &lt;td&gt;Windows 10, version 2004&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
+&lt;td&gt;&lt;a href="https://support.microsoft.com/help/4574727"&gt;4574727&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Windows 10, version 1903, Windows Server version 1903, Windows 10, version 1909, Windows Server version 1909&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
 &lt;td&gt;&lt;a href="https://support.microsoft.com/help/4577015"&gt;4577015&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Windows 10, version 1607, Windows Server 2016&lt;/td&gt;
 &lt;/tr&gt;
@@ -159,6 +163,18 @@
 &lt;tr&gt;
 &lt;td&gt;&lt;a href="https://support.microsoft.com/help/4577352"&gt;4577352&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Exchange Server 2019, Exchange Server 2016&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://support.microsoft.com/help/4484505"&gt;4484505&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;SharePoint Server 2019&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://support.microsoft.com/help/4484506"&gt;4484506&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;SharePoint Enterprise Server 2016&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://support.microsoft.com/help/4484525"&gt;4484525&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;SharePoint Foundation 2013&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -244,7 +260,6 @@
         <prod:FullProductName ProductID="10379">Windows Server 2012 (Server Core installation)</prod:FullProductName>
         <prod:FullProductName ProductID="10483">Windows Server 2012 R2</prod:FullProductName>
         <prod:FullProductName ProductID="10543">Windows Server 2012 R2 (Server Core installation)</prod:FullProductName>
-        <prod:FullProductName ProductID="11499">Windows Server, version 1803  (Server Core Installation)</prod:FullProductName>
       </prod:Branch>
       <prod:Branch Type="Product Family" Name="Developer Tools">
         <prod:FullProductName ProductID="11785">Microsoft Visual Studio 2019 version 16.7 (includes 16.0 – 16.6)</prod:FullProductName>
@@ -463,7 +478,6 @@
     <prod:FullProductName ProductID="11454">Windows 10 Version 1709 for x64-based Systems</prod:FullProductName>
     <prod:FullProductName ProductID="11497">Windows 10 Version 1803 for 32-bit Systems</prod:FullProductName>
     <prod:FullProductName ProductID="11498">Windows 10 Version 1803 for x64-based Systems</prod:FullProductName>
-    <prod:FullProductName ProductID="11499">Windows Server, version 1803  (Server Core Installation)</prod:FullProductName>
     <prod:FullProductName ProductID="11563">Windows 10 Version 1803 for ARM64-based Systems</prod:FullProductName>
     <prod:FullProductName ProductID="11564">ASP.NET Core 2.1</prod:FullProductName>
     <prod:FullProductName ProductID="11568">Windows 10 Version 1809 for 32-bit Systems</prod:FullProductName>
@@ -604,6 +618,12 @@
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4484506</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/kb/4484506</vuln:URL>
+        <vuln:ProductID>10950</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4484505</vuln:Description>
         <vuln:URL>https://www.microsoft.com/downloads/details.aspx?familyid=96f3322f-2160-43d8-8370-df405446eab2</vuln:URL>
@@ -612,6 +632,12 @@
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4484505</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/kb/4484505</vuln:URL>
+        <vuln:ProductID>11585</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4486667</vuln:Description>
@@ -636,6 +662,12 @@
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4484525</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/kb/4484525</vuln:URL>
+        <vuln:ProductID>10612</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
     </vuln:Remediations>
     <vuln:Acknowledgments>
@@ -759,6 +791,12 @@
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4484506</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/kb/4484506</vuln:URL>
+        <vuln:ProductID>10950</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4484515</vuln:Description>
         <vuln:URL>https://www.microsoft.com/downloads/details.aspx?familyid=55d9924d-418f-40ef-9eb3-3fb461a4b517</vuln:URL>
@@ -782,6 +820,12 @@
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4484505</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/kb/4484505</vuln:URL>
+        <vuln:ProductID>11585</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4486667</vuln:Description>
@@ -1046,6 +1090,19 @@
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4571756</vuln:Description>
@@ -2180,6 +2237,19 @@ The security update addresses the vulnerability by correcting how  Microsoft Dyn
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4571756</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4571756</vuln:URL>
@@ -3033,6 +3103,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4577041</vuln:URL>
@@ -3355,6 +3438,12 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4484506</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/kb/4484506</vuln:URL>
+        <vuln:ProductID>10950</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4484515</vuln:Description>
         <vuln:URL>https://www.microsoft.com/downloads/details.aspx?familyid=55d9924d-418f-40ef-9eb3-3fb461a4b517</vuln:URL>
@@ -3379,6 +3468,12 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4484505</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/kb/4484505</vuln:URL>
+        <vuln:ProductID>11585</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4486667</vuln:Description>
         <vuln:URL>https://www.microsoft.com/downloads/details.aspx?familyid=8d7da94e-bbab-4eab-a649-9d8931eeec95</vuln:URL>
@@ -3402,6 +3497,12 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4484525</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/kb/4484525</vuln:URL>
+        <vuln:ProductID>10612</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
     </vuln:Remediations>
     <vuln:Acknowledgments>
@@ -3525,6 +3626,12 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4484506</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/kb/4484506</vuln:URL>
+        <vuln:ProductID>10950</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4484515</vuln:Description>
         <vuln:URL>https://www.microsoft.com/downloads/details.aspx?familyid=55d9924d-418f-40ef-9eb3-3fb461a4b517</vuln:URL>
@@ -3549,6 +3656,12 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4484505</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/kb/4484505</vuln:URL>
+        <vuln:ProductID>11585</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4486667</vuln:Description>
         <vuln:URL>https://www.microsoft.com/downloads/details.aspx?familyid=8d7da94e-bbab-4eab-a649-9d8931eeec95</vuln:URL>
@@ -3572,6 +3685,12 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4484525</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/kb/4484525</vuln:URL>
+        <vuln:ProductID>10612</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
     </vuln:Remediations>
     <vuln:Acknowledgments>
@@ -4016,6 +4135,17 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
@@ -4845,6 +4975,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4577041</vuln:URL>
@@ -5439,6 +5582,17 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>10486-11712</vuln:ProductID>
+        <vuln:ProductID>10486-11713</vuln:ProductID>
+        <vuln:ProductID>10486-11714</vuln:ProductID>
+        <vuln:ProductID>10486-11644</vuln:ProductID>
+        <vuln:ProductID>10486-11645</vuln:ProductID>
+        <vuln:ProductID>10486-11646</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4577041</vuln:URL>
@@ -5453,7 +5607,8 @@ The update address the vulnerability by modifying the way Visual Studio Code han
     </vuln:Remediations>
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
-        <vuln:Name>pgboy (http://weibo.com/pgboy1988) of 360vulcan</vuln:Name>
+        <vuln:Name>pgboy (http://weibo.com/pgboy1988) 
+</vuln:Name>
         <vuln:URL />
       </vuln:Acknowledgment>
     </vuln:Acknowledgments>
@@ -5802,6 +5957,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
     </vuln:Remediations>
     <vuln:Acknowledgments>
@@ -6571,6 +6739,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
@@ -7541,6 +7722,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4577041</vuln:URL>
@@ -7803,6 +7997,12 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4484525</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/kb/4484525</vuln:URL>
+        <vuln:ProductID>10612</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
     </vuln:Remediations>
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
@@ -7940,6 +8140,12 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4484506</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/kb/4484506</vuln:URL>
+        <vuln:ProductID>10950</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4484515</vuln:Description>
         <vuln:URL>https://www.microsoft.com/downloads/details.aspx?familyid=55d9924d-418f-40ef-9eb3-3fb461a4b517</vuln:URL>
@@ -7964,6 +8170,12 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4484505</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/kb/4484505</vuln:URL>
+        <vuln:ProductID>11585</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4486667</vuln:Description>
         <vuln:URL>https://www.microsoft.com/downloads/details.aspx?familyid=8d7da94e-bbab-4eab-a649-9d8931eeec95</vuln:URL>
@@ -7987,6 +8199,12 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4484525</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/kb/4484525</vuln:URL>
+        <vuln:ProductID>10612</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4486664</vuln:Description>
@@ -8688,6 +8906,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4577041</vuln:URL>
@@ -9217,6 +9448,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4571756</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4571756</vuln:URL>
@@ -9640,6 +9884,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4571756</vuln:Description>
@@ -10430,6 +10687,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
@@ -11383,6 +11653,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
@@ -12353,6 +12636,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4577041</vuln:URL>
@@ -13313,6 +13609,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4577041</vuln:URL>
@@ -13841,6 +14150,13 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577015</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4577015</vuln:URL>
@@ -14333,6 +14649,13 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577015</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4577015</vuln:URL>
@@ -14824,6 +15147,13 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577015</vuln:Description>
@@ -15474,6 +15804,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
@@ -16275,6 +16618,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
@@ -17245,6 +17601,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4577041</vuln:URL>
@@ -17928,6 +18297,13 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577015</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4577015</vuln:URL>
@@ -18476,6 +18852,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4571756</vuln:Description>
@@ -19288,6 +19677,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4577041</vuln:URL>
@@ -20032,6 +20434,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4577041</vuln:URL>
@@ -20077,7 +20492,7 @@ The update address the vulnerability by modifying the way Visual Studio Code han
     </vuln:Remediations>
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
-        <vuln:Name>pgboy (http://weibo.com/pgboy1988) of 360vulcan</vuln:Name>
+        <vuln:Name>pgboy (http://weibo.com/pgboy1988)</vuln:Name>
         <vuln:URL />
       </vuln:Acknowledgment>
     </vuln:Acknowledgments>
@@ -20396,6 +20811,13 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4571756</vuln:Description>
@@ -20937,6 +21359,17 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
@@ -21598,6 +22031,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
@@ -22732,6 +23178,23 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>10724-11712</vuln:ProductID>
+        <vuln:ProductID>10724-11713</vuln:ProductID>
+        <vuln:ProductID>10724-11714</vuln:ProductID>
+        <vuln:ProductID>10724-11644</vuln:ProductID>
+        <vuln:ProductID>10724-11645</vuln:ProductID>
+        <vuln:ProductID>10724-11646</vuln:ProductID>
+        <vuln:ProductID>10486-11712</vuln:ProductID>
+        <vuln:ProductID>10486-11713</vuln:ProductID>
+        <vuln:ProductID>10486-11714</vuln:ProductID>
+        <vuln:ProductID>10486-11644</vuln:ProductID>
+        <vuln:ProductID>10486-11645</vuln:ProductID>
+        <vuln:ProductID>10486-11646</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4577041</vuln:URL>
@@ -22898,7 +23361,12 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:AffectedFiles />
       </vuln:Remediation>
     </vuln:Remediations>
-    <vuln:Acknowledgments />
+    <vuln:Acknowledgments>
+      <vuln:Acknowledgment>
+        <vuln:Name>HAO LI of VenusTech ADLab</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+    </vuln:Acknowledgments>
     <vuln:RevisionHistory>
       <vuln:Revision>
         <cvrf:Number>1.0</cvrf:Number>
@@ -23520,6 +23988,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4577041</vuln:URL>
@@ -24047,6 +24528,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4571756</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4571756</vuln:URL>
@@ -24564,6 +25058,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
@@ -25110,6 +25617,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
@@ -25916,6 +26436,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4577041</vuln:URL>
@@ -26140,7 +26673,7 @@ The update address the vulnerability by modifying the way Visual Studio Code han
     </vuln:Remediations>
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
-        <vuln:Name>Clément Lavoillotte &lt;a href="https://twitter.com/clavoillotte"&gt;@clavoillotte&lt;/a&gt; of &lt;a href="https://almond.consulting/"&gt;Almond&lt;/a&gt;</vuln:Name>
+        <vuln:Name>&lt;a href="https://twitter.com/clavoillotte"&gt;Clément Lavoillotte&lt;/a&gt; of &lt;a href="https://offsec.almond.consulting/"&gt;Almond&lt;/a&gt; and &lt;a href="https://twitter.com/jonasLyk/"&gt;Jonas Lykkegård&lt;/a&gt; of &lt;a href="https://secret.club/"&gt;secret.club&lt;/a&gt;</vuln:Name>
         <vuln:URL />
       </vuln:Acknowledgment>
     </vuln:Acknowledgments>
@@ -26149,6 +26682,12 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2020-09-08T07:00:00Z</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2020-09-10T07:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Updated acknowledgment. This is an informational change only.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
     </vuln:RevisionHistory>
@@ -26906,6 +27445,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4577041</vuln:URL>
@@ -27631,6 +28183,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
@@ -28445,6 +29010,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
@@ -29415,6 +29993,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4577041</vuln:URL>
@@ -29639,7 +30230,7 @@ The update address the vulnerability by modifying the way Visual Studio Code han
     </vuln:Remediations>
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
-        <vuln:Name>Yuki Chen working with &lt;a href="https://bugcloud.360.cn/"&gt;360 BugCloud&lt;/a&gt;</vuln:Name>
+        <vuln:Name>Yuki Chen</vuln:Name>
         <vuln:URL />
       </vuln:Acknowledgment>
     </vuln:Acknowledgments>
@@ -30026,6 +30617,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4571756</vuln:Description>
@@ -30679,6 +31283,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4577041</vuln:URL>
@@ -31311,6 +31928,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4577041</vuln:URL>
@@ -31800,6 +32430,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4577041</vuln:URL>
@@ -31871,7 +32514,6 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:ProductID>11767</vuln:ProductID>
         <vuln:ProductID>11497</vuln:ProductID>
         <vuln:ProductID>11498</vuln:ProductID>
-        <vuln:ProductID>11499</vuln:ProductID>
         <vuln:ProductID>11713</vuln:ProductID>
         <vuln:ProductID>10855</vuln:ProductID>
         <vuln:ProductID>11563</vuln:ProductID>
@@ -31927,10 +32569,6 @@ The update address the vulnerability by modifying the way Visual Studio Code han
       </vuln:Threat>
       <vuln:Threat Type="Impact">
         <vuln:Description>Remote Code Execution</vuln:Description>
-        <vuln:ProductID>11499</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Remote Code Execution</vuln:Description>
         <vuln:ProductID>11713</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Impact">
@@ -32044,10 +32682,6 @@ The update address the vulnerability by modifying the way Visual Studio Code han
       <vuln:Threat Type="Severity">
         <vuln:Description>Critical</vuln:Description>
         <vuln:ProductID>11498</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Critical</vuln:Description>
-        <vuln:ProductID>11499</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
         <vuln:Description>Critical</vuln:Description>
@@ -32183,12 +32817,6 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:TemporalScore>7.0</vuln:TemporalScore>
         <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11498</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>7.8</vuln:BaseScore>
-        <vuln:TemporalScore>7.0</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>11499</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>7.8</vuln:BaseScore>
@@ -32361,6 +32989,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4571756</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4571756</vuln:URL>
@@ -32399,7 +33040,6 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:Supercedence>4571709</vuln:Supercedence>
         <vuln:ProductID>11497</vuln:ProductID>
         <vuln:ProductID>11498</vuln:ProductID>
-        <vuln:ProductID>11499</vuln:ProductID>
         <vuln:ProductID>11563</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
@@ -32454,6 +33094,12 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2020-09-08T07:00:00Z</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2020-09-09T07:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;In the Security Updates table, removed Windows Server, version 1803 (Server Core installation) as this version of Windows Server is no longer supported.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
     </vuln:RevisionHistory>
@@ -33040,6 +33686,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4577041</vuln:URL>
@@ -33173,6 +33832,10 @@ The update address the vulnerability by modifying the way Visual Studio Code han
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
         <vuln:Name>Linshuang Li</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+      <vuln:Acknowledgment>
+        <vuln:Name>nghiadt12(@nghiadt1098) from Viettel Cyber Security </vuln:Name>
         <vuln:URL />
       </vuln:Acknowledgment>
       <vuln:Acknowledgment>
@@ -33762,6 +34425,17 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>10486-11712</vuln:ProductID>
+        <vuln:ProductID>10486-11713</vuln:ProductID>
+        <vuln:ProductID>10486-11714</vuln:ProductID>
+        <vuln:ProductID>10486-11644</vuln:ProductID>
+        <vuln:ProductID>10486-11645</vuln:ProductID>
+        <vuln:ProductID>10486-11646</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4577041</vuln:URL>
@@ -33875,7 +34549,7 @@ The update address the vulnerability by modifying the way Visual Studio Code han
     </vuln:Remediations>
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
-        <vuln:Name>pgboy (http://weibo.com/pgboy1988) of 360vulcan</vuln:Name>
+        <vuln:Name>&lt;a href="http://weibo.com/pgboy1988"&gt;pgboy&lt;/a&gt;</vuln:Name>
         <vuln:URL />
       </vuln:Acknowledgment>
     </vuln:Acknowledgments>
@@ -34640,6 +35314,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
@@ -35610,6 +36297,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
@@ -36587,6 +37287,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4577041</vuln:URL>
@@ -37298,6 +38011,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4577041</vuln:URL>
@@ -38000,6 +38726,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
@@ -38887,6 +39626,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
@@ -39856,6 +40608,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
@@ -41001,6 +41766,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4577041</vuln:URL>
@@ -41749,6 +42527,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4577041</vuln:URL>
@@ -42257,6 +43048,17 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>10724-11712</vuln:ProductID>
+        <vuln:ProductID>10724-11713</vuln:ProductID>
+        <vuln:ProductID>10724-11714</vuln:ProductID>
+        <vuln:ProductID>10724-11644</vuln:ProductID>
+        <vuln:ProductID>10724-11645</vuln:ProductID>
+        <vuln:ProductID>10724-11646</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
@@ -43059,6 +43861,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
@@ -44036,6 +44851,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4577041</vuln:URL>
@@ -45008,6 +45836,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4577041</vuln:URL>
@@ -45979,6 +46820,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
@@ -47051,6 +47905,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4577041</vuln:URL>
@@ -47509,6 +48376,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4571756</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4571756</vuln:URL>
@@ -47918,6 +48798,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4571756</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4571756</vuln:URL>
@@ -47958,7 +48851,7 @@ The update address the vulnerability by modifying the way Visual Studio Code han
   <vuln:Vulnerability Ordinal="52">
     <vuln:Title>Microsoft Windows Codecs Library Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
-      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;A remote code execution vulnerability exists in the way that Microsoft Windows Codecs Library handles objects in memory. An attacker who successfully exploited this vulnerability could obtain information to further compromise the user’s system.&lt;/p&gt;
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;A remote code execution vulnerability exists in the way that Microsoft Windows Codecs Library handles objects in memory. An attacker who successfully exploited this vulnerability could take control of the affected system. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights.&lt;/p&gt;
 &lt;p&gt;Exploitation of the vulnerability requires that a program process a specially crafted image file.&lt;/p&gt;
 &lt;p&gt;The update addresses the vulnerability by correcting how Microsoft Windows Codecs Library handles objects in memory.&lt;/p&gt;
 </vuln:Note>
@@ -48431,6 +49324,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
@@ -49083,6 +49989,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4577041</vuln:URL>
@@ -49172,7 +50091,7 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:URL />
       </vuln:Acknowledgment>
       <vuln:Acknowledgment>
-        <vuln:Name>Yuki Chen working with &lt;a href="https://bugcloud.360.cn/"&gt;360 BugCloud&lt;/a&gt;</vuln:Name>
+        <vuln:Name>Yuki Chen </vuln:Name>
         <vuln:URL />
       </vuln:Acknowledgment>
     </vuln:Acknowledgments>
@@ -49786,6 +50705,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4577041</vuln:URL>
@@ -49852,7 +50784,7 @@ The update address the vulnerability by modifying the way Visual Studio Code han
     </vuln:Remediations>
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
-        <vuln:Name>Yuki Chen working with &lt;a href="https://bugcloud.360.cn/"&gt;360 BugCloud&lt;/a&gt;</vuln:Name>
+        <vuln:Name>Yuki Chen</vuln:Name>
         <vuln:URL />
       </vuln:Acknowledgment>
     </vuln:Acknowledgments>
@@ -50341,6 +51273,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
@@ -51023,6 +51968,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4577041</vuln:URL>
@@ -51371,6 +52329,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4571756</vuln:Description>
@@ -51841,6 +52812,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
@@ -52338,6 +53322,17 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>10724-11712</vuln:ProductID>
+        <vuln:ProductID>10724-11713</vuln:ProductID>
+        <vuln:ProductID>10724-11714</vuln:ProductID>
+        <vuln:ProductID>10724-11644</vuln:ProductID>
+        <vuln:ProductID>10724-11645</vuln:ProductID>
+        <vuln:ProductID>10724-11646</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
@@ -52841,6 +53836,17 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>10724-11712</vuln:ProductID>
+        <vuln:ProductID>10724-11713</vuln:ProductID>
+        <vuln:ProductID>10724-11714</vuln:ProductID>
+        <vuln:ProductID>10724-11644</vuln:ProductID>
+        <vuln:ProductID>10724-11645</vuln:ProductID>
+        <vuln:ProductID>10724-11646</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4577041</vuln:URL>
@@ -53146,6 +54152,15 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL>https://go.microsoft.com/fwlink/p/?linkid=831049</vuln:URL>
+        <vuln:ProductID>11575</vuln:ProductID>
+        <vuln:ProductID>10734</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4484466</vuln:Description>
         <vuln:URL>https://www.microsoft.com/downloads/details.aspx?familyid=cf66f64e-41c3-437f-b67b-a3da3fd21004</vuln:URL>
         <vuln:Supercedence>4484342</vuln:Supercedence>
@@ -53184,6 +54199,12 @@ The update address the vulnerability by modifying the way Visual Studio Code han
       </vuln:Acknowledgment>
     </vuln:Acknowledgments>
     <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2020-09-16T07:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Microsoft is announcing the availability of the security updates for Microsoft Office for Mac. Customers running affected Mac software should install the update for their product to be protected from this vulnerability. Customers running other Microsoft Office software do not need to take any action. See the &lt;a href="https://go.microsoft.com/fwlink/p/?linkid=831049"&gt;Release Notes&lt;/a&gt; for more information and download links.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
       <vuln:Revision>
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2020-09-08T07:00:00Z</cvrf:Date>
@@ -53283,6 +54304,12 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4484506</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/kb/4484506</vuln:URL>
+        <vuln:ProductID>10950</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4484515</vuln:Description>
         <vuln:URL>https://www.microsoft.com/downloads/details.aspx?familyid=55d9924d-418f-40ef-9eb3-3fb461a4b517</vuln:URL>
@@ -53307,6 +54334,12 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4484505</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/kb/4484505</vuln:URL>
+        <vuln:ProductID>11585</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4484504</vuln:Description>
         <vuln:URL>https://www.microsoft.com/downloads/details.aspx?familyid=a21a8462-90ec-46a4-be99-258a85978e6e</vuln:URL>
@@ -53323,6 +54356,12 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4484525</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/kb/4484525</vuln:URL>
+        <vuln:ProductID>10612</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4484488</vuln:Description>
@@ -53446,6 +54485,12 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4484506</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/kb/4484506</vuln:URL>
+        <vuln:ProductID>10950</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4484505</vuln:Description>
         <vuln:URL>https://www.microsoft.com/downloads/details.aspx?familyid=96f3322f-2160-43d8-8370-df405446eab2</vuln:URL>
@@ -53454,6 +54499,12 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4484505</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/kb/4484505</vuln:URL>
+        <vuln:ProductID>11585</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4486667</vuln:Description>
@@ -53478,6 +54529,12 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4484525</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/kb/4484525</vuln:URL>
+        <vuln:ProductID>10612</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
     </vuln:Remediations>
     <vuln:Acknowledgments>
@@ -53586,6 +54643,12 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4484506</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/kb/4484506</vuln:URL>
+        <vuln:ProductID>10950</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4484505</vuln:Description>
         <vuln:URL>https://www.microsoft.com/downloads/details.aspx?familyid=96f3322f-2160-43d8-8370-df405446eab2</vuln:URL>
@@ -53594,6 +54657,12 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4484505</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/kb/4484505</vuln:URL>
+        <vuln:ProductID>11585</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4486667</vuln:Description>
@@ -53618,6 +54687,12 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4484525</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/kb/4484525</vuln:URL>
+        <vuln:ProductID>10612</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
     </vuln:Remediations>
     <vuln:Acknowledgments>
@@ -53744,6 +54819,12 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4484506</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/kb/4484506</vuln:URL>
+        <vuln:ProductID>10950</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4484512</vuln:Description>
         <vuln:URL>https://www.microsoft.com/downloads/details.aspx?familyid=9c96bc2e-f9c2-4cb9-83b4-982246c565e4</vuln:URL>
@@ -53787,6 +54868,12 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4484505</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/kb/4484505</vuln:URL>
+        <vuln:ProductID>11585</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4484504</vuln:Description>
@@ -54183,6 +55270,12 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4484506</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/kb/4484506</vuln:URL>
+        <vuln:ProductID>10950</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4484512</vuln:Description>
         <vuln:URL>https://www.microsoft.com/downloads/details.aspx?familyid=9c96bc2e-f9c2-4cb9-83b4-982246c565e4</vuln:URL>
@@ -54210,6 +55303,12 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4484505</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/kb/4484505</vuln:URL>
+        <vuln:ProductID>11585</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4484504</vuln:Description>
         <vuln:URL>https://www.microsoft.com/downloads/details.aspx?familyid=a21a8462-90ec-46a4-be99-258a85978e6e</vuln:URL>
@@ -54225,6 +55324,15 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:ProductID>11574</vuln:ProductID>
         <vuln:ProductID>11762</vuln:ProductID>
         <vuln:ProductID>11763</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL>https://go.microsoft.com/fwlink/p/?linkid=831049</vuln:URL>
+        <vuln:ProductID>11575</vuln:ProductID>
+        <vuln:ProductID>10734</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:RestartRequired>No</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
@@ -54268,8 +55376,9 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>4484481</vuln:Description>
-        <vuln:URL>https://www.microsoft.com/downloads/details.aspx?familyid=4de0911a-7d53-4214-a5a2-66fdc14d2d34</vuln:URL>
+        <vuln:Description>4484518</vuln:Description>
+        <vuln:URL>https://www.microsoft.com/downloads/details.aspx?familyid=97eee76a-dfa1-4a08-8a44-b5927f7961f7</vuln:URL>
+        <vuln:Supercedence>4484481</vuln:Supercedence>
         <vuln:ProductID>10608</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
@@ -54313,6 +55422,18 @@ The update address the vulnerability by modifying the way Visual Studio Code han
       </vuln:Acknowledgment>
     </vuln:Acknowledgments>
     <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2020-09-09T07:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Corrected security updates table.  This is an informational change only.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2020-09-16T07:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Microsoft is announcing the availability of the security updates for Microsoft Office for Mac. Customers running affected Mac software should install the update for their product to be protected from this vulnerability. Customers running other Microsoft Office software do not need to take any action. See the &lt;a href="https://go.microsoft.com/fwlink/p/?linkid=831049"&gt;Release Notes&lt;/a&gt; for more information and download links.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
       <vuln:Revision>
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2020-09-08T07:00:00Z</cvrf:Date>
@@ -54610,6 +55731,15 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL>https://go.microsoft.com/fwlink/p/?linkid=831049</vuln:URL>
+        <vuln:ProductID>11575</vuln:ProductID>
+        <vuln:ProductID>10734</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4484503</vuln:Description>
         <vuln:URL>https://www.microsoft.com/downloads/details.aspx?familyid=595ad700-9042-4b33-9219-d6bbbd324b74</vuln:URL>
         <vuln:Supercedence>4484470</vuln:Supercedence>
@@ -54666,6 +55796,12 @@ The update address the vulnerability by modifying the way Visual Studio Code han
       </vuln:Acknowledgment>
     </vuln:Acknowledgments>
     <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2020-09-16T07:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Microsoft is announcing the availability of the security updates for Microsoft Office for Mac. Customers running affected Mac software should install the update for their product to be protected from this vulnerability. Customers running other Microsoft Office software do not need to take any action. See the &lt;a href="https://go.microsoft.com/fwlink/p/?linkid=831049"&gt;Release Notes&lt;/a&gt; for more information and download links.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
       <vuln:Revision>
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2020-09-08T07:00:00Z</cvrf:Date>
@@ -54750,6 +55886,12 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4484506</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/kb/4484506</vuln:URL>
+        <vuln:ProductID>10950</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4484515</vuln:Description>
         <vuln:URL>https://www.microsoft.com/downloads/details.aspx?familyid=55d9924d-418f-40ef-9eb3-3fb461a4b517</vuln:URL>
@@ -54773,6 +55915,12 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4484505</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/kb/4484505</vuln:URL>
+        <vuln:ProductID>11585</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
     </vuln:Remediations>
     <vuln:Acknowledgments>
@@ -55109,6 +56257,13 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577015</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4577015</vuln:URL>
@@ -55268,6 +56423,10 @@ The update address the vulnerability by modifying the way Visual Studio Code han
       </vuln:Remediation>
     </vuln:Remediations>
     <vuln:Acknowledgments>
+      <vuln:Acknowledgment>
+        <vuln:Name>VictorV (Tang Tianwen)</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
       <vuln:Acknowledgment>
         <vuln:Name>Quan Luo from Codesafe Team of Legendsec at Qi'anxin Group</vuln:Name>
         <vuln:URL />
@@ -56013,6 +57172,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
@@ -56980,6 +58152,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
@@ -57951,6 +59136,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4577041</vuln:URL>
@@ -58815,6 +60013,15 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4571756</vuln:Description>
@@ -59737,6 +60944,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4577041</vuln:URL>
@@ -60346,6 +61566,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4571756</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4571756</vuln:URL>
@@ -60890,6 +62123,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4577041</vuln:URL>
@@ -61027,21 +62273,6 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:ProductID>10853</vuln:ProductID>
         <vuln:ProductID>10816</vuln:ProductID>
         <vuln:ProductID>10855</vuln:ProductID>
-        <vuln:ProductID>10047</vuln:ProductID>
-        <vuln:ProductID>10048</vuln:ProductID>
-        <vuln:ProductID>10481</vuln:ProductID>
-        <vuln:ProductID>10482</vuln:ProductID>
-        <vuln:ProductID>10484</vuln:ProductID>
-        <vuln:ProductID>9312</vuln:ProductID>
-        <vuln:ProductID>10287</vuln:ProductID>
-        <vuln:ProductID>9318</vuln:ProductID>
-        <vuln:ProductID>9344</vuln:ProductID>
-        <vuln:ProductID>10051</vuln:ProductID>
-        <vuln:ProductID>10049</vuln:ProductID>
-        <vuln:ProductID>10378</vuln:ProductID>
-        <vuln:ProductID>10379</vuln:ProductID>
-        <vuln:ProductID>10483</vuln:ProductID>
-        <vuln:ProductID>10543</vuln:ProductID>
       </vuln:Status>
     </vuln:ProductStatuses>
     <vuln:Threats>
@@ -61161,66 +62392,6 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:Description>Remote Code Execution</vuln:Description>
         <vuln:ProductID>10855</vuln:ProductID>
       </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Remote Code Execution</vuln:Description>
-        <vuln:ProductID>10047</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Remote Code Execution</vuln:Description>
-        <vuln:ProductID>10048</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Remote Code Execution</vuln:Description>
-        <vuln:ProductID>10481</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Remote Code Execution</vuln:Description>
-        <vuln:ProductID>10482</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Remote Code Execution</vuln:Description>
-        <vuln:ProductID>10484</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Remote Code Execution</vuln:Description>
-        <vuln:ProductID>9312</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Remote Code Execution</vuln:Description>
-        <vuln:ProductID>10287</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Remote Code Execution</vuln:Description>
-        <vuln:ProductID>9318</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Remote Code Execution</vuln:Description>
-        <vuln:ProductID>9344</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Remote Code Execution</vuln:Description>
-        <vuln:ProductID>10051</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Remote Code Execution</vuln:Description>
-        <vuln:ProductID>10049</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Remote Code Execution</vuln:Description>
-        <vuln:ProductID>10378</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Remote Code Execution</vuln:Description>
-        <vuln:ProductID>10379</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Remote Code Execution</vuln:Description>
-        <vuln:ProductID>10483</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Remote Code Execution</vuln:Description>
-        <vuln:ProductID>10543</vuln:ProductID>
-      </vuln:Threat>
       <vuln:Threat Type="Severity">
         <vuln:Description>Critical</vuln:Description>
         <vuln:ProductID>11497</vuln:ProductID>
@@ -61336,66 +62507,6 @@ The update address the vulnerability by modifying the way Visual Studio Code han
       <vuln:Threat Type="Severity">
         <vuln:Description>Critical</vuln:Description>
         <vuln:ProductID>10855</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Critical</vuln:Description>
-        <vuln:ProductID>10047</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Critical</vuln:Description>
-        <vuln:ProductID>10048</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Critical</vuln:Description>
-        <vuln:ProductID>10481</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Critical</vuln:Description>
-        <vuln:ProductID>10482</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Critical</vuln:Description>
-        <vuln:ProductID>10484</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Critical</vuln:Description>
-        <vuln:ProductID>9312</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Critical</vuln:Description>
-        <vuln:ProductID>10287</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Critical</vuln:Description>
-        <vuln:ProductID>9318</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Critical</vuln:Description>
-        <vuln:ProductID>9344</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Critical</vuln:Description>
-        <vuln:ProductID>10051</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Critical</vuln:Description>
-        <vuln:ProductID>10049</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Critical</vuln:Description>
-        <vuln:ProductID>10378</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Critical</vuln:Description>
-        <vuln:ProductID>10379</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Critical</vuln:Description>
-        <vuln:ProductID>10483</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Critical</vuln:Description>
-        <vuln:ProductID>10543</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Exploit Status">
         <vuln:Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation Less Likely;Older Software Release:Exploitation Less Likely;DOS:N/A</vuln:Description>
@@ -61576,370 +62687,8 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>10855</vuln:ProductID>
       </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>7.3</vuln:BaseScore>
-        <vuln:TemporalScore>6.6</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>10047</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>7.3</vuln:BaseScore>
-        <vuln:TemporalScore>6.6</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>10048</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>7.3</vuln:BaseScore>
-        <vuln:TemporalScore>6.6</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>10481</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>7.3</vuln:BaseScore>
-        <vuln:TemporalScore>6.6</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>10482</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>7.3</vuln:BaseScore>
-        <vuln:TemporalScore>6.6</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>10484</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>7.3</vuln:BaseScore>
-        <vuln:TemporalScore>6.6</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>9312</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>7.3</vuln:BaseScore>
-        <vuln:TemporalScore>6.6</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>10287</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>7.3</vuln:BaseScore>
-        <vuln:TemporalScore>6.6</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>9318</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>7.3</vuln:BaseScore>
-        <vuln:TemporalScore>6.6</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>9344</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>7.3</vuln:BaseScore>
-        <vuln:TemporalScore>6.6</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>10051</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>7.3</vuln:BaseScore>
-        <vuln:TemporalScore>6.6</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>10049</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>7.3</vuln:BaseScore>
-        <vuln:TemporalScore>6.6</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>10378</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>7.3</vuln:BaseScore>
-        <vuln:TemporalScore>6.6</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>10379</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>7.3</vuln:BaseScore>
-        <vuln:TemporalScore>6.6</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>10483</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>7.3</vuln:BaseScore>
-        <vuln:TemporalScore>6.6</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>10543</vuln:ProductID>
-      </vuln:ScoreSet>
     </vuln:CVSSScoreSets>
-    <vuln:Remediations>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>4577032</vuln:Description>
-        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4577032</vuln:URL>
-        <vuln:Supercedence>4571709</vuln:Supercedence>
-        <vuln:ProductID>11497</vuln:ProductID>
-        <vuln:ProductID>11498</vuln:ProductID>
-        <vuln:ProductID>11563</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:RestartRequired>Yes</vuln:RestartRequired>
-        <vuln:SubType>Security Update</vuln:SubType>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>4570333</vuln:Description>
-        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4570333</vuln:URL>
-        <vuln:Supercedence>4565349</vuln:Supercedence>
-        <vuln:ProductID>11568</vuln:ProductID>
-        <vuln:ProductID>11569</vuln:ProductID>
-        <vuln:ProductID>11570</vuln:ProductID>
-        <vuln:ProductID>11571</vuln:ProductID>
-        <vuln:ProductID>11572</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:RestartRequired>Yes</vuln:RestartRequired>
-        <vuln:SubType>Security Update</vuln:SubType>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Known Issue">
-        <vuln:Description>4570333</vuln:Description>
-        <vuln:URL>https://support.microsoft.com/help/4570333</vuln:URL>
-        <vuln:ProductID>11568</vuln:ProductID>
-        <vuln:ProductID>11569</vuln:ProductID>
-        <vuln:ProductID>11570</vuln:ProductID>
-        <vuln:ProductID>11571</vuln:ProductID>
-        <vuln:ProductID>11572</vuln:ProductID>
-        <vuln:AffectedFiles />
-      </vuln:Remediation>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>4574727</vuln:Description>
-        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4574727</vuln:URL>
-        <vuln:Supercedence>4565351</vuln:Supercedence>
-        <vuln:ProductID>11712</vuln:ProductID>
-        <vuln:ProductID>11713</vuln:ProductID>
-        <vuln:ProductID>11714</vuln:ProductID>
-        <vuln:ProductID>11715</vuln:ProductID>
-        <vuln:ProductID>11644</vuln:ProductID>
-        <vuln:ProductID>11645</vuln:ProductID>
-        <vuln:ProductID>11646</vuln:ProductID>
-        <vuln:ProductID>11647</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:RestartRequired>Yes</vuln:RestartRequired>
-        <vuln:SubType>Security Update</vuln:SubType>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>4577041</vuln:Description>
-        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4577041</vuln:URL>
-        <vuln:Supercedence>4571741</vuln:Supercedence>
-        <vuln:ProductID>11453</vuln:ProductID>
-        <vuln:ProductID>11454</vuln:ProductID>
-        <vuln:ProductID>11583</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:RestartRequired>Yes</vuln:RestartRequired>
-        <vuln:SubType>Security Update</vuln:SubType>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>4571756</vuln:Description>
-        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4571756</vuln:URL>
-        <vuln:Supercedence>4566782</vuln:Supercedence>
-        <vuln:ProductID>11766</vuln:ProductID>
-        <vuln:ProductID>11767</vuln:ProductID>
-        <vuln:ProductID>11768</vuln:ProductID>
-        <vuln:ProductID>11769</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:RestartRequired>Yes</vuln:RestartRequired>
-        <vuln:SubType>Security Update</vuln:SubType>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Known Issue">
-        <vuln:Description>4571756</vuln:Description>
-        <vuln:URL>https://support.microsoft.com/help/4571756</vuln:URL>
-        <vuln:ProductID>11766</vuln:ProductID>
-        <vuln:ProductID>11767</vuln:ProductID>
-        <vuln:ProductID>11768</vuln:ProductID>
-        <vuln:ProductID>11769</vuln:ProductID>
-        <vuln:AffectedFiles />
-      </vuln:Remediation>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>4577049</vuln:Description>
-        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4577049</vuln:URL>
-        <vuln:Supercedence>4571692</vuln:Supercedence>
-        <vuln:ProductID>10729</vuln:ProductID>
-        <vuln:ProductID>10735</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:RestartRequired>Yes</vuln:RestartRequired>
-        <vuln:SubType>Security Update</vuln:SubType>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>4577015</vuln:Description>
-        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4577015</vuln:URL>
-        <vuln:Supercedence>4571694</vuln:Supercedence>
-        <vuln:ProductID>10852</vuln:ProductID>
-        <vuln:ProductID>10853</vuln:ProductID>
-        <vuln:ProductID>10816</vuln:ProductID>
-        <vuln:ProductID>10855</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:RestartRequired>Yes</vuln:RestartRequired>
-        <vuln:SubType>Security Update</vuln:SubType>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Known Issue">
-        <vuln:Description>4577015</vuln:Description>
-        <vuln:URL>https://support.microsoft.com/help/4577015</vuln:URL>
-        <vuln:ProductID>10852</vuln:ProductID>
-        <vuln:ProductID>10853</vuln:ProductID>
-        <vuln:ProductID>10816</vuln:ProductID>
-        <vuln:ProductID>10855</vuln:ProductID>
-        <vuln:AffectedFiles />
-      </vuln:Remediation>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>4577051</vuln:Description>
-        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4577051</vuln:URL>
-        <vuln:Supercedence>4571729</vuln:Supercedence>
-        <vuln:ProductID>10047</vuln:ProductID>
-        <vuln:ProductID>10048</vuln:ProductID>
-        <vuln:ProductID>10051</vuln:ProductID>
-        <vuln:ProductID>10049</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:RestartRequired>Yes</vuln:RestartRequired>
-        <vuln:SubType>Monthly Rollup</vuln:SubType>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Known Issue">
-        <vuln:Description>4577051</vuln:Description>
-        <vuln:URL>https://support.microsoft.com/help/4577051</vuln:URL>
-        <vuln:ProductID>10047</vuln:ProductID>
-        <vuln:ProductID>10048</vuln:ProductID>
-        <vuln:ProductID>10051</vuln:ProductID>
-        <vuln:ProductID>10049</vuln:ProductID>
-        <vuln:AffectedFiles />
-      </vuln:Remediation>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>4577053</vuln:Description>
-        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4577053</vuln:URL>
-        <vuln:ProductID>10047</vuln:ProductID>
-        <vuln:ProductID>10048</vuln:ProductID>
-        <vuln:ProductID>10051</vuln:ProductID>
-        <vuln:ProductID>10049</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:RestartRequired>Yes</vuln:RestartRequired>
-        <vuln:SubType>Security Only</vuln:SubType>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Known Issue">
-        <vuln:Description>4577053</vuln:Description>
-        <vuln:URL>https://support.microsoft.com/help/4577053</vuln:URL>
-        <vuln:ProductID>10047</vuln:ProductID>
-        <vuln:ProductID>10048</vuln:ProductID>
-        <vuln:ProductID>10051</vuln:ProductID>
-        <vuln:ProductID>10049</vuln:ProductID>
-        <vuln:AffectedFiles />
-      </vuln:Remediation>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>4577066</vuln:Description>
-        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4577066</vuln:URL>
-        <vuln:Supercedence>4571703</vuln:Supercedence>
-        <vuln:ProductID>10481</vuln:ProductID>
-        <vuln:ProductID>10482</vuln:ProductID>
-        <vuln:ProductID>10484</vuln:ProductID>
-        <vuln:ProductID>10483</vuln:ProductID>
-        <vuln:ProductID>10543</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:RestartRequired>Yes</vuln:RestartRequired>
-        <vuln:SubType>Monthly Rollup</vuln:SubType>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Known Issue">
-        <vuln:Description>4577066</vuln:Description>
-        <vuln:URL>https://support.microsoft.com/help/4577066</vuln:URL>
-        <vuln:ProductID>10481</vuln:ProductID>
-        <vuln:ProductID>10482</vuln:ProductID>
-        <vuln:ProductID>10484</vuln:ProductID>
-        <vuln:ProductID>10483</vuln:ProductID>
-        <vuln:ProductID>10543</vuln:ProductID>
-        <vuln:AffectedFiles />
-      </vuln:Remediation>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>4577071</vuln:Description>
-        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4577071</vuln:URL>
-        <vuln:ProductID>10481</vuln:ProductID>
-        <vuln:ProductID>10482</vuln:ProductID>
-        <vuln:ProductID>10483</vuln:ProductID>
-        <vuln:ProductID>10543</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:RestartRequired>Yes</vuln:RestartRequired>
-        <vuln:SubType>Security Only</vuln:SubType>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Known Issue">
-        <vuln:Description>4577071</vuln:Description>
-        <vuln:URL>https://support.microsoft.com/help/4577071</vuln:URL>
-        <vuln:ProductID>10481</vuln:ProductID>
-        <vuln:ProductID>10482</vuln:ProductID>
-        <vuln:ProductID>10483</vuln:ProductID>
-        <vuln:ProductID>10543</vuln:ProductID>
-        <vuln:AffectedFiles />
-      </vuln:Remediation>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>4577064</vuln:Description>
-        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4577064</vuln:URL>
-        <vuln:Supercedence>4571730</vuln:Supercedence>
-        <vuln:ProductID>9312</vuln:ProductID>
-        <vuln:ProductID>10287</vuln:ProductID>
-        <vuln:ProductID>9318</vuln:ProductID>
-        <vuln:ProductID>9344</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:RestartRequired>Yes</vuln:RestartRequired>
-        <vuln:SubType>Monthly Rollup</vuln:SubType>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Known Issue">
-        <vuln:Description>4577064</vuln:Description>
-        <vuln:URL>https://support.microsoft.com/help/4577064</vuln:URL>
-        <vuln:ProductID>9312</vuln:ProductID>
-        <vuln:ProductID>10287</vuln:ProductID>
-        <vuln:ProductID>9318</vuln:ProductID>
-        <vuln:ProductID>9344</vuln:ProductID>
-        <vuln:AffectedFiles />
-      </vuln:Remediation>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>4577070</vuln:Description>
-        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4577070</vuln:URL>
-        <vuln:ProductID>9312</vuln:ProductID>
-        <vuln:ProductID>10287</vuln:ProductID>
-        <vuln:ProductID>9318</vuln:ProductID>
-        <vuln:ProductID>9344</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:RestartRequired>Yes</vuln:RestartRequired>
-        <vuln:SubType>Security Only</vuln:SubType>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Known Issue">
-        <vuln:Description>4577070</vuln:Description>
-        <vuln:URL>https://support.microsoft.com/help/4577070</vuln:URL>
-        <vuln:ProductID>9312</vuln:ProductID>
-        <vuln:ProductID>10287</vuln:ProductID>
-        <vuln:ProductID>9318</vuln:ProductID>
-        <vuln:ProductID>9344</vuln:ProductID>
-        <vuln:AffectedFiles />
-      </vuln:Remediation>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>4577038</vuln:Description>
-        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4577038</vuln:URL>
-        <vuln:Supercedence>4571736</vuln:Supercedence>
-        <vuln:ProductID>10378</vuln:ProductID>
-        <vuln:ProductID>10379</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:RestartRequired>Yes</vuln:RestartRequired>
-        <vuln:SubType>Monthly Rollup</vuln:SubType>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Known Issue">
-        <vuln:Description>4577038</vuln:Description>
-        <vuln:URL>https://support.microsoft.com/help/4577038</vuln:URL>
-        <vuln:ProductID>10378</vuln:ProductID>
-        <vuln:ProductID>10379</vuln:ProductID>
-        <vuln:AffectedFiles />
-      </vuln:Remediation>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>4577048</vuln:Description>
-        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4577048</vuln:URL>
-        <vuln:ProductID>10378</vuln:ProductID>
-        <vuln:ProductID>10379</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:RestartRequired>Yes</vuln:RestartRequired>
-        <vuln:SubType>Security Only</vuln:SubType>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Known Issue">
-        <vuln:Description>4577048</vuln:Description>
-        <vuln:URL>https://support.microsoft.com/help/4577048</vuln:URL>
-        <vuln:ProductID>10378</vuln:ProductID>
-        <vuln:ProductID>10379</vuln:ProductID>
-        <vuln:AffectedFiles />
-      </vuln:Remediation>
-    </vuln:Remediations>
+    <vuln:Remediations />
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
         <vuln:Name>Keqi Hu</vuln:Name>
@@ -61954,7 +62703,7 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:URL />
       </vuln:Acknowledgment>
       <vuln:Acknowledgment>
-        <vuln:Name>Le Huu Quang Linh &lt;a href="https://twitter.com/linhlhq"&gt; (@linhlhq)&lt;/a&gt; from  &lt;a href="https://vincss.net/"&gt;VinCSS (Member of Vingroup)&lt;/a&gt;</vuln:Name>
+        <vuln:Name>Le Huu Quang Linh &lt;a href="https://twitter.com/linhlhq"&gt; (@linhlhq)&lt;/a&gt; from  &lt;a href="https://soc.gov.vn/"&gt;Vietnam National Cyber Security Center (NCSC Vietnam)&lt;/a&gt;</vuln:Name>
         <vuln:URL />
       </vuln:Acknowledgment>
     </vuln:Acknowledgments>
@@ -61963,6 +62712,12 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2020-09-08T07:00:00Z</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2020-09-08T07:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Corrected security updates table.  This is an informational change only.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
     </vuln:RevisionHistory>
@@ -62564,6 +63319,12 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4484505</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/kb/4484505</vuln:URL>
+        <vuln:ProductID>11585</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>Click to Run</vuln:Description>
         <vuln:URL />
@@ -62828,6 +63589,12 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4484505</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/kb/4484505</vuln:URL>
+        <vuln:ProductID>11585</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4484504</vuln:Description>
         <vuln:URL>https://www.microsoft.com/downloads/details.aspx?familyid=a21a8462-90ec-46a4-be99-258a85978e6e</vuln:URL>
@@ -62843,6 +63610,15 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:ProductID>11574</vuln:ProductID>
         <vuln:ProductID>11762</vuln:ProductID>
         <vuln:ProductID>11763</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL>https://go.microsoft.com/fwlink/p/?linkid=831049</vuln:URL>
+        <vuln:ProductID>11575</vuln:ProductID>
+        <vuln:ProductID>10734</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:RestartRequired>No</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
@@ -62864,6 +63640,12 @@ The update address the vulnerability by modifying the way Visual Studio Code han
       </vuln:Acknowledgment>
     </vuln:Acknowledgments>
     <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2020-09-16T07:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Microsoft is announcing the availability of the security updates for Microsoft Office for Mac. Customers running affected Mac software should install the update for their product to be protected from this vulnerability. Customers running other Microsoft Office software do not need to take any action. See the &lt;a href="https://go.microsoft.com/fwlink/p/?linkid=831049"&gt;Release Notes&lt;/a&gt; for more information and download links.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
       <vuln:Revision>
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2020-09-08T07:00:00Z</cvrf:Date>
@@ -62963,6 +63745,12 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4484506</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/kb/4484506</vuln:URL>
+        <vuln:ProductID>10950</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4484515</vuln:Description>
         <vuln:URL>https://www.microsoft.com/downloads/details.aspx?familyid=55d9924d-418f-40ef-9eb3-3fb461a4b517</vuln:URL>
@@ -62986,6 +63774,12 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4484505</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/kb/4484505</vuln:URL>
+        <vuln:ProductID>11585</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4486664</vuln:Description>
@@ -63103,6 +63897,12 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4484506</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/kb/4484506</vuln:URL>
+        <vuln:ProductID>10950</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4484505</vuln:Description>
         <vuln:URL>https://www.microsoft.com/downloads/details.aspx?familyid=96f3322f-2160-43d8-8370-df405446eab2</vuln:URL>
@@ -63111,6 +63911,12 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4484505</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/kb/4484505</vuln:URL>
+        <vuln:ProductID>11585</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4486667</vuln:Description>
@@ -63135,6 +63941,12 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4484525</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/kb/4484525</vuln:URL>
+        <vuln:ProductID>10612</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
     </vuln:Remediations>
     <vuln:Acknowledgments>
@@ -63228,6 +64040,12 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4484506</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/kb/4484506</vuln:URL>
+        <vuln:ProductID>10950</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4484505</vuln:Description>
         <vuln:URL>https://www.microsoft.com/downloads/details.aspx?familyid=96f3322f-2160-43d8-8370-df405446eab2</vuln:URL>
@@ -63237,6 +64055,12 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4484505</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/kb/4484505</vuln:URL>
+        <vuln:ProductID>11585</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4484525</vuln:Description>
         <vuln:URL>https://www.microsoft.com/downloads/details.aspx?familyid=81556325-5080-452b-9ab2-dc186c5a7ebf</vuln:URL>
@@ -63245,6 +64069,12 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4484525</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/kb/4484525</vuln:URL>
+        <vuln:ProductID>10612</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
     </vuln:Remediations>
     <vuln:Acknowledgments>
@@ -63307,6 +64137,12 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4484505</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/kb/4484505</vuln:URL>
+        <vuln:ProductID>11585</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
     </vuln:Remediations>
     <vuln:Acknowledgments>
@@ -63663,6 +64499,12 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4484506</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/kb/4484506</vuln:URL>
+        <vuln:ProductID>10950</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4484515</vuln:Description>
         <vuln:URL>https://www.microsoft.com/downloads/details.aspx?familyid=55d9924d-418f-40ef-9eb3-3fb461a4b517</vuln:URL>
@@ -63687,6 +64529,12 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4484505</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/kb/4484505</vuln:URL>
+        <vuln:ProductID>11585</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4484525</vuln:Description>
         <vuln:URL>https://www.microsoft.com/downloads/details.aspx?familyid=81556325-5080-452b-9ab2-dc186c5a7ebf</vuln:URL>
@@ -63695,6 +64543,12 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4484525</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/kb/4484525</vuln:URL>
+        <vuln:ProductID>10612</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
     </vuln:Remediations>
     <vuln:Acknowledgments>
@@ -64507,6 +65361,19 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4574727</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4574727</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11644</vuln:ProductID>
+        <vuln:ProductID>11645</vuln:ProductID>
+        <vuln:ProductID>11646</vuln:ProductID>
+        <vuln:ProductID>11647</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4577041</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4577041</vuln:URL>
@@ -64689,7 +65556,17 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <vuln:ProductID>10734</vuln:ProductID>
       </vuln:ScoreSet>
     </vuln:CVSSScoreSets>
-    <vuln:Remediations />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL>https://go.microsoft.com/fwlink/p/?linkid=831049</vuln:URL>
+        <vuln:ProductID>11575</vuln:ProductID>
+        <vuln:ProductID>10734</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+    </vuln:Remediations>
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
         <vuln:Name>0xfff</vuln:Name>
@@ -64697,6 +65574,12 @@ The update address the vulnerability by modifying the way Visual Studio Code han
       </vuln:Acknowledgment>
     </vuln:Acknowledgments>
     <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2020-09-16T07:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Microsoft is announcing the availability of the security updates for Microsoft Office for Mac. Customers running affected Mac software should install the update for their product to be protected from this vulnerability. Customers running other Microsoft Office software do not need to take any action. See the &lt;a href="https://go.microsoft.com/fwlink/p/?linkid=831049"&gt;Release Notes&lt;/a&gt; for more information and download links.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
       <vuln:Revision>
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2020-09-08T07:00:00Z</cvrf:Date>
@@ -65049,11 +65932,11 @@ The update address the vulnerability by modifying the way Visual Studio Code han
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
   <vuln:Vulnerability Ordinal="124">
-    <vuln:Title>Microsoft Exchange Memory Corruption Vulnerability</vuln:Title>
+    <vuln:Title>Microsoft Exchange Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
-      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;A remote code execution vulnerability exists in Microsoft Exchange software when the software fails to properly handle objects in memory. An attacker who successfully exploited the vulnerability could run arbitrary code in the context of the System user. An attacker could then install programs; view, change, or delete data; or create new accounts.&lt;/p&gt;
-&lt;p&gt;Exploitation of the vulnerability requires that a specially crafted email be sent to a vulnerable Exchange server.&lt;/p&gt;
-&lt;p&gt;The security update addresses the vulnerability by correcting how Microsoft Exchange handles objects in memory.&lt;/p&gt;
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;A remote code execution vulnerability exists in Microsoft Exchange server due to improper validation of cmdlet arguments.&lt;/p&gt;
+&lt;p&gt;An attacker who successfully exploited the vulnerability could run arbitrary code in the context of the System user. Exploitation of the vulnerability requires an authenticated user in a certain Exchange role to be compromised.&lt;/p&gt;
+&lt;p&gt;The security update addresses the vulnerability by correcting how Microsoft Exchange handles cmdlet arguments.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="Microsoft Exchange Server" Type="Tag" Ordinal="20">Microsoft Exchange Server</vuln:Note>
     </vuln:Notes>
@@ -65105,27 +65988,27 @@ The update address the vulnerability by modifying the way Visual Studio Code han
     </vuln:Threats>
     <vuln:CVSSScoreSets>
       <vuln:ScoreSet>
-        <vuln:BaseScore>9.1</vuln:BaseScore>
-        <vuln:TemporalScore>8.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:BaseScore>8.4</vuln:BaseScore>
+        <vuln:TemporalScore>7.6</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11788</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
-        <vuln:BaseScore>9.1</vuln:BaseScore>
-        <vuln:TemporalScore>8.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:BaseScore>8.4</vuln:BaseScore>
+        <vuln:TemporalScore>7.6</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11789</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
-        <vuln:BaseScore>9.1</vuln:BaseScore>
-        <vuln:TemporalScore>8.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:BaseScore>8.4</vuln:BaseScore>
+        <vuln:TemporalScore>7.6</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11790</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
-        <vuln:BaseScore>9.1</vuln:BaseScore>
-        <vuln:TemporalScore>8.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:BaseScore>8.4</vuln:BaseScore>
+        <vuln:TemporalScore>7.6</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11791</vuln:ProductID>
       </vuln:ScoreSet>
     </vuln:CVSSScoreSets>
@@ -65165,6 +66048,12 @@ The update address the vulnerability by modifying the way Visual Studio Code han
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2020-09-08T07:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Updated vulnerability description.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
   <vuln:Vulnerability Ordinal="128">
@@ -65178,7 +66067,7 @@ The update address the vulnerability by modifying the way Visual Studio Code han
 &lt;p&gt;The IEToEdgeBHO plugin is a Browser Helper Object, which is a plugin that runs inside Internet Explorer. This plugin causes Internet Explorer to switch to Microsoft Edge (Chromium) for sites that no longer work optimally on Internet Explorer.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Who is affected by this vulnerability?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Users who have both Internet Explorer and Microsoft Edge (Chromium), and who use Internet Explorer to browse the Internet, are affected by this vulnerability. Users who only have Internet Explorer or Microsoft Edge (Chromium) installed are not affected.&lt;/p&gt;
-&lt;p&gt;**How can I be protected from this vulnerability?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I be protected from this vulnerability?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Users who are running both Internet Explorer and  Microsoft Edge (Chromium) need to have Microsoft Edge Stable Channel v85.0.564.44, available as of August 31, installed to be protected from this vulnerability. This build includes the update for the BHO plugin that addresses this vulnerability.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;How can I see the version of Microsoft Edge?&lt;/strong&gt;&lt;/p&gt;
 &lt;ol&gt;
