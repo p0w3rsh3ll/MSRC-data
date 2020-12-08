@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <cvrf:cvrfdoc xmlns:cpe-lang="http://cpe.mitre.org/language/2.0" xmlns:scap-core="https://scap.nist.gov/schema/scap-core/1.0" xmlns:cvrf-common="http://www.icasi.org/CVRF/schema/common/1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:prod="http://www.icasi.org/CVRF/schema/prod/1.1" xmlns:cvssv2="https://scap.nist.gov/schema/cvss-v2/1.0" xmlns:vuln="http://www.icasi.org/CVRF/schema/vuln/1.1" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:cvrf="http://www.icasi.org/CVRF/schema/cvrf/1.1">
   <cvrf:DocumentTitle>November 2020 Security Updates</cvrf:DocumentTitle>
   <cvrf:DocumentType>Security Update</cvrf:DocumentType>
@@ -15,13 +15,13 @@
     <cvrf:Version>1.0</cvrf:Version>
     <cvrf:RevisionHistory>
       <cvrf:Revision>
-        <cvrf:Number>6</cvrf:Number>
-        <cvrf:Date>2020-11-19T08:00:00Z</cvrf:Date>
+        <cvrf:Number>7</cvrf:Number>
+        <cvrf:Date>2020-12-08T08:00:00Z</cvrf:Date>
         <cvrf:Description>November 2020 Security Updates</cvrf:Description>
       </cvrf:Revision>
     </cvrf:RevisionHistory>
     <cvrf:InitialReleaseDate>2020-11-10T08:00:00Z</cvrf:InitialReleaseDate>
-    <cvrf:CurrentReleaseDate>2020-11-19T08:00:00Z</cvrf:CurrentReleaseDate>
+    <cvrf:CurrentReleaseDate>2020-12-08T08:00:00Z</cvrf:CurrentReleaseDate>
   </cvrf:DocumentTracking>
   <cvrf:DocumentNotes>
     <cvrf:Note Title="Release Notes" Audience="Public" Type="Details" Ordinal="0">&lt;p&gt;The November security release consists of security updates for the following software:&lt;/p&gt;
@@ -41074,91 +41074,9 @@
 &lt;p&gt;To exploit the vulnerability, a compromised service that is configured to use KCD could tamper with a service ticket that is not valid for delegation to force the KDC to accept it.&lt;/p&gt;
 &lt;p&gt;The update addresses this vulnerability by changing how the KDC validates service tickets used with KCD.&lt;/p&gt;
 </vuln:Note>
-      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Are there any additional steps I need to take during deployment of this update?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;These steps should be followed for deployment:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Locate the Kdc registry subkey, and if it exists on the system, ensure that it is set to 1.&lt;/li&gt;
-&lt;li&gt;Complete the deployment to all DCs (and Read-Only DCs) in your forest.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Note that following our original guidance of using the 0 setting could cause known issues with the S4USelf feature of Kerberos. We are working to address this known issue.&lt;/p&gt;
-&lt;p&gt;If you wish to be notified when this issue has been addressed, we recommend that you register for the security notifications mailer to be alerted of the issue resolution. See &lt;a href="https://technet.microsoft.com/security/dd252948"&gt;Microsoft Technical Security Notifications&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt; Using Registry Editor incorrectly can cause serious problems that may require you to reinstall your operating system. Microsoft cannot guarantee that problems resulting from the incorrect use of Registry Editor can be solved. Use Registry Editor at your own risk. For information about how to edit the registry, view the &amp;quot;Changing Keys And Values&amp;quot; Help topic in Registry Editor (Regedit.exe) or view the &amp;quot;Add and Delete Information in the Registry&amp;quot; and &amp;quot;Edit Registry Data&amp;quot; Help topics in Regedt32.exe.&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Registry subkey&lt;/th&gt;
-&lt;th&gt;HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Kdc&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Value&lt;/td&gt;
-&lt;td&gt;PerformTicketSignature&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Data type&lt;/td&gt;
-&lt;td&gt;REG_DWORD&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Data&lt;/td&gt;
-&lt;td&gt;0 – This disables ticket signatures and your domains are not protected. &lt;strong&gt;Important&lt;/strong&gt; Do not use this setting until further notice. There is a known issue that could cause the S4USelf feature of Kerberos to become non-functional.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;1 – The fix is enabled on the domain controller but the DC does not require that tickets conform to the fix.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;2 – This enables the fix in required mode where all domains must be patched and all DCs require tickets with signatures.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Default&lt;/td&gt;
-&lt;td&gt;1 (when registry key is not set)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Reboot required?&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;&lt;strong&gt;How does this patch affect third-party Kerberos clients?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;When the registry key is set to 1, patched domain controllers will issue service tickets and Ticket-Granting Tickets (TGT)s that are not renewable and will refuse to renew existing service tickets and TGTs. Windows clients are not impacted by this since they never renew service tickets or TGTs. Third-party Kerberos clients may fail to renew service tickets or TGTs acquired from unpatched DCs.  If all DCs are patched with the registry set to 1, third-party clients will no longer receive renewable tickets.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;What should I do if I'm experiencing problems with my Domain Controller Servers after installing this update?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Microsoft has issued a Catalog-Only update to address a known issue. If you have applied any of the November security updates to a domain controller (DC) server and are experiencing issues, please update your DC servers with the appropriate update for your server as listed in the following table.  Microsoft strongly recommends applying these catalog updates to your DCs after applying the November security updates.&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Windows Version&lt;/th&gt;
-&lt;th&gt;Catalog-only Update&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Windows Server 2012&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4594438"&gt;4594438&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Windows Server 2012 R2&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4594439"&gt;4594439&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Windows Server 2016&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4594441"&gt;4594441&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Windows Server 2019&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4594442"&gt;4594442&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Windows Server version 1903, Windows Server version 1909&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4594443"&gt;4594443&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Windows Server version 2004, Windows Server version 20H2&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4594440"&gt;4594440&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Do I need to take further steps to be protected from this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Yes. Customers who have already installed the November 10, 2020 security updates on  need to install the December 8, 2020 updates. The  December 8, 2020 security updates include fixes for all known issues originally introduced by the November 10, 2020 release of CVE-2020-17049. This update also adds support for Windows Server 2008 SP2 and Windows Server 2008 R2.&lt;/p&gt;
+&lt;p&gt;For more information and further steps to enable full protection on domain controller servers see &lt;a href="https://support.microsoft.com/help/4598347"&gt;Managing deployment of Kerberos S4U changes for CVE-2020-17049&lt;/a&gt;.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="Microsoft Windows" Type="Tag" Ordinal="20">Microsoft Windows</vuln:Note>
     </vuln:Notes>
@@ -41172,6 +41090,12 @@
         <vuln:ProductID>11769</vuln:ProductID>
         <vuln:ProductID>10816</vuln:ProductID>
         <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:ProductID>9312</vuln:ProductID>
+        <vuln:ProductID>10287</vuln:ProductID>
+        <vuln:ProductID>9318</vuln:ProductID>
+        <vuln:ProductID>9344</vuln:ProductID>
+        <vuln:ProductID>10051</vuln:ProductID>
+        <vuln:ProductID>10049</vuln:ProductID>
         <vuln:ProductID>10378</vuln:ProductID>
         <vuln:ProductID>10379</vuln:ProductID>
         <vuln:ProductID>10483</vuln:ProductID>
@@ -41210,6 +41134,30 @@
       </vuln:Threat>
       <vuln:Threat Type="Impact">
         <vuln:Description>Security Feature Bypass</vuln:Description>
+        <vuln:ProductID>9312</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Security Feature Bypass</vuln:Description>
+        <vuln:ProductID>10287</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Security Feature Bypass</vuln:Description>
+        <vuln:ProductID>9318</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Security Feature Bypass</vuln:Description>
+        <vuln:ProductID>9344</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Security Feature Bypass</vuln:Description>
+        <vuln:ProductID>10051</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Security Feature Bypass</vuln:Description>
+        <vuln:ProductID>10049</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Security Feature Bypass</vuln:Description>
         <vuln:ProductID>10378</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Impact">
@@ -41255,6 +41203,30 @@
       <vuln:Threat Type="Severity">
         <vuln:Description>Important</vuln:Description>
         <vuln:ProductID>10855</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>9312</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>10287</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>9318</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>9344</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>10051</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>10049</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
         <vuln:Description>Important</vuln:Description>
@@ -41322,6 +41294,42 @@
         <vuln:TemporalScore>5.8</vuln:TemporalScore>
         <vuln:Vector>CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>10855</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>6.6</vuln:BaseScore>
+        <vuln:TemporalScore>5.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>9312</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>6.6</vuln:BaseScore>
+        <vuln:TemporalScore>5.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>10287</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>6.6</vuln:BaseScore>
+        <vuln:TemporalScore>5.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>9318</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>6.6</vuln:BaseScore>
+        <vuln:TemporalScore>5.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>9344</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>6.6</vuln:BaseScore>
+        <vuln:TemporalScore>5.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>10051</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>6.6</vuln:BaseScore>
+        <vuln:TemporalScore>5.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>10049</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>6.6</vuln:BaseScore>
@@ -41424,6 +41432,80 @@
         <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>4592498</vuln:Description>
+        <vuln:URL />
+        <vuln:Supercedence>4586807</vuln:Supercedence>
+        <vuln:ProductID>9312</vuln:ProductID>
+        <vuln:ProductID>10287</vuln:ProductID>
+        <vuln:ProductID>9318</vuln:ProductID>
+        <vuln:ProductID>9344</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Monthly Rollup</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4592498</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4592498</vuln:URL>
+        <vuln:ProductID>9312</vuln:ProductID>
+        <vuln:ProductID>10287</vuln:ProductID>
+        <vuln:ProductID>9318</vuln:ProductID>
+        <vuln:ProductID>9344</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>4592504</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>9312</vuln:ProductID>
+        <vuln:ProductID>10287</vuln:ProductID>
+        <vuln:ProductID>9318</vuln:ProductID>
+        <vuln:ProductID>9344</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Only</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4592504</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4592504</vuln:URL>
+        <vuln:ProductID>9312</vuln:ProductID>
+        <vuln:ProductID>10287</vuln:ProductID>
+        <vuln:ProductID>9318</vuln:ProductID>
+        <vuln:ProductID>9344</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>4592471</vuln:Description>
+        <vuln:URL />
+        <vuln:Supercedence>4586827</vuln:Supercedence>
+        <vuln:ProductID>10051</vuln:ProductID>
+        <vuln:ProductID>10049</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Monthly Rollup</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4592471</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4592471</vuln:URL>
+        <vuln:ProductID>10051</vuln:ProductID>
+        <vuln:ProductID>10049</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>4592503</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>10051</vuln:ProductID>
+        <vuln:ProductID>10049</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Only</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>4592503</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/4592503</vuln:URL>
+        <vuln:ProductID>10051</vuln:ProductID>
+        <vuln:ProductID>10049</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4586834</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4586834</vuln:URL>
         <vuln:Supercedence>4580382</vuln:Supercedence>
@@ -41504,6 +41586,12 @@
 </cvrf:Description>
       </vuln:Revision>
       <vuln:Revision>
+        <cvrf:Number>3.0</cvrf:Number>
+        <cvrf:Date>2020-12-08T08:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;To comprehensively address CVE-2020-17049, Microsoft has released the following: December 2020 Security Updates for all affected Windows 10 servers, Windows Server 2012 R2, and Windows Server 2012; December 2020 Monthly Rollup updates and Security Only updates for all affected versions of Windows Server 2008 R2 and Windows Server 2008. These updates include fixes for all known issues originally introduced by the November 10, 2020 security updates for CVE-2020-17049. Microsoft strongly recommends that customers running any of these versions of Windows Server install the updates and then follow the steps outlined in https://support.microsoft.com/help/4598347 to enable full protection on domain controller servers.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2020-11-10T08:00:00Z</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
@@ -41518,7 +41606,7 @@
       <vuln:Revision>
         <cvrf:Number>2.0</cvrf:Number>
         <cvrf:Date>2020-11-19T08:00:00Z</cvrf:Date>
-        <cvrf:Description>&lt;p&gt;Added information to the FAQ regarded a non-security update to address a known issue for Domain Controllers (DC) Servers.&lt;/p&gt;
+        <cvrf:Description>&lt;p&gt;Added information to the FAQ regarding a non-security update to address a known issue for Domain Controllers (DC) Servers.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
     </vuln:RevisionHistory>
@@ -44557,12 +44645,7 @@
         <vuln:AffectedFiles />
       </vuln:Remediation>
     </vuln:Remediations>
-    <vuln:Acknowledgments>
-      <vuln:Acknowledgment>
-        <vuln:Name />
-        <vuln:URL />
-      </vuln:Acknowledgment>
-    </vuln:Acknowledgments>
+    <vuln:Acknowledgments />
     <vuln:RevisionHistory>
       <vuln:Revision>
         <cvrf:Number>1.0</cvrf:Number>
@@ -46954,7 +47037,16 @@
         <vuln:ProductID>11735</vuln:ProductID>
       </vuln:ScoreSet>
     </vuln:CVSSScoreSets>
-    <vuln:Remediations />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL>https://aka.ms/azdev2019.1patch</vuln:URL>
+        <vuln:ProductID>11735</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Maybe</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+    </vuln:Remediations>
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
         <vuln:Name>Maciej Porebski</vuln:Name>
@@ -46962,6 +47054,12 @@
       </vuln:Acknowledgment>
     </vuln:Acknowledgments>
     <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2020-12-08T08:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Microsoft is announcing the availability of the security update for Azure DevOps Server 2019 Update 1.1 to address this vulnerability. Customers running  Azure DevOps Server 2019 Update 1.1 should install the update to be protected from this vulnerability.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
       <vuln:Revision>
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2020-11-10T08:00:00Z</cvrf:Date>
