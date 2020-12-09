@@ -9,7 +9,7 @@ The Microsoft Security Response Center (MSRC) portal is located at https://porta
 
 ## Blog posts
 
-See the MSRC blog post detailing the benfits of the new Security Update Guide layout [here](https://msrc-blog.microsoft.com/2020/11/09/vulnerability-descriptions-in-the-new-version-of-the-security-update-guide/).
+See the MSRC blog post detailing the benfits of the new Security Update Guide layout [here](https://msrc-blog.microsoft.com/2020/11/09/vulnerability-descriptions-in-the-new-version-of-the-security-update-guide/) and [here](https://msrc-blog.microsoft.com/2020/12/08/security-update-guide-lets-keep-the-conversation-going/).
 
 <a name="ReleaseNotes"/>
 
