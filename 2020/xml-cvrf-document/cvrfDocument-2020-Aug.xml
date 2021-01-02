@@ -15,13 +15,13 @@
     <cvrf:Version>1.0</cvrf:Version>
     <cvrf:RevisionHistory>
       <cvrf:Revision>
-        <cvrf:Number>4</cvrf:Number>
-        <cvrf:Date>2020-08-20T07:00:00Z</cvrf:Date>
+        <cvrf:Number>6</cvrf:Number>
+        <cvrf:Date>2020-10-29T07:00:00Z</cvrf:Date>
         <cvrf:Description>August 2020 Security Updates</cvrf:Description>
       </cvrf:Revision>
     </cvrf:RevisionHistory>
     <cvrf:InitialReleaseDate>2020-08-11T07:00:00Z</cvrf:InitialReleaseDate>
-    <cvrf:CurrentReleaseDate>2020-08-20T07:00:00Z</cvrf:CurrentReleaseDate>
+    <cvrf:CurrentReleaseDate>2020-10-29T07:00:00Z</cvrf:CurrentReleaseDate>
   </cvrf:DocumentTracking>
   <cvrf:DocumentNotes>
     <cvrf:Note Title="Release Notes" Audience="Public" Type="Details" Ordinal="0">&lt;p&gt;The August 2020 security release consists of security updates for the following software:&lt;/p&gt;
@@ -30633,7 +30633,7 @@
         <vuln:ProductID>11784</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Exploit Status">
-        <vuln:Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation Less Likely;Older Software Release:N/A;DOS:Permanent</vuln:Description>
+        <vuln:Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation Less Likely;Older Software Release:N/A;DOS:N/A</vuln:Description>
       </vuln:Threat>
     </vuln:Threats>
     <vuln:CVSSScoreSets />
@@ -32857,7 +32857,7 @@
         <vuln:ProductID>10543</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Exploit Status">
-        <vuln:Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:N/A;Older Software Release:Exploitation Less Likely;DOS:Permanent</vuln:Description>
+        <vuln:Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:N/A;Older Software Release:Exploitation Less Likely;DOS:N/A</vuln:Description>
       </vuln:Threat>
     </vuln:Threats>
     <vuln:CVSSScoreSets>
@@ -33845,13 +33845,14 @@
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;An elevation of privilege vulnerability exists when an attacker establishes a vulnerable Netlogon secure channel connection to a domain controller, using the Netlogon Remote Protocol (&lt;a href="https://docs.microsoft.com/openspecs/windows_protocols/ms-nrpc/ff8f970f-3e37-40f7-bd4b-af7336e4792f"&gt;MS-NRPC&lt;/a&gt;). An attacker who successfully exploited the vulnerability could run a specially crafted application on a device on the network.&lt;/p&gt;
 &lt;p&gt;To exploit the vulnerability, an unauthenticated attacker would be required to use MS-NRPC to connect to a domain controller to obtain domain administrator access.&lt;/p&gt;
 &lt;p&gt;Microsoft is addressing the vulnerability in a phased two-part rollout. These updates address the vulnerability by modifying how Netlogon handles the usage of Netlogon secure channels.&lt;/p&gt;
-&lt;p&gt;For guidelines on how to manage the changes required for this vulnerability and more information on the phased rollout, see  &lt;a href="https://support.microsoft.com/kb/4557222"&gt;How to manage the changes in Netlogon secure channel connections associated with CVE-2020-1472&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For guidelines on how to manage the changes required for this vulnerability and more information on the phased rollout, see  &lt;a href="https://support.microsoft.com/kb/4557222"&gt;How to manage the changes in Netlogon secure channel connections associated with CVE-2020-1472&lt;/a&gt; (updated September 28, 2020).&lt;/p&gt;
 &lt;p&gt;When the second phase of Windows updates become available in Q1 2021, customers will be notified via a revision to this security vulnerability. If you wish to be notified when these updates are released, we recommend that you register for the security notifications mailer to be alerted of content changes to this advisory. See &lt;a href="https://technet.microsoft.com/en-us/security/dd252948"&gt;Microsoft Technical Security Notifications&lt;/a&gt;.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Do I need to take further steps to be protected from this vulnerability?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Yes. After installing the security updates released on August 11, 2020, you can deploy Domain Controller (DC) enforcement mode now or wait for the Q1 2021 update. See  &lt;a href="https://support.microsoft.com/kb/4557222"&gt;How to manage the changes in Netlogon secure channel connections associated with CVE-2020-1472&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;p&gt;Yes. Installing the August 11, 2020 updates on the domain controllers protects the Windows-based machine accounts, the trust accounts, and the domain controller accounts.&lt;/p&gt;
+&lt;p&gt;Active Directory machine accounts for domain joined third-party devices are &lt;strong&gt;not&lt;/strong&gt; protected until enforcement mode is deployed. Machine accounts are also &lt;strong&gt;not&lt;/strong&gt; protected if they are added to the &amp;quot;Domain controller: Allow vulnerable Netlogon secure channel connections&amp;quot; group policy.  See &lt;a href="https://support.microsoft.com/kb/4557222"&gt;How to manage the changes in Netlogon secure channel connections associated with CVE-2020-1472&lt;/a&gt; for more details.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;If I install the updates and take no further action, what will be the impact?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;During the initial deployment phase starting with the updates released August 11, 2020, the updates can be installed without added further action, and Windows devices and Domain Controllers (DCs) will be protected from this vulnerability. Organizations will need to monitor for and address potential issues before the Q1 2021 DC enforcement phase or risk devices being denied access. For more information, see  &lt;a href="https://support.microsoft.com/kb/4557222"&gt;How to manage the changes in Netlogon secure channel connections associated with CVE-2020-1472&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;During the initial deployment phase starting with the updates released August 11, 2020 or later, the updates can be installed without added further action, and Windows devices and Domain Controllers (DCs) will be protected from this vulnerability. Third-party devices will be allowed to make vulnerable connections and might allow attack until enforcement mode is enabled. Organizations will need to monitor for and address potential issues before the Q1 2021 DC enforcement phase or risk devices being denied access. &lt;strong&gt;Note&lt;/strong&gt; Any device in the allow list will be allowed to use vulnerable connections and could expose your environment to the attack. For more information, see &lt;a href="https://support.microsoft.com/kb/4557222"&gt;How to manage the changes in Netlogon secure channel connections associated with CVE-2020-1472&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;How does Microsoft plan to address this vulnerability?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Microsoft is addressing this vulnerability in a phased rollout. The initial deployment phase starts with the Windows updates released on August 11, 2020. The updates will enable the Domain Controllers (DCs) to protect Windows devices by default, log events for non-compliant device discovery, and have the option to enable protection for all domain-joined devices with explicit exceptions.&lt;/p&gt;
 &lt;p&gt;The second phase, planned for a Q1 2021 release, marks the transition into the enforcement phase. The DCs will be placed in enforcement mode, which requires all Windows and non-Windows devices to use secure Remote Procedure Call (RPC) with Netlogon secure channel or to explicitly allow the account by adding an exception for any non-compliant device.&lt;/p&gt;
@@ -33861,6 +33862,7 @@
 &lt;p&gt;There are many non-Windows device implementations of the Netlogon Remote Protocol (also called &lt;a href="https://docs.microsoft.com/openspecs/windows_protocols/ms-nrpc/ff8f970f-3e37-40f7-bd4b-af7336e4792f"&gt;MS-NRPC&lt;/a&gt;). To ensure that vendors of non-compliant implementations can provide customers with updates, a second release that is planned for Q1 2021 will enforce protection for all domain-joined devices.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Why do I need to follow the guidelines in  &lt;a href="https://support.microsoft.com/kb/4557222"&gt;How to manage the changes in Netlogon secure channel connections associated with CVE-2020-1472&lt;/a&gt;?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;If the guidelines from the KB article are not followed, your organization risks devices in your environment being denied access when the enforcement phase starts in Q1 2021. If there are currently no non-compliant devices in your environment, you can move to enforcement mode for further protection in advance of required enforcement.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Important update&lt;/strong&gt;: On September 28, 2020, &lt;a href="https://support.microsoft.com/kb/4557222"&gt;How to manage the changes in Netlogon secure channel connections associated with CVE-2020-1472&lt;/a&gt; was updated to provide clarity on new questions and to reinforce actions customers need to take to ensure they are protected.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;How can I be notified when the second release is available in Q1 2021?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;When the second phase of Windows updates become available, customers will be notified via a revision to this security vulnerability. If you wish to be notified when these updates are released, we recommend that you register for the security notifications mailer to be alerted of content changes to this advisory. See &lt;a href="https://technet.microsoft.com/en-us/security/dd252948"&gt;Microsoft Technical Security Notifications&lt;/a&gt;.&lt;/p&gt;
 </vuln:Note>
@@ -34240,6 +34242,18 @@
       </vuln:Acknowledgment>
     </vuln:Acknowledgments>
     <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.2</cvrf:Number>
+        <cvrf:Date>2020-09-28T07:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Updated FAQ to announce that How to manage the changes in Netlogon secure channel connections associated with CVE-2020-1472 (https://support.microsoft.com/kb/4557222) has been updated to provide clarity on new questions and to reinforce actions customers need to take to ensure they are protected.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.3</cvrf:Number>
+        <cvrf:Date>2020-10-29T07:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Updated FAQ to clarify how the updates released on August 11, 2020 provide protection from this vulnerability, and to emphasize that customers need to take further action to fully protect their environments.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
       <vuln:Revision>
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2020-08-11T07:00:00Z</cvrf:Date>
@@ -59957,6 +59971,7 @@
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>4484359</vuln:Description>
         <vuln:URL />
+        <vuln:Supercedence>4484229</vuln:Supercedence>
         <vuln:ProductID>10603</vuln:ProductID>
         <vuln:ProductID>10601</vuln:ProductID>
         <vuln:ProductID>10602</vuln:ProductID>
@@ -63981,7 +63996,7 @@
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;An elevation of privilege vulnerability exists in Windows Setup in the way it handles permissions.&lt;/p&gt;
 &lt;p&gt;A locally authenticated attacker could run arbitrary code with elevated system privileges. After successfully exploiting the vulnerability, an attacker could then install programs; view, change, or delete data; or create new accounts with full user rights.&lt;/p&gt;
-&lt;p&gt;The security update addresses the vulnerability by ensuring the Windows Setup properly handles permissions.&lt;/p&gt;
+&lt;p&gt;The security update addresses the vulnerability by ensuring Windows Setup properly handles permissions.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;There are no security updates listed for the affected versions of Windows. Where does this vulnerability exist?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;This vulnerability only exists in the Windows 10 Setup, which runs temporarily any time a customer upgrades from a previous version of Windows 10 to a newer version (for example, from Windows 10 Version 1909 to Windows 10 Version 2004). A device is vulnerable only while upgrading to a newer version of Windows. At any other time, the device is not vulnerable.&lt;/p&gt;
@@ -69974,7 +69989,7 @@
         <vuln:ProductID>11785</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Exploit Status">
-        <vuln:Description>Publicly Disclosed:Yes;Exploited:No;Latest Software Release:Exploitation Less Likely;Older Software Release:Exploitation Less Likely;DOS:Permanent</vuln:Description>
+        <vuln:Description>Publicly Disclosed:Yes;Exploited:No;Latest Software Release:Exploitation Less Likely;Older Software Release:Exploitation Less Likely;DOS:N/A</vuln:Description>
       </vuln:Threat>
     </vuln:Threats>
     <vuln:CVSSScoreSets />
@@ -70695,6 +70710,7 @@
 &lt;p&gt;An authenticated attacker with privileges to import and export data could exploit this vulnerability by sending a specially crafted file to a vulnerable Dynamics server.&lt;/p&gt;
 &lt;p&gt;The security update addresses the vulnerability by correcting how Microsoft Dynamics 365 for Finance and Operations (on-premises) version 10.0.11 handles user input.&lt;/p&gt;
 </vuln:Note>
+      <vuln:Note Title="Microsoft Dynamics" Type="Tag" Ordinal="20">Microsoft Dynamics</vuln:Note>
     </vuln:Notes>
     <vuln:CVE>CVE-2020-1182</vuln:CVE>
     <vuln:ProductStatuses>
