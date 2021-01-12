@@ -18,6 +18,9 @@ See the MSRC blog post detailing the benfits of the new Security Update Guide la
 There isn't any way to read previous release notes where known issues are listed.
 Here's my list:
 
+### January 2021
+https://msrc.microsoft.com/update-guide/en-us/releaseNote/2021-Jan
+
 ### December 2020
 https://portal.msrc.microsoft.com/en-us/security-guidance/releasenotedetail/2020-Dec
 
