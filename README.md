@@ -9,7 +9,14 @@ The Microsoft Security Response Center (MSRC) portal is located at https://porta
 
 ## Blog posts
 
-See the MSRC blog post detailing the benfits of the new Security Update Guide layout [here](https://msrc-blog.microsoft.com/2020/11/09/vulnerability-descriptions-in-the-new-version-of-the-security-update-guide/) and [here](https://msrc-blog.microsoft.com/2020/12/08/security-update-guide-lets-keep-the-conversation-going/).
+See the MSRC blog posts:
+
+|Date	|Blog Post|
+| ------|---------|
+|February 9, 2021| [Continuing to Listen: Good News about the Security Update Guide API](https://msrc-blog.microsoft.com/2021/02/09/continuing-to-listen-good-news-about-the-security-update-guide-api/)|
+|January 13, 2021| [Security Update Guide Supports CVEs Assigned by Industry Partners](https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/)|
+|December 8, 2020| [Security Update Guide: Let’s keep the conversation going](https://msrc-blog.microsoft.com/2020/12/08/security-update-guide-lets-keep-the-conversation-going/)|
+|November 9, 2020| [Vulnerability Descriptions in the New Version of the Security Update Guide](https://msrc-blog.microsoft.com/2020/11/09/vulnerability-descriptions-in-the-new-version-of-the-security-update-guide/)|
 
 <a name="ReleaseNotes"/>
 
@@ -17,6 +24,9 @@ See the MSRC blog post detailing the benfits of the new Security Update Guide la
 
 There isn't any way to read previous release notes where known issues are listed.
 Here's my list:
+
+### February 2021
+https://msrc.microsoft.com/update-guide/releaseNote/2021-Feb
 
 ### January 2021
 https://msrc.microsoft.com/update-guide/en-us/releaseNote/2021-Jan
