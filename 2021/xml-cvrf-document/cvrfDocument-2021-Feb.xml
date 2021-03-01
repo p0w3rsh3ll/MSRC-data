@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <cvrf:cvrfdoc xmlns:cpe-lang="http://cpe.mitre.org/language/2.0" xmlns:scap-core="https://scap.nist.gov/schema/scap-core/1.0" xmlns:cvrf-common="http://www.icasi.org/CVRF/schema/common/1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:prod="http://www.icasi.org/CVRF/schema/prod/1.1" xmlns:cvssv2="https://scap.nist.gov/schema/cvss-v2/1.0" xmlns:vuln="http://www.icasi.org/CVRF/schema/vuln/1.1" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:cvrf="http://www.icasi.org/CVRF/schema/cvrf/1.1">
   <cvrf:DocumentTitle>February 2021 Security Updates</cvrf:DocumentTitle>
   <cvrf:DocumentType>Security Update</cvrf:DocumentType>
@@ -15,13 +15,13 @@
     <cvrf:Version>1.0</cvrf:Version>
     <cvrf:RevisionHistory>
       <cvrf:Revision>
-        <cvrf:Number>15</cvrf:Number>
-        <cvrf:Date>2021-02-17T23:48:18Z</cvrf:Date>
+        <cvrf:Number>17</cvrf:Number>
+        <cvrf:Date>2021-02-26T08:00:00Z</cvrf:Date>
         <cvrf:Description>February 2021 Security Updates</cvrf:Description>
       </cvrf:Revision>
     </cvrf:RevisionHistory>
     <cvrf:InitialReleaseDate>2021-02-09T08:00:00Z</cvrf:InitialReleaseDate>
-    <cvrf:CurrentReleaseDate>2021-02-17T23:48:18Z</cvrf:CurrentReleaseDate>
+    <cvrf:CurrentReleaseDate>2021-02-26T08:00:00Z</cvrf:CurrentReleaseDate>
   </cvrf:DocumentTracking>
   <cvrf:DocumentNotes>
     <cvrf:Note Title="Release Notes" Audience="Public" Type="Details" Ordinal="0">&lt;h2&gt;Updates this Month&lt;/h2&gt;
@@ -313,6 +313,8 @@
         <prod:FullProductName ProductID="11730">.NET Core 3.1</prod:FullProductName>
         <prod:FullProductName ProductID="11761">.NET 5.0</prod:FullProductName>
         <prod:FullProductName ProductID="11853">PsExec</prod:FullProductName>
+        <prod:FullProductName ProductID="11874">Visual Studio 2019 for Mac</prod:FullProductName>
+        <prod:FullProductName ProductID="11875">Mono 6.12.0</prod:FullProductName>
         <prod:FullProductName ProductID="11861">Visual Studio Code - npm-script Extension</prod:FullProductName>
         <prod:FullProductName ProductID="11855">Package Manager Configurations</prod:FullProductName>
         <prod:FullProductName ProductID="11529-10378">Microsoft .NET Framework 4.6/4.6.1/4.6.2/4.7/4.7.1/4.7.2 on Windows Server 2012</prod:FullProductName>
@@ -677,6 +679,8 @@
     <prod:FullProductName ProductID="11863-10855">Microsoft .NET Framework 4.6.2/4.7/4.7.1/4.7.2 on Windows Server 2016  (Server Core installation)</prod:FullProductName>
     <prod:FullProductName ProductID="11864">PowerShell Core 7.1</prod:FullProductName>
     <prod:FullProductName ProductID="11865">PowerShell Core 7.0</prod:FullProductName>
+    <prod:FullProductName ProductID="11874">Visual Studio 2019 for Mac</prod:FullProductName>
+    <prod:FullProductName ProductID="11875">Mono 6.12.0</prod:FullProductName>
     <prod:FullProductName ProductID="251-10047">Windows Defender on Windows 7 for 32-bit Systems Service Pack 1</prod:FullProductName>
     <prod:FullProductName ProductID="251-10048">Windows Defender on Windows 7 for x64-based Systems Service Pack 1</prod:FullProductName>
     <prod:FullProductName ProductID="251-10049">Windows Defender on Windows Server 2008 R2 for x64-based Systems Service Pack 1 (Server Core installation)</prod:FullProductName>
@@ -6506,6 +6510,8 @@ No, Windows utilizes GDI+ to process these requests, and is not affected by this
     <vuln:CVE>CVE-2021-24112</vuln:CVE>
     <vuln:ProductStatuses>
       <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11874</vuln:ProductID>
+        <vuln:ProductID>11875</vuln:ProductID>
         <vuln:ProductID>11565</vuln:ProductID>
         <vuln:ProductID>11730</vuln:ProductID>
         <vuln:ProductID>11761</vuln:ProductID>
@@ -6514,6 +6520,14 @@ No, Windows utilizes GDI+ to process these requests, and is not affected by this
     <vuln:Threats>
       <vuln:Threat Type="Impact">
         <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11874</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11875</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
         <vuln:ProductID>11565</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Impact">
@@ -6523,6 +6537,14 @@ No, Windows utilizes GDI+ to process these requests, and is not affected by this
       <vuln:Threat Type="Impact">
         <vuln:Description>Remote Code Execution</vuln:Description>
         <vuln:ProductID>11761</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>11874</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>11875</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
         <vuln:Description>Critical</vuln:Description>
@@ -6545,6 +6567,18 @@ No, Windows utilizes GDI+ to process these requests, and is not affected by this
         <vuln:BaseScore>8.1</vuln:BaseScore>
         <vuln:TemporalScore>7.3</vuln:TemporalScore>
         <vuln:Vector>CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11874</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.1</vuln:BaseScore>
+        <vuln:TemporalScore>7.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11875</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.1</vuln:BaseScore>
+        <vuln:TemporalScore>7.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11565</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
@@ -6563,7 +6597,9 @@ No, Windows utilizes GDI+ to process these requests, and is not affected by this
     <vuln:Remediations>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>Release Notes</vuln:Description>
-        <vuln:URL>https://dotnet.microsoft.com/download/dotnet-core/2.1</vuln:URL>
+        <vuln:URL>https://visualstudio.microsoft.com/vs/mac/</vuln:URL>
+        <vuln:ProductID>11874</vuln:ProductID>
+        <vuln:ProductID>11875</vuln:ProductID>
         <vuln:ProductID>11565</vuln:ProductID>
         <vuln:ProductID>11730</vuln:ProductID>
         <vuln:ProductID>11761</vuln:ProductID>
@@ -6578,6 +6614,12 @@ No, Windows utilizes GDI+ to process these requests, and is not affected by this
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2021-02-09T08:00:00Z</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2021-02-24T08:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;In the Security Updates table, added Visual Studio 2019 for Mac and Mono 6.12.0 because they are also affected by CVE-2021-24112. Microsoft recommends that customers running either of these products install the updates to be fully protected from the vulnerability.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
     </vuln:RevisionHistory>
@@ -8556,9 +8598,67 @@ Visual Studio contains the binaries for .NET, but Visual Studio is not vulnerabl
   <vuln:Vulnerability Ordinal="9">
     <vuln:Title>Microsoft Exchange Server Spoofing Vulnerability</vuln:Title>
     <vuln:Notes>
-      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;A spoofing vulnerability exists in Microsoft Exchange Server which could result in an attack that would allow a malicious actor to impersonate the user.&lt;/p&gt;
+&lt;p&gt;This update addresses this vulnerability.&lt;/p&gt;
+&lt;p&gt;To prevent these types of attacks, Microsoft recommends customers to download inline images from different DNSdomains than the rest of OWA. Please see further instructions in the FAQ to put in place this mitigations.&lt;/p&gt;
+</vuln:Note>
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why are the updates listed those that were released in September?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;This vulnerability was found in the Exchange Server Installer. This type of vulnerability can only be addressed in a complete release as opposed to a cumulative update. We allowed time for customers to move to the September release prior to disclosing the vulnerability.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Are there other required steps to enable the protection from this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Yes, please perform the following steps to enable download domain.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Admins need to create a certified Domain name. This hostname should have a registered Alias or CNAME entry in the DNS which points back to the organization’s primary domain name. For example, use Server Manager - &amp;gt;Dashboard -&amp;gt; Tools - &amp;gt; DNS  -&amp;gt; New Alias (CNAME)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;NAME&lt;/th&gt;
+&lt;th&gt;TYPE&lt;/th&gt;
+&lt;th&gt;VALUE&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Download.Mail.Contoso.com&lt;/td&gt;
+&lt;td&gt;CNAME&lt;/td&gt;
+&lt;td&gt;Mail.Contoso.com&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ol start="2"&gt;
+&lt;li&gt;&lt;p&gt;Admins need to create and add a certificate for the new domain as they do for the primary domain.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;There is no restriction about which domain prefix to be used. For example - for ‘contoso.com’ the download domain can be ‘attachments.contoso.com’ or ‘downloaddomain.contoso.com’ or any other.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Before the customers can enable this feature, admins need to add this verified secondary domain name called as DownloadDomains into vdir settings by using the following cmdlet:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; Set-OwaVirtualDirectory -Identity &amp;quot;owa (default Web site)&amp;quot;  
+ -ExternalDownloadHostName “downloaddomain.contoso.com&amp;quot; 
+
+ Set-OwaVirtualDirectory -Identity &amp;quot;owa (default Web site)&amp;quot;  
+ -InternalDownloadHostName &amp;quot;downloaddomain.contoso.com&amp;quot; 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For ease of maintenance, both external and internal should point to the same Domain.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;After this, admins need to set the “EnableDownloadDomains” flag to ‘true’ by using the following cmdlet:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; Set-OrganizationConfig -EnableDownloadDomains $true
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Admin needs to restart internet services to bebin using the Download Domains feature for attachments and inline images.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt;: Email users should NOT use Download Domains to login to OWA. For example, http://DownloadDomain/owa.  If an email user uses a Download Domain to log into OWA, they will be using Exchange OWA cookies when trying to download images from their emails.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Is there a way to confirm that the feature is enabled?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Send an email with an inline image from User1 to User2.&lt;/li&gt;
+&lt;li&gt;Login into OWA and see the email with inline image for User2 in OWA.&lt;/li&gt;
+&lt;li&gt;The image should load and be displayed in the reading pane.&lt;/li&gt;
+&lt;li&gt;Right-click on the inline image and select ‘Open Image in new tab’&lt;/li&gt;
+&lt;li&gt;Check the URL for the image when it opens in a new tab. It should be the configured Download Domain. This confirms that the Download Domain is enabled.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;How can Download Domains be disabled?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Although not recommended, the steps to disable Download Domains is to set the “EnableDownloadDomains” flag to ‘false’ by using the following cmdlet:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Set-OrganizationConfig -EnableDownloadDomains $false&lt;/code&gt;&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="Microsoft Exchange Server" Type="Tag" Ordinal="20">Microsoft Exchange Server</vuln:Note>
       <vuln:Note Title="Issuing CNA" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
@@ -8648,6 +8748,12 @@ Visual Studio contains the binaries for .NET, but Visual Studio is not vulnerabl
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2021-02-09T08:00:00Z</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2021-02-24T08:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added an FAQ detailing further steps that must be performed to enable the protections from this vulnerability.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
     </vuln:RevisionHistory>
@@ -26506,9 +26612,9 @@ If you are installing using the helm chart or image, you can update the image re
     </vuln:Threats>
     <vuln:CVSSScoreSets>
       <vuln:ScoreSet>
-        <vuln:BaseScore>4.6</vuln:BaseScore>
-        <vuln:TemporalScore>4.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:R/S:U/C:L/I:L/A:N/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:BaseScore>5.4</vuln:BaseScore>
+        <vuln:TemporalScore>4.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N/E:U/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11655</vuln:ProductID>
       </vuln:ScoreSet>
     </vuln:CVSSScoreSets>
@@ -26533,6 +26639,12 @@ If you are installing using the helm chart or image, you can update the image re
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2021-02-04T08:00:00Z</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2021-02-26T08:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Updated one or more CVSS scores for the affected products.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
     </vuln:RevisionHistory>
