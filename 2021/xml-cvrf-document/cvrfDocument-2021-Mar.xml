@@ -1,0 +1,1131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cvrf:cvrfdoc xmlns:cpe-lang="http://cpe.mitre.org/language/2.0" xmlns:scap-core="https://scap.nist.gov/schema/scap-core/1.0" xmlns:cvrf-common="http://www.icasi.org/CVRF/schema/common/1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:prod="http://www.icasi.org/CVRF/schema/prod/1.1" xmlns:cvssv2="https://scap.nist.gov/schema/cvss-v2/1.0" xmlns:vuln="http://www.icasi.org/CVRF/schema/vuln/1.1" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:cvrf="http://www.icasi.org/CVRF/schema/cvrf/1.1">
+  <cvrf:DocumentTitle>March 2, 2021 Security Update Release</cvrf:DocumentTitle>
+  <cvrf:DocumentType>Security Update</cvrf:DocumentType>
+  <cvrf:DocumentPublisher Type="Vendor">
+    <cvrf:ContactDetails>secure@microsoft.com</cvrf:ContactDetails>
+    <cvrf:IssuingAuthority>The Microsoft Security Response Center (MSRC) identifies, monitors, resolves, and responds to security incidents and Microsoft software security vulnerabilities. For more information, see http://www.microsoft.com/security/msrc.</cvrf:IssuingAuthority>
+  </cvrf:DocumentPublisher>
+  <cvrf:DocumentTracking>
+    <cvrf:Identification>
+      <cvrf:ID>2021-Mar</cvrf:ID>
+      <cvrf:Alias>2021-Mar</cvrf:Alias>
+    </cvrf:Identification>
+    <cvrf:Status>Final</cvrf:Status>
+    <cvrf:Version>1.0</cvrf:Version>
+    <cvrf:RevisionHistory>
+      <cvrf:Revision>
+        <cvrf:Number>1</cvrf:Number>
+        <cvrf:Date>2021-03-02T08:00:00Z</cvrf:Date>
+        <cvrf:Description>March 2, 2021 Security Update Release</cvrf:Description>
+      </cvrf:Revision>
+    </cvrf:RevisionHistory>
+    <cvrf:InitialReleaseDate>2021-03-02T08:00:00Z</cvrf:InitialReleaseDate>
+    <cvrf:CurrentReleaseDate>2021-03-02T08:00:00Z</cvrf:CurrentReleaseDate>
+  </cvrf:DocumentTracking>
+  <cvrf:DocumentNotes>
+    <cvrf:Note Title="Release Notes" Audience="Public" Type="Details" Ordinal="0">&lt;p&gt;March 2, 2021 Security Updates&lt;/p&gt;
+&lt;p&gt;This out of band release consists of security update for the following products:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Microsoft Exchange Server&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2021-26412"&gt;CVE-2021-26412&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2021-26854"&gt;CVE-2021-26854&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2021-26855"&gt;CVE-2021-26855&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2021-26857"&gt;CVE-2021-26857&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2021-26858"&gt;CVE-2021-26858&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2021-27065"&gt;CVE-2021-27065&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2021-27078"&gt;CVE-2021-27078&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Please see the following for more information:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://msrc-blog.microsoft.com/2021/03/02/multiple-security-updates-released-for-exchange-server"&gt;MSRC Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.microsoft.com/security/blog/2021/01/20/HAFNIUM-Targeting-Exchange-Servers/"&gt;Hafnium Targeting Exchange &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://blogs.microsoft.com/on-the-issues/2021/03/02/new-nation-state-cyberattacks/"&gt;Microsoft on the Issues&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://techcommunity.microsoft.com/t5/exchange-team-blog/released-march-2021-exchange-server-security-updates/ba-p/2175901"&gt;Exchange Team Blog&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</cvrf:Note>
+    <cvrf:Note Title="Legal Disclaimer" Audience="Public" Type="Legal Disclaimer" Ordinal="1">The information provided in the Microsoft Knowledge Base is provided "as is" without warranty of any kind. Microsoft disclaims all warranties, either express or implied, including the warranties of merchantability and fitness for a particular purpose. In no event shall Microsoft Corporation or its suppliers be liable for any damages whatsoever including direct, indirect, incidental, consequential, loss of business profits or special damages, even if Microsoft Corporation or its suppliers have been advised of the possibility of such damages. Some states do not allow the exclusion or limitation of liability for consequential or incidental damages so the foregoing limitation may not apply.</cvrf:Note>
+  </cvrf:DocumentNotes>
+  <prod:ProductTree>
+    <prod:Branch Type="Vendor" Name="Microsoft">
+      <prod:Branch Type="Product Family" Name="Exchange Server">
+        <prod:FullProductName ProductID="11682">Microsoft Exchange Server 2013 Cumulative Update 23</prod:FullProductName>
+        <prod:FullProductName ProductID="11792">Microsoft Exchange Server 2019 Cumulative Update 7</prod:FullProductName>
+        <prod:FullProductName ProductID="11793">Microsoft Exchange Server 2016 Cumulative Update 18</prod:FullProductName>
+        <prod:FullProductName ProductID="11856">Microsoft Exchange Server 2016 Cumulative Update 19</prod:FullProductName>
+        <prod:FullProductName ProductID="11857">Microsoft Exchange Server 2019 Cumulative Update 8</prod:FullProductName>
+        <prod:FullProductName ProductID="10476">Microsoft Exchange Server 2010 Service Pack 3</prod:FullProductName>
+      </prod:Branch>
+    </prod:Branch>
+    <prod:FullProductName ProductID="10476">Microsoft Exchange Server 2010 Service Pack 3</prod:FullProductName>
+    <prod:FullProductName ProductID="11682">Microsoft Exchange Server 2013 Cumulative Update 23</prod:FullProductName>
+    <prod:FullProductName ProductID="11792">Microsoft Exchange Server 2019 Cumulative Update 7</prod:FullProductName>
+    <prod:FullProductName ProductID="11793">Microsoft Exchange Server 2016 Cumulative Update 18</prod:FullProductName>
+    <prod:FullProductName ProductID="11856">Microsoft Exchange Server 2016 Cumulative Update 19</prod:FullProductName>
+    <prod:FullProductName ProductID="11857">Microsoft Exchange Server 2019 Cumulative Update 8</prod:FullProductName>
+  </prod:ProductTree>
+  <vuln:Vulnerability Ordinal="0">
+    <vuln:Title>Microsoft Exchange Server Remote Code Execution Vulnerability</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Microsoft Exchange Server" Type="Tag" Ordinal="20">Microsoft Exchange Server</vuln:Note>
+      <vuln:Note Title="Issuing CNA" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2021-26412</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11682</vuln:ProductID>
+        <vuln:ProductID>11792</vuln:ProductID>
+        <vuln:ProductID>11793</vuln:ProductID>
+        <vuln:ProductID>11856</vuln:ProductID>
+        <vuln:ProductID>11857</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11682</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11792</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11793</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11856</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11857</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>11682</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>11792</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>11793</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>11856</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>11857</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation Less Likely;Older Software Release:Exploitation Less Likely;DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>9.1</vuln:BaseScore>
+        <vuln:TemporalScore>8.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11682</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>9.1</vuln:BaseScore>
+        <vuln:TemporalScore>8.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11792</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>9.1</vuln:BaseScore>
+        <vuln:TemporalScore>8.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11793</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>9.1</vuln:BaseScore>
+        <vuln:TemporalScore>8.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11856</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>9.1</vuln:BaseScore>
+        <vuln:TemporalScore>8.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11857</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5000871</vuln:Description>
+        <vuln:URL>http://www.microsoft.com/download/details.aspx?familyid=1255ecd7-b187-4839-96c9-1fc5e05df7b6</vuln:URL>
+        <vuln:Supercedence>4593466</vuln:Supercedence>
+        <vuln:ProductID>11682</vuln:ProductID>
+        <vuln:ProductID>11792</vuln:ProductID>
+        <vuln:ProductID>11793</vuln:ProductID>
+        <vuln:ProductID>11856</vuln:ProductID>
+        <vuln:ProductID>11857</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Maybe</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5000871</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5000871</vuln:URL>
+        <vuln:ProductID>11682</vuln:ProductID>
+        <vuln:ProductID>11792</vuln:ProductID>
+        <vuln:ProductID>11793</vuln:ProductID>
+        <vuln:ProductID>11856</vuln:ProductID>
+        <vuln:ProductID>11857</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments>
+      <vuln:Acknowledgment>
+        <vuln:Name>&lt;a href="https://srcincite.io/"&gt;Steven Seeley (mr_me) &lt;/a&gt;</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+    </vuln:Acknowledgments>
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2021-03-02T08:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="1">
+    <vuln:Title>Microsoft Exchange Server Remote Code Execution Vulnerability</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Microsoft Exchange Server" Type="Tag" Ordinal="20">Microsoft Exchange Server</vuln:Note>
+      <vuln:Note Title="Issuing CNA" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2021-26854</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11856</vuln:ProductID>
+        <vuln:ProductID>11857</vuln:ProductID>
+        <vuln:ProductID>11682</vuln:ProductID>
+        <vuln:ProductID>11792</vuln:ProductID>
+        <vuln:ProductID>11793</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11856</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11857</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11682</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11792</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11793</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11856</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11857</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11682</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11792</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11793</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation Less Likely;Older Software Release:Exploitation Less Likely;DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>6.6</vuln:BaseScore>
+        <vuln:TemporalScore>5.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11856</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>6.6</vuln:BaseScore>
+        <vuln:TemporalScore>5.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11857</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>6.6</vuln:BaseScore>
+        <vuln:TemporalScore>5.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11682</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>6.6</vuln:BaseScore>
+        <vuln:TemporalScore>5.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11792</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>6.6</vuln:BaseScore>
+        <vuln:TemporalScore>5.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11793</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5000871</vuln:Description>
+        <vuln:URL>http://www.microsoft.com/download/details.aspx?familyid=31211a48-0cef-462e-bb11-c36440f80bb3</vuln:URL>
+        <vuln:Supercedence>4602269</vuln:Supercedence>
+        <vuln:ProductID>11856</vuln:ProductID>
+        <vuln:ProductID>11857</vuln:ProductID>
+        <vuln:ProductID>11682</vuln:ProductID>
+        <vuln:ProductID>11792</vuln:ProductID>
+        <vuln:ProductID>11793</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Maybe</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5000871</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5000871</vuln:URL>
+        <vuln:ProductID>11856</vuln:ProductID>
+        <vuln:ProductID>11857</vuln:ProductID>
+        <vuln:ProductID>11682</vuln:ProductID>
+        <vuln:ProductID>11792</vuln:ProductID>
+        <vuln:ProductID>11793</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments>
+      <vuln:Acknowledgment>
+        <vuln:Name>Steven Seeley (mr_me) of Source Incite</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+    </vuln:Acknowledgments>
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2021-03-02T08:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="2">
+    <vuln:Title>Microsoft Exchange Server Remote Code Execution Vulnerability</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Is this vulnerability being used in an active attack?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Yes. The vulnerability described in this CVE is one of four vulnerabilities that are being exploited in an active attack. The security updates address this attack. More information can be found here: https://msrc-blog.microsoft.com/2021/03/02/multiple-security-updates-released-for-exchange-server.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What is the target for this attack?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The initial attack in this attack chain targets an Exchange On-prem server that is able to receive untrusted connections from an external source. In addition, the Exchange server would need to be running Microsoft Exchange Server 2013, 2016, or 2019.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Exchange Server" Type="Tag" Ordinal="20">Microsoft Exchange Server</vuln:Note>
+      <vuln:Note Title="Issuing CNA" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2021-26855</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11856</vuln:ProductID>
+        <vuln:ProductID>11857</vuln:ProductID>
+        <vuln:ProductID>11682</vuln:ProductID>
+        <vuln:ProductID>11792</vuln:ProductID>
+        <vuln:ProductID>11793</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11856</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11857</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11682</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11792</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11793</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>11856</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>11857</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>11682</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>11792</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>11793</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>Publicly Disclosed:No;Exploited:Yes;Latest Software Release:Exploitation Detected;Older Software Release:Exploitation Detected;DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>9.1</vuln:BaseScore>
+        <vuln:TemporalScore>8.4</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N/E:F/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11856</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>9.1</vuln:BaseScore>
+        <vuln:TemporalScore>8.4</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N/E:F/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11857</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>9.1</vuln:BaseScore>
+        <vuln:TemporalScore>8.4</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N/E:F/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11682</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>9.1</vuln:BaseScore>
+        <vuln:TemporalScore>8.4</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N/E:F/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11792</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>9.1</vuln:BaseScore>
+        <vuln:TemporalScore>8.4</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N/E:F/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11793</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5000871</vuln:Description>
+        <vuln:URL>http://www.microsoft.com/download/details.aspx?familyid=31211a48-0cef-462e-bb11-c36440f80bb3</vuln:URL>
+        <vuln:Supercedence>4602269</vuln:Supercedence>
+        <vuln:ProductID>11856</vuln:ProductID>
+        <vuln:ProductID>11857</vuln:ProductID>
+        <vuln:ProductID>11682</vuln:ProductID>
+        <vuln:ProductID>11792</vuln:ProductID>
+        <vuln:ProductID>11793</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Maybe</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5000871</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5000871</vuln:URL>
+        <vuln:ProductID>11856</vuln:ProductID>
+        <vuln:ProductID>11857</vuln:ProductID>
+        <vuln:ProductID>11682</vuln:ProductID>
+        <vuln:ProductID>11792</vuln:ProductID>
+        <vuln:ProductID>11793</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
+      <vuln:Remediation Type="Mitigation">
+        <vuln:Description>&lt;p&gt;This vulnerability is part of an attack chain. The initial attack requires the ability to make an untrusted connection to Exchange server port 443. This can be protected against by restricting untrusted connections, or by setting up a VPN to separate the Exchange server from external access. Using this mitigation will only protect against the initial portion of the attack. Other portions of the chain can be triggered if an attacker already has access or can convince an administrator to open a malicious file.&lt;/p&gt;
+&lt;p&gt;We recommend prioritizing installing updates on Exchange Servers that are externally facing.&lt;/p&gt;
+</vuln:Description>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments>
+      <vuln:Acknowledgment>
+        <vuln:Name>Microsoft Threat Intelligence Center (MSTIC)</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+      <vuln:Acknowledgment>
+        <vuln:Name>&lt;a href="https://twitter.com/orange_8361"&gt;Orange Tsai&lt;/a&gt; from &lt;a href="https://devco.re/"&gt;DEVCORE&lt;/a&gt; research team</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+      <vuln:Acknowledgment>
+        <vuln:Name>Volexity</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+    </vuln:Acknowledgments>
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2021-03-02T08:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2021-03-02T08:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Updated one or more CVSS scores for the affected products.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="3">
+    <vuln:Title>Microsoft Exchange Server Remote Code Execution Vulnerability</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Is this vulnerability being used in an active attack?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Yes. The vulnerability described in this CVE is one of four vulnerabilities that are being exploited in an active attack. The security updates address this attack. More information can be found here: https://msrc-blog.microsoft.com/2021/03/02/multiple-security-updates-released-for-exchange-server.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What is the target for this attack?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The initial attack in this attack chain targets an Exchange On-prem server that is able to receive untrusted connections from an external source. In addition, the Exchange server would need to be running Microsoft Exchange Server 2013, 2016, or 2019.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Exchange Server" Type="Tag" Ordinal="20">Microsoft Exchange Server</vuln:Note>
+      <vuln:Note Title="Issuing CNA" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2021-26857</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11856</vuln:ProductID>
+        <vuln:ProductID>11857</vuln:ProductID>
+        <vuln:ProductID>11682</vuln:ProductID>
+        <vuln:ProductID>11792</vuln:ProductID>
+        <vuln:ProductID>11793</vuln:ProductID>
+        <vuln:ProductID>10476</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11856</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11857</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11682</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11792</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11793</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>10476</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>11856</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>11857</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>11682</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>11792</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>11793</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>10476</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>Publicly Disclosed:No;Exploited:Yes;Latest Software Release:Exploitation Detected;Older Software Release:Exploitation More Likely;DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11856</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11857</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11682</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11792</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11793</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>10476</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5000871</vuln:Description>
+        <vuln:URL>http://www.microsoft.com/download/details.aspx?familyid=31211a48-0cef-462e-bb11-c36440f80bb3</vuln:URL>
+        <vuln:Supercedence>4602269</vuln:Supercedence>
+        <vuln:ProductID>11856</vuln:ProductID>
+        <vuln:ProductID>11857</vuln:ProductID>
+        <vuln:ProductID>11682</vuln:ProductID>
+        <vuln:ProductID>11792</vuln:ProductID>
+        <vuln:ProductID>11793</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Maybe</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5000871</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5000871</vuln:URL>
+        <vuln:ProductID>11856</vuln:ProductID>
+        <vuln:ProductID>11857</vuln:ProductID>
+        <vuln:ProductID>11682</vuln:ProductID>
+        <vuln:ProductID>11792</vuln:ProductID>
+        <vuln:ProductID>11793</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5000978</vuln:Description>
+        <vuln:URL>https://www.microsoft.com/download/details.aspx?familyid=1928d772-3b23-4aa7-a71e-c8ecf2ab1801</vuln:URL>
+        <vuln:Supercedence>4593467</vuln:Supercedence>
+        <vuln:ProductID>10476</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Maybe</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5000978</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5000978</vuln:URL>
+        <vuln:ProductID>10476</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
+      <vuln:Remediation Type="Mitigation">
+        <vuln:Description>&lt;p&gt;This vulnerability is part of an attack chain. The initial attack requires the ability to make an untrusted connection to Exchange server port 443. This can be protected against by restricting untrusted connections, or by setting up a VPN to separate the Exchange server from external access. Using this mitigation will only protect against the initial portion of the attack. Other portions of the chain can be triggered if an attacker already has access or can convince an administrator to open a malicious file.&lt;/p&gt;
+&lt;p&gt;We recommend prioritizing installing updates on Exchange Servers that are externally facing.&lt;/p&gt;
+</vuln:Description>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments>
+      <vuln:Acknowledgment>
+        <vuln:Name>Microsoft Threat Intelligence Center (MSTIC)</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+      <vuln:Acknowledgment>
+        <vuln:Name>Dubex</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+    </vuln:Acknowledgments>
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2021-03-02T08:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2021-03-02T08:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Updated one or more CVSS scores for the affected products.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="4">
+    <vuln:Title>Microsoft Exchange Server Remote Code Execution Vulnerability</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Is this vulnerability being used in an active attack?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Yes. The vulnerability described in this CVE is one of four vulnerabilities that are being exploited in an active attack. The security updates address this attack. More information can be found here: https://msrc-blog.microsoft.com/2021/03/02/multiple-security-updates-released-for-exchange-server.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What is the target for this attack?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The initial attack in this attack chain targets an Exchange On-prem server that is able to receive untrusted connections from an external source. In addition, the Exchange server would need to be running Microsoft Exchange Server 2013, 2016, or 2019.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Exchange Server" Type="Tag" Ordinal="20">Microsoft Exchange Server</vuln:Note>
+      <vuln:Note Title="Issuing CNA" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2021-26858</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11682</vuln:ProductID>
+        <vuln:ProductID>11792</vuln:ProductID>
+        <vuln:ProductID>11793</vuln:ProductID>
+        <vuln:ProductID>11856</vuln:ProductID>
+        <vuln:ProductID>11857</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11682</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11792</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11793</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11856</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11857</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11682</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11792</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11793</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11856</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11857</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>Publicly Disclosed:No;Exploited:Yes;Latest Software Release:Exploitation Detected;Older Software Release:Exploitation Detected;DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11682</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11792</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11793</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11856</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11857</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5000871</vuln:Description>
+        <vuln:URL>http://www.microsoft.com/download/details.aspx?familyid=1255ecd7-b187-4839-96c9-1fc5e05df7b6</vuln:URL>
+        <vuln:Supercedence>4593466</vuln:Supercedence>
+        <vuln:ProductID>11682</vuln:ProductID>
+        <vuln:ProductID>11792</vuln:ProductID>
+        <vuln:ProductID>11793</vuln:ProductID>
+        <vuln:ProductID>11856</vuln:ProductID>
+        <vuln:ProductID>11857</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Maybe</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5000871</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5000871</vuln:URL>
+        <vuln:ProductID>11682</vuln:ProductID>
+        <vuln:ProductID>11792</vuln:ProductID>
+        <vuln:ProductID>11793</vuln:ProductID>
+        <vuln:ProductID>11856</vuln:ProductID>
+        <vuln:ProductID>11857</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
+      <vuln:Remediation Type="Mitigation">
+        <vuln:Description>&lt;p&gt;This vulnerability is part of an attack chain. The initial attack requires the ability to make an untrusted connection to Exchange server port 443. This can be protected against by restricting untrusted connections, or by setting up a VPN to separate the Exchange server from external access. Using this mitigation will only protect against the initial portion of the attack. Other portions of the chain can be triggered if an attacker already has access or can convince an administrator to open a malicious file.&lt;/p&gt;
+&lt;p&gt;We recommend prioritizing installing updates on Exchange Servers that are externally facing.&lt;/p&gt;
+</vuln:Description>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments>
+      <vuln:Acknowledgment>
+        <vuln:Name>Microsoft Threat Intelligence Center (MSTIC)</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+    </vuln:Acknowledgments>
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2021-03-02T08:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2021-03-02T08:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Updated one or more CVSS scores for the affected products.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="5">
+    <vuln:Title>Microsoft Exchange Server Remote Code Execution Vulnerability</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Is this vulnerability being used in an active attack?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Yes. The vulnerability described in this CVE is one of four vulnerabilities that are being exploited in an active attack. The security updates address this attack. More information can be found here: https://msrc-blog.microsoft.com/2021/03/02/multiple-security-updates-released-for-exchange-server.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What is the target for this attack?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The initial attack in this attack chain targets an Exchange On-prem server that is able to receive untrusted connections from an external source. In addition, the Exchange server would need to be running Microsoft Exchange Server 2013, 2016, or 2019.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Exchange Server" Type="Tag" Ordinal="20">Microsoft Exchange Server</vuln:Note>
+      <vuln:Note Title="Issuing CNA" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2021-27065</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11682</vuln:ProductID>
+        <vuln:ProductID>11792</vuln:ProductID>
+        <vuln:ProductID>11793</vuln:ProductID>
+        <vuln:ProductID>11856</vuln:ProductID>
+        <vuln:ProductID>11857</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11682</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11792</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11793</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11856</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11857</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>11682</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>11792</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>11793</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>11856</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>11857</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>Publicly Disclosed:No;Exploited:Yes;Latest Software Release:Exploitation Detected;Older Software Release:Exploitation Detected;DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11682</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11792</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11793</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11856</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11857</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5000871</vuln:Description>
+        <vuln:URL>http://www.microsoft.com/download/details.aspx?familyid=1255ecd7-b187-4839-96c9-1fc5e05df7b6</vuln:URL>
+        <vuln:Supercedence>4593466</vuln:Supercedence>
+        <vuln:ProductID>11682</vuln:ProductID>
+        <vuln:ProductID>11792</vuln:ProductID>
+        <vuln:ProductID>11793</vuln:ProductID>
+        <vuln:ProductID>11856</vuln:ProductID>
+        <vuln:ProductID>11857</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Maybe</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5000871</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5000871</vuln:URL>
+        <vuln:ProductID>11682</vuln:ProductID>
+        <vuln:ProductID>11792</vuln:ProductID>
+        <vuln:ProductID>11793</vuln:ProductID>
+        <vuln:ProductID>11856</vuln:ProductID>
+        <vuln:ProductID>11857</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
+      <vuln:Remediation Type="Mitigation">
+        <vuln:Description>&lt;p&gt;This vulnerability is part of an attack chain. The initial attack requires the ability to make an untrusted connection to Exchange server port 443. This can be protected against by restricting untrusted connections, or by setting up a VPN to separate the Exchange server from external access. Using this mitigation will only protect against the initial portion of the attack. Other portions of the chain can be triggered if an attacker already has access or can convince an administrator to open a malicious file.&lt;/p&gt;
+&lt;p&gt;We recommend prioritizing installing updates on Exchange Servers that are externally facing.&lt;/p&gt;
+</vuln:Description>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments>
+      <vuln:Acknowledgment>
+        <vuln:Name>Volexity</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+      <vuln:Acknowledgment>
+        <vuln:Name>&lt;a href="https://twitter.com/orange_8361"&gt;Orange Tsai&lt;/a&gt; from &lt;a href="https://devco.re/"&gt;DEVCORE&lt;/a&gt; research team</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+      <vuln:Acknowledgment>
+        <vuln:Name>Microsoft Threat Intelligence Center (MSTIC)</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+    </vuln:Acknowledgments>
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2021-03-02T08:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2021-03-02T08:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Updated one or more CVSS scores for the affected products.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="6">
+    <vuln:Title>Microsoft Exchange Server Remote Code Execution Vulnerability</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Microsoft Exchange Server" Type="Tag" Ordinal="20">Microsoft Exchange Server</vuln:Note>
+      <vuln:Note Title="Issuing CNA" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2021-27078</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11856</vuln:ProductID>
+        <vuln:ProductID>11857</vuln:ProductID>
+        <vuln:ProductID>11682</vuln:ProductID>
+        <vuln:ProductID>11792</vuln:ProductID>
+        <vuln:ProductID>11793</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11856</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11857</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11682</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11792</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11793</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11856</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11857</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11682</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11792</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11793</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation Less Likely;Older Software Release:Exploitation Less Likely;DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>9.1</vuln:BaseScore>
+        <vuln:TemporalScore>8.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11856</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>9.1</vuln:BaseScore>
+        <vuln:TemporalScore>8.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11857</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>9.1</vuln:BaseScore>
+        <vuln:TemporalScore>8.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11682</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>9.1</vuln:BaseScore>
+        <vuln:TemporalScore>8.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11792</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>9.1</vuln:BaseScore>
+        <vuln:TemporalScore>8.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11793</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5000871</vuln:Description>
+        <vuln:URL>http://www.microsoft.com/download/details.aspx?familyid=31211a48-0cef-462e-bb11-c36440f80bb3</vuln:URL>
+        <vuln:Supercedence>4602269</vuln:Supercedence>
+        <vuln:ProductID>11856</vuln:ProductID>
+        <vuln:ProductID>11857</vuln:ProductID>
+        <vuln:ProductID>11682</vuln:ProductID>
+        <vuln:ProductID>11792</vuln:ProductID>
+        <vuln:ProductID>11793</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Maybe</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5000871</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5000871</vuln:URL>
+        <vuln:ProductID>11856</vuln:ProductID>
+        <vuln:ProductID>11857</vuln:ProductID>
+        <vuln:ProductID>11682</vuln:ProductID>
+        <vuln:ProductID>11792</vuln:ProductID>
+        <vuln:ProductID>11793</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments>
+      <vuln:Acknowledgment>
+        <vuln:Name>Steven Seeley (mr_me) of Source Incite</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+    </vuln:Acknowledgments>
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2021-03-02T08:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+</cvrf:cvrfdoc>

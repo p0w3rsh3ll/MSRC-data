@@ -1,0 +1,1127 @@
+﻿<html>
+<head>
+    <!-- Created by module version 1.9.0 -->
+    <!-- this is the css from the old bulletin site. Change this to better style your report to your liking -->
+    <!-- <link rel="stylesheet" href="https://i-technet.sec.s-msft.com/Combined.css?resources=0:ImageSprite,0:TopicResponsive,0:TopicResponsive.MediaQueries,1:CodeSnippet,1:ProgrammingSelector,1:ExpandableCollapsibleArea,0:CommunityContent,1:TopicNotInScope,1:FeedViewerBasic,1:ImageSprite,2:Header.2,2:HeaderFooterSprite,2:Header.MediaQueries,2:Banner.MediaQueries,3:megabladeMenu.1,3:MegabladeMenu.MediaQueries,3:MegabladeMenuSpriteCluster,0:Breadcrumbs,0:Breadcrumbs.MediaQueries,0:ResponsiveToc,0:ResponsiveToc.MediaQueries,1:NavSidebar,0:LibraryMemberFilter,4:StandardRating,2:Footer.2,5:LinkList,2:Footer.MediaQueries,0:BaseResponsive,6:MsdnResponsive,0:Tables.MediaQueries,7:SkinnyRatingResponsive,7:SkinnyRatingV2;/Areas/Library/Content:0,/Areas/Epx/Content/Css:1,/Areas/Epx/Themes/TechNet/Content:2,/Areas/Epx/Themes/Shared/Content:3,/Areas/Global/Content:4,/Areas/Epx/Themes/Base/Content:5,/Areas/Library/Themes/Msdn/Content:6,/Areas/Library/Themes/TechNet/Content:7&amp;v=9192817066EC5D087D15C766A0430C95"> -->
+
+    <!-- this style section changes cell widths in the exec header table so that the affected products at the end are wide enough to read -->
+    <style>
+            body {
+          background-color: darkgray;
+        }
+
+        h1 {
+          color: maroon;
+        }
+        table {
+          font-family: Arial, Helvetica, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+
+        table td, th {
+          border: 1px solid #ddd;
+          padding: 8px;
+        }
+
+        table tr:nth-child(even){
+          background-color: #ddd;
+        }
+
+        table tr:hover {background-color: #FAF0E6;}
+
+        table th {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          text-align: left;
+          background-color: #C0C0C0;
+        }
+        #execHeader td:first-child  { width: 10% ;}
+        #execHeader td:nth-child(5) { width: 37% ;}
+    </style>
+
+    <!-- this section defines explicit width for all cells in the affected software tables. This is so the column width is the same across each product -->
+    <style>
+        .affected_software td:first-child  { width: 34% ; }
+        .affected_software td:nth-child(2) { width: 14% ; }
+        .affected_software td:nth-child(3) { width: 6% ; }
+        .affected_software td:nth-child(4) { width: 6% ; }
+        .affected_software td:nth-child(5) { width: 7.5% ; }
+        .affected_software td:nth-child(6) { width: 28.5% ; }
+        .affected_software td:nth-child(7) { width: 4% ; }
+    </style>
+
+    <!-- remove spacing between table of contents cells -->
+    <style>
+        #tableOfContents tr td { padding: 2px; }
+    </style>
+
+    <style>
+        .cvss_table tr:nth-child(odd) {background: #ededed}
+    </style>
+
+</head>
+
+<body lang=EN-US link=blue>
+<div id="documentWrapper" style="width: 90%; margin-left: auto; margin-right: auto;">
+
+<h1 id="top">Microsoft CVE Summary</h1>
+
+<p style="margin:0; padding:0">This report contains detail for the following vulnerabilities:</p>
+<table id="tableOfContents" style="width:78%; margin-top:5">
+ <tr>
+  <th>CVE Issued by</th>
+  <th>Tag</th>
+  <th>CVE ID</th>
+  <th>CVE Title</th>
+ </tr>
+ <tr><td>Microsoft</td><td>Microsoft Exchange Server</td>    <td><a href="#CVE-2021-26412">CVE-2021-26412</a></td>    <td>Microsoft Exchange Server Remote Code Execution Vulnerability</td></tr>
+<tr><td>Microsoft</td><td>Microsoft Exchange Server</td>    <td><a href="#CVE-2021-26854">CVE-2021-26854</a></td>    <td>Microsoft Exchange Server Remote Code Execution Vulnerability</td></tr>
+<tr><td>Microsoft</td><td>Microsoft Exchange Server</td>    <td><a href="#CVE-2021-26855">CVE-2021-26855</a></td>    <td>Microsoft Exchange Server Remote Code Execution Vulnerability</td></tr>
+<tr><td>Microsoft</td><td>Microsoft Exchange Server</td>    <td><a href="#CVE-2021-26857">CVE-2021-26857</a></td>    <td>Microsoft Exchange Server Remote Code Execution Vulnerability</td></tr>
+<tr><td>Microsoft</td><td>Microsoft Exchange Server</td>    <td><a href="#CVE-2021-26858">CVE-2021-26858</a></td>    <td>Microsoft Exchange Server Remote Code Execution Vulnerability</td></tr>
+<tr><td>Microsoft</td><td>Microsoft Exchange Server</td>    <td><a href="#CVE-2021-27065">CVE-2021-27065</a></td>    <td>Microsoft Exchange Server Remote Code Execution Vulnerability</td></tr>
+<tr><td>Microsoft</td><td>Microsoft Exchange Server</td>    <td><a href="#CVE-2021-27078">CVE-2021-27078</a></td>    <td>Microsoft Exchange Server Remote Code Execution Vulnerability</td></tr>
+</table>
+<h1 id="CVE-2021-26412">CVE-2021-26412 - Microsoft Exchange Server Remote Code Execution Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2021-26412">CVE-2021-26412</a>
+<br>
+<a href="http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-26412">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-26412">NVD</a>
+<p>Issuing CNA: Microsoft</p></td>
+     <td>        <b>CVE Title:</b> Microsoft Exchange Server Remote Code Execution Vulnerability
+        <br>
+        <b>CVSS:</b> <br>                        <br> <b>CVSS:3.0 Highest BaseScore:9,1/TemporalScore:8,2</b>
+                        <table class="cvss_table" border=1 cellpadding=0 width="99%">
+                            <thead>
+                                <tr>
+                                    <td colspan="7"><b>Base score metrics</b></td>
+                                </tr>
+                            </thead>
+                            <tr><td title="This metric reflects the context by which vulnerability exploitation is possible. The Base Score increases the more remote (logically, and physically) an attacker can be in order to exploit the vulnerable component."><b>Attack Vector</b></td><td title="The vulnerable component is bound to the network stack and the set of possible attackers extends beyond the other options listed, up to and including the entire Internet. Such a vulnerability is often termed 'remotely exploitable' and can be thought of as an attack being exploitable at the protocol level one or more network hops away (e.g., across one or more routers)."><b>Network</b></td></tr><tr><td title="This metric describes the conditions beyond the attacker’s control that must exist in order to exploit the vulnerability. Such conditions may require the collection of more information about the target or computational exceptions. The assessment of this metric excludes any requirements for user interaction in order to exploit the vulnerability. If a specific configuration is required for an attack to succeed, the Base metrics should be scored assuming the vulnerable component is in that configuration."><b>Attack Complexity</b></td><td title="Specialized access conditions or extenuating circumstances do not exist. An attacker can expect repeatable success against the vulnerable component."><b>Low</b></td></tr><tr><td title="This metric describes the level of privileges an attacker must possess before successfully exploiting the vulnerability."><b>Privileges Required</b></td><td title="The attacker is authorized with (i.e., requires) privileges that provide significant (e.g., administrative) control over the vulnerable component that could affect component-wide settings and files."><b>High</b></td></tr><tr><td title="This metric captures the requirement for a user, other than the attacker, to participate in the successful compromise the vulnerable component. This metric determines whether the vulnerability can be exploited solely at the will of the attacker, or whether a separate user (or user-initiated process) must participate in some manner."><b>User Interaction</b></td><td title="The vulnerable system can be exploited without any interaction from any user."><b>None</b></td></tr><tr><td title="Does a successful attack impact a component other than the vulnerable component? If so, the Base Score increases and the Confidentiality, Integrity and Authentication metrics should be scored relative to the impacted component."><b>Scope</b></td><td title="An exploited vulnerability can affect resources beyond the security scope managed by the security authority of the vulnerable component. In this case, the vulnerable component and the impacted component are different and managed by different security authorities."><b>Changed</b></td></tr><tr><td title="This metric measures the impact to the confidentiality of the information resources managed by a software component due to a successfully exploited vulnerability. Confidentiality refers to limiting information access and disclosure to only authorized users, as well as preventing access by, or disclosure to, unauthorized ones."><b>Confidentiality</b></td><td title="There is total loss of confidentiality, resulting in all resources within the impacted component being divulged to the attacker. Alternatively, access to only some restricted information is obtained, but the disclosed information presents a direct, serious impact."><b>High</b></td></tr><tr><td title="This metric measures the impact to integrity of a successfully exploited vulnerability. Integrity refers to the trustworthiness and veracity of information."><b>Integrity</b></td><td title="There is a total loss of integrity, or a complete loss of protection. For example, the attacker is able to modify any/all files protected by the impacted component. Alternatively, only some files can be modified, but malicious modification would present a direct, serious consequence to the impacted component."><b>High</b></td></tr><tr><td title="This metric measures the impact to the availability of the impacted component resulting from a successfully exploited vulnerability. It refers to the loss of availability of the impacted component itself, such as a networked service (e.g., web, database, email). Since availability refers to the accessibility of information resources, attacks that consume network bandwidth, processor cycles, or disk space all impact the availability of an impacted component."><b>Availability</b></td><td title="There is total loss of availability, resulting in the attacker being able to fully deny access to resources in the impacted component; this loss is either sustained (while the attacker continues to deliver the attack) or persistent (the condition persists even after the attack has completed). Alternatively, the attacker has the ability to deny some availability, but the loss of availability presents a direct, serious consequence to the impacted component (e.g., the attacker cannot disrupt existing connections, but can prevent new connections; the attacker can repeatedly exploit a vulnerability that, in each instance of a successful attack, leaks a only small amount of memory, but after repeated exploitation causes a service to become completely unavailable)."><b>High</b></td></tr>
+                        </table>
+                        <table class="cvss_table" border=1 cellpadding=0 width="99%">
+                            <thead>
+                                <tr>
+                                    <td colspan="7"><b>Temporal score metrics</b></td>
+                                </tr>
+                            </thead>
+                            <tr><td title="This metric measures the likelihood of the vulnerability being attacked, and is typically based on the current state of exploit techniques, exploit code availability, or active, 'in-the-wild' exploitation."><b>Exploit Code Maturity</b></td><td title="Proof-of-concept exploit code is available, or an attack demonstration is not practical for most systems. The code or technique is not functional in all situations and may require substantial modification by a skilled attacker."><b>Proof-of-Concept</b></td></tr><tr><td title="The Remediation Level of a vulnerability is an important factor for prioritization. The typical vulnerability is unpatched when initially published. Workarounds or hotfixes may offer interim remediation until an official patch or upgrade is issued. Each of these respective stages adjusts the temporal score downwards, reflecting the decreasing urgency as remediation becomes final."><b>Remediation Level</b></td><td title="A complete vendor solution is available. Either the vendor has issued an official patch, or an upgrade is available."><b>Official Fix</b></td></tr><tr><td title="This metric measures the degree of confidence in the existence of the vulnerability and the credibility of the known technical details. Sometimes only the existence of vulnerabilities are publicized, but without specific details. For example, an impact may be recognized as undesirable, but the root cause may not be known. The vulnerability may later be corroborated by research which suggests where the vulnerability may lie, though the research may not be certain. Finally, a vulnerability may be confirmed through acknowledgement by the author or vendor of the affected technology. The urgency of a vulnerability is higher when a vulnerability is known to exist with certainty. This metric also suggests the level of technical knowledge available to would-be attackers."><b>Report Confidence</b></td><td title="Detailed reports exist, or functional reproduction is possible (functional exploits may provide this). Source code is available to independently verify the assertions of the research, or the author or vendor of the affected code has confirmed the presence of the vulnerability."><b>Confirmed</b></td></tr>
+                        </table>
+        <br>
+        <b>Executive Summary:</b> <br>None
+        <br>
+        <b>FAQ:</b><br>None
+        <br>
+        <b>Mitigations:</b><br>None
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp02/03/2021&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Critical</td>
+     <td>Remote Code Execution</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an exploitability assessment of each of the vulnerabilities addressed this month. The vulnerabilities are listed in order of bulletin ID then CVE ID. Only vulnerabilities that have a severity rating of Critical or Important in the bulletins are included.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Exploitation Less Likely</td>
+     <td>No</td>
+     <td>No</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="8"><b>CVE-2021-26412</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Exchange Server 2013 Cumulative Update 23</td>
+                <td><a href="http://www.microsoft.com/download/details.aspx?familyid=1255ecd7-b187-4839-96c9-1fc5e05df7b6" >5000871 (Security Update)</td>
+                <td>Critical</td>
+                <td>Remote Code Execution</td>
+                <td>4593466<br /></td>
+                <td>Base: 9,1<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
+                <td>Maybe</td>
+                <td><a href="https://support.microsoft.com/help/5000871" >5000871</td>
+        </tr>        <tr>
+                <td>Microsoft Exchange Server 2016 Cumulative Update 18</td>
+                <td><a href="http://www.microsoft.com/download/details.aspx?familyid=1255ecd7-b187-4839-96c9-1fc5e05df7b6" >5000871 (Security Update)</td>
+                <td>Critical</td>
+                <td>Remote Code Execution</td>
+                <td>4593466<br /></td>
+                <td>Base: 9,1<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
+                <td>Maybe</td>
+                <td><a href="https://support.microsoft.com/help/5000871" >5000871</td>
+        </tr>        <tr>
+                <td>Microsoft Exchange Server 2016 Cumulative Update 19</td>
+                <td><a href="http://www.microsoft.com/download/details.aspx?familyid=1255ecd7-b187-4839-96c9-1fc5e05df7b6" >5000871 (Security Update)</td>
+                <td>Critical</td>
+                <td>Remote Code Execution</td>
+                <td>4593466<br /></td>
+                <td>Base: 9,1<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
+                <td>Maybe</td>
+                <td><a href="https://support.microsoft.com/help/5000871" >5000871</td>
+        </tr>        <tr>
+                <td>Microsoft Exchange Server 2019 Cumulative Update 7</td>
+                <td><a href="http://www.microsoft.com/download/details.aspx?familyid=1255ecd7-b187-4839-96c9-1fc5e05df7b6" >5000871 (Security Update)</td>
+                <td>Critical</td>
+                <td>Remote Code Execution</td>
+                <td>4593466<br /></td>
+                <td>Base: 9,1<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
+                <td>Maybe</td>
+                <td><a href="https://support.microsoft.com/help/5000871" >5000871</td>
+        </tr>        <tr>
+                <td>Microsoft Exchange Server 2019 Cumulative Update 8</td>
+                <td><a href="http://www.microsoft.com/download/details.aspx?familyid=1255ecd7-b187-4839-96c9-1fc5e05df7b6" >5000871 (Security Update)</td>
+                <td>Critical</td>
+                <td>Remote Code Execution</td>
+                <td>4593466<br /></td>
+                <td>Base: 9,1<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
+                <td>Maybe</td>
+                <td><a href="https://support.microsoft.com/help/5000871" >5000871</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2021-26412</td>
+     <td><a href="https://srcincite.io/">Steven Seeley (mr_me) </a><br><br><br></td>
+ </tr>
+</table><h1 id="CVE-2021-26854">CVE-2021-26854 - Microsoft Exchange Server Remote Code Execution Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2021-26854">CVE-2021-26854</a>
+<br>
+<a href="http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-26854">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-26854">NVD</a>
+<p>Issuing CNA: Microsoft</p></td>
+     <td>        <b>CVE Title:</b> Microsoft Exchange Server Remote Code Execution Vulnerability
+        <br>
+        <b>CVSS:</b> <br>                        <br> <b>CVSS:3.0 Highest BaseScore:6,6/TemporalScore:5,8</b>
+                        <table class="cvss_table" border=1 cellpadding=0 width="99%">
+                            <thead>
+                                <tr>
+                                    <td colspan="7"><b>Base score metrics</b></td>
+                                </tr>
+                            </thead>
+                            <tr><td title="This metric reflects the context by which vulnerability exploitation is possible. The Base Score increases the more remote (logically, and physically) an attacker can be in order to exploit the vulnerable component."><b>Attack Vector</b></td><td title="The vulnerable component is bound to the network stack and the set of possible attackers extends beyond the other options listed, up to and including the entire Internet. Such a vulnerability is often termed 'remotely exploitable' and can be thought of as an attack being exploitable at the protocol level one or more network hops away (e.g., across one or more routers)."><b>Network</b></td></tr><tr><td title="This metric describes the conditions beyond the attacker’s control that must exist in order to exploit the vulnerability. Such conditions may require the collection of more information about the target or computational exceptions. The assessment of this metric excludes any requirements for user interaction in order to exploit the vulnerability. If a specific configuration is required for an attack to succeed, the Base metrics should be scored assuming the vulnerable component is in that configuration."><b>Attack Complexity</b></td><td title="A successful attack depends on conditions beyond the attacker's control. That is, a successful attack cannot be accomplished at will, but requires the attacker to invest in some measurable amount of effort in preparation or execution against the vulnerable component before a successful attack can be expected. For example, a successful attack may require an attacker to: gather knowledge about the environment in which the vulnerable target/component exists; prepare the target environment to improve exploit reliability; or inject themselves into the logical network path between the target and the resource requested by the victim in order to read and/or modify network communications (e.g., a man in the middle attack)."><b>High</b></td></tr><tr><td title="This metric describes the level of privileges an attacker must possess before successfully exploiting the vulnerability."><b>Privileges Required</b></td><td title="The attacker is authorized with (i.e., requires) privileges that provide significant (e.g., administrative) control over the vulnerable component that could affect component-wide settings and files."><b>High</b></td></tr><tr><td title="This metric captures the requirement for a user, other than the attacker, to participate in the successful compromise the vulnerable component. This metric determines whether the vulnerability can be exploited solely at the will of the attacker, or whether a separate user (or user-initiated process) must participate in some manner."><b>User Interaction</b></td><td title="The vulnerable system can be exploited without any interaction from any user."><b>None</b></td></tr><tr><td title="Does a successful attack impact a component other than the vulnerable component? If so, the Base Score increases and the Confidentiality, Integrity and Authentication metrics should be scored relative to the impacted component."><b>Scope</b></td><td title="An exploited vulnerability can only affect resources managed by the same security authority. In this case, the vulnerable component and the impacted component are either the same, or both are managed by the same security authority."><b>Unchanged</b></td></tr><tr><td title="This metric measures the impact to the confidentiality of the information resources managed by a software component due to a successfully exploited vulnerability. Confidentiality refers to limiting information access and disclosure to only authorized users, as well as preventing access by, or disclosure to, unauthorized ones."><b>Confidentiality</b></td><td title="There is total loss of confidentiality, resulting in all resources within the impacted component being divulged to the attacker. Alternatively, access to only some restricted information is obtained, but the disclosed information presents a direct, serious impact."><b>High</b></td></tr><tr><td title="This metric measures the impact to integrity of a successfully exploited vulnerability. Integrity refers to the trustworthiness and veracity of information."><b>Integrity</b></td><td title="There is a total loss of integrity, or a complete loss of protection. For example, the attacker is able to modify any/all files protected by the impacted component. Alternatively, only some files can be modified, but malicious modification would present a direct, serious consequence to the impacted component."><b>High</b></td></tr><tr><td title="This metric measures the impact to the availability of the impacted component resulting from a successfully exploited vulnerability. It refers to the loss of availability of the impacted component itself, such as a networked service (e.g., web, database, email). Since availability refers to the accessibility of information resources, attacks that consume network bandwidth, processor cycles, or disk space all impact the availability of an impacted component."><b>Availability</b></td><td title="There is total loss of availability, resulting in the attacker being able to fully deny access to resources in the impacted component; this loss is either sustained (while the attacker continues to deliver the attack) or persistent (the condition persists even after the attack has completed). Alternatively, the attacker has the ability to deny some availability, but the loss of availability presents a direct, serious consequence to the impacted component (e.g., the attacker cannot disrupt existing connections, but can prevent new connections; the attacker can repeatedly exploit a vulnerability that, in each instance of a successful attack, leaks a only small amount of memory, but after repeated exploitation causes a service to become completely unavailable)."><b>High</b></td></tr>
+                        </table>
+                        <table class="cvss_table" border=1 cellpadding=0 width="99%">
+                            <thead>
+                                <tr>
+                                    <td colspan="7"><b>Temporal score metrics</b></td>
+                                </tr>
+                            </thead>
+                            <tr><td title="This metric measures the likelihood of the vulnerability being attacked, and is typically based on the current state of exploit techniques, exploit code availability, or active, 'in-the-wild' exploitation."><b>Exploit Code Maturity</b></td><td title="No exploit code is available, or an exploit is theoretical."><b>Unproven</b></td></tr><tr><td title="The Remediation Level of a vulnerability is an important factor for prioritization. The typical vulnerability is unpatched when initially published. Workarounds or hotfixes may offer interim remediation until an official patch or upgrade is issued. Each of these respective stages adjusts the temporal score downwards, reflecting the decreasing urgency as remediation becomes final."><b>Remediation Level</b></td><td title="A complete vendor solution is available. Either the vendor has issued an official patch, or an upgrade is available."><b>Official Fix</b></td></tr><tr><td title="This metric measures the degree of confidence in the existence of the vulnerability and the credibility of the known technical details. Sometimes only the existence of vulnerabilities are publicized, but without specific details. For example, an impact may be recognized as undesirable, but the root cause may not be known. The vulnerability may later be corroborated by research which suggests where the vulnerability may lie, though the research may not be certain. Finally, a vulnerability may be confirmed through acknowledgement by the author or vendor of the affected technology. The urgency of a vulnerability is higher when a vulnerability is known to exist with certainty. This metric also suggests the level of technical knowledge available to would-be attackers."><b>Report Confidence</b></td><td title="Detailed reports exist, or functional reproduction is possible (functional exploits may provide this). Source code is available to independently verify the assertions of the research, or the author or vendor of the affected code has confirmed the presence of the vulnerability."><b>Confirmed</b></td></tr>
+                        </table>
+        <br>
+        <b>Executive Summary:</b> <br>None
+        <br>
+        <b>FAQ:</b><br>None
+        <br>
+        <b>Mitigations:</b><br>None
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp02/03/2021&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Important</td>
+     <td>Remote Code Execution</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an exploitability assessment of each of the vulnerabilities addressed this month. The vulnerabilities are listed in order of bulletin ID then CVE ID. Only vulnerabilities that have a severity rating of Critical or Important in the bulletins are included.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Exploitation Less Likely</td>
+     <td>No</td>
+     <td>No</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="8"><b>CVE-2021-26854</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Exchange Server 2013 Cumulative Update 23</td>
+                <td><a href="http://www.microsoft.com/download/details.aspx?familyid=31211a48-0cef-462e-bb11-c36440f80bb3" >5000871 (Security Update)</td>
+                <td>Important</td>
+                <td>Remote Code Execution</td>
+                <td>4602269<br /></td>
+                <td>Base: 6,6<br />Temporal: 5,8<br />Vector: CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
+                <td>Maybe</td>
+                <td><a href="https://support.microsoft.com/help/5000871" >5000871</td>
+        </tr>        <tr>
+                <td>Microsoft Exchange Server 2016 Cumulative Update 18</td>
+                <td><a href="http://www.microsoft.com/download/details.aspx?familyid=31211a48-0cef-462e-bb11-c36440f80bb3" >5000871 (Security Update)</td>
+                <td>Important</td>
+                <td>Remote Code Execution</td>
+                <td>4602269<br /></td>
+                <td>Base: 6,6<br />Temporal: 5,8<br />Vector: CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
+                <td>Maybe</td>
+                <td><a href="https://support.microsoft.com/help/5000871" >5000871</td>
+        </tr>        <tr>
+                <td>Microsoft Exchange Server 2016 Cumulative Update 19</td>
+                <td><a href="http://www.microsoft.com/download/details.aspx?familyid=31211a48-0cef-462e-bb11-c36440f80bb3" >5000871 (Security Update)</td>
+                <td>Important</td>
+                <td>Remote Code Execution</td>
+                <td>4602269<br /></td>
+                <td>Base: 6,6<br />Temporal: 5,8<br />Vector: CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
+                <td>Maybe</td>
+                <td><a href="https://support.microsoft.com/help/5000871" >5000871</td>
+        </tr>        <tr>
+                <td>Microsoft Exchange Server 2019 Cumulative Update 7</td>
+                <td><a href="http://www.microsoft.com/download/details.aspx?familyid=31211a48-0cef-462e-bb11-c36440f80bb3" >5000871 (Security Update)</td>
+                <td>Important</td>
+                <td>Remote Code Execution</td>
+                <td>4602269<br /></td>
+                <td>Base: 6,6<br />Temporal: 5,8<br />Vector: CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
+                <td>Maybe</td>
+                <td><a href="https://support.microsoft.com/help/5000871" >5000871</td>
+        </tr>        <tr>
+                <td>Microsoft Exchange Server 2019 Cumulative Update 8</td>
+                <td><a href="http://www.microsoft.com/download/details.aspx?familyid=31211a48-0cef-462e-bb11-c36440f80bb3" >5000871 (Security Update)</td>
+                <td>Important</td>
+                <td>Remote Code Execution</td>
+                <td>4602269<br /></td>
+                <td>Base: 6,6<br />Temporal: 5,8<br />Vector: CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
+                <td>Maybe</td>
+                <td><a href="https://support.microsoft.com/help/5000871" >5000871</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2021-26854</td>
+     <td>Steven Seeley (mr_me) of Source Incite<br><br><br></td>
+ </tr>
+</table><h1 id="CVE-2021-26855">CVE-2021-26855 - Microsoft Exchange Server Remote Code Execution Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2021-26855">CVE-2021-26855</a>
+<br>
+<a href="http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-26855">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-26855">NVD</a>
+<p>Issuing CNA: Microsoft</p></td>
+     <td>        <b>CVE Title:</b> Microsoft Exchange Server Remote Code Execution Vulnerability
+        <br>
+        <b>CVSS:</b> <br>                        <br> <b>CVSS:3.0 Highest BaseScore:9,1/TemporalScore:8,4</b>
+                        <table class="cvss_table" border=1 cellpadding=0 width="99%">
+                            <thead>
+                                <tr>
+                                    <td colspan="7"><b>Base score metrics</b></td>
+                                </tr>
+                            </thead>
+                            <tr><td title="This metric reflects the context by which vulnerability exploitation is possible. The Base Score increases the more remote (logically, and physically) an attacker can be in order to exploit the vulnerable component."><b>Attack Vector</b></td><td title="The vulnerable component is bound to the network stack and the set of possible attackers extends beyond the other options listed, up to and including the entire Internet. Such a vulnerability is often termed 'remotely exploitable' and can be thought of as an attack being exploitable at the protocol level one or more network hops away (e.g., across one or more routers)."><b>Network</b></td></tr><tr><td title="This metric describes the conditions beyond the attacker’s control that must exist in order to exploit the vulnerability. Such conditions may require the collection of more information about the target or computational exceptions. The assessment of this metric excludes any requirements for user interaction in order to exploit the vulnerability. If a specific configuration is required for an attack to succeed, the Base metrics should be scored assuming the vulnerable component is in that configuration."><b>Attack Complexity</b></td><td title="Specialized access conditions or extenuating circumstances do not exist. An attacker can expect repeatable success against the vulnerable component."><b>Low</b></td></tr><tr><td title="This metric describes the level of privileges an attacker must possess before successfully exploiting the vulnerability."><b>Privileges Required</b></td><td title="The attacker is unauthorized prior to attack, and therefore does not require any access to settings or files to carry out an attack."><b>None</b></td></tr><tr><td title="This metric captures the requirement for a user, other than the attacker, to participate in the successful compromise the vulnerable component. This metric determines whether the vulnerability can be exploited solely at the will of the attacker, or whether a separate user (or user-initiated process) must participate in some manner."><b>User Interaction</b></td><td title="The vulnerable system can be exploited without any interaction from any user."><b>None</b></td></tr><tr><td title="Does a successful attack impact a component other than the vulnerable component? If so, the Base Score increases and the Confidentiality, Integrity and Authentication metrics should be scored relative to the impacted component."><b>Scope</b></td><td title="An exploited vulnerability can only affect resources managed by the same security authority. In this case, the vulnerable component and the impacted component are either the same, or both are managed by the same security authority."><b>Unchanged</b></td></tr><tr><td title="This metric measures the impact to the confidentiality of the information resources managed by a software component due to a successfully exploited vulnerability. Confidentiality refers to limiting information access and disclosure to only authorized users, as well as preventing access by, or disclosure to, unauthorized ones."><b>Confidentiality</b></td><td title="There is total loss of confidentiality, resulting in all resources within the impacted component being divulged to the attacker. Alternatively, access to only some restricted information is obtained, but the disclosed information presents a direct, serious impact."><b>High</b></td></tr><tr><td title="This metric measures the impact to integrity of a successfully exploited vulnerability. Integrity refers to the trustworthiness and veracity of information."><b>Integrity</b></td><td title="There is a total loss of integrity, or a complete loss of protection. For example, the attacker is able to modify any/all files protected by the impacted component. Alternatively, only some files can be modified, but malicious modification would present a direct, serious consequence to the impacted component."><b>High</b></td></tr><tr><td title="This metric measures the impact to the availability of the impacted component resulting from a successfully exploited vulnerability. It refers to the loss of availability of the impacted component itself, such as a networked service (e.g., web, database, email). Since availability refers to the accessibility of information resources, attacks that consume network bandwidth, processor cycles, or disk space all impact the availability of an impacted component."><b>Availability</b></td><td title="There is no impact to availability within the impacted component."><b>None</b></td></tr>
+                        </table>
+                        <table class="cvss_table" border=1 cellpadding=0 width="99%">
+                            <thead>
+                                <tr>
+                                    <td colspan="7"><b>Temporal score metrics</b></td>
+                                </tr>
+                            </thead>
+                            <tr><td title="This metric measures the likelihood of the vulnerability being attacked, and is typically based on the current state of exploit techniques, exploit code availability, or active, 'in-the-wild' exploitation."><b>Exploit Code Maturity</b></td><td title="Functional exploit code is available. The code works in most situations where the vulnerability exists."><b>Functional</b></td></tr><tr><td title="The Remediation Level of a vulnerability is an important factor for prioritization. The typical vulnerability is unpatched when initially published. Workarounds or hotfixes may offer interim remediation until an official patch or upgrade is issued. Each of these respective stages adjusts the temporal score downwards, reflecting the decreasing urgency as remediation becomes final."><b>Remediation Level</b></td><td title="A complete vendor solution is available. Either the vendor has issued an official patch, or an upgrade is available."><b>Official Fix</b></td></tr><tr><td title="This metric measures the degree of confidence in the existence of the vulnerability and the credibility of the known technical details. Sometimes only the existence of vulnerabilities are publicized, but without specific details. For example, an impact may be recognized as undesirable, but the root cause may not be known. The vulnerability may later be corroborated by research which suggests where the vulnerability may lie, though the research may not be certain. Finally, a vulnerability may be confirmed through acknowledgement by the author or vendor of the affected technology. The urgency of a vulnerability is higher when a vulnerability is known to exist with certainty. This metric also suggests the level of technical knowledge available to would-be attackers."><b>Report Confidence</b></td><td title="Detailed reports exist, or functional reproduction is possible (functional exploits may provide this). Source code is available to independently verify the assertions of the research, or the author or vendor of the affected code has confirmed the presence of the vulnerability."><b>Confirmed</b></td></tr>
+                        </table>
+        <br>
+        <b>Executive Summary:</b> <br>None
+        <br>
+        <b>FAQ:</b><br><p><strong>Is this vulnerability being used in an active attack?</strong></p>
+<p>Yes. The vulnerability described in this CVE is one of four vulnerabilities that are being exploited in an active attack. The security updates address this attack. More information can be found here: https://msrc-blog.microsoft.com/2021/03/02/multiple-security-updates-released-for-exchange-server.</p>
+<p><strong>What is the target for this attack?</strong></p>
+<p>The initial attack in this attack chain targets an Exchange On-prem server that is able to receive untrusted connections from an external source. In addition, the Exchange server would need to be running Microsoft Exchange Server 2013, 2016, or 2019.</p>
+
+        <br>
+        <b>Mitigations:</b><br>
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp02/03/2021&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+<br>1.1&nbsp&nbsp&nbsp&nbsp02/03/2021&nbsp&nbsp&nbsp&nbsp<p>Updated one or more CVSS scores for the affected products.</p>
+
+        <br></td>
+     <td>Critical</td>
+     <td>Remote Code Execution</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an exploitability assessment of each of the vulnerabilities addressed this month. The vulnerabilities are listed in order of bulletin ID then CVE ID. Only vulnerabilities that have a severity rating of Critical or Important in the bulletins are included.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Exploitation Detected</td>
+     <td>No</td>
+     <td>Yes</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="8"><b>CVE-2021-26855</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Exchange Server 2013 Cumulative Update 23</td>
+                <td><a href="http://www.microsoft.com/download/details.aspx?familyid=31211a48-0cef-462e-bb11-c36440f80bb3" >5000871 (Security Update)</td>
+                <td>Critical</td>
+                <td>Remote Code Execution</td>
+                <td>4602269<br /></td>
+                <td>Base: 9,1<br />Temporal: 8,4<br />Vector: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N/E:F/RL:O/RC:C<br /></td>
+                <td>Maybe</td>
+                <td><a href="https://support.microsoft.com/help/5000871" >5000871</td>
+        </tr>        <tr>
+                <td>Microsoft Exchange Server 2016 Cumulative Update 18</td>
+                <td><a href="http://www.microsoft.com/download/details.aspx?familyid=31211a48-0cef-462e-bb11-c36440f80bb3" >5000871 (Security Update)</td>
+                <td>Critical</td>
+                <td>Remote Code Execution</td>
+                <td>4602269<br /></td>
+                <td>Base: 9,1<br />Temporal: 8,4<br />Vector: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N/E:F/RL:O/RC:C<br /></td>
+                <td>Maybe</td>
+                <td><a href="https://support.microsoft.com/help/5000871" >5000871</td>
+        </tr>        <tr>
+                <td>Microsoft Exchange Server 2016 Cumulative Update 19</td>
+                <td><a href="http://www.microsoft.com/download/details.aspx?familyid=31211a48-0cef-462e-bb11-c36440f80bb3" >5000871 (Security Update)</td>
+                <td>Critical</td>
+                <td>Remote Code Execution</td>
+                <td>4602269<br /></td>
+                <td>Base: 9,1<br />Temporal: 8,4<br />Vector: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N/E:F/RL:O/RC:C<br /></td>
+                <td>Maybe</td>
+                <td><a href="https://support.microsoft.com/help/5000871" >5000871</td>
+        </tr>        <tr>
+                <td>Microsoft Exchange Server 2019 Cumulative Update 7</td>
+                <td><a href="http://www.microsoft.com/download/details.aspx?familyid=31211a48-0cef-462e-bb11-c36440f80bb3" >5000871 (Security Update)</td>
+                <td>Critical</td>
+                <td>Remote Code Execution</td>
+                <td>4602269<br /></td>
+                <td>Base: 9,1<br />Temporal: 8,4<br />Vector: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N/E:F/RL:O/RC:C<br /></td>
+                <td>Maybe</td>
+                <td><a href="https://support.microsoft.com/help/5000871" >5000871</td>
+        </tr>        <tr>
+                <td>Microsoft Exchange Server 2019 Cumulative Update 8</td>
+                <td><a href="http://www.microsoft.com/download/details.aspx?familyid=31211a48-0cef-462e-bb11-c36440f80bb3" >5000871 (Security Update)</td>
+                <td>Critical</td>
+                <td>Remote Code Execution</td>
+                <td>4602269<br /></td>
+                <td>Base: 9,1<br />Temporal: 8,4<br />Vector: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N/E:F/RL:O/RC:C<br /></td>
+                <td>Maybe</td>
+                <td><a href="https://support.microsoft.com/help/5000871" >5000871</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2021-26855</td>
+     <td>Microsoft Threat Intelligence Center (MSTIC)<br><br><br><a href="https://twitter.com/orange_8361">Orange Tsai</a> from <a href="https://devco.re/">DEVCORE</a> research team<br><br><br>Volexity<br><br><br></td>
+ </tr>
+</table><h1 id="CVE-2021-26857">CVE-2021-26857 - Microsoft Exchange Server Remote Code Execution Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2021-26857">CVE-2021-26857</a>
+<br>
+<a href="http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-26857">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-26857">NVD</a>
+<p>Issuing CNA: Microsoft</p></td>
+     <td>        <b>CVE Title:</b> Microsoft Exchange Server Remote Code Execution Vulnerability
+        <br>
+        <b>CVSS:</b> <br>                        <br> <b>CVSS:3.0 Highest BaseScore:7,8/TemporalScore:7,2</b>
+                        <table class="cvss_table" border=1 cellpadding=0 width="99%">
+                            <thead>
+                                <tr>
+                                    <td colspan="7"><b>Base score metrics</b></td>
+                                </tr>
+                            </thead>
+                            <tr><td title="This metric reflects the context by which vulnerability exploitation is possible. The Base Score increases the more remote (logically, and physically) an attacker can be in order to exploit the vulnerable component."><b>Attack Vector</b></td><td title="The vulnerable component is not bound to the network stack and the attacker’s path is via read/write/execute capabilities. Either: the attacker exploits the vulnerability by accessing the target system locally (e.g., keyboard, console), or remotely (e.g., SSH); or the attacker relies on User Interaction by another person to perform actions required to exploit the vulnerability (e.g., tricking a legitimate user into opening a malicious document)"><b>Local</b></td></tr><tr><td title="This metric describes the conditions beyond the attacker’s control that must exist in order to exploit the vulnerability. Such conditions may require the collection of more information about the target or computational exceptions. The assessment of this metric excludes any requirements for user interaction in order to exploit the vulnerability. If a specific configuration is required for an attack to succeed, the Base metrics should be scored assuming the vulnerable component is in that configuration."><b>Attack Complexity</b></td><td title="Specialized access conditions or extenuating circumstances do not exist. An attacker can expect repeatable success against the vulnerable component."><b>Low</b></td></tr><tr><td title="This metric describes the level of privileges an attacker must possess before successfully exploiting the vulnerability."><b>Privileges Required</b></td><td title="The attacker is unauthorized prior to attack, and therefore does not require any access to settings or files to carry out an attack."><b>None</b></td></tr><tr><td title="This metric captures the requirement for a user, other than the attacker, to participate in the successful compromise the vulnerable component. This metric determines whether the vulnerability can be exploited solely at the will of the attacker, or whether a separate user (or user-initiated process) must participate in some manner."><b>User Interaction</b></td><td title="Successful exploitation of this vulnerability requires a user to take some action before the vulnerability can be exploited."><b>Required</b></td></tr><tr><td title="Does a successful attack impact a component other than the vulnerable component? If so, the Base Score increases and the Confidentiality, Integrity and Authentication metrics should be scored relative to the impacted component."><b>Scope</b></td><td title="An exploited vulnerability can only affect resources managed by the same security authority. In this case, the vulnerable component and the impacted component are either the same, or both are managed by the same security authority."><b>Unchanged</b></td></tr><tr><td title="This metric measures the impact to the confidentiality of the information resources managed by a software component due to a successfully exploited vulnerability. Confidentiality refers to limiting information access and disclosure to only authorized users, as well as preventing access by, or disclosure to, unauthorized ones."><b>Confidentiality</b></td><td title="There is total loss of confidentiality, resulting in all resources within the impacted component being divulged to the attacker. Alternatively, access to only some restricted information is obtained, but the disclosed information presents a direct, serious impact."><b>High</b></td></tr><tr><td title="This metric measures the impact to integrity of a successfully exploited vulnerability. Integrity refers to the trustworthiness and veracity of information."><b>Integrity</b></td><td title="There is a total loss of integrity, or a complete loss of protection. For example, the attacker is able to modify any/all files protected by the impacted component. Alternatively, only some files can be modified, but malicious modification would present a direct, serious consequence to the impacted component."><b>High</b></td></tr><tr><td title="This metric measures the impact to the availability of the impacted component resulting from a successfully exploited vulnerability. It refers to the loss of availability of the impacted component itself, such as a networked service (e.g., web, database, email). Since availability refers to the accessibility of information resources, attacks that consume network bandwidth, processor cycles, or disk space all impact the availability of an impacted component."><b>Availability</b></td><td title="There is total loss of availability, resulting in the attacker being able to fully deny access to resources in the impacted component; this loss is either sustained (while the attacker continues to deliver the attack) or persistent (the condition persists even after the attack has completed). Alternatively, the attacker has the ability to deny some availability, but the loss of availability presents a direct, serious consequence to the impacted component (e.g., the attacker cannot disrupt existing connections, but can prevent new connections; the attacker can repeatedly exploit a vulnerability that, in each instance of a successful attack, leaks a only small amount of memory, but after repeated exploitation causes a service to become completely unavailable)."><b>High</b></td></tr>
+                        </table>
+                        <table class="cvss_table" border=1 cellpadding=0 width="99%">
+                            <thead>
+                                <tr>
+                                    <td colspan="7"><b>Temporal score metrics</b></td>
+                                </tr>
+                            </thead>
+                            <tr><td title="This metric measures the likelihood of the vulnerability being attacked, and is typically based on the current state of exploit techniques, exploit code availability, or active, 'in-the-wild' exploitation."><b>Exploit Code Maturity</b></td><td title="Functional exploit code is available. The code works in most situations where the vulnerability exists."><b>Functional</b></td></tr><tr><td title="The Remediation Level of a vulnerability is an important factor for prioritization. The typical vulnerability is unpatched when initially published. Workarounds or hotfixes may offer interim remediation until an official patch or upgrade is issued. Each of these respective stages adjusts the temporal score downwards, reflecting the decreasing urgency as remediation becomes final."><b>Remediation Level</b></td><td title="A complete vendor solution is available. Either the vendor has issued an official patch, or an upgrade is available."><b>Official Fix</b></td></tr><tr><td title="This metric measures the degree of confidence in the existence of the vulnerability and the credibility of the known technical details. Sometimes only the existence of vulnerabilities are publicized, but without specific details. For example, an impact may be recognized as undesirable, but the root cause may not be known. The vulnerability may later be corroborated by research which suggests where the vulnerability may lie, though the research may not be certain. Finally, a vulnerability may be confirmed through acknowledgement by the author or vendor of the affected technology. The urgency of a vulnerability is higher when a vulnerability is known to exist with certainty. This metric also suggests the level of technical knowledge available to would-be attackers."><b>Report Confidence</b></td><td title="Detailed reports exist, or functional reproduction is possible (functional exploits may provide this). Source code is available to independently verify the assertions of the research, or the author or vendor of the affected code has confirmed the presence of the vulnerability."><b>Confirmed</b></td></tr>
+                        </table>
+        <br>
+        <b>Executive Summary:</b> <br>None
+        <br>
+        <b>FAQ:</b><br><p><strong>Is this vulnerability being used in an active attack?</strong></p>
+<p>Yes. The vulnerability described in this CVE is one of four vulnerabilities that are being exploited in an active attack. The security updates address this attack. More information can be found here: https://msrc-blog.microsoft.com/2021/03/02/multiple-security-updates-released-for-exchange-server.</p>
+<p><strong>What is the target for this attack?</strong></p>
+<p>The initial attack in this attack chain targets an Exchange On-prem server that is able to receive untrusted connections from an external source. In addition, the Exchange server would need to be running Microsoft Exchange Server 2013, 2016, or 2019.</p>
+
+        <br>
+        <b>Mitigations:</b><br>
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp02/03/2021&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+<br>1.1&nbsp&nbsp&nbsp&nbsp02/03/2021&nbsp&nbsp&nbsp&nbsp<p>Updated one or more CVSS scores for the affected products.</p>
+
+        <br></td>
+     <td>Critical</td>
+     <td>Remote Code Execution</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an exploitability assessment of each of the vulnerabilities addressed this month. The vulnerabilities are listed in order of bulletin ID then CVE ID. Only vulnerabilities that have a severity rating of Critical or Important in the bulletins are included.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Exploitation Detected</td>
+     <td>No</td>
+     <td>Yes</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="8"><b>CVE-2021-26857</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Exchange Server 2010 Service Pack 3</td>
+                <td><a href="https://www.microsoft.com/download/details.aspx?familyid=1928d772-3b23-4aa7-a71e-c8ecf2ab1801" >5000978 (Security Update)</td>
+                <td>Critical</td>
+                <td>Remote Code Execution</td>
+                <td>4593467<br /></td>
+                <td>Base: 7,8<br />Temporal: 7,2<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
+                <td>Maybe</td>
+                <td><a href="https://support.microsoft.com/help/5000978" >5000978</td>
+        </tr>        <tr>
+                <td>Microsoft Exchange Server 2013 Cumulative Update 23</td>
+                <td><a href="http://www.microsoft.com/download/details.aspx?familyid=31211a48-0cef-462e-bb11-c36440f80bb3" >5000871 (Security Update)</td>
+                <td>Critical</td>
+                <td>Remote Code Execution</td>
+                <td>4602269<br /></td>
+                <td>Base: 7,8<br />Temporal: 7,2<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
+                <td>Maybe</td>
+                <td><a href="https://support.microsoft.com/help/5000871" >5000871</td>
+        </tr>        <tr>
+                <td>Microsoft Exchange Server 2016 Cumulative Update 18</td>
+                <td><a href="http://www.microsoft.com/download/details.aspx?familyid=31211a48-0cef-462e-bb11-c36440f80bb3" >5000871 (Security Update)</td>
+                <td>Critical</td>
+                <td>Remote Code Execution</td>
+                <td>4602269<br /></td>
+                <td>Base: 7,8<br />Temporal: 7,2<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
+                <td>Maybe</td>
+                <td><a href="https://support.microsoft.com/help/5000871" >5000871</td>
+        </tr>        <tr>
+                <td>Microsoft Exchange Server 2016 Cumulative Update 19</td>
+                <td><a href="http://www.microsoft.com/download/details.aspx?familyid=31211a48-0cef-462e-bb11-c36440f80bb3" >5000871 (Security Update)</td>
+                <td>Critical</td>
+                <td>Remote Code Execution</td>
+                <td>4602269<br /></td>
+                <td>Base: 7,8<br />Temporal: 7,2<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
+                <td>Maybe</td>
+                <td><a href="https://support.microsoft.com/help/5000871" >5000871</td>
+        </tr>        <tr>
+                <td>Microsoft Exchange Server 2019 Cumulative Update 7</td>
+                <td><a href="http://www.microsoft.com/download/details.aspx?familyid=31211a48-0cef-462e-bb11-c36440f80bb3" >5000871 (Security Update)</td>
+                <td>Critical</td>
+                <td>Remote Code Execution</td>
+                <td>4602269<br /></td>
+                <td>Base: 7,8<br />Temporal: 7,2<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
+                <td>Maybe</td>
+                <td><a href="https://support.microsoft.com/help/5000871" >5000871</td>
+        </tr>        <tr>
+                <td>Microsoft Exchange Server 2019 Cumulative Update 8</td>
+                <td><a href="http://www.microsoft.com/download/details.aspx?familyid=31211a48-0cef-462e-bb11-c36440f80bb3" >5000871 (Security Update)</td>
+                <td>Critical</td>
+                <td>Remote Code Execution</td>
+                <td>4602269<br /></td>
+                <td>Base: 7,8<br />Temporal: 7,2<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
+                <td>Maybe</td>
+                <td><a href="https://support.microsoft.com/help/5000871" >5000871</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2021-26857</td>
+     <td>Microsoft Threat Intelligence Center (MSTIC)<br><br><br>Dubex<br><br><br></td>
+ </tr>
+</table><h1 id="CVE-2021-26858">CVE-2021-26858 - Microsoft Exchange Server Remote Code Execution Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2021-26858">CVE-2021-26858</a>
+<br>
+<a href="http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-26858">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-26858">NVD</a>
+<p>Issuing CNA: Microsoft</p></td>
+     <td>        <b>CVE Title:</b> Microsoft Exchange Server Remote Code Execution Vulnerability
+        <br>
+        <b>CVSS:</b> <br>                        <br> <b>CVSS:3.0 Highest BaseScore:7,8/TemporalScore:7,2</b>
+                        <table class="cvss_table" border=1 cellpadding=0 width="99%">
+                            <thead>
+                                <tr>
+                                    <td colspan="7"><b>Base score metrics</b></td>
+                                </tr>
+                            </thead>
+                            <tr><td title="This metric reflects the context by which vulnerability exploitation is possible. The Base Score increases the more remote (logically, and physically) an attacker can be in order to exploit the vulnerable component."><b>Attack Vector</b></td><td title="The vulnerable component is not bound to the network stack and the attacker’s path is via read/write/execute capabilities. Either: the attacker exploits the vulnerability by accessing the target system locally (e.g., keyboard, console), or remotely (e.g., SSH); or the attacker relies on User Interaction by another person to perform actions required to exploit the vulnerability (e.g., tricking a legitimate user into opening a malicious document)"><b>Local</b></td></tr><tr><td title="This metric describes the conditions beyond the attacker’s control that must exist in order to exploit the vulnerability. Such conditions may require the collection of more information about the target or computational exceptions. The assessment of this metric excludes any requirements for user interaction in order to exploit the vulnerability. If a specific configuration is required for an attack to succeed, the Base metrics should be scored assuming the vulnerable component is in that configuration."><b>Attack Complexity</b></td><td title="Specialized access conditions or extenuating circumstances do not exist. An attacker can expect repeatable success against the vulnerable component."><b>Low</b></td></tr><tr><td title="This metric describes the level of privileges an attacker must possess before successfully exploiting the vulnerability."><b>Privileges Required</b></td><td title="The attacker is unauthorized prior to attack, and therefore does not require any access to settings or files to carry out an attack."><b>None</b></td></tr><tr><td title="This metric captures the requirement for a user, other than the attacker, to participate in the successful compromise the vulnerable component. This metric determines whether the vulnerability can be exploited solely at the will of the attacker, or whether a separate user (or user-initiated process) must participate in some manner."><b>User Interaction</b></td><td title="Successful exploitation of this vulnerability requires a user to take some action before the vulnerability can be exploited."><b>Required</b></td></tr><tr><td title="Does a successful attack impact a component other than the vulnerable component? If so, the Base Score increases and the Confidentiality, Integrity and Authentication metrics should be scored relative to the impacted component."><b>Scope</b></td><td title="An exploited vulnerability can only affect resources managed by the same security authority. In this case, the vulnerable component and the impacted component are either the same, or both are managed by the same security authority."><b>Unchanged</b></td></tr><tr><td title="This metric measures the impact to the confidentiality of the information resources managed by a software component due to a successfully exploited vulnerability. Confidentiality refers to limiting information access and disclosure to only authorized users, as well as preventing access by, or disclosure to, unauthorized ones."><b>Confidentiality</b></td><td title="There is total loss of confidentiality, resulting in all resources within the impacted component being divulged to the attacker. Alternatively, access to only some restricted information is obtained, but the disclosed information presents a direct, serious impact."><b>High</b></td></tr><tr><td title="This metric measures the impact to integrity of a successfully exploited vulnerability. Integrity refers to the trustworthiness and veracity of information."><b>Integrity</b></td><td title="There is a total loss of integrity, or a complete loss of protection. For example, the attacker is able to modify any/all files protected by the impacted component. Alternatively, only some files can be modified, but malicious modification would present a direct, serious consequence to the impacted component."><b>High</b></td></tr><tr><td title="This metric measures the impact to the availability of the impacted component resulting from a successfully exploited vulnerability. It refers to the loss of availability of the impacted component itself, such as a networked service (e.g., web, database, email). Since availability refers to the accessibility of information resources, attacks that consume network bandwidth, processor cycles, or disk space all impact the availability of an impacted component."><b>Availability</b></td><td title="There is total loss of availability, resulting in the attacker being able to fully deny access to resources in the impacted component; this loss is either sustained (while the attacker continues to deliver the attack) or persistent (the condition persists even after the attack has completed). Alternatively, the attacker has the ability to deny some availability, but the loss of availability presents a direct, serious consequence to the impacted component (e.g., the attacker cannot disrupt existing connections, but can prevent new connections; the attacker can repeatedly exploit a vulnerability that, in each instance of a successful attack, leaks a only small amount of memory, but after repeated exploitation causes a service to become completely unavailable)."><b>High</b></td></tr>
+                        </table>
+                        <table class="cvss_table" border=1 cellpadding=0 width="99%">
+                            <thead>
+                                <tr>
+                                    <td colspan="7"><b>Temporal score metrics</b></td>
+                                </tr>
+                            </thead>
+                            <tr><td title="This metric measures the likelihood of the vulnerability being attacked, and is typically based on the current state of exploit techniques, exploit code availability, or active, 'in-the-wild' exploitation."><b>Exploit Code Maturity</b></td><td title="Functional exploit code is available. The code works in most situations where the vulnerability exists."><b>Functional</b></td></tr><tr><td title="The Remediation Level of a vulnerability is an important factor for prioritization. The typical vulnerability is unpatched when initially published. Workarounds or hotfixes may offer interim remediation until an official patch or upgrade is issued. Each of these respective stages adjusts the temporal score downwards, reflecting the decreasing urgency as remediation becomes final."><b>Remediation Level</b></td><td title="A complete vendor solution is available. Either the vendor has issued an official patch, or an upgrade is available."><b>Official Fix</b></td></tr><tr><td title="This metric measures the degree of confidence in the existence of the vulnerability and the credibility of the known technical details. Sometimes only the existence of vulnerabilities are publicized, but without specific details. For example, an impact may be recognized as undesirable, but the root cause may not be known. The vulnerability may later be corroborated by research which suggests where the vulnerability may lie, though the research may not be certain. Finally, a vulnerability may be confirmed through acknowledgement by the author or vendor of the affected technology. The urgency of a vulnerability is higher when a vulnerability is known to exist with certainty. This metric also suggests the level of technical knowledge available to would-be attackers."><b>Report Confidence</b></td><td title="Detailed reports exist, or functional reproduction is possible (functional exploits may provide this). Source code is available to independently verify the assertions of the research, or the author or vendor of the affected code has confirmed the presence of the vulnerability."><b>Confirmed</b></td></tr>
+                        </table>
+        <br>
+        <b>Executive Summary:</b> <br>None
+        <br>
+        <b>FAQ:</b><br><p><strong>Is this vulnerability being used in an active attack?</strong></p>
+<p>Yes. The vulnerability described in this CVE is one of four vulnerabilities that are being exploited in an active attack. The security updates address this attack. More information can be found here: https://msrc-blog.microsoft.com/2021/03/02/multiple-security-updates-released-for-exchange-server.</p>
+<p><strong>What is the target for this attack?</strong></p>
+<p>The initial attack in this attack chain targets an Exchange On-prem server that is able to receive untrusted connections from an external source. In addition, the Exchange server would need to be running Microsoft Exchange Server 2013, 2016, or 2019.</p>
+
+        <br>
+        <b>Mitigations:</b><br>
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp02/03/2021&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+<br>1.1&nbsp&nbsp&nbsp&nbsp02/03/2021&nbsp&nbsp&nbsp&nbsp<p>Updated one or more CVSS scores for the affected products.</p>
+
+        <br></td>
+     <td>Important</td>
+     <td>Remote Code Execution</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an exploitability assessment of each of the vulnerabilities addressed this month. The vulnerabilities are listed in order of bulletin ID then CVE ID. Only vulnerabilities that have a severity rating of Critical or Important in the bulletins are included.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Exploitation Detected</td>
+     <td>No</td>
+     <td>Yes</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="8"><b>CVE-2021-26858</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Exchange Server 2013 Cumulative Update 23</td>
+                <td><a href="http://www.microsoft.com/download/details.aspx?familyid=1255ecd7-b187-4839-96c9-1fc5e05df7b6" >5000871 (Security Update)</td>
+                <td>Important</td>
+                <td>Remote Code Execution</td>
+                <td>4593466<br /></td>
+                <td>Base: 7,8<br />Temporal: 7,2<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
+                <td>Maybe</td>
+                <td><a href="https://support.microsoft.com/help/5000871" >5000871</td>
+        </tr>        <tr>
+                <td>Microsoft Exchange Server 2016 Cumulative Update 18</td>
+                <td><a href="http://www.microsoft.com/download/details.aspx?familyid=1255ecd7-b187-4839-96c9-1fc5e05df7b6" >5000871 (Security Update)</td>
+                <td>Important</td>
+                <td>Remote Code Execution</td>
+                <td>4593466<br /></td>
+                <td>Base: 7,8<br />Temporal: 7,2<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
+                <td>Maybe</td>
+                <td><a href="https://support.microsoft.com/help/5000871" >5000871</td>
+        </tr>        <tr>
+                <td>Microsoft Exchange Server 2016 Cumulative Update 19</td>
+                <td><a href="http://www.microsoft.com/download/details.aspx?familyid=1255ecd7-b187-4839-96c9-1fc5e05df7b6" >5000871 (Security Update)</td>
+                <td>Important</td>
+                <td>Remote Code Execution</td>
+                <td>4593466<br /></td>
+                <td>Base: 7,8<br />Temporal: 7,2<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
+                <td>Maybe</td>
+                <td><a href="https://support.microsoft.com/help/5000871" >5000871</td>
+        </tr>        <tr>
+                <td>Microsoft Exchange Server 2019 Cumulative Update 7</td>
+                <td><a href="http://www.microsoft.com/download/details.aspx?familyid=1255ecd7-b187-4839-96c9-1fc5e05df7b6" >5000871 (Security Update)</td>
+                <td>Important</td>
+                <td>Remote Code Execution</td>
+                <td>4593466<br /></td>
+                <td>Base: 7,8<br />Temporal: 7,2<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
+                <td>Maybe</td>
+                <td><a href="https://support.microsoft.com/help/5000871" >5000871</td>
+        </tr>        <tr>
+                <td>Microsoft Exchange Server 2019 Cumulative Update 8</td>
+                <td><a href="http://www.microsoft.com/download/details.aspx?familyid=1255ecd7-b187-4839-96c9-1fc5e05df7b6" >5000871 (Security Update)</td>
+                <td>Important</td>
+                <td>Remote Code Execution</td>
+                <td>4593466<br /></td>
+                <td>Base: 7,8<br />Temporal: 7,2<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
+                <td>Maybe</td>
+                <td><a href="https://support.microsoft.com/help/5000871" >5000871</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2021-26858</td>
+     <td>Microsoft Threat Intelligence Center (MSTIC)<br><br><br></td>
+ </tr>
+</table><h1 id="CVE-2021-27065">CVE-2021-27065 - Microsoft Exchange Server Remote Code Execution Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2021-27065">CVE-2021-27065</a>
+<br>
+<a href="http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-27065">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-27065">NVD</a>
+<p>Issuing CNA: Microsoft</p></td>
+     <td>        <b>CVE Title:</b> Microsoft Exchange Server Remote Code Execution Vulnerability
+        <br>
+        <b>CVSS:</b> <br>                        <br> <b>CVSS:3.0 Highest BaseScore:7,8/TemporalScore:7,2</b>
+                        <table class="cvss_table" border=1 cellpadding=0 width="99%">
+                            <thead>
+                                <tr>
+                                    <td colspan="7"><b>Base score metrics</b></td>
+                                </tr>
+                            </thead>
+                            <tr><td title="This metric reflects the context by which vulnerability exploitation is possible. The Base Score increases the more remote (logically, and physically) an attacker can be in order to exploit the vulnerable component."><b>Attack Vector</b></td><td title="The vulnerable component is not bound to the network stack and the attacker’s path is via read/write/execute capabilities. Either: the attacker exploits the vulnerability by accessing the target system locally (e.g., keyboard, console), or remotely (e.g., SSH); or the attacker relies on User Interaction by another person to perform actions required to exploit the vulnerability (e.g., tricking a legitimate user into opening a malicious document)"><b>Local</b></td></tr><tr><td title="This metric describes the conditions beyond the attacker’s control that must exist in order to exploit the vulnerability. Such conditions may require the collection of more information about the target or computational exceptions. The assessment of this metric excludes any requirements for user interaction in order to exploit the vulnerability. If a specific configuration is required for an attack to succeed, the Base metrics should be scored assuming the vulnerable component is in that configuration."><b>Attack Complexity</b></td><td title="Specialized access conditions or extenuating circumstances do not exist. An attacker can expect repeatable success against the vulnerable component."><b>Low</b></td></tr><tr><td title="This metric describes the level of privileges an attacker must possess before successfully exploiting the vulnerability."><b>Privileges Required</b></td><td title="The attacker is unauthorized prior to attack, and therefore does not require any access to settings or files to carry out an attack."><b>None</b></td></tr><tr><td title="This metric captures the requirement for a user, other than the attacker, to participate in the successful compromise the vulnerable component. This metric determines whether the vulnerability can be exploited solely at the will of the attacker, or whether a separate user (or user-initiated process) must participate in some manner."><b>User Interaction</b></td><td title="Successful exploitation of this vulnerability requires a user to take some action before the vulnerability can be exploited."><b>Required</b></td></tr><tr><td title="Does a successful attack impact a component other than the vulnerable component? If so, the Base Score increases and the Confidentiality, Integrity and Authentication metrics should be scored relative to the impacted component."><b>Scope</b></td><td title="An exploited vulnerability can only affect resources managed by the same security authority. In this case, the vulnerable component and the impacted component are either the same, or both are managed by the same security authority."><b>Unchanged</b></td></tr><tr><td title="This metric measures the impact to the confidentiality of the information resources managed by a software component due to a successfully exploited vulnerability. Confidentiality refers to limiting information access and disclosure to only authorized users, as well as preventing access by, or disclosure to, unauthorized ones."><b>Confidentiality</b></td><td title="There is total loss of confidentiality, resulting in all resources within the impacted component being divulged to the attacker. Alternatively, access to only some restricted information is obtained, but the disclosed information presents a direct, serious impact."><b>High</b></td></tr><tr><td title="This metric measures the impact to integrity of a successfully exploited vulnerability. Integrity refers to the trustworthiness and veracity of information."><b>Integrity</b></td><td title="There is a total loss of integrity, or a complete loss of protection. For example, the attacker is able to modify any/all files protected by the impacted component. Alternatively, only some files can be modified, but malicious modification would present a direct, serious consequence to the impacted component."><b>High</b></td></tr><tr><td title="This metric measures the impact to the availability of the impacted component resulting from a successfully exploited vulnerability. It refers to the loss of availability of the impacted component itself, such as a networked service (e.g., web, database, email). Since availability refers to the accessibility of information resources, attacks that consume network bandwidth, processor cycles, or disk space all impact the availability of an impacted component."><b>Availability</b></td><td title="There is total loss of availability, resulting in the attacker being able to fully deny access to resources in the impacted component; this loss is either sustained (while the attacker continues to deliver the attack) or persistent (the condition persists even after the attack has completed). Alternatively, the attacker has the ability to deny some availability, but the loss of availability presents a direct, serious consequence to the impacted component (e.g., the attacker cannot disrupt existing connections, but can prevent new connections; the attacker can repeatedly exploit a vulnerability that, in each instance of a successful attack, leaks a only small amount of memory, but after repeated exploitation causes a service to become completely unavailable)."><b>High</b></td></tr>
+                        </table>
+                        <table class="cvss_table" border=1 cellpadding=0 width="99%">
+                            <thead>
+                                <tr>
+                                    <td colspan="7"><b>Temporal score metrics</b></td>
+                                </tr>
+                            </thead>
+                            <tr><td title="This metric measures the likelihood of the vulnerability being attacked, and is typically based on the current state of exploit techniques, exploit code availability, or active, 'in-the-wild' exploitation."><b>Exploit Code Maturity</b></td><td title="Functional exploit code is available. The code works in most situations where the vulnerability exists."><b>Functional</b></td></tr><tr><td title="The Remediation Level of a vulnerability is an important factor for prioritization. The typical vulnerability is unpatched when initially published. Workarounds or hotfixes may offer interim remediation until an official patch or upgrade is issued. Each of these respective stages adjusts the temporal score downwards, reflecting the decreasing urgency as remediation becomes final."><b>Remediation Level</b></td><td title="A complete vendor solution is available. Either the vendor has issued an official patch, or an upgrade is available."><b>Official Fix</b></td></tr><tr><td title="This metric measures the degree of confidence in the existence of the vulnerability and the credibility of the known technical details. Sometimes only the existence of vulnerabilities are publicized, but without specific details. For example, an impact may be recognized as undesirable, but the root cause may not be known. The vulnerability may later be corroborated by research which suggests where the vulnerability may lie, though the research may not be certain. Finally, a vulnerability may be confirmed through acknowledgement by the author or vendor of the affected technology. The urgency of a vulnerability is higher when a vulnerability is known to exist with certainty. This metric also suggests the level of technical knowledge available to would-be attackers."><b>Report Confidence</b></td><td title="Detailed reports exist, or functional reproduction is possible (functional exploits may provide this). Source code is available to independently verify the assertions of the research, or the author or vendor of the affected code has confirmed the presence of the vulnerability."><b>Confirmed</b></td></tr>
+                        </table>
+        <br>
+        <b>Executive Summary:</b> <br>None
+        <br>
+        <b>FAQ:</b><br><p><strong>Is this vulnerability being used in an active attack?</strong></p>
+<p>Yes. The vulnerability described in this CVE is one of four vulnerabilities that are being exploited in an active attack. The security updates address this attack. More information can be found here: https://msrc-blog.microsoft.com/2021/03/02/multiple-security-updates-released-for-exchange-server.</p>
+<p><strong>What is the target for this attack?</strong></p>
+<p>The initial attack in this attack chain targets an Exchange On-prem server that is able to receive untrusted connections from an external source. In addition, the Exchange server would need to be running Microsoft Exchange Server 2013, 2016, or 2019.</p>
+
+        <br>
+        <b>Mitigations:</b><br>
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp02/03/2021&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+<br>1.1&nbsp&nbsp&nbsp&nbsp02/03/2021&nbsp&nbsp&nbsp&nbsp<p>Updated one or more CVSS scores for the affected products.</p>
+
+        <br></td>
+     <td>Critical</td>
+     <td>Remote Code Execution</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an exploitability assessment of each of the vulnerabilities addressed this month. The vulnerabilities are listed in order of bulletin ID then CVE ID. Only vulnerabilities that have a severity rating of Critical or Important in the bulletins are included.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Exploitation Detected</td>
+     <td>No</td>
+     <td>Yes</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="8"><b>CVE-2021-27065</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Exchange Server 2013 Cumulative Update 23</td>
+                <td><a href="http://www.microsoft.com/download/details.aspx?familyid=1255ecd7-b187-4839-96c9-1fc5e05df7b6" >5000871 (Security Update)</td>
+                <td>Critical</td>
+                <td>Remote Code Execution</td>
+                <td>4593466<br /></td>
+                <td>Base: 7,8<br />Temporal: 7,2<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
+                <td>Maybe</td>
+                <td><a href="https://support.microsoft.com/help/5000871" >5000871</td>
+        </tr>        <tr>
+                <td>Microsoft Exchange Server 2016 Cumulative Update 18</td>
+                <td><a href="http://www.microsoft.com/download/details.aspx?familyid=1255ecd7-b187-4839-96c9-1fc5e05df7b6" >5000871 (Security Update)</td>
+                <td>Critical</td>
+                <td>Remote Code Execution</td>
+                <td>4593466<br /></td>
+                <td>Base: 7,8<br />Temporal: 7,2<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
+                <td>Maybe</td>
+                <td><a href="https://support.microsoft.com/help/5000871" >5000871</td>
+        </tr>        <tr>
+                <td>Microsoft Exchange Server 2016 Cumulative Update 19</td>
+                <td><a href="http://www.microsoft.com/download/details.aspx?familyid=1255ecd7-b187-4839-96c9-1fc5e05df7b6" >5000871 (Security Update)</td>
+                <td>Critical</td>
+                <td>Remote Code Execution</td>
+                <td>4593466<br /></td>
+                <td>Base: 7,8<br />Temporal: 7,2<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
+                <td>Maybe</td>
+                <td><a href="https://support.microsoft.com/help/5000871" >5000871</td>
+        </tr>        <tr>
+                <td>Microsoft Exchange Server 2019 Cumulative Update 7</td>
+                <td><a href="http://www.microsoft.com/download/details.aspx?familyid=1255ecd7-b187-4839-96c9-1fc5e05df7b6" >5000871 (Security Update)</td>
+                <td>Critical</td>
+                <td>Remote Code Execution</td>
+                <td>4593466<br /></td>
+                <td>Base: 7,8<br />Temporal: 7,2<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
+                <td>Maybe</td>
+                <td><a href="https://support.microsoft.com/help/5000871" >5000871</td>
+        </tr>        <tr>
+                <td>Microsoft Exchange Server 2019 Cumulative Update 8</td>
+                <td><a href="http://www.microsoft.com/download/details.aspx?familyid=1255ecd7-b187-4839-96c9-1fc5e05df7b6" >5000871 (Security Update)</td>
+                <td>Critical</td>
+                <td>Remote Code Execution</td>
+                <td>4593466<br /></td>
+                <td>Base: 7,8<br />Temporal: 7,2<br />Vector: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
+                <td>Maybe</td>
+                <td><a href="https://support.microsoft.com/help/5000871" >5000871</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2021-27065</td>
+     <td>Volexity<br><br><br><a href="https://twitter.com/orange_8361">Orange Tsai</a> from <a href="https://devco.re/">DEVCORE</a> research team<br><br><br>Microsoft Threat Intelligence Center (MSTIC)<br><br><br></td>
+ </tr>
+</table><h1 id="CVE-2021-27078">CVE-2021-27078 - Microsoft Exchange Server Remote Code Execution Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2021-27078">CVE-2021-27078</a>
+<br>
+<a href="http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-27078">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-27078">NVD</a>
+<p>Issuing CNA: Microsoft</p></td>
+     <td>        <b>CVE Title:</b> Microsoft Exchange Server Remote Code Execution Vulnerability
+        <br>
+        <b>CVSS:</b> <br>                        <br> <b>CVSS:3.0 Highest BaseScore:9,1/TemporalScore:8,2</b>
+                        <table class="cvss_table" border=1 cellpadding=0 width="99%">
+                            <thead>
+                                <tr>
+                                    <td colspan="7"><b>Base score metrics</b></td>
+                                </tr>
+                            </thead>
+                            <tr><td title="This metric reflects the context by which vulnerability exploitation is possible. The Base Score increases the more remote (logically, and physically) an attacker can be in order to exploit the vulnerable component."><b>Attack Vector</b></td><td title="The vulnerable component is bound to the network stack and the set of possible attackers extends beyond the other options listed, up to and including the entire Internet. Such a vulnerability is often termed 'remotely exploitable' and can be thought of as an attack being exploitable at the protocol level one or more network hops away (e.g., across one or more routers)."><b>Network</b></td></tr><tr><td title="This metric describes the conditions beyond the attacker’s control that must exist in order to exploit the vulnerability. Such conditions may require the collection of more information about the target or computational exceptions. The assessment of this metric excludes any requirements for user interaction in order to exploit the vulnerability. If a specific configuration is required for an attack to succeed, the Base metrics should be scored assuming the vulnerable component is in that configuration."><b>Attack Complexity</b></td><td title="Specialized access conditions or extenuating circumstances do not exist. An attacker can expect repeatable success against the vulnerable component."><b>Low</b></td></tr><tr><td title="This metric describes the level of privileges an attacker must possess before successfully exploiting the vulnerability."><b>Privileges Required</b></td><td title="The attacker is authorized with (i.e., requires) privileges that provide significant (e.g., administrative) control over the vulnerable component that could affect component-wide settings and files."><b>High</b></td></tr><tr><td title="This metric captures the requirement for a user, other than the attacker, to participate in the successful compromise the vulnerable component. This metric determines whether the vulnerability can be exploited solely at the will of the attacker, or whether a separate user (or user-initiated process) must participate in some manner."><b>User Interaction</b></td><td title="The vulnerable system can be exploited without any interaction from any user."><b>None</b></td></tr><tr><td title="Does a successful attack impact a component other than the vulnerable component? If so, the Base Score increases and the Confidentiality, Integrity and Authentication metrics should be scored relative to the impacted component."><b>Scope</b></td><td title="An exploited vulnerability can affect resources beyond the security scope managed by the security authority of the vulnerable component. In this case, the vulnerable component and the impacted component are different and managed by different security authorities."><b>Changed</b></td></tr><tr><td title="This metric measures the impact to the confidentiality of the information resources managed by a software component due to a successfully exploited vulnerability. Confidentiality refers to limiting information access and disclosure to only authorized users, as well as preventing access by, or disclosure to, unauthorized ones."><b>Confidentiality</b></td><td title="There is total loss of confidentiality, resulting in all resources within the impacted component being divulged to the attacker. Alternatively, access to only some restricted information is obtained, but the disclosed information presents a direct, serious impact."><b>High</b></td></tr><tr><td title="This metric measures the impact to integrity of a successfully exploited vulnerability. Integrity refers to the trustworthiness and veracity of information."><b>Integrity</b></td><td title="There is a total loss of integrity, or a complete loss of protection. For example, the attacker is able to modify any/all files protected by the impacted component. Alternatively, only some files can be modified, but malicious modification would present a direct, serious consequence to the impacted component."><b>High</b></td></tr><tr><td title="This metric measures the impact to the availability of the impacted component resulting from a successfully exploited vulnerability. It refers to the loss of availability of the impacted component itself, such as a networked service (e.g., web, database, email). Since availability refers to the accessibility of information resources, attacks that consume network bandwidth, processor cycles, or disk space all impact the availability of an impacted component."><b>Availability</b></td><td title="There is total loss of availability, resulting in the attacker being able to fully deny access to resources in the impacted component; this loss is either sustained (while the attacker continues to deliver the attack) or persistent (the condition persists even after the attack has completed). Alternatively, the attacker has the ability to deny some availability, but the loss of availability presents a direct, serious consequence to the impacted component (e.g., the attacker cannot disrupt existing connections, but can prevent new connections; the attacker can repeatedly exploit a vulnerability that, in each instance of a successful attack, leaks a only small amount of memory, but after repeated exploitation causes a service to become completely unavailable)."><b>High</b></td></tr>
+                        </table>
+                        <table class="cvss_table" border=1 cellpadding=0 width="99%">
+                            <thead>
+                                <tr>
+                                    <td colspan="7"><b>Temporal score metrics</b></td>
+                                </tr>
+                            </thead>
+                            <tr><td title="This metric measures the likelihood of the vulnerability being attacked, and is typically based on the current state of exploit techniques, exploit code availability, or active, 'in-the-wild' exploitation."><b>Exploit Code Maturity</b></td><td title="Proof-of-concept exploit code is available, or an attack demonstration is not practical for most systems. The code or technique is not functional in all situations and may require substantial modification by a skilled attacker."><b>Proof-of-Concept</b></td></tr><tr><td title="The Remediation Level of a vulnerability is an important factor for prioritization. The typical vulnerability is unpatched when initially published. Workarounds or hotfixes may offer interim remediation until an official patch or upgrade is issued. Each of these respective stages adjusts the temporal score downwards, reflecting the decreasing urgency as remediation becomes final."><b>Remediation Level</b></td><td title="A complete vendor solution is available. Either the vendor has issued an official patch, or an upgrade is available."><b>Official Fix</b></td></tr><tr><td title="This metric measures the degree of confidence in the existence of the vulnerability and the credibility of the known technical details. Sometimes only the existence of vulnerabilities are publicized, but without specific details. For example, an impact may be recognized as undesirable, but the root cause may not be known. The vulnerability may later be corroborated by research which suggests where the vulnerability may lie, though the research may not be certain. Finally, a vulnerability may be confirmed through acknowledgement by the author or vendor of the affected technology. The urgency of a vulnerability is higher when a vulnerability is known to exist with certainty. This metric also suggests the level of technical knowledge available to would-be attackers."><b>Report Confidence</b></td><td title="Detailed reports exist, or functional reproduction is possible (functional exploits may provide this). Source code is available to independently verify the assertions of the research, or the author or vendor of the affected code has confirmed the presence of the vulnerability."><b>Confirmed</b></td></tr>
+                        </table>
+        <br>
+        <b>Executive Summary:</b> <br>None
+        <br>
+        <b>FAQ:</b><br>None
+        <br>
+        <b>Mitigations:</b><br>None
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp02/03/2021&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Important</td>
+     <td>Remote Code Execution</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an exploitability assessment of each of the vulnerabilities addressed this month. The vulnerabilities are listed in order of bulletin ID then CVE ID. Only vulnerabilities that have a severity rating of Critical or Important in the bulletins are included.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Exploitation Less Likely</td>
+     <td>No</td>
+     <td>No</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="8"><b>CVE-2021-27078</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Exchange Server 2013 Cumulative Update 23</td>
+                <td><a href="http://www.microsoft.com/download/details.aspx?familyid=31211a48-0cef-462e-bb11-c36440f80bb3" >5000871 (Security Update)</td>
+                <td>Important</td>
+                <td>Remote Code Execution</td>
+                <td>4602269<br /></td>
+                <td>Base: 9,1<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
+                <td>Maybe</td>
+                <td><a href="https://support.microsoft.com/help/5000871" >5000871</td>
+        </tr>        <tr>
+                <td>Microsoft Exchange Server 2016 Cumulative Update 18</td>
+                <td><a href="http://www.microsoft.com/download/details.aspx?familyid=31211a48-0cef-462e-bb11-c36440f80bb3" >5000871 (Security Update)</td>
+                <td>Important</td>
+                <td>Remote Code Execution</td>
+                <td>4602269<br /></td>
+                <td>Base: 9,1<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
+                <td>Maybe</td>
+                <td><a href="https://support.microsoft.com/help/5000871" >5000871</td>
+        </tr>        <tr>
+                <td>Microsoft Exchange Server 2016 Cumulative Update 19</td>
+                <td><a href="http://www.microsoft.com/download/details.aspx?familyid=31211a48-0cef-462e-bb11-c36440f80bb3" >5000871 (Security Update)</td>
+                <td>Important</td>
+                <td>Remote Code Execution</td>
+                <td>4602269<br /></td>
+                <td>Base: 9,1<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
+                <td>Maybe</td>
+                <td><a href="https://support.microsoft.com/help/5000871" >5000871</td>
+        </tr>        <tr>
+                <td>Microsoft Exchange Server 2019 Cumulative Update 7</td>
+                <td><a href="http://www.microsoft.com/download/details.aspx?familyid=31211a48-0cef-462e-bb11-c36440f80bb3" >5000871 (Security Update)</td>
+                <td>Important</td>
+                <td>Remote Code Execution</td>
+                <td>4602269<br /></td>
+                <td>Base: 9,1<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
+                <td>Maybe</td>
+                <td><a href="https://support.microsoft.com/help/5000871" >5000871</td>
+        </tr>        <tr>
+                <td>Microsoft Exchange Server 2019 Cumulative Update 8</td>
+                <td><a href="http://www.microsoft.com/download/details.aspx?familyid=31211a48-0cef-462e-bb11-c36440f80bb3" >5000871 (Security Update)</td>
+                <td>Important</td>
+                <td>Remote Code Execution</td>
+                <td>4602269<br /></td>
+                <td>Base: 9,1<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H/E:P/RL:O/RC:C<br /></td>
+                <td>Maybe</td>
+                <td><a href="https://support.microsoft.com/help/5000871" >5000871</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2021-27078</td>
+     <td>Steven Seeley (mr_me) of Source Incite<br><br><br></td>
+ </tr>
+</table>
+</div>
+<br>
+ </body>
+</html>
