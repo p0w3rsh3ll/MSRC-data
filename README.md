@@ -25,6 +25,9 @@ See the MSRC blog posts:
 There isn't any way to read previous release notes where known issues are listed.
 Here's my list:
 
+### May 2021
+https://msrc.microsoft.com/update-guide/releaseNote/2021-May
+
 ### April 2021
 https://msrc.microsoft.com/update-guide/releaseNote/2021-Apr
 
