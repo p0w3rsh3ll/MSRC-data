@@ -1,0 +1,884 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cvrf:cvrfdoc xmlns:cpe-lang="http://cpe.mitre.org/language/2.0" xmlns:scap-core="https://scap.nist.gov/schema/scap-core/1.0" xmlns:cvrf-common="http://www.icasi.org/CVRF/schema/common/1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:prod="http://www.icasi.org/CVRF/schema/prod/1.1" xmlns:cvssv2="https://scap.nist.gov/schema/cvss-v2/1.0" xmlns:vuln="http://www.icasi.org/CVRF/schema/vuln/1.1" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:cvrf="http://www.icasi.org/CVRF/schema/cvrf/1.1">
+  <cvrf:DocumentTitle>July 1, 2021 CVE Release</cvrf:DocumentTitle>
+  <cvrf:DocumentType>Security Update</cvrf:DocumentType>
+  <cvrf:DocumentPublisher Type="Vendor">
+    <cvrf:ContactDetails>secure@microsoft.com</cvrf:ContactDetails>
+    <cvrf:IssuingAuthority>The Microsoft Security Response Center (MSRC) identifies, monitors, resolves, and responds to security incidents and Microsoft software security vulnerabilities. For more information, see http://www.microsoft.com/security/msrc.</cvrf:IssuingAuthority>
+  </cvrf:DocumentPublisher>
+  <cvrf:DocumentTracking>
+    <cvrf:Identification>
+      <cvrf:ID>2021-Jul</cvrf:ID>
+      <cvrf:Alias>2021-Jul</cvrf:Alias>
+    </cvrf:Identification>
+    <cvrf:Status>Final</cvrf:Status>
+    <cvrf:Version>1.0</cvrf:Version>
+    <cvrf:RevisionHistory>
+      <cvrf:Revision>
+        <cvrf:Number>3</cvrf:Number>
+        <cvrf:Date>2021-07-03T07:00:00Z</cvrf:Date>
+        <cvrf:Description>July 1, 2021 CVE Release</cvrf:Description>
+      </cvrf:Revision>
+    </cvrf:RevisionHistory>
+    <cvrf:InitialReleaseDate>2021-07-01T07:00:00Z</cvrf:InitialReleaseDate>
+    <cvrf:CurrentReleaseDate>2021-07-03T07:00:00Z</cvrf:CurrentReleaseDate>
+  </cvrf:DocumentTracking>
+  <cvrf:DocumentNotes>
+    <cvrf:Note Title="Release Notes" Audience="Public" Type="Details" Ordinal="0">&lt;p&gt;July 1, 2021 CVE Release&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-34527"&gt;CVE-2021-34527&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</cvrf:Note>
+    <cvrf:Note Title="Legal Disclaimer" Audience="Public" Type="Legal Disclaimer" Ordinal="1">The information provided in the Microsoft Knowledge Base is provided "as is" without warranty of any kind. Microsoft disclaims all warranties, either express or implied, including the warranties of merchantability and fitness for a particular purpose. In no event shall Microsoft Corporation or its suppliers be liable for any damages whatsoever including direct, indirect, incidental, consequential, loss of business profits or special damages, even if Microsoft Corporation or its suppliers have been advised of the possibility of such damages. Some states do not allow the exclusion or limitation of liability for consequential or incidental damages so the foregoing limitation may not apply.</cvrf:Note>
+  </cvrf:DocumentNotes>
+  <prod:ProductTree>
+    <prod:Branch Type="Vendor" Name="Microsoft">
+      <prod:Branch Type="Product Family" Name="Windows">
+        <prod:FullProductName ProductID="11568">Windows 10 Version 1809 for 32-bit Systems</prod:FullProductName>
+        <prod:FullProductName ProductID="11569">Windows 10 Version 1809 for x64-based Systems</prod:FullProductName>
+        <prod:FullProductName ProductID="11570">Windows 10 Version 1809 for ARM64-based Systems</prod:FullProductName>
+        <prod:FullProductName ProductID="11571">Windows Server 2019</prod:FullProductName>
+        <prod:FullProductName ProductID="11572">Windows Server 2019  (Server Core installation)</prod:FullProductName>
+        <prod:FullProductName ProductID="11712">Windows 10 Version 1909 for 32-bit Systems</prod:FullProductName>
+        <prod:FullProductName ProductID="11713">Windows 10 Version 1909 for x64-based Systems</prod:FullProductName>
+        <prod:FullProductName ProductID="11714">Windows 10 Version 1909 for ARM64-based Systems</prod:FullProductName>
+        <prod:FullProductName ProductID="11715">Windows Server, version 1909 (Server Core installation)</prod:FullProductName>
+        <prod:FullProductName ProductID="11896">Windows 10 Version 21H1 for x64-based Systems</prod:FullProductName>
+        <prod:FullProductName ProductID="11897">Windows 10 Version 21H1 for ARM64-based Systems</prod:FullProductName>
+        <prod:FullProductName ProductID="11898">Windows 10 Version 21H1 for 32-bit Systems</prod:FullProductName>
+        <prod:FullProductName ProductID="11766">Windows 10 Version 2004 for 32-bit Systems</prod:FullProductName>
+        <prod:FullProductName ProductID="11767">Windows 10 Version 2004 for ARM64-based Systems</prod:FullProductName>
+        <prod:FullProductName ProductID="11768">Windows 10 Version 2004 for x64-based Systems</prod:FullProductName>
+        <prod:FullProductName ProductID="11769">Windows Server, version 2004 (Server Core installation)</prod:FullProductName>
+        <prod:FullProductName ProductID="11800">Windows 10 Version 20H2 for x64-based Systems</prod:FullProductName>
+        <prod:FullProductName ProductID="11801">Windows 10 Version 20H2 for 32-bit Systems</prod:FullProductName>
+        <prod:FullProductName ProductID="11802">Windows 10 Version 20H2 for ARM64-based Systems</prod:FullProductName>
+        <prod:FullProductName ProductID="11803">Windows Server, version 20H2 (Server Core Installation)</prod:FullProductName>
+        <prod:FullProductName ProductID="10729">Windows 10 for 32-bit Systems</prod:FullProductName>
+        <prod:FullProductName ProductID="10735">Windows 10 for x64-based Systems</prod:FullProductName>
+        <prod:FullProductName ProductID="10852">Windows 10 Version 1607 for 32-bit Systems</prod:FullProductName>
+        <prod:FullProductName ProductID="10853">Windows 10 Version 1607 for x64-based Systems</prod:FullProductName>
+        <prod:FullProductName ProductID="10816">Windows Server 2016</prod:FullProductName>
+        <prod:FullProductName ProductID="10855">Windows Server 2016  (Server Core installation)</prod:FullProductName>
+        <prod:FullProductName ProductID="10481">Windows 8.1 for 32-bit systems</prod:FullProductName>
+        <prod:FullProductName ProductID="10482">Windows 8.1 for x64-based systems</prod:FullProductName>
+        <prod:FullProductName ProductID="10484">Windows RT 8.1</prod:FullProductName>
+        <prod:FullProductName ProductID="10378">Windows Server 2012</prod:FullProductName>
+        <prod:FullProductName ProductID="10379">Windows Server 2012 (Server Core installation)</prod:FullProductName>
+        <prod:FullProductName ProductID="10483">Windows Server 2012 R2</prod:FullProductName>
+        <prod:FullProductName ProductID="10543">Windows Server 2012 R2 (Server Core installation)</prod:FullProductName>
+      </prod:Branch>
+      <prod:Branch Type="Product Family" Name="ESU">
+        <prod:FullProductName ProductID="10047">Windows 7 for 32-bit Systems Service Pack 1</prod:FullProductName>
+        <prod:FullProductName ProductID="10048">Windows 7 for x64-based Systems Service Pack 1</prod:FullProductName>
+        <prod:FullProductName ProductID="9312">Windows Server 2008 for 32-bit Systems Service Pack 2</prod:FullProductName>
+        <prod:FullProductName ProductID="10287">Windows Server 2008 for 32-bit Systems Service Pack 2 (Server Core installation)</prod:FullProductName>
+        <prod:FullProductName ProductID="9318">Windows Server 2008 for x64-based Systems Service Pack 2</prod:FullProductName>
+        <prod:FullProductName ProductID="9344">Windows Server 2008 for x64-based Systems Service Pack 2 (Server Core installation)</prod:FullProductName>
+        <prod:FullProductName ProductID="10051">Windows Server 2008 R2 for x64-based Systems Service Pack 1</prod:FullProductName>
+        <prod:FullProductName ProductID="10049">Windows Server 2008 R2 for x64-based Systems Service Pack 1 (Server Core installation)</prod:FullProductName>
+      </prod:Branch>
+    </prod:Branch>
+    <prod:FullProductName ProductID="10047">Windows 7 for 32-bit Systems Service Pack 1</prod:FullProductName>
+    <prod:FullProductName ProductID="10048">Windows 7 for x64-based Systems Service Pack 1</prod:FullProductName>
+    <prod:FullProductName ProductID="10049">Windows Server 2008 R2 for x64-based Systems Service Pack 1 (Server Core installation)</prod:FullProductName>
+    <prod:FullProductName ProductID="10051">Windows Server 2008 R2 for x64-based Systems Service Pack 1</prod:FullProductName>
+    <prod:FullProductName ProductID="10287">Windows Server 2008 for 32-bit Systems Service Pack 2 (Server Core installation)</prod:FullProductName>
+    <prod:FullProductName ProductID="10378">Windows Server 2012</prod:FullProductName>
+    <prod:FullProductName ProductID="10379">Windows Server 2012 (Server Core installation)</prod:FullProductName>
+    <prod:FullProductName ProductID="10481">Windows 8.1 for 32-bit systems</prod:FullProductName>
+    <prod:FullProductName ProductID="10482">Windows 8.1 for x64-based systems</prod:FullProductName>
+    <prod:FullProductName ProductID="10483">Windows Server 2012 R2</prod:FullProductName>
+    <prod:FullProductName ProductID="10484">Windows RT 8.1</prod:FullProductName>
+    <prod:FullProductName ProductID="10543">Windows Server 2012 R2 (Server Core installation)</prod:FullProductName>
+    <prod:FullProductName ProductID="10729">Windows 10 for 32-bit Systems</prod:FullProductName>
+    <prod:FullProductName ProductID="10735">Windows 10 for x64-based Systems</prod:FullProductName>
+    <prod:FullProductName ProductID="10816">Windows Server 2016</prod:FullProductName>
+    <prod:FullProductName ProductID="10852">Windows 10 Version 1607 for 32-bit Systems</prod:FullProductName>
+    <prod:FullProductName ProductID="10853">Windows 10 Version 1607 for x64-based Systems</prod:FullProductName>
+    <prod:FullProductName ProductID="10855">Windows Server 2016  (Server Core installation)</prod:FullProductName>
+    <prod:FullProductName ProductID="11568">Windows 10 Version 1809 for 32-bit Systems</prod:FullProductName>
+    <prod:FullProductName ProductID="11569">Windows 10 Version 1809 for x64-based Systems</prod:FullProductName>
+    <prod:FullProductName ProductID="11570">Windows 10 Version 1809 for ARM64-based Systems</prod:FullProductName>
+    <prod:FullProductName ProductID="11571">Windows Server 2019</prod:FullProductName>
+    <prod:FullProductName ProductID="11572">Windows Server 2019  (Server Core installation)</prod:FullProductName>
+    <prod:FullProductName ProductID="11712">Windows 10 Version 1909 for 32-bit Systems</prod:FullProductName>
+    <prod:FullProductName ProductID="11713">Windows 10 Version 1909 for x64-based Systems</prod:FullProductName>
+    <prod:FullProductName ProductID="11714">Windows 10 Version 1909 for ARM64-based Systems</prod:FullProductName>
+    <prod:FullProductName ProductID="11715">Windows Server, version 1909 (Server Core installation)</prod:FullProductName>
+    <prod:FullProductName ProductID="11766">Windows 10 Version 2004 for 32-bit Systems</prod:FullProductName>
+    <prod:FullProductName ProductID="11767">Windows 10 Version 2004 for ARM64-based Systems</prod:FullProductName>
+    <prod:FullProductName ProductID="11768">Windows 10 Version 2004 for x64-based Systems</prod:FullProductName>
+    <prod:FullProductName ProductID="11769">Windows Server, version 2004 (Server Core installation)</prod:FullProductName>
+    <prod:FullProductName ProductID="11800">Windows 10 Version 20H2 for x64-based Systems</prod:FullProductName>
+    <prod:FullProductName ProductID="11801">Windows 10 Version 20H2 for 32-bit Systems</prod:FullProductName>
+    <prod:FullProductName ProductID="11802">Windows 10 Version 20H2 for ARM64-based Systems</prod:FullProductName>
+    <prod:FullProductName ProductID="11803">Windows Server, version 20H2 (Server Core Installation)</prod:FullProductName>
+    <prod:FullProductName ProductID="11896">Windows 10 Version 21H1 for x64-based Systems</prod:FullProductName>
+    <prod:FullProductName ProductID="11897">Windows 10 Version 21H1 for ARM64-based Systems</prod:FullProductName>
+    <prod:FullProductName ProductID="11898">Windows 10 Version 21H1 for 32-bit Systems</prod:FullProductName>
+    <prod:FullProductName ProductID="9312">Windows Server 2008 for 32-bit Systems Service Pack 2</prod:FullProductName>
+    <prod:FullProductName ProductID="9318">Windows Server 2008 for x64-based Systems Service Pack 2</prod:FullProductName>
+    <prod:FullProductName ProductID="9344">Windows Server 2008 for x64-based Systems Service Pack 2 (Server Core installation)</prod:FullProductName>
+  </prod:ProductTree>
+  <vuln:Vulnerability Ordinal="0">
+    <vuln:Title>Windows Print Spooler Remote Code Execution Vulnerability</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;Microsoft is aware of and investigating a remote code execution vulnerability that affects Windows Print Spooler and has assigned CVE-2021-34527 to this vulnerability. This is an evolving situation and we will update the CVE as more information is available.&lt;/p&gt;
+&lt;p&gt;A remote code execution vulnerability exists when the Windows Print Spooler service improperly performs privileged file operations. An attacker who successfully exploited this vulnerability could run arbitrary code with SYSTEM privileges. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights.&lt;/p&gt;
+&lt;p&gt;An attack must involve an authenticated user calling RpcAddPrinterDriverEx().&lt;/p&gt;
+&lt;p&gt;Please ensure that you have applied the security updates released on June 8, 2021, and see the FAQ and Workaround sections in this CVE for information on how to help protect your system from this vulnerability.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Is this the vulnerability that has been referred to publicly as PrintNightmare?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Yes, Microsoft has assigned CVE-2021-34527 to this vulnerability.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Is this vulnerability related to CVE-2021-1675?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This vulnerability is similar but distinct from the vulnerability that is assigned CVE-2021-1675, which addresses a different vulnerability in RpcAddPrinterDriverEx().  The attack vector is different as well. CVE-2021-1675 was addressed by the security update released on June 8, 2021.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Did the June 2021 update introduce this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;No, the vulnerability existed before the June 8, 2021 security update. Microsoft strongly recommends installing the June 8, 2021 security updates.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;All versions of Windows are listed in the Security Updates table.  Are all versions vulnerable?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;All versions of Windows contain the vulnerable code and are vulnerable. There are certain conditions that need to be met on the system to enable exploitation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Are Domain Controllers known to be affected by the vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Domain controllers are affected if the print spooler service is enabled.  The &lt;strong&gt;Authenticated Users&lt;/strong&gt; group is nested in the Pre-Windows 2000 Compatible Access which is elevated and makes domain controllers vulnerable in default deployments.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Are client systems and member servers that are not domain controllers known to be affected by the vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Yes, if any of the following conditions exist:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Point and Print is enabled&lt;/li&gt;
+&lt;li&gt;If the &lt;strong&gt;Authenticated Users&lt;/strong&gt; group is nested within any of the groups that are listed in the mitigation section.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Why is the severity of this vulnerability not defined?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We are still investigating.  We will make this information available soon.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see attack activity on my network related to this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Security products, like Microsoft 365 Defender, offer different ways to view relevant alerts and telemetry. Microsoft has published our recommendations for seeing this sort of behavior at our GitHub here: &lt;a href="https://aka.ms/printspooler-rce-ahq"&gt;Microsoft 365 Defender Hunting Queries&lt;/a&gt;. Customers using other technologies can adapt this logic for use in their environments.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;When will Microsoft release an update to protect from this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We are working on an update to protect from this vulnerability. We test all updates to ensure quality and compatibility. We will release the fix as soon as it meets quality standards required for broad distribution.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How is Point and Print technology affected by this particular vulnerability&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Point and Print is not directly related to this vulnerability, but the technology weakens the local security posture in such a way that exploitation will be possible. To harden Point and Print make sure that warning and elevation prompts are shown for printer installs and updates. These are the default settings but verify or add the following registry modifications:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Printers\PointAndPrint&lt;/li&gt;
+&lt;li&gt;NoWarningNoElevationOnInstall = 0&lt;/li&gt;
+&lt;li&gt;NoWarningNoElevationOnUpdate = 0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We also recommend explicitly listing specific print servers which should be used by clients.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For more information see:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/print/introduction-to-point-and-print"&gt;Introduction to Point and Print - Windows drivers | Microsoft Docs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/en-us/troubleshoot/windows-server/printing/use-group-policy-to-control-ad-printer"&gt;Use Group Policy settings to control printers - Windows Server | Microsoft Docs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-printers"&gt;Policy CSP - Printers - Windows Client Management | Microsoft Docs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt; Using Registry Editor incorrectly can cause serious problems that may require you to reinstall your operating system. Microsoft cannot guarantee that problems resulting from the incorrect use of Registry Editor can be solved. Use Registry Editor at your own risk. For information about how to edit the registry, view the &amp;quot;Changing Keys And Values&amp;quot; Help topic in Registry Editor (Regedit.exe) or view the &amp;quot;Add and Delete Information in the Registry&amp;quot; and &amp;quot;Edit Registry Data&amp;quot; Help topics in Regedt32.exe.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="Windows Print Spooler Components" Type="Tag" Ordinal="20">Windows Print Spooler Components</vuln:Note>
+      <vuln:Note Title="Issuing CNA" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2021-34527</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11568</vuln:ProductID>
+        <vuln:ProductID>11569</vuln:ProductID>
+        <vuln:ProductID>11570</vuln:ProductID>
+        <vuln:ProductID>11571</vuln:ProductID>
+        <vuln:ProductID>11572</vuln:ProductID>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:ProductID>11896</vuln:ProductID>
+        <vuln:ProductID>11897</vuln:ProductID>
+        <vuln:ProductID>11898</vuln:ProductID>
+        <vuln:ProductID>11766</vuln:ProductID>
+        <vuln:ProductID>11767</vuln:ProductID>
+        <vuln:ProductID>11768</vuln:ProductID>
+        <vuln:ProductID>11769</vuln:ProductID>
+        <vuln:ProductID>11800</vuln:ProductID>
+        <vuln:ProductID>11801</vuln:ProductID>
+        <vuln:ProductID>11802</vuln:ProductID>
+        <vuln:ProductID>11803</vuln:ProductID>
+        <vuln:ProductID>10729</vuln:ProductID>
+        <vuln:ProductID>10735</vuln:ProductID>
+        <vuln:ProductID>10852</vuln:ProductID>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:ProductID>10047</vuln:ProductID>
+        <vuln:ProductID>10048</vuln:ProductID>
+        <vuln:ProductID>10481</vuln:ProductID>
+        <vuln:ProductID>10482</vuln:ProductID>
+        <vuln:ProductID>10484</vuln:ProductID>
+        <vuln:ProductID>9312</vuln:ProductID>
+        <vuln:ProductID>10287</vuln:ProductID>
+        <vuln:ProductID>9318</vuln:ProductID>
+        <vuln:ProductID>9344</vuln:ProductID>
+        <vuln:ProductID>10051</vuln:ProductID>
+        <vuln:ProductID>10049</vuln:ProductID>
+        <vuln:ProductID>10378</vuln:ProductID>
+        <vuln:ProductID>10379</vuln:ProductID>
+        <vuln:ProductID>10483</vuln:ProductID>
+        <vuln:ProductID>10543</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11568</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11569</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11570</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11571</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11572</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11712</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11713</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11714</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11715</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11896</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11897</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11898</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11766</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11767</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11768</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11769</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11800</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11801</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11802</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11803</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>10729</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>10735</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>10852</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>10853</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>10816</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>10855</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>10047</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>10048</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>10481</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>10482</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>10484</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>9312</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>10287</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>9318</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>9344</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>10051</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>10049</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>10378</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>10379</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>10483</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>10543</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11568</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11569</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11570</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11571</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11572</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11712</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11713</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11714</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11715</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11896</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11897</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11898</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11766</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11767</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11768</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11769</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11800</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11801</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11802</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11803</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>10729</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>10735</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>10852</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>10853</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>10816</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>10855</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>10047</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>10048</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>10481</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>10482</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>10484</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>9312</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>10287</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>9318</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>9344</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>10051</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>10049</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>10378</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>10379</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>10483</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>10543</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>Publicly Disclosed:Yes;Exploited:Yes;Latest Software Release:Exploitation Detected;Older Software Release:Exploitation Detected;DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>11568</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>11569</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>11570</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>11571</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>11572</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>11712</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>11713</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>11714</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>11715</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>11896</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>11897</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>11898</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>11766</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>11767</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>11768</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>11769</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>11800</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>11801</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>11802</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>11803</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>10729</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>10735</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>10852</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>10853</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>10816</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>10855</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>10047</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>10048</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>10481</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>10482</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>10484</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>9312</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>10287</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>9318</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>9344</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>10051</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>10049</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>10378</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>10379</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>10483</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>10543</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Mitigation">
+        <vuln:Description>&lt;p&gt;To reduce the attack surface and as an alternative to disabling printing, check membership and nested group membership in the groups listed below. Attempt to reduce membership as much as possible, or completely empty the groups where possible. Due to legacy configurations and backwards compatibility, some of these groups may contain Authenticated Users or Domain Users, which would allow anyone in the domain to exploit the domain controller.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Administrators&lt;/li&gt;
+&lt;li&gt;Domain Controllers&lt;/li&gt;
+&lt;li&gt;Read Only Domain Controllers&lt;/li&gt;
+&lt;li&gt;Enterprise Read Only Domain Controllers&lt;/li&gt;
+&lt;li&gt;Certificate Admins&lt;/li&gt;
+&lt;li&gt;Schema Admins&lt;/li&gt;
+&lt;li&gt;Enterprise Admins&lt;/li&gt;
+&lt;li&gt;Group Policy Admins&lt;/li&gt;
+&lt;li&gt;Power Users&lt;/li&gt;
+&lt;li&gt;System Operators&lt;/li&gt;
+&lt;li&gt;Print Operators&lt;/li&gt;
+&lt;li&gt;Backup Operators&lt;/li&gt;
+&lt;li&gt;RAS Servers&lt;/li&gt;
+&lt;li&gt;Pre-Windows 2000 Compatible Access&lt;/li&gt;
+&lt;li&gt;Network Configuration Operators Group Object&lt;/li&gt;
+&lt;li&gt;Cryptographic Operators Group Object&lt;/li&gt;
+&lt;li&gt;Local account and member of Administrators group&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: Removing members from these groups may cause other compatability problems.&lt;/p&gt;
+</vuln:Description>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
+      <vuln:Remediation Type="Workaround">
+        <vuln:Description>&lt;p&gt;&lt;strong&gt;Determine if the Print Spooler service is running&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Run the following:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Get-Service -Name Spooler&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;If the Print Spooler is running or if the service is not set to disabled, select one of the following options to either disable the Print Spooler service, or to Disable inbound remote printing through Group Policy:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Option 1 - Disable the Print Spooler service&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;If disabling the Print Spooler service is appropriate for your enterprise, use the following PowerShell commands:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Stop-Service -Name Spooler -Force&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Set-Service -Name Spooler -StartupType Disabled&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Impact of workaround&lt;/strong&gt; Disabling the Print Spooler service disables the ability to print both locally and remotely.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Option 2 - Disable inbound remote printing through Group Policy&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;You can also configure the settings via Group Policy as follows:&lt;/p&gt;
+&lt;p&gt;Computer Configuration / Administrative Templates / Printers&lt;/p&gt;
+&lt;p&gt;Disable the “Allow Print Spooler to accept client connections:” policy to block remote attacks.&lt;/p&gt;
+&lt;p&gt;You must restart the Print Spooler service for the group policy to take effect.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Impact of workaround&lt;/strong&gt; This policy will block the remote attack vector by preventing inbound remote printing operations. The system will no longer function as a print server, but local printing to a directly attached device will still be possible.&lt;/p&gt;
+&lt;p&gt;For more information see: &lt;a href="https://docs.microsoft.com/en-us/troubleshoot/windows-server/printing/use-group-policy-to-control-ad-printer"&gt;Use Group Policy settings to control printers&lt;/a&gt;.&lt;/p&gt;
+</vuln:Description>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.3</cvrf:Number>
+        <cvrf:Date>2021-07-02T07:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Updated FAQ information. This is an informational change only.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.4</cvrf:Number>
+        <cvrf:Date>2021-07-03T07:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Updated FAQ information. This is an informational change only.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2021-07-01T07:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2021-07-02T07:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;The information in the workaround section was updated. This an informational change only.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.2</cvrf:Number>
+        <cvrf:Date>2021-07-02T07:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;CVE revised to update the FAQ, add a mitigation, and add the CVSS score. These are informational changes only.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+</cvrf:cvrfdoc>
