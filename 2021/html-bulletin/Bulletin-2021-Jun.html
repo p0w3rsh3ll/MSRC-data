@@ -181,7 +181,9 @@
         <br>
         <b>Executive Summary:</b> <br>None
         <br>
-        <b>FAQ:</b><br>None
+        <b>FAQ:</b><br><p><strong>Is this the vulnerability that has been referred to publicly as PrintNightmare?</strong></p>
+<p>No, Microsoft has assigned <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-34527">CVE-2021-34527</a> to PrintNightmare. CVE-2021-1675 is similar but distinct from CVE-2021-34527.</p>
+
         <br>
         <b>Mitigations:</b><br>None
         <br>
@@ -189,6 +191,7 @@
         <br>
         <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp08/06/2021&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
 <br>1.1&nbsp&nbsp&nbsp&nbsp21/06/2021&nbsp&nbsp&nbsp&nbsp<p>Corrected the CVE title to address the vulnerability as remote code execution. In the Affected Products table, corrected the Impact to Remote Code Execution and the Severity to Critical. This is an informational change only.</p>
+<br>1.2&nbsp&nbsp&nbsp&nbsp02/07/2021&nbsp&nbsp&nbsp&nbsp<p>Added FAQ information. This is an informational change only.</p>
 
         <br></td>
      <td>Critical</td>
@@ -6286,7 +6289,7 @@ https://twitter.com/diversenok_zero<br><br><br></td>
         <b>Executive Summary:</b> <br>None
         <br>
         <b>FAQ:</b><br><p><strong>What security feature might be bypassed by this vulnerability?</strong></p>
-<p>In an enterprise environment this vulnerability might allow an attacker to bypass Kerberos authentication, to authenticate to an arbitrary service principal name.</p>
+<p>This vulnerability applies to Kerberos Service Principal Name (SPN) negotiation and subsequent LSASS (Local Security Authority Subsystem Service) authentication for sandboxed AppContainer processes.</p>
 
         <br>
         <b>Mitigations:</b><br>None

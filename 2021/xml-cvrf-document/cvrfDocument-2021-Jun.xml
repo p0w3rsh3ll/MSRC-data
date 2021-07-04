@@ -15,13 +15,13 @@
     <cvrf:Version>1.0</cvrf:Version>
     <cvrf:RevisionHistory>
       <cvrf:Revision>
-        <cvrf:Number>12</cvrf:Number>
-        <cvrf:Date>2021-06-24T07:00:00Z</cvrf:Date>
+        <cvrf:Number>13</cvrf:Number>
+        <cvrf:Date>2021-07-02T07:00:00Z</cvrf:Date>
         <cvrf:Description>June 2021 Security Updates</cvrf:Description>
       </cvrf:Revision>
     </cvrf:RevisionHistory>
     <cvrf:InitialReleaseDate>2021-06-08T07:00:00Z</cvrf:InitialReleaseDate>
-    <cvrf:CurrentReleaseDate>2021-06-24T07:00:00Z</cvrf:CurrentReleaseDate>
+    <cvrf:CurrentReleaseDate>2021-07-02T07:00:00Z</cvrf:CurrentReleaseDate>
   </cvrf:DocumentTracking>
   <cvrf:DocumentNotes>
     <cvrf:Note Title="Release Notes" Audience="Public" Type="Details" Ordinal="0">&lt;h2&gt;Updates this Month&lt;/h2&gt;
@@ -388,6 +388,9 @@
     <vuln:Title>Windows Print Spooler Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Is this the vulnerability that has been referred to publicly as PrintNightmare?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;No, Microsoft has assigned &lt;a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-34527"&gt;CVE-2021-34527&lt;/a&gt; to PrintNightmare. CVE-2021-1675 is similar but distinct from CVE-2021-34527.&lt;/p&gt;
+</vuln:Note>
       <vuln:Note Title="Windows Print Spooler Components" Type="Tag" Ordinal="20">Windows Print Spooler Components</vuln:Note>
       <vuln:Note Title="Issuing CNA" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
     </vuln:Notes>
@@ -1301,6 +1304,12 @@ https://www.nsfocus.com.cn/</vuln:Name>
         <cvrf:Number>1.1</cvrf:Number>
         <cvrf:Date>2021-06-21T07:00:00Z</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Corrected the CVE title to address the vulnerability as remote code execution. In the Affected Products table, corrected the Impact to Remote Code Execution and the Severity to Critical. This is an informational change only.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.2</cvrf:Number>
+        <cvrf:Date>2021-07-02T07:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added FAQ information. This is an informational change only.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
     </vuln:RevisionHistory>
@@ -9354,7 +9363,7 @@ https://twitter.com/diversenok_zero</vuln:Name>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What security feature might be bypassed by this vulnerability?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;In an enterprise environment this vulnerability might allow an attacker to bypass Kerberos authentication, to authenticate to an arbitrary service principal name.&lt;/p&gt;
+&lt;p&gt;This vulnerability applies to Kerberos Service Principal Name (SPN) negotiation and subsequent LSASS (Local Security Authority Subsystem Service) authentication for sandboxed AppContainer processes.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="Windows Kerberos" Type="Tag" Ordinal="20">Windows Kerberos</vuln:Note>
       <vuln:Note Title="Issuing CNA" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
