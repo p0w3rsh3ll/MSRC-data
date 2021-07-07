@@ -15,13 +15,13 @@
     <cvrf:Version>1.0</cvrf:Version>
     <cvrf:RevisionHistory>
       <cvrf:Revision>
-        <cvrf:Number>3</cvrf:Number>
-        <cvrf:Date>2021-07-03T07:00:00Z</cvrf:Date>
+        <cvrf:Number>4</cvrf:Number>
+        <cvrf:Date>2021-07-06T07:00:00Z</cvrf:Date>
         <cvrf:Description>July 1, 2021 CVE Release</cvrf:Description>
       </cvrf:Revision>
     </cvrf:RevisionHistory>
     <cvrf:InitialReleaseDate>2021-07-01T07:00:00Z</cvrf:InitialReleaseDate>
-    <cvrf:CurrentReleaseDate>2021-07-03T07:00:00Z</cvrf:CurrentReleaseDate>
+    <cvrf:CurrentReleaseDate>2021-07-06T07:00:00Z</cvrf:CurrentReleaseDate>
   </cvrf:DocumentTracking>
   <cvrf:DocumentNotes>
     <cvrf:Note Title="Release Notes" Audience="Public" Type="Details" Ordinal="0">&lt;p&gt;July 1, 2021 CVE Release&lt;/p&gt;
@@ -42,7 +42,6 @@
         <prod:FullProductName ProductID="11712">Windows 10 Version 1909 for 32-bit Systems</prod:FullProductName>
         <prod:FullProductName ProductID="11713">Windows 10 Version 1909 for x64-based Systems</prod:FullProductName>
         <prod:FullProductName ProductID="11714">Windows 10 Version 1909 for ARM64-based Systems</prod:FullProductName>
-        <prod:FullProductName ProductID="11715">Windows Server, version 1909 (Server Core installation)</prod:FullProductName>
         <prod:FullProductName ProductID="11896">Windows 10 Version 21H1 for x64-based Systems</prod:FullProductName>
         <prod:FullProductName ProductID="11897">Windows 10 Version 21H1 for ARM64-based Systems</prod:FullProductName>
         <prod:FullProductName ProductID="11898">Windows 10 Version 21H1 for 32-bit Systems</prod:FullProductName>
@@ -105,7 +104,6 @@
     <prod:FullProductName ProductID="11712">Windows 10 Version 1909 for 32-bit Systems</prod:FullProductName>
     <prod:FullProductName ProductID="11713">Windows 10 Version 1909 for x64-based Systems</prod:FullProductName>
     <prod:FullProductName ProductID="11714">Windows 10 Version 1909 for ARM64-based Systems</prod:FullProductName>
-    <prod:FullProductName ProductID="11715">Windows Server, version 1909 (Server Core installation)</prod:FullProductName>
     <prod:FullProductName ProductID="11766">Windows 10 Version 2004 for 32-bit Systems</prod:FullProductName>
     <prod:FullProductName ProductID="11767">Windows 10 Version 2004 for ARM64-based Systems</prod:FullProductName>
     <prod:FullProductName ProductID="11768">Windows 10 Version 2004 for x64-based Systems</prod:FullProductName>
@@ -124,34 +122,27 @@
   <vuln:Vulnerability Ordinal="0">
     <vuln:Title>Windows Print Spooler Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
-      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;Microsoft is aware of and investigating a remote code execution vulnerability that affects Windows Print Spooler and has assigned CVE-2021-34527 to this vulnerability. This is an evolving situation and we will update the CVE as more information is available.&lt;/p&gt;
-&lt;p&gt;A remote code execution vulnerability exists when the Windows Print Spooler service improperly performs privileged file operations. An attacker who successfully exploited this vulnerability could run arbitrary code with SYSTEM privileges. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights.&lt;/p&gt;
-&lt;p&gt;An attack must involve an authenticated user calling RpcAddPrinterDriverEx().&lt;/p&gt;
-&lt;p&gt;Please ensure that you have applied the security updates released on June 8, 2021, and see the FAQ and Workaround sections in this CVE for information on how to help protect your system from this vulnerability.&lt;/p&gt;
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;A remote code execution vulnerability exists when the Windows Print Spooler service improperly performs privileged file operations. An attacker who successfully exploited this vulnerability could run arbitrary code with SYSTEM privileges. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights.&lt;/p&gt;
+&lt;p&gt;UPDATE July 6, 2021: Microsoft has completed the investigation and has released security updates to address this vulnerability. Please see the Security Updates table for the applicable update for your system. We recommend that you install these updates immediately. If you are unable to install these updates, see the FAQ and Workaround sections in this CVE for information on how to help protect your system from this vulnerability. See also &lt;a href="https://support.microsoft.com/topic/31b91c02-05bc-4ada-a7ea-183b129578a7"&gt;KB5005010: Restricting installation of new printer drivers after applying the July 6, 2021 updates&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Note that the security updates released on and after July 6, 2021 contain protections for CVE-2021-1675 and the additional remote code execution exploit in the Windows Print Spooler service known as “PrintNightmare”, documented in CVE-2021-34527.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Is this the vulnerability that has been referred to publicly as PrintNightmare?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Yes, Microsoft has assigned CVE-2021-34527 to this vulnerability.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Is this vulnerability related to CVE-2021-1675?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;This vulnerability is similar but distinct from the vulnerability that is assigned CVE-2021-1675, which addresses a different vulnerability in RpcAddPrinterDriverEx().  The attack vector is different as well. CVE-2021-1675 was addressed by the security update released on June 8, 2021.&lt;/p&gt;
+&lt;p&gt;This vulnerability is similar but distinct from the vulnerability that is assigned CVE-2021-1675.  The attack vector is different as well. CVE-2021-1675 was addressed by the security update released on June 8, 2021.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Did the June 2021 update introduce this vulnerability?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;No, the vulnerability existed before the June 8, 2021 security update. Microsoft strongly recommends installing the June 8, 2021 security updates.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;All versions of Windows are listed in the Security Updates table.  Are all versions vulnerable?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;All versions of Windows contain the vulnerable code and are vulnerable. There are certain conditions that need to be met on the system to enable exploitation.&lt;/p&gt;
+&lt;p&gt;No, the vulnerability existed before the June 8, 2021 security update.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;All versions of Windows are listed in the Security Updates table. Are all versions vulnerable?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;All versions of Windows are vulnerable. Supported versions of Windows that do not have security updates available on July 6 will be updated shortly after July 6.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What vulnerabilities do the security updates released on and after July 6, 2021 address?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The security updates released on and after July 6, 2021 contain protections for a remote code execution exploit in the Windows Print Spooler service known as “PrintNightmare”, documented in CVE-2021-34527, as well as for CVE-2021-1675.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Are Domain Controllers known to be affected by the vulnerability?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Domain controllers are affected if the print spooler service is enabled.  The &lt;strong&gt;Authenticated Users&lt;/strong&gt; group is nested in the Pre-Windows 2000 Compatible Access which is elevated and makes domain controllers vulnerable in default deployments.&lt;/p&gt;
+&lt;p&gt;Domain controllers are affected if the print spooler service is enabled.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Are client systems and member servers that are not domain controllers known to be affected by the vulnerability?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Yes, if any of the following conditions exist:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Point and Print is enabled&lt;/li&gt;
-&lt;li&gt;If the &lt;strong&gt;Authenticated Users&lt;/strong&gt; group is nested within any of the groups that are listed in the mitigation section.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;Why is the severity of this vulnerability not defined?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;We are still investigating.  We will make this information available soon.&lt;/p&gt;
+&lt;p&gt;Yes. All supported editions of Windows are affected.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;How can I see attack activity on my network related to this vulnerability?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Security products, like Microsoft 365 Defender, offer different ways to view relevant alerts and telemetry. Microsoft has published our recommendations for seeing this sort of behavior at our GitHub here: &lt;a href="https://aka.ms/printspooler-rce-ahq"&gt;Microsoft 365 Defender Hunting Queries&lt;/a&gt;. Customers using other technologies can adapt this logic for use in their environments.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;When will Microsoft release an update to protect from this vulnerability?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;We are working on an update to protect from this vulnerability. We test all updates to ensure quality and compatibility. We will release the fix as soon as it meets quality standards required for broad distribution.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;How is Point and Print technology affected by this particular vulnerability&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How is Point and Print technology affected by this particular vulnerability?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Point and Print is not directly related to this vulnerability, but the technology weakens the local security posture in such a way that exploitation will be possible. To harden Point and Print make sure that warning and elevation prompts are shown for printer installs and updates. These are the default settings but verify or add the following registry modifications:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Printers\PointAndPrint&lt;/li&gt;
@@ -184,7 +175,6 @@
         <vuln:ProductID>11712</vuln:ProductID>
         <vuln:ProductID>11713</vuln:ProductID>
         <vuln:ProductID>11714</vuln:ProductID>
-        <vuln:ProductID>11715</vuln:ProductID>
         <vuln:ProductID>11896</vuln:ProductID>
         <vuln:ProductID>11897</vuln:ProductID>
         <vuln:ProductID>11898</vuln:ProductID>
@@ -254,10 +244,6 @@
       </vuln:Threat>
       <vuln:Threat Type="Impact">
         <vuln:Description>Remote Code Execution</vuln:Description>
-        <vuln:ProductID>11715</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Remote Code Execution</vuln:Description>
         <vuln:ProductID>11896</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Impact">
@@ -385,167 +371,163 @@
         <vuln:ProductID>10543</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
-        <vuln:Description />
+        <vuln:Description>Critical</vuln:Description>
         <vuln:ProductID>11568</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
-        <vuln:Description />
+        <vuln:Description>Critical</vuln:Description>
         <vuln:ProductID>11569</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
-        <vuln:Description />
+        <vuln:Description>Critical</vuln:Description>
         <vuln:ProductID>11570</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
-        <vuln:Description />
+        <vuln:Description>Critical</vuln:Description>
         <vuln:ProductID>11571</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
-        <vuln:Description />
+        <vuln:Description>Critical</vuln:Description>
         <vuln:ProductID>11572</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
-        <vuln:Description />
+        <vuln:Description>Critical</vuln:Description>
         <vuln:ProductID>11712</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
-        <vuln:Description />
+        <vuln:Description>Critical</vuln:Description>
         <vuln:ProductID>11713</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
-        <vuln:Description />
+        <vuln:Description>Critical</vuln:Description>
         <vuln:ProductID>11714</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
-        <vuln:Description />
-        <vuln:ProductID>11715</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description />
+        <vuln:Description>Critical</vuln:Description>
         <vuln:ProductID>11896</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
-        <vuln:Description />
+        <vuln:Description>Critical</vuln:Description>
         <vuln:ProductID>11897</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
-        <vuln:Description />
+        <vuln:Description>Critical</vuln:Description>
         <vuln:ProductID>11898</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
-        <vuln:Description />
+        <vuln:Description>Critical</vuln:Description>
         <vuln:ProductID>11766</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
-        <vuln:Description />
+        <vuln:Description>Critical</vuln:Description>
         <vuln:ProductID>11767</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
-        <vuln:Description />
+        <vuln:Description>Critical</vuln:Description>
         <vuln:ProductID>11768</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
-        <vuln:Description />
+        <vuln:Description>Critical</vuln:Description>
         <vuln:ProductID>11769</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
-        <vuln:Description />
+        <vuln:Description>Critical</vuln:Description>
         <vuln:ProductID>11800</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
-        <vuln:Description />
+        <vuln:Description>Critical</vuln:Description>
         <vuln:ProductID>11801</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
-        <vuln:Description />
+        <vuln:Description>Critical</vuln:Description>
         <vuln:ProductID>11802</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
-        <vuln:Description />
+        <vuln:Description>Critical</vuln:Description>
         <vuln:ProductID>11803</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
-        <vuln:Description />
+        <vuln:Description>Critical</vuln:Description>
         <vuln:ProductID>10729</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
-        <vuln:Description />
+        <vuln:Description>Critical</vuln:Description>
         <vuln:ProductID>10735</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
-        <vuln:Description />
+        <vuln:Description>Critical</vuln:Description>
         <vuln:ProductID>10852</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
-        <vuln:Description />
+        <vuln:Description>Critical</vuln:Description>
         <vuln:ProductID>10853</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
-        <vuln:Description />
+        <vuln:Description>Critical</vuln:Description>
         <vuln:ProductID>10816</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
-        <vuln:Description />
+        <vuln:Description>Critical</vuln:Description>
         <vuln:ProductID>10855</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
-        <vuln:Description />
+        <vuln:Description>Critical</vuln:Description>
         <vuln:ProductID>10047</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
-        <vuln:Description />
+        <vuln:Description>Critical</vuln:Description>
         <vuln:ProductID>10048</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
-        <vuln:Description />
+        <vuln:Description>Critical</vuln:Description>
         <vuln:ProductID>10481</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
-        <vuln:Description />
+        <vuln:Description>Critical</vuln:Description>
         <vuln:ProductID>10482</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
-        <vuln:Description />
+        <vuln:Description>Critical</vuln:Description>
         <vuln:ProductID>10484</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
-        <vuln:Description />
+        <vuln:Description>Critical</vuln:Description>
         <vuln:ProductID>9312</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
-        <vuln:Description />
+        <vuln:Description>Critical</vuln:Description>
         <vuln:ProductID>10287</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
-        <vuln:Description />
+        <vuln:Description>Critical</vuln:Description>
         <vuln:ProductID>9318</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
-        <vuln:Description />
+        <vuln:Description>Critical</vuln:Description>
         <vuln:ProductID>9344</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
-        <vuln:Description />
+        <vuln:Description>Critical</vuln:Description>
         <vuln:ProductID>10051</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
-        <vuln:Description />
+        <vuln:Description>Critical</vuln:Description>
         <vuln:ProductID>10049</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
-        <vuln:Description />
+        <vuln:Description>Critical</vuln:Description>
         <vuln:ProductID>10378</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
-        <vuln:Description />
+        <vuln:Description>Critical</vuln:Description>
         <vuln:ProductID>10379</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
-        <vuln:Description />
+        <vuln:Description>Critical</vuln:Description>
         <vuln:ProductID>10483</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
-        <vuln:Description />
+        <vuln:Description>Critical</vuln:Description>
         <vuln:ProductID>10543</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Exploit Status">
@@ -600,12 +582,6 @@
         <vuln:TemporalScore>8.2</vuln:TemporalScore>
         <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
         <vuln:ProductID>11714</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>8.8</vuln:BaseScore>
-        <vuln:TemporalScore>8.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
-        <vuln:ProductID>11715</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
@@ -801,30 +777,138 @@
       </vuln:ScoreSet>
     </vuln:CVSSScoreSets>
     <vuln:Remediations>
-      <vuln:Remediation Type="Mitigation">
-        <vuln:Description>&lt;p&gt;To reduce the attack surface and as an alternative to disabling printing, check membership and nested group membership in the groups listed below. Attempt to reduce membership as much as possible, or completely empty the groups where possible. Due to legacy configurations and backwards compatibility, some of these groups may contain Authenticated Users or Domain Users, which would allow anyone in the domain to exploit the domain controller.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Administrators&lt;/li&gt;
-&lt;li&gt;Domain Controllers&lt;/li&gt;
-&lt;li&gt;Read Only Domain Controllers&lt;/li&gt;
-&lt;li&gt;Enterprise Read Only Domain Controllers&lt;/li&gt;
-&lt;li&gt;Certificate Admins&lt;/li&gt;
-&lt;li&gt;Schema Admins&lt;/li&gt;
-&lt;li&gt;Enterprise Admins&lt;/li&gt;
-&lt;li&gt;Group Policy Admins&lt;/li&gt;
-&lt;li&gt;Power Users&lt;/li&gt;
-&lt;li&gt;System Operators&lt;/li&gt;
-&lt;li&gt;Print Operators&lt;/li&gt;
-&lt;li&gt;Backup Operators&lt;/li&gt;
-&lt;li&gt;RAS Servers&lt;/li&gt;
-&lt;li&gt;Pre-Windows 2000 Compatible Access&lt;/li&gt;
-&lt;li&gt;Network Configuration Operators Group Object&lt;/li&gt;
-&lt;li&gt;Cryptographic Operators Group Object&lt;/li&gt;
-&lt;li&gt;Local account and member of Administrators group&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: Removing members from these groups may cause other compatability problems.&lt;/p&gt;
-</vuln:Description>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5004947</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004947</vuln:URL>
+        <vuln:Supercedence>5003646</vuln:Supercedence>
+        <vuln:ProductID>11568</vuln:ProductID>
+        <vuln:ProductID>11569</vuln:ProductID>
+        <vuln:ProductID>11570</vuln:ProductID>
+        <vuln:ProductID>11571</vuln:ProductID>
+        <vuln:ProductID>11572</vuln:ProductID>
         <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>10.0.17763.2029</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5004946</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004946</vuln:URL>
+        <vuln:Supercedence>5003637</vuln:Supercedence>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>10.0.18363.1646</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5004945</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004945</vuln:URL>
+        <vuln:Supercedence>5003637</vuln:Supercedence>
+        <vuln:ProductID>11896</vuln:ProductID>
+        <vuln:ProductID>11897</vuln:ProductID>
+        <vuln:ProductID>11898</vuln:ProductID>
+        <vuln:ProductID>11766</vuln:ProductID>
+        <vuln:ProductID>11767</vuln:ProductID>
+        <vuln:ProductID>11768</vuln:ProductID>
+        <vuln:ProductID>11769</vuln:ProductID>
+        <vuln:ProductID>11800</vuln:ProductID>
+        <vuln:ProductID>11801</vuln:ProductID>
+        <vuln:ProductID>11802</vuln:ProductID>
+        <vuln:ProductID>11803</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>10.0.19041.1803</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5004950</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004950</vuln:URL>
+        <vuln:Supercedence>5003638</vuln:Supercedence>
+        <vuln:ProductID>10729</vuln:ProductID>
+        <vuln:ProductID>10735</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>10.0.10240.18969</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5004953</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004953</vuln:URL>
+        <vuln:ProductID>10047</vuln:ProductID>
+        <vuln:ProductID>10048</vuln:ProductID>
+        <vuln:ProductID>10051</vuln:ProductID>
+        <vuln:ProductID>10049</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Monthly Rollup</vuln:SubType>
+        <vuln:FixedBuild>6.1.7601.25633</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5004951</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004951</vuln:URL>
+        <vuln:Supercedence>5003667</vuln:Supercedence>
+        <vuln:ProductID>10047</vuln:ProductID>
+        <vuln:ProductID>10048</vuln:ProductID>
+        <vuln:ProductID>10051</vuln:ProductID>
+        <vuln:ProductID>10049</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Only</vuln:SubType>
+        <vuln:FixedBuild>6.1.7601.25633</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5004954</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004954</vuln:URL>
+        <vuln:Supercedence>5003671</vuln:Supercedence>
+        <vuln:ProductID>10481</vuln:ProductID>
+        <vuln:ProductID>10482</vuln:ProductID>
+        <vuln:ProductID>10484</vuln:ProductID>
+        <vuln:ProductID>10483</vuln:ProductID>
+        <vuln:ProductID>10543</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Monthly Rollup</vuln:SubType>
+        <vuln:FixedBuild>6.3.9600.20046</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5004958</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004958</vuln:URL>
+        <vuln:ProductID>10481</vuln:ProductID>
+        <vuln:ProductID>10482</vuln:ProductID>
+        <vuln:ProductID>10483</vuln:ProductID>
+        <vuln:ProductID>10543</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Only</vuln:SubType>
+        <vuln:FixedBuild>6.3.9600.20046</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5004955</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004955</vuln:URL>
+        <vuln:Supercedence>5003661</vuln:Supercedence>
+        <vuln:ProductID>9312</vuln:ProductID>
+        <vuln:ProductID>10287</vuln:ProductID>
+        <vuln:ProductID>9318</vuln:ProductID>
+        <vuln:ProductID>9344</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Monthly Rollup</vuln:SubType>
+        <vuln:FixedBuild>6.0.6003.21138</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5004959</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004959</vuln:URL>
+        <vuln:ProductID>9312</vuln:ProductID>
+        <vuln:ProductID>10287</vuln:ProductID>
+        <vuln:ProductID>9318</vuln:ProductID>
+        <vuln:ProductID>9344</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Only</vuln:SubType>
+        <vuln:FixedBuild>6.0.6003.21138</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Workaround">
         <vuln:Description>&lt;p&gt;&lt;strong&gt;Determine if the Print Spooler service is running&lt;/strong&gt;&lt;/p&gt;
@@ -859,6 +943,12 @@
         <cvrf:Number>1.4</cvrf:Number>
         <cvrf:Date>2021-07-03T07:00:00Z</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Updated FAQ information. This is an informational change only.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2021-07-06T07:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;CVE updated to announce that Microsoft is releasing an update for several versions of Window to address this vulnerability. Updates are not yet available for Windows 10 version 1607, Windows Server 2016, or Windows Server 2012. Security updates for these versions of Windows will be released soon. Other information has been updated as well. This information will be updated when more information or updates are available.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
       <vuln:Revision>
