@@ -111,10 +111,18 @@
                                     <td colspan="7"><b>Temporal score metrics</b></td>
                                 </tr>
                             </thead>
-                            <tr><td title="This metric measures the likelihood of the vulnerability being attacked, and is typically based on the current state of exploit techniques, exploit code availability, or active, 'in-the-wild' exploitation."><b>Exploit Code Maturity</b></td><td title="Functional exploit code is available. The code works in most situations where the vulnerability exists."><b>Functional</b></td></tr><tr><td title="The Remediation Level of a vulnerability is an important factor for prioritization. The typical vulnerability is unpatched when initially published. Workarounds or hotfixes may offer interim remediation until an official patch or upgrade is issued. Each of these respective stages adjusts the temporal score downwards, reflecting the decreasing urgency as remediation becomes final."><b>Remediation Level</b></td><td title="There is an official but temporary fix available. This includes instances where the vendor issues a temporary hotfix, tool, or workaround."><b>Temporary Fix</b></td></tr><tr><td title="This metric measures the degree of confidence in the existence of the vulnerability and the credibility of the known technical details. Sometimes only the existence of vulnerabilities are publicized, but without specific details. For example, an impact may be recognized as undesirable, but the root cause may not be known. The vulnerability may later be corroborated by research which suggests where the vulnerability may lie, though the research may not be certain. Finally, a vulnerability may be confirmed through acknowledgement by the author or vendor of the affected technology. The urgency of a vulnerability is higher when a vulnerability is known to exist with certainty. This metric also suggests the level of technical knowledge available to would-be attackers."><b>Report Confidence</b></td><td title="Detailed reports exist, or functional reproduction is possible (functional exploits may provide this). Source code is available to independently verify the assertions of the research, or the author or vendor of the affected code has confirmed the presence of the vulnerability."><b>Confirmed</b></td></tr>
+                            <tr><td title="This metric measures the likelihood of the vulnerability being attacked, and is typically based on the current state of exploit techniques, exploit code availability, or active, 'in-the-wild' exploitation."><b>Exploit Code Maturity</b></td><td title="Functional exploit code is available. The code works in most situations where the vulnerability exists."><b>Functional</b></td></tr><tr><td title="The Remediation Level of a vulnerability is an important factor for prioritization. The typical vulnerability is unpatched when initially published. Workarounds or hotfixes may offer interim remediation until an official patch or upgrade is issued. Each of these respective stages adjusts the temporal score downwards, reflecting the decreasing urgency as remediation becomes final."><b>Remediation Level</b></td><td title="A complete vendor solution is available. Either the vendor has issued an official patch, or an upgrade is available."><b>Official Fix</b></td></tr><tr><td title="This metric measures the degree of confidence in the existence of the vulnerability and the credibility of the known technical details. Sometimes only the existence of vulnerabilities are publicized, but without specific details. For example, an impact may be recognized as undesirable, but the root cause may not be known. The vulnerability may later be corroborated by research which suggests where the vulnerability may lie, though the research may not be certain. Finally, a vulnerability may be confirmed through acknowledgement by the author or vendor of the affected technology. The urgency of a vulnerability is higher when a vulnerability is known to exist with certainty. This metric also suggests the level of technical knowledge available to would-be attackers."><b>Report Confidence</b></td><td title="Detailed reports exist, or functional reproduction is possible (functional exploits may provide this). Source code is available to independently verify the assertions of the research, or the author or vendor of the affected code has confirmed the presence of the vulnerability."><b>Confirmed</b></td></tr>
                         </table>
         <br>
         <b>Executive Summary:</b> <br><p>A remote code execution vulnerability exists when the Windows Print Spooler service improperly performs privileged file operations. An attacker who successfully exploited this vulnerability could run arbitrary code with SYSTEM privileges. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights.</p>
+<p>UPDATE July 7, 2021: The security update for Windows Server 2012, Windows Server 2016 and Windows 10, Version 1607 have been released. Please see the Security Updates table for the applicable update for your system. We recommend that you install these updates immediately. If you are unable to install these updates, see the FAQ and Workaround sections in this CVE for information on how to help protect your system from this vulnerability.</p>
+<p>In order to secure your system, you must confirm that the following registry settings are set to 0 (zero) or are not defined (<strong>Note</strong>: These registry keys do not exist by default, and therefore are already at the secure setting.):</p>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Printers\PointAndPrint</li>
+<li>NoWarningNoElevationOnInstall = 0 (DWORD) or not defined (default setting)</li>
+<li>NoWarningNoElevationOnUpdate = 0 (DWORD) or not defined (default setting)</li>
+</ul>
+<p><strong>Having NoWarningNoElevationOnInstall set to 1 makes your system vulnerable by design.</strong></p>
 <p>UPDATE July 6, 2021: Microsoft has completed the investigation and has released security updates to address this vulnerability. Please see the Security Updates table for the applicable update for your system. We recommend that you install these updates immediately. If you are unable to install these updates, see the FAQ and Workaround sections in this CVE for information on how to help protect your system from this vulnerability. See also <a href="https://support.microsoft.com/topic/31b91c02-05bc-4ada-a7ea-183b129578a7">KB5005010: Restricting installation of new printer drivers after applying the July 6, 2021 updates</a>.</p>
 <p>Note that the security updates released on and after July 6, 2021 contain protections for CVE-2021-1675 and the additional remote code execution exploit in the Windows Print Spooler service known as “PrintNightmare”, documented in CVE-2021-34527.</p>
 
@@ -126,21 +134,21 @@
 <p><strong>Did the June 2021 update introduce this vulnerability?</strong></p>
 <p>No, the vulnerability existed before the June 8, 2021 security update.</p>
 <p><strong>All versions of Windows are listed in the Security Updates table. Are all versions vulnerable?</strong></p>
-<p>All versions of Windows are vulnerable. Supported versions of Windows that do not have security updates available on July 6 will be updated shortly after July 6.</p>
+<p>All versions of Windows are vulnerable. As of July 7, 2021, Microsoft has released security updates for this vulnerability for all supported versions of Windows listed in the security updates table in this CVE.</p>
 <p><strong>What vulnerabilities do the security updates released on and after July 6, 2021 address?</strong></p>
 <p>The security updates released on and after July 6, 2021 contain protections for a remote code execution exploit in the Windows Print Spooler service known as “PrintNightmare”, documented in CVE-2021-34527, as well as for CVE-2021-1675.</p>
 <p><strong>Are Domain Controllers known to be affected by the vulnerability?</strong></p>
 <p>Domain controllers are affected if the print spooler service is enabled.</p>
 <p><strong>Are client systems and member servers that are not domain controllers known to be affected by the vulnerability?</strong></p>
-<p>Yes. All supported editions of Windows are affected.</p>
+<p>Yes. All editions of Windows are affected.</p>
 <p><strong>How can I see attack activity on my network related to this vulnerability?</strong></p>
 <p>Security products, like Microsoft 365 Defender, offer different ways to view relevant alerts and telemetry. Microsoft has published our recommendations for seeing this sort of behavior at our GitHub here: <a href="https://aka.ms/printspooler-rce-ahq">Microsoft 365 Defender Hunting Queries</a>. Customers using other technologies can adapt this logic for use in their environments.</p>
 <p><strong>How is Point and Print technology affected by this particular vulnerability?</strong></p>
-<p>Point and Print is not directly related to this vulnerability, but the technology weakens the local security posture in such a way that exploitation will be possible. To harden Point and Print make sure that warning and elevation prompts are shown for printer installs and updates. These are the default settings but verify or add the following registry modifications:</p>
+<p>Point and Print is not directly related to this vulnerability, but the technology weakens the local security posture in such a way that exploitation will be possible. To disallow Point and Print for non-administrators make sure that warning and elevation prompts are shown for printer installs and updates. The following registry keys are not present by default. Verify that the keys are not present or change the following registry values to 0 (zero):</p>
 <ul>
 <li>HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Printers\PointAndPrint</li>
-<li>NoWarningNoElevationOnInstall = 0</li>
-<li>NoWarningNoElevationOnUpdate = 0</li>
+<li>NoWarningNoElevationOnInstall = 0 (DWORD)</li>
+<li>NoWarningNoElevationOnUpdate = 0 (DWORD)</li>
 </ul>
 <p>We also recommend explicitly listing specific print servers which should be used by clients.</p>
 <ul>
@@ -158,7 +166,7 @@
         <b>Mitigations:</b><br>None
         <br>
         <b>Workarounds:</b><br><p><strong>Determine if the Print Spooler service is running</strong></p>
-<p>Run the following:</p>
+<p>Run the following in Windows PowerShell:</p>
 <p><code>Get-Service -Name Spooler</code></p>
 <p>If the Print Spooler is running or if the service is not set to disabled, select one of the following options to either disable the Print Spooler service, or to Disable inbound remote printing through Group Policy:</p>
 <p><strong>Option 1 - Disable the Print Spooler service</strong></p>
@@ -181,6 +189,7 @@
 <br>1.2&nbsp&nbsp&nbsp&nbsp02/07/2021&nbsp&nbsp&nbsp&nbsp<p>CVE revised to update the FAQ, add a mitigation, and add the CVSS score. These are informational changes only.</p>
 <br>1.4&nbsp&nbsp&nbsp&nbsp03/07/2021&nbsp&nbsp&nbsp&nbsp<p>Updated FAQ information. This is an informational change only.</p>
 <br>2.0&nbsp&nbsp&nbsp&nbsp06/07/2021&nbsp&nbsp&nbsp&nbsp<p>CVE updated to announce that Microsoft is releasing an update for several versions of Window to address this vulnerability. Updates are not yet available for Windows 10 version 1607, Windows Server 2016, or Windows Server 2012. Security updates for these versions of Windows will be released soon. Other information has been updated as well. This information will be updated when more information or updates are available.</p>
+<br>3.0&nbsp&nbsp&nbsp&nbsp07/07/2021&nbsp&nbsp&nbsp&nbsp<p>CVE updated to announce that Microsoft is releasing an update for Windows 10 version 1607, Windows Server 2016, and Windows Server 2012.  Other information has been updated as well.</p>
 
         <br></td>
      <td>Critical</td>
@@ -228,7 +237,7 @@
                 <td>Critical</td>
                 <td>Remote Code Execution</td>
                 <td>5003638</td>
-                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C<br /></td>
+                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
                 <td>10.0.10240.18969</td>
                 <td>Yes</td>
                 <td>None</td>
@@ -238,67 +247,67 @@
                 <td>Critical</td>
                 <td>Remote Code Execution</td>
                 <td>5003638</td>
-                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C<br /></td>
+                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
                 <td>10.0.10240.18969</td>
                 <td>Yes</td>
                 <td>None</td>
         </tr>        <tr>
                 <td>Windows 10 Version 1607 for 32-bit Systems</td>
-                <td></td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004948" >5004948 (Security Update)</td>
                 <td>Critical</td>
                 <td>Remote Code Execution</td>
-                <td>None</td>
-                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C<br /></td>
+                <td>5003638</td>
+                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
                 <td>Unknown</td>
-                <td>Unknown</td>
+                <td>Yes</td>
                 <td>None</td>
         </tr>        <tr>
                 <td>Windows 10 Version 1607 for x64-based Systems</td>
-                <td></td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004948" >5004948 (Security Update)</td>
                 <td>Critical</td>
                 <td>Remote Code Execution</td>
-                <td>None</td>
-                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C<br /></td>
+                <td>5003638</td>
+                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
                 <td>Unknown</td>
-                <td>Unknown</td>
+                <td>Yes</td>
                 <td>None</td>
         </tr>        <tr>
                 <td>Windows 10 Version 1809 for 32-bit Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004947" >5004947 (Security Update)</td>
                 <td>Critical</td>
                 <td>Remote Code Execution</td>
-                <td>5003646</td>
-                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C<br /></td>
-                <td>10.0.17763.2029</td>
+                <td>5003646<br /></td>
+                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
+                <td>10.0.17763.2029<br /></td>
                 <td>Yes</td>
-                <td>None</td>
+                <td><a href="https://support.microsoft.com/help/5004947" >5004947</td>
         </tr>        <tr>
                 <td>Windows 10 Version 1809 for ARM64-based Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004947" >5004947 (Security Update)</td>
                 <td>Critical</td>
                 <td>Remote Code Execution</td>
-                <td>5003646</td>
-                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C<br /></td>
-                <td>10.0.17763.2029</td>
+                <td>5003646<br /></td>
+                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
+                <td>10.0.17763.2029<br /></td>
                 <td>Yes</td>
-                <td>None</td>
+                <td><a href="https://support.microsoft.com/help/5004947" >5004947</td>
         </tr>        <tr>
                 <td>Windows 10 Version 1809 for x64-based Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004947" >5004947 (Security Update)</td>
                 <td>Critical</td>
                 <td>Remote Code Execution</td>
-                <td>5003646</td>
-                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C<br /></td>
-                <td>10.0.17763.2029</td>
+                <td>5003646<br /></td>
+                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
+                <td>10.0.17763.2029<br /></td>
                 <td>Yes</td>
-                <td>None</td>
+                <td><a href="https://support.microsoft.com/help/5004947" >5004947</td>
         </tr>        <tr>
                 <td>Windows 10 Version 1909 for 32-bit Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004946" >5004946 (Security Update)</td>
                 <td>Critical</td>
                 <td>Remote Code Execution</td>
                 <td>5003637</td>
-                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C<br /></td>
+                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
                 <td>10.0.18363.1646</td>
                 <td>Yes</td>
                 <td>None</td>
@@ -308,7 +317,7 @@
                 <td>Critical</td>
                 <td>Remote Code Execution</td>
                 <td>5003637</td>
-                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C<br /></td>
+                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
                 <td>10.0.18363.1646</td>
                 <td>Yes</td>
                 <td>None</td>
@@ -318,7 +327,7 @@
                 <td>Critical</td>
                 <td>Remote Code Execution</td>
                 <td>5003637</td>
-                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C<br /></td>
+                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
                 <td>10.0.18363.1646</td>
                 <td>Yes</td>
                 <td>None</td>
@@ -327,220 +336,220 @@
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004945" >5004945 (Security Update)</td>
                 <td>Critical</td>
                 <td>Remote Code Execution</td>
-                <td>5003637</td>
-                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C<br /></td>
-                <td>10.0.19041.1803</td>
+                <td>5003637<br /></td>
+                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
+                <td>10.0.19041.1803<br /></td>
                 <td>Yes</td>
-                <td>None</td>
+                <td><a href="https://support.microsoft.com/help/5004945" >5004945</td>
         </tr>        <tr>
                 <td>Windows 10 Version 2004 for ARM64-based Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004945" >5004945 (Security Update)</td>
                 <td>Critical</td>
                 <td>Remote Code Execution</td>
-                <td>5003637</td>
-                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C<br /></td>
-                <td>10.0.19041.1803</td>
+                <td>5003637<br /></td>
+                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
+                <td>10.0.19041.1803<br /></td>
                 <td>Yes</td>
-                <td>None</td>
+                <td><a href="https://support.microsoft.com/help/5004945" >5004945</td>
         </tr>        <tr>
                 <td>Windows 10 Version 2004 for x64-based Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004945" >5004945 (Security Update)</td>
                 <td>Critical</td>
                 <td>Remote Code Execution</td>
-                <td>5003637</td>
-                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C<br /></td>
-                <td>10.0.19041.1803</td>
+                <td>5003637<br /></td>
+                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
+                <td>10.0.19041.1803<br /></td>
                 <td>Yes</td>
-                <td>None</td>
+                <td><a href="https://support.microsoft.com/help/5004945" >5004945</td>
         </tr>        <tr>
                 <td>Windows 10 Version 20H2 for 32-bit Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004945" >5004945 (Security Update)</td>
                 <td>Critical</td>
                 <td>Remote Code Execution</td>
-                <td>5003637</td>
-                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C<br /></td>
-                <td>10.0.19041.1803</td>
+                <td>5003637<br /></td>
+                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
+                <td>10.0.19041.1803<br /></td>
                 <td>Yes</td>
-                <td>None</td>
+                <td><a href="https://support.microsoft.com/help/5004945" >5004945</td>
         </tr>        <tr>
                 <td>Windows 10 Version 20H2 for ARM64-based Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004945" >5004945 (Security Update)</td>
                 <td>Critical</td>
                 <td>Remote Code Execution</td>
-                <td>5003637</td>
-                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C<br /></td>
-                <td>10.0.19041.1803</td>
+                <td>5003637<br /></td>
+                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
+                <td>10.0.19041.1803<br /></td>
                 <td>Yes</td>
-                <td>None</td>
+                <td><a href="https://support.microsoft.com/help/5004945" >5004945</td>
         </tr>        <tr>
                 <td>Windows 10 Version 20H2 for x64-based Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004945" >5004945 (Security Update)</td>
                 <td>Critical</td>
                 <td>Remote Code Execution</td>
-                <td>5003637</td>
-                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C<br /></td>
-                <td>10.0.19041.1803</td>
+                <td>5003637<br /></td>
+                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
+                <td>10.0.19041.1803<br /></td>
                 <td>Yes</td>
-                <td>None</td>
+                <td><a href="https://support.microsoft.com/help/5004945" >5004945</td>
         </tr>        <tr>
                 <td>Windows 10 Version 21H1 for 32-bit Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004945" >5004945 (Security Update)</td>
                 <td>Critical</td>
                 <td>Remote Code Execution</td>
-                <td>5003637</td>
-                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C<br /></td>
-                <td>10.0.19041.1803</td>
+                <td>5003637<br /></td>
+                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
+                <td>10.0.19041.1803<br /></td>
                 <td>Yes</td>
-                <td>None</td>
+                <td><a href="https://support.microsoft.com/help/5004945" >5004945</td>
         </tr>        <tr>
                 <td>Windows 10 Version 21H1 for ARM64-based Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004945" >5004945 (Security Update)</td>
                 <td>Critical</td>
                 <td>Remote Code Execution</td>
-                <td>5003637</td>
-                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C<br /></td>
-                <td>10.0.19041.1803</td>
+                <td>5003637<br /></td>
+                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
+                <td>10.0.19041.1803<br /></td>
                 <td>Yes</td>
-                <td>None</td>
+                <td><a href="https://support.microsoft.com/help/5004945" >5004945</td>
         </tr>        <tr>
                 <td>Windows 10 Version 21H1 for x64-based Systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004945" >5004945 (Security Update)</td>
                 <td>Critical</td>
                 <td>Remote Code Execution</td>
-                <td>5003637</td>
-                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C<br /></td>
-                <td>10.0.19041.1803</td>
+                <td>5003637<br /></td>
+                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
+                <td>10.0.19041.1803<br /></td>
                 <td>Yes</td>
-                <td>None</td>
+                <td><a href="https://support.microsoft.com/help/5004945" >5004945</td>
         </tr>        <tr>
                 <td>Windows 7 for 32-bit Systems Service Pack 1</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004953" >5004953 (Monthly Rollup)<br /><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004951" >5004951 (Security Only)</td>
                 <td>Critical</td>
                 <td>Remote Code Execution</td>
                 <td><br />5003667</td>
-                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C<br /></td>
-                <td>6.1.7601.25633</td>
+                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
+                <td>6.1.7601.25633<br /></td>
                 <td>Yes</td>
-                <td>None</td>
+                <td><a href="https://support.microsoft.com/help/5004953" >5004953<br /><a href="https://support.microsoft.com/help/5004951" >5004951</td>
         </tr>        <tr>
                 <td>Windows 7 for x64-based Systems Service Pack 1</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004953" >5004953 (Monthly Rollup)<br /><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004951" >5004951 (Security Only)</td>
                 <td>Critical</td>
                 <td>Remote Code Execution</td>
                 <td><br />5003667</td>
-                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C<br /></td>
-                <td>6.1.7601.25633</td>
+                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
+                <td>6.1.7601.25633<br /></td>
                 <td>Yes</td>
-                <td>None</td>
+                <td><a href="https://support.microsoft.com/help/5004953" >5004953<br /><a href="https://support.microsoft.com/help/5004951" >5004951</td>
         </tr>        <tr>
                 <td>Windows 8.1 for 32-bit systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004954" >5004954 (Monthly Rollup)<br /><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004958" >5004958 (Security Only)</td>
                 <td>Critical</td>
                 <td>Remote Code Execution</td>
                 <td>5003671<br /></td>
-                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C<br /></td>
-                <td>6.3.9600.20046</td>
+                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
+                <td>6.3.9600.20046<br /></td>
                 <td>Yes</td>
-                <td>None</td>
+                <td><a href="https://support.microsoft.com/help/5004954" >5004954<br /><a href="https://support.microsoft.com/help/5004958" >5004958</td>
         </tr>        <tr>
                 <td>Windows 8.1 for x64-based systems</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004954" >5004954 (Monthly Rollup)<br /><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004958" >5004958 (Security Only)</td>
                 <td>Critical</td>
                 <td>Remote Code Execution</td>
                 <td>5003671<br /></td>
-                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C<br /></td>
-                <td>6.3.9600.20046</td>
+                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
+                <td>6.3.9600.20046<br /></td>
                 <td>Yes</td>
-                <td>None</td>
+                <td><a href="https://support.microsoft.com/help/5004954" >5004954<br /><a href="https://support.microsoft.com/help/5004958" >5004958</td>
         </tr>        <tr>
                 <td>Windows RT 8.1</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004954" >5004954 (Monthly Rollup)</td>
                 <td>Critical</td>
                 <td>Remote Code Execution</td>
-                <td>5003671</td>
-                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C<br /></td>
-                <td>6.3.9600.20046</td>
+                <td>5003671<br /></td>
+                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
+                <td>6.3.9600.20046<br /></td>
                 <td>Yes</td>
-                <td>None</td>
+                <td><a href="https://support.microsoft.com/help/5004954" >5004954</td>
         </tr>        <tr>
                 <td>Windows Server 2008 for 32-bit Systems Service Pack 2</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004955" >5004955 (Monthly Rollup)<br /><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004959" >5004959 (Security Only)</td>
                 <td>Critical</td>
                 <td>Remote Code Execution</td>
                 <td>5003661<br /></td>
-                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C<br /></td>
-                <td>6.0.6003.21138</td>
+                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
+                <td>6.0.6003.21138<br /></td>
                 <td>Yes</td>
-                <td>None</td>
+                <td><a href="https://support.microsoft.com/help/5004955" >5004955<br /><a href="https://support.microsoft.com/help/5004959" >5004959</td>
         </tr>        <tr>
                 <td>Windows Server 2008 for 32-bit Systems Service Pack 2 (Server Core installation)</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004955" >5004955 (Monthly Rollup)<br /><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004959" >5004959 (Security Only)</td>
                 <td>Critical</td>
                 <td>Remote Code Execution</td>
                 <td>5003661<br /></td>
-                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C<br /></td>
-                <td>6.0.6003.21138</td>
+                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
+                <td>6.0.6003.21138<br /></td>
                 <td>Yes</td>
-                <td>None</td>
+                <td><a href="https://support.microsoft.com/help/5004955" >5004955<br /><a href="https://support.microsoft.com/help/5004959" >5004959</td>
         </tr>        <tr>
                 <td>Windows Server 2008 for x64-based Systems Service Pack 2</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004955" >5004955 (Monthly Rollup)<br /><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004959" >5004959 (Security Only)</td>
                 <td>Critical</td>
                 <td>Remote Code Execution</td>
                 <td>5003661<br /></td>
-                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C<br /></td>
-                <td>6.0.6003.21138</td>
+                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
+                <td>6.0.6003.21138<br /></td>
                 <td>Yes</td>
-                <td>None</td>
+                <td><a href="https://support.microsoft.com/help/5004955" >5004955<br /><a href="https://support.microsoft.com/help/5004959" >5004959</td>
         </tr>        <tr>
                 <td>Windows Server 2008 for x64-based Systems Service Pack 2 (Server Core installation)</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004955" >5004955 (Monthly Rollup)<br /><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004959" >5004959 (Security Only)</td>
                 <td>Critical</td>
                 <td>Remote Code Execution</td>
                 <td>5003661<br /></td>
-                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C<br /></td>
-                <td>6.0.6003.21138</td>
+                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
+                <td>6.0.6003.21138<br /></td>
                 <td>Yes</td>
-                <td>None</td>
+                <td><a href="https://support.microsoft.com/help/5004955" >5004955<br /><a href="https://support.microsoft.com/help/5004959" >5004959</td>
         </tr>        <tr>
                 <td>Windows Server 2008 R2 for x64-based Systems Service Pack 1</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004953" >5004953 (Monthly Rollup)<br /><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004951" >5004951 (Security Only)</td>
                 <td>Critical</td>
                 <td>Remote Code Execution</td>
                 <td><br />5003667</td>
-                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C<br /></td>
-                <td>6.1.7601.25633</td>
+                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
+                <td>6.1.7601.25633<br /></td>
                 <td>Yes</td>
-                <td>None</td>
+                <td><a href="https://support.microsoft.com/help/5004953" >5004953<br /><a href="https://support.microsoft.com/help/5004951" >5004951</td>
         </tr>        <tr>
                 <td>Windows Server 2008 R2 for x64-based Systems Service Pack 1 (Server Core installation)</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004953" >5004953 (Monthly Rollup)<br /><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004951" >5004951 (Security Only)</td>
                 <td>Critical</td>
                 <td>Remote Code Execution</td>
                 <td><br />5003667</td>
-                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C<br /></td>
-                <td>6.1.7601.25633</td>
+                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
+                <td>6.1.7601.25633<br /></td>
+                <td>Yes</td>
+                <td><a href="https://support.microsoft.com/help/5004953" >5004953<br /><a href="https://support.microsoft.com/help/5004951" >5004951</td>
+        </tr>        <tr>
+                <td>Windows Server 2012</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004956" >5004956 (Monthly Rollup)<br /><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004960" >5004960 (Security Only)</td>
+                <td>Critical</td>
+                <td>Remote Code Execution</td>
+                <td>5003697<br /></td>
+                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
+                <td></td>
                 <td>Yes</td>
                 <td>None</td>
         </tr>        <tr>
-                <td>Windows Server 2012</td>
-                <td></td>
-                <td>Critical</td>
-                <td>Remote Code Execution</td>
-                <td>None</td>
-                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C<br /></td>
-                <td>Unknown</td>
-                <td>Unknown</td>
-                <td>None</td>
-        </tr>        <tr>
                 <td>Windows Server 2012 (Server Core installation)</td>
-                <td></td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004956" >5004956 (Monthly Rollup)<br /><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004960" >5004960 (Security Only)</td>
                 <td>Critical</td>
                 <td>Remote Code Execution</td>
-                <td>None</td>
-                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C<br /></td>
-                <td>Unknown</td>
-                <td>Unknown</td>
+                <td>5003697<br /></td>
+                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
+                <td></td>
+                <td>Yes</td>
                 <td>None</td>
         </tr>        <tr>
                 <td>Windows Server 2012 R2</td>
@@ -548,80 +557,80 @@
                 <td>Critical</td>
                 <td>Remote Code Execution</td>
                 <td>5003671<br /></td>
-                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C<br /></td>
-                <td>6.3.9600.20046</td>
+                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
+                <td>6.3.9600.20046<br /></td>
                 <td>Yes</td>
-                <td>None</td>
+                <td><a href="https://support.microsoft.com/help/5004954" >5004954<br /><a href="https://support.microsoft.com/help/5004958" >5004958</td>
         </tr>        <tr>
                 <td>Windows Server 2012 R2 (Server Core installation)</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004954" >5004954 (Monthly Rollup)<br /><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004958" >5004958 (Security Only)</td>
                 <td>Critical</td>
                 <td>Remote Code Execution</td>
                 <td>5003671<br /></td>
-                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C<br /></td>
-                <td>6.3.9600.20046</td>
+                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
+                <td>6.3.9600.20046<br /></td>
+                <td>Yes</td>
+                <td><a href="https://support.microsoft.com/help/5004954" >5004954<br /><a href="https://support.microsoft.com/help/5004958" >5004958</td>
+        </tr>        <tr>
+                <td>Windows Server 2016</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004948" >5004948 (Security Update)</td>
+                <td>Critical</td>
+                <td>Remote Code Execution</td>
+                <td>5003638</td>
+                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
+                <td>Unknown</td>
                 <td>Yes</td>
                 <td>None</td>
         </tr>        <tr>
-                <td>Windows Server 2016</td>
-                <td></td>
-                <td>Critical</td>
-                <td>Remote Code Execution</td>
-                <td>None</td>
-                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C<br /></td>
-                <td>Unknown</td>
-                <td>Unknown</td>
-                <td>None</td>
-        </tr>        <tr>
                 <td>Windows Server 2016  (Server Core installation)</td>
-                <td></td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004948" >5004948 (Security Update)</td>
                 <td>Critical</td>
                 <td>Remote Code Execution</td>
-                <td>None</td>
-                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C<br /></td>
+                <td>5003638</td>
+                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
                 <td>Unknown</td>
-                <td>Unknown</td>
+                <td>Yes</td>
                 <td>None</td>
         </tr>        <tr>
                 <td>Windows Server 2019</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004947" >5004947 (Security Update)</td>
                 <td>Critical</td>
                 <td>Remote Code Execution</td>
-                <td>5003646</td>
-                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C<br /></td>
-                <td>10.0.17763.2029</td>
+                <td>5003646<br /></td>
+                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
+                <td>10.0.17763.2029<br /></td>
                 <td>Yes</td>
-                <td>None</td>
+                <td><a href="https://support.microsoft.com/help/5004947" >5004947</td>
         </tr>        <tr>
                 <td>Windows Server 2019  (Server Core installation)</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004947" >5004947 (Security Update)</td>
                 <td>Critical</td>
                 <td>Remote Code Execution</td>
-                <td>5003646</td>
-                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C<br /></td>
-                <td>10.0.17763.2029</td>
+                <td>5003646<br /></td>
+                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
+                <td>10.0.17763.2029<br /></td>
                 <td>Yes</td>
-                <td>None</td>
+                <td><a href="https://support.microsoft.com/help/5004947" >5004947</td>
         </tr>        <tr>
                 <td>Windows Server, version 2004 (Server Core installation)</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004945" >5004945 (Security Update)</td>
                 <td>Critical</td>
                 <td>Remote Code Execution</td>
-                <td>5003637</td>
-                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C<br /></td>
-                <td>10.0.19041.1803</td>
+                <td>5003637<br /></td>
+                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
+                <td>10.0.19041.1803<br /></td>
                 <td>Yes</td>
-                <td>None</td>
+                <td><a href="https://support.microsoft.com/help/5004945" >5004945</td>
         </tr>        <tr>
                 <td>Windows Server, version 20H2 (Server Core Installation)</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004945" >5004945 (Security Update)</td>
                 <td>Critical</td>
                 <td>Remote Code Execution</td>
-                <td>5003637</td>
-                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C<br /></td>
-                <td>10.0.19041.1803</td>
+                <td>5003637<br /></td>
+                <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
+                <td>10.0.19041.1803<br /></td>
                 <td>Yes</td>
-                <td>None</td>
+                <td><a href="https://support.microsoft.com/help/5004945" >5004945</td>
         </tr>
 </table>
 <br><h2>Acknowledgements</h2>

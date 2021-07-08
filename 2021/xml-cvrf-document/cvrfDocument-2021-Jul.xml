@@ -15,13 +15,13 @@
     <cvrf:Version>1.0</cvrf:Version>
     <cvrf:RevisionHistory>
       <cvrf:Revision>
-        <cvrf:Number>4</cvrf:Number>
-        <cvrf:Date>2021-07-06T07:00:00Z</cvrf:Date>
+        <cvrf:Number>5</cvrf:Number>
+        <cvrf:Date>2021-07-07T07:00:00Z</cvrf:Date>
         <cvrf:Description>July 1, 2021 CVE Release</cvrf:Description>
       </cvrf:Revision>
     </cvrf:RevisionHistory>
     <cvrf:InitialReleaseDate>2021-07-01T07:00:00Z</cvrf:InitialReleaseDate>
-    <cvrf:CurrentReleaseDate>2021-07-06T07:00:00Z</cvrf:CurrentReleaseDate>
+    <cvrf:CurrentReleaseDate>2021-07-07T07:00:00Z</cvrf:CurrentReleaseDate>
   </cvrf:DocumentTracking>
   <cvrf:DocumentNotes>
     <cvrf:Note Title="Release Notes" Audience="Public" Type="Details" Ordinal="0">&lt;p&gt;July 1, 2021 CVE Release&lt;/p&gt;
@@ -123,6 +123,14 @@
     <vuln:Title>Windows Print Spooler Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;A remote code execution vulnerability exists when the Windows Print Spooler service improperly performs privileged file operations. An attacker who successfully exploited this vulnerability could run arbitrary code with SYSTEM privileges. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights.&lt;/p&gt;
+&lt;p&gt;UPDATE July 7, 2021: The security update for Windows Server 2012, Windows Server 2016 and Windows 10, Version 1607 have been released. Please see the Security Updates table for the applicable update for your system. We recommend that you install these updates immediately. If you are unable to install these updates, see the FAQ and Workaround sections in this CVE for information on how to help protect your system from this vulnerability.&lt;/p&gt;
+&lt;p&gt;In order to secure your system, you must confirm that the following registry settings are set to 0 (zero) or are not defined (&lt;strong&gt;Note&lt;/strong&gt;: These registry keys do not exist by default, and therefore are already at the secure setting.):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Printers\PointAndPrint&lt;/li&gt;
+&lt;li&gt;NoWarningNoElevationOnInstall = 0 (DWORD) or not defined (default setting)&lt;/li&gt;
+&lt;li&gt;NoWarningNoElevationOnUpdate = 0 (DWORD) or not defined (default setting)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Having NoWarningNoElevationOnInstall set to 1 makes your system vulnerable by design.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;UPDATE July 6, 2021: Microsoft has completed the investigation and has released security updates to address this vulnerability. Please see the Security Updates table for the applicable update for your system. We recommend that you install these updates immediately. If you are unable to install these updates, see the FAQ and Workaround sections in this CVE for information on how to help protect your system from this vulnerability. See also &lt;a href="https://support.microsoft.com/topic/31b91c02-05bc-4ada-a7ea-183b129578a7"&gt;KB5005010: Restricting installation of new printer drivers after applying the July 6, 2021 updates&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Note that the security updates released on and after July 6, 2021 contain protections for CVE-2021-1675 and the additional remote code execution exploit in the Windows Print Spooler service known as “PrintNightmare”, documented in CVE-2021-34527.&lt;/p&gt;
 </vuln:Note>
@@ -133,21 +141,21 @@
 &lt;p&gt;&lt;strong&gt;Did the June 2021 update introduce this vulnerability?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;No, the vulnerability existed before the June 8, 2021 security update.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;All versions of Windows are listed in the Security Updates table. Are all versions vulnerable?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;All versions of Windows are vulnerable. Supported versions of Windows that do not have security updates available on July 6 will be updated shortly after July 6.&lt;/p&gt;
+&lt;p&gt;All versions of Windows are vulnerable. As of July 7, 2021, Microsoft has released security updates for this vulnerability for all supported versions of Windows listed in the security updates table in this CVE.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;What vulnerabilities do the security updates released on and after July 6, 2021 address?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;The security updates released on and after July 6, 2021 contain protections for a remote code execution exploit in the Windows Print Spooler service known as “PrintNightmare”, documented in CVE-2021-34527, as well as for CVE-2021-1675.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Are Domain Controllers known to be affected by the vulnerability?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Domain controllers are affected if the print spooler service is enabled.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Are client systems and member servers that are not domain controllers known to be affected by the vulnerability?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Yes. All supported editions of Windows are affected.&lt;/p&gt;
+&lt;p&gt;Yes. All editions of Windows are affected.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;How can I see attack activity on my network related to this vulnerability?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Security products, like Microsoft 365 Defender, offer different ways to view relevant alerts and telemetry. Microsoft has published our recommendations for seeing this sort of behavior at our GitHub here: &lt;a href="https://aka.ms/printspooler-rce-ahq"&gt;Microsoft 365 Defender Hunting Queries&lt;/a&gt;. Customers using other technologies can adapt this logic for use in their environments.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;How is Point and Print technology affected by this particular vulnerability?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Point and Print is not directly related to this vulnerability, but the technology weakens the local security posture in such a way that exploitation will be possible. To harden Point and Print make sure that warning and elevation prompts are shown for printer installs and updates. These are the default settings but verify or add the following registry modifications:&lt;/p&gt;
+&lt;p&gt;Point and Print is not directly related to this vulnerability, but the technology weakens the local security posture in such a way that exploitation will be possible. To disallow Point and Print for non-administrators make sure that warning and elevation prompts are shown for printer installs and updates. The following registry keys are not present by default. Verify that the keys are not present or change the following registry values to 0 (zero):&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Printers\PointAndPrint&lt;/li&gt;
-&lt;li&gt;NoWarningNoElevationOnInstall = 0&lt;/li&gt;
-&lt;li&gt;NoWarningNoElevationOnUpdate = 0&lt;/li&gt;
+&lt;li&gt;NoWarningNoElevationOnInstall = 0 (DWORD)&lt;/li&gt;
+&lt;li&gt;NoWarningNoElevationOnUpdate = 0 (DWORD)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;We also recommend explicitly listing specific print servers which should be used by clients.&lt;/p&gt;
 &lt;ul&gt;
@@ -538,241 +546,241 @@
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>8.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11568</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>8.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11569</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>8.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11570</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>8.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11571</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>8.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11572</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>8.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11712</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>8.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11713</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>8.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11714</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>8.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11896</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>8.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11897</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>8.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11898</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>8.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11766</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>8.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11767</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>8.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11768</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>8.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11769</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>8.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11800</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>8.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11801</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>8.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11802</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>8.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11803</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>8.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>10729</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>8.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>10735</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>8.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>10852</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>8.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>10853</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>8.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>10816</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>8.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>10855</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>8.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>10047</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>8.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>10048</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>8.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>10481</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>8.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>10482</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>8.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>10484</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>8.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>9312</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>8.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>10287</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>8.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>9318</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>8.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>9344</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>8.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>10051</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>8.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>10049</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>8.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>10378</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>8.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>10379</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>8.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>10483</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>8.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>10543</vuln:ProductID>
       </vuln:ScoreSet>
     </vuln:CVSSScoreSets>
@@ -790,6 +798,16 @@
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.17763.2029</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004947</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004947</vuln:URL>
+        <vuln:ProductID>11568</vuln:ProductID>
+        <vuln:ProductID>11569</vuln:ProductID>
+        <vuln:ProductID>11570</vuln:ProductID>
+        <vuln:ProductID>11571</vuln:ProductID>
+        <vuln:ProductID>11572</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004946</vuln:Description>
@@ -823,6 +841,22 @@
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.19041.1803</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004945</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004945</vuln:URL>
+        <vuln:ProductID>11896</vuln:ProductID>
+        <vuln:ProductID>11897</vuln:ProductID>
+        <vuln:ProductID>11898</vuln:ProductID>
+        <vuln:ProductID>11766</vuln:ProductID>
+        <vuln:ProductID>11767</vuln:ProductID>
+        <vuln:ProductID>11768</vuln:ProductID>
+        <vuln:ProductID>11769</vuln:ProductID>
+        <vuln:ProductID>11800</vuln:ProductID>
+        <vuln:ProductID>11801</vuln:ProductID>
+        <vuln:ProductID>11802</vuln:ProductID>
+        <vuln:ProductID>11803</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004950</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004950</vuln:URL>
@@ -833,6 +867,18 @@
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.10240.18969</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5004948</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004948</vuln:URL>
+        <vuln:Supercedence>5003638</vuln:Supercedence>
+        <vuln:ProductID>10852</vuln:ProductID>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004953</vuln:Description>
@@ -846,6 +892,15 @@
         <vuln:SubType>Monthly Rollup</vuln:SubType>
         <vuln:FixedBuild>6.1.7601.25633</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004953</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004953</vuln:URL>
+        <vuln:ProductID>10047</vuln:ProductID>
+        <vuln:ProductID>10048</vuln:ProductID>
+        <vuln:ProductID>10051</vuln:ProductID>
+        <vuln:ProductID>10049</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004951</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004951</vuln:URL>
@@ -858,6 +913,15 @@
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Only</vuln:SubType>
         <vuln:FixedBuild>6.1.7601.25633</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004951</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004951</vuln:URL>
+        <vuln:ProductID>10047</vuln:ProductID>
+        <vuln:ProductID>10048</vuln:ProductID>
+        <vuln:ProductID>10051</vuln:ProductID>
+        <vuln:ProductID>10049</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004954</vuln:Description>
@@ -873,6 +937,16 @@
         <vuln:SubType>Monthly Rollup</vuln:SubType>
         <vuln:FixedBuild>6.3.9600.20046</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004954</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004954</vuln:URL>
+        <vuln:ProductID>10481</vuln:ProductID>
+        <vuln:ProductID>10482</vuln:ProductID>
+        <vuln:ProductID>10484</vuln:ProductID>
+        <vuln:ProductID>10483</vuln:ProductID>
+        <vuln:ProductID>10543</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004958</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004958</vuln:URL>
@@ -884,6 +958,15 @@
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Only</vuln:SubType>
         <vuln:FixedBuild>6.3.9600.20046</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004958</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004958</vuln:URL>
+        <vuln:ProductID>10481</vuln:ProductID>
+        <vuln:ProductID>10482</vuln:ProductID>
+        <vuln:ProductID>10483</vuln:ProductID>
+        <vuln:ProductID>10543</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004955</vuln:Description>
@@ -898,6 +981,15 @@
         <vuln:SubType>Monthly Rollup</vuln:SubType>
         <vuln:FixedBuild>6.0.6003.21138</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004955</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004955</vuln:URL>
+        <vuln:ProductID>9312</vuln:ProductID>
+        <vuln:ProductID>10287</vuln:ProductID>
+        <vuln:ProductID>9318</vuln:ProductID>
+        <vuln:ProductID>9344</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004959</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004959</vuln:URL>
@@ -910,9 +1002,37 @@
         <vuln:SubType>Security Only</vuln:SubType>
         <vuln:FixedBuild>6.0.6003.21138</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004959</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004959</vuln:URL>
+        <vuln:ProductID>9312</vuln:ProductID>
+        <vuln:ProductID>10287</vuln:ProductID>
+        <vuln:ProductID>9318</vuln:ProductID>
+        <vuln:ProductID>9344</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5004956</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004956</vuln:URL>
+        <vuln:Supercedence>5003697</vuln:Supercedence>
+        <vuln:ProductID>10378</vuln:ProductID>
+        <vuln:ProductID>10379</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Monthly Rollup</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5004960</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004960</vuln:URL>
+        <vuln:ProductID>10378</vuln:ProductID>
+        <vuln:ProductID>10379</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Only</vuln:SubType>
+      </vuln:Remediation>
       <vuln:Remediation Type="Workaround">
         <vuln:Description>&lt;p&gt;&lt;strong&gt;Determine if the Print Spooler service is running&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Run the following:&lt;/p&gt;
+&lt;p&gt;Run the following in Windows PowerShell:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;Get-Service -Name Spooler&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;If the Print Spooler is running or if the service is not set to disabled, select one of the following options to either disable the Print Spooler service, or to Disable inbound remote printing through Group Policy:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Option 1 - Disable the Print Spooler service&lt;/strong&gt;&lt;/p&gt;
@@ -949,6 +1069,12 @@
         <cvrf:Number>2.0</cvrf:Number>
         <cvrf:Date>2021-07-06T07:00:00Z</cvrf:Date>
         <cvrf:Description>&lt;p&gt;CVE updated to announce that Microsoft is releasing an update for several versions of Window to address this vulnerability. Updates are not yet available for Windows 10 version 1607, Windows Server 2016, or Windows Server 2012. Security updates for these versions of Windows will be released soon. Other information has been updated as well. This information will be updated when more information or updates are available.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>3.0</cvrf:Number>
+        <cvrf:Date>2021-07-07T07:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;CVE updated to announce that Microsoft is releasing an update for Windows 10 version 1607, Windows Server 2016, and Windows Server 2012.  Other information has been updated as well.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
       <vuln:Revision>
