@@ -116,11 +116,11 @@
         <br>
         <b>Executive Summary:</b> <br><p>A remote code execution vulnerability exists when the Windows Print Spooler service improperly performs privileged file operations. An attacker who successfully exploited this vulnerability could run arbitrary code with SYSTEM privileges. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights.</p>
 <p>UPDATE July 7, 2021: The security update for Windows Server 2012, Windows Server 2016 and Windows 10, Version 1607 have been released. Please see the Security Updates table for the applicable update for your system. We recommend that you install these updates immediately. If you are unable to install these updates, see the FAQ and Workaround sections in this CVE for information on how to help protect your system from this vulnerability.</p>
-<p>In order to secure your system, you must confirm that the following registry settings are set to 0 (zero) or are not defined (<strong>Note</strong>: These registry keys do not exist by default, and therefore are already at the secure setting.):</p>
+<p>In addition to installing the updates, in order to secure your system, you must confirm that the following registry settings are set to 0 (zero) or are not defined (<strong>Note</strong>: These registry keys do not exist by default, and therefore are already at the secure setting.), also that your Group Policy setting are correct (see FAQ):</p>
 <ul>
 <li>HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Printers\PointAndPrint</li>
 <li>NoWarningNoElevationOnInstall = 0 (DWORD) or not defined (default setting)</li>
-<li>NoWarningNoElevationOnUpdate = 0 (DWORD) or not defined (default setting)</li>
+<li>UpdatePromptSettings = 0 (DWORD) or not defined (default setting)</li>
 </ul>
 <p><strong>Having NoWarningNoElevationOnInstall set to 1 makes your system vulnerable by design.</strong></p>
 <p>UPDATE July 6, 2021: Microsoft has completed the investigation and has released security updates to address this vulnerability. Please see the Security Updates table for the applicable update for your system. We recommend that you install these updates immediately. If you are unable to install these updates, see the FAQ and Workaround sections in this CVE for information on how to help protect your system from this vulnerability. See also <a href="https://support.microsoft.com/topic/31b91c02-05bc-4ada-a7ea-183b129578a7">KB5005010: Restricting installation of new printer drivers after applying the July 6, 2021 updates</a>.</p>
@@ -144,23 +144,11 @@
 <p><strong>How can I see attack activity on my network related to this vulnerability?</strong></p>
 <p>Security products, like Microsoft 365 Defender, offer different ways to view relevant alerts and telemetry. Microsoft has published our recommendations for seeing this sort of behavior at our GitHub here: <a href="https://aka.ms/printspooler-rce-ahq">Microsoft 365 Defender Hunting Queries</a>. Customers using other technologies can adapt this logic for use in their environments.</p>
 <p><strong>How is Point and Print technology affected by this particular vulnerability?</strong></p>
-<p>Point and Print is not directly related to this vulnerability, but the technology weakens the local security posture in such a way that exploitation will be possible. To disallow Point and Print for non-administrators make sure that warning and elevation prompts are shown for printer installs and updates. The following registry keys are not present by default. Verify that the keys are not present or change the following registry values to 0 (zero):</p>
-<ul>
-<li>HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Printers\PointAndPrint</li>
-<li>NoWarningNoElevationOnInstall = 0 (DWORD)</li>
-<li>NoWarningNoElevationOnUpdate = 0 (DWORD)</li>
-</ul>
-<p>We also recommend explicitly listing specific print servers which should be used by clients.</p>
-<ul>
-<li>For more information see:
-<ul>
-<li><a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/print/introduction-to-point-and-print">Introduction to Point and Print - Windows drivers | Microsoft Docs</a></li>
-<li><a href="https://docs.microsoft.com/en-us/troubleshoot/windows-server/printing/use-group-policy-to-control-ad-printer">Use Group Policy settings to control printers - Windows Server | Microsoft Docs</a></li>
-<li><a href="https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-printers">Policy CSP - Printers - Windows Client Management | Microsoft Docs</a></li>
-</ul>
-</li>
-</ul>
-<p><strong>Note</strong> Using Registry Editor incorrectly can cause serious problems that may require you to reinstall your operating system. Microsoft cannot guarantee that problems resulting from the incorrect use of Registry Editor can be solved. Use Registry Editor at your own risk. For information about how to edit the registry, view the &quot;Changing Keys And Values&quot; Help topic in Registry Editor (Regedit.exe) or view the &quot;Add and Delete Information in the Registry&quot; and &quot;Edit Registry Data&quot; Help topics in Regedt32.exe.</p>
+<p>Point and Print is not directly related to this vulnerability, but certain configurations make systems vulnerable to exploitation.</p>
+<p><strong>How does Microsoft recommend implementing Point and Print restrictions to help secure my systems?</strong></p>
+<p>Please see  <a href="https://support.microsoft.com/en-us/topic/kb5005010-restricting-installation-of-new-printer-drivers-after-applying-the-july-6-2021-updates-31b91c02-05bc-4ada-a7ea-183b129578a7">KB5005010: Restricting installation of new printer drivers after applying the July 6, 2021 updates</a> for complete information.</p>
+<p><strong>How do I assess my Point and Print security posture to determine if my Windows system is affected by this particular configuration?</strong></p>
+<p>Please see  <a href="https://support.microsoft.com/en-us/topic/kb5005010-restricting-installation-of-new-printer-drivers-after-applying-the-july-6-2021-updates-31b91c02-05bc-4ada-a7ea-183b129578a7">KB5005010: Restricting installation of new printer drivers after applying the July 6, 2021 updates</a> for complete information.</p>
 
         <br>
         <b>Mitigations:</b><br>None
@@ -190,6 +178,7 @@
 <br>1.4&nbsp&nbsp&nbsp&nbsp03/07/2021&nbsp&nbsp&nbsp&nbsp<p>Updated FAQ information. This is an informational change only.</p>
 <br>2.0&nbsp&nbsp&nbsp&nbsp06/07/2021&nbsp&nbsp&nbsp&nbsp<p>CVE updated to announce that Microsoft is releasing an update for several versions of Window to address this vulnerability. Updates are not yet available for Windows 10 version 1607, Windows Server 2016, or Windows Server 2012. Security updates for these versions of Windows will be released soon. Other information has been updated as well. This information will be updated when more information or updates are available.</p>
 <br>3.0&nbsp&nbsp&nbsp&nbsp07/07/2021&nbsp&nbsp&nbsp&nbsp<p>CVE updated to announce that Microsoft is releasing an update for Windows 10 version 1607, Windows Server 2016, and Windows Server 2012.  Other information has been updated as well.</p>
+<br>3.1&nbsp&nbsp&nbsp&nbsp08/07/2021&nbsp&nbsp&nbsp&nbsp<p>Added information to the executive summary and the FAQ sections. This is an informational change only.</p>
 
         <br></td>
      <td>Critical</td>
@@ -540,7 +529,7 @@
                 <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
                 <td></td>
                 <td>Yes</td>
-                <td>None</td>
+                <td><a href="https://support.microsoft.com/help/5004956" >5004956<br /><a href="https://support.microsoft.com/help/5004960" >5004960</td>
         </tr>        <tr>
                 <td>Windows Server 2012 (Server Core installation)</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004956" >5004956 (Monthly Rollup)<br /><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004960" >5004960 (Security Only)</td>
@@ -550,7 +539,7 @@
                 <td>Base: 8,8<br />Temporal: 8,2<br />Vector: CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C<br /></td>
                 <td></td>
                 <td>Yes</td>
-                <td>None</td>
+                <td><a href="https://support.microsoft.com/help/5004956" >5004956<br /><a href="https://support.microsoft.com/help/5004960" >5004960</td>
         </tr>        <tr>
                 <td>Windows Server 2012 R2</td>
                 <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004954" >5004954 (Monthly Rollup)<br /><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004958" >5004958 (Security Only)</td>
