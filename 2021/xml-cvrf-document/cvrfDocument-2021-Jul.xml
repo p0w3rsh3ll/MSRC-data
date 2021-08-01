@@ -15,13 +15,13 @@
     <cvrf:Version>1.0</cvrf:Version>
     <cvrf:RevisionHistory>
       <cvrf:Revision>
-        <cvrf:Number>15</cvrf:Number>
-        <cvrf:Date>2021-07-23T07:00:00Z</cvrf:Date>
+        <cvrf:Number>17</cvrf:Number>
+        <cvrf:Date>2021-07-28T07:00:00Z</cvrf:Date>
         <cvrf:Description>July 2021 Security Updates</cvrf:Description>
       </cvrf:Revision>
     </cvrf:RevisionHistory>
     <cvrf:InitialReleaseDate>2021-07-13T07:00:00Z</cvrf:InitialReleaseDate>
-    <cvrf:CurrentReleaseDate>2021-07-23T07:00:00Z</cvrf:CurrentReleaseDate>
+    <cvrf:CurrentReleaseDate>2021-07-28T07:00:00Z</cvrf:CurrentReleaseDate>
   </cvrf:DocumentTracking>
   <cvrf:DocumentNotes>
     <cvrf:Note Title="Release Notes" Audience="Public" Type="Details" Ordinal="0">&lt;h2&gt;Updates this Month&lt;/h2&gt;
@@ -175,12 +175,32 @@
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
+&lt;td&gt;&lt;a href="https://support.microsoft.com/help/5001975"&gt;5001975&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;SharePoint Server 2019&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://support.microsoft.com/help/5001976"&gt;5001976&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;SharePoint Server 2016&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://support.microsoft.com/help/5001992"&gt;5001992&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Microsoft SharePoint Foundation 2013 Service Pack 1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
 &lt;td&gt;&lt;a href="https://support.microsoft.com/help/5004237"&gt;5004237&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Windows 10, Version 2004, Windows Server, Version 2004, Windows 10, Version 20H2, Windows Server, Version 20H2, Windows 10, Version 21H1&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
+&lt;td&gt;&lt;a href="https://support.microsoft.com/help/5004238"&gt;5004238&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Windows 10, Version 1607, Windows Server 2016&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
 &lt;td&gt;&lt;a href="https://support.microsoft.com/help/5004244"&gt;5004244&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Windows 10, Version 1809, Windows Server 2019&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://support.microsoft.com/help/5004245"&gt;5004245&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Windows 10, Version 1909&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;a href="https://support.microsoft.com/help/5004285"&gt;5004285&lt;/a&gt;&lt;/td&gt;
@@ -268,7 +288,6 @@
         <prod:FullProductName ProductID="10543">Windows Server 2012 R2 (Server Core installation)</prod:FullProductName>
         <prod:FullProductName ProductID="11808">HEVC Video Extensions</prod:FullProductName>
         <prod:FullProductName ProductID="11715">Windows Server, version 1909 (Server Core installation)</prod:FullProductName>
-        <prod:FullProductName ProductID="11914">Windows Versions Under Investigation</prod:FullProductName>
       </prod:Branch>
       <prod:Branch Type="Product Family" Name="ESU">
         <prod:FullProductName ProductID="10047">Windows 7 for 32-bit Systems Service Pack 1</prod:FullProductName>
@@ -417,7 +436,6 @@
     <prod:FullProductName ProductID="11911">Microsoft Dynamics 365 Business Central 2020 Release Wave 1 - Update 16.14</prod:FullProductName>
     <prod:FullProductName ProductID="11912">Microsoft Dynamics 365 Business Central 2021 Release Wave 1 - Update 18.3</prod:FullProductName>
     <prod:FullProductName ProductID="11913">Microsoft Dynamics 365 Business Central 2020 Release Wave 2 - Update 17.8</prod:FullProductName>
-    <prod:FullProductName ProductID="11914">Windows Versions Under Investigation</prod:FullProductName>
     <prod:FullProductName ProductID="11915">Power BI Desktop</prod:FullProductName>
     <prod:FullProductName ProductID="9312">Windows Server 2008 for 32-bit Systems Service Pack 2</prod:FullProductName>
     <prod:FullProductName ProductID="9318">Windows Server 2008 for x64-based Systems Service Pack 2</prod:FullProductName>
@@ -1079,6 +1097,14 @@
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -1138,6 +1164,15 @@
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10852</vuln:ProductID>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004289</vuln:Description>
@@ -2050,6 +2085,14 @@
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -2775,6 +2818,14 @@
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -3011,6 +3062,12 @@
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
@@ -3294,6 +3351,12 @@
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
@@ -4001,6 +4064,14 @@
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -4060,6 +4131,15 @@
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10852</vuln:ProductID>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004289</vuln:Description>
@@ -4314,6 +4394,14 @@
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
     </vuln:Remediations>
     <vuln:Acknowledgments>
@@ -4732,6 +4820,14 @@
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -4780,6 +4876,15 @@
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10852</vuln:ProductID>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
     </vuln:Remediations>
     <vuln:Acknowledgments>
@@ -5057,6 +5162,15 @@
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11715</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
@@ -5620,6 +5734,14 @@
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -5679,6 +5801,15 @@
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10852</vuln:ProductID>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004298</vuln:Description>
@@ -6280,6 +6411,14 @@
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -6339,6 +6478,15 @@
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10852</vuln:ProductID>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004298</vuln:Description>
@@ -7092,6 +7240,14 @@
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -7151,6 +7307,15 @@
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10852</vuln:ProductID>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004289</vuln:Description>
@@ -7928,6 +8093,14 @@ University of Singapore&lt;/a&gt;</vuln:Name>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -7987,6 +8160,15 @@ University of Singapore&lt;/a&gt;</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10852</vuln:ProductID>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004298</vuln:Description>
@@ -8556,6 +8738,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -8615,6 +8805,15 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10852</vuln:ProductID>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004298</vuln:Description>
@@ -9018,6 +9217,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -9379,6 +9586,13 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004305</vuln:Description>
@@ -10200,6 +10414,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -10259,6 +10481,15 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10852</vuln:ProductID>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004289</vuln:Description>
@@ -10751,6 +10982,13 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004305</vuln:Description>
@@ -11429,6 +11667,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -11488,6 +11734,15 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10852</vuln:ProductID>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004298</vuln:Description>
@@ -12206,6 +12461,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -12265,6 +12528,15 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10852</vuln:ProductID>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004289</vuln:Description>
@@ -12874,6 +13146,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -12933,6 +13213,15 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10852</vuln:ProductID>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
     </vuln:Remediations>
     <vuln:Acknowledgments />
@@ -13255,6 +13544,13 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004305</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004305</vuln:URL>
@@ -13410,7 +13706,7 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:URL />
       </vuln:Acknowledgment>
       <vuln:Acknowledgment>
-        <vuln:Name>Strawberry from Qi'anxin CERT</vuln:Name>
+        <vuln:Name>Ting Yu from CERT Team of Legendsec at Qi'anxin Group</vuln:Name>
         <vuln:URL />
       </vuln:Acknowledgment>
       <vuln:Acknowledgment>
@@ -13736,6 +14032,13 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004305</vuln:Description>
@@ -14241,6 +14544,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
@@ -14813,6 +15124,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -14867,6 +15186,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10852</vuln:ProductID>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004289</vuln:Description>
@@ -15636,6 +15963,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -15695,6 +16030,15 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10852</vuln:ProductID>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004289</vuln:Description>
@@ -16400,6 +16744,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -16454,6 +16806,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10852</vuln:ProductID>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004289</vuln:Description>
@@ -17094,6 +17454,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -17148,6 +17516,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10852</vuln:ProductID>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004289</vuln:Description>
@@ -17750,6 +18126,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -17804,6 +18188,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10852</vuln:ProductID>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004289</vuln:Description>
@@ -17881,7 +18273,7 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
     </vuln:Remediations>
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
-        <vuln:Name>&lt;a href="https://"&gt;yangkang(@dnpushme)&amp;bianliang&amp;wanggang&amp;lihongfei&lt;/a&gt; of 360 ATA</vuln:Name>
+        <vuln:Name>yangkang(@dnpushme)&amp;bianliang&amp;wanggang&amp;lihongfei&amp;liujialei of 360 ATA</vuln:Name>
         <vuln:URL />
       </vuln:Acknowledgment>
     </vuln:Acknowledgments>
@@ -18550,6 +18942,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -18609,6 +19009,15 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10852</vuln:ProductID>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004289</vuln:Description>
@@ -19133,6 +19542,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -19492,6 +19909,13 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004305</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004305</vuln:URL>
@@ -19838,6 +20262,12 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
@@ -20541,6 +20971,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -20600,6 +21038,15 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10852</vuln:ProductID>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004289</vuln:Description>
@@ -22305,6 +22752,13 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -23382,6 +23836,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -23441,6 +23903,15 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10852</vuln:ProductID>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004289</vuln:Description>
@@ -23755,6 +24226,7 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
 &lt;p&gt;An attacker must have the ability to execute code on a victim system to exploit this vulnerability.&lt;/p&gt;
 &lt;p&gt;We will update this CVE as our investigation progresses.&lt;/p&gt;
 </vuln:Note>
+      <vuln:Note Title="Microsoft Windows" Type="Tag" Ordinal="20">Microsoft Windows</vuln:Note>
       <vuln:Note Title="Issuing CNA" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
     </vuln:Notes>
     <vuln:CVE>CVE-2021-36934</vuln:CVE>
@@ -23763,8 +24235,6 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:ProductID>11568</vuln:ProductID>
         <vuln:ProductID>11569</vuln:ProductID>
         <vuln:ProductID>11570</vuln:ProductID>
-        <vuln:ProductID>11571</vuln:ProductID>
-        <vuln:ProductID>11572</vuln:ProductID>
         <vuln:ProductID>11712</vuln:ProductID>
         <vuln:ProductID>11713</vuln:ProductID>
         <vuln:ProductID>11714</vuln:ProductID>
@@ -23774,7 +24244,6 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:ProductID>11766</vuln:ProductID>
         <vuln:ProductID>11767</vuln:ProductID>
         <vuln:ProductID>11768</vuln:ProductID>
-        <vuln:ProductID>11769</vuln:ProductID>
         <vuln:ProductID>11800</vuln:ProductID>
         <vuln:ProductID>11801</vuln:ProductID>
         <vuln:ProductID>11802</vuln:ProductID>
@@ -23795,14 +24264,6 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
       </vuln:Threat>
       <vuln:Threat Type="Impact">
         <vuln:Description>Elevation of Privilege</vuln:Description>
-        <vuln:ProductID>11571</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Elevation of Privilege</vuln:Description>
-        <vuln:ProductID>11572</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Elevation of Privilege</vuln:Description>
         <vuln:ProductID>11712</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Impact">
@@ -23836,10 +24297,6 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
       <vuln:Threat Type="Impact">
         <vuln:Description>Elevation of Privilege</vuln:Description>
         <vuln:ProductID>11768</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Elevation of Privilege</vuln:Description>
-        <vuln:ProductID>11769</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Impact">
         <vuln:Description>Elevation of Privilege</vuln:Description>
@@ -23867,14 +24324,6 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
         <vuln:Description>Important</vuln:Description>
-        <vuln:ProductID>11571</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Important</vuln:Description>
-        <vuln:ProductID>11572</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Important</vuln:Description>
         <vuln:ProductID>11712</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
@@ -23908,10 +24357,6 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
       <vuln:Threat Type="Severity">
         <vuln:Description>Important</vuln:Description>
         <vuln:ProductID>11768</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Important</vuln:Description>
-        <vuln:ProductID>11769</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
         <vuln:Description>Important</vuln:Description>
@@ -23952,18 +24397,6 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:BaseScore>7.8</vuln:BaseScore>
         <vuln:TemporalScore>7.3</vuln:TemporalScore>
         <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
-        <vuln:ProductID>11571</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>7.8</vuln:BaseScore>
-        <vuln:TemporalScore>7.3</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
-        <vuln:ProductID>11572</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>7.8</vuln:BaseScore>
-        <vuln:TemporalScore>7.3</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
         <vuln:ProductID>11712</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
@@ -24014,12 +24447,6 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
         <vuln:ProductID>11768</vuln:ProductID>
       </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>7.8</vuln:BaseScore>
-        <vuln:TemporalScore>7.3</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
-        <vuln:ProductID>11769</vuln:ProductID>
-      </vuln:ScoreSet>
     </vuln:CVSSScoreSets>
     <vuln:Remediations>
       <vuln:Remediation Type="Workaround">
@@ -24035,6 +24462,7 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
 &lt;/ol&gt;
 &lt;p&gt;&lt;strong&gt;Impact of workaround&lt;/strong&gt; Deleting shadow copies could impact restore operations, including the ability to restore data with third-party backup applications. For more information on how to delete shadow copies, see &lt;a href="https://support.microsoft.com/topic/1ceaa637-aaa3-4b58-a48b-baf72a2fa9e7"&gt;KB5005357- Delete Volume Shadow Copies&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt; You must restrict access &lt;em&gt;and&lt;/em&gt; delete shadow copies to prevent exploitation of this vulnerability.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Caution&lt;/strong&gt; Restoring your system from a backup could also restore the overly permissive ACLs, and therefore revert your system to a vulnerable state. After restoring a backup, you must verify that the ACLs are correct to ensure that the restore operation did not reintroduce this vulnerability.&lt;/p&gt;
 </vuln:Description>
         <vuln:AffectedFiles />
       </vuln:Remediation>
@@ -24065,6 +24493,12 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <cvrf:Description>&lt;p&gt;Updated Workaround information. This is an informational change only.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>4.0</cvrf:Number>
+        <cvrf:Date>2021-07-27T07:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;The following revisions have been made: 1) Removed Windows Server versions from the Security Updates table as they are not affected by this vulnerability. 2) Updated the Workaround information with a Caution regarding restoring a system from backup.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
   <vuln:Vulnerability Ordinal="0">
@@ -24072,12 +24506,13 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;&lt;strong&gt;Summary&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Microsoft is aware of PetitPotam which can potentially be used in an attack on Windows domain controllers or other Windows servers. PetitPotam is a classic NTLM Relay Attack, and such attacks have been previously documented by Microsoft along with numerous mitigation options to protect customers. For example, see &lt;a href="https://docs.microsoft.com/en-us/security-updates/SecurityAdvisories/2009/974926"&gt;Microsoft Security Advisory 974926&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;To prevent NTLM Relay Attacks on networks with NTLM enabled, domain administrators must ensure that services that permit NTLM authentication make use of protections such as &lt;a href="https://docs.microsoft.com/en-us/security-updates/securityadvisories/2009/973811"&gt;Extended Protection for Authentication (EPA)&lt;/a&gt; or signing features such as SMB signing. PetitPotam takes advantage of servers where Active Directory Certificate Services (AD CS) is not configured with protections for NTLM Relay Attacks. The mitigations outlined in &lt;a href="https://support.microsoft.com/help/5005413"&gt;KB5005413&lt;/a&gt;  instruct customers on how to protect their AD CS servers from such attacks.&lt;/p&gt;
-&lt;p&gt;You are potentially vulnerable to this attack if NTLM authentication is enabled in your domain and you are using Active Directory Certificate Services (AD CS) with any of the following services:&lt;/p&gt;
+&lt;p&gt;To prevent NTLM Relay Attacks on networks with NTLM enabled, domain administrators must ensure that services that permit NTLM authentication make use of protections such as &lt;a href="https://docs.microsoft.com/en-us/security-updates/securityadvisories/2009/973811"&gt;Extended Protection for Authentication (EPA)&lt;/a&gt; or signing features such as SMB signing. PetitPotam takes advantage of servers where Active Directory Certificate Services (AD CS) is not configured with protections for NTLM Relay Attacks. The mitigations outlined in &lt;a href="https://support.microsoft.com/help/5005413"&gt;KB5005413&lt;/a&gt;*  instruct customers on how to protect their AD CS servers from such attacks.&lt;/p&gt;
+&lt;p&gt;You are potentially vulnerable to this attack if you are using Active Directory Certificate Services (AD CS) with any of the following services:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Certificate Authority Web Enrollment&lt;/li&gt;
 &lt;li&gt;Certificate Enrollment Web Service&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;* &lt;strong&gt;Update - July 28, 2021&lt;/strong&gt;  &lt;a href="https://support.microsoft.com/help/5005413"&gt;KB5005413&lt;/a&gt; has been updated to make clearer the steps to take for protecting your systems.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="Windows NTLM" Type="Tag" Ordinal="20">Windows NTLM</vuln:Note>
       <vuln:Note Title="Issuing CNA" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
@@ -24085,6 +24520,11 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
     <vuln:CVE>ADV210003</vuln:CVE>
     <vuln:ProductStatuses>
       <vuln:Status Type="Known Affected">
+        <vuln:ProductID>10049</vuln:ProductID>
+        <vuln:ProductID>10378</vuln:ProductID>
+        <vuln:ProductID>10379</vuln:ProductID>
+        <vuln:ProductID>10483</vuln:ProductID>
+        <vuln:ProductID>10543</vuln:ProductID>
         <vuln:ProductID>11571</vuln:ProductID>
         <vuln:ProductID>11572</vuln:ProductID>
         <vuln:ProductID>11769</vuln:ProductID>
@@ -24096,16 +24536,31 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:ProductID>9318</vuln:ProductID>
         <vuln:ProductID>9344</vuln:ProductID>
         <vuln:ProductID>10051</vuln:ProductID>
-        <vuln:ProductID>10049</vuln:ProductID>
-        <vuln:ProductID>10378</vuln:ProductID>
-        <vuln:ProductID>10379</vuln:ProductID>
-        <vuln:ProductID>10483</vuln:ProductID>
-        <vuln:ProductID>10543</vuln:ProductID>
       </vuln:Status>
     </vuln:ProductStatuses>
     <vuln:Threats>
       <vuln:Threat Type="Impact">
         <vuln:Description>Spoofing</vuln:Description>
+        <vuln:ProductID>10049</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Spoofing</vuln:Description>
+        <vuln:ProductID>10378</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Spoofing</vuln:Description>
+        <vuln:ProductID>10379</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Spoofing</vuln:Description>
+        <vuln:ProductID>10483</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Spoofing</vuln:Description>
+        <vuln:ProductID>10543</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Spoofing</vuln:Description>
         <vuln:ProductID>11571</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Impact">
@@ -24148,24 +24603,24 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:Description>Spoofing</vuln:Description>
         <vuln:ProductID>10051</vuln:ProductID>
       </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Spoofing</vuln:Description>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Moderate</vuln:Description>
         <vuln:ProductID>10049</vuln:ProductID>
       </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Spoofing</vuln:Description>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Moderate</vuln:Description>
         <vuln:ProductID>10378</vuln:ProductID>
       </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Spoofing</vuln:Description>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Moderate</vuln:Description>
         <vuln:ProductID>10379</vuln:ProductID>
       </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Spoofing</vuln:Description>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Moderate</vuln:Description>
         <vuln:ProductID>10483</vuln:ProductID>
       </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Spoofing</vuln:Description>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Moderate</vuln:Description>
         <vuln:ProductID>10543</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
@@ -24211,26 +24666,6 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
       <vuln:Threat Type="Severity">
         <vuln:Description>Moderate</vuln:Description>
         <vuln:ProductID>10051</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Moderate</vuln:Description>
-        <vuln:ProductID>10049</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Moderate</vuln:Description>
-        <vuln:ProductID>10378</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Moderate</vuln:Description>
-        <vuln:ProductID>10379</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Moderate</vuln:Description>
-        <vuln:ProductID>10483</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Moderate</vuln:Description>
-        <vuln:ProductID>10543</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Exploit Status">
         <vuln:Description>Publicly Disclosed:Yes;Exploited:No;DOS:N/A</vuln:Description>
@@ -24240,6 +24675,12 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
     <vuln:Remediations />
     <vuln:Acknowledgments />
     <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2021-07-28T07:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Executive Summary text has been revised, and a statement has been added to inform customers that KB5005413 - https://support.microsoft.com/help/5005413 has been revised. These are informational changes only.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
       <vuln:Revision>
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2021-07-23T07:00:00Z</cvrf:Date>
@@ -24904,6 +25345,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -24963,6 +25412,15 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10852</vuln:ProductID>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004289</vuln:Description>
@@ -25457,6 +25915,13 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004305</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004305</vuln:URL>
@@ -25935,6 +26400,13 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004305</vuln:Description>
@@ -26733,6 +27205,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -26790,6 +27270,13 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004289</vuln:Description>
@@ -27602,6 +28089,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -27659,6 +28154,13 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004289</vuln:Description>
@@ -28243,6 +28745,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -28291,6 +28801,15 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10852</vuln:ProductID>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
     </vuln:Remediations>
     <vuln:Acknowledgments>
@@ -28941,6 +29460,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -28998,6 +29525,13 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004289</vuln:Description>
@@ -29487,6 +30021,13 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004305</vuln:Description>
@@ -30281,6 +30822,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -30338,6 +30887,13 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004289</vuln:Description>
@@ -30830,6 +31386,13 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004305</vuln:Description>
@@ -31916,6 +32479,13 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
     </vuln:Remediations>
     <vuln:Acknowledgments />
     <vuln:RevisionHistory>
@@ -32267,6 +32837,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
@@ -32977,6 +33555,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -33036,6 +33622,15 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10852</vuln:ProductID>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004289</vuln:Description>
@@ -33873,6 +34468,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -33932,6 +34535,15 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10852</vuln:ProductID>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004289</vuln:Description>
@@ -34451,6 +35063,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -34839,6 +35459,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -35195,6 +35823,13 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004305</vuln:Description>
@@ -36011,6 +36646,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -36070,6 +36713,15 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10852</vuln:ProductID>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004289</vuln:Description>
@@ -36589,6 +37241,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -36642,7 +37302,7 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
   <vuln:Vulnerability Ordinal="81">
-    <vuln:Title />
+    <vuln:Title>Microsoft Windows Media Foundation Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
       <vuln:Note Title="Microsoft Windows Media Foundation" Type="Tag" Ordinal="20">Microsoft Windows Media Foundation</vuln:Note>
@@ -36774,6 +37434,15 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10852</vuln:ProductID>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
     </vuln:Remediations>
     <vuln:Acknowledgments>
@@ -37131,6 +37800,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
@@ -37532,6 +38209,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
@@ -38244,6 +38929,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -38303,6 +38996,15 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10852</vuln:ProductID>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004289</vuln:Description>
@@ -38831,6 +39533,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -39117,6 +39827,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
     </vuln:Remediations>
     <vuln:Acknowledgments>
@@ -39643,6 +40361,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -39702,6 +40428,15 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10852</vuln:ProductID>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004298</vuln:Description>
@@ -40420,6 +41155,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -40479,6 +41222,15 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10852</vuln:ProductID>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004289</vuln:Description>
@@ -41198,6 +41950,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -41257,6 +42017,15 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10852</vuln:ProductID>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004298</vuln:Description>
@@ -41950,6 +42719,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -42009,6 +42786,15 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10852</vuln:ProductID>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004289</vuln:Description>
@@ -42808,6 +43594,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -42867,6 +43661,15 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10852</vuln:ProductID>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004289</vuln:Description>
@@ -43709,6 +44512,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -43768,6 +44579,15 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10852</vuln:ProductID>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004289</vuln:Description>
@@ -44119,6 +44939,13 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
     </vuln:Remediations>
     <vuln:Acknowledgments>
@@ -44476,6 +45303,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
@@ -45060,6 +45895,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -45119,6 +45962,15 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10852</vuln:ProductID>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004298</vuln:Description>
@@ -45620,6 +46472,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -45668,6 +46528,15 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10852</vuln:ProductID>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
     </vuln:Remediations>
     <vuln:Acknowledgments>
@@ -46225,6 +47094,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -46284,6 +47161,15 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10852</vuln:ProductID>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004298</vuln:Description>
@@ -46725,6 +47611,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
@@ -47438,6 +48332,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -47497,6 +48399,15 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10852</vuln:ProductID>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004289</vuln:Description>
@@ -48348,6 +49259,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -48407,6 +49326,15 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10852</vuln:ProductID>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
     </vuln:Remediations>
     <vuln:Acknowledgments>
@@ -48859,6 +49787,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -48918,6 +49854,15 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10852</vuln:ProductID>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
     </vuln:Remediations>
     <vuln:Acknowledgments>
@@ -49176,6 +50121,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
@@ -49889,6 +50842,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -49948,6 +50909,15 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10852</vuln:ProductID>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004289</vuln:Description>
@@ -50886,6 +51856,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5004237</vuln:URL>
@@ -50945,6 +51923,15 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10852</vuln:ProductID>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004289</vuln:Description>
@@ -51407,6 +52394,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.18362.1679</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004245</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004245</vuln:URL>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004237</vuln:Description>
@@ -52018,6 +53013,13 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.14393.4530</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5004238</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5004238</vuln:URL>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5004298</vuln:Description>
@@ -53256,17 +54258,368 @@ With the release of Visual Studio Code 1.57, a new feature was added called Work
     <vuln:CVE>CVE-2021-34481</vuln:CVE>
     <vuln:ProductStatuses>
       <vuln:Status Type="Known Affected">
-        <vuln:ProductID>11914</vuln:ProductID>
+        <vuln:ProductID>11568</vuln:ProductID>
+        <vuln:ProductID>11569</vuln:ProductID>
+        <vuln:ProductID>11570</vuln:ProductID>
+        <vuln:ProductID>11571</vuln:ProductID>
+        <vuln:ProductID>11572</vuln:ProductID>
+        <vuln:ProductID>11712</vuln:ProductID>
+        <vuln:ProductID>11713</vuln:ProductID>
+        <vuln:ProductID>11714</vuln:ProductID>
+        <vuln:ProductID>11896</vuln:ProductID>
+        <vuln:ProductID>11897</vuln:ProductID>
+        <vuln:ProductID>11898</vuln:ProductID>
+        <vuln:ProductID>11766</vuln:ProductID>
+        <vuln:ProductID>11767</vuln:ProductID>
+        <vuln:ProductID>11768</vuln:ProductID>
+        <vuln:ProductID>11769</vuln:ProductID>
+        <vuln:ProductID>11800</vuln:ProductID>
+        <vuln:ProductID>11801</vuln:ProductID>
+        <vuln:ProductID>11802</vuln:ProductID>
+        <vuln:ProductID>11803</vuln:ProductID>
+        <vuln:ProductID>10729</vuln:ProductID>
+        <vuln:ProductID>10735</vuln:ProductID>
+        <vuln:ProductID>10852</vuln:ProductID>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:ProductID>10047</vuln:ProductID>
+        <vuln:ProductID>10048</vuln:ProductID>
+        <vuln:ProductID>10481</vuln:ProductID>
+        <vuln:ProductID>10482</vuln:ProductID>
+        <vuln:ProductID>10484</vuln:ProductID>
+        <vuln:ProductID>9312</vuln:ProductID>
+        <vuln:ProductID>10287</vuln:ProductID>
+        <vuln:ProductID>9318</vuln:ProductID>
+        <vuln:ProductID>9344</vuln:ProductID>
+        <vuln:ProductID>10051</vuln:ProductID>
+        <vuln:ProductID>10049</vuln:ProductID>
+        <vuln:ProductID>10378</vuln:ProductID>
+        <vuln:ProductID>10379</vuln:ProductID>
+        <vuln:ProductID>10483</vuln:ProductID>
+        <vuln:ProductID>10543</vuln:ProductID>
       </vuln:Status>
     </vuln:ProductStatuses>
     <vuln:Threats>
       <vuln:Threat Type="Impact">
         <vuln:Description>Elevation of Privilege</vuln:Description>
-        <vuln:ProductID>11914</vuln:ProductID>
+        <vuln:ProductID>11568</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>11569</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>11570</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>11571</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>11572</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>11712</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>11713</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>11714</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>11896</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>11897</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>11898</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>11766</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>11767</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>11768</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>11769</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>11800</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>11801</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>11802</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>11803</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>10729</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>10735</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>10852</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>10853</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>10816</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>10855</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>10047</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>10048</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>10481</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>10482</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>10484</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>9312</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>10287</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>9318</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>9344</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>10051</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>10049</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>10378</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>10379</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>10483</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>10543</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
         <vuln:Description>Important</vuln:Description>
-        <vuln:ProductID>11914</vuln:ProductID>
+        <vuln:ProductID>11568</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11569</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11570</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11571</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11572</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11712</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11713</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11714</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11896</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11897</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11898</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11766</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11767</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11768</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11769</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11800</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11801</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11802</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11803</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>10729</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>10735</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>10852</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>10853</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>10816</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>10855</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>10047</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>10048</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>10481</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>10482</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>10484</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>9312</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>10287</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>9318</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>9344</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>10051</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>10049</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>10378</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>10379</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>10483</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>10543</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Exploit Status">
         <vuln:Description>Publicly Disclosed:Yes;Exploited:No;Latest Software Release:Exploitation More Likely;Older Software Release:Exploitation More Likely;DOS:N/A</vuln:Description>
@@ -53277,7 +54630,241 @@ With the release of Visual Studio Code 1.57, a new feature was added called Work
         <vuln:BaseScore>7.8</vuln:BaseScore>
         <vuln:TemporalScore>7.3</vuln:TemporalScore>
         <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
-        <vuln:ProductID>11914</vuln:ProductID>
+        <vuln:ProductID>11568</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>11569</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>11570</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>11571</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>11572</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>11712</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>11713</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>11714</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>11896</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>11897</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>11898</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>11766</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>11767</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>11768</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>11769</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>11800</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>11801</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>11802</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>11803</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>10729</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>10735</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>10852</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>10853</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>10816</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>10855</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>10047</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>10048</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>10481</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>10482</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>10484</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>9312</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>10287</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>9318</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>9344</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>10051</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>10049</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>10378</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>10379</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>10483</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:T/RC:C</vuln:Vector>
+        <vuln:ProductID>10543</vuln:ProductID>
       </vuln:ScoreSet>
     </vuln:CVSSScoreSets>
     <vuln:Remediations>
