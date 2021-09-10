@@ -15,13 +15,13 @@
     <cvrf:Version>1.0</cvrf:Version>
     <cvrf:RevisionHistory>
       <cvrf:Revision>
-        <cvrf:Number>2</cvrf:Number>
-        <cvrf:Date>2021-09-07T07:00:00Z</cvrf:Date>
+        <cvrf:Number>3</cvrf:Number>
+        <cvrf:Date>2021-09-09T07:00:00Z</cvrf:Date>
         <cvrf:Description>September Early Security Releases</cvrf:Description>
       </cvrf:Revision>
     </cvrf:RevisionHistory>
     <cvrf:InitialReleaseDate>2021-09-02T07:00:00Z</cvrf:InitialReleaseDate>
-    <cvrf:CurrentReleaseDate>2021-09-07T07:00:00Z</cvrf:CurrentReleaseDate>
+    <cvrf:CurrentReleaseDate>2021-09-09T07:00:00Z</cvrf:CurrentReleaseDate>
   </cvrf:DocumentTracking>
   <cvrf:DocumentNotes>
     <cvrf:Note Title="Release Notes" Audience="Public" Type="Details" Ordinal="0">&lt;p&gt;September 7, 2021 Microsoft released &lt;a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-40444"&gt;CVE-2021-40444&lt;/a&gt;.&lt;/p&gt;
@@ -339,6 +339,71 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="24">
+    <vuln:Title>Microsoft Edge (Chromium-based) Tampering Vulnerability</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;
+| Microsoft Edge Version  | Date Released | Based on Chromium Version |
+| ----- | ----- | ----- |
+| 93.0.961.44 | 9/9/2021 |  93.04577.63 |&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Issuing CNA" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2021-38669</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Tampering</vuln:Description>
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation Less Likely;Older Software Release:Exploitation Less Likely;DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>6.4</vuln:BaseScore>
+        <vuln:TemporalScore>5.6</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>93.0.961.44</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments>
+      <vuln:Acknowledgment>
+        <vuln:Name>&lt;a href="https://www.linkedin.com/in/colinsymon"&gt;Colin Symon&lt;/a&gt; with &lt;a href="https://www.eastlothian.gov.uk/"&gt;East Lothian Council&lt;/a&gt;</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+    </vuln:Acknowledgments>
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2021-09-09T07:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
   <vuln:Vulnerability Ordinal="1">
     <vuln:Title>Microsoft Edge for Android Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
@@ -403,7 +468,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="24">
+  <vuln:Vulnerability Ordinal="25">
     <vuln:Title>Microsoft MSHTML Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;Microsoft is investigating reports of a remote code execution vulnerability in MSHTML that affects Microsoft Windows. Microsoft is aware of targeted attacks that attempt to exploit this vulnerability by using specially-crafted Microsoft Office documents.&lt;/p&gt;
@@ -807,253 +872,253 @@
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>7.9</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:L/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11568</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>7.9</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:L/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11569</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>7.9</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:L/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11570</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>7.9</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:L/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11571</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>7.9</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:L/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11572</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>7.9</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:L/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11712</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>7.9</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:L/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11713</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>7.9</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:L/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11714</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>7.9</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:L/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11896</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>7.9</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:L/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11897</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>7.9</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:L/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11898</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>7.9</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:L/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11923</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>7.9</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:L/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11924</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>7.9</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:L/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11766</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>7.9</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:L/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11767</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>7.9</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:L/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11768</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>7.9</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:L/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11769</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>7.9</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:L/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11800</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>7.9</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:L/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11801</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>7.9</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:L/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11802</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>7.9</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:L/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11803</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>7.9</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:L/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>10729</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>7.9</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:L/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>10735</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>7.9</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:L/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>10852</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>7.9</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:L/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>10853</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>7.9</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:L/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>10816</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>7.9</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:L/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>10855</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>7.9</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:L/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>10047</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>7.9</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:L/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>10048</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>7.9</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:L/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>10481</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>7.9</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:L/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>10482</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>7.9</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:L/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>10484</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>7.9</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:L/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>9312</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>7.9</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:L/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>10287</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>7.9</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:L/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>9318</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>7.9</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:L/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>9344</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>7.9</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:L/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>10051</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>7.9</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:L/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>10049</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>7.9</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:L/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>10378</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>7.9</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:L/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>10379</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>7.9</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:L/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>10483</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.8</vuln:BaseScore>
         <vuln:TemporalScore>7.9</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:Vector>CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:L/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>10543</vuln:ProductID>
       </vuln:ScoreSet>
     </vuln:CVSSScoreSets>
@@ -1064,9 +1129,23 @@
         <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Workaround">
-        <vuln:Description>&lt;p&gt;Disabling the installation of all ActiveX controls in Internet Explorer mitigates this attack. This can be accomplished for all sites by updating the registry. Previously-installed ActiveX controls will continue to run, but do not expose this vulnerability.&lt;/p&gt;
+        <vuln:Description>&lt;p&gt;Disabling the installation of all ActiveX controls in Internet Explorer mitigates this attack. This can be accomplished for all sites by configuring the Group Policy using your Local Group Policy Editor &lt;strong&gt;or&lt;/strong&gt; by updating the registry. Previously-installed ActiveX controls will continue to run, but do not expose this vulnerability.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;To disable ActiveX controls via Group Policy&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In Group Policy settings, navigate to Computer Configuration &amp;gt; Administrative Templates &amp;gt; Windows Components &amp;gt; Internet Explorer &amp;gt; Internet Control Panel &amp;gt; Security Page&lt;/p&gt;
+&lt;p&gt;For each zone:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Select the zone (Internet Zone, Intranet Zone, Local Machine Zone, or Trusted Sites Zone).&lt;/li&gt;
+&lt;li&gt;Double-click &lt;strong&gt;Download signed ActiveX controls&lt;/strong&gt; and &lt;strong&gt;Enable&lt;/strong&gt; the policy. Then set the option in the policy to &lt;strong&gt;Disable&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Double-click &lt;strong&gt;Download unsigned ActiveX controls&lt;/strong&gt; and &lt;strong&gt;Enable&lt;/strong&gt; the policy. Then set the option in the policy to &lt;strong&gt;Disable&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;We recommend applying this setting to all zones to fully protect your system.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Impact of workaround.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This sets the URLACTION_DOWNLOAD_SIGNED_ACTIVEX (0x1001) and URLACTION_DOWNLOAD_UNSIGNED_ACTIVEX (0x1004) to DISABLED (3) for all internet zones for 64-bit and 32-bit processes.
+New ActiveX controls will not be installed. Previously-installed ActiveX controls will continue to run.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How to undo the workaround&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Set the option in the policy to &lt;strong&gt;Enable&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;To disable ActiveX controls on an individual system via regkey:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Warning&lt;/strong&gt; If you use Registry Editor incorrectly, you may cause serious problems that may require you to reinstall your operating system. Microsoft cannot guarantee that you can solve problems that result from using Registry Editor incorrectly. Use Registry Editor at your own risk.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;To disable ActiveX controls on an individual system:&lt;/strong&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;To disable installing ActiveX controls in Internet Explorer in all zones, paste the following into a text file and save it with the .reg file extension:&lt;/li&gt;
 &lt;/ol&gt;
@@ -1097,6 +1176,30 @@
 New ActiveX controls will not be installed. Previously-installed ActiveX controls will continue to run.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;How to undo the workaround&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Delete the registry keys that were added in implementing this workaround.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;To disable preview in Windows Explorer&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Disabling Shell Preview prevents a user from previewing documents in Windows Explorer. Follow these steps for each type of document you want to prevent being previewed:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In Registry Editor, navigate to the appropriate registry key:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;For Word documents:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;HKEY_CLASSES_ROOT.docx\ShellEx{8895b1c6-b41f-4c1c-a562-0d564250836f}&lt;/li&gt;
+&lt;li&gt;HKEY_CLASSES_ROOT.doc\ShellEx{8895b1c6-b41f-4c1c-a562-0d564250836f}&lt;/li&gt;
+&lt;li&gt;HKEY_CLASSES_ROOT.docm\ShellEx{8895b1c6-b41f-4c1c-a562-0d564250836f}&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For rich text files:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;HKEY_CLASSES_ROOT.rtf\ShellEx{8895b1c6-b41f-4c1c-a562-0d564250836f}&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start="2"&gt;
+&lt;li&gt;Export a copy of the regkey for backup.&lt;/li&gt;
+&lt;li&gt;Double-click &lt;strong&gt;Name&lt;/strong&gt; and in the &lt;strong&gt;Edit String&lt;/strong&gt; dialog box, delete the Value Data.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;OK&lt;/strong&gt;,&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Impact of workaround&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Users will not be able to preview documents in Windows Explorer.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How to undo the workaround&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Double-click the .reg file you created in step two of the workaround.&lt;/p&gt;
 </vuln:Description>
         <vuln:AffectedFiles />
       </vuln:Remediation>
@@ -1128,6 +1231,12 @@ New ActiveX controls will not be installed. Previously-installed ActiveX control
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2021-09-07T07:00:00Z</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2021-09-09T07:00:00Z</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;The information in the workaround section was updated. This an informational change only.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
     </vuln:RevisionHistory>
