@@ -1,0 +1,3628 @@
+﻿<html>
+<head>
+    <!-- Created by module version 1.9.5 -->
+    <!-- this is the css from the old bulletin site. Change this to better style your report to your liking -->
+    <!-- <link rel="stylesheet" href="https://i-technet.sec.s-msft.com/Combined.css?resources=0:ImageSprite,0:TopicResponsive,0:TopicResponsive.MediaQueries,1:CodeSnippet,1:ProgrammingSelector,1:ExpandableCollapsibleArea,0:CommunityContent,1:TopicNotInScope,1:FeedViewerBasic,1:ImageSprite,2:Header.2,2:HeaderFooterSprite,2:Header.MediaQueries,2:Banner.MediaQueries,3:megabladeMenu.1,3:MegabladeMenu.MediaQueries,3:MegabladeMenuSpriteCluster,0:Breadcrumbs,0:Breadcrumbs.MediaQueries,0:ResponsiveToc,0:ResponsiveToc.MediaQueries,1:NavSidebar,0:LibraryMemberFilter,4:StandardRating,2:Footer.2,5:LinkList,2:Footer.MediaQueries,0:BaseResponsive,6:MsdnResponsive,0:Tables.MediaQueries,7:SkinnyRatingResponsive,7:SkinnyRatingV2;/Areas/Library/Content:0,/Areas/Epx/Content/Css:1,/Areas/Epx/Themes/TechNet/Content:2,/Areas/Epx/Themes/Shared/Content:3,/Areas/Global/Content:4,/Areas/Epx/Themes/Base/Content:5,/Areas/Library/Themes/Msdn/Content:6,/Areas/Library/Themes/TechNet/Content:7&amp;v=9192817066EC5D087D15C766A0430C95"> -->
+
+    <!-- this style section changes cell widths in the exec header table so that the affected products at the end are wide enough to read -->
+    <style>
+            body {
+          background-color: white;
+          font-family: sans-serif;
+        }
+
+        h1 {
+          color: black;
+        }
+        table {
+          font-family: Arial, Helvetica, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+
+        table td, th {
+          border: 1px solid #ddd;
+          padding: 8px;
+        }
+
+        table tr:nth-child(even){
+          background-color: #ddd;
+        }
+
+        table tr:hover {background-color: #FAF0E6;}
+
+        table th {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          text-align: left;
+          background-color: #C0C0C0;
+        }
+        #execHeader td:first-child  { width: 10% ;}
+        #execHeader td:nth-child(5) { width: 37% ;}
+    </style>
+
+    <!-- this section defines explicit width for all cells in the affected software tables. This is so the column width is the same across each product -->
+    <style>
+        .affected_software td:first-child  { width: 34% ; }
+        .affected_software td:nth-child(2) { width: 14% ; }
+        .affected_software td:nth-child(3) { width: 6% ; }
+        .affected_software td:nth-child(4) { width: 6% ; }
+        .affected_software td:nth-child(5) { width: 7.5% ; }
+        .affected_software td:nth-child(6) { width: 28.5% ; }
+        .affected_software td:nth-child(7) { width: 4% ; }
+    </style>
+
+    <!-- remove spacing between table of contents cells -->
+    <style>
+        #tableOfContents tr td { padding: 2px; }
+    </style>
+
+    <style>
+        .cvss_table tr:nth-child(odd) {background: #ededed}
+    </style>
+
+</head>
+
+<body lang=EN-US link=blue>
+<div id="documentWrapper" style="width: 90%; margin-left: auto; margin-right: auto;">
+
+<h1 id="top">Microsoft CVE Summary</h1>
+
+<p style="margin:0; padding:0">This report contains detail for the following vulnerabilities:</p>
+<table id="tableOfContents" style="width:78%; margin-top:5">
+ <tr>
+  <th>CVE Issued by</th>
+  <th>Tag</th>
+  <th>CVE ID</th>
+  <th>CVE Title</th>
+ </tr>
+ <tr><td>Microsoft</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2022-21929">CVE-2022-21929</a></td>    <td>Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability</td></tr>
+<tr><td>Chrome</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2022-0117">CVE-2022-0117</a></td>    <td>Chromium: CVE-2022-0117 Policy bypass in Service Workers</td></tr>
+<tr><td>Chrome</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2022-0116">CVE-2022-0116</a></td>    <td>Chromium: CVE-2022-0116 Inappropriate implementation in Compositing</td></tr>
+<tr><td>Chrome</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2022-0115">CVE-2022-0115</a></td>    <td>Chromium: CVE-2022-0115 Uninitialized Use in File API</td></tr>
+<tr><td>Chrome</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2022-0114">CVE-2022-0114</a></td>    <td>Chromium: CVE-2022-0114 Out of bounds memory access in Web Serial</td></tr>
+<tr><td>Chrome</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2022-0113">CVE-2022-0113</a></td>    <td>Chromium: CVE-2022-0113 Inappropriate implementation in Blink</td></tr>
+<tr><td>Chrome</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2022-0112">CVE-2022-0112</a></td>    <td>Chromium: CVE-2022-0112 Incorrect security UI in Browser UI</td></tr>
+<tr><td>Chrome</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2022-0111">CVE-2022-0111</a></td>    <td>Chromium: CVE-2022-0111 Inappropriate implementation in Navigation</td></tr>
+<tr><td>Chrome</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2022-0110">CVE-2022-0110</a></td>    <td>Chromium: CVE-2022-0110 Incorrect security UI in Autofill</td></tr>
+<tr><td>Chrome</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2022-0109">CVE-2022-0109</a></td>    <td>Chromium: CVE-2022-0109 Inappropriate implementation in Autofill</td></tr>
+<tr><td>Chrome</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2022-0108">CVE-2022-0108</a></td>    <td>Chromium: CVE-2022-0108 Inappropriate implementation in Navigation</td></tr>
+<tr><td>Chrome</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2022-0107">CVE-2022-0107</a></td>    <td>Chromium: CVE-2022-0107 Use after free in File Manager API</td></tr>
+<tr><td>Chrome</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2022-0106">CVE-2022-0106</a></td>    <td>Chromium: CVE-2022-0106 Use after free in Autofill</td></tr>
+<tr><td>Chrome</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2022-0118">CVE-2022-0118</a></td>    <td>Chromium: CVE-2022-0118 Inappropriate implementation in WebShare</td></tr>
+<tr><td>Chrome</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2022-0105">CVE-2022-0105</a></td>    <td>Chromium: CVE-2022-0105 Use after free in PDF</td></tr>
+<tr><td>Chrome</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2022-0103">CVE-2022-0103</a></td>    <td>Chromium: CVE-2022-0103 Use after free in SwiftShader</td></tr>
+<tr><td>Chrome</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2022-0102">CVE-2022-0102</a></td>    <td>Chromium: CVE-2022-0102 Type Confusion in V8 </td></tr>
+<tr><td>Chrome</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2022-0101">CVE-2022-0101</a></td>    <td>Chromium: CVE-2022-0101 Heap buffer overflow in Bookmarks</td></tr>
+<tr><td>Chrome</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2022-0100">CVE-2022-0100</a></td>    <td>Chromium: CVE-2022-0100 Heap buffer overflow in Media streams API</td></tr>
+<tr><td>Chrome</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2022-0099">CVE-2022-0099</a></td>    <td>Chromium: CVE-2022-0099 Use after free in Sign-in</td></tr>
+<tr><td>Chrome</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2022-0098">CVE-2022-0098</a></td>    <td>Chromium: CVE-2022-0098 Use after free in Screen Capture</td></tr>
+<tr><td>Chrome</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2022-0097">CVE-2022-0097</a></td>    <td>Chromium: CVE-2022-0097 Inappropriate implementation in DevTools</td></tr>
+<tr><td>Chrome</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2022-0096">CVE-2022-0096</a></td>    <td>Chromium: CVE-2022-0096 Use after free in Storage</td></tr>
+<tr><td>Microsoft</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2022-21970">CVE-2022-21970</a></td>    <td>Microsoft Edge (Chromium-based) Elevation of Privilege Vulnerability</td></tr>
+<tr><td>Microsoft</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2022-21954">CVE-2022-21954</a></td>    <td>Microsoft Edge (Chromium-based) Elevation of Privilege Vulnerability</td></tr>
+<tr><td>Microsoft</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2022-21931">CVE-2022-21931</a></td>    <td>Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability</td></tr>
+<tr><td>Microsoft</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2022-21930">CVE-2022-21930</a></td>    <td>Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability</td></tr>
+<tr><td>Chrome</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2022-0104">CVE-2022-0104</a></td>    <td>Chromium: CVE-2022-0104 Heap buffer overflow in ANGLE</td></tr>
+<tr><td>Chrome</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2022-0120">CVE-2022-0120</a></td>    <td>Chromium: CVE-2022-0120 Inappropriate implementation in Passwords</td></tr>
+</table>
+<h1 id="CVE-2022-21929">CVE-2022-21929 - Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-21929">CVE-2022-21929</a>
+<br>
+<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-21929">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-21929">NVD</a>
+<p>Issuing CNA: Microsoft</p></td>
+     <td>        <b>CVE Title:</b> Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability
+        <br>
+        <b>CVSS:</b> <br>                        <br> <b>CVSS:3.1 Highest BaseScore:2,5/TemporalScore:2,3</b>
+                        <table class="cvss_table" border=1 cellpadding=0 width="99%">
+                            <thead>
+                                <tr>
+                                    <td colspan="7"><b>Base score metrics</b></td>
+                                </tr>
+                            </thead>
+                            <tr><td title="This metric reflects the context by which vulnerability exploitation is possible. The Base Score increases the more remote (logically, and physically) an attacker can be in order to exploit the vulnerable component."><b>Attack Vector</b></td><td title="The vulnerable component is not bound to the network stack and the attacker’s path is via read/write/execute capabilities. Either: the attacker exploits the vulnerability by accessing the target system locally (e.g., keyboard, console), or remotely (e.g., SSH); or the attacker relies on User Interaction by another person to perform actions required to exploit the vulnerability (e.g., tricking a legitimate user into opening a malicious document)"><b>Local</b></td></tr><tr><td title="This metric describes the conditions beyond the attacker’s control that must exist in order to exploit the vulnerability. Such conditions may require the collection of more information about the target or computational exceptions. The assessment of this metric excludes any requirements for user interaction in order to exploit the vulnerability. If a specific configuration is required for an attack to succeed, the Base metrics should be scored assuming the vulnerable component is in that configuration."><b>Attack Complexity</b></td><td title="A successful attack depends on conditions beyond the attacker's control. That is, a successful attack cannot be accomplished at will, but requires the attacker to invest in some measurable amount of effort in preparation or execution against the vulnerable component before a successful attack can be expected. For example, a successful attack may require an attacker to: gather knowledge about the environment in which the vulnerable target/component exists; prepare the target environment to improve exploit reliability; or inject themselves into the logical network path between the target and the resource requested by the victim in order to read and/or modify network communications (e.g., a man in the middle attack)."><b>High</b></td></tr><tr><td title="This metric describes the level of privileges an attacker must possess before successfully exploiting the vulnerability."><b>Privileges Required</b></td><td title="The attacker is unauthorized prior to attack, and therefore does not require any access to settings or files to carry out an attack."><b>None</b></td></tr><tr><td title="This metric captures the requirement for a user, other than the attacker, to participate in the successful compromise the vulnerable component. This metric determines whether the vulnerability can be exploited solely at the will of the attacker, or whether a separate user (or user-initiated process) must participate in some manner."><b>User Interaction</b></td><td title="Successful exploitation of this vulnerability requires a user to take some action before the vulnerability can be exploited."><b>Required</b></td></tr><tr><td title="Does a successful attack impact a component other than the vulnerable component? If so, the Base Score increases and the Confidentiality, Integrity and Authentication metrics should be scored relative to the impacted component."><b>Scope</b></td><td title="An exploited vulnerability can only affect resources managed by the same security authority. In this case, the vulnerable component and the impacted component are either the same, or both are managed by the same security authority."><b>Unchanged</b></td></tr><tr><td title="This metric measures the impact to the confidentiality of the information resources managed by a software component due to a successfully exploited vulnerability. Confidentiality refers to limiting information access and disclosure to only authorized users, as well as preventing access by, or disclosure to, unauthorized ones."><b>Confidentiality</b></td><td title="There is no loss of confidentiality within the impacted component."><b>None</b></td></tr><tr><td title="This metric measures the impact to integrity of a successfully exploited vulnerability. Integrity refers to the trustworthiness and veracity of information."><b>Integrity</b></td><td title="Modification of data is possible, but the attacker does not have control over the consequence of a modification, or the amount of modification is limited. The data modification does not have a direct, serious impact on the impacted component."><b>Low</b></td></tr><tr><td title="This metric measures the impact to the availability of the impacted component resulting from a successfully exploited vulnerability. It refers to the loss of availability of the impacted component itself, such as a networked service (e.g., web, database, email). Since availability refers to the accessibility of information resources, attacks that consume network bandwidth, processor cycles, or disk space all impact the availability of an impacted component."><b>Availability</b></td><td title="There is no impact to availability within the impacted component."><b>None</b></td></tr>
+                        </table>
+                        <table class="cvss_table" border=1 cellpadding=0 width="99%">
+                            <thead>
+                                <tr>
+                                    <td colspan="7"><b>Temporal score metrics</b></td>
+                                </tr>
+                            </thead>
+                            <tr><td title="This metric measures the likelihood of the vulnerability being attacked, and is typically based on the current state of exploit techniques, exploit code availability, or active, 'in-the-wild' exploitation."><b>Exploit Code Maturity</b></td><td title="Proof-of-concept exploit code is available, or an attack demonstration is not practical for most systems. The code or technique is not functional in all situations and may require substantial modification by a skilled attacker."><b>Proof-of-Concept</b></td></tr><tr><td title="The Remediation Level of a vulnerability is an important factor for prioritization. The typical vulnerability is unpatched when initially published. Workarounds or hotfixes may offer interim remediation until an official patch or upgrade is issued. Each of these respective stages adjusts the temporal score downwards, reflecting the decreasing urgency as remediation becomes final."><b>Remediation Level</b></td><td title="A complete vendor solution is available. Either the vendor has issued an official patch, or an upgrade is available."><b>Official Fix</b></td></tr><tr><td title="This metric measures the degree of confidence in the existence of the vulnerability and the credibility of the known technical details. Sometimes only the existence of vulnerabilities are publicized, but without specific details. For example, an impact may be recognized as undesirable, but the root cause may not be known. The vulnerability may later be corroborated by research which suggests where the vulnerability may lie, though the research may not be certain. Finally, a vulnerability may be confirmed through acknowledgement by the author or vendor of the affected technology. The urgency of a vulnerability is higher when a vulnerability is known to exist with certainty. This metric also suggests the level of technical knowledge available to would-be attackers."><b>Report Confidence</b></td><td title="Detailed reports exist, or functional reproduction is possible (functional exploits may provide this). Source code is available to independently verify the assertions of the research, or the author or vendor of the affected code has confirmed the presence of the vulnerability."><b>Confirmed</b></td></tr>
+                        </table>
+        <br>
+        <b>Executive Summary:</b> <br>None
+        <br>
+        <b>FAQ:</b><br><p><strong>What is the version information for this release?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Microsoft Edge Version</th>
+<th>Date Released</th>
+<th>Based on Chromium Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>97.0.1072.55</td>
+<td>1/6/2022</td>
+<td>97.0.4692.71</td>
+</tr>
+</tbody>
+</table>
+
+        <br>
+        <b>Mitigations:</b><br>None
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp06/01/2022&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Moderate</td>
+     <td>Remote Code Execution</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an exploitability assessment of each of the vulnerabilities addressed this month. The vulnerabilities are listed in order of bulletin ID then CVE ID. Only vulnerabilities that have a severity rating of Critical or Important in the bulletins are included.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Exploitation Less Likely</td>
+     <td>No</td>
+     <td>No</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="9"><b>CVE-2022-21929</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Fixed Build</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Edge (Chromium-based)</td>
+                <td><a href="" >Release Notes (Security Update)</td>
+                <td>Moderate</td>
+                <td>Remote Code Execution</td>
+                <td>None</td>
+                <td>Base: 2,5<br />Temporal: 2,3<br />Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:N/I:L/A:N/E:P/RL:O/RC:C<br /></td>
+                <td>97.0.1072.55</td>
+                <td>No</td>
+                <td>None</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2022-21929</td>
+     <td><a href="https://www.daviderceg.com/">David Erceg</a><br><br><br></td>
+ </tr>
+</table><h1 id="CVE-2022-21930">CVE-2022-21930 - Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-21930">CVE-2022-21930</a>
+<br>
+<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-21930">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-21930">NVD</a>
+<p>Issuing CNA: Microsoft</p></td>
+     <td>        <b>CVE Title:</b> Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability
+        <br>
+        <b>CVSS:</b> <br>                        <br> <b>CVSS:3.1 Highest BaseScore:4,2/TemporalScore:3,8</b>
+                        <table class="cvss_table" border=1 cellpadding=0 width="99%">
+                            <thead>
+                                <tr>
+                                    <td colspan="7"><b>Base score metrics</b></td>
+                                </tr>
+                            </thead>
+                            <tr><td title="This metric reflects the context by which vulnerability exploitation is possible. The Base Score increases the more remote (logically, and physically) an attacker can be in order to exploit the vulnerable component."><b>Attack Vector</b></td><td title="The vulnerable component is bound to the network stack and the set of possible attackers extends beyond the other options listed, up to and including the entire Internet. Such a vulnerability is often termed 'remotely exploitable' and can be thought of as an attack being exploitable at the protocol level one or more network hops away (e.g., across one or more routers)."><b>Network</b></td></tr><tr><td title="This metric describes the conditions beyond the attacker’s control that must exist in order to exploit the vulnerability. Such conditions may require the collection of more information about the target or computational exceptions. The assessment of this metric excludes any requirements for user interaction in order to exploit the vulnerability. If a specific configuration is required for an attack to succeed, the Base metrics should be scored assuming the vulnerable component is in that configuration."><b>Attack Complexity</b></td><td title="A successful attack depends on conditions beyond the attacker's control. That is, a successful attack cannot be accomplished at will, but requires the attacker to invest in some measurable amount of effort in preparation or execution against the vulnerable component before a successful attack can be expected. For example, a successful attack may require an attacker to: gather knowledge about the environment in which the vulnerable target/component exists; prepare the target environment to improve exploit reliability; or inject themselves into the logical network path between the target and the resource requested by the victim in order to read and/or modify network communications (e.g., a man in the middle attack)."><b>High</b></td></tr><tr><td title="This metric describes the level of privileges an attacker must possess before successfully exploiting the vulnerability."><b>Privileges Required</b></td><td title="The attacker is unauthorized prior to attack, and therefore does not require any access to settings or files to carry out an attack."><b>None</b></td></tr><tr><td title="This metric captures the requirement for a user, other than the attacker, to participate in the successful compromise the vulnerable component. This metric determines whether the vulnerability can be exploited solely at the will of the attacker, or whether a separate user (or user-initiated process) must participate in some manner."><b>User Interaction</b></td><td title="Successful exploitation of this vulnerability requires a user to take some action before the vulnerability can be exploited."><b>Required</b></td></tr><tr><td title="Does a successful attack impact a component other than the vulnerable component? If so, the Base Score increases and the Confidentiality, Integrity and Authentication metrics should be scored relative to the impacted component."><b>Scope</b></td><td title="An exploited vulnerability can only affect resources managed by the same security authority. In this case, the vulnerable component and the impacted component are either the same, or both are managed by the same security authority."><b>Unchanged</b></td></tr><tr><td title="This metric measures the impact to the confidentiality of the information resources managed by a software component due to a successfully exploited vulnerability. Confidentiality refers to limiting information access and disclosure to only authorized users, as well as preventing access by, or disclosure to, unauthorized ones."><b>Confidentiality</b></td><td title="There is some loss of confidentiality. Access to some restricted information is obtained, but the attacker does not have control over what information is obtained, or the amount or kind of loss is limited. The information disclosure does not cause a direct, serious loss to the impacted component."><b>Low</b></td></tr><tr><td title="This metric measures the impact to integrity of a successfully exploited vulnerability. Integrity refers to the trustworthiness and veracity of information."><b>Integrity</b></td><td title="Modification of data is possible, but the attacker does not have control over the consequence of a modification, or the amount of modification is limited. The data modification does not have a direct, serious impact on the impacted component."><b>Low</b></td></tr><tr><td title="This metric measures the impact to the availability of the impacted component resulting from a successfully exploited vulnerability. It refers to the loss of availability of the impacted component itself, such as a networked service (e.g., web, database, email). Since availability refers to the accessibility of information resources, attacks that consume network bandwidth, processor cycles, or disk space all impact the availability of an impacted component."><b>Availability</b></td><td title="There is no impact to availability within the impacted component."><b>None</b></td></tr>
+                        </table>
+                        <table class="cvss_table" border=1 cellpadding=0 width="99%">
+                            <thead>
+                                <tr>
+                                    <td colspan="7"><b>Temporal score metrics</b></td>
+                                </tr>
+                            </thead>
+                            <tr><td title="This metric measures the likelihood of the vulnerability being attacked, and is typically based on the current state of exploit techniques, exploit code availability, or active, 'in-the-wild' exploitation."><b>Exploit Code Maturity</b></td><td title="Proof-of-concept exploit code is available, or an attack demonstration is not practical for most systems. The code or technique is not functional in all situations and may require substantial modification by a skilled attacker."><b>Proof-of-Concept</b></td></tr><tr><td title="The Remediation Level of a vulnerability is an important factor for prioritization. The typical vulnerability is unpatched when initially published. Workarounds or hotfixes may offer interim remediation until an official patch or upgrade is issued. Each of these respective stages adjusts the temporal score downwards, reflecting the decreasing urgency as remediation becomes final."><b>Remediation Level</b></td><td title="A complete vendor solution is available. Either the vendor has issued an official patch, or an upgrade is available."><b>Official Fix</b></td></tr><tr><td title="This metric measures the degree of confidence in the existence of the vulnerability and the credibility of the known technical details. Sometimes only the existence of vulnerabilities are publicized, but without specific details. For example, an impact may be recognized as undesirable, but the root cause may not be known. The vulnerability may later be corroborated by research which suggests where the vulnerability may lie, though the research may not be certain. Finally, a vulnerability may be confirmed through acknowledgement by the author or vendor of the affected technology. The urgency of a vulnerability is higher when a vulnerability is known to exist with certainty. This metric also suggests the level of technical knowledge available to would-be attackers."><b>Report Confidence</b></td><td title="Detailed reports exist, or functional reproduction is possible (functional exploits may provide this). Source code is available to independently verify the assertions of the research, or the author or vendor of the affected code has confirmed the presence of the vulnerability."><b>Confirmed</b></td></tr>
+                        </table>
+        <br>
+        <b>Executive Summary:</b> <br>None
+        <br>
+        <b>FAQ:</b><br><p><strong>What is the version information for this release?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Microsoft Edge Version</th>
+<th>Date Released</th>
+<th>Based on Chromium Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>97.0.1072.55</td>
+<td>1/6/2022</td>
+<td>97.0.4692.71</td>
+</tr>
+</tbody>
+</table>
+
+        <br>
+        <b>Mitigations:</b><br>None
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp06/01/2022&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Important</td>
+     <td>Remote Code Execution</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an exploitability assessment of each of the vulnerabilities addressed this month. The vulnerabilities are listed in order of bulletin ID then CVE ID. Only vulnerabilities that have a severity rating of Critical or Important in the bulletins are included.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Exploitation Less Likely</td>
+     <td>No</td>
+     <td>No</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="9"><b>CVE-2022-21930</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Fixed Build</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Edge (Chromium-based)</td>
+                <td><a href="" >Release Notes (Security Update)</td>
+                <td>Important</td>
+                <td>Remote Code Execution</td>
+                <td>None</td>
+                <td>Base: 4,2<br />Temporal: 3,8<br />Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:N/E:P/RL:O/RC:C<br /></td>
+                <td>97.0.1072.55</td>
+                <td>No</td>
+                <td>None</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2022-21930</td>
+     <td><a href="https://www.daviderceg.com/">David Erceg</a><br><br><br></td>
+ </tr>
+</table><h1 id="CVE-2022-21931">CVE-2022-21931 - Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-21931">CVE-2022-21931</a>
+<br>
+<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-21931">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-21931">NVD</a>
+<p>Issuing CNA: Microsoft</p></td>
+     <td>        <b>CVE Title:</b> Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability
+        <br>
+        <b>CVSS:</b> <br>                        <br> <b>CVSS:3.1 Highest BaseScore:4,2/TemporalScore:3,8</b>
+                        <table class="cvss_table" border=1 cellpadding=0 width="99%">
+                            <thead>
+                                <tr>
+                                    <td colspan="7"><b>Base score metrics</b></td>
+                                </tr>
+                            </thead>
+                            <tr><td title="This metric reflects the context by which vulnerability exploitation is possible. The Base Score increases the more remote (logically, and physically) an attacker can be in order to exploit the vulnerable component."><b>Attack Vector</b></td><td title="The vulnerable component is bound to the network stack and the set of possible attackers extends beyond the other options listed, up to and including the entire Internet. Such a vulnerability is often termed 'remotely exploitable' and can be thought of as an attack being exploitable at the protocol level one or more network hops away (e.g., across one or more routers)."><b>Network</b></td></tr><tr><td title="This metric describes the conditions beyond the attacker’s control that must exist in order to exploit the vulnerability. Such conditions may require the collection of more information about the target or computational exceptions. The assessment of this metric excludes any requirements for user interaction in order to exploit the vulnerability. If a specific configuration is required for an attack to succeed, the Base metrics should be scored assuming the vulnerable component is in that configuration."><b>Attack Complexity</b></td><td title="A successful attack depends on conditions beyond the attacker's control. That is, a successful attack cannot be accomplished at will, but requires the attacker to invest in some measurable amount of effort in preparation or execution against the vulnerable component before a successful attack can be expected. For example, a successful attack may require an attacker to: gather knowledge about the environment in which the vulnerable target/component exists; prepare the target environment to improve exploit reliability; or inject themselves into the logical network path between the target and the resource requested by the victim in order to read and/or modify network communications (e.g., a man in the middle attack)."><b>High</b></td></tr><tr><td title="This metric describes the level of privileges an attacker must possess before successfully exploiting the vulnerability."><b>Privileges Required</b></td><td title="The attacker is unauthorized prior to attack, and therefore does not require any access to settings or files to carry out an attack."><b>None</b></td></tr><tr><td title="This metric captures the requirement for a user, other than the attacker, to participate in the successful compromise the vulnerable component. This metric determines whether the vulnerability can be exploited solely at the will of the attacker, or whether a separate user (or user-initiated process) must participate in some manner."><b>User Interaction</b></td><td title="Successful exploitation of this vulnerability requires a user to take some action before the vulnerability can be exploited."><b>Required</b></td></tr><tr><td title="Does a successful attack impact a component other than the vulnerable component? If so, the Base Score increases and the Confidentiality, Integrity and Authentication metrics should be scored relative to the impacted component."><b>Scope</b></td><td title="An exploited vulnerability can only affect resources managed by the same security authority. In this case, the vulnerable component and the impacted component are either the same, or both are managed by the same security authority."><b>Unchanged</b></td></tr><tr><td title="This metric measures the impact to the confidentiality of the information resources managed by a software component due to a successfully exploited vulnerability. Confidentiality refers to limiting information access and disclosure to only authorized users, as well as preventing access by, or disclosure to, unauthorized ones."><b>Confidentiality</b></td><td title="There is some loss of confidentiality. Access to some restricted information is obtained, but the attacker does not have control over what information is obtained, or the amount or kind of loss is limited. The information disclosure does not cause a direct, serious loss to the impacted component."><b>Low</b></td></tr><tr><td title="This metric measures the impact to integrity of a successfully exploited vulnerability. Integrity refers to the trustworthiness and veracity of information."><b>Integrity</b></td><td title="Modification of data is possible, but the attacker does not have control over the consequence of a modification, or the amount of modification is limited. The data modification does not have a direct, serious impact on the impacted component."><b>Low</b></td></tr><tr><td title="This metric measures the impact to the availability of the impacted component resulting from a successfully exploited vulnerability. It refers to the loss of availability of the impacted component itself, such as a networked service (e.g., web, database, email). Since availability refers to the accessibility of information resources, attacks that consume network bandwidth, processor cycles, or disk space all impact the availability of an impacted component."><b>Availability</b></td><td title="There is no impact to availability within the impacted component."><b>None</b></td></tr>
+                        </table>
+                        <table class="cvss_table" border=1 cellpadding=0 width="99%">
+                            <thead>
+                                <tr>
+                                    <td colspan="7"><b>Temporal score metrics</b></td>
+                                </tr>
+                            </thead>
+                            <tr><td title="This metric measures the likelihood of the vulnerability being attacked, and is typically based on the current state of exploit techniques, exploit code availability, or active, 'in-the-wild' exploitation."><b>Exploit Code Maturity</b></td><td title="Proof-of-concept exploit code is available, or an attack demonstration is not practical for most systems. The code or technique is not functional in all situations and may require substantial modification by a skilled attacker."><b>Proof-of-Concept</b></td></tr><tr><td title="The Remediation Level of a vulnerability is an important factor for prioritization. The typical vulnerability is unpatched when initially published. Workarounds or hotfixes may offer interim remediation until an official patch or upgrade is issued. Each of these respective stages adjusts the temporal score downwards, reflecting the decreasing urgency as remediation becomes final."><b>Remediation Level</b></td><td title="A complete vendor solution is available. Either the vendor has issued an official patch, or an upgrade is available."><b>Official Fix</b></td></tr><tr><td title="This metric measures the degree of confidence in the existence of the vulnerability and the credibility of the known technical details. Sometimes only the existence of vulnerabilities are publicized, but without specific details. For example, an impact may be recognized as undesirable, but the root cause may not be known. The vulnerability may later be corroborated by research which suggests where the vulnerability may lie, though the research may not be certain. Finally, a vulnerability may be confirmed through acknowledgement by the author or vendor of the affected technology. The urgency of a vulnerability is higher when a vulnerability is known to exist with certainty. This metric also suggests the level of technical knowledge available to would-be attackers."><b>Report Confidence</b></td><td title="Detailed reports exist, or functional reproduction is possible (functional exploits may provide this). Source code is available to independently verify the assertions of the research, or the author or vendor of the affected code has confirmed the presence of the vulnerability."><b>Confirmed</b></td></tr>
+                        </table>
+        <br>
+        <b>Executive Summary:</b> <br>None
+        <br>
+        <b>FAQ:</b><br><p><strong>What is the version information for this release?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Microsoft Edge Version</th>
+<th>Date Released</th>
+<th>Based on Chromium Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>97.0.1072.55</td>
+<td>1/6/2022</td>
+<td>97.0.4692.71</td>
+</tr>
+</tbody>
+</table>
+
+        <br>
+        <b>Mitigations:</b><br>None
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp06/01/2022&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Important</td>
+     <td>Remote Code Execution</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an exploitability assessment of each of the vulnerabilities addressed this month. The vulnerabilities are listed in order of bulletin ID then CVE ID. Only vulnerabilities that have a severity rating of Critical or Important in the bulletins are included.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Exploitation Less Likely</td>
+     <td>No</td>
+     <td>No</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="9"><b>CVE-2022-21931</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Fixed Build</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Edge (Chromium-based)</td>
+                <td><a href="" >Release Notes (Security Update)</td>
+                <td>Important</td>
+                <td>Remote Code Execution</td>
+                <td>None</td>
+                <td>Base: 4,2<br />Temporal: 3,8<br />Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:N/E:P/RL:O/RC:C<br /></td>
+                <td>97.0.1072.55</td>
+                <td>No</td>
+                <td>None</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2022-21931</td>
+     <td><a href="https://www.daviderceg.com/">David Erceg</a><br><br><br></td>
+ </tr>
+</table><h1 id="CVE-2022-21954">CVE-2022-21954 - Microsoft Edge (Chromium-based) Elevation of Privilege Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-21954">CVE-2022-21954</a>
+<br>
+<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-21954">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-21954">NVD</a>
+<p>Issuing CNA: Microsoft</p></td>
+     <td>        <b>CVE Title:</b> Microsoft Edge (Chromium-based) Elevation of Privilege Vulnerability
+        <br>
+        <b>CVSS:</b> <br>                        <br> <b>CVSS:3.1 Highest BaseScore:6,1/TemporalScore:5,3</b>
+                        <table class="cvss_table" border=1 cellpadding=0 width="99%">
+                            <thead>
+                                <tr>
+                                    <td colspan="7"><b>Base score metrics</b></td>
+                                </tr>
+                            </thead>
+                            <tr><td title="This metric reflects the context by which vulnerability exploitation is possible. The Base Score increases the more remote (logically, and physically) an attacker can be in order to exploit the vulnerable component."><b>Attack Vector</b></td><td title="The vulnerable component is bound to the network stack and the set of possible attackers extends beyond the other options listed, up to and including the entire Internet. Such a vulnerability is often termed 'remotely exploitable' and can be thought of as an attack being exploitable at the protocol level one or more network hops away (e.g., across one or more routers)."><b>Network</b></td></tr><tr><td title="This metric describes the conditions beyond the attacker’s control that must exist in order to exploit the vulnerability. Such conditions may require the collection of more information about the target or computational exceptions. The assessment of this metric excludes any requirements for user interaction in order to exploit the vulnerability. If a specific configuration is required for an attack to succeed, the Base metrics should be scored assuming the vulnerable component is in that configuration."><b>Attack Complexity</b></td><td title="Specialized access conditions or extenuating circumstances do not exist. An attacker can expect repeatable success against the vulnerable component."><b>Low</b></td></tr><tr><td title="This metric describes the level of privileges an attacker must possess before successfully exploiting the vulnerability."><b>Privileges Required</b></td><td title="The attacker is unauthorized prior to attack, and therefore does not require any access to settings or files to carry out an attack."><b>None</b></td></tr><tr><td title="This metric captures the requirement for a user, other than the attacker, to participate in the successful compromise the vulnerable component. This metric determines whether the vulnerability can be exploited solely at the will of the attacker, or whether a separate user (or user-initiated process) must participate in some manner."><b>User Interaction</b></td><td title="Successful exploitation of this vulnerability requires a user to take some action before the vulnerability can be exploited."><b>Required</b></td></tr><tr><td title="Does a successful attack impact a component other than the vulnerable component? If so, the Base Score increases and the Confidentiality, Integrity and Authentication metrics should be scored relative to the impacted component."><b>Scope</b></td><td title="An exploited vulnerability can affect resources beyond the security scope managed by the security authority of the vulnerable component. In this case, the vulnerable component and the impacted component are different and managed by different security authorities."><b>Changed</b></td></tr><tr><td title="This metric measures the impact to the confidentiality of the information resources managed by a software component due to a successfully exploited vulnerability. Confidentiality refers to limiting information access and disclosure to only authorized users, as well as preventing access by, or disclosure to, unauthorized ones."><b>Confidentiality</b></td><td title="There is some loss of confidentiality. Access to some restricted information is obtained, but the attacker does not have control over what information is obtained, or the amount or kind of loss is limited. The information disclosure does not cause a direct, serious loss to the impacted component."><b>Low</b></td></tr><tr><td title="This metric measures the impact to integrity of a successfully exploited vulnerability. Integrity refers to the trustworthiness and veracity of information."><b>Integrity</b></td><td title="Modification of data is possible, but the attacker does not have control over the consequence of a modification, or the amount of modification is limited. The data modification does not have a direct, serious impact on the impacted component."><b>Low</b></td></tr><tr><td title="This metric measures the impact to the availability of the impacted component resulting from a successfully exploited vulnerability. It refers to the loss of availability of the impacted component itself, such as a networked service (e.g., web, database, email). Since availability refers to the accessibility of information resources, attacks that consume network bandwidth, processor cycles, or disk space all impact the availability of an impacted component."><b>Availability</b></td><td title="There is no impact to availability within the impacted component."><b>None</b></td></tr>
+                        </table>
+                        <table class="cvss_table" border=1 cellpadding=0 width="99%">
+                            <thead>
+                                <tr>
+                                    <td colspan="7"><b>Temporal score metrics</b></td>
+                                </tr>
+                            </thead>
+                            <tr><td title="This metric measures the likelihood of the vulnerability being attacked, and is typically based on the current state of exploit techniques, exploit code availability, or active, 'in-the-wild' exploitation."><b>Exploit Code Maturity</b></td><td title="No exploit code is available, or an exploit is theoretical."><b>Unproven</b></td></tr><tr><td title="The Remediation Level of a vulnerability is an important factor for prioritization. The typical vulnerability is unpatched when initially published. Workarounds or hotfixes may offer interim remediation until an official patch or upgrade is issued. Each of these respective stages adjusts the temporal score downwards, reflecting the decreasing urgency as remediation becomes final."><b>Remediation Level</b></td><td title="A complete vendor solution is available. Either the vendor has issued an official patch, or an upgrade is available."><b>Official Fix</b></td></tr><tr><td title="This metric measures the degree of confidence in the existence of the vulnerability and the credibility of the known technical details. Sometimes only the existence of vulnerabilities are publicized, but without specific details. For example, an impact may be recognized as undesirable, but the root cause may not be known. The vulnerability may later be corroborated by research which suggests where the vulnerability may lie, though the research may not be certain. Finally, a vulnerability may be confirmed through acknowledgement by the author or vendor of the affected technology. The urgency of a vulnerability is higher when a vulnerability is known to exist with certainty. This metric also suggests the level of technical knowledge available to would-be attackers."><b>Report Confidence</b></td><td title="Detailed reports exist, or functional reproduction is possible (functional exploits may provide this). Source code is available to independently verify the assertions of the research, or the author or vendor of the affected code has confirmed the presence of the vulnerability."><b>Confirmed</b></td></tr>
+                        </table>
+        <br>
+        <b>Executive Summary:</b> <br>None
+        <br>
+        <b>FAQ:</b><br><p><strong>What is the version information for this release?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Microsoft Edge Version</th>
+<th>Date Released</th>
+<th>Based on Chromium Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>97.0.1072.55</td>
+<td>1/6/2022</td>
+<td>97.0.4692.71</td>
+</tr>
+</tbody>
+</table>
+
+        <br>
+        <b>Mitigations:</b><br>None
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp06/01/2022&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Important</td>
+     <td>Elevation of Privilege</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an exploitability assessment of each of the vulnerabilities addressed this month. The vulnerabilities are listed in order of bulletin ID then CVE ID. Only vulnerabilities that have a severity rating of Critical or Important in the bulletins are included.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Exploitation Less Likely</td>
+     <td>No</td>
+     <td>No</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="9"><b>CVE-2022-21954</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Fixed Build</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Edge (Chromium-based)</td>
+                <td><a href="" >Release Notes (Security Update)</td>
+                <td>Important</td>
+                <td>Elevation of Privilege</td>
+                <td>None</td>
+                <td>Base: 6,1<br />Temporal: 5,3<br />Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N/E:U/RL:O/RC:C<br /></td>
+                <td>97.0.1072.55</td>
+                <td>No</td>
+                <td>None</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2022-21954</td>
+     <td><a href="https://www.daviderceg.com/">David Erceg</a><br><br><br></td>
+ </tr>
+</table><h1 id="CVE-2022-21970">CVE-2022-21970 - Microsoft Edge (Chromium-based) Elevation of Privilege Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-21970">CVE-2022-21970</a>
+<br>
+<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-21970">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-21970">NVD</a>
+<p>Issuing CNA: Microsoft</p></td>
+     <td>        <b>CVE Title:</b> Microsoft Edge (Chromium-based) Elevation of Privilege Vulnerability
+        <br>
+        <b>CVSS:</b> <br>                        <br> <b>CVSS:3.1 Highest BaseScore:6,1/TemporalScore:5,3</b>
+                        <table class="cvss_table" border=1 cellpadding=0 width="99%">
+                            <thead>
+                                <tr>
+                                    <td colspan="7"><b>Base score metrics</b></td>
+                                </tr>
+                            </thead>
+                            <tr><td title="This metric reflects the context by which vulnerability exploitation is possible. The Base Score increases the more remote (logically, and physically) an attacker can be in order to exploit the vulnerable component."><b>Attack Vector</b></td><td title="The vulnerable component is not bound to the network stack and the attacker’s path is via read/write/execute capabilities. Either: the attacker exploits the vulnerability by accessing the target system locally (e.g., keyboard, console), or remotely (e.g., SSH); or the attacker relies on User Interaction by another person to perform actions required to exploit the vulnerability (e.g., tricking a legitimate user into opening a malicious document)"><b>Local</b></td></tr><tr><td title="This metric describes the conditions beyond the attacker’s control that must exist in order to exploit the vulnerability. Such conditions may require the collection of more information about the target or computational exceptions. The assessment of this metric excludes any requirements for user interaction in order to exploit the vulnerability. If a specific configuration is required for an attack to succeed, the Base metrics should be scored assuming the vulnerable component is in that configuration."><b>Attack Complexity</b></td><td title="Specialized access conditions or extenuating circumstances do not exist. An attacker can expect repeatable success against the vulnerable component."><b>Low</b></td></tr><tr><td title="This metric describes the level of privileges an attacker must possess before successfully exploiting the vulnerability."><b>Privileges Required</b></td><td title="The attacker is authorized with (i.e., requires) privileges that provide basic user capabilities that could normally affect only settings and files owned by a user. Alternatively, an attacker with Low privileges may have the ability to cause an impact only to non-sensitive resources."><b>Low</b></td></tr><tr><td title="This metric captures the requirement for a user, other than the attacker, to participate in the successful compromise the vulnerable component. This metric determines whether the vulnerability can be exploited solely at the will of the attacker, or whether a separate user (or user-initiated process) must participate in some manner."><b>User Interaction</b></td><td title="Successful exploitation of this vulnerability requires a user to take some action before the vulnerability can be exploited."><b>Required</b></td></tr><tr><td title="Does a successful attack impact a component other than the vulnerable component? If so, the Base Score increases and the Confidentiality, Integrity and Authentication metrics should be scored relative to the impacted component."><b>Scope</b></td><td title="An exploited vulnerability can only affect resources managed by the same security authority. In this case, the vulnerable component and the impacted component are either the same, or both are managed by the same security authority."><b>Unchanged</b></td></tr><tr><td title="This metric measures the impact to the confidentiality of the information resources managed by a software component due to a successfully exploited vulnerability. Confidentiality refers to limiting information access and disclosure to only authorized users, as well as preventing access by, or disclosure to, unauthorized ones."><b>Confidentiality</b></td><td title="There is total loss of confidentiality, resulting in all resources within the impacted component being divulged to the attacker. Alternatively, access to only some restricted information is obtained, but the disclosed information presents a direct, serious impact."><b>High</b></td></tr><tr><td title="This metric measures the impact to integrity of a successfully exploited vulnerability. Integrity refers to the trustworthiness and veracity of information."><b>Integrity</b></td><td title="Modification of data is possible, but the attacker does not have control over the consequence of a modification, or the amount of modification is limited. The data modification does not have a direct, serious impact on the impacted component."><b>Low</b></td></tr><tr><td title="This metric measures the impact to the availability of the impacted component resulting from a successfully exploited vulnerability. It refers to the loss of availability of the impacted component itself, such as a networked service (e.g., web, database, email). Since availability refers to the accessibility of information resources, attacks that consume network bandwidth, processor cycles, or disk space all impact the availability of an impacted component."><b>Availability</b></td><td title="Performance is reduced or there are interruptions in resource availability. Even if repeated exploitation of the vulnerability is possible, the attacker does not have the ability to completely deny service to legitimate users. The resources in the impacted component are either partially available all of the time, or fully available only some of the time, but overall there is no direct, serious consequence to the impacted component."><b>Low</b></td></tr>
+                        </table>
+                        <table class="cvss_table" border=1 cellpadding=0 width="99%">
+                            <thead>
+                                <tr>
+                                    <td colspan="7"><b>Temporal score metrics</b></td>
+                                </tr>
+                            </thead>
+                            <tr><td title="This metric measures the likelihood of the vulnerability being attacked, and is typically based on the current state of exploit techniques, exploit code availability, or active, 'in-the-wild' exploitation."><b>Exploit Code Maturity</b></td><td title="No exploit code is available, or an exploit is theoretical."><b>Unproven</b></td></tr><tr><td title="The Remediation Level of a vulnerability is an important factor for prioritization. The typical vulnerability is unpatched when initially published. Workarounds or hotfixes may offer interim remediation until an official patch or upgrade is issued. Each of these respective stages adjusts the temporal score downwards, reflecting the decreasing urgency as remediation becomes final."><b>Remediation Level</b></td><td title="A complete vendor solution is available. Either the vendor has issued an official patch, or an upgrade is available."><b>Official Fix</b></td></tr><tr><td title="This metric measures the degree of confidence in the existence of the vulnerability and the credibility of the known technical details. Sometimes only the existence of vulnerabilities are publicized, but without specific details. For example, an impact may be recognized as undesirable, but the root cause may not be known. The vulnerability may later be corroborated by research which suggests where the vulnerability may lie, though the research may not be certain. Finally, a vulnerability may be confirmed through acknowledgement by the author or vendor of the affected technology. The urgency of a vulnerability is higher when a vulnerability is known to exist with certainty. This metric also suggests the level of technical knowledge available to would-be attackers."><b>Report Confidence</b></td><td title="Detailed reports exist, or functional reproduction is possible (functional exploits may provide this). Source code is available to independently verify the assertions of the research, or the author or vendor of the affected code has confirmed the presence of the vulnerability."><b>Confirmed</b></td></tr>
+                        </table>
+        <br>
+        <b>Executive Summary:</b> <br>None
+        <br>
+        <b>FAQ:</b><br><p><strong>What is the version information for this release?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Microsoft Edge Version</th>
+<th>Date Released</th>
+<th>Based on Chromium Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>97.0.1072.55</td>
+<td>1/6/2022</td>
+<td>97.0.4692.71</td>
+</tr>
+</tbody>
+</table>
+
+        <br>
+        <b>Mitigations:</b><br>None
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp06/01/2022&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Important</td>
+     <td>Elevation of Privilege</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an exploitability assessment of each of the vulnerabilities addressed this month. The vulnerabilities are listed in order of bulletin ID then CVE ID. Only vulnerabilities that have a severity rating of Critical or Important in the bulletins are included.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Exploitation Less Likely</td>
+     <td>No</td>
+     <td>No</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="9"><b>CVE-2022-21970</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Fixed Build</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Edge (Chromium-based)</td>
+                <td></td>
+                <td>Important</td>
+                <td>Elevation of Privilege</td>
+                <td>None</td>
+                <td>Base: 6,1<br />Temporal: 5,3<br />Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:L/A:L/E:U/RL:O/RC:C<br /></td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2022-21970</td>
+     <td><a href="https://www.daviderceg.com/">David Erceg</a><br><br><br></td>
+ </tr>
+</table><h1 id="CVE-2022-0096">CVE-2022-0096 - Chromium: CVE-2022-0096 Use after free in Storage</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-0096">CVE-2022-0096</a>
+<br>
+<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0096">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-0096">NVD</a>
+<p>Issuing CNA: Chrome</p></td>
+     <td>        <b>CVE Title:</b> Chromium: CVE-2022-0096 Use after free in Storage
+        <br>
+        <b>CVSS:</b> <br>None
+        <br>
+        <b>Executive Summary:</b> <br><p>This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see <a href="https://chromereleases.googleblog.com/2022">Google Chrome Releases</a> for more information.</p>
+
+        <br>
+        <b>FAQ:</b><br><p><strong>What is the version information for this release?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Microsoft Edge Version</th>
+<th>Date Released</th>
+<th>Based on Chromium Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>97.0.1072.55</td>
+<td>1/6/2022</td>
+<td>97.0.4692.71</td>
+</tr>
+</tbody>
+</table>
+<br><p><strong>Why is this Chrome CVE included in the Security Update Guide?</strong></p>
+<p>The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based).  It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.  Please see <a href="https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/">Security Update Guide Supports CVEs Assigned by Industry Partners</a> for more information.</p>
+<p><strong>How can I see the version of the browser?</strong></p>
+<ol>
+<li>In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window</li>
+<li>Click on <strong>Help and Feedback</strong></li>
+<li>Click on <strong>About Microsoft Edge</strong></li>
+</ol>
+
+        <br>
+        <b>Mitigations:</b><br>None
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp06/01/2022&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Unknown</td>
+     <td>Unknown</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an exploitability assessment of each of the vulnerabilities addressed this month. The vulnerabilities are listed in order of bulletin ID then CVE ID. Only vulnerabilities that have a severity rating of Critical or Important in the bulletins are included.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Not Found</td>
+     <td>Not Found</td>
+     <td>Not Found</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="9"><b>CVE-2022-0096</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Fixed Build</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Edge (Chromium-based)</td>
+                <td><a href="" >Release Notes (Security Update)</td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>97.0.1072.55</td>
+                <td>No</td>
+                <td>None</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2022-0096</td>
+     <td>None</td>
+ </tr>
+</table><h1 id="CVE-2022-0097">CVE-2022-0097 - Chromium: CVE-2022-0097 Inappropriate implementation in DevTools</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-0097">CVE-2022-0097</a>
+<br>
+<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0097">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-0097">NVD</a>
+<p>Issuing CNA: Chrome</p></td>
+     <td>        <b>CVE Title:</b> Chromium: CVE-2022-0097 Inappropriate implementation in DevTools
+        <br>
+        <b>CVSS:</b> <br>None
+        <br>
+        <b>Executive Summary:</b> <br><p>This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see <a href="https://chromereleases.googleblog.com/2022">Google Chrome Releases</a> for more information.</p>
+
+        <br>
+        <b>FAQ:</b><br><p><strong>What is the version information for this release?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Microsoft Edge Version</th>
+<th>Date Released</th>
+<th>Based on Chromium Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>97.0.1072.55</td>
+<td>1/6/2022</td>
+<td>97.0.4692.71</td>
+</tr>
+</tbody>
+</table>
+<br><p><strong>Why is this Chrome CVE included in the Security Update Guide?</strong></p>
+<p>The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based).  It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.  Please see <a href="https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/">Security Update Guide Supports CVEs Assigned by Industry Partners</a> for more information.</p>
+<p><strong>How can I see the version of the browser?</strong></p>
+<ol>
+<li>In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window</li>
+<li>Click on <strong>Help and Feedback</strong></li>
+<li>Click on <strong>About Microsoft Edge</strong></li>
+</ol>
+
+        <br>
+        <b>Mitigations:</b><br>None
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp06/01/2022&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Unknown</td>
+     <td>Unknown</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an exploitability assessment of each of the vulnerabilities addressed this month. The vulnerabilities are listed in order of bulletin ID then CVE ID. Only vulnerabilities that have a severity rating of Critical or Important in the bulletins are included.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Not Found</td>
+     <td>Not Found</td>
+     <td>Not Found</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="9"><b>CVE-2022-0097</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Fixed Build</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Edge (Chromium-based)</td>
+                <td><a href="" >Release Notes (Security Update)</td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>97.0.1072.55</td>
+                <td>No</td>
+                <td>None</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2022-0097</td>
+     <td>None</td>
+ </tr>
+</table><h1 id="CVE-2022-0098">CVE-2022-0098 - Chromium: CVE-2022-0098 Use after free in Screen Capture</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-0098">CVE-2022-0098</a>
+<br>
+<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0098">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-0098">NVD</a>
+<p>Issuing CNA: Chrome</p></td>
+     <td>        <b>CVE Title:</b> Chromium: CVE-2022-0098 Use after free in Screen Capture
+        <br>
+        <b>CVSS:</b> <br>None
+        <br>
+        <b>Executive Summary:</b> <br><p>This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see <a href="https://chromereleases.googleblog.com/2022">Google Chrome Releases</a> for more information.</p>
+
+        <br>
+        <b>FAQ:</b><br><p><strong>What is the version information for this release?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Microsoft Edge Version</th>
+<th>Date Released</th>
+<th>Based on Chromium Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>97.0.1072.55</td>
+<td>1/6/2022</td>
+<td>97.0.4692.71</td>
+</tr>
+</tbody>
+</table>
+<br><p><strong>Why is this Chrome CVE included in the Security Update Guide?</strong></p>
+<p>The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based).  It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.  Please see <a href="https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/">Security Update Guide Supports CVEs Assigned by Industry Partners</a> for more information.</p>
+<p><strong>How can I see the version of the browser?</strong></p>
+<ol>
+<li>In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window</li>
+<li>Click on <strong>Help and Feedback</strong></li>
+<li>Click on <strong>About Microsoft Edge</strong></li>
+</ol>
+
+        <br>
+        <b>Mitigations:</b><br>None
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp06/01/2022&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Unknown</td>
+     <td>Unknown</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an exploitability assessment of each of the vulnerabilities addressed this month. The vulnerabilities are listed in order of bulletin ID then CVE ID. Only vulnerabilities that have a severity rating of Critical or Important in the bulletins are included.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Not Found</td>
+     <td>Not Found</td>
+     <td>Not Found</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="9"><b>CVE-2022-0098</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Fixed Build</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Edge (Chromium-based)</td>
+                <td><a href="" >Release Notes (Security Update)</td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>97.0.1072.55</td>
+                <td>No</td>
+                <td>None</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2022-0098</td>
+     <td>None</td>
+ </tr>
+</table><h1 id="CVE-2022-0099">CVE-2022-0099 - Chromium: CVE-2022-0099 Use after free in Sign-in</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-0099">CVE-2022-0099</a>
+<br>
+<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0099">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-0099">NVD</a>
+<p>Issuing CNA: Chrome</p></td>
+     <td>        <b>CVE Title:</b> Chromium: CVE-2022-0099 Use after free in Sign-in
+        <br>
+        <b>CVSS:</b> <br>None
+        <br>
+        <b>Executive Summary:</b> <br><p>This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see <a href="https://chromereleases.googleblog.com/2022">Google Chrome Releases</a> for more information.</p>
+
+        <br>
+        <b>FAQ:</b><br><p><strong>What is the version information for this release?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Microsoft Edge Version</th>
+<th>Date Released</th>
+<th>Based on Chromium Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>97.0.1072.55</td>
+<td>1/6/2022</td>
+<td>97.0.4692.71</td>
+</tr>
+</tbody>
+</table>
+<br><p><strong>Why is this Chrome CVE included in the Security Update Guide?</strong></p>
+<p>The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based).  It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.  Please see <a href="https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/">Security Update Guide Supports CVEs Assigned by Industry Partners</a> for more information.</p>
+<p><strong>How can I see the version of the browser?</strong></p>
+<ol>
+<li>In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window</li>
+<li>Click on <strong>Help and Feedback</strong></li>
+<li>Click on <strong>About Microsoft Edge</strong></li>
+</ol>
+
+        <br>
+        <b>Mitigations:</b><br>None
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp06/01/2022&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Unknown</td>
+     <td>Unknown</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an exploitability assessment of each of the vulnerabilities addressed this month. The vulnerabilities are listed in order of bulletin ID then CVE ID. Only vulnerabilities that have a severity rating of Critical or Important in the bulletins are included.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Not Found</td>
+     <td>Not Found</td>
+     <td>Not Found</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="9"><b>CVE-2022-0099</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Fixed Build</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Edge (Chromium-based)</td>
+                <td><a href="" >Release Notes (Security Update)</td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>97.0.1072.55</td>
+                <td>No</td>
+                <td>None</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2022-0099</td>
+     <td>None</td>
+ </tr>
+</table><h1 id="CVE-2022-0100">CVE-2022-0100 - Chromium: CVE-2022-0100 Heap buffer overflow in Media streams API</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-0100">CVE-2022-0100</a>
+<br>
+<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0100">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-0100">NVD</a>
+<p>Issuing CNA: Chrome</p></td>
+     <td>        <b>CVE Title:</b> Chromium: CVE-2022-0100 Heap buffer overflow in Media streams API
+        <br>
+        <b>CVSS:</b> <br>None
+        <br>
+        <b>Executive Summary:</b> <br><p>This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see <a href="https://chromereleases.googleblog.com/2022">Google Chrome Releases</a> for more information.</p>
+
+        <br>
+        <b>FAQ:</b><br><p><strong>What is the version information for this release?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Microsoft Edge Version</th>
+<th>Date Released</th>
+<th>Based on Chromium Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>97.0.1072.55</td>
+<td>1/6/2022</td>
+<td>97.0.4692.71</td>
+</tr>
+</tbody>
+</table>
+<br><p><strong>Why is this Chrome CVE included in the Security Update Guide?</strong></p>
+<p>The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based).  It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.  Please see <a href="https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/">Security Update Guide Supports CVEs Assigned by Industry Partners</a> for more information.</p>
+<p><strong>How can I see the version of the browser?</strong></p>
+<ol>
+<li>In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window</li>
+<li>Click on <strong>Help and Feedback</strong></li>
+<li>Click on <strong>About Microsoft Edge</strong></li>
+</ol>
+
+        <br>
+        <b>Mitigations:</b><br>None
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp06/01/2022&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Unknown</td>
+     <td>Unknown</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an exploitability assessment of each of the vulnerabilities addressed this month. The vulnerabilities are listed in order of bulletin ID then CVE ID. Only vulnerabilities that have a severity rating of Critical or Important in the bulletins are included.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Not Found</td>
+     <td>Not Found</td>
+     <td>Not Found</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="9"><b>CVE-2022-0100</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Fixed Build</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Edge (Chromium-based)</td>
+                <td><a href="" >Release Notes (Security Update)</td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>97.0.1072.55</td>
+                <td>No</td>
+                <td>None</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2022-0100</td>
+     <td>None</td>
+ </tr>
+</table><h1 id="CVE-2022-0101">CVE-2022-0101 - Chromium: CVE-2022-0101 Heap buffer overflow in Bookmarks</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-0101">CVE-2022-0101</a>
+<br>
+<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0101">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-0101">NVD</a>
+<p>Issuing CNA: Chrome</p></td>
+     <td>        <b>CVE Title:</b> Chromium: CVE-2022-0101 Heap buffer overflow in Bookmarks
+        <br>
+        <b>CVSS:</b> <br>None
+        <br>
+        <b>Executive Summary:</b> <br><p>This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see <a href="https://chromereleases.googleblog.com/2022">Google Chrome Releases</a> for more information.</p>
+
+        <br>
+        <b>FAQ:</b><br><p><strong>What is the version information for this release?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Microsoft Edge Version</th>
+<th>Date Released</th>
+<th>Based on Chromium Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>97.0.1072.55</td>
+<td>1/6/2022</td>
+<td>97.0.4692.71</td>
+</tr>
+</tbody>
+</table>
+<br><p><strong>Why is this Chrome CVE included in the Security Update Guide?</strong></p>
+<p>The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based).  It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.  Please see <a href="https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/">Security Update Guide Supports CVEs Assigned by Industry Partners</a> for more information.</p>
+<p><strong>How can I see the version of the browser?</strong></p>
+<ol>
+<li>In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window</li>
+<li>Click on <strong>Help and Feedback</strong></li>
+<li>Click on <strong>About Microsoft Edge</strong></li>
+</ol>
+
+        <br>
+        <b>Mitigations:</b><br>None
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp06/01/2022&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Unknown</td>
+     <td>Unknown</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an exploitability assessment of each of the vulnerabilities addressed this month. The vulnerabilities are listed in order of bulletin ID then CVE ID. Only vulnerabilities that have a severity rating of Critical or Important in the bulletins are included.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Not Found</td>
+     <td>Not Found</td>
+     <td>Not Found</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="9"><b>CVE-2022-0101</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Fixed Build</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Edge (Chromium-based)</td>
+                <td><a href="" >Release Notes (Security Update)</td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>97.0.1072.55</td>
+                <td>No</td>
+                <td>None</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2022-0101</td>
+     <td>None</td>
+ </tr>
+</table><h1 id="CVE-2022-0102">CVE-2022-0102 - Chromium: CVE-2022-0102 Type Confusion in V8 </h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-0102">CVE-2022-0102</a>
+<br>
+<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0102">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-0102">NVD</a>
+<p>Issuing CNA: Chrome</p></td>
+     <td>        <b>CVE Title:</b> Chromium: CVE-2022-0102 Type Confusion in V8 
+        <br>
+        <b>CVSS:</b> <br>None
+        <br>
+        <b>Executive Summary:</b> <br><p>This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see <a href="https://chromereleases.googleblog.com/2022">Google Chrome Releases</a> for more information.</p>
+
+        <br>
+        <b>FAQ:</b><br><p><strong>What is the version information for this release?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Microsoft Edge Version</th>
+<th>Date Released</th>
+<th>Based on Chromium Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>97.0.1072.55</td>
+<td>1/6/2022</td>
+<td>97.0.4692.71</td>
+</tr>
+</tbody>
+</table>
+<br><p><strong>Why is this Chrome CVE included in the Security Update Guide?</strong></p>
+<p>The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based).  It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.  Please see <a href="https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/">Security Update Guide Supports CVEs Assigned by Industry Partners</a> for more information.</p>
+<p><strong>How can I see the version of the browser?</strong></p>
+<ol>
+<li>In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window</li>
+<li>Click on <strong>Help and Feedback</strong></li>
+<li>Click on <strong>About Microsoft Edge</strong></li>
+</ol>
+
+        <br>
+        <b>Mitigations:</b><br>None
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp06/01/2022&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Unknown</td>
+     <td>Unknown</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an exploitability assessment of each of the vulnerabilities addressed this month. The vulnerabilities are listed in order of bulletin ID then CVE ID. Only vulnerabilities that have a severity rating of Critical or Important in the bulletins are included.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Not Found</td>
+     <td>Not Found</td>
+     <td>Not Found</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="9"><b>CVE-2022-0102</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Fixed Build</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Edge (Chromium-based)</td>
+                <td><a href="" >Release Notes (Security Update)</td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>97.0.1072.55</td>
+                <td>No</td>
+                <td>None</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2022-0102</td>
+     <td>None</td>
+ </tr>
+</table><h1 id="CVE-2022-0103">CVE-2022-0103 - Chromium: CVE-2022-0103 Use after free in SwiftShader</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-0103">CVE-2022-0103</a>
+<br>
+<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0103">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-0103">NVD</a>
+<p>Issuing CNA: Chrome</p></td>
+     <td>        <b>CVE Title:</b> Chromium: CVE-2022-0103 Use after free in SwiftShader
+        <br>
+        <b>CVSS:</b> <br>None
+        <br>
+        <b>Executive Summary:</b> <br><p>This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see <a href="https://chromereleases.googleblog.com/2022">Google Chrome Releases</a> for more information.</p>
+
+        <br>
+        <b>FAQ:</b><br><p><strong>What is the version information for this release?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Microsoft Edge Version</th>
+<th>Date Released</th>
+<th>Based on Chromium Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>97.0.1072.55</td>
+<td>1/6/2022</td>
+<td>97.0.4692.71</td>
+</tr>
+</tbody>
+</table>
+<br><p><strong>Why is this Chrome CVE included in the Security Update Guide?</strong></p>
+<p>The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based).  It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.  Please see <a href="https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/">Security Update Guide Supports CVEs Assigned by Industry Partners</a> for more information.</p>
+<p><strong>How can I see the version of the browser?</strong></p>
+<ol>
+<li>In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window</li>
+<li>Click on <strong>Help and Feedback</strong></li>
+<li>Click on <strong>About Microsoft Edge</strong></li>
+</ol>
+
+        <br>
+        <b>Mitigations:</b><br>None
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp06/01/2022&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Unknown</td>
+     <td>Unknown</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an exploitability assessment of each of the vulnerabilities addressed this month. The vulnerabilities are listed in order of bulletin ID then CVE ID. Only vulnerabilities that have a severity rating of Critical or Important in the bulletins are included.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Not Found</td>
+     <td>Not Found</td>
+     <td>Not Found</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="9"><b>CVE-2022-0103</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Fixed Build</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Edge (Chromium-based)</td>
+                <td><a href="" >Release Notes (Security Update)</td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>97.0.1072.55</td>
+                <td>No</td>
+                <td>None</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2022-0103</td>
+     <td>None</td>
+ </tr>
+</table><h1 id="CVE-2022-0104">CVE-2022-0104 - Chromium: CVE-2022-0104 Heap buffer overflow in ANGLE</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-0104">CVE-2022-0104</a>
+<br>
+<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0104">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-0104">NVD</a>
+<p>Issuing CNA: Chrome</p></td>
+     <td>        <b>CVE Title:</b> Chromium: CVE-2022-0104 Heap buffer overflow in ANGLE
+        <br>
+        <b>CVSS:</b> <br>None
+        <br>
+        <b>Executive Summary:</b> <br><p>This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see <a href="https://chromereleases.googleblog.com/2022">Google Chrome Releases</a> for more information.</p>
+
+        <br>
+        <b>FAQ:</b><br><p><strong>What is the version information for this release?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Microsoft Edge Version</th>
+<th>Date Released</th>
+<th>Based on Chromium Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>97.0.1072.55</td>
+<td>1/6/2022</td>
+<td>97.0.4692.71</td>
+</tr>
+</tbody>
+</table>
+<br><p><strong>Why is this Chrome CVE included in the Security Update Guide?</strong></p>
+<p>The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based).  It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.  Please see <a href="https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/">Security Update Guide Supports CVEs Assigned by Industry Partners</a> for more information.</p>
+<p><strong>How can I see the version of the browser?</strong></p>
+<ol>
+<li>In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window</li>
+<li>Click on <strong>Help and Feedback</strong></li>
+<li>Click on <strong>About Microsoft Edge</strong></li>
+</ol>
+
+        <br>
+        <b>Mitigations:</b><br>None
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp06/01/2022&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Unknown</td>
+     <td>Unknown</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an exploitability assessment of each of the vulnerabilities addressed this month. The vulnerabilities are listed in order of bulletin ID then CVE ID. Only vulnerabilities that have a severity rating of Critical or Important in the bulletins are included.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Not Found</td>
+     <td>Not Found</td>
+     <td>Not Found</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="9"><b>CVE-2022-0104</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Fixed Build</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Edge (Chromium-based)</td>
+                <td><a href="" >Release Notes (Security Update)</td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>97.0.1072.55</td>
+                <td>No</td>
+                <td>None</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2022-0104</td>
+     <td>None</td>
+ </tr>
+</table><h1 id="CVE-2022-0105">CVE-2022-0105 - Chromium: CVE-2022-0105 Use after free in PDF</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-0105">CVE-2022-0105</a>
+<br>
+<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0105">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-0105">NVD</a>
+<p>Issuing CNA: Chrome</p></td>
+     <td>        <b>CVE Title:</b> Chromium: CVE-2022-0105 Use after free in PDF
+        <br>
+        <b>CVSS:</b> <br>None
+        <br>
+        <b>Executive Summary:</b> <br><p>This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see <a href="https://chromereleases.googleblog.com/2022">Google Chrome Releases</a> for more information.</p>
+
+        <br>
+        <b>FAQ:</b><br><p><strong>What is the version information for this release?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Microsoft Edge Version</th>
+<th>Date Released</th>
+<th>Based on Chromium Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>97.0.1072.55</td>
+<td>1/6/2022</td>
+<td>97.0.4692.71</td>
+</tr>
+</tbody>
+</table>
+<br><p><strong>Why is this Chrome CVE included in the Security Update Guide?</strong></p>
+<p>The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based).  It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.  Please see <a href="https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/">Security Update Guide Supports CVEs Assigned by Industry Partners</a> for more information.</p>
+<p><strong>How can I see the version of the browser?</strong></p>
+<ol>
+<li>In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window</li>
+<li>Click on <strong>Help and Feedback</strong></li>
+<li>Click on <strong>About Microsoft Edge</strong></li>
+</ol>
+
+        <br>
+        <b>Mitigations:</b><br>None
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp06/01/2022&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Unknown</td>
+     <td>Unknown</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an exploitability assessment of each of the vulnerabilities addressed this month. The vulnerabilities are listed in order of bulletin ID then CVE ID. Only vulnerabilities that have a severity rating of Critical or Important in the bulletins are included.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Not Found</td>
+     <td>Not Found</td>
+     <td>Not Found</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="9"><b>CVE-2022-0105</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Fixed Build</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Edge (Chromium-based)</td>
+                <td><a href="" >Release Notes (Security Update)</td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>97.0.1072.55</td>
+                <td>No</td>
+                <td>None</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2022-0105</td>
+     <td>None</td>
+ </tr>
+</table><h1 id="CVE-2022-0106">CVE-2022-0106 - Chromium: CVE-2022-0106 Use after free in Autofill</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-0106">CVE-2022-0106</a>
+<br>
+<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0106">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-0106">NVD</a>
+<p>Issuing CNA: Chrome</p></td>
+     <td>        <b>CVE Title:</b> Chromium: CVE-2022-0106 Use after free in Autofill
+        <br>
+        <b>CVSS:</b> <br>None
+        <br>
+        <b>Executive Summary:</b> <br><p>This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see <a href="https://chromereleases.googleblog.com/2022">Google Chrome Releases</a> for more information.</p>
+
+        <br>
+        <b>FAQ:</b><br><p><strong>What is the version information for this release?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Microsoft Edge Version</th>
+<th>Date Released</th>
+<th>Based on Chromium Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>97.0.1072.55</td>
+<td>1/6/2022</td>
+<td>97.0.4692.71</td>
+</tr>
+</tbody>
+</table>
+<br><p><strong>Why is this Chrome CVE included in the Security Update Guide?</strong></p>
+<p>The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based).  It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.  Please see <a href="https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/">Security Update Guide Supports CVEs Assigned by Industry Partners</a> for more information.</p>
+<p><strong>How can I see the version of the browser?</strong></p>
+<ol>
+<li>In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window</li>
+<li>Click on <strong>Help and Feedback</strong></li>
+<li>Click on <strong>About Microsoft Edge</strong></li>
+</ol>
+
+        <br>
+        <b>Mitigations:</b><br>None
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp06/01/2022&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Unknown</td>
+     <td>Unknown</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an exploitability assessment of each of the vulnerabilities addressed this month. The vulnerabilities are listed in order of bulletin ID then CVE ID. Only vulnerabilities that have a severity rating of Critical or Important in the bulletins are included.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Not Found</td>
+     <td>Not Found</td>
+     <td>Not Found</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="9"><b>CVE-2022-0106</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Fixed Build</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Edge (Chromium-based)</td>
+                <td><a href="" >Release Notes (Security Update)</td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>97.0.1072.55</td>
+                <td>No</td>
+                <td>None</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2022-0106</td>
+     <td>None</td>
+ </tr>
+</table><h1 id="CVE-2022-0107">CVE-2022-0107 - Chromium: CVE-2022-0107 Use after free in File Manager API</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-0107">CVE-2022-0107</a>
+<br>
+<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0107">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-0107">NVD</a>
+<p>Issuing CNA: Chrome</p></td>
+     <td>        <b>CVE Title:</b> Chromium: CVE-2022-0107 Use after free in File Manager API
+        <br>
+        <b>CVSS:</b> <br>None
+        <br>
+        <b>Executive Summary:</b> <br><p>This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see <a href="https://chromereleases.googleblog.com/2022">Google Chrome Releases</a> for more information.</p>
+
+        <br>
+        <b>FAQ:</b><br><p><strong>What is the version information for this release?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Microsoft Edge Version</th>
+<th>Date Released</th>
+<th>Based on Chromium Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>97.0.1072.55</td>
+<td>1/6/2022</td>
+<td>97.0.4692.71</td>
+</tr>
+</tbody>
+</table>
+<br><p><strong>Why is this Chrome CVE included in the Security Update Guide?</strong></p>
+<p>The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based).  It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.  Please see <a href="https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/">Security Update Guide Supports CVEs Assigned by Industry Partners</a> for more information.</p>
+<p><strong>How can I see the version of the browser?</strong></p>
+<ol>
+<li>In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window</li>
+<li>Click on <strong>Help and Feedback</strong></li>
+<li>Click on <strong>About Microsoft Edge</strong></li>
+</ol>
+
+        <br>
+        <b>Mitigations:</b><br>None
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp06/01/2022&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Unknown</td>
+     <td>Unknown</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an exploitability assessment of each of the vulnerabilities addressed this month. The vulnerabilities are listed in order of bulletin ID then CVE ID. Only vulnerabilities that have a severity rating of Critical or Important in the bulletins are included.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Not Found</td>
+     <td>Not Found</td>
+     <td>Not Found</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="9"><b>CVE-2022-0107</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Fixed Build</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Edge (Chromium-based)</td>
+                <td><a href="" >Release Notes (Security Update)</td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>97.0.1072.55</td>
+                <td>No</td>
+                <td>None</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2022-0107</td>
+     <td>None</td>
+ </tr>
+</table><h1 id="CVE-2022-0108">CVE-2022-0108 - Chromium: CVE-2022-0108 Inappropriate implementation in Navigation</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-0108">CVE-2022-0108</a>
+<br>
+<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0108">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-0108">NVD</a>
+<p>Issuing CNA: Chrome</p></td>
+     <td>        <b>CVE Title:</b> Chromium: CVE-2022-0108 Inappropriate implementation in Navigation
+        <br>
+        <b>CVSS:</b> <br>None
+        <br>
+        <b>Executive Summary:</b> <br><p>This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see <a href="https://chromereleases.googleblog.com/2022">Google Chrome Releases</a> for more information.</p>
+
+        <br>
+        <b>FAQ:</b><br><p><strong>What is the version information for this release?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Microsoft Edge Version</th>
+<th>Date Released</th>
+<th>Based on Chromium Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>97.0.1072.55</td>
+<td>1/6/2022</td>
+<td>97.0.4692.71</td>
+</tr>
+</tbody>
+</table>
+<br><p><strong>Why is this Chrome CVE included in the Security Update Guide?</strong></p>
+<p>The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based).  It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.  Please see <a href="https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/">Security Update Guide Supports CVEs Assigned by Industry Partners</a> for more information.</p>
+<p><strong>How can I see the version of the browser?</strong></p>
+<ol>
+<li>In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window</li>
+<li>Click on <strong>Help and Feedback</strong></li>
+<li>Click on <strong>About Microsoft Edge</strong></li>
+</ol>
+
+        <br>
+        <b>Mitigations:</b><br>None
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp06/01/2022&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Unknown</td>
+     <td>Unknown</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an exploitability assessment of each of the vulnerabilities addressed this month. The vulnerabilities are listed in order of bulletin ID then CVE ID. Only vulnerabilities that have a severity rating of Critical or Important in the bulletins are included.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Not Found</td>
+     <td>Not Found</td>
+     <td>Not Found</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="9"><b>CVE-2022-0108</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Fixed Build</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Edge (Chromium-based)</td>
+                <td><a href="" >Release Notes (Security Update)</td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>97.0.1072.55</td>
+                <td>No</td>
+                <td>None</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2022-0108</td>
+     <td>None</td>
+ </tr>
+</table><h1 id="CVE-2022-0109">CVE-2022-0109 - Chromium: CVE-2022-0109 Inappropriate implementation in Autofill</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-0109">CVE-2022-0109</a>
+<br>
+<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0109">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-0109">NVD</a>
+<p>Issuing CNA: Chrome</p></td>
+     <td>        <b>CVE Title:</b> Chromium: CVE-2022-0109 Inappropriate implementation in Autofill
+        <br>
+        <b>CVSS:</b> <br>None
+        <br>
+        <b>Executive Summary:</b> <br><p>This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see <a href="https://chromereleases.googleblog.com/2022">Google Chrome Releases</a> for more information.</p>
+
+        <br>
+        <b>FAQ:</b><br><p><strong>What is the version information for this release?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Microsoft Edge Version</th>
+<th>Date Released</th>
+<th>Based on Chromium Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>97.0.1072.55</td>
+<td>1/6/2022</td>
+<td>97.0.4692.71</td>
+</tr>
+</tbody>
+</table>
+<br><p><strong>Why is this Chrome CVE included in the Security Update Guide?</strong></p>
+<p>The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based).  It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.  Please see <a href="https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/">Security Update Guide Supports CVEs Assigned by Industry Partners</a> for more information.</p>
+<p><strong>How can I see the version of the browser?</strong></p>
+<ol>
+<li>In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window</li>
+<li>Click on <strong>Help and Feedback</strong></li>
+<li>Click on <strong>About Microsoft Edge</strong></li>
+</ol>
+
+        <br>
+        <b>Mitigations:</b><br>None
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp06/01/2022&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Unknown</td>
+     <td>Unknown</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an exploitability assessment of each of the vulnerabilities addressed this month. The vulnerabilities are listed in order of bulletin ID then CVE ID. Only vulnerabilities that have a severity rating of Critical or Important in the bulletins are included.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Not Found</td>
+     <td>Not Found</td>
+     <td>Not Found</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="9"><b>CVE-2022-0109</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Fixed Build</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Edge (Chromium-based)</td>
+                <td><a href="" >Release Notes (Security Update)</td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>97.0.1072.55</td>
+                <td>No</td>
+                <td>None</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2022-0109</td>
+     <td>None</td>
+ </tr>
+</table><h1 id="CVE-2022-0110">CVE-2022-0110 - Chromium: CVE-2022-0110 Incorrect security UI in Autofill</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-0110">CVE-2022-0110</a>
+<br>
+<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0110">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-0110">NVD</a>
+<p>Issuing CNA: Chrome</p></td>
+     <td>        <b>CVE Title:</b> Chromium: CVE-2022-0110 Incorrect security UI in Autofill
+        <br>
+        <b>CVSS:</b> <br>None
+        <br>
+        <b>Executive Summary:</b> <br><p>This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see <a href="https://chromereleases.googleblog.com/2022">Google Chrome Releases</a> for more information.</p>
+
+        <br>
+        <b>FAQ:</b><br><p><strong>What is the version information for this release?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Microsoft Edge Version</th>
+<th>Date Released</th>
+<th>Based on Chromium Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>97.0.1072.55</td>
+<td>1/6/2022</td>
+<td>97.0.4692.71</td>
+</tr>
+</tbody>
+</table>
+<br><p><strong>Why is this Chrome CVE included in the Security Update Guide?</strong></p>
+<p>The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based).  It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.  Please see <a href="https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/">Security Update Guide Supports CVEs Assigned by Industry Partners</a> for more information.</p>
+<p><strong>How can I see the version of the browser?</strong></p>
+<ol>
+<li>In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window</li>
+<li>Click on <strong>Help and Feedback</strong></li>
+<li>Click on <strong>About Microsoft Edge</strong></li>
+</ol>
+
+        <br>
+        <b>Mitigations:</b><br>None
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp06/01/2022&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Unknown</td>
+     <td>Unknown</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an exploitability assessment of each of the vulnerabilities addressed this month. The vulnerabilities are listed in order of bulletin ID then CVE ID. Only vulnerabilities that have a severity rating of Critical or Important in the bulletins are included.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Not Found</td>
+     <td>Not Found</td>
+     <td>Not Found</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="9"><b>CVE-2022-0110</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Fixed Build</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Edge (Chromium-based)</td>
+                <td><a href="" >Release Notes (Security Update)</td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>97.0.1072.55</td>
+                <td>No</td>
+                <td>None</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2022-0110</td>
+     <td>None</td>
+ </tr>
+</table><h1 id="CVE-2022-0111">CVE-2022-0111 - Chromium: CVE-2022-0111 Inappropriate implementation in Navigation</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-0111">CVE-2022-0111</a>
+<br>
+<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0111">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-0111">NVD</a>
+<p>Issuing CNA: Chrome</p></td>
+     <td>        <b>CVE Title:</b> Chromium: CVE-2022-0111 Inappropriate implementation in Navigation
+        <br>
+        <b>CVSS:</b> <br>None
+        <br>
+        <b>Executive Summary:</b> <br><p>This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see <a href="https://chromereleases.googleblog.com/2022">Google Chrome Releases</a> for more information.</p>
+
+        <br>
+        <b>FAQ:</b><br><p><strong>What is the version information for this release?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Microsoft Edge Version</th>
+<th>Date Released</th>
+<th>Based on Chromium Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>97.0.1072.55</td>
+<td>1/6/2022</td>
+<td>97.0.4692.71</td>
+</tr>
+</tbody>
+</table>
+<br><p><strong>Why is this Chrome CVE included in the Security Update Guide?</strong></p>
+<p>The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based).  It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.  Please see <a href="https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/">Security Update Guide Supports CVEs Assigned by Industry Partners</a> for more information.</p>
+<p><strong>How can I see the version of the browser?</strong></p>
+<ol>
+<li>In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window</li>
+<li>Click on <strong>Help and Feedback</strong></li>
+<li>Click on <strong>About Microsoft Edge</strong></li>
+</ol>
+
+        <br>
+        <b>Mitigations:</b><br>None
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp06/01/2022&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Unknown</td>
+     <td>Unknown</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an exploitability assessment of each of the vulnerabilities addressed this month. The vulnerabilities are listed in order of bulletin ID then CVE ID. Only vulnerabilities that have a severity rating of Critical or Important in the bulletins are included.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Not Found</td>
+     <td>Not Found</td>
+     <td>Not Found</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="9"><b>CVE-2022-0111</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Fixed Build</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Edge (Chromium-based)</td>
+                <td><a href="" >Release Notes (Security Update)</td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>97.0.1072.55</td>
+                <td>No</td>
+                <td>None</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2022-0111</td>
+     <td>None</td>
+ </tr>
+</table><h1 id="CVE-2022-0112">CVE-2022-0112 - Chromium: CVE-2022-0112 Incorrect security UI in Browser UI</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-0112">CVE-2022-0112</a>
+<br>
+<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0112">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-0112">NVD</a>
+<p>Issuing CNA: Chrome</p></td>
+     <td>        <b>CVE Title:</b> Chromium: CVE-2022-0112 Incorrect security UI in Browser UI
+        <br>
+        <b>CVSS:</b> <br>None
+        <br>
+        <b>Executive Summary:</b> <br><p>This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see <a href="https://chromereleases.googleblog.com/2022">Google Chrome Releases</a> for more information.</p>
+
+        <br>
+        <b>FAQ:</b><br><p><strong>What is the version information for this release?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Microsoft Edge Version</th>
+<th>Date Released</th>
+<th>Based on Chromium Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>97.0.1072.55</td>
+<td>1/6/2022</td>
+<td>97.0.4692.71</td>
+</tr>
+</tbody>
+</table>
+<br><p><strong>Why is this Chrome CVE included in the Security Update Guide?</strong></p>
+<p>The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based).  It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.  Please see <a href="https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/">Security Update Guide Supports CVEs Assigned by Industry Partners</a> for more information.</p>
+<p><strong>How can I see the version of the browser?</strong></p>
+<ol>
+<li>In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window</li>
+<li>Click on <strong>Help and Feedback</strong></li>
+<li>Click on <strong>About Microsoft Edge</strong></li>
+</ol>
+
+        <br>
+        <b>Mitigations:</b><br>None
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp06/01/2022&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Unknown</td>
+     <td>Unknown</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an exploitability assessment of each of the vulnerabilities addressed this month. The vulnerabilities are listed in order of bulletin ID then CVE ID. Only vulnerabilities that have a severity rating of Critical or Important in the bulletins are included.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Not Found</td>
+     <td>Not Found</td>
+     <td>Not Found</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="9"><b>CVE-2022-0112</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Fixed Build</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Edge (Chromium-based)</td>
+                <td><a href="" >Release Notes (Security Update)</td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>97.0.1072.55</td>
+                <td>No</td>
+                <td>None</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2022-0112</td>
+     <td>None</td>
+ </tr>
+</table><h1 id="CVE-2022-0113">CVE-2022-0113 - Chromium: CVE-2022-0113 Inappropriate implementation in Blink</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-0113">CVE-2022-0113</a>
+<br>
+<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0113">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-0113">NVD</a>
+<p>Issuing CNA: Chrome</p></td>
+     <td>        <b>CVE Title:</b> Chromium: CVE-2022-0113 Inappropriate implementation in Blink
+        <br>
+        <b>CVSS:</b> <br>None
+        <br>
+        <b>Executive Summary:</b> <br><p>This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see <a href="https://chromereleases.googleblog.com/2022">Google Chrome Releases</a> for more information.</p>
+
+        <br>
+        <b>FAQ:</b><br><p><strong>What is the version information for this release?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Microsoft Edge Version</th>
+<th>Date Released</th>
+<th>Based on Chromium Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>97.0.1072.55</td>
+<td>1/6/2022</td>
+<td>97.0.4692.71</td>
+</tr>
+</tbody>
+</table>
+<br><p><strong>Why is this Chrome CVE included in the Security Update Guide?</strong></p>
+<p>The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based).  It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.  Please see <a href="https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/">Security Update Guide Supports CVEs Assigned by Industry Partners</a> for more information.</p>
+<p><strong>How can I see the version of the browser?</strong></p>
+<ol>
+<li>In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window</li>
+<li>Click on <strong>Help and Feedback</strong></li>
+<li>Click on <strong>About Microsoft Edge</strong></li>
+</ol>
+
+        <br>
+        <b>Mitigations:</b><br>None
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp06/01/2022&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Unknown</td>
+     <td>Unknown</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an exploitability assessment of each of the vulnerabilities addressed this month. The vulnerabilities are listed in order of bulletin ID then CVE ID. Only vulnerabilities that have a severity rating of Critical or Important in the bulletins are included.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Not Found</td>
+     <td>Not Found</td>
+     <td>Not Found</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="9"><b>CVE-2022-0113</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Fixed Build</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Edge (Chromium-based)</td>
+                <td><a href="" >Release Notes (Security Update)</td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>97.0.1072.55</td>
+                <td>No</td>
+                <td>None</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2022-0113</td>
+     <td>None</td>
+ </tr>
+</table><h1 id="CVE-2022-0114">CVE-2022-0114 - Chromium: CVE-2022-0114 Out of bounds memory access in Web Serial</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-0114">CVE-2022-0114</a>
+<br>
+<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0114">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-0114">NVD</a>
+<p>Issuing CNA: Chrome</p></td>
+     <td>        <b>CVE Title:</b> Chromium: CVE-2022-0114 Out of bounds memory access in Web Serial
+        <br>
+        <b>CVSS:</b> <br>None
+        <br>
+        <b>Executive Summary:</b> <br><p>This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see <a href="https://chromereleases.googleblog.com/2022">Google Chrome Releases</a> for more information.</p>
+
+        <br>
+        <b>FAQ:</b><br><p><strong>What is the version information for this release?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Microsoft Edge Version</th>
+<th>Date Released</th>
+<th>Based on Chromium Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>97.0.1072.55</td>
+<td>1/6/2022</td>
+<td>97.0.4692.71</td>
+</tr>
+</tbody>
+</table>
+<br><p><strong>Why is this Chrome CVE included in the Security Update Guide?</strong></p>
+<p>The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based).  It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.  Please see <a href="https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/">Security Update Guide Supports CVEs Assigned by Industry Partners</a> for more information.</p>
+<p><strong>How can I see the version of the browser?</strong></p>
+<ol>
+<li>In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window</li>
+<li>Click on <strong>Help and Feedback</strong></li>
+<li>Click on <strong>About Microsoft Edge</strong></li>
+</ol>
+
+        <br>
+        <b>Mitigations:</b><br>None
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp06/01/2022&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Unknown</td>
+     <td>Unknown</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an exploitability assessment of each of the vulnerabilities addressed this month. The vulnerabilities are listed in order of bulletin ID then CVE ID. Only vulnerabilities that have a severity rating of Critical or Important in the bulletins are included.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Not Found</td>
+     <td>Not Found</td>
+     <td>Not Found</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="9"><b>CVE-2022-0114</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Fixed Build</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Edge (Chromium-based)</td>
+                <td><a href="" >Release Notes (Security Update)</td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>97.0.1072.55</td>
+                <td>No</td>
+                <td>None</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2022-0114</td>
+     <td>None</td>
+ </tr>
+</table><h1 id="CVE-2022-0115">CVE-2022-0115 - Chromium: CVE-2022-0115 Uninitialized Use in File API</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-0115">CVE-2022-0115</a>
+<br>
+<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0115">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-0115">NVD</a>
+<p>Issuing CNA: Chrome</p></td>
+     <td>        <b>CVE Title:</b> Chromium: CVE-2022-0115 Uninitialized Use in File API
+        <br>
+        <b>CVSS:</b> <br>None
+        <br>
+        <b>Executive Summary:</b> <br><p>This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see <a href="https://chromereleases.googleblog.com/2022">Google Chrome Releases</a> for more information.</p>
+
+        <br>
+        <b>FAQ:</b><br><p><strong>What is the version information for this release?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Microsoft Edge Version</th>
+<th>Date Released</th>
+<th>Based on Chromium Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>97.0.1072.55</td>
+<td>1/6/2022</td>
+<td>97.0.4692.71</td>
+</tr>
+</tbody>
+</table>
+<br><p><strong>Why is this Chrome CVE included in the Security Update Guide?</strong></p>
+<p>The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based).  It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.  Please see <a href="https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/">Security Update Guide Supports CVEs Assigned by Industry Partners</a> for more information.</p>
+<p><strong>How can I see the version of the browser?</strong></p>
+<ol>
+<li>In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window</li>
+<li>Click on <strong>Help and Feedback</strong></li>
+<li>Click on <strong>About Microsoft Edge</strong></li>
+</ol>
+
+        <br>
+        <b>Mitigations:</b><br>None
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp06/01/2022&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Unknown</td>
+     <td>Unknown</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an exploitability assessment of each of the vulnerabilities addressed this month. The vulnerabilities are listed in order of bulletin ID then CVE ID. Only vulnerabilities that have a severity rating of Critical or Important in the bulletins are included.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Not Found</td>
+     <td>Not Found</td>
+     <td>Not Found</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="9"><b>CVE-2022-0115</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Fixed Build</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Edge (Chromium-based)</td>
+                <td><a href="" >Release Notes (Security Update)</td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>97.0.1072.55</td>
+                <td>No</td>
+                <td>None</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2022-0115</td>
+     <td>None</td>
+ </tr>
+</table><h1 id="CVE-2022-0116">CVE-2022-0116 - Chromium: CVE-2022-0116 Inappropriate implementation in Compositing</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-0116">CVE-2022-0116</a>
+<br>
+<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0116">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-0116">NVD</a>
+<p>Issuing CNA: Chrome</p></td>
+     <td>        <b>CVE Title:</b> Chromium: CVE-2022-0116 Inappropriate implementation in Compositing
+        <br>
+        <b>CVSS:</b> <br>None
+        <br>
+        <b>Executive Summary:</b> <br><p>This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see <a href="https://chromereleases.googleblog.com/2022">Google Chrome Releases</a> for more information.</p>
+
+        <br>
+        <b>FAQ:</b><br><p><strong>What is the version information for this release?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Microsoft Edge Version</th>
+<th>Date Released</th>
+<th>Based on Chromium Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>97.0.1072.55</td>
+<td>1/6/2022</td>
+<td>97.0.4692.71</td>
+</tr>
+</tbody>
+</table>
+<br><p><strong>Why is this Chrome CVE included in the Security Update Guide?</strong></p>
+<p>The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based).  It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.  Please see <a href="https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/">Security Update Guide Supports CVEs Assigned by Industry Partners</a> for more information.</p>
+<p><strong>How can I see the version of the browser?</strong></p>
+<ol>
+<li>In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window</li>
+<li>Click on <strong>Help and Feedback</strong></li>
+<li>Click on <strong>About Microsoft Edge</strong></li>
+</ol>
+
+        <br>
+        <b>Mitigations:</b><br>None
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp06/01/2022&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Unknown</td>
+     <td>Unknown</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an exploitability assessment of each of the vulnerabilities addressed this month. The vulnerabilities are listed in order of bulletin ID then CVE ID. Only vulnerabilities that have a severity rating of Critical or Important in the bulletins are included.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Not Found</td>
+     <td>Not Found</td>
+     <td>Not Found</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="9"><b>CVE-2022-0116</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Fixed Build</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Edge (Chromium-based)</td>
+                <td><a href="" >Release Notes (Security Update)</td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>97.0.1072.55</td>
+                <td>No</td>
+                <td>None</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2022-0116</td>
+     <td>None</td>
+ </tr>
+</table><h1 id="CVE-2022-0117">CVE-2022-0117 - Chromium: CVE-2022-0117 Policy bypass in Service Workers</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-0117">CVE-2022-0117</a>
+<br>
+<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0117">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-0117">NVD</a>
+<p>Issuing CNA: Chrome</p></td>
+     <td>        <b>CVE Title:</b> Chromium: CVE-2022-0117 Policy bypass in Service Workers
+        <br>
+        <b>CVSS:</b> <br>None
+        <br>
+        <b>Executive Summary:</b> <br><p>This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see <a href="https://chromereleases.googleblog.com/2022">Google Chrome Releases</a> for more information.</p>
+
+        <br>
+        <b>FAQ:</b><br><p><strong>What is the version information for this release?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Microsoft Edge Version</th>
+<th>Date Released</th>
+<th>Based on Chromium Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>97.0.1072.55</td>
+<td>1/6/2022</td>
+<td>97.0.4692.71</td>
+</tr>
+</tbody>
+</table>
+<br><p><strong>Why is this Chrome CVE included in the Security Update Guide?</strong></p>
+<p>The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based).  It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.  Please see <a href="https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/">Security Update Guide Supports CVEs Assigned by Industry Partners</a> for more information.</p>
+<p><strong>How can I see the version of the browser?</strong></p>
+<ol>
+<li>In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window</li>
+<li>Click on <strong>Help and Feedback</strong></li>
+<li>Click on <strong>About Microsoft Edge</strong></li>
+</ol>
+
+        <br>
+        <b>Mitigations:</b><br>None
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp06/01/2022&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Unknown</td>
+     <td>Unknown</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an exploitability assessment of each of the vulnerabilities addressed this month. The vulnerabilities are listed in order of bulletin ID then CVE ID. Only vulnerabilities that have a severity rating of Critical or Important in the bulletins are included.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Not Found</td>
+     <td>Not Found</td>
+     <td>Not Found</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="9"><b>CVE-2022-0117</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Fixed Build</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Edge (Chromium-based)</td>
+                <td><a href="" >Release Notes (Security Update)</td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>97.0.1072.55</td>
+                <td>No</td>
+                <td>None</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2022-0117</td>
+     <td>None</td>
+ </tr>
+</table><h1 id="CVE-2022-0118">CVE-2022-0118 - Chromium: CVE-2022-0118 Inappropriate implementation in WebShare</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-0118">CVE-2022-0118</a>
+<br>
+<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0118">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-0118">NVD</a>
+<p>Issuing CNA: Chrome</p></td>
+     <td>        <b>CVE Title:</b> Chromium: CVE-2022-0118 Inappropriate implementation in WebShare
+        <br>
+        <b>CVSS:</b> <br>None
+        <br>
+        <b>Executive Summary:</b> <br><p>This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see <a href="https://chromereleases.googleblog.com/2022">Google Chrome Releases</a> for more information.</p>
+
+        <br>
+        <b>FAQ:</b><br><p><strong>What is the version information for this release?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Microsoft Edge Version</th>
+<th>Date Released</th>
+<th>Based on Chromium Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>97.0.1072.55</td>
+<td>1/6/2022</td>
+<td>97.0.4692.71</td>
+</tr>
+</tbody>
+</table>
+<br><p><strong>Why is this Chrome CVE included in the Security Update Guide?</strong></p>
+<p>The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based).  It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.  Please see <a href="https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/">Security Update Guide Supports CVEs Assigned by Industry Partners</a> for more information.</p>
+<p><strong>How can I see the version of the browser?</strong></p>
+<ol>
+<li>In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window</li>
+<li>Click on <strong>Help and Feedback</strong></li>
+<li>Click on <strong>About Microsoft Edge</strong></li>
+</ol>
+
+        <br>
+        <b>Mitigations:</b><br>None
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp06/01/2022&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Unknown</td>
+     <td>Unknown</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an exploitability assessment of each of the vulnerabilities addressed this month. The vulnerabilities are listed in order of bulletin ID then CVE ID. Only vulnerabilities that have a severity rating of Critical or Important in the bulletins are included.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Not Found</td>
+     <td>Not Found</td>
+     <td>Not Found</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="9"><b>CVE-2022-0118</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Fixed Build</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Edge (Chromium-based)</td>
+                <td><a href="" >Release Notes (Security Update)</td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>97.0.1072.55</td>
+                <td>No</td>
+                <td>None</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2022-0118</td>
+     <td>None</td>
+ </tr>
+</table><h1 id="CVE-2022-0120">CVE-2022-0120 - Chromium: CVE-2022-0120 Inappropriate implementation in Passwords</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-0120">CVE-2022-0120</a>
+<br>
+<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0120">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-0120">NVD</a>
+<p>Issuing CNA: Chrome</p></td>
+     <td>        <b>CVE Title:</b> Chromium: CVE-2022-0120 Inappropriate implementation in Passwords
+        <br>
+        <b>CVSS:</b> <br>None
+        <br>
+        <b>Executive Summary:</b> <br><p>This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see <a href="https://chromereleases.googleblog.com/2022">Google Chrome Releases</a> for more information.</p>
+
+        <br>
+        <b>FAQ:</b><br><p><strong>What is the version information for this release?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Microsoft Edge Version</th>
+<th>Date Released</th>
+<th>Based on Chromium Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>97.0.1072.55</td>
+<td>1/6/2022</td>
+<td>97.0.4692.71</td>
+</tr>
+</tbody>
+</table>
+<br><p><strong>Why is this Chrome CVE included in the Security Update Guide?</strong></p>
+<p>The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based).  It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.  Please see <a href="https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/">Security Update Guide Supports CVEs Assigned by Industry Partners</a> for more information.</p>
+<p><strong>How can I see the version of the browser?</strong></p>
+<ol>
+<li>In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window</li>
+<li>Click on <strong>Help and Feedback</strong></li>
+<li>Click on <strong>About Microsoft Edge</strong></li>
+</ol>
+
+        <br>
+        <b>Mitigations:</b><br>None
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp06/01/2022&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Unknown</td>
+     <td>Unknown</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an exploitability assessment of each of the vulnerabilities addressed this month. The vulnerabilities are listed in order of bulletin ID then CVE ID. Only vulnerabilities that have a severity rating of Critical or Important in the bulletins are included.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Not Found</td>
+     <td>Not Found</td>
+     <td>Not Found</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="9"><b>CVE-2022-0120</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Fixed Build</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Edge (Chromium-based)</td>
+                <td><a href="" >Release Notes (Security Update)</td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>97.0.1072.55</td>
+                <td>No</td>
+                <td>None</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2022-0120</td>
+     <td>None</td>
+ </tr>
+</table>
+</div>
+<br>
+ </body>
+</html>
