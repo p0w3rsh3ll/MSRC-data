@@ -15,13 +15,13 @@
     <cvrf:Version>1.0</cvrf:Version>
     <cvrf:RevisionHistory>
       <cvrf:Revision>
-        <cvrf:Number>9</cvrf:Number>
-        <cvrf:Date>2022-03-26T07:00:00</cvrf:Date>
+        <cvrf:Number>11</cvrf:Number>
+        <cvrf:Date>2022-03-31T07:00:00</cvrf:Date>
         <cvrf:Description>March 2022 Security Updates</cvrf:Description>
       </cvrf:Revision>
     </cvrf:RevisionHistory>
     <cvrf:InitialReleaseDate>2022-03-08T08:00:00</cvrf:InitialReleaseDate>
-    <cvrf:CurrentReleaseDate>2022-03-26T07:00:00</cvrf:CurrentReleaseDate>
+    <cvrf:CurrentReleaseDate>2022-03-31T07:00:00</cvrf:CurrentReleaseDate>
   </cvrf:DocumentTracking>
   <cvrf:DocumentNotes>
     <cvrf:Note Title="Release Notes" Audience="Public" Type="Details" Ordinal="0">&lt;h2&gt;Updates this Month&lt;/h2&gt;
@@ -302,7 +302,6 @@
         <prod:FullProductName ProductID="10378">Windows Server 2012</prod:FullProductName>
         <prod:FullProductName ProductID="10379">Windows Server 2012 (Server Core installation)</prod:FullProductName>
         <prod:FullProductName ProductID="11849">Remote Desktop client for Windows Desktop</prod:FullProductName>
-        <prod:FullProductName ProductID="11804">Raw Image Extension</prod:FullProductName>
         <prod:FullProductName ProductID="11804-11568">Raw Image Extension on Windows 10 Version 1809 for 32-bit Systems</prod:FullProductName>
         <prod:FullProductName ProductID="11804-11569">Raw Image Extension on Windows 10 Version 1809 for x64-based Systems</prod:FullProductName>
         <prod:FullProductName ProductID="11804-11570">Raw Image Extension on Windows 10 Version 1809 for ARM64-based Systems</prod:FullProductName>
@@ -345,6 +344,7 @@
         <prod:FullProductName ProductID="12015">Microsoft Defender for Endpoint for Linux</prod:FullProductName>
         <prod:FullProductName ProductID="12014">Microsoft Defender for Endpoint for Mac</prod:FullProductName>
         <prod:FullProductName ProductID="12019">Microsoft Defender for Endpoint for Android</prod:FullProductName>
+        <prod:FullProductName ProductID="12023">Microsoft Defender for Endpoint for iOS</prod:FullProductName>
         <prod:FullProductName ProductID="12013-11801">Microsoft Defender for Endpoint for Windows on Windows 10 Version 20H2 for 32-bit Systems</prod:FullProductName>
         <prod:FullProductName ProductID="12013-11714">Microsoft Defender for Endpoint for Windows on Windows 10 Version 1909 for ARM64-based Systems</prod:FullProductName>
         <prod:FullProductName ProductID="12013-11803">Microsoft Defender for Endpoint for Windows on Windows Server, version 20H2 (Server Core Installation)</prod:FullProductName>
@@ -469,7 +469,6 @@
     <prod:FullProductName ProductID="11801">Windows 10 Version 20H2 for 32-bit Systems</prod:FullProductName>
     <prod:FullProductName ProductID="11802">Windows 10 Version 20H2 for ARM64-based Systems</prod:FullProductName>
     <prod:FullProductName ProductID="11803">Windows Server, version 20H2 (Server Core Installation)</prod:FullProductName>
-    <prod:FullProductName ProductID="11804">Raw Image Extension</prod:FullProductName>
     <prod:FullProductName ProductID="11804-10729">Raw Image Extension on Windows 10 for 32-bit Systems</prod:FullProductName>
     <prod:FullProductName ProductID="11804-10735">Raw Image Extension on Windows 10 for x64-based Systems</prod:FullProductName>
     <prod:FullProductName ProductID="11804-10852">Raw Image Extension on Windows 10 Version 1607 for 32-bit Systems</prod:FullProductName>
@@ -554,6 +553,7 @@
     <prod:FullProductName ProductID="12021-10543">Microsoft Defender for Endpoint EDR sensor on Windows Server 2012 R2 (Server Core installation)</prod:FullProductName>
     <prod:FullProductName ProductID="12021-10816">Microsoft Defender for Endpoint EDR sensor on Windows Server 2016</prod:FullProductName>
     <prod:FullProductName ProductID="12021-10855">Microsoft Defender for Endpoint EDR sensor on Windows Server 2016  (Server Core installation)</prod:FullProductName>
+    <prod:FullProductName ProductID="12023">Microsoft Defender for Endpoint for iOS</prod:FullProductName>
     <prod:FullProductName ProductID="9312">Windows Server 2008 for 32-bit Systems Service Pack 2</prod:FullProductName>
     <prod:FullProductName ProductID="9318">Windows Server 2008 for x64-based Systems Service Pack 2</prod:FullProductName>
     <prod:FullProductName ProductID="9344">Windows Server 2008 for x64-based Systems Service Pack 2 (Server Core installation)</prod:FullProductName>
@@ -7961,17 +7961,14 @@
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;How could an attacker exploit the vulnerability?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;An attacker could exploit the vulnerability by convincing a victim to download and open a specially crafted file which could lead to a crash.&lt;/p&gt;
 </vuln:Note>
-      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Is Windows vulnerable in the default configuration?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;No. Only customers who have installed this app from the Microsoft Store may be vulnerable.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;How do I get the updated app?&lt;/strong&gt;&lt;/p&gt;
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;How do I get the updated app?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;The Microsoft Store will automatically update affected customers. Alternatively, customers can get the update immediately; see &lt;a href="https://support.microsoft.com/en-us/account-billing/get-updates-for-apps-and-games-in-microsoft-store-a1fe19c0-532d-ec47-7035-d1c5a1dd464f"&gt;here&lt;/a&gt; for details.&lt;/p&gt;
-&lt;p&gt;It is possible for customers to disable automatic updates for the Microsoft Store. The Microsoft Store will not automatically install this update for those customers.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;My system is in a disconnected environment; is it vulnerable?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;It is possible for customers to disable automatic updates for the Microsoft Store. The Microsoft Store will not automatically install this update for those customers. VLSC customers can visit the Volume Licensing Servicing Center to get the update https://www.microsoft.com/Licensing/servicecenter/.&lt;/p&gt;
 &lt;p&gt;Customers using the Microsoft Store for Business and Microsoft Store for Education can get this update through their organizations.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;How can I check if the update is installed?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;App package versions &lt;strong&gt;2.1.30191.0&lt;/strong&gt; and later contain this update.&lt;/p&gt;
-&lt;p&gt;You can check the package version in PowerShell:&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;Get-AppxPackage -Name Microsoft.RawImageExtension&lt;/code&gt;&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What version of the Raw Image Extension is secure?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;For Windows 11 operating systems the secure version is 2.1.30391.0 and later. For Windows 10 operating systems the secure version is 2.0.30391.0 and later.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="Microsoft Windows Codecs Library" Type="Tag" Ordinal="20">Microsoft Windows Codecs Library</vuln:Note>
       <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
@@ -7979,17 +7976,206 @@
     <vuln:CVE>CVE-2022-23295</vuln:CVE>
     <vuln:ProductStatuses>
       <vuln:Status Type="Known Affected">
-        <vuln:ProductID>11804</vuln:ProductID>
+        <vuln:ProductID>11804-11568</vuln:ProductID>
+        <vuln:ProductID>11804-11569</vuln:ProductID>
+        <vuln:ProductID>11804-11570</vuln:ProductID>
+        <vuln:ProductID>11804-11673</vuln:ProductID>
+        <vuln:ProductID>11804-11712</vuln:ProductID>
+        <vuln:ProductID>11804-11713</vuln:ProductID>
+        <vuln:ProductID>11804-11714</vuln:ProductID>
+        <vuln:ProductID>11804-11896</vuln:ProductID>
+        <vuln:ProductID>11804-11897</vuln:ProductID>
+        <vuln:ProductID>11804-11898</vuln:ProductID>
+        <vuln:ProductID>11804-11800</vuln:ProductID>
+        <vuln:ProductID>11804-11801</vuln:ProductID>
+        <vuln:ProductID>11804-11802</vuln:ProductID>
+        <vuln:ProductID>11804-11926</vuln:ProductID>
+        <vuln:ProductID>11804-11927</vuln:ProductID>
+        <vuln:ProductID>11804-11929</vuln:ProductID>
+        <vuln:ProductID>11804-11930</vuln:ProductID>
+        <vuln:ProductID>11804-11931</vuln:ProductID>
+        <vuln:ProductID>11804-10729</vuln:ProductID>
+        <vuln:ProductID>11804-10735</vuln:ProductID>
+        <vuln:ProductID>11804-10852</vuln:ProductID>
+        <vuln:ProductID>11804-10853</vuln:ProductID>
       </vuln:Status>
     </vuln:ProductStatuses>
     <vuln:Threats>
       <vuln:Threat Type="Impact">
         <vuln:Description>Remote Code Execution</vuln:Description>
-        <vuln:ProductID>11804</vuln:ProductID>
+        <vuln:ProductID>11804-11568</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11804-11569</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11804-11570</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11804-11673</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11804-11712</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11804-11713</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11804-11714</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11804-11896</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11804-11897</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11804-11898</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11804-11800</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11804-11801</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11804-11802</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11804-11926</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11804-11927</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11804-11929</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11804-11930</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11804-11931</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11804-10729</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11804-10735</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11804-10852</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11804-10853</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
         <vuln:Description>Important</vuln:Description>
-        <vuln:ProductID>11804</vuln:ProductID>
+        <vuln:ProductID>11804-11568</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11804-11569</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11804-11570</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11804-11673</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11804-11712</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11804-11713</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11804-11714</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11804-11896</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11804-11897</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11804-11898</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11804-11800</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11804-11801</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11804-11802</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11804-11926</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11804-11927</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11804-11929</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11804-11930</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11804-11931</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11804-10729</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11804-10735</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11804-10852</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11804-10853</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Exploit Status">
         <vuln:Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation Less Likely;Older Software Release:Exploitation Less Likely;DOS:N/A</vuln:Description>
@@ -8000,18 +8186,173 @@
         <vuln:BaseScore>7.8</vuln:BaseScore>
         <vuln:TemporalScore>6.8</vuln:TemporalScore>
         <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>11804</vuln:ProductID>
+        <vuln:ProductID>11804-11568</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>6.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11804-11569</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>6.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11804-11570</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>6.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11804-11673</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>6.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11804-11712</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>6.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11804-11713</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>6.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11804-11714</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>6.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11804-11896</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>6.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11804-11897</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>6.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11804-11898</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>6.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11804-11800</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>6.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11804-11801</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>6.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11804-11802</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>6.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11804-11926</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>6.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11804-11927</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>6.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11804-11929</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>6.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11804-11930</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>6.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11804-11931</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>6.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11804-10729</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>6.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11804-10735</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>6.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11804-10852</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>6.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11804-10853</vuln:ProductID>
       </vuln:ScoreSet>
     </vuln:CVSSScoreSets>
     <vuln:Remediations>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>Update Information</vuln:Description>
         <vuln:URL />
-        <vuln:ProductID>11804</vuln:ProductID>
+        <vuln:ProductID>11804-11568</vuln:ProductID>
+        <vuln:ProductID>11804-11569</vuln:ProductID>
+        <vuln:ProductID>11804-11570</vuln:ProductID>
+        <vuln:ProductID>11804-11673</vuln:ProductID>
+        <vuln:ProductID>11804-11712</vuln:ProductID>
+        <vuln:ProductID>11804-11713</vuln:ProductID>
+        <vuln:ProductID>11804-11714</vuln:ProductID>
+        <vuln:ProductID>11804-11896</vuln:ProductID>
+        <vuln:ProductID>11804-11897</vuln:ProductID>
+        <vuln:ProductID>11804-11898</vuln:ProductID>
+        <vuln:ProductID>11804-11800</vuln:ProductID>
+        <vuln:ProductID>11804-11801</vuln:ProductID>
+        <vuln:ProductID>11804-11802</vuln:ProductID>
+        <vuln:ProductID>11804-11929</vuln:ProductID>
+        <vuln:ProductID>11804-11930</vuln:ProductID>
+        <vuln:ProductID>11804-11931</vuln:ProductID>
+        <vuln:ProductID>11804-10729</vuln:ProductID>
+        <vuln:ProductID>11804-10735</vuln:ProductID>
+        <vuln:ProductID>11804-10852</vuln:ProductID>
+        <vuln:ProductID>11804-10853</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>2.0.30391.0</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Update Information</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11804-11926</vuln:ProductID>
+        <vuln:ProductID>11804-11927</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Maybe</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>2.1.30391.0</vuln:FixedBuild>
       </vuln:Remediation>
     </vuln:Remediations>
     <vuln:Acknowledgments>
@@ -8025,6 +8366,12 @@
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2022-03-08T08:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2022-03-31T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added platform designations to Security Updates table because the version of the raw extension is different for Windows 10 operating systems and Windows 11 operating systems.  This is an informational change only.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
     </vuln:RevisionHistory>
@@ -20342,9 +20689,6 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;How can I verify that the update is installed?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Customers wanting to ensure the client has been updated can run the MDE Client Analyzer on the device.  When running the analyzer on a Windows device that does not have the security update, the analyzer will present a warning (ID 121035) indicating missing patch and directing to relevant online article.  Additionally, if the update is installed, but the Anti-Spoofing capability is not in a stable state, the analyzer will present warning (ID 121036) indicating an issue and providing additional online guidance or callout to reach out to Microsoft support if issue persists.&lt;/p&gt;
 </vuln:Note>
-      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;There are several versions of Windows that don't have links to the article and downloads. Are these updates currently available?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;The security update for Microsoft Defender for Endpoint for Android is not immediately available.  The update will be released as soon as possible, and when it is available, customers will be notified via a revision to this CVE information.&lt;/p&gt;
-</vuln:Note>
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Where can I get more information?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;For more information, please see the blog post &lt;a href="https://aka.ms/CVE-2022-23278Post"&gt;here&lt;/a&gt;.&lt;/p&gt;
 </vuln:Note>
@@ -20357,6 +20701,7 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
         <vuln:ProductID>12015</vuln:ProductID>
         <vuln:ProductID>12014</vuln:ProductID>
         <vuln:ProductID>12019</vuln:ProductID>
+        <vuln:ProductID>12023</vuln:ProductID>
         <vuln:ProductID>12013-11801</vuln:ProductID>
         <vuln:ProductID>12013-11714</vuln:ProductID>
         <vuln:ProductID>12013-11803</vuln:ProductID>
@@ -20401,6 +20746,10 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
       </vuln:Threat>
       <vuln:Threat Type="Impact">
         <vuln:Description>Spoofing</vuln:Description>
+        <vuln:ProductID>12023</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Spoofing</vuln:Description>
         <vuln:ProductID>12013-11801</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Impact">
@@ -20518,6 +20867,10 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
       <vuln:Threat Type="Severity">
         <vuln:Description>Important</vuln:Description>
         <vuln:ProductID>12019</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>12023</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
         <vuln:Description>Important</vuln:Description>
@@ -20649,6 +21002,12 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
         <vuln:TemporalScore>5.2</vuln:TemporalScore>
         <vuln:Vector>CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N/E:U/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>12019</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.9</vuln:BaseScore>
+        <vuln:TemporalScore>5.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>12023</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>5.9</vuln:BaseScore>
@@ -20831,6 +21190,24 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
         <vuln:RestartRequired>No</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>101.60.91</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12019</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>1.0.3011.0302</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12023</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>1.1.18090109</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5011487</vuln:Description>
@@ -21018,6 +21395,12 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2022-03-08T08:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>3.0</cvrf:Number>
+        <cvrf:Date>2022-03-28T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added links to updates for Microsoft Defender for Endpoint for iOS and Microsoft Defender for Endpoint for Android.  Customers that are running these products should ensure that they have received the updates.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
     </vuln:RevisionHistory>
