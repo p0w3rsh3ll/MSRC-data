@@ -15,13 +15,13 @@
     <cvrf:Version>1.0</cvrf:Version>
     <cvrf:RevisionHistory>
       <cvrf:Revision>
-        <cvrf:Number>4</cvrf:Number>
-        <cvrf:Date>2022-07-12T07:00:00</cvrf:Date>
+        <cvrf:Number>8</cvrf:Number>
+        <cvrf:Date>2022-07-25T07:00:00</cvrf:Date>
         <cvrf:Description>July 2022 Security Updates</cvrf:Description>
       </cvrf:Revision>
     </cvrf:RevisionHistory>
     <cvrf:InitialReleaseDate>2022-07-12T07:00:00</cvrf:InitialReleaseDate>
-    <cvrf:CurrentReleaseDate>2022-07-12T07:00:00</cvrf:CurrentReleaseDate>
+    <cvrf:CurrentReleaseDate>2022-07-25T07:00:00</cvrf:CurrentReleaseDate>
   </cvrf:DocumentTracking>
   <cvrf:DocumentNotes>
     <cvrf:Note Title="Release Notes" Audience="Public" Type="Details" Ordinal="0">&lt;h2&gt;Updates this Month&lt;/h2&gt;
@@ -205,6 +205,14 @@
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
+&lt;td&gt;&lt;a href="https://support.microsoft.com/help/5002112"&gt;5002112&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Microsoft Office 2016&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://support.microsoft.com/help/5002121"&gt;5002121&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Microsoft Office 2013&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
 &lt;td&gt;&lt;a href="https://support.microsoft.com/help/5015807"&gt;5015807&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Windows 10, version 20H2, Windows Server, version 20H2, Windows 10, version 21H1, Windows 10, version 21H2&lt;/td&gt;
 &lt;/tr&gt;
@@ -306,6 +314,7 @@
       </prod:Branch>
       <prod:Branch Type="Product Family" Name="Azure">
         <prod:FullProductName ProductID="12018">Azure Site Recovery VMWare to Azure</prod:FullProductName>
+        <prod:FullProductName ProductID="12067">Azure Arc Jumpstart</prod:FullProductName>
         <prod:FullProductName ProductID="12060">Azure Storage Blobs client library for .NET</prod:FullProductName>
         <prod:FullProductName ProductID="12063">Azure Storage Queues client library for .NET</prod:FullProductName>
         <prod:FullProductName ProductID="12064">Azure Storage Blobs client library for Java</prod:FullProductName>
@@ -397,6 +406,7 @@
     <prod:FullProductName ProductID="12063">Azure Storage Queues client library for .NET</prod:FullProductName>
     <prod:FullProductName ProductID="12064">Azure Storage Blobs client library for Java</prod:FullProductName>
     <prod:FullProductName ProductID="12065">Azure Storage Queues client library for Python</prod:FullProductName>
+    <prod:FullProductName ProductID="12067">Azure Arc Jumpstart</prod:FullProductName>
     <prod:FullProductName ProductID="9312">Windows Server 2008 for 32-bit Systems Service Pack 2</prod:FullProductName>
     <prod:FullProductName ProductID="9318">Windows Server 2008 for x64-based Systems Service Pack 2</prod:FullProductName>
     <prod:FullProductName ProductID="9344">Windows Server 2008 for x64-based Systems Service Pack 2 (Server Core installation)</prod:FullProductName>
@@ -1954,7 +1964,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="30">
+  <vuln:Vulnerability Ordinal="35">
     <vuln:Title>Azure Site Recovery Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -2016,6 +2026,10 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
     </vuln:Remediations>
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
+        <vuln:Name>21</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+      <vuln:Acknowledgment>
         <vuln:Name>&lt;a href="https://twitter.com/kwsecu"&gt;William S&amp;#246;derberg with WithSecure &lt;/a&gt;</vuln:Name>
         <vuln:URL />
       </vuln:Acknowledgment>
@@ -2029,12 +2043,18 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="53">
+  <vuln:Vulnerability Ordinal="58">
     <vuln:Title>Microsoft Defender for Endpoint Tampering Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
-      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, privileges required is low (PR:L).  What does that mean for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Successful exploitation of this vulnerability requires an attacker to authenticate to the management console appliance and to have an integration token documented here: &lt;a href="https://docs.microsoft.com/en-us/azure/defender-for-iot/references-work-with-defender-for-iot-apis"&gt;Defender for IoT sensor and management console APIs&lt;/a&gt;.&lt;/p&gt;
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the nature of this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This is a client-side code vulnerability consisting of the usage of uninitialized buffer in the buffer pool by the MDE sensor on Linux systems.  This affects the IP field, causing any remote connection, including failed connections, to be considered as ‘Successful remote logon’.  This, in turn, triggers a false-positive alert.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Which platforms are affected by this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;All Linux machines are affected. The impact is more severe on servers which are under heavy network/login load.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How was the vulnerability addressed?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The fix enforced full initialization for each buffer before use.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What version of the product contains the update that addressed the vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The fix is included in defender version 101.68.80. Customers are advised to ensure their Defender client is the latest version.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="Microsoft Defender for Endpoint" Type="Tag" Ordinal="20">Microsoft Defender for Endpoint</vuln:Note>
       <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
@@ -2066,7 +2086,17 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
         <vuln:ProductID>12015</vuln:ProductID>
       </vuln:ScoreSet>
     </vuln:CVSSScoreSets>
-    <vuln:Remediations />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12015</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>101.68.80</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
         <vuln:Name>James Sharpe with &lt;a href="https://www.zenotech.com/"&gt;Zenotech Ltd&lt;/a&gt;</vuln:Name>
@@ -2080,9 +2110,15 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2022-07-25T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added FAQ information. This is an informational change only.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="54">
+  <vuln:Vulnerability Ordinal="59">
     <vuln:Title>Azure Site Recovery Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -2161,7 +2197,7 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="55">
+  <vuln:Vulnerability Ordinal="60">
     <vuln:Title>Azure Site Recovery Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -2233,7 +2269,7 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="56">
+  <vuln:Vulnerability Ordinal="61">
     <vuln:Title>Azure Site Recovery Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -2308,7 +2344,81 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="31">
+  <vuln:Vulnerability Ordinal="91">
+    <vuln:Title>Azure Arc Jumpstart Information Disclosure Vulnerability</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the nature of this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;An information disclosure vulnerability exists in Azure Arc Jumpstart that could allow an authenticated user to view certain credentials and other sensitive information contained in a log file.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What are the circumstances leading to a successful exploitation?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The client virtual machine is protected behind a secured Azure virtual network (VNET) without access from the internet. A potential attacker would first have to compromise the VNET to have network access to the Azure client virtual machine (Azure Arc Jumpstart-Client).  There is only one provisioned user on the client virtual machine, and this user’s credentials are protected by a username and password provided by the end-user at deployment time. There are no other “low level” users that have login access to the virtual machine. The only user credential with access to the VM is the one created and supplied by the original Azure Arc Jumpstart end-user. A potential attacker would first need to gain access to a user login credentials and only then open a remote desktop session (RDP) into the virtual machine.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What information can be disclosed and what is the impact?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The type of information that could be disclosed is information stored in the logs, which could include credentials as well as other sensitive information for the system&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Was any personal information or sensitive customer data exposed as a result of this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The primary use-case for Azure Arc Jumpstart is to provide an automated training and demo environment intended to be used in sandbox Azure subscriptions. ArcBox does not disclose any personal information or sensitive customer data. In the context of disclosed vulnerability, no customer data were compromised.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I protect myself from this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The Azure Arc Jumpstart service principal credential secret has been removed from the log output of the custom script extension and this fix is now live for all Jumpstart scenarios.  If you are an existing user, Microsoft recommends rolling your  service principal credential secret. If you are new to Azure Arc Jumpstart, there are no actions necessary.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;When was the fix for this vulnerability implemented?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The removal of the service principal credential secret from the log was completed on 5/26/2022.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Where can I find more information about Azure Arc Jumpstart?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Please see &lt;a href="https://techcommunity.microsoft.com/t5/azure-arc-blog/announcing-jumpstart-arcbox-2-0/ba-p/3025679"&gt;Announcing Jumpstart ArcBox 2.0&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;The CVSS score lists Attack Vector as Local (AV:L). What does that mean for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The attacker would already need to be logged into the target Azure Arc Jumpstart client virtual machine to be able to discover the information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;The CVSS score lists Confidentiality as Low (C:L). What does that mean for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Successfully exploiting this vulnerability allows an attacker to get access to the information stored in the logs. The disclosed information is scoped to the specific system and does not provide the attacker with any additional privileges.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;The CVSS score lists Privileges Required as Low (PR:L). What privileges are required to exploit this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The attacker would have to be present on the Azure Arc Jumpstart virtual machine as a regular user to be able to exploit this vulnerability.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="Azure Arc Jumpstart" Type="Tag" Ordinal="20">Azure Arc Jumpstart</vuln:Note>
+      <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2022-35798</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>12067</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Information Disclosure</vuln:Description>
+        <vuln:ProductID>12067</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Moderate</vuln:Description>
+        <vuln:ProductID>12067</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>Publicly Disclosed:No;Exploited:No;DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>3.3</vuln:BaseScore>
+        <vuln:TemporalScore>3.0</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>12067</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations />
+    <vuln:Acknowledgments>
+      <vuln:Acknowledgment>
+        <vuln:Name>&lt;a href="https://https/"&gt;Jimi Sebree&lt;/a&gt; with &lt;a href="https://tenable.com/"&gt;Tenable&lt;/a&gt;</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+    </vuln:Acknowledgments>
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2022-07-21T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="36">
     <vuln:Title>Azure Storage Library Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -2473,7 +2583,7 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="32">
+  <vuln:Vulnerability Ordinal="37">
     <vuln:Title>Windows Advanced Local Procedure Call Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -3447,7 +3557,7 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="33">
+  <vuln:Vulnerability Ordinal="38">
     <vuln:Title>Windows Boot Manager Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -4421,7 +4531,7 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="34">
+  <vuln:Vulnerability Ordinal="39">
     <vuln:Title>Windows Group Policy Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -5398,7 +5508,7 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="35">
+  <vuln:Vulnerability Ordinal="40">
     <vuln:Title>Windows Print Spooler Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -6386,7 +6496,7 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="36">
+  <vuln:Vulnerability Ordinal="41">
     <vuln:Title>Windows Security Account Manager (SAM) Denial of Service Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -7354,7 +7464,7 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="37">
+  <vuln:Vulnerability Ordinal="42">
     <vuln:Title>Windows IIS Server Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -8328,7 +8438,7 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="38">
+  <vuln:Vulnerability Ordinal="43">
     <vuln:Title>Windows Layer 2 Tunneling Protocol (L2TP) Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -9299,7 +9409,7 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="39">
+  <vuln:Vulnerability Ordinal="44">
     <vuln:Title>Windows Connected Devices Platform Service Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -9768,7 +9878,7 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="40">
+  <vuln:Vulnerability Ordinal="45">
     <vuln:Title>Windows GDI+ Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -10739,7 +10849,7 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="41">
+  <vuln:Vulnerability Ordinal="46">
     <vuln:Title>Windows DNS Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -10949,7 +11059,7 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="42">
+  <vuln:Vulnerability Ordinal="47">
     <vuln:Title>Active Directory Federation Services Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -11154,7 +11264,7 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="43">
+  <vuln:Vulnerability Ordinal="48">
     <vuln:Title>Windows Server Service Tampering Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -11521,7 +11631,7 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="44">
+  <vuln:Vulnerability Ordinal="49">
     <vuln:Title>Windows Common Log File System Driver Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -12496,7 +12606,7 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="45">
+  <vuln:Vulnerability Ordinal="50">
     <vuln:Title>Windows Graphics Component Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -13326,7 +13436,7 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="46">
+  <vuln:Vulnerability Ordinal="51">
     <vuln:Title>Windows Shell Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -13893,7 +14003,7 @@ Japanese will not be the display language on the device.&lt;/p&gt;
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="47">
+  <vuln:Vulnerability Ordinal="52">
     <vuln:Title>Windows Hyper-V Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -14512,7 +14622,7 @@ Japanese will not be the display language on the device.&lt;/p&gt;
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="48">
+  <vuln:Vulnerability Ordinal="53">
     <vuln:Title>Windows Advanced Local Procedure Call Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -15486,7 +15596,7 @@ Japanese will not be the display language on the device.&lt;/p&gt;
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="49">
+  <vuln:Vulnerability Ordinal="54">
     <vuln:Title>Windows Media Player Network Sharing Service Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -16457,7 +16567,7 @@ Japanese will not be the display language on the device.&lt;/p&gt;
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="50">
+  <vuln:Vulnerability Ordinal="55">
     <vuln:Title>Windows Print Spooler Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -36841,7 +36951,7 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
     </vuln:Remediations>
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
-        <vuln:Name>&lt;a href="https://twitter.com/edwardzpeng"&gt;Zhiniang Peng&lt;/a&gt; with &lt;a href="https://www.sangfor.com/"&gt;Sangfor&lt;/a&gt;</vuln:Name>
+        <vuln:Name>&lt;a href="https://twitter.com/lxf02942370"&gt;Xuefeng Li&lt;/a&gt; and &lt;a href="https://twitter.com/edwardzpeng"&gt;Zhiniang Peng&lt;/a&gt; with &lt;a href="https://www.sangfor.com/"&gt;Sangfor&lt;/a&gt;</vuln:Name>
         <vuln:URL />
       </vuln:Acknowledgment>
     </vuln:Acknowledgments>
@@ -36852,9 +36962,15 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2022-07-14T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added acknowledgements. This is an informational change only.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="51">
+  <vuln:Vulnerability Ordinal="56">
     <vuln:Title>Microsoft Office Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -37069,6 +37185,13 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>16.0.5344.1000</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5002112</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5002112</vuln:URL>
+        <vuln:ProductID>10753</vuln:ProductID>
+        <vuln:ProductID>10754</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5002112</vuln:Description>
         <vuln:URL>https://www.microsoft.com/downloads/details.aspx?familyid=1cc4d651-5e50-4bac-8125-d5be09e6a755</vuln:URL>
@@ -37078,6 +37201,13 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>16.0.5344.1000</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5002112</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5002112</vuln:URL>
+        <vuln:ProductID>10753</vuln:ProductID>
+        <vuln:ProductID>10754</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5002121</vuln:Description>
@@ -37089,6 +37219,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>15.0.5467.1000</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5002121</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5002121</vuln:URL>
+        <vuln:ProductID>10603</vuln:ProductID>
+        <vuln:ProductID>10601</vuln:ProductID>
+        <vuln:ProductID>10602</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5002121</vuln:Description>
         <vuln:URL>https://www.microsoft.com/downloads/details.aspx?familyid=c91fa4d6-3069-4870-a58c-9f9b8e3e871a</vuln:URL>
@@ -37099,6 +37237,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>15.0.5467.1000</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5002121</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5002121</vuln:URL>
+        <vuln:ProductID>10603</vuln:ProductID>
+        <vuln:ProductID>10601</vuln:ProductID>
+        <vuln:ProductID>10602</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5002121</vuln:Description>
         <vuln:URL>https://www.microsoft.com/downloads/details.aspx?familyid=28345644-ce93-4dd5-91c2-2bcc738edeaa</vuln:URL>
@@ -37108,6 +37254,14 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>15.0.5467.1000</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5002121</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5002121</vuln:URL>
+        <vuln:ProductID>10603</vuln:ProductID>
+        <vuln:ProductID>10601</vuln:ProductID>
+        <vuln:ProductID>10602</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
     </vuln:Remediations>
     <vuln:Acknowledgments>
@@ -37125,7 +37279,7 @@ Microsoft Security Response Center (MSRC)</vuln:Name>
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="52">
+  <vuln:Vulnerability Ordinal="57">
     <vuln:Title>Skype for Business and Lync Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -37237,7 +37391,7 @@ server.  With write access, the attacker would need to modify specific files on 
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="29">
+  <vuln:Vulnerability Ordinal="34">
     <vuln:Title>HackerOne: CVE-2022-27776 Insufficiently protected credentials vulnerability might leak authentication or cookie header data</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -37583,7 +37737,7 @@ server.  With write access, the attacker would need to modify specific files on 
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="57">
+  <vuln:Vulnerability Ordinal="62">
     <vuln:Title>Xbox Live Save Service Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -37838,7 +37992,7 @@ server.  With write access, the attacker would need to modify specific files on 
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="58">
+  <vuln:Vulnerability Ordinal="63">
     <vuln:Title>Azure Site Recovery Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -38335,7 +38489,7 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="59">
+  <vuln:Vulnerability Ordinal="64">
     <vuln:Title>Azure Site Recovery Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -38410,7 +38564,7 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="60">
+  <vuln:Vulnerability Ordinal="65">
     <vuln:Title>Azure Site Recovery Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -38488,7 +38642,7 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="61">
+  <vuln:Vulnerability Ordinal="66">
     <vuln:Title>Azure Site Recovery Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -38563,7 +38717,7 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="62">
+  <vuln:Vulnerability Ordinal="67">
     <vuln:Title>Azure Site Recovery Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -38638,7 +38792,7 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="63">
+  <vuln:Vulnerability Ordinal="68">
     <vuln:Title>Azure Site Recovery Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -38713,7 +38867,7 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="64">
+  <vuln:Vulnerability Ordinal="69">
     <vuln:Title>Azure Site Recovery Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -38788,7 +38942,7 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="65">
+  <vuln:Vulnerability Ordinal="70">
     <vuln:Title>Azure Site Recovery Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -38850,6 +39004,10 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
     </vuln:Remediations>
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
+        <vuln:Name>21</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+      <vuln:Acknowledgment>
         <vuln:Name>&lt;a href="https://twitter.com/kwsecu"&gt;William S&amp;#246;derberg&lt;/a&gt; with WithSecure&lt;/a&gt;</vuln:Name>
         <vuln:URL />
       </vuln:Acknowledgment>
@@ -38863,7 +39021,7 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="66">
+  <vuln:Vulnerability Ordinal="71">
     <vuln:Title>Azure Site Recovery Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -38941,7 +39099,7 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="67">
+  <vuln:Vulnerability Ordinal="72">
     <vuln:Title>Azure Site Recovery Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -39003,6 +39161,10 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
     </vuln:Remediations>
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
+        <vuln:Name>21</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+      <vuln:Acknowledgment>
         <vuln:Name>&lt;a href="https://twitter.com/kwsecu"&gt;William S&amp;#246;derberg&lt;/a&gt; with WithSecure&lt;/a&gt;</vuln:Name>
         <vuln:URL />
       </vuln:Acknowledgment>
@@ -39016,7 +39178,7 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="68">
+  <vuln:Vulnerability Ordinal="73">
     <vuln:Title>Azure Site Recovery Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -39091,7 +39253,7 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="69">
+  <vuln:Vulnerability Ordinal="74">
     <vuln:Title>Azure Site Recovery Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -39170,7 +39332,7 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="70">
+  <vuln:Vulnerability Ordinal="75">
     <vuln:Title>Azure Site Recovery Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -39245,7 +39407,7 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="71">
+  <vuln:Vulnerability Ordinal="76">
     <vuln:Title>Azure Site Recovery Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -39320,7 +39482,7 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="72">
+  <vuln:Vulnerability Ordinal="77">
     <vuln:Title>Azure Site Recovery Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -39395,7 +39557,7 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="73">
+  <vuln:Vulnerability Ordinal="78">
     <vuln:Title>Azure Site Recovery Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -39470,7 +39632,7 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="74">
+  <vuln:Vulnerability Ordinal="79">
     <vuln:Title>Azure Site Recovery Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -39545,7 +39707,7 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="75">
+  <vuln:Vulnerability Ordinal="80">
     <vuln:Title>Azure Site Recovery Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -39620,7 +39782,7 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="76">
+  <vuln:Vulnerability Ordinal="81">
     <vuln:Title>Azure Site Recovery Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -39695,7 +39857,7 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="77">
+  <vuln:Vulnerability Ordinal="82">
     <vuln:Title>Azure Site Recovery Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -39770,7 +39932,7 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="78">
+  <vuln:Vulnerability Ordinal="83">
     <vuln:Title>Azure Site Recovery Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -39845,7 +40007,7 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="79">
+  <vuln:Vulnerability Ordinal="84">
     <vuln:Title>Azure Site Recovery Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -40342,7 +40504,7 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="80">
+  <vuln:Vulnerability Ordinal="85">
     <vuln:Title>Azure Site Recovery Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -40417,7 +40579,7 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="81">
+  <vuln:Vulnerability Ordinal="86">
     <vuln:Title>Azure Site Recovery Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -40489,7 +40651,7 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="82">
+  <vuln:Vulnerability Ordinal="87">
     <vuln:Title>Azure Site Recovery Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -40564,7 +40726,7 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="83">
+  <vuln:Vulnerability Ordinal="88">
     <vuln:Title>Azure Site Recovery Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -40636,7 +40798,7 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="84">
+  <vuln:Vulnerability Ordinal="89">
     <vuln:Title>Azure Site Recovery Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -40708,7 +40870,7 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="85">
+  <vuln:Vulnerability Ordinal="90">
     <vuln:Title>Azure Site Recovery Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -40926,6 +41088,386 @@ Please visit this link for more details: &lt;a href="https://docs.microsoft.com/
       <vuln:Revision>
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2022-07-06T16:32:51</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="29">
+    <vuln:Title>Chromium: CVE-2022-2477  Use after free in Guest View</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2022"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based).  It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.  Please see &lt;a href="https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/"&gt;Security Update Guide Supports CVEs Assigned by Industry Partners&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;103.0.1264.71&lt;/td&gt;
+&lt;td&gt;7/22/2022&lt;/td&gt;
+&lt;td&gt;103.0.5060.134&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2022-2477</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>103.0.1264.71</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2022-07-22T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="30">
+    <vuln:Title>Chromium: CVE-2022-2478  Use after free in PDF</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2022"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based).  It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.  Please see &lt;a href="https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/"&gt;Security Update Guide Supports CVEs Assigned by Industry Partners&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;103.0.1264.71&lt;/td&gt;
+&lt;td&gt;7/22/2022&lt;/td&gt;
+&lt;td&gt;103.0.5060.134&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2022-2478</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>103.0.1264.71</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2022-07-22T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="31">
+    <vuln:Title>Chromium: CVE-2022-2479 Insufficient validation of untrusted input in File</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2022"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based).  It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.  Please see &lt;a href="https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/"&gt;Security Update Guide Supports CVEs Assigned by Industry Partners&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;103.0.1264.71&lt;/td&gt;
+&lt;td&gt;7/22/2022&lt;/td&gt;
+&lt;td&gt;103.0.5060.134&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2022-2479</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>103.0.1264.71</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2022-07-22T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="32">
+    <vuln:Title>Chromium: CVE-2022-2480  Use after free in Service Worker API</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2022"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based).  It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.  Please see &lt;a href="https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/"&gt;Security Update Guide Supports CVEs Assigned by Industry Partners&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;103.0.1264.71&lt;/td&gt;
+&lt;td&gt;7/22/2022&lt;/td&gt;
+&lt;td&gt;103.0.5060.134&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2022-2480</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>103.0.1264.71</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2022-07-22T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="33">
+    <vuln:Title>Chromium: CVE-2022-2481 Use after free in Views</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2022"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based).  It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.  Please see &lt;a href="https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/"&gt;Security Update Guide Supports CVEs Assigned by Industry Partners&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;103.0.1264.71&lt;/td&gt;
+&lt;td&gt;7/22/2022&lt;/td&gt;
+&lt;td&gt;103.0.5060.134&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2022-2481</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>103.0.1264.71</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2022-07-22T07:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
