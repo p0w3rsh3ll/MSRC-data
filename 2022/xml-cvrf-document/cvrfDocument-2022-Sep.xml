@@ -15,13 +15,13 @@
     <cvrf:Version>1.0</cvrf:Version>
     <cvrf:RevisionHistory>
       <cvrf:Revision>
-        <cvrf:Number>24</cvrf:Number>
-        <cvrf:Date>2022-09-15T20:09:33</cvrf:Date>
+        <cvrf:Number>26</cvrf:Number>
+        <cvrf:Date>2022-09-20T07:00:00</cvrf:Date>
         <cvrf:Description>September 2022 Security Updates</cvrf:Description>
       </cvrf:Revision>
     </cvrf:RevisionHistory>
     <cvrf:InitialReleaseDate>2022-09-13T07:00:00</cvrf:InitialReleaseDate>
-    <cvrf:CurrentReleaseDate>2022-09-15T20:09:33</cvrf:CurrentReleaseDate>
+    <cvrf:CurrentReleaseDate>2022-09-20T07:00:00</cvrf:CurrentReleaseDate>
   </cvrf:DocumentTracking>
   <cvrf:DocumentNotes>
     <cvrf:Note Title="Release Notes" Audience="Public" Type="Details" Ordinal="0">&lt;h2&gt;Updates this Month&lt;/h2&gt;
@@ -478,6 +478,7 @@
       </prod:Branch>
       <prod:Branch Type="Product Family" Name="System Center">
         <prod:FullProductName ProductID="12014">Microsoft Defender for Endpoint for Mac</prod:FullProductName>
+        <prod:FullProductName ProductID="12028">Microsoft Endpoint Configuration Manager</prod:FullProductName>
       </prod:Branch>
       <prod:Branch Type="Product Family" Name="Browser">
         <prod:FullProductName ProductID="11655">Microsoft Edge (Chromium-based)</prod:FullProductName>
@@ -630,6 +631,7 @@
     <prod:FullProductName ProductID="11972">SharePoint Server Subscription Edition Language Pack</prod:FullProductName>
     <prod:FullProductName ProductID="12009">.NET 6.0</prod:FullProductName>
     <prod:FullProductName ProductID="12014">Microsoft Defender for Endpoint for Mac</prod:FullProductName>
+    <prod:FullProductName ProductID="12028">Microsoft Endpoint Configuration Manager</prod:FullProductName>
     <prod:FullProductName ProductID="12051">Microsoft Visual Studio 2022 version 17.2</prod:FullProductName>
     <prod:FullProductName ProductID="12068">Azure ARC</prod:FullProductName>
     <prod:FullProductName ProductID="12078-11896">Microsoft .NET Framework 4.8.1 on Windows 10 Version 21H1 for x64-based Systems</prod:FullProductName>
@@ -1247,6 +1249,14 @@
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, the attack vector is local (AV:L). Why does the CVE title indicate that this is a remote code execution?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;The word &lt;strong&gt;Remote&lt;/strong&gt; in the title refers to the location of the attacker. This type of exploit is sometimes referred to as Arbitrary Code Execution (ACE). The attack itself is carried out locally.&lt;/p&gt;
 &lt;p&gt;For example, when the score indicates that the &lt;strong&gt;Attack Vector&lt;/strong&gt; is &lt;strong&gt;Local&lt;/strong&gt; and &lt;strong&gt;User Interaction&lt;/strong&gt; is &lt;strong&gt;Required&lt;/strong&gt;, this could describe an exploit in which an attacker, through social engineering, convinces a victim to download and open a specially crafted file from a website which leads to a local attack on their computer.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;The Security Updates table indicates that this vulnerability affects all supported versions of .NET Framework installed on Windows. Why are Windows updates listed for Windows Server 2008, Windows 7, Windows Server 2008 R2, Windows Server 2012, Windows 8.1, Windows Server 2012 R2, Windows 10, Windows 10 Version 1607, Windows Server 2016, Windows 10 Version 1809, and Windows Server 2019?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The component affected by this vulnerability is serviced by Windows for Windows 10 version 1809 and earlier, and by .NET Framework for Windows 10 version 20H2 and later. To be protected from this vulnerability, customers should install the updates listed in the Security Updates table for their operating system as follows. Customers whose systems are configured to receive automatic updates do not need to take any further action.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Customers running Windows 8.1 and earlier can install either the Windows Security Only or the Windows Monthly Update to receive the update for all versions of .NET Framework.&lt;/li&gt;
+&lt;li&gt;Customers running Windows 10, Windows 10 version 1607, or Windows 10 version 1809 and later should install the Windows Security Update to receive the update for all versions of .NET Framework.&lt;/li&gt;
+&lt;li&gt;Customers running Windows 10 version 20H2 and later should install the Security Update for the versions of .NET Framework installed on their system.&lt;/li&gt;
+&lt;/ul&gt;
 </vuln:Note>
       <vuln:Note Title=".NET Framework" Type="Tag" Ordinal="20">.NET Framework</vuln:Note>
       <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
@@ -2756,14 +2766,6 @@
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5017022</vuln:URL>
         <vuln:ProductID>11650-11929</vuln:ProductID>
         <vuln:ProductID>11650-11930</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:RestartRequired>Maybe</vuln:RestartRequired>
-        <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>4.8.04556.03</vuln:FixedBuild>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>5017500</vuln:Description>
-        <vuln:URL />
         <vuln:ProductID>11650-11931</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
@@ -2928,6 +2930,12 @@
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2022-09-13T07:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2022-09-16T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Updated the FAQs to further clarify the update guidance for this CVE. This is an informational change only.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
     </vuln:RevisionHistory>
@@ -6231,7 +6239,7 @@
     </vuln:Remediations>
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
-        <vuln:Name>Eduardo Braun working with &lt;a href="https://www.zerodayinitiative.com/"&gt;Trend Micro Zero Day Initiative&lt;/a&gt;</vuln:Name>
+        <vuln:Name>Anonymous working with &lt;a href="https://www.zerodayinitiative.com/"&gt;Trend Micro Zero Day Initiative&lt;/a&gt;</vuln:Name>
         <vuln:URL />
       </vuln:Acknowledgment>
     </vuln:Acknowledgments>
@@ -6240,6 +6248,12 @@
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2022-09-13T07:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2022-09-20T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Updated acknowledgment.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
     </vuln:RevisionHistory>
@@ -6307,7 +6321,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="77">
+  <vuln:Vulnerability Ordinal="78">
     <vuln:Title>Microsoft SharePoint Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -6586,7 +6600,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="78">
+  <vuln:Vulnerability Ordinal="79">
     <vuln:Title>Microsoft SharePoint Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -6976,7 +6990,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="81">
+  <vuln:Vulnerability Ordinal="82">
     <vuln:Title>Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -7309,7 +7323,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="82">
+  <vuln:Vulnerability Ordinal="83">
     <vuln:Title>.NET Core and Visual Studio Denial of Service Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -35045,7 +35059,7 @@
     </vuln:Remediations>
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
-        <vuln:Name>Anonymous working with &lt;a href="https://www.zerodayinitiative.com/"&gt;Trend Micro Zero Day Initiative&lt;/a&gt;</vuln:Name>
+        <vuln:Name>&lt;a href="https://twitter.com/decoder_it"&gt;@decoder_it&lt;/a&gt; working with &lt;a href="https://www.zerodayinitiative.com/"&gt;Trend Micro Zero Day Initiative&lt;/a&gt;</vuln:Name>
         <vuln:URL />
       </vuln:Acknowledgment>
     </vuln:Acknowledgments>
@@ -35054,6 +35068,12 @@
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2022-09-13T07:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2022-09-20T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Updated acknowledgment.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
     </vuln:RevisionHistory>
@@ -36069,7 +36089,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="73">
+  <vuln:Vulnerability Ordinal="74">
     <vuln:Title>Windows Fax Service Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -37608,7 +37628,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="74">
+  <vuln:Vulnerability Ordinal="75">
     <vuln:Title>Windows Print Spooler Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -39530,7 +39550,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="75">
+  <vuln:Vulnerability Ordinal="76">
     <vuln:Title>Windows Graphics Component Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -40821,7 +40841,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="76">
+  <vuln:Vulnerability Ordinal="77">
     <vuln:Title>Azure Guest Configuration and Azure Arc-enabled servers Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -40931,7 +40951,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="79">
+  <vuln:Vulnerability Ordinal="80">
     <vuln:Title>Microsoft Office Visio Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -41502,7 +41522,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="80">
+  <vuln:Vulnerability Ordinal="81">
     <vuln:Title>Raw Image Extension Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -44709,7 +44729,7 @@ Google is aware of reportsrts that an exploit for CVE-2022-3075 exists in the wi
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="83">
+  <vuln:Vulnerability Ordinal="84">
     <vuln:Title>AV1 Video Extension Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -44786,7 +44806,73 @@ Google is aware of reportsrts that an exploit for CVE-2022-3075 exists in the wi
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="84">
+  <vuln:Vulnerability Ordinal="73">
+    <vuln:Title>Microsoft Endpoint Configuration Manager Spoofing Vulnerability</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is Microsoft Endpoint Configuration Manager?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Microsoft Endpoint Configuration Manager is an on-premises management solution to manage desktops, servers, and laptops that are on your network or are internet-based. You can cloud-enable it to integrate with Intune, Azure Active Directory (AD), Microsoft Defender for Endpoint, and other cloud services. Use Configuration Manager to deploy apps, software updates, and operating systems. You can also monitor compliance, query and act on clients in real time, and much more. For more information see - &lt;a href="https://docs.microsoft.com/en-us/mem/configmgr/core/understand/introduction"&gt;What is Configuration Manager?&lt;/a&gt;.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;How do I get the update?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The update – &lt;a href="https://learn.microsoft.com/en-us/mem/configmgr/hotfix/2207/15498768"&gt;KB 15498768&lt;/a&gt; – will be listed in the Updates and Servicing node of the Configuration Manager console for customers running Microsoft Endpoint Configuration Manager, versions 2103 – 2207.&lt;/p&gt;
+&lt;p&gt;Environments using versions of Configuration Manager current branch prior to 2103 are encouraged to update to a later supported version. Administrators can also disable use of automatic and manual client push installation methods to remove the risk of exposure to this issue. Refer to Support for Configuration Manager current branch versions.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Endpoint Configuration Manager" Type="Tag" Ordinal="20">Microsoft Endpoint Configuration Manager</vuln:Note>
+      <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2022-37972</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>12028</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Spoofing</vuln:Description>
+        <vuln:ProductID>12028</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>12028</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>Publicly Disclosed:Yes;Exploited:No;Latest Software Release:Exploitation Less Likely;Older Software Release:Exploitation Less Likely;DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>6.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>12028</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>15498768</vuln:Description>
+        <vuln:URL>https://aka.ms/KB15498768</vuln:URL>
+        <vuln:ProductID>12028</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Maybe</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments>
+      <vuln:Acknowledgment>
+        <vuln:Name>&lt;a href="https://twitter.com/techbrandon"&gt;Brandon Colley&lt;/a&gt; with &lt;a href="https://www.trimarcsecurity.com/"&gt;Trimarc Security&lt;/a&gt;</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+    </vuln:Acknowledgments>
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2022-09-20T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="85">
     <vuln:Title>Visual Studio Code Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
