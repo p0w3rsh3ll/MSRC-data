@@ -15,13 +15,13 @@
     <cvrf:Version>1.0</cvrf:Version>
     <cvrf:RevisionHistory>
       <cvrf:Revision>
-        <cvrf:Number>26</cvrf:Number>
-        <cvrf:Date>2022-09-20T07:00:00</cvrf:Date>
+        <cvrf:Number>28</cvrf:Number>
+        <cvrf:Date>2022-09-30T07:00:00</cvrf:Date>
         <cvrf:Description>September 2022 Security Updates</cvrf:Description>
       </cvrf:Revision>
     </cvrf:RevisionHistory>
     <cvrf:InitialReleaseDate>2022-09-13T07:00:00</cvrf:InitialReleaseDate>
-    <cvrf:CurrentReleaseDate>2022-09-20T07:00:00</cvrf:CurrentReleaseDate>
+    <cvrf:CurrentReleaseDate>2022-09-30T07:00:00</cvrf:CurrentReleaseDate>
   </cvrf:DocumentTracking>
   <cvrf:DocumentNotes>
     <cvrf:Note Title="Release Notes" Audience="Public" Type="Details" Ordinal="0">&lt;h2&gt;Updates this Month&lt;/h2&gt;
@@ -487,6 +487,13 @@
         <prod:FullProductName ProductID="12080">Azure Guest Configuration</prod:FullProductName>
         <prod:FullProductName ProductID="12068">Azure ARC</prod:FullProductName>
       </prod:Branch>
+      <prod:Branch Type="Product Family" Name="Exchange Server">
+        <prod:FullProductName ProductID="11682">Microsoft Exchange Server 2013 Cumulative Update 23</prod:FullProductName>
+        <prod:FullProductName ProductID="11956">Microsoft Exchange Server 2016 Cumulative Update 22</prod:FullProductName>
+        <prod:FullProductName ProductID="11957">Microsoft Exchange Server 2019 Cumulative Update 11</prod:FullProductName>
+        <prod:FullProductName ProductID="12038">Microsoft Exchange Server 2019 Cumulative Update 12</prod:FullProductName>
+        <prod:FullProductName ProductID="12039">Microsoft Exchange Server 2016 Cumulative Update 23</prod:FullProductName>
+      </prod:Branch>
     </prod:Branch>
     <prod:FullProductName ProductID="0">Windows Server 2022 Azure Edition Core Hotpatch</prod:FullProductName>
     <prod:FullProductName ProductID="10047">Windows 7 for 32-bit Systems Service Pack 1</prod:FullProductName>
@@ -581,6 +588,7 @@
     <prod:FullProductName ProductID="11677-11570">Microsoft .NET Framework 3.5 AND 4.7.2 on Windows 10 Version 1809 for ARM64-based Systems</prod:FullProductName>
     <prod:FullProductName ProductID="11677-11571">Microsoft .NET Framework 3.5 AND 4.7.2 on Windows Server 2019</prod:FullProductName>
     <prod:FullProductName ProductID="11677-11572">Microsoft .NET Framework 3.5 AND 4.7.2 on Windows Server 2019 (Server Core installation)</prod:FullProductName>
+    <prod:FullProductName ProductID="11682">Microsoft Exchange Server 2013 Cumulative Update 23</prod:FullProductName>
     <prod:FullProductName ProductID="11723-10816">Microsoft .NET Framework 3.5 AND 4.6.2/4.7/4.7.1/4.7.2 on Windows Server 2016</prod:FullProductName>
     <prod:FullProductName ProductID="11723-10852">Microsoft .NET Framework 3.5 AND 4.6.2/4.7/4.7.1/4.7.2 on Windows 10 Version 1607 for 32-bit Systems</prod:FullProductName>
     <prod:FullProductName ProductID="11723-10853">Microsoft .NET Framework 3.5 AND 4.6.2/4.7/4.7.1/4.7.2 on Windows 10 Version 1607 for x64-based Systems</prod:FullProductName>
@@ -626,12 +634,16 @@
     <prod:FullProductName ProductID="11951">Microsoft Office LTSC for Mac 2021</prod:FullProductName>
     <prod:FullProductName ProductID="11952">Microsoft Office LTSC 2021 for 64-bit editions</prod:FullProductName>
     <prod:FullProductName ProductID="11953">Microsoft Office LTSC 2021 for 32-bit editions</prod:FullProductName>
+    <prod:FullProductName ProductID="11956">Microsoft Exchange Server 2016 Cumulative Update 22</prod:FullProductName>
+    <prod:FullProductName ProductID="11957">Microsoft Exchange Server 2019 Cumulative Update 11</prod:FullProductName>
     <prod:FullProductName ProductID="11961">Microsoft SharePoint Server Subscription Edition</prod:FullProductName>
     <prod:FullProductName ProductID="11969">Microsoft Visual Studio 2022 version 17.0</prod:FullProductName>
     <prod:FullProductName ProductID="11972">SharePoint Server Subscription Edition Language Pack</prod:FullProductName>
     <prod:FullProductName ProductID="12009">.NET 6.0</prod:FullProductName>
     <prod:FullProductName ProductID="12014">Microsoft Defender for Endpoint for Mac</prod:FullProductName>
     <prod:FullProductName ProductID="12028">Microsoft Endpoint Configuration Manager</prod:FullProductName>
+    <prod:FullProductName ProductID="12038">Microsoft Exchange Server 2019 Cumulative Update 12</prod:FullProductName>
+    <prod:FullProductName ProductID="12039">Microsoft Exchange Server 2016 Cumulative Update 23</prod:FullProductName>
     <prod:FullProductName ProductID="12051">Microsoft Visual Studio 2022 version 17.2</prod:FullProductName>
     <prod:FullProductName ProductID="12068">Azure ARC</prod:FullProductName>
     <prod:FullProductName ProductID="12078-11896">Microsoft .NET Framework 4.8.1 on Windows 10 Version 21H1 for x64-based Systems</prod:FullProductName>
@@ -19020,12 +19032,23 @@
       </vuln:Remediation>
       <vuln:Remediation Type="Mitigation">
         <vuln:Description>&lt;p&gt;Mitigation refers to a setting, common configuration, or general best-practice, existing in a default state, that could reduce the severity of exploitation of a vulnerability. The following mitigating factors might be helpful in your situation:&lt;/p&gt;
-&lt;p&gt;Only systems with the IPSec service running are vulnerable to this attack.&lt;/p&gt;
+&lt;p&gt;Only systems with the IKE and AuthIP IPsec Keying Modules running are vulnerable to this attack.&lt;/p&gt;
+&lt;p&gt;You can run either of the following commands to check the running status of this service:&lt;/p&gt;
+&lt;p&gt;PS:  &lt;code&gt;C:\&amp;amp;gt; Get-Service Ikeext&lt;/code&gt;&lt;br /&gt;
+ &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;OR&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Cmd: &lt;code&gt;C:\&amp;amp;gt; sc query ikeext&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;This mitigation could have negative affects on your IPSec functionality.  Microsoft strongly recommends updating your system with the September 2022 security updates.&lt;/p&gt;
 </vuln:Description>
         <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Mitigation">
-        <vuln:Description>&lt;p&gt;Systems are not affected if IPv6 is disabled on the target machine.&lt;/p&gt;
+        <vuln:Description>&lt;p&gt;Mitigation refers to a setting, common configuration, or general best-practice, existing in a default state, that could reduce the severity of exploitation of a vulnerability. The following mitigating factors might be helpful in your situation:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Systems are not affected if IPv6 is disabled on the target machine.&lt;/li&gt;
+&lt;/ul&gt;
 </vuln:Description>
         <vuln:AffectedFiles />
       </vuln:Remediation>
@@ -19041,6 +19064,12 @@
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2022-09-13T07:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2022-09-23T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Updated mitigation. This is an informational change only.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
     </vuln:RevisionHistory>
@@ -22062,6 +22091,20 @@
         <vuln:ProductID>10379</vuln:ProductID>
         <vuln:AffectedFiles />
       </vuln:Remediation>
+      <vuln:Remediation Type="Mitigation">
+        <vuln:Description>&lt;p&gt;Mitigation refers to a setting, common configuration, or general best-practice, existing in a default state, that could reduce the severity of exploitation of a vulnerability. The following mitigating factors might be helpful in your situation:&lt;/p&gt;
+&lt;p&gt;Only systems with the IKE and AuthIP IPsec Keying Modules running are vulnerable to this attack.&lt;/p&gt;
+&lt;p&gt;You can run either of the following commands to check the running status of this service:&lt;/p&gt;
+&lt;p&gt;PS:  &lt;code&gt;C:\&amp;amp;gt; Get-Service Ikeext&lt;/code&gt;&lt;br /&gt;
+ &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;OR&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Cmd: &lt;code&gt;C:\&amp;amp;gt; sc query ikeext&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;This mitigation could have negative affects on your IPSec functionality.  Microsoft strongly recommends updating your system with the September 2022 security updates.&lt;/p&gt;
+</vuln:Description>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
     </vuln:Remediations>
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
@@ -22074,6 +22117,12 @@
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2022-09-13T07:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2022-09-23T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added mitigation.  This is an informational change only.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
     </vuln:RevisionHistory>
@@ -23681,7 +23730,7 @@
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What privileges could an attacker gain?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;An attacker who successfully exploited this vulnerability could gain SYSTEM privileges.&lt;/p&gt;
 </vuln:Note>
-      <vuln:Note Title="Microsoft Windows ALPC" Type="Tag" Ordinal="20">Microsoft Windows ALPC</vuln:Note>
+      <vuln:Note Title="Windows ALPC" Type="Tag" Ordinal="20">Windows ALPC</vuln:Note>
       <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
     </vuln:Notes>
     <vuln:CVE>CVE-2022-34725</vuln:CVE>
@@ -44867,6 +44916,262 @@ Google is aware of reportsrts that an exploit for CVE-2022-3075 exists in the wi
       <vuln:Revision>
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2022-09-20T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="86">
+    <vuln:Title>Microsoft Exchange Server Elevation of Privilege Vulnerability</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, privileges required is low (PR:L). Does the attacker need to be in an authenticated role on the Exchange Server?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Yes, the attacker must be authenticated.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt; &lt;strong&gt;Do I need to take further steps to be protected from this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Microsoft Exchange Online customers do not need to take any action.&lt;/strong&gt; Exchange Server customers should review and apply the following mitigation instructions.&lt;/p&gt;
+&lt;p&gt;The current mitigation is to add a blocking rule in “IIS Manager -&amp;gt; Default Web Site -&amp;gt; Autodiscover -&amp;gt; URL Rewrite -&amp;gt; Actions” to block the known attack patterns.&lt;/p&gt;
+&lt;p&gt;Microsoft created the following script for the URL Rewrite mitigation steps: https://aka.ms/EOMTv2&lt;/p&gt;
+&lt;p&gt;Customers can also instead follow the below instructions, which are currently being discussed publicly and are successful in breaking current attack chains.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the IIS Manager.&lt;/li&gt;
+&lt;li&gt;Select &lt;strong&gt;Default Web Site&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;In the** Feature View**, click &lt;strong&gt;URL Rewrite&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;In the &lt;strong&gt;Actions&lt;/strong&gt; pane on the right-hand side, click &lt;strong&gt;Add Rules...&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Select** Request Blocking** and click &lt;strong&gt;OK&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Add the string “.&lt;strong&gt;autodiscover.json.*@.*Powershell.&lt;/strong&gt;” (excluding quotes) and then click &lt;strong&gt;OK&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Expand the rule and select the rule with the pattern “&lt;strong&gt;autodiscover.json.*@.*Powershell.&lt;/strong&gt;” and click &lt;strong&gt;Edit under Conditions&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Change the &lt;strong&gt;Condition input&lt;/strong&gt; from {URL} to {REQUEST_URI}&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;em&gt;NOTE: If you need to change any rule it is best to delete and recreate it.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Impact: There is no known effect on Exchange functionality if URL Rewrite is installed as recommended.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What privileges can an attacker gain by exploiting this vulnerability&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The privileges acquired by the attacker would be the ability to run PowerShell in the context of the system.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Where can I find more information about this CVE?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Please see &lt;a href="https://msrc-blog.microsoft.com/2022/09/29/customer-guidance-for-reported-zero-day-vulnerabilities-in-microsoft-exchange-server/"&gt;Customer Guidance for Reported Zero-day Vulnerabilities in Microsoft Exchange Server&lt;/a&gt; for more information&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Exchange Server" Type="Tag" Ordinal="20">Microsoft Exchange Server</vuln:Note>
+      <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2022-41040</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11682</vuln:ProductID>
+        <vuln:ProductID>11956</vuln:ProductID>
+        <vuln:ProductID>11957</vuln:ProductID>
+        <vuln:ProductID>12038</vuln:ProductID>
+        <vuln:ProductID>12039</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>11682</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>11956</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>11957</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>12038</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>12039</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>11682</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>11956</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>11957</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>12038</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>12039</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>Publicly Disclosed:No;Exploited:Yes;Latest Software Release:Exploitation Detected;DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.1</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:W/RC:C</vuln:Vector>
+        <vuln:ProductID>11682</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.1</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:W/RC:C</vuln:Vector>
+        <vuln:ProductID>11956</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.1</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:W/RC:C</vuln:Vector>
+        <vuln:ProductID>11957</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.1</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:W/RC:C</vuln:Vector>
+        <vuln:ProductID>12038</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.1</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:W/RC:C</vuln:Vector>
+        <vuln:ProductID>12039</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations />
+    <vuln:Acknowledgments>
+      <vuln:Acknowledgment>
+        <vuln:Name>DA-0x43-Dx4-DA-Hx2-Tx2-TP-S-Q from GTSC working with &lt;a href="https://www.zerodayinitiative.com/"&gt;Trend Micro Zero Day Initiative&lt;/a&gt;</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+    </vuln:Acknowledgments>
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2022-09-30T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="87">
+    <vuln:Title>Microsoft Exchange Server Remote Code Execution Vulnerability</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, privileges required is low (PR:L). Does the attacker need to be in an authenticated role on the Exchange Server?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Yes, the attacker must be authenticated.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, the attack vector is network (AV:N) and the user interaction is none (UI:N). What is the target used in the context of the remote code execution?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The attacker for this vulnerability could target the server accounts in an arbitrary or remote code execution. As an authenticated user, the attacker could attempt to trigger malicious code in the context of the server's account through a network call.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Where can I find more information about this CVE?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Please see &lt;a href="https://msrc-blog.microsoft.com/2022/09/29/customer-guidance-for-reported-zero-day-vulnerabilities-in-microsoft-exchange-server/"&gt;Customer Guidance for Reported Zero-day Vulnerabilities in Microsoft Exchange Server&lt;/a&gt; for more information&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Exchange Server" Type="Tag" Ordinal="20">Microsoft Exchange Server</vuln:Note>
+      <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2022-41082</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11682</vuln:ProductID>
+        <vuln:ProductID>11956</vuln:ProductID>
+        <vuln:ProductID>11957</vuln:ProductID>
+        <vuln:ProductID>12038</vuln:ProductID>
+        <vuln:ProductID>12039</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11682</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11956</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11957</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>12038</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>12039</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11682</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11956</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11957</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>12038</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>12039</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>Publicly Disclosed:No;Exploited:Yes;Latest Software Release:Exploitation Detected;DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:U/RC:C</vuln:Vector>
+        <vuln:ProductID>11682</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:U/RC:C</vuln:Vector>
+        <vuln:ProductID>11956</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:U/RC:C</vuln:Vector>
+        <vuln:ProductID>11957</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:U/RC:C</vuln:Vector>
+        <vuln:ProductID>12038</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:U/RC:C</vuln:Vector>
+        <vuln:ProductID>12039</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations />
+    <vuln:Acknowledgments>
+      <vuln:Acknowledgment>
+        <vuln:Name>DA-0x43-Dx4-DA-Hx2-Tx2-TP-S-Q from GTSC working with &lt;a href="https://www.zerodayinitiative.com/"&gt;Trend Micro Zero Day Initiative&lt;/a&gt;</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+    </vuln:Acknowledgments>
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2022-09-30T07:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
