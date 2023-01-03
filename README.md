@@ -13,6 +13,9 @@ See the MSRC blog posts:
 
 |Date	|Blog Post|
 | ------|---------|
+|December 29, 2022|[Security Update Guide Improvement – Representing Hotpatch Updates](https://msrc-blog.microsoft.com/2022/12/29/security-update-guide-improvement-representing-hotpatch-updates/)|
+|August 9, 2022|[Security Update Guide Notification System News: Create your profile now](https://aka.ms/SUGNotificationProfile2)|
+|January 11, 2022|[Coming Soon: New Security Update Guide Notification System](https://aka.ms/SUGNotificationProfile)|
 |February 9, 2021| [Continuing to Listen: Good News about the Security Update Guide API](https://msrc-blog.microsoft.com/2021/02/09/continuing-to-listen-good-news-about-the-security-update-guide-api/)|
 |January 13, 2021| [Security Update Guide Supports CVEs Assigned by Industry Partners](https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/)|
 |December 8, 2020| [Security Update Guide: Let’s keep the conversation going](https://msrc-blog.microsoft.com/2020/12/08/security-update-guide-lets-keep-the-conversation-going/)|
