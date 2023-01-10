@@ -13,6 +13,7 @@ See the MSRC blog posts:
 
 |Date	|Blog Post|
 | ------|---------|
+|January 6, 2023|[Publishing CBL-Mariner CVEs on the Security Update Guide CVRF API](https://msrc-blog.microsoft.com/2023/01/06/publishing-cbl-mariner-cves-on-the-security-update-guide-cvrf-api/)|
 |December 29, 2022|[Security Update Guide Improvement – Representing Hotpatch Updates](https://msrc-blog.microsoft.com/2022/12/29/security-update-guide-improvement-representing-hotpatch-updates/)|
 |August 9, 2022|[Security Update Guide Notification System News: Create your profile now](https://aka.ms/SUGNotificationProfile2)|
 |January 11, 2022|[Coming Soon: New Security Update Guide Notification System](https://aka.ms/SUGNotificationProfile)|
