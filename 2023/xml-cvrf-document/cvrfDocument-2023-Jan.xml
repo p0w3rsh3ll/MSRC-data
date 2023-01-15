@@ -15,13 +15,13 @@
     <cvrf:Version>1.0</cvrf:Version>
     <cvrf:RevisionHistory>
       <cvrf:Revision>
-        <cvrf:Number>1</cvrf:Number>
-        <cvrf:Date>2023-01-10T08:00:00</cvrf:Date>
+        <cvrf:Number>15</cvrf:Number>
+        <cvrf:Date>2023-01-12T20:43:57</cvrf:Date>
         <cvrf:Description>January 2023 Security Updates</cvrf:Description>
       </cvrf:Revision>
     </cvrf:RevisionHistory>
     <cvrf:InitialReleaseDate>2023-01-10T08:00:00</cvrf:InitialReleaseDate>
-    <cvrf:CurrentReleaseDate>2023-01-10T08:00:00</cvrf:CurrentReleaseDate>
+    <cvrf:CurrentReleaseDate>2023-01-12T20:43:57</cvrf:CurrentReleaseDate>
   </cvrf:DocumentTracking>
   <cvrf:DocumentNotes>
     <cvrf:Note Title="Release Notes" Audience="Public" Type="Details" Ordinal="0">&lt;h2&gt;Updates this Month&lt;/h2&gt;
@@ -31,6 +31,7 @@
 &lt;li&gt;3D Builder&lt;/li&gt;
 &lt;li&gt;Azure Service Fabric Container&lt;/li&gt;
 &lt;li&gt;Microsoft Bluetooth Driver&lt;/li&gt;
+&lt;li&gt;Microsoft Edge (Chromium-based)&lt;/li&gt;
 &lt;li&gt;Microsoft Exchange Server&lt;/li&gt;
 &lt;li&gt;Microsoft Graphics Component&lt;/li&gt;
 &lt;li&gt;Microsoft Local Security Authority Server (lsasrv)&lt;/li&gt;
@@ -240,10 +241,6 @@
 &lt;td&gt;Microsoft Exchange Server 2016&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href="https://support.microsoft.com/help/5022188"&gt;5022188&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Microsoft Exchange Server 2013&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
 &lt;td&gt;&lt;a href="https://support.microsoft.com/help/5022193"&gt;5022193&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Microsoft Exchange Server 2019&lt;/td&gt;
 &lt;/tr&gt;
@@ -339,6 +336,9 @@
         <prod:FullProductName ProductID="10051">Windows Server 2008 R2 for x64-based Systems Service Pack 1</prod:FullProductName>
         <prod:FullProductName ProductID="10049">Windows Server 2008 R2 for x64-based Systems Service Pack 1 (Server Core installation)</prod:FullProductName>
       </prod:Branch>
+      <prod:Branch Type="Product Family" Name="Browser">
+        <prod:FullProductName ProductID="11655">Microsoft Edge (Chromium-based)</prod:FullProductName>
+      </prod:Branch>
       <prod:Branch Type="Product Family" Name="Developer Tools">
         <prod:FullProductName ProductID="12009">.NET 6.0</prod:FullProductName>
         <prod:FullProductName ProductID="11622">Visual Studio Code</prod:FullProductName>
@@ -416,6 +416,7 @@
     <prod:FullProductName ProductID="11575">Microsoft Office 2019 for Mac</prod:FullProductName>
     <prod:FullProductName ProductID="11585">Microsoft SharePoint Server 2019</prod:FullProductName>
     <prod:FullProductName ProductID="11622">Visual Studio Code</prod:FullProductName>
+    <prod:FullProductName ProductID="11655">Microsoft Edge (Chromium-based)</prod:FullProductName>
     <prod:FullProductName ProductID="11682">Microsoft Exchange Server 2013 Cumulative Update 23</prod:FullProductName>
     <prod:FullProductName ProductID="11737">Windows Malicious Software Removal Tool 64-bit</prod:FullProductName>
     <prod:FullProductName ProductID="11738">Windows Malicious Software Removal Tool 32-bit</prod:FullProductName>
@@ -452,7 +453,7 @@
     <prod:FullProductName ProductID="9318">Windows Server 2008 for x64-based Systems Service Pack 2</prod:FullProductName>
     <prod:FullProductName ProductID="9344">Windows Server 2008 for x64-based Systems Service Pack 2 (Server Core installation)</prod:FullProductName>
   </prod:ProductTree>
-  <vuln:Vulnerability Ordinal="0">
+  <vuln:Vulnerability Ordinal="12">
     <vuln:Title>Windows Local Security Authority (LSA) Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -1259,7 +1260,1015 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="0">
+    <vuln:Title>Chromium:CVE-2023-0129: Heap buffer overflow in Network Service</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based).  It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.  Please see &lt;a href="https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/"&gt;Security Update Guide Supports CVEs Assigned by Industry Partners&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Channel&lt;/th&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Stable&lt;/td&gt;
+&lt;td&gt;109.0.1518.49&lt;/td&gt;
+&lt;td&gt;109.0.5414.74/.75&lt;/td&gt;
+&lt;td&gt;1/12/2023&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Extended Stable&lt;/td&gt;
+&lt;td&gt;108.0.1462.83&lt;/td&gt;
+&lt;td&gt;108.0.5359.179&lt;/td&gt;
+&lt;td&gt;1/12/2023&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2023-0129</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>109.0.1518.49</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2023-01-12T20:43:26</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="1">
+    <vuln:Title>Chromium:CVE-2023-0130: Inappropriate implementation in Fullscreen API</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based).  It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.  Please see &lt;a href="https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/"&gt;Security Update Guide Supports CVEs Assigned by Industry Partners&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Channel&lt;/th&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Stable&lt;/td&gt;
+&lt;td&gt;109.0.1518.49&lt;/td&gt;
+&lt;td&gt;109.0.5414.74/.75&lt;/td&gt;
+&lt;td&gt;1/12/2023&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Extended Stable&lt;/td&gt;
+&lt;td&gt;108.0.1462.83&lt;/td&gt;
+&lt;td&gt;108.0.5359.179&lt;/td&gt;
+&lt;td&gt;1/12/2023&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2023-0130</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>109.0.1518.49</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2023-01-12T20:43:29</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="2">
+    <vuln:Title>Chromium:CVE-2023-0131: Inappropriate implementation in iframe Sandbox</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based).  It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.  Please see &lt;a href="https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/"&gt;Security Update Guide Supports CVEs Assigned by Industry Partners&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Channel&lt;/th&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Stable&lt;/td&gt;
+&lt;td&gt;109.0.1518.49&lt;/td&gt;
+&lt;td&gt;109.0.5414.74/.75&lt;/td&gt;
+&lt;td&gt;1/12/2023&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Extended Stable&lt;/td&gt;
+&lt;td&gt;108.0.1462.83&lt;/td&gt;
+&lt;td&gt;108.0.5359.179&lt;/td&gt;
+&lt;td&gt;1/12/2023&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2023-0131</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>109.0.1518.49</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2023-01-12T20:43:31</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="3">
+    <vuln:Title>Chromium:CVE-2023-0132: Inappropriate implementation in Permission prompts</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based).  It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.  Please see &lt;a href="https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/"&gt;Security Update Guide Supports CVEs Assigned by Industry Partners&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Channel&lt;/th&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Stable&lt;/td&gt;
+&lt;td&gt;109.0.1518.49&lt;/td&gt;
+&lt;td&gt;109.0.5414.74/.75&lt;/td&gt;
+&lt;td&gt;1/12/2023&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Extended Stable&lt;/td&gt;
+&lt;td&gt;108.0.1462.83&lt;/td&gt;
+&lt;td&gt;108.0.5359.179&lt;/td&gt;
+&lt;td&gt;1/12/2023&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2023-0132</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>109.0.1518.49</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2023-01-12T20:43:34</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
   <vuln:Vulnerability Ordinal="4">
+    <vuln:Title>Chromium:CVE-2023-0133: Inappropriate implementation in Permission prompts</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based).  It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.  Please see &lt;a href="https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/"&gt;Security Update Guide Supports CVEs Assigned by Industry Partners&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Channel&lt;/th&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Stable&lt;/td&gt;
+&lt;td&gt;109.0.1518.49&lt;/td&gt;
+&lt;td&gt;109.0.5414.74/.75&lt;/td&gt;
+&lt;td&gt;1/12/2023&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Extended Stable&lt;/td&gt;
+&lt;td&gt;108.0.1462.83&lt;/td&gt;
+&lt;td&gt;108.0.5359.179&lt;/td&gt;
+&lt;td&gt;1/12/2023&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2023-0133</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>109.0.1518.49</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2023-01-12T20:43:36</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="5">
+    <vuln:Title>Chromium:CVE-2023-0134: Use after free in Cart</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based).  It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.  Please see &lt;a href="https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/"&gt;Security Update Guide Supports CVEs Assigned by Industry Partners&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Channel&lt;/th&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Stable&lt;/td&gt;
+&lt;td&gt;109.0.1518.49&lt;/td&gt;
+&lt;td&gt;109.0.5414.74/.75&lt;/td&gt;
+&lt;td&gt;1/12/2023&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Extended Stable&lt;/td&gt;
+&lt;td&gt;108.0.1462.83&lt;/td&gt;
+&lt;td&gt;108.0.5359.179&lt;/td&gt;
+&lt;td&gt;1/12/2023&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2023-0134</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>109.0.1518.49</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2023-01-12T20:43:39</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="6">
+    <vuln:Title>Chromium:CVE-2023-0135: Use after free in Cart</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based).  It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.  Please see &lt;a href="https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/"&gt;Security Update Guide Supports CVEs Assigned by Industry Partners&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Channel&lt;/th&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Stable&lt;/td&gt;
+&lt;td&gt;109.0.1518.49&lt;/td&gt;
+&lt;td&gt;109.0.5414.74/.75&lt;/td&gt;
+&lt;td&gt;1/12/2023&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Extended Stable&lt;/td&gt;
+&lt;td&gt;108.0.1462.83&lt;/td&gt;
+&lt;td&gt;108.0.5359.179&lt;/td&gt;
+&lt;td&gt;1/12/2023&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2023-0135</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>109.0.1518.49</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2023-01-12T20:43:42</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="7">
+    <vuln:Title>Chromium:CVE-2023-0136: Inappropriate implementation in Fullscreen API</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based).  It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.  Please see &lt;a href="https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/"&gt;Security Update Guide Supports CVEs Assigned by Industry Partners&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Channel&lt;/th&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Stable&lt;/td&gt;
+&lt;td&gt;109.0.1518.49&lt;/td&gt;
+&lt;td&gt;109.0.5414.74/.75&lt;/td&gt;
+&lt;td&gt;1/12/2023&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Extended Stable&lt;/td&gt;
+&lt;td&gt;108.0.1462.83&lt;/td&gt;
+&lt;td&gt;108.0.5359.179&lt;/td&gt;
+&lt;td&gt;1/12/2023&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2023-0136</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>109.0.1518.49</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2023-01-12T20:43:46</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="8">
+    <vuln:Title>Chromium:CVE-2023-0138: Heap buffer overflow in libphonenumber</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based).  It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.  Please see &lt;a href="https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/"&gt;Security Update Guide Supports CVEs Assigned by Industry Partners&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Channel&lt;/th&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Stable&lt;/td&gt;
+&lt;td&gt;109.0.1518.49&lt;/td&gt;
+&lt;td&gt;109.0.5414.74/.75&lt;/td&gt;
+&lt;td&gt;1/12/2023&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Extended Stable&lt;/td&gt;
+&lt;td&gt;108.0.1462.83&lt;/td&gt;
+&lt;td&gt;108.0.5359.179&lt;/td&gt;
+&lt;td&gt;1/12/2023&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2023-0138</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>109.0.1518.49</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2023-01-12T20:43:50</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="9">
+    <vuln:Title>Chromium:CVE-2023-0139: Insufficient validation of untrusted input in Downloads</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based).  It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.  Please see &lt;a href="https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/"&gt;Security Update Guide Supports CVEs Assigned by Industry Partners&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Channel&lt;/th&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Stable&lt;/td&gt;
+&lt;td&gt;109.0.1518.49&lt;/td&gt;
+&lt;td&gt;109.0.5414.74/.75&lt;/td&gt;
+&lt;td&gt;1/12/2023&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Extended Stable&lt;/td&gt;
+&lt;td&gt;108.0.1462.83&lt;/td&gt;
+&lt;td&gt;108.0.5359.179&lt;/td&gt;
+&lt;td&gt;1/12/2023&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2023-0139</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>109.0.1518.49</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2023-01-12T20:43:52</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="10">
+    <vuln:Title>Chromium:CVE-2023-0140: Inappropriate implementation in File System API</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based).  It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.  Please see &lt;a href="https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/"&gt;Security Update Guide Supports CVEs Assigned by Industry Partners&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Channel&lt;/th&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Stable&lt;/td&gt;
+&lt;td&gt;109.0.1518.49&lt;/td&gt;
+&lt;td&gt;109.0.5414.74/.75&lt;/td&gt;
+&lt;td&gt;1/12/2023&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Extended Stable&lt;/td&gt;
+&lt;td&gt;108.0.1462.83&lt;/td&gt;
+&lt;td&gt;108.0.5359.179&lt;/td&gt;
+&lt;td&gt;1/12/2023&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2023-0140</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>109.0.1518.49</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2023-01-12T20:43:55</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="11">
+    <vuln:Title>Chromium:CVE-2023-0141: Insufficient policy enforcement in CORS</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based).  It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.  Please see &lt;a href="https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/"&gt;Security Update Guide Supports CVEs Assigned by Industry Partners&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Channel&lt;/th&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Stable&lt;/td&gt;
+&lt;td&gt;109.0.1518.49&lt;/td&gt;
+&lt;td&gt;109.0.5414.74/.75&lt;/td&gt;
+&lt;td&gt;1/12/2023&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Extended Stable&lt;/td&gt;
+&lt;td&gt;108.0.1462.83&lt;/td&gt;
+&lt;td&gt;108.0.5359.179&lt;/td&gt;
+&lt;td&gt;1/12/2023&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2023-0141</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>109.0.1518.49</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2023-01-12T20:43:57</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="16">
     <vuln:Title>Windows GDI Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -2248,7 +3257,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="5">
+  <vuln:Vulnerability Ordinal="17">
     <vuln:Title>Windows Secure Socket Tunneling Protocol (SSTP) Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -3134,7 +4143,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="8">
+  <vuln:Vulnerability Ordinal="20">
     <vuln:Title>.NET Denial of Service Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -3194,7 +4203,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="14">
+  <vuln:Vulnerability Ordinal="26">
     <vuln:Title>Windows Layer 2 Tunneling Protocol (L2TP) Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -4183,7 +5192,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="15">
+  <vuln:Vulnerability Ordinal="27">
     <vuln:Title>Internet Key Exchange (IKE) Protocol Denial of Service Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -4762,6 +5771,10 @@
     </vuln:Remediations>
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
+        <vuln:Name>insu of 78ResearchLab working with &lt;a href="https://www.zerodayinitiative.com/"&gt;Trend Micro Zero Day Initiative&lt;/a&gt;</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+      <vuln:Acknowledgment>
         <vuln:Name>&lt;a href="https://www.twitter.com/guhe120"&gt;Yuki Chen&lt;/a&gt; with &lt;a href="https://www.cyberkl.com/"&gt;Cyber KunLun&lt;/a&gt;</vuln:Name>
         <vuln:URL />
       </vuln:Acknowledgment>
@@ -4775,7 +5788,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="9">
+  <vuln:Vulnerability Ordinal="21">
     <vuln:Title>Windows Authentication Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -5161,7 +6174,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="10">
+  <vuln:Vulnerability Ordinal="22">
     <vuln:Title>Windows Cryptographic Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -5642,7 +6655,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="11">
+  <vuln:Vulnerability Ordinal="23">
     <vuln:Title>Windows Task Scheduler Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -6628,7 +7641,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="12">
+  <vuln:Vulnerability Ordinal="24">
     <vuln:Title>Windows Installer Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -7175,7 +8188,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="13">
+  <vuln:Vulnerability Ordinal="25">
     <vuln:Title>Windows Layer 2 Tunneling Protocol (L2TP) Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -8164,7 +9177,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="16">
+  <vuln:Vulnerability Ordinal="28">
     <vuln:Title>Windows Secure Socket Tunneling Protocol (SSTP) Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -9153,7 +10166,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="17">
+  <vuln:Vulnerability Ordinal="29">
     <vuln:Title>Windows SMB Witness Service Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -9964,7 +10977,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="18">
+  <vuln:Vulnerability Ordinal="30">
     <vuln:Title>Windows Cryptographic Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -10445,7 +11458,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="19">
+  <vuln:Vulnerability Ordinal="31">
     <vuln:Title>Microsoft Cryptographic Services Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -10926,7 +11939,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="20">
+  <vuln:Vulnerability Ordinal="32">
     <vuln:Title>Windows GDI Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -11912,7 +12925,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="21">
+  <vuln:Vulnerability Ordinal="33">
     <vuln:Title>Windows Layer 2 Tunneling Protocol (L2TP) Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -12901,7 +13914,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="22">
+  <vuln:Vulnerability Ordinal="34">
     <vuln:Title>Windows Layer 2 Tunneling Protocol (L2TP) Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -13890,7 +14903,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="23">
+  <vuln:Vulnerability Ordinal="35">
     <vuln:Title>Windows Lightweight Directory Access Protocol (LDAP) Denial of Service Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -14876,7 +15889,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="24">
+  <vuln:Vulnerability Ordinal="36">
     <vuln:Title>Windows Error Reporting Service Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -15656,7 +16669,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="25">
+  <vuln:Vulnerability Ordinal="37">
     <vuln:Title>Windows Cryptographic Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -16137,7 +17150,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="26">
+  <vuln:Vulnerability Ordinal="38">
     <vuln:Title>Windows Boot Manager Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -17123,7 +18136,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="27">
+  <vuln:Vulnerability Ordinal="39">
     <vuln:Title>Microsoft Cryptographic Services Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -18109,7 +19122,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="28">
+  <vuln:Vulnerability Ordinal="40">
     <vuln:Title>BitLocker Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -19095,7 +20108,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="29">
+  <vuln:Vulnerability Ordinal="41">
     <vuln:Title>Windows Advanced Local Procedure Call (ALPC) Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -19813,7 +20826,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="31">
+  <vuln:Vulnerability Ordinal="43">
     <vuln:Title>Windows Lightweight Directory Access Protocol (LDAP) Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -20294,7 +21307,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="32">
+  <vuln:Vulnerability Ordinal="44">
     <vuln:Title>Windows Internet Key Exchange (IKE) Extension Denial of Service Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -21071,7 +22084,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="33">
+  <vuln:Vulnerability Ordinal="45">
     <vuln:Title>Windows Print Spooler Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -22057,7 +23070,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="34">
+  <vuln:Vulnerability Ordinal="46">
     <vuln:Title>Windows Layer 2 Tunneling Protocol (L2TP) Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -23046,7 +24059,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="35">
+  <vuln:Vulnerability Ordinal="47">
     <vuln:Title>Windows Win32k Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -24032,7 +25045,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="36">
+  <vuln:Vulnerability Ordinal="48">
     <vuln:Title>Microsoft WDAC OLE DB provider for SQL Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -25018,7 +26031,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="37">
+  <vuln:Vulnerability Ordinal="49">
     <vuln:Title>Windows Point-to-Point Protocol (PPP) Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -26004,7 +27017,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="38">
+  <vuln:Vulnerability Ordinal="50">
     <vuln:Title>Windows Internet Key Exchange (IKE) Extension Denial of Service Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -26768,7 +27781,7 @@
     </vuln:Remediations>
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
-        <vuln:Name>&lt;a href="https://twitter.com/lewislee53"&gt;Lewis Lee&lt;/a&gt; with &lt;a href="https://www.sangfor.com/"&gt;Sangfor&lt;/a&gt;</vuln:Name>
+        <vuln:Name>Kap0k</vuln:Name>
         <vuln:URL />
       </vuln:Acknowledgment>
     </vuln:Acknowledgments>
@@ -26779,9 +27792,15 @@
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2023-01-12T08:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added acknowledgements. This is an informational change only.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="39">
+  <vuln:Vulnerability Ordinal="51">
     <vuln:Title>Microsoft DWM Core Library Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -27163,7 +28182,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="40">
+  <vuln:Vulnerability Ordinal="52">
     <vuln:Title>Windows Malicious Software Removal Tool Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -27253,7 +28272,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="41">
+  <vuln:Vulnerability Ordinal="53">
     <vuln:Title>Windows Credential Manager User Interface Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -28239,7 +29258,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="42">
+  <vuln:Vulnerability Ordinal="54">
     <vuln:Title>Windows Netlogon Denial of Service Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -29222,7 +30241,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="43">
+  <vuln:Vulnerability Ordinal="55">
     <vuln:Title>Microsoft Cryptographic Services Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -30208,7 +31227,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="44">
+  <vuln:Vulnerability Ordinal="56">
     <vuln:Title>Microsoft ODBC Driver Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -31189,7 +32208,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="45">
+  <vuln:Vulnerability Ordinal="57">
     <vuln:Title>Windows Bind Filter Driver Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -31574,15 +32593,12 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="46">
+  <vuln:Vulnerability Ordinal="58">
     <vuln:Title>Microsoft Office Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, user interaction is required (UI:R). What interaction would the user have to do?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;A user needs to be tricked into running malicious files.&lt;/p&gt;
-</vuln:Note>
-      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Are the updates for the Microsoft Office for Mac currently available?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;The security update for Microsoft Office 2019 for Mac and Microsoft Office LTSC for Mac 2021 are not immediately available. The updates will be released as soon as possible, and when they are available, customers will be notified via a revision to this CVE information.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, the attack vector is local (AV:L). Why does the CVE title indicate that this is a remote code execution?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;The word &lt;strong&gt;Remote&lt;/strong&gt; in the title refers to the location of the attacker. This type of exploit is sometimes referred to as Arbitrary Code Execution (ACE). The attack itself is carried out locally.
@@ -31665,6 +32681,16 @@ The vulnerable endpoint is only available over the local VM interface as all ext
     </vuln:CVSSScoreSets>
     <vuln:Remediations>
       <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL>https://go.microsoft.com/fwlink/p/?linkid=831049</vuln:URL>
+        <vuln:ProductID>11575</vuln:ProductID>
+        <vuln:ProductID>11951</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Maybe</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>16.69.23010700</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>Click to Run</vuln:Description>
         <vuln:URL />
         <vuln:ProductID>11762</vuln:ProductID>
@@ -31688,17 +32714,20 @@ The vulnerable endpoint is only available over the local VM interface as all ext
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2023-01-10T08:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Microsoft is announcing the availability of the security updates for Microsoft Office for Mac. Customers running affected Mac software should install the update for their product to be protected from this vulnerability. Customers running other Microsoft Office software do not need to take any action. See the &lt;a href="https://go.microsoft.com/fwlink/p/?linkid=831049"&gt;Release Notes&lt;/a&gt; for more information and download links.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="47">
+  <vuln:Vulnerability Ordinal="59">
     <vuln:Title>Microsoft Office Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, user interaction is required (UI:R). What interaction would the user have to do?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;A user needs to be tricked into running malicious files.&lt;/p&gt;
-</vuln:Note>
-      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Are the updates for the Microsoft Office for Mac currently available?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;The security update for Microsoft Office 2019 for Mac and Microsoft Office LTSC for Mac 2021 are not immediately available. The updates will be released as soon as possible, and when they are available, customers will be notified via a revision to this CVE information.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, the attack vector is local (AV:L). Why does the CVE title indicate that this is a remote code execution?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;The word &lt;strong&gt;Remote&lt;/strong&gt; in the title refers to the location of the attacker. This type of exploit is sometimes referred to as Arbitrary Code Execution (ACE). The attack itself is carried out locally.
@@ -31781,6 +32810,16 @@ The vulnerable endpoint is only available over the local VM interface as all ext
     </vuln:CVSSScoreSets>
     <vuln:Remediations>
       <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL>https://go.microsoft.com/fwlink/p/?linkid=831049</vuln:URL>
+        <vuln:ProductID>11575</vuln:ProductID>
+        <vuln:ProductID>11951</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Maybe</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>16.69.23010700</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>Click to Run</vuln:Description>
         <vuln:URL />
         <vuln:ProductID>11762</vuln:ProductID>
@@ -31804,9 +32843,15 @@ The vulnerable endpoint is only available over the local VM interface as all ext
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2023-01-10T08:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Microsoft is announcing the availability of the security updates for Microsoft Office for Mac. Customers running affected Mac software should install the update for their product to be protected from this vulnerability. Customers running other Microsoft Office software do not need to take any action. See the &lt;a href="https://go.microsoft.com/fwlink/p/?linkid=831049"&gt;Release Notes&lt;/a&gt; for more information and download links.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="48">
+  <vuln:Vulnerability Ordinal="60">
     <vuln:Title>Microsoft Office Visio Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -32053,7 +33098,7 @@ The vulnerable endpoint is only available over the local VM interface as all ext
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="49">
+  <vuln:Vulnerability Ordinal="61">
     <vuln:Title>Microsoft Office Visio Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -32300,7 +33345,7 @@ The vulnerable endpoint is only available over the local VM interface as all ext
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="50">
+  <vuln:Vulnerability Ordinal="62">
     <vuln:Title>Microsoft Office Visio Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -32437,6 +33482,10 @@ The vulnerable endpoint is only available over the local VM interface as all ext
         <vuln:Name>willJ of vulnerability research institute</vuln:Name>
         <vuln:URL />
       </vuln:Acknowledgment>
+      <vuln:Acknowledgment>
+        <vuln:Name>Michael Heinzl</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
     </vuln:Acknowledgments>
     <vuln:RevisionHistory>
       <vuln:Revision>
@@ -32445,9 +33494,15 @@ The vulnerable endpoint is only available over the local VM interface as all ext
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2023-01-11T08:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added an acknowledgement. This is an informational change only.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="51">
+  <vuln:Vulnerability Ordinal="63">
     <vuln:Title>Windows Bluetooth Driver Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -33020,7 +34075,7 @@ The vulnerable endpoint is only available over the local VM interface as all ext
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="52">
+  <vuln:Vulnerability Ordinal="64">
     <vuln:Title>Microsoft Office Visio Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -33266,7 +34321,7 @@ The vulnerable endpoint is only available over the local VM interface as all ext
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="53">
+  <vuln:Vulnerability Ordinal="65">
     <vuln:Title>Microsoft SharePoint Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -33437,7 +34492,7 @@ The vulnerable endpoint is only available over the local VM interface as all ext
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="54">
+  <vuln:Vulnerability Ordinal="66">
     <vuln:Title>Microsoft SharePoint Server Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -33552,7 +34607,7 @@ The vulnerable endpoint is only available over the local VM interface as all ext
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="55">
+  <vuln:Vulnerability Ordinal="67">
     <vuln:Title>Microsoft SharePoint Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -33723,7 +34778,7 @@ The vulnerable endpoint is only available over the local VM interface as all ext
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="57">
+  <vuln:Vulnerability Ordinal="69">
     <vuln:Title>Windows NTLM Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -34606,7 +35661,7 @@ The vulnerable endpoint is only available over the local VM interface as all ext
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="58">
+  <vuln:Vulnerability Ordinal="70">
     <vuln:Title>Windows Kernel Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -35592,7 +36647,7 @@ The vulnerable endpoint is only available over the local VM interface as all ext
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="59">
+  <vuln:Vulnerability Ordinal="71">
     <vuln:Title>Windows Kernel Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -36578,7 +37633,7 @@ The vulnerable endpoint is only available over the local VM interface as all ext
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="60">
+  <vuln:Vulnerability Ordinal="72">
     <vuln:Title>Windows Kernel Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -37564,7 +38619,7 @@ The vulnerable endpoint is only available over the local VM interface as all ext
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="61">
+  <vuln:Vulnerability Ordinal="73">
     <vuln:Title>Windows Kernel Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -38553,7 +39608,7 @@ The vulnerable endpoint is only available over the local VM interface as all ext
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="62">
+  <vuln:Vulnerability Ordinal="74">
     <vuln:Title>Windows Backup Service Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -39109,7 +40164,7 @@ The vulnerable endpoint is only available over the local VM interface as all ext
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="63">
+  <vuln:Vulnerability Ordinal="75">
     <vuln:Title>Event Tracing for Windows Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -39242,7 +40297,7 @@ The vulnerable endpoint is only available over the local VM interface as all ext
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="64">
+  <vuln:Vulnerability Ordinal="76">
     <vuln:Title>Windows Kernel Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -40228,7 +41283,7 @@ The vulnerable endpoint is only available over the local VM interface as all ext
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="65">
+  <vuln:Vulnerability Ordinal="77">
     <vuln:Title>Windows Kernel Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -40634,7 +41689,7 @@ The vulnerable endpoint is only available over the local VM interface as all ext
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="66">
+  <vuln:Vulnerability Ordinal="78">
     <vuln:Title>Windows Layer 2 Tunneling Protocol (L2TP) Denial of Service Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -41617,7 +42672,7 @@ The vulnerable endpoint is only available over the local VM interface as all ext
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="67">
+  <vuln:Vulnerability Ordinal="79">
     <vuln:Title>Windows Internet Key Exchange (IKE) Extension Denial of Service Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -42209,7 +43264,7 @@ The vulnerable endpoint is only available over the local VM interface as all ext
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="68">
+  <vuln:Vulnerability Ordinal="80">
     <vuln:Title>Windows Smart Card Resource Management Server Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -42591,7 +43646,7 @@ The vulnerable endpoint is only available over the local VM interface as all ext
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="69">
+  <vuln:Vulnerability Ordinal="81">
     <vuln:Title>Windows Print Spooler Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -43580,7 +44635,7 @@ The vulnerable endpoint is only available over the local VM interface as all ext
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="70">
+  <vuln:Vulnerability Ordinal="82">
     <vuln:Title>Microsoft Exchange Server Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -43658,6 +44713,12 @@ The vulnerable endpoint is only available over the local VM interface as all ext
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>15.01.2507.017</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5022143</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5022143</vuln:URL>
+        <vuln:ProductID>12039</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5022193</vuln:Description>
         <vuln:URL>https://www.microsoft.com/downloads/details.aspx?familyid=ecb11461-88df-428b-b0a8-1fa9fa892b25</vuln:URL>
@@ -43668,6 +44729,13 @@ The vulnerable endpoint is only available over the local VM interface as all ext
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>15.02.0986.037</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5022193</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5022193</vuln:URL>
+        <vuln:ProductID>11957</vuln:ProductID>
+        <vuln:ProductID>12038</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5022193</vuln:Description>
         <vuln:URL>https://www.microsoft.com/downloads/details.aspx?familyid=6237df2d-0ad0-415d-8b98-a8c985ed6214</vuln:URL>
@@ -43677,6 +44745,13 @@ The vulnerable endpoint is only available over the local VM interface as all ext
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>15.02.1118.021</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5022193</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5022193</vuln:URL>
+        <vuln:ProductID>11957</vuln:ProductID>
+        <vuln:ProductID>12038</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
     </vuln:Remediations>
     <vuln:Acknowledgments>
@@ -43694,7 +44769,7 @@ The vulnerable endpoint is only available over the local VM interface as all ext
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="71">
+  <vuln:Vulnerability Ordinal="83">
     <vuln:Title>Microsoft Exchange Server Spoofing Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -43796,6 +44871,12 @@ The vulnerable endpoint is only available over the local VM interface as all ext
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>15.01.2507.017</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5022143</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5022143</vuln:URL>
+        <vuln:ProductID>12039</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5022193</vuln:Description>
         <vuln:URL>https://www.microsoft.com/downloads/details.aspx?familyid=6237df2d-0ad0-415d-8b98-a8c985ed6214</vuln:URL>
@@ -43806,6 +44887,13 @@ The vulnerable endpoint is only available over the local VM interface as all ext
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>15.02.1118.021</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5022193</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5022193</vuln:URL>
+        <vuln:ProductID>12038</vuln:ProductID>
+        <vuln:ProductID>11957</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5022193</vuln:Description>
         <vuln:URL>https://www.microsoft.com/downloads/details.aspx?familyid=ecb11461-88df-428b-b0a8-1fa9fa892b25</vuln:URL>
@@ -43815,6 +44903,13 @@ The vulnerable endpoint is only available over the local VM interface as all ext
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>15.02.0986.037</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5022193</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5022193</vuln:URL>
+        <vuln:ProductID>12038</vuln:ProductID>
+        <vuln:ProductID>11957</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5022188</vuln:Description>
@@ -43842,7 +44937,7 @@ The vulnerable endpoint is only available over the local VM interface as all ext
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="72">
+  <vuln:Vulnerability Ordinal="84">
     <vuln:Title>Microsoft Exchange Server Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -43920,6 +45015,13 @@ The vulnerable endpoint is only available over the local VM interface as all ext
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>15.02.0986.037</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5022193</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5022193</vuln:URL>
+        <vuln:ProductID>11957</vuln:ProductID>
+        <vuln:ProductID>12038</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5022193</vuln:Description>
         <vuln:URL>https://www.microsoft.com/downloads/details.aspx?familyid=6237df2d-0ad0-415d-8b98-a8c985ed6214</vuln:URL>
@@ -43930,6 +45032,13 @@ The vulnerable endpoint is only available over the local VM interface as all ext
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>15.02.1118.021</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5022193</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5022193</vuln:URL>
+        <vuln:ProductID>11957</vuln:ProductID>
+        <vuln:ProductID>12038</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5022143</vuln:Description>
         <vuln:URL>https://www.microsoft.com/downloads/details.aspx?familyid=e775134a-a23b-4375-8be2-61123b4addd3</vuln:URL>
@@ -43939,6 +45048,12 @@ The vulnerable endpoint is only available over the local VM interface as all ext
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>15.01.2507.017</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5022143</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5022143</vuln:URL>
+        <vuln:ProductID>12039</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
     </vuln:Remediations>
     <vuln:Acknowledgments>
@@ -43956,7 +45071,7 @@ The vulnerable endpoint is only available over the local VM interface as all ext
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="73">
+  <vuln:Vulnerability Ordinal="85">
     <vuln:Title>Microsoft Exchange Server Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -44034,6 +45149,13 @@ The vulnerable endpoint is only available over the local VM interface as all ext
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>15.02.0986.037</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5022193</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5022193</vuln:URL>
+        <vuln:ProductID>11957</vuln:ProductID>
+        <vuln:ProductID>12038</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5022193</vuln:Description>
         <vuln:URL>https://www.microsoft.com/downloads/details.aspx?familyid=6237df2d-0ad0-415d-8b98-a8c985ed6214</vuln:URL>
@@ -44044,6 +45166,13 @@ The vulnerable endpoint is only available over the local VM interface as all ext
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>15.02.1118.021</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5022193</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5022193</vuln:URL>
+        <vuln:ProductID>11957</vuln:ProductID>
+        <vuln:ProductID>12038</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5022143</vuln:Description>
         <vuln:URL>https://www.microsoft.com/downloads/details.aspx?familyid=e775134a-a23b-4375-8be2-61123b4addd3</vuln:URL>
@@ -44053,6 +45182,12 @@ The vulnerable endpoint is only available over the local VM interface as all ext
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>15.01.2507.017</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5022143</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5022143</vuln:URL>
+        <vuln:ProductID>12039</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
     </vuln:Remediations>
     <vuln:Acknowledgments>
@@ -44070,7 +45205,7 @@ The vulnerable endpoint is only available over the local VM interface as all ext
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="74">
+  <vuln:Vulnerability Ordinal="86">
     <vuln:Title>Windows Print Spooler Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -45056,7 +46191,7 @@ The vulnerable endpoint is only available over the local VM interface as all ext
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="75">
+  <vuln:Vulnerability Ordinal="87">
     <vuln:Title>Windows Overlay Filter Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -45654,7 +46789,7 @@ The vulnerable endpoint is only available over the local VM interface as all ext
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="76">
+  <vuln:Vulnerability Ordinal="88">
     <vuln:Title>Windows Overlay Filter Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -46369,7 +47504,7 @@ The vulnerable endpoint is only available over the local VM interface as all ext
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="77">
+  <vuln:Vulnerability Ordinal="89">
     <vuln:Title>Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -46533,7 +47668,7 @@ The vulnerable endpoint is only available over the local VM interface as all ext
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="78">
+  <vuln:Vulnerability Ordinal="90">
     <vuln:Title>Windows Local Session Manager (LSM) Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -46918,7 +48053,7 @@ The vulnerable endpoint is only available over the local VM interface as all ext
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="79">
+  <vuln:Vulnerability Ordinal="91">
     <vuln:Title>Windows Kernel Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -47904,7 +49039,7 @@ The vulnerable endpoint is only available over the local VM interface as all ext
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="80">
+  <vuln:Vulnerability Ordinal="92">
     <vuln:Title>Windows Kernel Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -48890,7 +50025,7 @@ The vulnerable endpoint is only available over the local VM interface as all ext
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="81">
+  <vuln:Vulnerability Ordinal="93">
     <vuln:Title>Windows Kernel Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -49876,7 +51011,79 @@ The vulnerable endpoint is only available over the local VM interface as all ext
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="82">
+  <vuln:Vulnerability Ordinal="94">
+    <vuln:Title>Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, a successful exploitation could lead to a scope change (S:C). What does this mean for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This vulnerability could lead to a browser sandbox escape.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, the attack complexity is high (AC:H). What does that mean for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Successful exploitation of this vulnerability requires an attacker to take additional actions prior to exploitation to prepare the target environment.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;How could an attacker exploit this vulnerability via the Network?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;An attacker could host a specially crafted website designed to exploit the vulnerability through Microsoft Edge and then convince a user to view the website. However, in all cases an attacker would have no way to force a user to view the attacker-controlled content. Instead, an attacker would have to convince a user to take action, typically by an enticement in an email or instant message, or by getting the user to open an attachment sent through email.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, user interaction is required (UI:R). What interaction would the user have to do?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The user would have to click on a specially crafted URL to be compromised by the attacker.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2023-21775</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Moderate</vuln:Description>
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation Less Likely;Older Software Release:Exploitation Less Likely;DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.3</vuln:BaseScore>
+        <vuln:TemporalScore>7.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>109.0.1518.49</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments>
+      <vuln:Acknowledgment>
+        <vuln:Name>Anonymous</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+    </vuln:Acknowledgments>
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2023-01-12T08:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="95">
     <vuln:Title>Windows Kernel Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -50862,7 +52069,7 @@ The vulnerable endpoint is only available over the local VM interface as all ext
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="84">
+  <vuln:Vulnerability Ordinal="97">
     <vuln:Title>3D Builder Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -50870,71 +52077,12 @@ The vulnerable endpoint is only available over the local VM interface as all ext
 &lt;p&gt;The word &lt;strong&gt;Remote&lt;/strong&gt; in the title refers to the location of the attacker. This type of exploit is sometimes referred to as Arbitrary Code Execution (ACE). The attack itself is carried out locally.&lt;/p&gt;
 &lt;p&gt;For example, when the score indicates that the &lt;strong&gt;Attack Vector&lt;/strong&gt; is &lt;strong&gt;Local&lt;/strong&gt; and &lt;strong&gt;User Interaction&lt;/strong&gt; is &lt;strong&gt;Required&lt;/strong&gt;, this could describe an exploit in which an attacker, through social engineering, convinces a victim to download and open a specially crafted file from a website which leads to a local attack on their computer.&lt;/p&gt;
 </vuln:Note>
-      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, user interaction is required (UI:R). What interaction would the user have to do?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;An attacker must send the user a malicious file and convince the user to open said file.&lt;/p&gt;
-</vuln:Note>
-      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Is the update for 3D Builder currently available?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;The security update for 3D Builder is not immediately available. The update will be released as soon as possible, and when it is available, customers will be notified via a revision to this CVE information.&lt;/p&gt;
-</vuln:Note>
-      <vuln:Note Title="3D Builder" Type="Tag" Ordinal="20">3D Builder</vuln:Note>
-      <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
-    </vuln:Notes>
-    <vuln:CVE>CVE-2023-21780</vuln:CVE>
-    <vuln:ProductStatuses>
-      <vuln:Status Type="Known Affected">
-        <vuln:ProductID>12141</vuln:ProductID>
-      </vuln:Status>
-    </vuln:ProductStatuses>
-    <vuln:Threats>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Remote Code Execution</vuln:Description>
-        <vuln:ProductID>12141</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Important</vuln:Description>
-        <vuln:ProductID>12141</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Exploit Status">
-        <vuln:Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation Less Likely;DOS:N/A</vuln:Description>
-      </vuln:Threat>
-    </vuln:Threats>
-    <vuln:CVSSScoreSets>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>7.8</vuln:BaseScore>
-        <vuln:TemporalScore>6.8</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>12141</vuln:ProductID>
-      </vuln:ScoreSet>
-    </vuln:CVSSScoreSets>
-    <vuln:Remediations />
-    <vuln:Acknowledgments>
-      <vuln:Acknowledgment>
-        <vuln:Name>Mat Powell of &lt;a href="https://www.zerodayinitiative.com/"&gt;Trend Micro Zero Day Initiative&lt;/a&gt;</vuln:Name>
-        <vuln:URL />
-      </vuln:Acknowledgment>
-    </vuln:Acknowledgments>
-    <vuln:RevisionHistory>
-      <vuln:Revision>
-        <cvrf:Number>1.0</cvrf:Number>
-        <cvrf:Date>2023-01-10T08:00:00</cvrf:Date>
-        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
-</cvrf:Description>
-      </vuln:Revision>
-    </vuln:RevisionHistory>
-  </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="85">
-    <vuln:Title>3D Builder Remote Code Execution Vulnerability</vuln:Title>
-    <vuln:Notes>
-      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
-      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, the attack vector is local (AV:L). Why does the CVE title indicate that this is a remote code execution?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;The word &lt;strong&gt;Remote&lt;/strong&gt; in the title refers to the location of the attacker. This type of exploit is sometimes referred to as Arbitrary Code Execution (ACE). The attack itself is carried out locally.&lt;/p&gt;
-&lt;p&gt;For example, when the score indicates that the &lt;strong&gt;Attack Vector&lt;/strong&gt; is &lt;strong&gt;Local&lt;/strong&gt; and &lt;strong&gt;User Interaction&lt;/strong&gt; is &lt;strong&gt;Required&lt;/strong&gt;, this could describe an exploit in which an attacker, through social engineering, convinces a victim to download and open a specially crafted file from a website which leads to a local attack on their computer.&lt;/p&gt;
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;How do I get the update for a Windows App?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The Microsoft Store will automatically update affected customers.&lt;/p&gt;
+&lt;p&gt;It is possible for customers to disable automatic updates for the Microsoft Store. The Microsoft Store will not automatically install this update for those customers. You can get the update through the store by following this guide: &lt;a href="https://support.microsoft.com/en-us/account-billing/get-updates-for-apps-and-games-in-microsoft-store-a1fe19c0-532d-ec47-7035-d1c5a1dd464f#WindowsVersion=Windows_11"&gt;Get updates for apps and games in Microsoft Store&lt;/a&gt;. Be sure to select the tab for the operating system installed on your device to search for updates.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, user interaction is required (UI:R). What interaction would the user have to do?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;An attacker must send the user a malicious file and convince the user to open said file.&lt;/p&gt;
-</vuln:Note>
-      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Is the update for 3D Builder currently available?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;The security update for 3D Builder is not immediately available. The update will be released as soon as possible, and when it is available, customers will be notified via a revision to this CVE information.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="3D Builder" Type="Tag" Ordinal="20">3D Builder</vuln:Note>
       <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
@@ -50966,7 +52114,17 @@ The vulnerable endpoint is only available over the local VM interface as all ext
         <vuln:ProductID>12141</vuln:ProductID>
       </vuln:ScoreSet>
     </vuln:CVSSScoreSets>
-    <vuln:Remediations />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>More Information</vuln:Description>
+        <vuln:URL>https://apps.microsoft.com/store/detail/3d-builder/9WZDNCRFJ3T6?hl=en-us&amp;gl=us</vuln:URL>
+        <vuln:ProductID>12141</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Maybe</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>20.0.1</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
         <vuln:Name>Mat Powell of &lt;a href="https://www.zerodayinitiative.com/"&gt;Trend Micro Zero Day Initiative&lt;/a&gt;</vuln:Name>
@@ -50980,9 +52138,15 @@ The vulnerable endpoint is only available over the local VM interface as all ext
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2023-01-11T08:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;CVE updated to announce the availability of the updated 3D Builder application which addresses this vulnerability. Microsoft recommends updating your application as soon as possible. Please see &lt;a href="https://support.microsoft.com/en-us/account-billing/get-updates-for-apps-and-games-in-microsoft-store-a1fe19c0-532d-ec47-7035-d1c5a1dd464f#WindowsVersion=Windows_11"&gt;Get updates for apps and games in Microsoft Store&lt;/a&gt; for more information.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="86">
+  <vuln:Vulnerability Ordinal="98">
     <vuln:Title>3D Builder Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -50990,11 +52154,12 @@ The vulnerable endpoint is only available over the local VM interface as all ext
 &lt;p&gt;The word &lt;strong&gt;Remote&lt;/strong&gt; in the title refers to the location of the attacker. This type of exploit is sometimes referred to as Arbitrary Code Execution (ACE). The attack itself is carried out locally.&lt;/p&gt;
 &lt;p&gt;For example, when the score indicates that the &lt;strong&gt;Attack Vector&lt;/strong&gt; is &lt;strong&gt;Local&lt;/strong&gt; and &lt;strong&gt;User Interaction&lt;/strong&gt; is &lt;strong&gt;Required&lt;/strong&gt;, this could describe an exploit in which an attacker, through social engineering, convinces a victim to download and open a specially crafted file from a website which leads to a local attack on their computer.&lt;/p&gt;
 </vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;How do I get the update for a Windows App?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The Microsoft Store will automatically update affected customers.&lt;/p&gt;
+&lt;p&gt;It is possible for customers to disable automatic updates for the Microsoft Store. The Microsoft Store will not automatically install this update for those customers. You can get the update through the store by following this guide: &lt;a href="https://support.microsoft.com/en-us/account-billing/get-updates-for-apps-and-games-in-microsoft-store-a1fe19c0-532d-ec47-7035-d1c5a1dd464f#WindowsVersion=Windows_11"&gt;Get updates for apps and games in Microsoft Store&lt;/a&gt;. Be sure to select the tab for the operating system installed on your device to search for updates.&lt;/p&gt;
+</vuln:Note>
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, user interaction is required (UI:R). What interaction would the user have to do?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;An attacker must send the user a malicious file and convince the user to open said file.&lt;/p&gt;
-</vuln:Note>
-      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Is the update for 3D Builder currently available?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;The security update for 3D Builder is not immediately available. The update will be released as soon as possible, and when it is available, customers will be notified via a revision to this CVE information.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="3D Builder" Type="Tag" Ordinal="20">3D Builder</vuln:Note>
       <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
@@ -51026,7 +52191,17 @@ The vulnerable endpoint is only available over the local VM interface as all ext
         <vuln:ProductID>12141</vuln:ProductID>
       </vuln:ScoreSet>
     </vuln:CVSSScoreSets>
-    <vuln:Remediations />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>More Information</vuln:Description>
+        <vuln:URL>https://apps.microsoft.com/store/detail/3d-builder/9WZDNCRFJ3T6?hl=en-us&amp;gl=us</vuln:URL>
+        <vuln:ProductID>12141</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Maybe</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>20.0.1</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
         <vuln:Name>Mat Powell of &lt;a href="https://www.zerodayinitiative.com/"&gt;Trend Micro Zero Day Initiative&lt;/a&gt;</vuln:Name>
@@ -51040,9 +52215,15 @@ The vulnerable endpoint is only available over the local VM interface as all ext
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2023-01-11T08:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;CVE updated to announce the availability of the updated 3D Builder application which addresses this vulnerability. Microsoft recommends updating your application as soon as possible. Please see &lt;a href="https://support.microsoft.com/en-us/account-billing/get-updates-for-apps-and-games-in-microsoft-store-a1fe19c0-532d-ec47-7035-d1c5a1dd464f#WindowsVersion=Windows_11"&gt;Get updates for apps and games in Microsoft Store&lt;/a&gt; for more information.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="88">
+  <vuln:Vulnerability Ordinal="100">
     <vuln:Title>3D Builder Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -51050,11 +52231,12 @@ The vulnerable endpoint is only available over the local VM interface as all ext
 &lt;p&gt;The word &lt;strong&gt;Remote&lt;/strong&gt; in the title refers to the location of the attacker. This type of exploit is sometimes referred to as Arbitrary Code Execution (ACE). The attack itself is carried out locally.&lt;/p&gt;
 &lt;p&gt;For example, when the score indicates that the &lt;strong&gt;Attack Vector&lt;/strong&gt; is &lt;strong&gt;Local&lt;/strong&gt; and &lt;strong&gt;User Interaction&lt;/strong&gt; is &lt;strong&gt;Required&lt;/strong&gt;, this could describe an exploit in which an attacker, through social engineering, convinces a victim to download and open a specially crafted file from a website which leads to a local attack on their computer.&lt;/p&gt;
 </vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;How do I get the update for a Windows App?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The Microsoft Store will automatically update affected customers.&lt;/p&gt;
+&lt;p&gt;It is possible for customers to disable automatic updates for the Microsoft Store. The Microsoft Store will not automatically install this update for those customers. You can get the update through the store by following this guide: &lt;a href="https://support.microsoft.com/en-us/account-billing/get-updates-for-apps-and-games-in-microsoft-store-a1fe19c0-532d-ec47-7035-d1c5a1dd464f#WindowsVersion=Windows_11"&gt;Get updates for apps and games in Microsoft Store&lt;/a&gt;. Be sure to select the tab for the operating system installed on your device to search for updates.&lt;/p&gt;
+</vuln:Note>
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, user interaction is required (UI:R). What interaction would the user have to do?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;An attacker must send the user a malicious file and convince the user to open said file.&lt;/p&gt;
-</vuln:Note>
-      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Is the update for 3D Builder currently available?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;The security update for 3D Builder is not immediately available. The update will be released as soon as possible, and when it is available, customers will be notified via a revision to this CVE information.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="3D Builder" Type="Tag" Ordinal="20">3D Builder</vuln:Note>
       <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
@@ -51086,7 +52268,17 @@ The vulnerable endpoint is only available over the local VM interface as all ext
         <vuln:ProductID>12141</vuln:ProductID>
       </vuln:ScoreSet>
     </vuln:CVSSScoreSets>
-    <vuln:Remediations />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>More Information</vuln:Description>
+        <vuln:URL>https://apps.microsoft.com/store/detail/3d-builder/9WZDNCRFJ3T6?hl=en-us&amp;gl=us</vuln:URL>
+        <vuln:ProductID>12141</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Maybe</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>20.0.1</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
         <vuln:Name>Mat Powell of &lt;a href="https://www.zerodayinitiative.com/"&gt;Trend Micro Zero Day Initiative&lt;/a&gt;</vuln:Name>
@@ -51100,9 +52292,15 @@ The vulnerable endpoint is only available over the local VM interface as all ext
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2023-01-11T08:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;CVE updated to announce the availability of the updated 3D Builder application which addresses this vulnerability. Microsoft recommends updating your application as soon as possible. Please see &lt;a href="https://support.microsoft.com/en-us/account-billing/get-updates-for-apps-and-games-in-microsoft-store-a1fe19c0-532d-ec47-7035-d1c5a1dd464f#WindowsVersion=Windows_11"&gt;Get updates for apps and games in Microsoft Store&lt;/a&gt; for more information.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="90">
+  <vuln:Vulnerability Ordinal="102">
     <vuln:Title>3D Builder Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -51110,11 +52308,12 @@ The vulnerable endpoint is only available over the local VM interface as all ext
 &lt;p&gt;The word &lt;strong&gt;Remote&lt;/strong&gt; in the title refers to the location of the attacker. This type of exploit is sometimes referred to as Arbitrary Code Execution (ACE). The attack itself is carried out locally.&lt;/p&gt;
 &lt;p&gt;For example, when the score indicates that the &lt;strong&gt;Attack Vector&lt;/strong&gt; is &lt;strong&gt;Local&lt;/strong&gt; and &lt;strong&gt;User Interaction&lt;/strong&gt; is &lt;strong&gt;Required&lt;/strong&gt;, this could describe an exploit in which an attacker, through social engineering, convinces a victim to download and open a specially crafted file from a website which leads to a local attack on their computer.&lt;/p&gt;
 </vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;How do I get the update for a Windows App?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The Microsoft Store will automatically update affected customers.&lt;/p&gt;
+&lt;p&gt;It is possible for customers to disable automatic updates for the Microsoft Store. The Microsoft Store will not automatically install this update for those customers. You can get the update through the store by following this guide: &lt;a href="https://support.microsoft.com/en-us/account-billing/get-updates-for-apps-and-games-in-microsoft-store-a1fe19c0-532d-ec47-7035-d1c5a1dd464f#WindowsVersion=Windows_11"&gt;Get updates for apps and games in Microsoft Store&lt;/a&gt;. Be sure to select the tab for the operating system installed on your device to search for updates.&lt;/p&gt;
+</vuln:Note>
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, user interaction is required (UI:R). What interaction would the user have to do?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;An attacker must send the user a malicious file and convince the user to open said file.&lt;/p&gt;
-</vuln:Note>
-      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Is the update for 3D Builder currently available?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;The security update for 3D Builder is not immediately available. The update will be released as soon as possible, and when it is available, customers will be notified via a revision to this CVE information.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="3D Builder" Type="Tag" Ordinal="20">3D Builder</vuln:Note>
       <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
@@ -51146,7 +52345,17 @@ The vulnerable endpoint is only available over the local VM interface as all ext
         <vuln:ProductID>12141</vuln:ProductID>
       </vuln:ScoreSet>
     </vuln:CVSSScoreSets>
-    <vuln:Remediations />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>More Information</vuln:Description>
+        <vuln:URL>https://apps.microsoft.com/store/detail/3d-builder/9WZDNCRFJ3T6?hl=en-us&amp;gl=us</vuln:URL>
+        <vuln:ProductID>12141</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Maybe</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>20.0.1</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
         <vuln:Name>Mat Powell of &lt;a href="https://www.zerodayinitiative.com/"&gt;Trend Micro Zero Day Initiative&lt;/a&gt;</vuln:Name>
@@ -51160,9 +52369,15 @@ The vulnerable endpoint is only available over the local VM interface as all ext
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2023-01-11T08:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;CVE updated to announce the availability of the updated 3D Builder application which addresses this vulnerability. Microsoft recommends updating your application as soon as possible. Please see &lt;a href="https://support.microsoft.com/en-us/account-billing/get-updates-for-apps-and-games-in-microsoft-store-a1fe19c0-532d-ec47-7035-d1c5a1dd464f#WindowsVersion=Windows_11"&gt;Get updates for apps and games in Microsoft Store&lt;/a&gt; for more information.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="95">
+  <vuln:Vulnerability Ordinal="107">
     <vuln:Title>3D Builder Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -51170,11 +52385,12 @@ The vulnerable endpoint is only available over the local VM interface as all ext
 &lt;p&gt;The word &lt;strong&gt;Remote&lt;/strong&gt; in the title refers to the location of the attacker. This type of exploit is sometimes referred to as Arbitrary Code Execution (ACE). The attack itself is carried out locally.&lt;/p&gt;
 &lt;p&gt;For example, when the score indicates that the &lt;strong&gt;Attack Vector&lt;/strong&gt; is &lt;strong&gt;Local&lt;/strong&gt; and &lt;strong&gt;User Interaction&lt;/strong&gt; is &lt;strong&gt;Required&lt;/strong&gt;, this could describe an exploit in which an attacker, through social engineering, convinces a victim to download and open a specially crafted file from a website which leads to a local attack on their computer.&lt;/p&gt;
 </vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;How do I get the update for a Windows App?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The Microsoft Store will automatically update affected customers.&lt;/p&gt;
+&lt;p&gt;It is possible for customers to disable automatic updates for the Microsoft Store. The Microsoft Store will not automatically install this update for those customers. You can get the update through the store by following this guide: &lt;a href="https://support.microsoft.com/en-us/account-billing/get-updates-for-apps-and-games-in-microsoft-store-a1fe19c0-532d-ec47-7035-d1c5a1dd464f#WindowsVersion=Windows_11"&gt;Get updates for apps and games in Microsoft Store&lt;/a&gt;. Be sure to select the tab for the operating system installed on your device to search for updates.&lt;/p&gt;
+</vuln:Note>
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, user interaction is required (UI:R). What interaction would the user have to do?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;An attacker must send the user a malicious file and convince the user to open said file.&lt;/p&gt;
-</vuln:Note>
-      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Is the update for 3D Builder currently available?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;The security update for 3D Builder is not immediately available. The update will be released as soon as possible, and when it is available, customers will be notified via a revision to this CVE information.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="3D Builder" Type="Tag" Ordinal="20">3D Builder</vuln:Note>
       <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
@@ -51206,7 +52422,17 @@ The vulnerable endpoint is only available over the local VM interface as all ext
         <vuln:ProductID>12141</vuln:ProductID>
       </vuln:ScoreSet>
     </vuln:CVSSScoreSets>
-    <vuln:Remediations />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>More Information</vuln:Description>
+        <vuln:URL>https://apps.microsoft.com/store/detail/3d-builder/9WZDNCRFJ3T6?hl=en-us&amp;gl=us</vuln:URL>
+        <vuln:ProductID>12141</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Maybe</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>20.0.1</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
         <vuln:Name>Mat Powell of &lt;a href="https://www.zerodayinitiative.com/"&gt;Trend Micro Zero Day Initiative&lt;/a&gt;</vuln:Name>
@@ -51220,9 +52446,15 @@ The vulnerable endpoint is only available over the local VM interface as all ext
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2023-01-11T08:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;CVE updated to announce the availability of the updated 3D Builder application which addresses this vulnerability. Microsoft recommends updating your application as soon as possible. Please see &lt;a href="https://support.microsoft.com/en-us/account-billing/get-updates-for-apps-and-games-in-microsoft-store-a1fe19c0-532d-ec47-7035-d1c5a1dd464f#WindowsVersion=Windows_11"&gt;Get updates for apps and games in Microsoft Store&lt;/a&gt; for more information.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="97">
+  <vuln:Vulnerability Ordinal="109">
     <vuln:Title>3D Builder Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -51230,11 +52462,12 @@ The vulnerable endpoint is only available over the local VM interface as all ext
 &lt;p&gt;The word &lt;strong&gt;Remote&lt;/strong&gt; in the title refers to the location of the attacker. This type of exploit is sometimes referred to as Arbitrary Code Execution (ACE). The attack itself is carried out locally.&lt;/p&gt;
 &lt;p&gt;For example, when the score indicates that the &lt;strong&gt;Attack Vector&lt;/strong&gt; is &lt;strong&gt;Local&lt;/strong&gt; and &lt;strong&gt;User Interaction&lt;/strong&gt; is &lt;strong&gt;Required&lt;/strong&gt;, this could describe an exploit in which an attacker, through social engineering, convinces a victim to download and open a specially crafted file from a website which leads to a local attack on their computer.&lt;/p&gt;
 </vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;How do I get the update for a Windows App?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The Microsoft Store will automatically update affected customers.&lt;/p&gt;
+&lt;p&gt;It is possible for customers to disable automatic updates for the Microsoft Store. The Microsoft Store will not automatically install this update for those customers. You can get the update through the store by following this guide: &lt;a href="https://support.microsoft.com/en-us/account-billing/get-updates-for-apps-and-games-in-microsoft-store-a1fe19c0-532d-ec47-7035-d1c5a1dd464f#WindowsVersion=Windows_11"&gt;Get updates for apps and games in Microsoft Store&lt;/a&gt;. Be sure to select the tab for the operating system installed on your device to search for updates.&lt;/p&gt;
+</vuln:Note>
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, user interaction is required (UI:R). What interaction would the user have to do?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;An attacker must send the user a malicious file and convince the user to open said file.&lt;/p&gt;
-</vuln:Note>
-      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Is the update for 3D Builder currently available?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;The security update for 3D Builder is not immediately available. The update will be released as soon as possible, and when it is available, customers will be notified via a revision to this CVE information.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="3D Builder" Type="Tag" Ordinal="20">3D Builder</vuln:Note>
       <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
@@ -51266,7 +52499,17 @@ The vulnerable endpoint is only available over the local VM interface as all ext
         <vuln:ProductID>12141</vuln:ProductID>
       </vuln:ScoreSet>
     </vuln:CVSSScoreSets>
-    <vuln:Remediations />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>More Information</vuln:Description>
+        <vuln:URL>https://apps.microsoft.com/store/detail/3d-builder/9WZDNCRFJ3T6?hl=en-us&amp;gl=us</vuln:URL>
+        <vuln:ProductID>12141</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Maybe</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>20.0.1</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
         <vuln:Name>Mat Powell of &lt;a href="https://www.zerodayinitiative.com/"&gt;Trend Micro Zero Day Initiative&lt;/a&gt;</vuln:Name>
@@ -51280,9 +52523,84 @@ The vulnerable endpoint is only available over the local VM interface as all ext
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2023-01-11T08:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;CVE updated to announce the availability of the updated 3D Builder application which addresses this vulnerability. Microsoft recommends updating your application as soon as possible. Please see &lt;a href="https://support.microsoft.com/en-us/account-billing/get-updates-for-apps-and-games-in-microsoft-store-a1fe19c0-532d-ec47-7035-d1c5a1dd464f#WindowsVersion=Windows_11"&gt;Get updates for apps and games in Microsoft Store&lt;/a&gt; for more information.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="1">
+  <vuln:Vulnerability Ordinal="110">
+    <vuln:Title>Microsoft Edge (Chromium-based) Elevation of Privilege Vulnerability</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, a successful exploitation could lead to a scope change (S:C). What does this mean for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This vulnerability could lead to a browser sandbox escape.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, the attack complexity is high (AC:H). What does that mean for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Successful exploitation of this vulnerability requires an attacker to take additional actions prior to exploitation to prepare the target environment.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, user interaction is required (UI:R). What interaction would the user have to do?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The user would have to click on a specially crafted URL to be compromised by the attacker.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2023-21796</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation Less Likely;Older Software Release:Exploitation Less Likely;DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.3</vuln:BaseScore>
+        <vuln:TemporalScore>7.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>109.0.1518.49</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments>
+      <vuln:Acknowledgment>
+        <vuln:Name>K. Edward with PHi</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+    </vuln:Acknowledgments>
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2023-01-12T08:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="13">
     <vuln:Title>Remote Procedure Call Runtime Denial of Service Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -52263,7 +53581,7 @@ The vulnerable endpoint is only available over the local VM interface as all ext
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="2">
+  <vuln:Vulnerability Ordinal="14">
     <vuln:Title>Windows iSCSI Service Denial of Service Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -53246,7 +54564,7 @@ The vulnerable endpoint is only available over the local VM interface as all ext
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="3">
+  <vuln:Vulnerability Ordinal="15">
     <vuln:Title>Azure Service Fabric Container Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -53434,7 +54752,7 @@ The vulnerable endpoint is only available over the local VM interface as all ext
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="6">
+  <vuln:Vulnerability Ordinal="18">
     <vuln:Title>Event Tracing for Windows Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -53918,7 +55236,7 @@ The vulnerable endpoint is only available over the local VM interface as all ext
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="7">
+  <vuln:Vulnerability Ordinal="19">
     <vuln:Title>Microsoft Message Queuing (MSMQ) Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -54904,7 +56222,7 @@ The vulnerable endpoint is only available over the local VM interface as all ext
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="30">
+  <vuln:Vulnerability Ordinal="42">
     <vuln:Title>Windows Kernel Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -55890,7 +57208,7 @@ The vulnerable endpoint is only available over the local VM interface as all ext
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="56">
+  <vuln:Vulnerability Ordinal="68">
     <vuln:Title>Microsoft Exchange Server Spoofing Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -55971,6 +57289,12 @@ The vulnerable endpoint is only available over the local VM interface as all ext
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>15.01.2507.017</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5022143</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5022143</vuln:URL>
+        <vuln:ProductID>12039</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5022193</vuln:Description>
         <vuln:URL>https://www.microsoft.com/downloads/details.aspx?familyid=6237df2d-0ad0-415d-8b98-a8c985ed6214</vuln:URL>
@@ -55981,6 +57305,13 @@ The vulnerable endpoint is only available over the local VM interface as all ext
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>15.02.1118.021</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5022193</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5022193</vuln:URL>
+        <vuln:ProductID>12038</vuln:ProductID>
+        <vuln:ProductID>11957</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5022193</vuln:Description>
         <vuln:URL>https://www.microsoft.com/downloads/details.aspx?familyid=ecb11461-88df-428b-b0a8-1fa9fa892b25</vuln:URL>
@@ -55990,6 +57321,13 @@ The vulnerable endpoint is only available over the local VM interface as all ext
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>15.02.0986.037</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5022193</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5022193</vuln:URL>
+        <vuln:ProductID>12038</vuln:ProductID>
+        <vuln:ProductID>11957</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
     </vuln:Remediations>
     <vuln:Acknowledgments>
@@ -56007,8 +57345,8 @@ The vulnerable endpoint is only available over the local VM interface as all ext
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="83">
-    <vuln:Title>Visual Studio Code Remote Code Execution</vuln:Title>
+  <vuln:Vulnerability Ordinal="96">
+    <vuln:Title>Visual Studio Code Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, the attack vector is local (AV:L). Why does the CVE title indicate that this is a remote code execution?&lt;/strong&gt;&lt;/p&gt;
@@ -56072,9 +57410,15 @@ The vulnerable endpoint is only available over the local VM interface as all ext
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2023-01-11T08:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Corrected CVE title. This is an informational change only.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="87">
+  <vuln:Vulnerability Ordinal="99">
     <vuln:Title>3D Builder Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -56082,11 +57426,12 @@ The vulnerable endpoint is only available over the local VM interface as all ext
 &lt;p&gt;The word &lt;strong&gt;Remote&lt;/strong&gt; in the title refers to the location of the attacker. This type of exploit is sometimes referred to as Arbitrary Code Execution (ACE). The attack itself is carried out locally.&lt;/p&gt;
 &lt;p&gt;For example, when the score indicates that the &lt;strong&gt;Attack Vector&lt;/strong&gt; is &lt;strong&gt;Local&lt;/strong&gt; and &lt;strong&gt;User Interaction&lt;/strong&gt; is &lt;strong&gt;Required&lt;/strong&gt;, this could describe an exploit in which an attacker, through social engineering, convinces a victim to download and open a specially crafted file from a website which leads to a local attack on their computer.&lt;/p&gt;
 </vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;How do I get the update for a Windows App?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The Microsoft Store will automatically update affected customers.&lt;/p&gt;
+&lt;p&gt;It is possible for customers to disable automatic updates for the Microsoft Store. The Microsoft Store will not automatically install this update for those customers. You can get the update through the store by following this guide: &lt;a href="https://support.microsoft.com/en-us/account-billing/get-updates-for-apps-and-games-in-microsoft-store-a1fe19c0-532d-ec47-7035-d1c5a1dd464f#WindowsVersion=Windows_11"&gt;Get updates for apps and games in Microsoft Store&lt;/a&gt;. Be sure to select the tab for the operating system installed on your device to search for updates.&lt;/p&gt;
+</vuln:Note>
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, user interaction is required (UI:R). What interaction would the user have to do?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;An attacker must send the user a malicious file and convince the user to open said file.&lt;/p&gt;
-</vuln:Note>
-      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Is the update for 3D Builder currently available?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;The security update for 3D Builder is not immediately available. The update will be released as soon as possible, and when it is available, customers will be notified via a revision to this CVE information.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="3D Builder" Type="Tag" Ordinal="20">3D Builder</vuln:Note>
       <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
@@ -56118,7 +57463,17 @@ The vulnerable endpoint is only available over the local VM interface as all ext
         <vuln:ProductID>12141</vuln:ProductID>
       </vuln:ScoreSet>
     </vuln:CVSSScoreSets>
-    <vuln:Remediations />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>More Information</vuln:Description>
+        <vuln:URL>https://apps.microsoft.com/store/detail/3d-builder/9WZDNCRFJ3T6?hl=en-us&amp;gl=us</vuln:URL>
+        <vuln:ProductID>12141</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Maybe</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>20.0.1</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
         <vuln:Name>Mat Powell of &lt;a href="https://www.zerodayinitiative.com/"&gt;Trend Micro Zero Day Initiative&lt;/a&gt;</vuln:Name>
@@ -56127,6 +57482,12 @@ The vulnerable endpoint is only available over the local VM interface as all ext
     </vuln:Acknowledgments>
     <vuln:RevisionHistory>
       <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2023-01-11T08:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;CVE updated to announce the availability of the updated 3D Builder application which addresses this vulnerability. Microsoft recommends updating your application as soon as possible. Please see &lt;a href="https://support.microsoft.com/en-us/account-billing/get-updates-for-apps-and-games-in-microsoft-store-a1fe19c0-532d-ec47-7035-d1c5a1dd464f#WindowsVersion=Windows_11"&gt;Get updates for apps and games in Microsoft Store&lt;/a&gt; for more information.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2023-01-10T08:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
@@ -56134,7 +57495,7 @@ The vulnerable endpoint is only available over the local VM interface as all ext
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="89">
+  <vuln:Vulnerability Ordinal="101">
     <vuln:Title>3D Builder Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -56142,11 +57503,12 @@ The vulnerable endpoint is only available over the local VM interface as all ext
 &lt;p&gt;The word &lt;strong&gt;Remote&lt;/strong&gt; in the title refers to the location of the attacker. This type of exploit is sometimes referred to as Arbitrary Code Execution (ACE). The attack itself is carried out locally.&lt;/p&gt;
 &lt;p&gt;For example, when the score indicates that the &lt;strong&gt;Attack Vector&lt;/strong&gt; is &lt;strong&gt;Local&lt;/strong&gt; and &lt;strong&gt;User Interaction&lt;/strong&gt; is &lt;strong&gt;Required&lt;/strong&gt;, this could describe an exploit in which an attacker, through social engineering, convinces a victim to download and open a specially crafted file from a website which leads to a local attack on their computer.&lt;/p&gt;
 </vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;How do I get the update for a Windows App?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The Microsoft Store will automatically update affected customers.&lt;/p&gt;
+&lt;p&gt;It is possible for customers to disable automatic updates for the Microsoft Store. The Microsoft Store will not automatically install this update for those customers. You can get the update through the store by following this guide: &lt;a href="https://support.microsoft.com/en-us/account-billing/get-updates-for-apps-and-games-in-microsoft-store-a1fe19c0-532d-ec47-7035-d1c5a1dd464f#WindowsVersion=Windows_11"&gt;Get updates for apps and games in Microsoft Store&lt;/a&gt;. Be sure to select the tab for the operating system installed on your device to search for updates.&lt;/p&gt;
+</vuln:Note>
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, user interaction is required (UI:R). What interaction would the user have to do?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;An attacker must send the user a malicious file and convince the user to open said file.&lt;/p&gt;
-</vuln:Note>
-      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Is the update for 3D Builder currently available?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;The security update for 3D Builder is not immediately available. The update will be released as soon as possible, and when it is available, customers will be notified via a revision to this CVE information.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="3D Builder" Type="Tag" Ordinal="20">3D Builder</vuln:Note>
       <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
@@ -56178,7 +57540,17 @@ The vulnerable endpoint is only available over the local VM interface as all ext
         <vuln:ProductID>12141</vuln:ProductID>
       </vuln:ScoreSet>
     </vuln:CVSSScoreSets>
-    <vuln:Remediations />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>More Information</vuln:Description>
+        <vuln:URL>https://apps.microsoft.com/store/detail/3d-builder/9WZDNCRFJ3T6?hl=en-us&amp;gl=us</vuln:URL>
+        <vuln:ProductID>12141</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Maybe</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>20.0.1</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
         <vuln:Name>Mat Powell of &lt;a href="https://www.zerodayinitiative.com/"&gt;Trend Micro Zero Day Initiative&lt;/a&gt;</vuln:Name>
@@ -56187,6 +57559,12 @@ The vulnerable endpoint is only available over the local VM interface as all ext
     </vuln:Acknowledgments>
     <vuln:RevisionHistory>
       <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2023-01-11T08:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;CVE updated to announce the availability of the updated 3D Builder application which addresses this vulnerability. Microsoft recommends updating your application as soon as possible. Please see &lt;a href="https://support.microsoft.com/en-us/account-billing/get-updates-for-apps-and-games-in-microsoft-store-a1fe19c0-532d-ec47-7035-d1c5a1dd464f#WindowsVersion=Windows_11"&gt;Get updates for apps and games in Microsoft Store&lt;/a&gt; for more information.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2023-01-10T08:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
@@ -56194,7 +57572,7 @@ The vulnerable endpoint is only available over the local VM interface as all ext
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="91">
+  <vuln:Vulnerability Ordinal="103">
     <vuln:Title>3D Builder Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -56202,11 +57580,12 @@ The vulnerable endpoint is only available over the local VM interface as all ext
 &lt;p&gt;The word &lt;strong&gt;Remote&lt;/strong&gt; in the title refers to the location of the attacker. This type of exploit is sometimes referred to as Arbitrary Code Execution (ACE). The attack itself is carried out locally.&lt;/p&gt;
 &lt;p&gt;For example, when the score indicates that the &lt;strong&gt;Attack Vector&lt;/strong&gt; is &lt;strong&gt;Local&lt;/strong&gt; and &lt;strong&gt;User Interaction&lt;/strong&gt; is &lt;strong&gt;Required&lt;/strong&gt;, this could describe an exploit in which an attacker, through social engineering, convinces a victim to download and open a specially crafted file from a website which leads to a local attack on their computer.&lt;/p&gt;
 </vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;How do I get the update for a Windows App?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The Microsoft Store will automatically update affected customers.&lt;/p&gt;
+&lt;p&gt;It is possible for customers to disable automatic updates for the Microsoft Store. The Microsoft Store will not automatically install this update for those customers. You can get the update through the store by following this guide: &lt;a href="https://support.microsoft.com/en-us/account-billing/get-updates-for-apps-and-games-in-microsoft-store-a1fe19c0-532d-ec47-7035-d1c5a1dd464f#WindowsVersion=Windows_11"&gt;Get updates for apps and games in Microsoft Store&lt;/a&gt;. Be sure to select the tab for the operating system installed on your device to search for updates.&lt;/p&gt;
+</vuln:Note>
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, user interaction is required (UI:R). What interaction would the user have to do?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;An attacker must send the user a malicious file and convince the user to open said file.&lt;/p&gt;
-</vuln:Note>
-      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Is the update for 3D Builder currently available?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;The security update for 3D Builder is not immediately available. The update will be released as soon as possible, and when it is available, customers will be notified via a revision to this CVE information.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="3D Builder" Type="Tag" Ordinal="20">3D Builder</vuln:Note>
       <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
@@ -56238,7 +57617,17 @@ The vulnerable endpoint is only available over the local VM interface as all ext
         <vuln:ProductID>12141</vuln:ProductID>
       </vuln:ScoreSet>
     </vuln:CVSSScoreSets>
-    <vuln:Remediations />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>More Information</vuln:Description>
+        <vuln:URL>https://apps.microsoft.com/store/detail/3d-builder/9WZDNCRFJ3T6?hl=en-us&amp;gl=us</vuln:URL>
+        <vuln:ProductID>12141</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Maybe</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>20.0.1</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
         <vuln:Name>Mat Powell of &lt;a href="https://www.zerodayinitiative.com/"&gt;Trend Micro Zero Day Initiative&lt;/a&gt;</vuln:Name>
@@ -56247,6 +57636,12 @@ The vulnerable endpoint is only available over the local VM interface as all ext
     </vuln:Acknowledgments>
     <vuln:RevisionHistory>
       <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2023-01-11T08:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;CVE updated to announce the availability of the updated 3D Builder application which addresses this vulnerability. Microsoft recommends updating your application as soon as possible. Please see &lt;a href="https://support.microsoft.com/en-us/account-billing/get-updates-for-apps-and-games-in-microsoft-store-a1fe19c0-532d-ec47-7035-d1c5a1dd464f#WindowsVersion=Windows_11"&gt;Get updates for apps and games in Microsoft Store&lt;/a&gt; for more information.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2023-01-10T08:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
@@ -56254,7 +57649,7 @@ The vulnerable endpoint is only available over the local VM interface as all ext
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="92">
+  <vuln:Vulnerability Ordinal="104">
     <vuln:Title>3D Builder Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -56262,11 +57657,12 @@ The vulnerable endpoint is only available over the local VM interface as all ext
 &lt;p&gt;The word &lt;strong&gt;Remote&lt;/strong&gt; in the title refers to the location of the attacker. This type of exploit is sometimes referred to as Arbitrary Code Execution (ACE). The attack itself is carried out locally.&lt;/p&gt;
 &lt;p&gt;For example, when the score indicates that the &lt;strong&gt;Attack Vector&lt;/strong&gt; is &lt;strong&gt;Local&lt;/strong&gt; and &lt;strong&gt;User Interaction&lt;/strong&gt; is &lt;strong&gt;Required&lt;/strong&gt;, this could describe an exploit in which an attacker, through social engineering, convinces a victim to download and open a specially crafted file from a website which leads to a local attack on their computer.&lt;/p&gt;
 </vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;How do I get the update for a Windows App?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The Microsoft Store will automatically update affected customers.&lt;/p&gt;
+&lt;p&gt;It is possible for customers to disable automatic updates for the Microsoft Store. The Microsoft Store will not automatically install this update for those customers. You can get the update through the store by following this guide: &lt;a href="https://support.microsoft.com/en-us/account-billing/get-updates-for-apps-and-games-in-microsoft-store-a1fe19c0-532d-ec47-7035-d1c5a1dd464f#WindowsVersion=Windows_11"&gt;Get updates for apps and games in Microsoft Store&lt;/a&gt;. Be sure to select the tab for the operating system installed on your device to search for updates.&lt;/p&gt;
+</vuln:Note>
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, user interaction is required (UI:R). What interaction would the user have to do?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;An attacker must send the user a malicious file and convince the user to open said file.&lt;/p&gt;
-</vuln:Note>
-      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Is the update for 3D Builder currently available?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;The security update for 3D Builder is not immediately available. The update will be released as soon as possible, and when it is available, customers will be notified via a revision to this CVE information.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="3D Builder" Type="Tag" Ordinal="20">3D Builder</vuln:Note>
       <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
@@ -56298,7 +57694,17 @@ The vulnerable endpoint is only available over the local VM interface as all ext
         <vuln:ProductID>12141</vuln:ProductID>
       </vuln:ScoreSet>
     </vuln:CVSSScoreSets>
-    <vuln:Remediations />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>More Information</vuln:Description>
+        <vuln:URL>https://apps.microsoft.com/store/detail/3d-builder/9WZDNCRFJ3T6?hl=en-us&amp;gl=us</vuln:URL>
+        <vuln:ProductID>12141</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Maybe</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>20.0.1</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
         <vuln:Name>Mat Powell of &lt;a href="https://www.zerodayinitiative.com/"&gt;Trend Micro Zero Day Initiative&lt;/a&gt;</vuln:Name>
@@ -56307,6 +57713,12 @@ The vulnerable endpoint is only available over the local VM interface as all ext
     </vuln:Acknowledgments>
     <vuln:RevisionHistory>
       <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2023-01-11T08:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;CVE updated to announce the availability of the updated 3D Builder application which addresses this vulnerability. Microsoft recommends updating your application as soon as possible. Please see &lt;a href="https://support.microsoft.com/en-us/account-billing/get-updates-for-apps-and-games-in-microsoft-store-a1fe19c0-532d-ec47-7035-d1c5a1dd464f#WindowsVersion=Windows_11"&gt;Get updates for apps and games in Microsoft Store&lt;/a&gt; for more information.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2023-01-10T08:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
@@ -56314,7 +57726,7 @@ The vulnerable endpoint is only available over the local VM interface as all ext
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="93">
+  <vuln:Vulnerability Ordinal="105">
     <vuln:Title>3D Builder Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -56322,11 +57734,12 @@ The vulnerable endpoint is only available over the local VM interface as all ext
 &lt;p&gt;The word &lt;strong&gt;Remote&lt;/strong&gt; in the title refers to the location of the attacker. This type of exploit is sometimes referred to as Arbitrary Code Execution (ACE). The attack itself is carried out locally.&lt;/p&gt;
 &lt;p&gt;For example, when the score indicates that the &lt;strong&gt;Attack Vector&lt;/strong&gt; is &lt;strong&gt;Local&lt;/strong&gt; and &lt;strong&gt;User Interaction&lt;/strong&gt; is &lt;strong&gt;Required&lt;/strong&gt;, this could describe an exploit in which an attacker, through social engineering, convinces a victim to download and open a specially crafted file from a website which leads to a local attack on their computer.&lt;/p&gt;
 </vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;How do I get the update for a Windows App?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The Microsoft Store will automatically update affected customers.&lt;/p&gt;
+&lt;p&gt;It is possible for customers to disable automatic updates for the Microsoft Store. The Microsoft Store will not automatically install this update for those customers. You can get the update through the store by following this guide: &lt;a href="https://support.microsoft.com/en-us/account-billing/get-updates-for-apps-and-games-in-microsoft-store-a1fe19c0-532d-ec47-7035-d1c5a1dd464f#WindowsVersion=Windows_11"&gt;Get updates for apps and games in Microsoft Store&lt;/a&gt;. Be sure to select the tab for the operating system installed on your device to search for updates.&lt;/p&gt;
+</vuln:Note>
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, user interaction is required (UI:R). What interaction would the user have to do?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;An attacker must send the user a malicious file and convince the user to open said file.&lt;/p&gt;
-</vuln:Note>
-      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Is the update for 3D Builder currently available?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;The security update for 3D Builder is not immediately available. The update will be released as soon as possible, and when it is available, customers will be notified via a revision to this CVE information.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="3D Builder" Type="Tag" Ordinal="20">3D Builder</vuln:Note>
       <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
@@ -56358,7 +57771,17 @@ The vulnerable endpoint is only available over the local VM interface as all ext
         <vuln:ProductID>12141</vuln:ProductID>
       </vuln:ScoreSet>
     </vuln:CVSSScoreSets>
-    <vuln:Remediations />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>More Information</vuln:Description>
+        <vuln:URL>https://apps.microsoft.com/store/detail/3d-builder/9WZDNCRFJ3T6?hl=en-us&amp;gl=us</vuln:URL>
+        <vuln:ProductID>12141</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Maybe</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>20.0.1</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
         <vuln:Name>Mat Powell of &lt;a href="https://www.zerodayinitiative.com/"&gt;Trend Micro Zero Day Initiative&lt;/a&gt;</vuln:Name>
@@ -56367,6 +57790,12 @@ The vulnerable endpoint is only available over the local VM interface as all ext
     </vuln:Acknowledgments>
     <vuln:RevisionHistory>
       <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2023-01-11T08:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;CVE updated to announce the availability of the updated 3D Builder application which addresses this vulnerability. Microsoft recommends updating your application as soon as possible. Please see &lt;a href="https://support.microsoft.com/en-us/account-billing/get-updates-for-apps-and-games-in-microsoft-store-a1fe19c0-532d-ec47-7035-d1c5a1dd464f#WindowsVersion=Windows_11"&gt;Get updates for apps and games in Microsoft Store&lt;/a&gt; for more information.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2023-01-10T08:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
@@ -56374,7 +57803,7 @@ The vulnerable endpoint is only available over the local VM interface as all ext
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="94">
+  <vuln:Vulnerability Ordinal="106">
     <vuln:Title>3D Builder Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -56382,11 +57811,12 @@ The vulnerable endpoint is only available over the local VM interface as all ext
 &lt;p&gt;The word &lt;strong&gt;Remote&lt;/strong&gt; in the title refers to the location of the attacker. This type of exploit is sometimes referred to as Arbitrary Code Execution (ACE). The attack itself is carried out locally.&lt;/p&gt;
 &lt;p&gt;For example, when the score indicates that the &lt;strong&gt;Attack Vector&lt;/strong&gt; is &lt;strong&gt;Local&lt;/strong&gt; and &lt;strong&gt;User Interaction&lt;/strong&gt; is &lt;strong&gt;Required&lt;/strong&gt;, this could describe an exploit in which an attacker, through social engineering, convinces a victim to download and open a specially crafted file from a website which leads to a local attack on their computer.&lt;/p&gt;
 </vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;How do I get the update for a Windows App?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The Microsoft Store will automatically update affected customers.&lt;/p&gt;
+&lt;p&gt;It is possible for customers to disable automatic updates for the Microsoft Store. The Microsoft Store will not automatically install this update for those customers. You can get the update through the store by following this guide: &lt;a href="https://support.microsoft.com/en-us/account-billing/get-updates-for-apps-and-games-in-microsoft-store-a1fe19c0-532d-ec47-7035-d1c5a1dd464f#WindowsVersion=Windows_11"&gt;Get updates for apps and games in Microsoft Store&lt;/a&gt;. Be sure to select the tab for the operating system installed on your device to search for updates.&lt;/p&gt;
+</vuln:Note>
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, user interaction is required (UI:R). What interaction would the user have to do?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;An attacker must send the user a malicious file and convince the user to open said file.&lt;/p&gt;
-</vuln:Note>
-      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Is the update for 3D Builder currently available?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;The security update for 3D Builder is not immediately available. The update will be released as soon as possible, and when it is available, customers will be notified via a revision to this CVE information.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="3D Builder" Type="Tag" Ordinal="20">3D Builder</vuln:Note>
       <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
@@ -56418,7 +57848,17 @@ The vulnerable endpoint is only available over the local VM interface as all ext
         <vuln:ProductID>12141</vuln:ProductID>
       </vuln:ScoreSet>
     </vuln:CVSSScoreSets>
-    <vuln:Remediations />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>More Information</vuln:Description>
+        <vuln:URL>https://apps.microsoft.com/store/detail/3d-builder/9WZDNCRFJ3T6?hl=en-us&amp;gl=us</vuln:URL>
+        <vuln:ProductID>12141</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Maybe</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>20.0.1</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
         <vuln:Name>Mat Powell of &lt;a href="https://www.zerodayinitiative.com/"&gt;Trend Micro Zero Day Initiative&lt;/a&gt;</vuln:Name>
@@ -56427,6 +57867,12 @@ The vulnerable endpoint is only available over the local VM interface as all ext
     </vuln:Acknowledgments>
     <vuln:RevisionHistory>
       <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2023-01-11T08:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;CVE updated to announce the availability of the updated 3D Builder application which addresses this vulnerability. Microsoft recommends updating your application as soon as possible. Please see &lt;a href="https://support.microsoft.com/en-us/account-billing/get-updates-for-apps-and-games-in-microsoft-store-a1fe19c0-532d-ec47-7035-d1c5a1dd464f#WindowsVersion=Windows_11"&gt;Get updates for apps and games in Microsoft Store&lt;/a&gt; for more information.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2023-01-10T08:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
@@ -56434,7 +57880,7 @@ The vulnerable endpoint is only available over the local VM interface as all ext
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="96">
+  <vuln:Vulnerability Ordinal="108">
     <vuln:Title>3D Builder Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -56442,11 +57888,12 @@ The vulnerable endpoint is only available over the local VM interface as all ext
 &lt;p&gt;The word &lt;strong&gt;Remote&lt;/strong&gt; in the title refers to the location of the attacker. This type of exploit is sometimes referred to as Arbitrary Code Execution (ACE). The attack itself is carried out locally.&lt;/p&gt;
 &lt;p&gt;For example, when the score indicates that the &lt;strong&gt;Attack Vector&lt;/strong&gt; is &lt;strong&gt;Local&lt;/strong&gt; and &lt;strong&gt;User Interaction&lt;/strong&gt; is &lt;strong&gt;Required&lt;/strong&gt;, this could describe an exploit in which an attacker, through social engineering, convinces a victim to download and open a specially crafted file from a website which leads to a local attack on their computer.&lt;/p&gt;
 </vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;How do I get the update for a Windows App?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The Microsoft Store will automatically update affected customers.&lt;/p&gt;
+&lt;p&gt;It is possible for customers to disable automatic updates for the Microsoft Store. The Microsoft Store will not automatically install this update for those customers. You can get the update through the store by following this guide: &lt;a href="https://support.microsoft.com/en-us/account-billing/get-updates-for-apps-and-games-in-microsoft-store-a1fe19c0-532d-ec47-7035-d1c5a1dd464f#WindowsVersion=Windows_11"&gt;Get updates for apps and games in Microsoft Store&lt;/a&gt;. Be sure to select the tab for the operating system installed on your device to search for updates.&lt;/p&gt;
+</vuln:Note>
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, user interaction is required (UI:R). What interaction would the user have to do?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;An attacker must send the user a malicious file and convince the user to open said file.&lt;/p&gt;
-</vuln:Note>
-      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Is the update for 3D Builder currently available?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;The security update for 3D Builder is not immediately available. The update will be released as soon as possible, and when it is available, customers will be notified via a revision to this CVE information.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="3D Builder" Type="Tag" Ordinal="20">3D Builder</vuln:Note>
       <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
@@ -56478,7 +57925,17 @@ The vulnerable endpoint is only available over the local VM interface as all ext
         <vuln:ProductID>12141</vuln:ProductID>
       </vuln:ScoreSet>
     </vuln:CVSSScoreSets>
-    <vuln:Remediations />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>More Information</vuln:Description>
+        <vuln:URL>https://apps.microsoft.com/store/detail/3d-builder/9WZDNCRFJ3T6?hl=en-us&amp;gl=us</vuln:URL>
+        <vuln:ProductID>12141</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Maybe</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>20.0.1</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
         <vuln:Name>Mat Powell of &lt;a href="https://www.zerodayinitiative.com/"&gt;Trend Micro Zero Day Initiative&lt;/a&gt;</vuln:Name>
