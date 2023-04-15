@@ -34,13 +34,13 @@ Get-CVRFID |
 Where-Object { $_ -match "^$((Get-Date).ToString('yyyy-MMM',[System.Globalization.CultureInfo]'en-US'))"}|
 ForEach-Object {
  $cvrfID = $_
- $cvrfDocument = Get-MsrcCvrfDocument -ID $_
- $cvrfDocumentXML = Get-MsrcCvrfDocument -ID $_ -asXML
+ $cvrfDocument = Get-MsrcCvrfDocument -ID $_ -WarningAction SilentlyContinue
+ $cvrfDocumentXML = Get-MsrcCvrfDocument -ID $_ -asXML -WarningAction SilentlyContinue
 
  Format-XML -xml $cvrfDocumentXML -indent 2 |
  Out-File -FilePath (Join-Path -Path $Output -ChildPath "cvrfDocument-$($cvrfID).xml") -Encoding utf8
 
- $cvrfDocument | Get-MsrcVulnerabilityReportHtml |
+ $cvrfDocument | Get-MsrcVulnerabilityReportHtml -WarningAction SilentlyContinue |
  Out-File -FilePath (Join-Path -Path $Output -ChildPath "Bulletin-$($cvrfID).html") -Encoding utf8
 }
 
