@@ -25,6 +25,10 @@ function Format-XML ([xml]$xml, $indent=2)
 # dot source private function
 . (Join-Path (Split-Path (Get-Module -Name MsrcSecurityUpdates -ListAvailable).Path) -ChildPath 'Private\Get-CVRFID.ps1')
 
+if (-not(Test-Path -Path $Output -PathType Container)) {
+ $null = mkdir $Output
+}
+
 # Create the cvfr doc xml
 Get-CVRFID |
 Where-Object { $_ -match "^$((Get-Date).ToString('yyyy-MMM',[System.Globalization.CultureInfo]'en-US'))"}|
