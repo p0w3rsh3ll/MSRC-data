@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <cvrf:cvrfdoc xmlns:cpe-lang="http://cpe.mitre.org/language/2.0" xmlns:scap-core="https://scap.nist.gov/schema/scap-core/1.0" xmlns:cvrf-common="http://www.icasi.org/CVRF/schema/common/1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:prod="http://www.icasi.org/CVRF/schema/prod/1.1" xmlns:cvssv2="https://scap.nist.gov/schema/cvss-v2/1.0" xmlns:vuln="http://www.icasi.org/CVRF/schema/vuln/1.1" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:cvrf="http://www.icasi.org/CVRF/schema/cvrf/1.1">
   <cvrf:DocumentTitle>April 2023 Security Updates</cvrf:DocumentTitle>
   <cvrf:DocumentType>Security Update</cvrf:DocumentType>
@@ -15,13 +15,13 @@
     <cvrf:Version>1.0</cvrf:Version>
     <cvrf:RevisionHistory>
       <cvrf:Revision>
-        <cvrf:Number>2</cvrf:Number>
-        <cvrf:Date>2023-04-11T07:00:00</cvrf:Date>
+        <cvrf:Number>4</cvrf:Number>
+        <cvrf:Date>2023-04-12T07:00:00</cvrf:Date>
         <cvrf:Description>April 2023 Security Updates</cvrf:Description>
       </cvrf:Revision>
     </cvrf:RevisionHistory>
     <cvrf:InitialReleaseDate>2023-04-11T07:00:00</cvrf:InitialReleaseDate>
-    <cvrf:CurrentReleaseDate>2023-04-11T07:00:00</cvrf:CurrentReleaseDate>
+    <cvrf:CurrentReleaseDate>2023-04-12T07:00:00</cvrf:CurrentReleaseDate>
   </cvrf:DocumentTracking>
   <cvrf:DocumentNotes>
     <cvrf:Note Title="Release Notes" Audience="Public" Type="Details" Ordinal="0">&lt;h2&gt;Updates this Month&lt;/h2&gt;
@@ -394,6 +394,8 @@
         <prod:FullProductName ProductID="12129">Microsoft Visual Studio 2022 version 17.4</prod:FullProductName>
         <prod:FullProductName ProductID="12051">Microsoft Visual Studio 2022 version 17.2</prod:FullProductName>
         <prod:FullProductName ProductID="11969">Microsoft Visual Studio 2022 version 17.0</prod:FullProductName>
+        <prod:FullProductName ProductID="12131">PowerShell 7.3</prod:FullProductName>
+        <prod:FullProductName ProductID="11970">PowerShell 7.2</prod:FullProductName>
         <prod:FullProductName ProductID="11935">Microsoft Visual Studio 2019 version 16.11 (includes 16.0 - 16.10)</prod:FullProductName>
         <prod:FullProductName ProductID="11600">Microsoft Visual Studio 2017 version 15.9 (includes 15.0 - 15.8)</prod:FullProductName>
       </prod:Branch>
@@ -481,6 +483,7 @@
     <prod:FullProductName ProductID="11953">Microsoft Office LTSC 2021 for 32-bit editions</prod:FullProductName>
     <prod:FullProductName ProductID="11961">Microsoft SharePoint Server Subscription Edition</prod:FullProductName>
     <prod:FullProductName ProductID="11969">Microsoft Visual Studio 2022 version 17.0</prod:FullProductName>
+    <prod:FullProductName ProductID="11970">PowerShell 7.2</prod:FullProductName>
     <prod:FullProductName ProductID="12009">.NET 6.0</prod:FullProductName>
     <prod:FullProductName ProductID="12048">Microsoft SQL Server 2016 for x64-based Systems Service Pack 3 (GDR)</prod:FullProductName>
     <prod:FullProductName ProductID="12051">Microsoft Visual Studio 2022 version 17.2</prod:FullProductName>
@@ -492,6 +495,9 @@
     <prod:FullProductName ProductID="12099">Windows 10 Version 22H2 for 32-bit Systems</prod:FullProductName>
     <prod:FullProductName ProductID="12129">Microsoft Visual Studio 2022 version 17.4</prod:FullProductName>
     <prod:FullProductName ProductID="12130">.NET 7.0</prod:FullProductName>
+    <prod:FullProductName ProductID="12131">PowerShell 7.3</prod:FullProductName>
+    <prod:FullProductName ProductID="12139">CBL Mariner 2.0 x64</prod:FullProductName>
+    <prod:FullProductName ProductID="12140">CBL Mariner 2.0 ARM</prod:FullProductName>
     <prod:FullProductName ProductID="12145">Microsoft SQL Server 2017 for x64-based Systems (CU 31)</prod:FullProductName>
     <prod:FullProductName ProductID="12146">Microsoft SQL Server 2019 for x64-based Systems (CU 18)</prod:FullProductName>
     <prod:FullProductName ProductID="12147">Microsoft SQL Server 2022 for x64-based Systems (GDR)</prod:FullProductName>
@@ -507,6 +513,605 @@
     <prod:FullProductName ProductID="9318">Windows Server 2008 for x64-based Systems Service Pack 2</prod:FullProductName>
     <prod:FullProductName ProductID="9344">Windows Server 2008 for x64-based Systems Service Pack 2 (Server Core installation)</prod:FullProductName>
   </prod:ProductTree>
+  <vuln:Vulnerability Ordinal="0">
+    <vuln:Title>Open Source Curl Remote Code Execution Vulnerability</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2022-43552</vuln:Note>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the curl open-source project?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Curl is a computer software project providing a library (libcurl) and command-line tool (curl) for transferring data using various network protocols. The name stands for &amp;quot;Client for URL&amp;quot;. The Windows implementation provides access to the command-line tool, not the library.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What version of curl addresses this CVE?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Curl version 7.87.0 addresses this vulnerability.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Where can I find more information about this curl vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;More information can be found at &lt;a href="https://nvd.nist.gov/vuln/detail/CVE-2022-43552"&gt;NVD&lt;/a&gt; and &lt;a href="https://curl.se/docs/CVE-2022-43552.html"&gt;curl.se&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Are there any workarounds that can be implemented?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Preventing the execution of curl.exe is a workaround to be considered&lt;/p&gt;
+&lt;p&gt;Use a WDAC policy to deny execution of the \system32\curl.exe executable. You can merge the deny into an existing policy or create a new policy with it using the Merge-CIPolicy cmdlet; &lt;a href="https://learn.microsoft.com/en-us/powershell/module/configci/merge-cipolicy?view=windowsserver2022-ps"&gt;Merge-CIPolicy (ConfigCI) | Microsoft Learn&lt;/a&gt;. Once the policy XML file with the deny has been created or merged with an existing policy it must be deployed.&lt;/p&gt;
+&lt;p&gt;Choose how to deploy the policy; &lt;a href="https://learn.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide#choose-how-to-deploy-wdac-policies"&gt;Deploying Windows Defender Application Control (WDAC) policies | Microsoft Learn&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Deploy using a &lt;a href="https://learn.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/deployment/deploy-windows-defender-application-control-policies-using-intune"&gt;Mobile Device Management (MDM) &lt;/a&gt;solution, such as Microsoft Intune&lt;/li&gt;
+&lt;li&gt;Deploy using &lt;a href="https://learn.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/deployment/deploy-wdac-policies-with-memcm"&gt;Microsoft Configuration Manager&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Deploy via &lt;a href="https://learn.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/deployment/deploy-wdac-policies-with-script"&gt;script&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Deploy via &lt;a href="https://learn.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/deployment/deploy-windows-defender-application-control-policies-using-group-policy"&gt;group policy&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For example:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Create a new policy: (These steps will create a new policy named Deny-Curl.xml by merging the deny using the example policy named AllowAll.xml)&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$rule = new-cipolicyrule -DriverFilePath &amp;quot;$env:systemroot\system32\curl.exe&amp;quot; -Level FilePublisher -Deny
+$rule[0].attributes[&amp;quot;MinimumFileVersion&amp;quot;] = &amp;quot;0.0.0.0&amp;quot;
+$rule[0].attributes[&amp;quot;MaximumFileVersion&amp;quot;] = &amp;quot;7.87.0.0&amp;quot;
+
+merge-cipolicy &amp;quot;$env:systemroot\schemas\CodeIntegrity\ExamplePolicies\AllowAll.xml&amp;quot; -Rules $rule -OutputFilePath &amp;quot;Deny-Curl.xml&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Merge into an existing policy&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$rule = new-cipolicyrule -DriverFilePath &amp;quot;$env:systemroot\system32\curl.exe&amp;quot; -Level FilePublisher -Deny
+$rule[0].attributes[&amp;quot;MinimumFileVersion&amp;quot;] = &amp;quot;0.0.0.0&amp;quot;
+$rule[0].attributes[&amp;quot;MaximumFileVersion&amp;quot;] = &amp;quot;7.87.0.0&amp;quot;
+
+merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFilePath &amp;quot;existing_policy.xml&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;How to undo this workaround?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Guidance for how to remove WDAC policies can be found in the following documentation: &lt;a href="https://learn.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/disable-windows-defender-application-control-policies"&gt;Remove Windows Defender Application Control (WDAC) policies&lt;/a&gt;&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="Open Source Software" Type="Tag" Ordinal="20">Open Source Software</vuln:Note>
+      <vuln:Note Title="HackerOne" Type="CNA" Ordinal="30">HackerOne</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2022-43552</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11568</vuln:ProductID>
+        <vuln:ProductID>11569</vuln:ProductID>
+        <vuln:ProductID>11570</vuln:ProductID>
+        <vuln:ProductID>11571</vuln:ProductID>
+        <vuln:ProductID>11572</vuln:ProductID>
+        <vuln:ProductID>11923</vuln:ProductID>
+        <vuln:ProductID>11924</vuln:ProductID>
+        <vuln:ProductID>11800</vuln:ProductID>
+        <vuln:ProductID>11801</vuln:ProductID>
+        <vuln:ProductID>11802</vuln:ProductID>
+        <vuln:ProductID>11926</vuln:ProductID>
+        <vuln:ProductID>11927</vuln:ProductID>
+        <vuln:ProductID>11929</vuln:ProductID>
+        <vuln:ProductID>11930</vuln:ProductID>
+        <vuln:ProductID>11931</vuln:ProductID>
+        <vuln:ProductID>12085</vuln:ProductID>
+        <vuln:ProductID>12086</vuln:ProductID>
+        <vuln:ProductID>12097</vuln:ProductID>
+        <vuln:ProductID>12098</vuln:ProductID>
+        <vuln:ProductID>12099</vuln:ProductID>
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11568</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11569</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11570</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11571</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11572</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11923</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11924</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11800</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11801</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11802</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11926</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11927</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11929</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11930</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11931</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>12085</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>12086</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>12097</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>12098</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>12099</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11568</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11569</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11570</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11571</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11572</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11923</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11924</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11800</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11801</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11802</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11926</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11927</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11929</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11930</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11931</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>12085</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>12086</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>12097</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>12098</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>12099</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>Publicly Disclosed:Yes;Exploited:No;DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.9</vuln:BaseScore>
+        <vuln:TemporalScore>5.9</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>11568</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.9</vuln:BaseScore>
+        <vuln:TemporalScore>5.9</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>11569</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.9</vuln:BaseScore>
+        <vuln:TemporalScore>5.9</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>11570</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.9</vuln:BaseScore>
+        <vuln:TemporalScore>5.9</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>11571</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.9</vuln:BaseScore>
+        <vuln:TemporalScore>5.9</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>11572</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.9</vuln:BaseScore>
+        <vuln:TemporalScore>5.9</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>11923</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.9</vuln:BaseScore>
+        <vuln:TemporalScore>5.9</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>11924</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.9</vuln:BaseScore>
+        <vuln:TemporalScore>5.9</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>11800</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.9</vuln:BaseScore>
+        <vuln:TemporalScore>5.9</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>11801</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.9</vuln:BaseScore>
+        <vuln:TemporalScore>5.9</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>11802</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.9</vuln:BaseScore>
+        <vuln:TemporalScore>5.9</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>11926</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.9</vuln:BaseScore>
+        <vuln:TemporalScore>5.9</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>11927</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.9</vuln:BaseScore>
+        <vuln:TemporalScore>5.9</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>11929</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.9</vuln:BaseScore>
+        <vuln:TemporalScore>5.9</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>11930</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.9</vuln:BaseScore>
+        <vuln:TemporalScore>5.9</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>11931</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.9</vuln:BaseScore>
+        <vuln:TemporalScore>5.9</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>12085</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.9</vuln:BaseScore>
+        <vuln:TemporalScore>5.9</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>12086</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.9</vuln:BaseScore>
+        <vuln:TemporalScore>5.9</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>12097</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.9</vuln:BaseScore>
+        <vuln:TemporalScore>5.9</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>12098</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.9</vuln:BaseScore>
+        <vuln:TemporalScore>5.9</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>12099</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.9</vuln:BaseScore>
+        <vuln:TemporalScore>5.9</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.9</vuln:BaseScore>
+        <vuln:TemporalScore>5.9</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5025229</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5025229</vuln:URL>
+        <vuln:Supercedence>5023702</vuln:Supercedence>
+        <vuln:ProductID>11568</vuln:ProductID>
+        <vuln:ProductID>11569</vuln:ProductID>
+        <vuln:ProductID>11570</vuln:ProductID>
+        <vuln:ProductID>11571</vuln:ProductID>
+        <vuln:ProductID>11572</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>10.0.17763.4252</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5025229</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5025229</vuln:URL>
+        <vuln:ProductID>11568</vuln:ProductID>
+        <vuln:ProductID>11569</vuln:ProductID>
+        <vuln:ProductID>11570</vuln:ProductID>
+        <vuln:ProductID>11571</vuln:ProductID>
+        <vuln:ProductID>11572</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5025230</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5025230</vuln:URL>
+        <vuln:Supercedence>5023705</vuln:Supercedence>
+        <vuln:ProductID>11923</vuln:ProductID>
+        <vuln:ProductID>11924</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>10.0.20348.1668</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5025230</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5025230</vuln:URL>
+        <vuln:ProductID>11923</vuln:ProductID>
+        <vuln:ProductID>11924</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5025221</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5025221</vuln:URL>
+        <vuln:Supercedence>5023696</vuln:Supercedence>
+        <vuln:ProductID>11800</vuln:ProductID>
+        <vuln:ProductID>11801</vuln:ProductID>
+        <vuln:ProductID>11802</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>10.0.19042.2846</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5025221</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5025221</vuln:URL>
+        <vuln:ProductID>11800</vuln:ProductID>
+        <vuln:ProductID>11801</vuln:ProductID>
+        <vuln:ProductID>11802</vuln:ProductID>
+        <vuln:ProductID>11929</vuln:ProductID>
+        <vuln:ProductID>11930</vuln:ProductID>
+        <vuln:ProductID>11931</vuln:ProductID>
+        <vuln:ProductID>12097</vuln:ProductID>
+        <vuln:ProductID>12098</vuln:ProductID>
+        <vuln:ProductID>12099</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5025224</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5025224</vuln:URL>
+        <vuln:Supercedence>5023698</vuln:Supercedence>
+        <vuln:ProductID>11926</vuln:ProductID>
+        <vuln:ProductID>11927</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>10.0.22000.1817</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5025224</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5025224</vuln:URL>
+        <vuln:ProductID>11926</vuln:ProductID>
+        <vuln:ProductID>11927</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5025221</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5025221</vuln:URL>
+        <vuln:Supercedence>5023696</vuln:Supercedence>
+        <vuln:ProductID>11929</vuln:ProductID>
+        <vuln:ProductID>11930</vuln:ProductID>
+        <vuln:ProductID>11931</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>10.0.19044.2846</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5025239</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5025239</vuln:URL>
+        <vuln:Supercedence>5023706</vuln:Supercedence>
+        <vuln:ProductID>12085</vuln:ProductID>
+        <vuln:ProductID>12086</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>10.0.22621.1555</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5025239</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5025239</vuln:URL>
+        <vuln:ProductID>12085</vuln:ProductID>
+        <vuln:ProductID>12086</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5025221</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5025221</vuln:URL>
+        <vuln:Supercedence>5023696</vuln:Supercedence>
+        <vuln:ProductID>12097</vuln:ProductID>
+        <vuln:ProductID>12098</vuln:ProductID>
+        <vuln:ProductID>12099</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>10.0.19045.2846</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>curl</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>curl-7.86.0-3.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>curl-devel-7.86.0-3.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>curl-libs-7.86.0-3.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>curl-debuginfo-7.86.0-3.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>7.86.0-3</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>curl</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12140</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>curl-7.86.0-3.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>curl-devel-7.86.0-3.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>curl-libs-7.86.0-3.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>curl-debuginfo-7.86.0-3.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>7.86.0-3</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments>
+      <vuln:Acknowledgment>
+        <vuln:Name>&lt;a href="http://eskamation.de/"&gt;Stefan Kanthak&lt;/a&gt;</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+    </vuln:Acknowledgments>
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>2.1</cvrf:Number>
+        <cvrf:Date>2023-04-12T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Updated FAQ information. This is an informational change only.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2023-02-10T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2023-03-14T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;CVE updated to add Windows software as Microsoft is aware that certain versions of Windows are affected by the cURL vulnerability. Microsoft will incorporate the new cURL Open Source library that addresses this issue in an upcoming security release.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2023-04-11T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Microsoft is announcing the availability of the April 2023 security updates to address this vulnerability for all supported versions of Windows 10 version 1809, Windows 10 version 20H2, Windows 10 version 21H2, Windows 10 version 22H2, Windows 11 version 21H2, Windows 11 version 22H2, Windows Server 2019, and Windows Server 2022. Microsoft strongly recommends that customers install the April 2023 updates to be fully protected from this vulnerability. Customers whose systems are configured to receive automatic updates do not need to take any further action.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
   <vuln:Vulnerability Ordinal="0">
     <vuln:Title>Chromium: CVE-2023-1810 Heap buffer overflow in Visuals</vuln:Title>
     <vuln:Notes>
@@ -1571,12 +2176,89 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="15">
+  <vuln:Vulnerability Ordinal="14">
+    <vuln:Title>Chromium: CVE-2023-2033 Type Confusion in V8</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;p&gt;Google is aware that an exploit for CVE-2023-2033 exists in the wild.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based).  It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.  Please see &lt;a href="https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/"&gt;Security Update Guide Supports CVEs Assigned by Industry Partners&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;112.0.1722.48&lt;/td&gt;
+&lt;td&gt;4/15/2023&lt;/td&gt;
+&lt;td&gt;112.0.5615.121&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2023-2033</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>112.0.1722.48</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2023-04-15T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="16">
     <vuln:Title>Remote Procedure Call Runtime Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;How could an attacker exploit this vulnerability?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;To exploit this vulnerability, an unauthenticated attacker would need to send a specially crafted RPC call to an RPC host. This could result in remote code execution on the server side with the same permissions as the RPC service.&lt;/p&gt;
+&lt;p&gt;To exploit this vulnerability, an authenticated attacker would need to send a specially crafted RPC call to an RPC host. This could result in remote code execution on the server side with the same permissions as the RPC service.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="Windows RPC API" Type="Tag" Ordinal="20">Windows RPC API</vuln:Note>
       <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
@@ -2420,9 +3102,15 @@
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2023-04-12T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Updated FAQ information. This is an informational change only.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="16">
+  <vuln:Vulnerability Ordinal="17">
     <vuln:Title>Remote Procedure Call Runtime Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -3273,7 +3961,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="17">
+  <vuln:Vulnerability Ordinal="18">
     <vuln:Title>Microsoft Message Queuing Denial of Service Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -4121,7 +4809,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="19">
+  <vuln:Vulnerability Ordinal="20">
     <vuln:Title>Microsoft SQL Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -4645,7 +5333,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="28">
+  <vuln:Vulnerability Ordinal="29">
     <vuln:Title>Win32k Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -4735,7 +5423,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="35">
+  <vuln:Vulnerability Ordinal="36">
     <vuln:Title>Windows Secure Channel Denial of Service Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -5480,7 +6168,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="37">
+  <vuln:Vulnerability Ordinal="39">
     <vuln:Title>Windows Advanced Local Procedure Call (ALPC) Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -6334,7 +7022,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="38">
+  <vuln:Vulnerability Ordinal="40">
     <vuln:Title>Windows Network Address Translation (NAT) Denial of Service Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -7188,7 +7876,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="39">
+  <vuln:Vulnerability Ordinal="41">
     <vuln:Title>Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -8042,7 +8730,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="42">
+  <vuln:Vulnerability Ordinal="44">
     <vuln:Title>Windows Error Reporting Service Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -8626,7 +9314,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="43">
+  <vuln:Vulnerability Ordinal="45">
     <vuln:Title>Windows Kernel Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -9484,7 +10172,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="89">
+  <vuln:Vulnerability Ordinal="91">
     <vuln:Title>Microsoft Edge (Chromium-based) Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -9568,7 +10256,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="90">
+  <vuln:Vulnerability Ordinal="92">
     <vuln:Title>Microsoft Office Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -9707,7 +10395,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="91">
+  <vuln:Vulnerability Ordinal="93">
     <vuln:Title>Microsoft Publisher Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -9978,7 +10666,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="92">
+  <vuln:Vulnerability Ordinal="94">
     <vuln:Title>Microsoft SharePoint Server Spoofing Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -10153,7 +10841,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="93">
+  <vuln:Vulnerability Ordinal="95">
     <vuln:Title>Raw Image Extension Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -10438,7 +11126,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="94">
+  <vuln:Vulnerability Ordinal="96">
     <vuln:Title>Raw Image Extension Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -10720,7 +11408,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="96">
+  <vuln:Vulnerability Ordinal="98">
     <vuln:Title>Microsoft Publisher Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -10991,7 +11679,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="98">
+  <vuln:Vulnerability Ordinal="100">
     <vuln:Title>Windows Remote Procedure Call Service (RPCSS) Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -11681,12 +12369,12 @@
       <vuln:Revision>
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2023-04-11T07:00:00</cvrf:Date>
-        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+        <cvrf:Description>&lt;p&gt;Information published. This CVE was addressed by updates that were released in January 2023, but the CVE was inadvertently omitted from the January 2023 Security Updates. This is an informational change only. Customers who have already installed the January 2023 updates do not need to take any further action.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="99">
+  <vuln:Vulnerability Ordinal="101">
     <vuln:Title>Windows Kernel Denial of Service Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -12534,7 +13222,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="101">
+  <vuln:Vulnerability Ordinal="103">
     <vuln:Title>Azure Service Connector Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -12601,7 +13289,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="105">
+  <vuln:Vulnerability Ordinal="107">
     <vuln:Title>Windows DNS Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -13050,7 +13738,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="109">
+  <vuln:Vulnerability Ordinal="111">
     <vuln:Title>Microsoft Dynamics 365 (on-premises) Cross-site Scripting Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -13113,13 +13801,13 @@
     </vuln:CVSSScoreSets>
     <vuln:Remediations>
       <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>XXXXXXX</vuln:Description>
-        <vuln:URL>https://www.microsoft.com/en-us/download/details.aspx?id=XXXXXX</vuln:URL>
+        <vuln:Description>5023896</vuln:Description>
+        <vuln:URL>https://www.microsoft.com/en-us/download/details.aspx?id=105152</vuln:URL>
         <vuln:ProductID>11664</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>9.0.XX.X</vuln:FixedBuild>
+        <vuln:FixedBuild>9.0.46.15</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5023894</vuln:Description>
@@ -13146,7 +13834,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="112">
+  <vuln:Vulnerability Ordinal="114">
     <vuln:Title>Microsoft Dynamics 365 Customer Voice Cross-Site Scripting Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -13224,7 +13912,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="113">
+  <vuln:Vulnerability Ordinal="115">
     <vuln:Title>Microsoft Dynamics 365 (on-premises) Cross-site Scripting Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -13284,13 +13972,13 @@
     </vuln:CVSSScoreSets>
     <vuln:Remediations>
       <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>XXXXXXX</vuln:Description>
-        <vuln:URL>https://www.microsoft.com/en-us/download/details.aspx?id=XXXXXX</vuln:URL>
+        <vuln:Description>5023896</vuln:Description>
+        <vuln:URL>https://www.microsoft.com/en-us/download/details.aspx?id=105152</vuln:URL>
         <vuln:ProductID>11664</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>9.0.XX.X</vuln:FixedBuild>
+        <vuln:FixedBuild>9.0.46.15</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5023894</vuln:Description>
@@ -13315,9 +14003,15 @@
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2023-04-12T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Corrected Download and Article links in the Security Updates table. This is an informational change only.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="26">
+  <vuln:Vulnerability Ordinal="27">
     <vuln:Title>Visual Studio Code Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -13381,7 +14075,70 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="36">
+  <vuln:Vulnerability Ordinal="37">
+    <vuln:Title>Microsoft Defender Security Feature Bypass Vulnerability</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What kind of security feature could be bypassed by successfully exploiting this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;An attacker who successfully exploited this vulnerability could bypass the Windows Defender detection with a specially crafted file.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="Windows Defender" Type="Tag" Ordinal="20">Windows Defender</vuln:Note>
+      <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2023-24934</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11902</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Security Feature Bypass</vuln:Description>
+        <vuln:ProductID>11902</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11902</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation Less Likely;DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>6.2</vuln:BaseScore>
+        <vuln:TemporalScore>5.6</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11902</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11902</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>4.18.2303.8</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments>
+      <vuln:Acknowledgment>
+        <vuln:Name>Tomer Bar with &lt;a href="https://safebreach.com/"&gt;SafeBreach&lt;/a&gt;</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+    </vuln:Acknowledgments>
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2023-04-14T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published. This CVE was addressed by updates that were released in April 2023, but the CVE was inadvertently omitted from the April 2023 Security Updates. This is an informational change only. Customers who have already installed the April 2023 updates do not need to take any further action.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="38">
     <vuln:Title>Microsoft Edge (Chromium-based) Spoofing Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -13464,7 +14221,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="14">
+  <vuln:Vulnerability Ordinal="15">
     <vuln:Title>Microsoft Message Queuing Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -14326,7 +15083,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="18">
+  <vuln:Vulnerability Ordinal="19">
     <vuln:Title>Microsoft ODBC and OLE DB Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -14465,7 +15222,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="20">
+  <vuln:Vulnerability Ordinal="21">
     <vuln:Title>Microsoft Defender Denial of Service Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -14563,6 +15320,10 @@
         <vuln:Name>Tomer Bar with SafeBreach</vuln:Name>
         <vuln:URL />
       </vuln:Acknowledgment>
+      <vuln:Acknowledgment>
+        <vuln:Name>Shmuel Cohen  with SafeBreach </vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
     </vuln:Acknowledgments>
     <vuln:RevisionHistory>
       <vuln:Revision>
@@ -14571,9 +15332,15 @@
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2023-04-12T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added acknowledgements. This is an informational change only.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="27">
+  <vuln:Vulnerability Ordinal="28">
     <vuln:Title>Windows Graphics Component Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -15424,7 +16191,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="29">
+  <vuln:Vulnerability Ordinal="30">
     <vuln:Title>Microsoft PostScript and PCL6 Class Printer Driver Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -16107,7 +16874,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="21">
+  <vuln:Vulnerability Ordinal="22">
     <vuln:Title>Microsoft PostScript and PCL6 Class Printer Driver Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -16790,7 +17557,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="30">
+  <vuln:Vulnerability Ordinal="31">
     <vuln:Title>Microsoft PostScript and PCL6 Class Printer Driver Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -17473,7 +18240,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="22">
+  <vuln:Vulnerability Ordinal="23">
     <vuln:Title>Microsoft PostScript and PCL6 Class Printer Driver Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -18156,7 +18923,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="31">
+  <vuln:Vulnerability Ordinal="32">
     <vuln:Title>Microsoft PostScript and PCL6 Class Printer Driver Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -18839,7 +19606,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="23">
+  <vuln:Vulnerability Ordinal="24">
     <vuln:Title>Microsoft PostScript and PCL6 Class Printer Driver Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -19525,7 +20292,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="32">
+  <vuln:Vulnerability Ordinal="33">
     <vuln:Title>Microsoft PostScript and PCL6 Class Printer Driver Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -20211,7 +20978,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="24">
+  <vuln:Vulnerability Ordinal="25">
     <vuln:Title>Microsoft PostScript and PCL6 Class Printer Driver Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -20894,7 +21661,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="33">
+  <vuln:Vulnerability Ordinal="34">
     <vuln:Title>Microsoft PostScript and PCL6 Class Printer Driver Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -21580,7 +22347,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="25">
+  <vuln:Vulnerability Ordinal="26">
     <vuln:Title>Microsoft PostScript and PCL6 Class Printer Driver Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -22263,7 +23030,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="34">
+  <vuln:Vulnerability Ordinal="35">
     <vuln:Title>Microsoft PostScript and PCL6 Class Printer Driver Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -22946,7 +23713,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="40">
+  <vuln:Vulnerability Ordinal="42">
     <vuln:Title>Layer 2 Tunneling Protocol Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -23800,7 +24567,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="41">
+  <vuln:Vulnerability Ordinal="43">
     <vuln:Title>Layer 2 Tunneling Protocol Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -24654,7 +25421,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="44">
+  <vuln:Vulnerability Ordinal="46">
     <vuln:Title>Windows  Domain Name Service Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -25095,7 +25862,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="45">
+  <vuln:Vulnerability Ordinal="47">
     <vuln:Title>Windows Point-to-Point Protocol over Ethernet (PPPoE) Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -25784,7 +26551,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="46">
+  <vuln:Vulnerability Ordinal="48">
     <vuln:Title>Windows NTLM Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -26365,7 +27132,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="47">
+  <vuln:Vulnerability Ordinal="49">
     <vuln:Title>Windows Enroll Engine Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -26838,7 +27605,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="48">
+  <vuln:Vulnerability Ordinal="50">
     <vuln:Title>Windows Bluetooth Driver Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -27679,7 +28446,7 @@
     </vuln:Remediations>
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
-        <vuln:Name>Anonymous  &lt;a href="https://www.zerodayinitiative.com/"&gt;Trend Micro Zero Day Initiative&lt;/a&gt;</vuln:Name>
+        <vuln:Name>Anonymous  working with &lt;a href="https://www.zerodayinitiative.com/"&gt;Trend Micro Zero Day Initiative&lt;/a&gt;</vuln:Name>
         <vuln:URL />
       </vuln:Acknowledgment>
       <vuln:Acknowledgment>
@@ -27700,7 +28467,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="49">
+  <vuln:Vulnerability Ordinal="51">
     <vuln:Title>Windows Spoofing Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -28551,7 +29318,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="50">
+  <vuln:Vulnerability Ordinal="52">
     <vuln:Title>Windows CNG Key Isolation Service Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -29392,7 +30159,7 @@
     </vuln:Remediations>
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
-        <vuln:Name>Anonymous</vuln:Name>
+        <vuln:Name>k0shl of Kunlun Lab</vuln:Name>
         <vuln:URL />
       </vuln:Acknowledgment>
     </vuln:Acknowledgments>
@@ -29405,15 +30172,15 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="51">
+  <vuln:Vulnerability Ordinal="53">
     <vuln:Title>DHCP Server Service Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
-      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;How could an attacker exploit this vulnerability?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;An authenticated attacker could leverage a specially crafted RPC call to the DHCP service to exploit this vulnerability.&lt;/p&gt;
-</vuln:Note>
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, the attack vector is adjacent (AV:A). What does that mean for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Successful exploitation of this vulnerability requires that an attacker will need to first gain access to the restricted network before running an attack.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;How could an attacker exploit this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;An unauthenticated attacker could leverage a specially crafted call to the DHCP service to exploit this vulnerability.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="Windows DHCP Server" Type="Tag" Ordinal="20">Windows DHCP Server</vuln:Note>
       <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
@@ -29852,9 +30619,15 @@
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2023-04-14T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Updated FAQ information. This is an informational change only.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="52">
+  <vuln:Vulnerability Ordinal="54">
     <vuln:Title>Windows Point-to-Point Tunneling Protocol Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -30708,7 +31481,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="53">
+  <vuln:Vulnerability Ordinal="55">
     <vuln:Title>Windows Secure Channel Denial of Service Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -30892,7 +31665,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="54">
+  <vuln:Vulnerability Ordinal="56">
     <vuln:Title>Windows Secure Channel Denial of Service Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -31076,7 +31849,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="55">
+  <vuln:Vulnerability Ordinal="57">
     <vuln:Title>Windows Lock Screen Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -31399,7 +32172,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="56">
+  <vuln:Vulnerability Ordinal="58">
     <vuln:Title>Windows Kernel Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -32082,7 +32855,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="57">
+  <vuln:Vulnerability Ordinal="59">
     <vuln:Title>Windows Kernel Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -32768,7 +33541,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="58">
+  <vuln:Vulnerability Ordinal="60">
     <vuln:Title>Windows Internet Key Exchange (IKE) Protocol Extensions Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -33529,7 +34302,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="59">
+  <vuln:Vulnerability Ordinal="61">
     <vuln:Title>Windows Network Load Balancing Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -33989,7 +34762,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="60">
+  <vuln:Vulnerability Ordinal="62">
     <vuln:Title>Windows Secure Socket Tunneling Protocol (SSTP) Denial of Service Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -34837,7 +35610,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="76">
+  <vuln:Vulnerability Ordinal="78">
     <vuln:Title>Windows Common Log File System Driver Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -35689,7 +36462,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="61">
+  <vuln:Vulnerability Ordinal="63">
     <vuln:Title>Microsoft PostScript and PCL6 Class Printer Driver Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -36372,7 +37145,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="77">
+  <vuln:Vulnerability Ordinal="79">
     <vuln:Title>Remote Desktop Protocol Client Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -37147,7 +37920,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="62">
+  <vuln:Vulnerability Ordinal="64">
     <vuln:Title>Windows Kerberos Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -37605,7 +38378,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="78">
+  <vuln:Vulnerability Ordinal="80">
     <vuln:Title>Netlogon RPC Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -38057,7 +38830,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="79">
+  <vuln:Vulnerability Ordinal="81">
     <vuln:Title>Windows Boot Manager Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -38740,7 +39513,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="63">
+  <vuln:Vulnerability Ordinal="65">
     <vuln:Title>Windows Registry Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -38923,7 +39696,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="80">
+  <vuln:Vulnerability Ordinal="82">
     <vuln:Title>Windows Lock Screen Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -39390,7 +40163,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="64">
+  <vuln:Vulnerability Ordinal="66">
     <vuln:Title>Windows Network File System Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -39668,7 +40441,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="65">
+  <vuln:Vulnerability Ordinal="67">
     <vuln:Title>Windows Kernel Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -40208,7 +40981,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="81">
+  <vuln:Vulnerability Ordinal="83">
     <vuln:Title>Windows Kernel Memory Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -41059,7 +41832,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="82">
+  <vuln:Vulnerability Ordinal="84">
     <vuln:Title>Windows Kernel Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -41910,7 +42683,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="66">
+  <vuln:Vulnerability Ordinal="68">
     <vuln:Title>Windows Boot Manager Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -42593,7 +43366,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="67">
+  <vuln:Vulnerability Ordinal="69">
     <vuln:Title>Windows Pragmatic General Multicast (PGM) Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -43451,7 +44224,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="83">
+  <vuln:Vulnerability Ordinal="85">
     <vuln:Title>Windows Clip Service Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -43994,7 +44767,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="84">
+  <vuln:Vulnerability Ordinal="86">
     <vuln:Title>Windows Win32k Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -44461,7 +45234,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="68">
+  <vuln:Vulnerability Ordinal="70">
     <vuln:Title>Windows Common Log File System Driver Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -45320,7 +46093,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="85">
+  <vuln:Vulnerability Ordinal="87">
     <vuln:Title>Microsoft WDAC OLE DB provider for SQL Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -46166,7 +46939,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="69">
+  <vuln:Vulnerability Ordinal="71">
     <vuln:Title>Windows Kernel Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -47020,7 +47793,7 @@ Alyssa Milburn and Ke Sun of Intel
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="86">
+  <vuln:Vulnerability Ordinal="88">
     <vuln:Title>Windows Group Policy Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -47871,7 +48644,7 @@ Alyssa Milburn and Ke Sun of Intel
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="70">
+  <vuln:Vulnerability Ordinal="72">
     <vuln:Title>Windows DNS Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -48317,7 +49090,7 @@ Alyssa Milburn and Ke Sun of Intel
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="87">
+  <vuln:Vulnerability Ordinal="89">
     <vuln:Title>Windows DNS Server Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -48407,7 +49180,7 @@ Alyssa Milburn and Ke Sun of Intel
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="71">
+  <vuln:Vulnerability Ordinal="73">
     <vuln:Title>Windows DNS Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -48856,7 +49629,7 @@ Alyssa Milburn and Ke Sun of Intel
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="88">
+  <vuln:Vulnerability Ordinal="90">
     <vuln:Title>Windows DNS Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -49305,7 +50078,7 @@ Alyssa Milburn and Ke Sun of Intel
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="72">
+  <vuln:Vulnerability Ordinal="74">
     <vuln:Title>Windows DNS Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -49754,7 +50527,7 @@ Alyssa Milburn and Ke Sun of Intel
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="73">
+  <vuln:Vulnerability Ordinal="75">
     <vuln:Title>.NET DLL Hijacking Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -49776,6 +50549,8 @@ Alyssa Milburn and Ke Sun of Intel
         <vuln:ProductID>12129</vuln:ProductID>
         <vuln:ProductID>12051</vuln:ProductID>
         <vuln:ProductID>11969</vuln:ProductID>
+        <vuln:ProductID>12131</vuln:ProductID>
+        <vuln:ProductID>11970</vuln:ProductID>
       </vuln:Status>
     </vuln:ProductStatuses>
     <vuln:Threats>
@@ -49803,6 +50578,14 @@ Alyssa Milburn and Ke Sun of Intel
         <vuln:Description>Remote Code Execution</vuln:Description>
         <vuln:ProductID>11969</vuln:ProductID>
       </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>12131</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11970</vuln:ProductID>
+      </vuln:Threat>
       <vuln:Threat Type="Severity">
         <vuln:Description>Important</vuln:Description>
         <vuln:ProductID>12009</vuln:ProductID>
@@ -49827,8 +50610,16 @@ Alyssa Milburn and Ke Sun of Intel
         <vuln:Description>Important</vuln:Description>
         <vuln:ProductID>11969</vuln:ProductID>
       </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>12131</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11970</vuln:ProductID>
+      </vuln:Threat>
       <vuln:Threat Type="Exploit Status">
-        <vuln:Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation Less Likely;DOS:N/A</vuln:Description>
+        <vuln:Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation Unlikely;DOS:N/A</vuln:Description>
       </vuln:Threat>
     </vuln:Threats>
     <vuln:CVSSScoreSets>
@@ -49867,6 +50658,18 @@ Alyssa Milburn and Ke Sun of Intel
         <vuln:TemporalScore>7.0</vuln:TemporalScore>
         <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11969</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.0</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>12131</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.0</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11970</vuln:ProductID>
       </vuln:ScoreSet>
     </vuln:CVSSScoreSets>
     <vuln:Remediations>
@@ -49924,8 +50727,30 @@ Alyssa Milburn and Ke Sun of Intel
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>17.0.21</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL>https://github.com/PowerShell/Announcements/issues/39</vuln:URL>
+        <vuln:ProductID>12131</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Maybe</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>7.3.4</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL>https://github.com/PowerShell/Announcements/issues/39</vuln:URL>
+        <vuln:ProductID>11970</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Maybe</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>7.2.11</vuln:FixedBuild>
+      </vuln:Remediation>
     </vuln:Remediations>
     <vuln:Acknowledgments>
+      <vuln:Acknowledgment>
+        <vuln:Name>&lt;a href="https://github.com/ycdxsb"&gt;ycdxsb&lt;/a&gt; with &lt;a href="http://www.iie.ac.cn/"&gt;VARAS@IIE&lt;/a&gt;</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
       <vuln:Acknowledgment>
         <vuln:Name>&lt;a href="https://github.com/ycdxsb"&gt;ycdxsb&lt;/a&gt; with &lt;a href="http://www.iie.ac.cn/"&gt;VARAS@IIE&lt;/a&gt;</vuln:Name>
         <vuln:URL />
@@ -49938,9 +50763,15 @@ Alyssa Milburn and Ke Sun of Intel
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2023-04-13T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Revised the Security Updates table to include PowerShell 7.2 and PowerShell 7.3 because these versions of PowerShell 7 are affected by this vulnerability. See &lt;a href="https://github.com/PowerShell/Announcements/issues/39"&gt;https://github.com/PowerShell/Announcements/issues/39&lt;/a&gt; for more information.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="74">
+  <vuln:Vulnerability Ordinal="76">
     <vuln:Title>Visual Studio Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -50099,7 +50930,7 @@ Alyssa Milburn and Ke Sun of Intel
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="75">
+  <vuln:Vulnerability Ordinal="77">
     <vuln:Title>Visual Studio Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -50258,7 +51089,7 @@ Alyssa Milburn and Ke Sun of Intel
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="95">
+  <vuln:Vulnerability Ordinal="97">
     <vuln:Title>Windows Kernel Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -51106,12 +51937,13 @@ Alyssa Milburn and Ke Sun of Intel
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="97">
+  <vuln:Vulnerability Ordinal="99">
     <vuln:Title>Visual Studio Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, the attack vector is local (AV:L). Why does the CVE title indicate that this is a remote code execution?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;The word &lt;strong&gt;Remote&lt;/strong&gt; in the title refers to the location of the attacker. This type of exploit is sometimes referred to as Arbitrary Code Execution (ACE). The attack itself is carried out locally. This means an attacker or victim needs to execute code from the local machine to exploit the vulnerability.&lt;/p&gt;
+&lt;p&gt;The word &lt;strong&gt;Remote&lt;/strong&gt; in the title refers to the location of the attacker. This type of exploit is sometimes referred to as Arbitrary Code Execution (ACE). The attack itself is carried out locally.&lt;/p&gt;
+&lt;p&gt;For example, when the score indicates that the &lt;strong&gt;Attack Vector&lt;/strong&gt; is &lt;strong&gt;Local&lt;/strong&gt; and &lt;strong&gt;User Interaction&lt;/strong&gt; is &lt;strong&gt;Required&lt;/strong&gt;, this could describe an exploit in which an attacker, through social engineering, convinces a victim to download and open a specially crafted file from a website which leads to a local attack on their computer.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="Visual Studio" Type="Tag" Ordinal="20">Visual Studio</vuln:Note>
       <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
@@ -51182,39 +52014,39 @@ Alyssa Milburn and Ke Sun of Intel
     </vuln:Threats>
     <vuln:CVSSScoreSets>
       <vuln:ScoreSet>
-        <vuln:BaseScore>8.4</vuln:BaseScore>
-        <vuln:TemporalScore>7.6</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.0</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11600</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
-        <vuln:BaseScore>8.4</vuln:BaseScore>
-        <vuln:TemporalScore>7.6</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.0</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>12051</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
-        <vuln:BaseScore>8.4</vuln:BaseScore>
-        <vuln:TemporalScore>7.6</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.0</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11935</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
-        <vuln:BaseScore>8.4</vuln:BaseScore>
-        <vuln:TemporalScore>7.6</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.0</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11969</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
-        <vuln:BaseScore>8.4</vuln:BaseScore>
-        <vuln:TemporalScore>7.6</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.0</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>12129</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
-        <vuln:BaseScore>8.4</vuln:BaseScore>
-        <vuln:TemporalScore>7.6</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.0</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>12167</vuln:ProductID>
       </vuln:ScoreSet>
     </vuln:CVSSScoreSets>
@@ -51282,6 +52114,12 @@ Alyssa Milburn and Ke Sun of Intel
     </vuln:Acknowledgments>
     <vuln:RevisionHistory>
       <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2023-04-12T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Updated one or more CVSS scores for the affected products and added an FAQ explaining the vector string settings. This is an informational change only.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2023-04-11T07:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
@@ -51289,7 +52127,7 @@ Alyssa Milburn and Ke Sun of Intel
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="100">
+  <vuln:Vulnerability Ordinal="102">
     <vuln:Title>Visual Studio Spoofing Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -51469,7 +52307,7 @@ Alyssa Milburn and Ke Sun of Intel
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="102">
+  <vuln:Vulnerability Ordinal="104">
     <vuln:Title>Microsoft Edge (Chromium-based) Tampering Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -51550,7 +52388,7 @@ Alyssa Milburn and Ke Sun of Intel
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="103">
+  <vuln:Vulnerability Ordinal="105">
     <vuln:Title>Microsoft Message Queuing Denial of Service Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -52402,7 +53240,7 @@ Alyssa Milburn and Ke Sun of Intel
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="104">
+  <vuln:Vulnerability Ordinal="106">
     <vuln:Title>Microsoft ODBC and OLE DB Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -52541,7 +53379,7 @@ Alyssa Milburn and Ke Sun of Intel
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="106">
+  <vuln:Vulnerability Ordinal="108">
     <vuln:Title>Windows DNS Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -52990,7 +53828,7 @@ Alyssa Milburn and Ke Sun of Intel
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="107">
+  <vuln:Vulnerability Ordinal="109">
     <vuln:Title>Windows DNS Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -53439,7 +54277,7 @@ Alyssa Milburn and Ke Sun of Intel
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="108">
+  <vuln:Vulnerability Ordinal="110">
     <vuln:Title>Windows DNS Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -53888,7 +54726,7 @@ Alyssa Milburn and Ke Sun of Intel
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="110">
+  <vuln:Vulnerability Ordinal="112">
     <vuln:Title>Microsoft Word Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -54013,7 +54851,7 @@ Alyssa Milburn and Ke Sun of Intel
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="111">
+  <vuln:Vulnerability Ordinal="113">
     <vuln:Title>Azure Machine Learning Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
