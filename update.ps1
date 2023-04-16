@@ -1,4 +1,4 @@
-Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process -Force
+if ($PSVersionTable.PSEdition -eq 'Desktop') { Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process -Force }
 Set-PSRepository PSGallery -InstallationPolicy Trusted
 
 $Output = "$($PSScriptRoot)\output"
@@ -6,8 +6,8 @@ Remove-Item $Output -Recurse -Force -ErrorAction SilentlyContinue
 
 $M = Import-Module MsrcSecurityUpdates -RequiredVersion 1.9.6 -PassThru -ErrorAction SilentlyContinue
 if (-not $M) {
-    Install-Module MsrcSecurityUpdates -RequiredVersion 1.9.6 -Force -Scope CurrentUser
-    Import-Module MsrcSecurityUpdates -RequiredVersion 1.9.6 -PassThru -ErrorAction SilentlyContinue
+    $null = Install-Module MsrcSecurityUpdates -RequiredVersion 1.9.6 -Force -Scope CurrentUser
+    $null = Import-Module MsrcSecurityUpdates -RequiredVersion 1.9.6 -PassThru -ErrorAction SilentlyContinue
 }
 
 # Load function
