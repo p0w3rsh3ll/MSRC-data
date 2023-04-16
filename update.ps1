@@ -1,13 +1,22 @@
+[CmdletBinding()]
+Param()
+Begin {}
+Process {}
+End {
 if ($PSVersionTable.PSEdition -eq 'Desktop') { Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process -Force }
 Set-PSRepository PSGallery -InstallationPolicy Trusted
 
-$Output = "$($PSScriptRoot)\output"
+$Output = Join-Path -Path "$($PSScriptRoot)" -ChildPath 'output'
 Remove-Item $Output -Recurse -Force -ErrorAction SilentlyContinue
 
-$M = Import-Module MsrcSecurityUpdates -RequiredVersion 1.9.6 -PassThru -ErrorAction SilentlyContinue
-if (-not $M) {
-    $null = Install-Module MsrcSecurityUpdates -RequiredVersion 1.9.6 -Force -Scope CurrentUser
-    $null = Import-Module MsrcSecurityUpdates -RequiredVersion 1.9.6 -PassThru -ErrorAction SilentlyContinue
+if ($PSVersionTable.Platform -eq 'Unix') {
+ $null = Import-Module (Join-Path -Path "$($PSScriptRoot)" -ChildPath 'MsrcSecurityUpdates\1.9.8\MsrcSecurityUpdates.psd1') -Force
+} else {
+ $M = Import-Module MsrcSecurityUpdates -RequiredVersion 1.9.6 -PassThru -ErrorAction SilentlyContinue
+ if (-not $M) {
+     $null = Install-Module MsrcSecurityUpdates -RequiredVersion 1.9.6 -Force -Scope CurrentUser
+     $null = Import-Module MsrcSecurityUpdates -RequiredVersion 1.9.6 -PassThru -ErrorAction SilentlyContinue
+ }
 }
 
 # Load function
@@ -27,7 +36,11 @@ function Format-XML ([xml]$xml, $indent=2)
 if ($PSVersionTable.PSEdition -eq 'Desktop') {
 . (Join-Path (Split-Path (Get-Module -Name MsrcSecurityUpdates -ListAvailable).Path) -ChildPath 'Private\Get-CVRFID.ps1')
 } else {
-. /home/runner/.local/share/powershell/Modules/MsrcSecurityUpdates/1.9.6/Private/Get-CVRFID.ps1
+ # . /home/runner/.local/share/powershell/Modules/MsrcSecurityUpdates/1.9.6/Private/Get-CVRFID.ps1
+ $global:msrcApiUrl     = 'https://api.msrc.microsoft.com/cvrf/v2.0'
+ $global:msrcApiVersion = 'api-version=2016-08-01'
+ # . "/home/$env:USER/.local/share/powershell/Modules/msrcsecurityupdates/1.9.6/Private/Get-CVRFID.ps1"
+ . (Join-Path -Path "$($PSScriptRoot)" -ChildPath 'MsrcSecurityUpdates/1.9.8/Private/Get-CVRFID.ps1')
 }
 
 if (-not(Test-Path -Path $Output -PathType Container)) {
@@ -72,4 +85,5 @@ if ($RepoVer) {
 } else {
  'Need to add {0} version {1}' -f $cvrfID,$OnlineVer
   exit 0
+}
 }
