@@ -24,7 +24,11 @@ function Format-XML ([xml]$xml, $indent=2)
 }
 
 # dot source private function
+if ($PSVersionTable.PSEdition -eq 'Desktop') {
 . (Join-Path (Split-Path (Get-Module -Name MsrcSecurityUpdates -ListAvailable).Path) -ChildPath 'Private\Get-CVRFID.ps1')
+} else {
+. /home/runner/.local/share/powershell/Modules/MsrcSecurityUpdates/1.9.6/Private/Get-CVRFID.ps1
+}
 
 if (-not(Test-Path -Path $Output -PathType Container)) {
  $null = mkdir $Output
