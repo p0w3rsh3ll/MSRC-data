@@ -60,9 +60,12 @@ if (Test-Path -Path "$($PSScriptRoot)\2023\xml-cvrf-document\cvrfDocument-$($cvr
 if ($RepoVer) {
     if ($OnlineVer -gt $RepoVer) {
         'Update required, online version: {0}, repo version: {1}' -f $OnlineVer,$RepoVer
+        exit 0
     } else {
         'No update required, online version: {0}, repo version: {1}' -f $OnlineVer,$RepoVer
+        exit 0
     }
 } else {
  'Need to add {0} version {1}' -f $cvrfID,$OnlineVer
+  exit 0
 }
