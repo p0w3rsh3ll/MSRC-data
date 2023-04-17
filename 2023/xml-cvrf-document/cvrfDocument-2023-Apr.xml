@@ -15,7 +15,7 @@
     <cvrf:Version>1.0</cvrf:Version>
     <cvrf:RevisionHistory>
       <cvrf:Revision>
-        <cvrf:Number>4</cvrf:Number>
+        <cvrf:Number>8</cvrf:Number>
         <cvrf:Date>2023-04-12T07:00:00</cvrf:Date>
         <cvrf:Description>April 2023 Security Updates</cvrf:Description>
       </cvrf:Revision>
@@ -513,7 +513,7 @@
     <prod:FullProductName ProductID="9318">Windows Server 2008 for x64-based Systems Service Pack 2</prod:FullProductName>
     <prod:FullProductName ProductID="9344">Windows Server 2008 for x64-based Systems Service Pack 2 (Server Core installation)</prod:FullProductName>
   </prod:ProductTree>
-  <vuln:Vulnerability Ordinal="0">
+  <vuln:Vulnerability Ordinal="2">
     <vuln:Title>Open Source Curl Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2022-43552</vuln:Note>
@@ -1108,6 +1108,1197 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
         <cvrf:Number>2.0</cvrf:Number>
         <cvrf:Date>2023-04-11T07:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Microsoft is announcing the availability of the April 2023 security updates to address this vulnerability for all supported versions of Windows 10 version 1809, Windows 10 version 20H2, Windows 10 version 21H2, Windows 10 version 22H2, Windows 11 version 21H2, Windows 11 version 22H2, Windows Server 2019, and Windows Server 2022. Microsoft strongly recommends that customers install the April 2023 updates to be fully protected from this vulnerability. Customers whose systems are configured to receive automatic updates do not need to take any further action.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="3">
+    <vuln:Title />
+    <vuln:Notes>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2023-1079</vuln:Note>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="secalert@redhat.com" Type="CNA" Ordinal="30">secalert@redhat.com</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2023-1079</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>6.8</vuln:BaseScore>
+        <vuln:TemporalScore>6.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:P/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H</vuln:Vector>
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>6.8</vuln:BaseScore>
+        <vuln:TemporalScore>6.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:P/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H</vuln:Vector>
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>kernel</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-5.15.102.1-3.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-devel-5.15.102.1-3.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-drivers-accessibility-5.15.102.1-3.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-drivers-gpu-5.15.102.1-3.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-drivers-sound-5.15.102.1-3.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-docs-5.15.102.1-3.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-tools-5.15.102.1-3.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>python3-perf-5.15.102.1-3.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>bpftool-5.15.102.1-3.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-debuginfo-5.15.102.1-3.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>5.15.102.1-3</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>kernel</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12140</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-5.15.102.1-3.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-devel-5.15.102.1-3.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-drivers-accessibility-5.15.102.1-3.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-drivers-gpu-5.15.102.1-3.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-drivers-sound-5.15.102.1-3.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-docs-5.15.102.1-3.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-tools-5.15.102.1-3.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>python3-perf-5.15.102.1-3.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-dtb-5.15.102.1-3.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>bpftool-5.15.102.1-3.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-debuginfo-5.15.102.1-3.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>5.15.102.1-3</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2023-04-01T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="10">
+    <vuln:Title />
+    <vuln:Notes>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2023-28448</vuln:Note>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="security-advisories@github.com" Type="CNA" Ordinal="30">security-advisories@github.com</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2023-28448</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>7.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>7.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>cloud-hypervisor</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>cloud-hypervisor-30.0-2.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>30.0-2</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>cloud-hypervisor</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12140</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>30.0-2</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2023-04-03T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="8">
+    <vuln:Title />
+    <vuln:Notes>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2023-27536</vuln:Note>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="support@hackerone.com" Type="CNA" Ordinal="30">support@hackerone.com</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2023-27536</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>9.8</vuln:BaseScore>
+        <vuln:TemporalScore>9.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H</vuln:Vector>
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>9.8</vuln:BaseScore>
+        <vuln:TemporalScore>9.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H</vuln:Vector>
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>curl</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>curl-8.0.1-1.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>curl-devel-8.0.1-1.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>curl-libs-8.0.1-1.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>curl-debuginfo-8.0.1-1.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>8.0.1-1</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>curl</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12140</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>curl-8.0.1-1.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>curl-devel-8.0.1-1.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>curl-libs-8.0.1-1.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>curl-debuginfo-8.0.1-1.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>8.0.1-1</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2023-04-03T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="7">
+    <vuln:Title />
+    <vuln:Notes>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2023-27535</vuln:Note>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="support@hackerone.com" Type="CNA" Ordinal="30">support@hackerone.com</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2023-27535</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>7.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N</vuln:Vector>
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>7.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N</vuln:Vector>
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>curl</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>curl-8.0.1-1.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>curl-devel-8.0.1-1.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>curl-libs-8.0.1-1.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>curl-debuginfo-8.0.1-1.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>8.0.1-1</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>curl</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12140</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>curl-8.0.1-1.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>curl-devel-8.0.1-1.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>curl-libs-8.0.1-1.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>curl-debuginfo-8.0.1-1.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>8.0.1-1</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2023-04-03T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="6">
+    <vuln:Title />
+    <vuln:Notes>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2023-27534</vuln:Note>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="support@hackerone.com" Type="CNA" Ordinal="30">support@hackerone.com</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2023-27534</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H</vuln:Vector>
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H</vuln:Vector>
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>curl</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>curl-8.0.1-1.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>curl-devel-8.0.1-1.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>curl-libs-8.0.1-1.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>curl-debuginfo-8.0.1-1.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>8.0.1-1</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>curl</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12140</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>curl-8.0.1-1.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>curl-devel-8.0.1-1.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>curl-libs-8.0.1-1.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>curl-debuginfo-8.0.1-1.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>8.0.1-1</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2023-04-03T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="9">
+    <vuln:Title />
+    <vuln:Notes>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2023-27538</vuln:Note>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="support@hackerone.com" Type="CNA" Ordinal="30">support@hackerone.com</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2023-27538</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.5</vuln:BaseScore>
+        <vuln:TemporalScore>5.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N</vuln:Vector>
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.5</vuln:BaseScore>
+        <vuln:TemporalScore>5.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N</vuln:Vector>
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>curl</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>curl-8.0.1-1.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>curl-devel-8.0.1-1.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>curl-libs-8.0.1-1.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>curl-debuginfo-8.0.1-1.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>8.0.1-1</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>curl</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12140</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>curl-8.0.1-1.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>curl-devel-8.0.1-1.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>curl-libs-8.0.1-1.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>curl-debuginfo-8.0.1-1.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>8.0.1-1</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2023-04-03T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="0">
+    <vuln:Title />
+    <vuln:Notes>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2022-25882</vuln:Note>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="report@snyk.io" Type="CNA" Ordinal="30">report@snyk.io</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2022-25882</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>7.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N</vuln:Vector>
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>7.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N</vuln:Vector>
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>pytorch</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>python3-pytorch-2.0.0-1.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>python3-pytorch-doc-2.0.0-1.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>pytorch-debuginfo-2.0.0-1.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>2.0.0-1</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>pytorch</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12140</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>python3-pytorch-2.0.0-1.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>python3-pytorch-doc-2.0.0-1.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>pytorch-debuginfo-2.0.0-1.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>2.0.0-1</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2023-04-03T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="5">
+    <vuln:Title />
+    <vuln:Notes>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2023-27533</vuln:Note>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="support@hackerone.com" Type="CNA" Ordinal="30">support@hackerone.com</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2023-27533</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H</vuln:Vector>
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>8.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H</vuln:Vector>
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>curl</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>curl-8.0.1-1.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>curl-devel-8.0.1-1.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>curl-libs-8.0.1-1.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>curl-debuginfo-8.0.1-1.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>8.0.1-1</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>curl</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12140</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>curl-8.0.1-1.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>curl-devel-8.0.1-1.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>curl-libs-8.0.1-1.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>curl-debuginfo-8.0.1-1.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>8.0.1-1</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2023-04-04T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="4">
+    <vuln:Title />
+    <vuln:Notes>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2023-1513</vuln:Note>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="secalert@redhat.com" Type="CNA" Ordinal="30">secalert@redhat.com</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2023-1513</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>3.3</vuln:BaseScore>
+        <vuln:TemporalScore>3.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N</vuln:Vector>
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>3.3</vuln:BaseScore>
+        <vuln:TemporalScore>3.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N</vuln:Vector>
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>kernel</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-5.15.102.1-3.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-devel-5.15.102.1-3.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-drivers-accessibility-5.15.102.1-3.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-drivers-gpu-5.15.102.1-3.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-drivers-sound-5.15.102.1-3.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-docs-5.15.102.1-3.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-tools-5.15.102.1-3.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>python3-perf-5.15.102.1-3.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>bpftool-5.15.102.1-3.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-debuginfo-5.15.102.1-3.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>5.15.102.1-3</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>kernel</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12140</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-5.15.102.1-3.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-devel-5.15.102.1-3.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-drivers-accessibility-5.15.102.1-3.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-drivers-gpu-5.15.102.1-3.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-drivers-sound-5.15.102.1-3.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-docs-5.15.102.1-3.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-tools-5.15.102.1-3.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>python3-perf-5.15.102.1-3.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-dtb-5.15.102.1-3.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>bpftool-5.15.102.1-3.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-debuginfo-5.15.102.1-3.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>5.15.102.1-3</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2023-04-05T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="1">
+    <vuln:Title />
+    <vuln:Notes>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2022-41723</vuln:Note>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="security@golang.org" Type="CNA" Ordinal="30">security@golang.org</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2022-41723</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>7.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>7.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>telegraf</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>telegraf-1.26.0-2.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>telegraf-debuginfo-1.26.0-2.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>1.26.0-2</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>telegraf</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12140</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>telegraf-1.26.0-2.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>telegraf-debuginfo-1.26.0-2.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>1.26.0-2</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2023-04-05T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
     </vuln:RevisionHistory>
