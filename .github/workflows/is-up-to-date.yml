@@ -1,0 +1,14 @@
+name: is-up-to-date
+on: [workflow_dispatch,schedule]
+ schedule:
+  - cron: '0 8 * * *'
+
+jobs:
+    build:
+      name: Update
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v1
+        - name: Update
+          run: ./update.ps1
+          shell: pwsh
