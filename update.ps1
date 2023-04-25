@@ -80,10 +80,18 @@ if ($RepoVer) {
         exit 1
     } else {
         'No update required, online version: {0}, repo version: {1}' -f $OnlineVer,$RepoVer
-        exit 0
+        # exit 0
     }
 } else {
  'Need to add {0} version {1}' -f $cvrfID,$OnlineVer
   exit 1
 }
+
+# Testing the count of vulnerability
+$RepoCVECount = (([xml](Get-Content -Path "$($PSScriptRoot)\2023\xml-cvrf-document\cvrfDocument-$($cvrfID).xml")).cvrfdoc.Vulnerability.CVE).Count
+if ($RepoCVECount -lt ($cvrfDocumentXML.cvrfdoc.Vulnerability.CVE).Count) {
+        'Update required, online CVE count: {0}, repo count: {1}' -f "$(($cvrfDocumentXML.cvrfdoc.Vulnerability.CVE).Count)",$RepoCVECount
+        exit 1
+}
+
 }
