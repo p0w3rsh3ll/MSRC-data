@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <cvrf:cvrfdoc xmlns:cpe-lang="http://cpe.mitre.org/language/2.0" xmlns:scap-core="https://scap.nist.gov/schema/scap-core/1.0" xmlns:cvrf-common="http://www.icasi.org/CVRF/schema/common/1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:prod="http://www.icasi.org/CVRF/schema/prod/1.1" xmlns:cvssv2="https://scap.nist.gov/schema/cvss-v2/1.0" xmlns:vuln="http://www.icasi.org/CVRF/schema/vuln/1.1" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:cvrf="http://www.icasi.org/CVRF/schema/cvrf/1.1">
   <cvrf:DocumentTitle>April 2023 Security Updates</cvrf:DocumentTitle>
   <cvrf:DocumentType>Security Update</cvrf:DocumentType>
@@ -15,13 +15,13 @@
     <cvrf:Version>1.0</cvrf:Version>
     <cvrf:RevisionHistory>
       <cvrf:Revision>
-        <cvrf:Number>8</cvrf:Number>
-        <cvrf:Date>2023-04-12T07:00:00</cvrf:Date>
+        <cvrf:Number>9</cvrf:Number>
+        <cvrf:Date>2023-04-18T00:00:00</cvrf:Date>
         <cvrf:Description>April 2023 Security Updates</cvrf:Description>
       </cvrf:Revision>
     </cvrf:RevisionHistory>
     <cvrf:InitialReleaseDate>2023-04-11T07:00:00</cvrf:InitialReleaseDate>
-    <cvrf:CurrentReleaseDate>2023-04-12T07:00:00</cvrf:CurrentReleaseDate>
+    <cvrf:CurrentReleaseDate>2023-04-18T00:00:00</cvrf:CurrentReleaseDate>
   </cvrf:DocumentTracking>
   <cvrf:DocumentNotes>
     <cvrf:Note Title="Release Notes" Audience="Public" Type="Details" Ordinal="0">&lt;h2&gt;Updates this Month&lt;/h2&gt;
@@ -400,7 +400,14 @@
         <prod:FullProductName ProductID="11600">Microsoft Visual Studio 2017 version 15.9 (includes 15.0 - 15.8)</prod:FullProductName>
       </prod:Branch>
       <prod:Branch Type="Product Family" Name="System Center">
+        <prod:FullProductName ProductID="12183">Microsoft Malware Protection Platform</prod:FullProductName>
         <prod:FullProductName ProductID="11902">Microsoft Malware Protection Engine</prod:FullProductName>
+      </prod:Branch>
+      <prod:Branch Type="Product Family" Name="Mariner">
+        <prod:FullProductName ProductID="12139">CBL Mariner 2.0 x64</prod:FullProductName>
+        <prod:FullProductName ProductID="12140">CBL Mariner 2.0 ARM</prod:FullProductName>
+        <prod:FullProductName ProductID="12137">CBL Mariner 1.0 x64</prod:FullProductName>
+        <prod:FullProductName ProductID="12138">CBL Mariner 1.0 ARM</prod:FullProductName>
       </prod:Branch>
     </prod:Branch>
     <prod:FullProductName ProductID="10049">Windows Server 2008 R2 for x64-based Systems Service Pack 1 (Server Core installation)</prod:FullProductName>
@@ -496,6 +503,8 @@
     <prod:FullProductName ProductID="12129">Microsoft Visual Studio 2022 version 17.4</prod:FullProductName>
     <prod:FullProductName ProductID="12130">.NET 7.0</prod:FullProductName>
     <prod:FullProductName ProductID="12131">PowerShell 7.3</prod:FullProductName>
+    <prod:FullProductName ProductID="12137">CBL Mariner 1.0 x64</prod:FullProductName>
+    <prod:FullProductName ProductID="12138">CBL Mariner 1.0 ARM</prod:FullProductName>
     <prod:FullProductName ProductID="12139">CBL Mariner 2.0 x64</prod:FullProductName>
     <prod:FullProductName ProductID="12140">CBL Mariner 2.0 ARM</prod:FullProductName>
     <prod:FullProductName ProductID="12145">Microsoft SQL Server 2017 for x64-based Systems (CU 31)</prod:FullProductName>
@@ -509,11 +518,12 @@
     <prod:FullProductName ProductID="12179">Microsoft ODBC Driver 17 for SQL Server</prod:FullProductName>
     <prod:FullProductName ProductID="12180">Microsoft OLE DB Driver 19 for SQL Server</prod:FullProductName>
     <prod:FullProductName ProductID="12181">Microsoft OLE DB Driver 18 for SQL Server</prod:FullProductName>
+    <prod:FullProductName ProductID="12183">Microsoft Malware Protection Platform</prod:FullProductName>
     <prod:FullProductName ProductID="9312">Windows Server 2008 for 32-bit Systems Service Pack 2</prod:FullProductName>
     <prod:FullProductName ProductID="9318">Windows Server 2008 for x64-based Systems Service Pack 2</prod:FullProductName>
     <prod:FullProductName ProductID="9344">Windows Server 2008 for x64-based Systems Service Pack 2 (Server Core installation)</prod:FullProductName>
   </prod:ProductTree>
-  <vuln:Vulnerability Ordinal="2">
+  <vuln:Vulnerability Ordinal="3">
     <vuln:Title>Open Source Curl Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2022-43552</vuln:Note>
@@ -1112,7 +1122,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="3">
+  <vuln:Vulnerability Ordinal="6">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2023-1079</vuln:Note>
@@ -1125,6 +1135,8 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       <vuln:Status Type="Known Affected">
         <vuln:ProductID>12139</vuln:ProductID>
         <vuln:ProductID>12140</vuln:ProductID>
+        <vuln:ProductID>12137</vuln:ProductID>
+        <vuln:ProductID>12138</vuln:ProductID>
       </vuln:Status>
     </vuln:ProductStatuses>
     <vuln:Threats>
@@ -1136,6 +1148,14 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
         <vuln:Description />
         <vuln:ProductID>12140</vuln:ProductID>
       </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12137</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12138</vuln:ProductID>
+      </vuln:Threat>
       <vuln:Threat Type="Severity">
         <vuln:Description />
         <vuln:ProductID>12139</vuln:ProductID>
@@ -1143,6 +1163,14 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       <vuln:Threat Type="Severity">
         <vuln:Description />
         <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12137</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12138</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Exploit Status">
         <vuln:Description>DOS:N/A</vuln:Description>
@@ -1160,6 +1188,18 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
         <vuln:TemporalScore>6.8</vuln:TemporalScore>
         <vuln:Vector>CVSS:3.1/AV:P/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H</vuln:Vector>
         <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>6.8</vuln:BaseScore>
+        <vuln:TemporalScore>6.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:P/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H</vuln:Vector>
+        <vuln:ProductID>12137</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>6.8</vuln:BaseScore>
+        <vuln:TemporalScore>6.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:P/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H</vuln:Vector>
+        <vuln:ProductID>12138</vuln:ProductID>
       </vuln:ScoreSet>
     </vuln:CVSSScoreSets>
     <vuln:Remediations>
@@ -1267,6 +1307,98 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
         <vuln:SubType>CBL-Mariner</vuln:SubType>
         <vuln:FixedBuild>5.15.102.1-3</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>kernel</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12137</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-5.10.174.1-1.cm1.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-devel-5.10.174.1-1.cm1.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-drivers-accessibility-5.10.174.1-1.cm1.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-drivers-sound-5.10.174.1-1.cm1.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-docs-5.10.174.1-1.cm1.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-oprofile-5.10.174.1-1.cm1.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-tools-5.10.174.1-1.cm1.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>bpftool-5.10.174.1-1.cm1.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-debuginfo-5.10.174.1-1.cm1.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>5.10.174.1-1</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>kernel</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12138</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-5.10.174.1-1.cm1.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-devel-5.10.174.1-1.cm1.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-drivers-accessibility-5.10.174.1-1.cm1.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-drivers-sound-5.10.174.1-1.cm1.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-docs-5.10.174.1-1.cm1.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-tools-5.10.174.1-1.cm1.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-dtb-5.10.174.1-1.cm1.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>bpftool-5.10.174.1-1.cm1.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-debuginfo-5.10.174.1-1.cm1.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>5.10.174.1-1</vuln:FixedBuild>
+      </vuln:Remediation>
     </vuln:Remediations>
     <vuln:Acknowledgments />
     <vuln:RevisionHistory>
@@ -1278,7 +1410,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="10">
+  <vuln:Vulnerability Ordinal="14">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2023-28448</vuln:Note>
@@ -1291,6 +1423,8 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       <vuln:Status Type="Known Affected">
         <vuln:ProductID>12139</vuln:ProductID>
         <vuln:ProductID>12140</vuln:ProductID>
+        <vuln:ProductID>12137</vuln:ProductID>
+        <vuln:ProductID>12138</vuln:ProductID>
       </vuln:Status>
     </vuln:ProductStatuses>
     <vuln:Threats>
@@ -1302,6 +1436,14 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
         <vuln:Description />
         <vuln:ProductID>12140</vuln:ProductID>
       </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12137</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12138</vuln:ProductID>
+      </vuln:Threat>
       <vuln:Threat Type="Severity">
         <vuln:Description />
         <vuln:ProductID>12139</vuln:ProductID>
@@ -1309,6 +1451,14 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       <vuln:Threat Type="Severity">
         <vuln:Description />
         <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12137</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12138</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Exploit Status">
         <vuln:Description>DOS:N/A</vuln:Description>
@@ -1326,6 +1476,18 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
         <vuln:TemporalScore>7.5</vuln:TemporalScore>
         <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
         <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>7.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>12137</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>7.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>12138</vuln:ProductID>
       </vuln:ScoreSet>
     </vuln:CVSSScoreSets>
     <vuln:Remediations>
@@ -1352,6 +1514,33 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
         <vuln:SubType>CBL-Mariner</vuln:SubType>
         <vuln:FixedBuild>30.0-2</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>cloud-hypervisor</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12137</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>cloud-hypervisor-22.0-2.cm1.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>cloud-hypervisor-debuginfo-22.0-2.cm1.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>22.0-2</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>cloud-hypervisor</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12138</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>22.0-2</vuln:FixedBuild>
+      </vuln:Remediation>
     </vuln:Remediations>
     <vuln:Acknowledgments />
     <vuln:RevisionHistory>
@@ -1363,7 +1552,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="8">
+  <vuln:Vulnerability Ordinal="12">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2023-27536</vuln:Note>
@@ -1477,7 +1666,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="7">
+  <vuln:Vulnerability Ordinal="11">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2023-27535</vuln:Note>
@@ -1591,7 +1780,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="6">
+  <vuln:Vulnerability Ordinal="10">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2023-27534</vuln:Note>
@@ -1705,7 +1894,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="9">
+  <vuln:Vulnerability Ordinal="13">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2023-27538</vuln:Note>
@@ -1819,7 +2008,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="0">
+  <vuln:Vulnerability Ordinal="1">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2022-25882</vuln:Note>
@@ -1925,7 +2114,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="5">
+  <vuln:Vulnerability Ordinal="9">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2023-27533</vuln:Note>
@@ -2039,7 +2228,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="4">
+  <vuln:Vulnerability Ordinal="7">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2023-1513</vuln:Note>
@@ -2052,6 +2241,8 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       <vuln:Status Type="Known Affected">
         <vuln:ProductID>12139</vuln:ProductID>
         <vuln:ProductID>12140</vuln:ProductID>
+        <vuln:ProductID>12137</vuln:ProductID>
+        <vuln:ProductID>12138</vuln:ProductID>
       </vuln:Status>
     </vuln:ProductStatuses>
     <vuln:Threats>
@@ -2063,6 +2254,14 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
         <vuln:Description />
         <vuln:ProductID>12140</vuln:ProductID>
       </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12137</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12138</vuln:ProductID>
+      </vuln:Threat>
       <vuln:Threat Type="Severity">
         <vuln:Description />
         <vuln:ProductID>12139</vuln:ProductID>
@@ -2070,6 +2269,14 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       <vuln:Threat Type="Severity">
         <vuln:Description />
         <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12137</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12138</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Exploit Status">
         <vuln:Description>DOS:N/A</vuln:Description>
@@ -2087,6 +2294,18 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
         <vuln:TemporalScore>3.3</vuln:TemporalScore>
         <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N</vuln:Vector>
         <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>3.3</vuln:BaseScore>
+        <vuln:TemporalScore>3.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N</vuln:Vector>
+        <vuln:ProductID>12137</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>3.3</vuln:BaseScore>
+        <vuln:TemporalScore>3.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N</vuln:Vector>
+        <vuln:ProductID>12138</vuln:ProductID>
       </vuln:ScoreSet>
     </vuln:CVSSScoreSets>
     <vuln:Remediations>
@@ -2194,6 +2413,98 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
         <vuln:SubType>CBL-Mariner</vuln:SubType>
         <vuln:FixedBuild>5.15.102.1-3</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>kernel</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12137</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-5.10.174.1-1.cm1.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-devel-5.10.174.1-1.cm1.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-drivers-accessibility-5.10.174.1-1.cm1.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-drivers-sound-5.10.174.1-1.cm1.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-docs-5.10.174.1-1.cm1.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-oprofile-5.10.174.1-1.cm1.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-tools-5.10.174.1-1.cm1.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>bpftool-5.10.174.1-1.cm1.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-debuginfo-5.10.174.1-1.cm1.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>5.10.174.1-1</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>kernel</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12138</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-5.10.174.1-1.cm1.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-devel-5.10.174.1-1.cm1.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-drivers-accessibility-5.10.174.1-1.cm1.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-drivers-sound-5.10.174.1-1.cm1.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-docs-5.10.174.1-1.cm1.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-tools-5.10.174.1-1.cm1.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-dtb-5.10.174.1-1.cm1.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>bpftool-5.10.174.1-1.cm1.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-debuginfo-5.10.174.1-1.cm1.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>5.10.174.1-1</vuln:FixedBuild>
+      </vuln:Remediation>
     </vuln:Remediations>
     <vuln:Acknowledgments />
     <vuln:RevisionHistory>
@@ -2203,9 +2514,15 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2023-04-04T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="1">
+  <vuln:Vulnerability Ordinal="2">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2022-41723</vuln:Note>
@@ -2303,7 +2620,569 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="15">
+    <vuln:Title />
+    <vuln:Notes>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2023-28642</vuln:Note>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="security-advisories@github.com" Type="CNA" Ordinal="30">security-advisories@github.com</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2023-28642</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>12137</vuln:ProductID>
+        <vuln:ProductID>12138</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12137</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12138</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12137</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12138</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H</vuln:Vector>
+        <vuln:ProductID>12137</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H</vuln:Vector>
+        <vuln:ProductID>12138</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>moby-runc</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12137</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>moby-runc-1.1.5+azure-1.cm1.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>moby-runc-debuginfo-1.1.5+azure-1.cm1.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>1.1.5+azure-1</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>moby-runc</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12138</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>moby-runc-1.1.5+azure-1.cm1.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>moby-runc-debuginfo-1.1.5+azure-1.cm1.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>1.1.5+azure-1</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2023-04-03T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="8">
+    <vuln:Title />
+    <vuln:Notes>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2023-25809</vuln:Note>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="security-advisories@github.com" Type="CNA" Ordinal="30">security-advisories@github.com</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2023-25809</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>12137</vuln:ProductID>
+        <vuln:ProductID>12138</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12137</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12138</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12137</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12138</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>6.3</vuln:BaseScore>
+        <vuln:TemporalScore>6.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:L</vuln:Vector>
+        <vuln:ProductID>12137</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>6.3</vuln:BaseScore>
+        <vuln:TemporalScore>6.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:L</vuln:Vector>
+        <vuln:ProductID>12138</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>moby-runc</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12137</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>moby-runc-1.1.5+azure-1.cm1.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>moby-runc-debuginfo-1.1.5+azure-1.cm1.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>1.1.5+azure-1</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>moby-runc</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12138</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>moby-runc-1.1.5+azure-1.cm1.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>moby-runc-debuginfo-1.1.5+azure-1.cm1.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>1.1.5+azure-1</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2023-04-03T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="5">
+    <vuln:Title />
+    <vuln:Notes>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2023-0466</vuln:Note>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="openssl-security@openssl.org" Type="CNA" Ordinal="30">openssl-security@openssl.org</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2023-0466</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>12137</vuln:ProductID>
+        <vuln:ProductID>12138</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12137</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12138</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12137</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12138</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.3</vuln:BaseScore>
+        <vuln:TemporalScore>5.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N</vuln:Vector>
+        <vuln:ProductID>12137</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.3</vuln:BaseScore>
+        <vuln:TemporalScore>5.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N</vuln:Vector>
+        <vuln:ProductID>12138</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>openssl</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12137</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>openssl-1.1.1k-15.cm1.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openssl-libs-1.1.1k-15.cm1.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openssl-devel-1.1.1k-15.cm1.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openssl-static-1.1.1k-15.cm1.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openssl-perl-1.1.1k-15.cm1.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openssl-debuginfo-1.1.1k-15.cm1.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>1.1.1k-15</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>openssl</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12138</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>openssl-1.1.1k-15.cm1.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openssl-libs-1.1.1k-15.cm1.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openssl-devel-1.1.1k-15.cm1.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openssl-static-1.1.1k-15.cm1.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openssl-perl-1.1.1k-15.cm1.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openssl-debuginfo-1.1.1k-15.cm1.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>1.1.1k-15</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2023-04-05T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="4">
+    <vuln:Title />
+    <vuln:Notes>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2023-0465</vuln:Note>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="openssl-security@openssl.org" Type="CNA" Ordinal="30">openssl-security@openssl.org</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2023-0465</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>12137</vuln:ProductID>
+        <vuln:ProductID>12138</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12137</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12138</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12137</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12138</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.3</vuln:BaseScore>
+        <vuln:TemporalScore>5.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N</vuln:Vector>
+        <vuln:ProductID>12137</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.3</vuln:BaseScore>
+        <vuln:TemporalScore>5.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N</vuln:Vector>
+        <vuln:ProductID>12138</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>openssl</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12137</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>openssl-1.1.1k-15.cm1.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openssl-libs-1.1.1k-15.cm1.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openssl-devel-1.1.1k-15.cm1.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openssl-static-1.1.1k-15.cm1.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openssl-perl-1.1.1k-15.cm1.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openssl-debuginfo-1.1.1k-15.cm1.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>1.1.1k-15</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>openssl</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12138</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>openssl-1.1.1k-15.cm1.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openssl-libs-1.1.1k-15.cm1.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openssl-devel-1.1.1k-15.cm1.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openssl-static-1.1.1k-15.cm1.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openssl-perl-1.1.1k-15.cm1.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openssl-debuginfo-1.1.1k-15.cm1.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>1.1.1k-15</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2023-04-05T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
   <vuln:Vulnerability Ordinal="0">
+    <vuln:Title />
+    <vuln:Notes>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2021-28235</vuln:Note>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="cve@mitre.org" Type="CNA" Ordinal="30">cve@mitre.org</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2021-28235</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>9.8</vuln:BaseScore>
+        <vuln:TemporalScore>9.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H</vuln:Vector>
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>9.8</vuln:BaseScore>
+        <vuln:TemporalScore>9.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H</vuln:Vector>
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>etcd</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>etcd-3.5.5-2.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>etcd-tools-3.5.5-2.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>etcd-debuginfo-3.5.5-2.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>3.5.4-6</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>etcd</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12140</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>etcd-3.5.5-2.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>etcd-tools-3.5.5-2.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>etcd-debuginfo-3.5.5-2.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>3.5.4-6</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2023-04-18T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="4">
     <vuln:Title>Chromium: CVE-2023-1810 Heap buffer overflow in Visuals</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -2379,7 +3258,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="1">
+  <vuln:Vulnerability Ordinal="5">
     <vuln:Title>Chromium: CVE-2023-1811 Use after free in Frames</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -2455,7 +3334,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="2">
+  <vuln:Vulnerability Ordinal="6">
     <vuln:Title>Chromium: CVE-2023-1812 Out of bounds memory access in DOM Bindings</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -2531,7 +3410,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="3">
+  <vuln:Vulnerability Ordinal="7">
     <vuln:Title>Chromium: CVE-2023-1813 Inappropriate implementation in Extensions</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -2607,7 +3486,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="4">
+  <vuln:Vulnerability Ordinal="8">
     <vuln:Title>Chromium: CVE-2023-1814 Insufficient validation of untrusted input in Safe Browsing</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -2683,7 +3562,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="5">
+  <vuln:Vulnerability Ordinal="9">
     <vuln:Title>Chromium: CVE-2023-1815 Use after free in Networking APIs</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -2759,7 +3638,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="6">
+  <vuln:Vulnerability Ordinal="10">
     <vuln:Title>Chromium: CVE-2023-1816 Incorrect security UI in Picture In Picture</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -2835,7 +3714,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="7">
+  <vuln:Vulnerability Ordinal="11">
     <vuln:Title>Chromium: CVE-2023-1817 Insufficient policy enforcement in Intents</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -2911,7 +3790,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="8">
+  <vuln:Vulnerability Ordinal="12">
     <vuln:Title>Chromium: CVE-2023-1818 Use after free in Vulkan</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -2987,7 +3866,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="9">
+  <vuln:Vulnerability Ordinal="13">
     <vuln:Title>Chromium: CVE-2023-1819 Out of bounds read in Accessibility</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -3063,7 +3942,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="10">
+  <vuln:Vulnerability Ordinal="14">
     <vuln:Title>Chromium: CVE-2023-1820 Heap buffer overflow in Browser History</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -3139,7 +4018,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="11">
+  <vuln:Vulnerability Ordinal="15">
     <vuln:Title>Chromium: CVE-2023-1821 Inappropriate implementation in WebShare</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -3215,7 +4094,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="12">
+  <vuln:Vulnerability Ordinal="16">
     <vuln:Title>Chromium: CVE-2023-1822 Incorrect security UI in Navigation</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -3291,7 +4170,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="13">
+  <vuln:Vulnerability Ordinal="17">
     <vuln:Title>Chromium: CVE-2023-1823 Inappropriate implementation in FedCM</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -3367,7 +4246,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="14">
+  <vuln:Vulnerability Ordinal="18">
     <vuln:Title>Chromium: CVE-2023-2033 Type Confusion in V8</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -3444,7 +4323,388 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="16">
+  <vuln:Vulnerability Ordinal="19">
+    <vuln:Title>Chromium: CVE-2023-2133 Out of bounds memory access in Service Worker API</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based).  It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.  Please see &lt;a href="https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/"&gt;Security Update Guide Supports CVEs Assigned by Industry Partners&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;112.0.1722.58&lt;/td&gt;
+&lt;td&gt;4/21/2023&lt;/td&gt;
+&lt;td&gt;112.0.5615.137&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2023-2133</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>112.0.1722.58</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2023-04-20T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="20">
+    <vuln:Title>Chromium: CVE-2023-2134 Out of bounds memory access in Service Worker API</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based).  It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.  Please see &lt;a href="https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/"&gt;Security Update Guide Supports CVEs Assigned by Industry Partners&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;112.0.1722.58&lt;/td&gt;
+&lt;td&gt;4/21/2023&lt;/td&gt;
+&lt;td&gt;112.0.5615.137&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2023-2134</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>112.0.1722.58</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2023-04-20T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="21">
+    <vuln:Title>Chromium: CVE-2023-2135 Use after free in DevTools</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based).  It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.  Please see &lt;a href="https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/"&gt;Security Update Guide Supports CVEs Assigned by Industry Partners&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;112.0.1722.58&lt;/td&gt;
+&lt;td&gt;4/21/2023&lt;/td&gt;
+&lt;td&gt;112.0.5615.137&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2023-2135</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>112.0.1722.58</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2023-04-20T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="22">
+    <vuln:Title>Chromium: CVE-2023-2136 Integer overflow in Skia</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;p&gt;Google is aware that an exploit for CVE-2023-2136 exists in the wild.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based).  It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.  Please see &lt;a href="https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/"&gt;Security Update Guide Supports CVEs Assigned by Industry Partners&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;9112.0.1722.54&lt;/td&gt;
+&lt;td&gt;4/20/2023&lt;/td&gt;
+&lt;td&gt;112.0.5615.137&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2023-2136</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>112.0.1722.54</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2023-04-19T18:29:07</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="23">
+    <vuln:Title>Chromium: CVE-2023-2137 Heap buffer overflow in sqlite</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based).  It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.  Please see &lt;a href="https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/"&gt;Security Update Guide Supports CVEs Assigned by Industry Partners&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;112.0.1722.58&lt;/td&gt;
+&lt;td&gt;4/21/2023&lt;/td&gt;
+&lt;td&gt;112.0.5615.137&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2023-2137</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>112.0.1722.58</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2023-04-20T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="25">
     <vuln:Title>Remote Procedure Call Runtime Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -4301,7 +5561,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="17">
+  <vuln:Vulnerability Ordinal="26">
     <vuln:Title>Remote Procedure Call Runtime Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -5152,7 +6412,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="18">
+  <vuln:Vulnerability Ordinal="27">
     <vuln:Title>Microsoft Message Queuing Denial of Service Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -6000,7 +7260,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="20">
+  <vuln:Vulnerability Ordinal="29">
     <vuln:Title>Microsoft SQL Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -6524,7 +7784,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="29">
+  <vuln:Vulnerability Ordinal="38">
     <vuln:Title>Win32k Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -6614,7 +7874,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="36">
+  <vuln:Vulnerability Ordinal="45">
     <vuln:Title>Windows Secure Channel Denial of Service Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -7359,7 +8619,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="39">
+  <vuln:Vulnerability Ordinal="53">
     <vuln:Title>Windows Advanced Local Procedure Call (ALPC) Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -8213,7 +9473,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="40">
+  <vuln:Vulnerability Ordinal="54">
     <vuln:Title>Windows Network Address Translation (NAT) Denial of Service Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -9067,7 +10327,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="41">
+  <vuln:Vulnerability Ordinal="55">
     <vuln:Title>Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -9921,7 +11181,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="44">
+  <vuln:Vulnerability Ordinal="58">
     <vuln:Title>Windows Error Reporting Service Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -10505,7 +11765,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="45">
+  <vuln:Vulnerability Ordinal="59">
     <vuln:Title>Windows Kernel Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -11363,91 +12623,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="91">
-    <vuln:Title>Microsoft Edge (Chromium-based) Security Feature Bypass Vulnerability</vuln:Title>
-    <vuln:Notes>
-      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
-      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, user interaction is required (UI:R). What interaction would the user have to do?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;In a web-based attack scenario, an attacker could host a website (or leverage a compromised website that accepts or hosts user-provided content) that contains a specially crafted file that is designed to exploit the vulnerability. However, an attacker would have no way to force the user to visit the website. Instead, an attacker would have to convince the user to click a link, typically by way of an enticement in an email or Instant Messenger message, and then convince the user to open the specially crafted file.&lt;/p&gt;
-</vuln:Note>
-      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, successful exploitation of this vulnerability could lead to some loss of integrity (I:L)? What does that mean for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;The attacker is able to bypass the warning message when downloading a potentially malicious file via a malicious website.&lt;/p&gt;
-</vuln:Note>
-      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
-&lt;th&gt;Date Released&lt;/th&gt;
-&lt;th&gt;Based on Chromium Version&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;112.0.1722.34&lt;/td&gt;
-&lt;td&gt;4/6/2023&lt;/td&gt;
-&lt;td&gt;112.0.5615.49/50&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-</vuln:Note>
-      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
-      <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
-    </vuln:Notes>
-    <vuln:CVE>CVE-2023-28284</vuln:CVE>
-    <vuln:ProductStatuses>
-      <vuln:Status Type="Known Affected">
-        <vuln:ProductID>11815</vuln:ProductID>
-      </vuln:Status>
-    </vuln:ProductStatuses>
-    <vuln:Threats>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Security Feature Bypass</vuln:Description>
-        <vuln:ProductID>11815</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Moderate</vuln:Description>
-        <vuln:ProductID>11815</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Exploit Status">
-        <vuln:Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation Less Likely;Older Software Release:Exploitation Less Likely;DOS:N/A</vuln:Description>
-      </vuln:Threat>
-    </vuln:Threats>
-    <vuln:CVSSScoreSets>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>4.3</vuln:BaseScore>
-        <vuln:TemporalScore>3.8</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N/E:U/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>11815</vuln:ProductID>
-      </vuln:ScoreSet>
-    </vuln:CVSSScoreSets>
-    <vuln:Remediations>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>Release Notes</vuln:Description>
-        <vuln:URL />
-        <vuln:ProductID>11815</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:RestartRequired>No</vuln:RestartRequired>
-        <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>112.0.5615.49/50</vuln:FixedBuild>
-      </vuln:Remediation>
-    </vuln:Remediations>
-    <vuln:Acknowledgments>
-      <vuln:Acknowledgment>
-        <vuln:Name>P.Umar Farooq</vuln:Name>
-        <vuln:URL />
-      </vuln:Acknowledgment>
-    </vuln:Acknowledgments>
-    <vuln:RevisionHistory>
-      <vuln:Revision>
-        <cvrf:Number>1.0</cvrf:Number>
-        <cvrf:Date>2023-04-06T07:00:00</cvrf:Date>
-        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
-</cvrf:Description>
-      </vuln:Revision>
-    </vuln:RevisionHistory>
-  </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="92">
+  <vuln:Vulnerability Ordinal="105">
     <vuln:Title>Microsoft Office Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -11586,7 +12762,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="93">
+  <vuln:Vulnerability Ordinal="106">
     <vuln:Title>Microsoft Publisher Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -11857,7 +13033,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="94">
+  <vuln:Vulnerability Ordinal="107">
     <vuln:Title>Microsoft SharePoint Server Spoofing Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -11969,6 +13145,12 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>16.0.5391.1000</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5002385</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5002385</vuln:URL>
+        <vuln:ProductID>10950</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5002381</vuln:Description>
         <vuln:URL>https://www.microsoft.com/downloads/details.aspx?familyid=c485894e-5124-4790-8369-7294ee65ce36</vuln:URL>
@@ -12032,7 +13214,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="95">
+  <vuln:Vulnerability Ordinal="108">
     <vuln:Title>Raw Image Extension Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -12317,7 +13499,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="96">
+  <vuln:Vulnerability Ordinal="109">
     <vuln:Title>Raw Image Extension Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -12599,7 +13781,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="98">
+  <vuln:Vulnerability Ordinal="111">
     <vuln:Title>Microsoft Publisher Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -12870,7 +14052,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="100">
+  <vuln:Vulnerability Ordinal="113">
     <vuln:Title>Windows Remote Procedure Call Service (RPCSS) Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -13565,7 +14747,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="101">
+  <vuln:Vulnerability Ordinal="114">
     <vuln:Title>Windows Kernel Denial of Service Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -14198,6 +15380,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5025224</vuln:URL>
         <vuln:Supercedence>5023698</vuln:Supercedence>
         <vuln:ProductID>11926</vuln:ProductID>
+        <vuln:ProductID>11927</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
@@ -14207,26 +15390,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
         <vuln:Description>5025224</vuln:Description>
         <vuln:URL>https://support.microsoft.com/help/5025224</vuln:URL>
         <vuln:ProductID>11926</vuln:ProductID>
-        <vuln:AffectedFiles />
-      </vuln:Remediation>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>5025239</vuln:Description>
-        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5025239</vuln:URL>
-        <vuln:Supercedence>5023706</vuln:Supercedence>
         <vuln:ProductID>11927</vuln:ProductID>
-        <vuln:ProductID>12085</vuln:ProductID>
-        <vuln:ProductID>12086</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:RestartRequired>Yes</vuln:RestartRequired>
-        <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.22621.1555</vuln:FixedBuild>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Known Issue">
-        <vuln:Description>5025239</vuln:Description>
-        <vuln:URL>https://support.microsoft.com/help/5025239</vuln:URL>
-        <vuln:ProductID>11927</vuln:ProductID>
-        <vuln:ProductID>12085</vuln:ProductID>
-        <vuln:ProductID>12086</vuln:ProductID>
         <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
@@ -14240,6 +15404,24 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.19044.2846</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5025239</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5025239</vuln:URL>
+        <vuln:Supercedence>5023706</vuln:Supercedence>
+        <vuln:ProductID>12085</vuln:ProductID>
+        <vuln:ProductID>12086</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>10.0.22621.1555</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5025239</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5025239</vuln:URL>
+        <vuln:ProductID>12085</vuln:ProductID>
+        <vuln:ProductID>12086</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5025221</vuln:Description>
@@ -14413,7 +15595,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="103">
+  <vuln:Vulnerability Ordinal="116">
     <vuln:Title>Azure Service Connector Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -14480,7 +15662,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="107">
+  <vuln:Vulnerability Ordinal="120">
     <vuln:Title>Windows DNS Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -14929,7 +16111,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="111">
+  <vuln:Vulnerability Ordinal="124">
     <vuln:Title>Microsoft Dynamics 365 (on-premises) Cross-site Scripting Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -15025,7 +16207,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="114">
+  <vuln:Vulnerability Ordinal="127">
     <vuln:Title>Microsoft Dynamics 365 Customer Voice Cross-Site Scripting Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -15041,7 +16223,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, successful exploitation of this vulnerability could lead to some loss of integrity (I:L)? What does that mean for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;The attacker is only able to modify the content of the vulnerable link to redirect the victim to a malicious site.&lt;/p&gt;
 </vuln:Note>
-      <vuln:Note Title="Microsoft Dynamics 365 Customer Voice" Type="Tag" Ordinal="20">Microsoft Dynamics 365 Customer Voice</vuln:Note>
+      <vuln:Note Title="Dynamics 365 Customer Voice" Type="Tag" Ordinal="20">Dynamics 365 Customer Voice</vuln:Note>
       <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
     </vuln:Notes>
     <vuln:CVE>CVE-2023-28313</vuln:CVE>
@@ -15103,7 +16285,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="115">
+  <vuln:Vulnerability Ordinal="128">
     <vuln:Title>Microsoft Dynamics 365 (on-premises) Cross-site Scripting Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -15202,7 +16384,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="27">
+  <vuln:Vulnerability Ordinal="36">
     <vuln:Title>Visual Studio Code Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -15266,12 +16448,60 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="37">
+  <vuln:Vulnerability Ordinal="46">
     <vuln:Title>Microsoft Defender Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What kind of security feature could be bypassed by successfully exploiting this vulnerability?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;An attacker who successfully exploited this vulnerability could bypass the Windows Defender detection with a specially crafted file.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;References&lt;/th&gt;
+&lt;th&gt;Identification&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Last version of the Microsoft Malware Protection Platform affected by this vulnerability&lt;/td&gt;
+&lt;td&gt;Version 4.18.2302.7&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;First version of the Microsoft Malware Protection Platform with this vulnerability addressed&lt;/td&gt;
+&lt;td&gt;Version 4.18.2303.8&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;See &lt;a href="https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus"&gt;Manage Updates Baselines Microsoft Defender Antivirus&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Microsoft Defender is disabled in my environment, why are vulnerability scanners showing that I am vulnerable to this issue?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Vulnerability scanners are looking for specific binaries and version numbers on devices. Microsoft Defender files are still on disk even when disabled. Systems that have disabled Microsoft Defender are not in an exploitable state.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Why is no action required to install this update?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In response to a constantly changing threat landscape, Microsoft frequently updates malware definitions and the Microsoft Malware Protection Platform. In order to be effective in helping protect against new and prevalent threats, antimalware software must be kept up to date with these updates in a timely manner.&lt;/p&gt;
+&lt;p&gt;For enterprise deployments as well as end users, the default configuration in Microsoft antimalware software helps ensure that malware definitions and the Microsoft Malware Protection Platform are kept up to date automatically. Product documentation also recommends that products are configured for automatic updating.&lt;/p&gt;
+&lt;p&gt;Best practices recommend that customers regularly verify whether software distribution, such as the automatic deployment of Microsoft Malware Protection Platform updates and malware definitions, is working as expected in their environment.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How often are the Microsoft Malware Protection Platform and malware definitions updated?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Microsoft typically releases an update for the Microsoft Malware Protection Platform once a month or as needed to protect against new threats. Microsoft also typically updates the malware definitions three times daily and can increase the frequency when needed.&lt;/p&gt;
+&lt;p&gt;Depending on which Microsoft antimalware software is used and how it is configured, the software may search for platform, engine and definition updates every day when connected to the Internet, up to multiple times daily. Customers can also choose to manually check for updates at any time.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What is the Microsoft Malware Protection Platform?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The Microsoft Malware Protection Platform is a collection of user-mode binaries (e.g. MsMpEng.exe) and kernel-mode drivers that run on top of Windows to keep devices protected against new and prevalent threats.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Windows Defender uses the Microsoft Malware Protection Platform. On which products is Defender installed and active by default?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Defender runs on all supported version of Windows.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Are there other products that use the Microsoft Malware Protection Platform?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Yes, Microsoft System Center Endpoint Protection, Microsoft System Center 2012 R2 Endpoint Protection, Microsoft System Center 2012 Endpoint Protection and Microsoft Security Essentials.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Does this update contain any additional security-related changes to functionality?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Yes.  In addition to the changes that are listed for this vulnerability, this update includes defense-in-depth updates to help improve security-related features.&lt;/p&gt;
+&lt;h2&gt;Suggested Actions&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Verify that the update is installed&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Customers should verify that the latest version of the Microsoft Malware Protection Platform and definition updates are being actively downloaded and installed for their Microsoft antimalware products.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the Windows Security program. For example, type Security in the Search bar, and select the Windows Security program.&lt;/li&gt;
+&lt;li&gt;In the navigation pane, select Virus &amp;amp; threat protection.&lt;/li&gt;
+&lt;li&gt;Under Virus &amp;amp; threat protection updates in the main window, select Check for updates&lt;/li&gt;
+&lt;li&gt;Select Check for updates again.&lt;/li&gt;
+&lt;li&gt;In the navigation pane, select Settings, and then select About.&lt;/li&gt;
+&lt;li&gt;Examine the Platform Version number. The update was successfully installed if the Malware Protection Platform version number or the signature package version number matches or exceeds the version number that you are trying to verify as installed.&lt;/li&gt;
+&lt;/ol&gt;
 </vuln:Note>
       <vuln:Note Title="Windows Defender" Type="Tag" Ordinal="20">Windows Defender</vuln:Note>
       <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
@@ -15279,17 +16509,17 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
     <vuln:CVE>CVE-2023-24934</vuln:CVE>
     <vuln:ProductStatuses>
       <vuln:Status Type="Known Affected">
-        <vuln:ProductID>11902</vuln:ProductID>
+        <vuln:ProductID>12183</vuln:ProductID>
       </vuln:Status>
     </vuln:ProductStatuses>
     <vuln:Threats>
       <vuln:Threat Type="Impact">
         <vuln:Description>Security Feature Bypass</vuln:Description>
-        <vuln:ProductID>11902</vuln:ProductID>
+        <vuln:ProductID>12183</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
         <vuln:Description>Important</vuln:Description>
-        <vuln:ProductID>11902</vuln:ProductID>
+        <vuln:ProductID>12183</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Exploit Status">
         <vuln:Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation Less Likely;DOS:N/A</vuln:Description>
@@ -15300,14 +16530,14 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
         <vuln:BaseScore>6.2</vuln:BaseScore>
         <vuln:TemporalScore>5.6</vuln:TemporalScore>
         <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N/E:P/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>11902</vuln:ProductID>
+        <vuln:ProductID>12183</vuln:ProductID>
       </vuln:ScoreSet>
     </vuln:CVSSScoreSets>
     <vuln:Remediations>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>Release Notes</vuln:Description>
         <vuln:URL />
-        <vuln:ProductID>11902</vuln:ProductID>
+        <vuln:ProductID>12183</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:RestartRequired>No</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
@@ -15322,14 +16552,26 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
     </vuln:Acknowledgments>
     <vuln:RevisionHistory>
       <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2023-04-18T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added FAQ information. This is an informational change only.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2023-04-14T07:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published. This CVE was addressed by updates that were released in April 2023, but the CVE was inadvertently omitted from the April 2023 Security Updates. This is an informational change only. Customers who have already installed the April 2023 updates do not need to take any further action.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.2</cvrf:Number>
+        <cvrf:Date>2023-04-19T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Updated the products listed in the Security Updates table. This is an informational change only.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="38">
+  <vuln:Vulnerability Ordinal="47">
     <vuln:Title>Microsoft Edge (Chromium-based) Spoofing Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -15412,7 +16654,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="15">
+  <vuln:Vulnerability Ordinal="24">
     <vuln:Title>Microsoft Message Queuing Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -16274,7 +17516,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="19">
+  <vuln:Vulnerability Ordinal="28">
     <vuln:Title>Microsoft ODBC and OLE DB Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -16413,7 +17655,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="21">
+  <vuln:Vulnerability Ordinal="30">
     <vuln:Title>Microsoft Defender Denial of Service Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -16531,7 +17773,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="28">
+  <vuln:Vulnerability Ordinal="37">
     <vuln:Title>Windows Graphics Component Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -17382,7 +18624,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="30">
+  <vuln:Vulnerability Ordinal="39">
     <vuln:Title>Microsoft PostScript and PCL6 Class Printer Driver Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -18065,7 +19307,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="22">
+  <vuln:Vulnerability Ordinal="31">
     <vuln:Title>Microsoft PostScript and PCL6 Class Printer Driver Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -18748,7 +19990,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="31">
+  <vuln:Vulnerability Ordinal="40">
     <vuln:Title>Microsoft PostScript and PCL6 Class Printer Driver Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -19431,7 +20673,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="23">
+  <vuln:Vulnerability Ordinal="32">
     <vuln:Title>Microsoft PostScript and PCL6 Class Printer Driver Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -20114,7 +21356,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="32">
+  <vuln:Vulnerability Ordinal="41">
     <vuln:Title>Microsoft PostScript and PCL6 Class Printer Driver Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -20797,7 +22039,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="24">
+  <vuln:Vulnerability Ordinal="33">
     <vuln:Title>Microsoft PostScript and PCL6 Class Printer Driver Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -21483,7 +22725,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="33">
+  <vuln:Vulnerability Ordinal="42">
     <vuln:Title>Microsoft PostScript and PCL6 Class Printer Driver Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -22169,7 +23411,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="25">
+  <vuln:Vulnerability Ordinal="34">
     <vuln:Title>Microsoft PostScript and PCL6 Class Printer Driver Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -22852,7 +24094,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="34">
+  <vuln:Vulnerability Ordinal="43">
     <vuln:Title>Microsoft PostScript and PCL6 Class Printer Driver Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -23538,7 +24780,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="26">
+  <vuln:Vulnerability Ordinal="35">
     <vuln:Title>Microsoft PostScript and PCL6 Class Printer Driver Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -24221,7 +25463,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="35">
+  <vuln:Vulnerability Ordinal="44">
     <vuln:Title>Microsoft PostScript and PCL6 Class Printer Driver Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -24904,7 +26146,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="42">
+  <vuln:Vulnerability Ordinal="56">
     <vuln:Title>Layer 2 Tunneling Protocol Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -25758,7 +27000,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="43">
+  <vuln:Vulnerability Ordinal="57">
     <vuln:Title>Layer 2 Tunneling Protocol Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -26612,7 +27854,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="46">
+  <vuln:Vulnerability Ordinal="60">
     <vuln:Title>Windows  Domain Name Service Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -27053,7 +28295,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="47">
+  <vuln:Vulnerability Ordinal="61">
     <vuln:Title>Windows Point-to-Point Protocol over Ethernet (PPPoE) Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -27742,7 +28984,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="48">
+  <vuln:Vulnerability Ordinal="62">
     <vuln:Title>Windows NTLM Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -28323,7 +29565,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="49">
+  <vuln:Vulnerability Ordinal="63">
     <vuln:Title>Windows Enroll Engine Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -28796,7 +30038,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="50">
+  <vuln:Vulnerability Ordinal="64">
     <vuln:Title>Windows Bluetooth Driver Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -29658,7 +30900,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="51">
+  <vuln:Vulnerability Ordinal="65">
     <vuln:Title>Windows Spoofing Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -30509,7 +31751,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="52">
+  <vuln:Vulnerability Ordinal="66">
     <vuln:Title>Windows CNG Key Isolation Service Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -31363,7 +32605,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="53">
+  <vuln:Vulnerability Ordinal="67">
     <vuln:Title>DHCP Server Service Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -31818,7 +33060,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="54">
+  <vuln:Vulnerability Ordinal="68">
     <vuln:Title>Windows Point-to-Point Tunneling Protocol Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -32672,7 +33914,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="55">
+  <vuln:Vulnerability Ordinal="69">
     <vuln:Title>Windows Secure Channel Denial of Service Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -32856,7 +34098,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="56">
+  <vuln:Vulnerability Ordinal="70">
     <vuln:Title>Windows Secure Channel Denial of Service Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -33040,7 +34282,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="57">
+  <vuln:Vulnerability Ordinal="71">
     <vuln:Title>Windows Lock Screen Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -33363,7 +34605,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="58">
+  <vuln:Vulnerability Ordinal="72">
     <vuln:Title>Windows Kernel Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -34046,7 +35288,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="59">
+  <vuln:Vulnerability Ordinal="73">
     <vuln:Title>Windows Kernel Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -34732,7 +35974,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="60">
+  <vuln:Vulnerability Ordinal="74">
     <vuln:Title>Windows Internet Key Exchange (IKE) Protocol Extensions Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -35493,7 +36735,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="61">
+  <vuln:Vulnerability Ordinal="75">
     <vuln:Title>Windows Network Load Balancing Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -35953,7 +37195,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="62">
+  <vuln:Vulnerability Ordinal="76">
     <vuln:Title>Windows Secure Socket Tunneling Protocol (SSTP) Denial of Service Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -36801,7 +38043,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="78">
+  <vuln:Vulnerability Ordinal="92">
     <vuln:Title>Windows Common Log File System Driver Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -37653,7 +38895,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="63">
+  <vuln:Vulnerability Ordinal="77">
     <vuln:Title>Microsoft PostScript and PCL6 Class Printer Driver Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -38199,6 +39441,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5025224</vuln:URL>
         <vuln:Supercedence>5023698</vuln:Supercedence>
         <vuln:ProductID>11926</vuln:ProductID>
+        <vuln:ProductID>11927</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
@@ -38208,26 +39451,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
         <vuln:Description>5025224</vuln:Description>
         <vuln:URL>https://support.microsoft.com/help/5025224</vuln:URL>
         <vuln:ProductID>11926</vuln:ProductID>
-        <vuln:AffectedFiles />
-      </vuln:Remediation>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>5025239</vuln:Description>
-        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5025239</vuln:URL>
-        <vuln:Supercedence>5023706</vuln:Supercedence>
         <vuln:ProductID>11927</vuln:ProductID>
-        <vuln:ProductID>12085</vuln:ProductID>
-        <vuln:ProductID>12086</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:RestartRequired>Yes</vuln:RestartRequired>
-        <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.22621.1555</vuln:FixedBuild>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Known Issue">
-        <vuln:Description>5025239</vuln:Description>
-        <vuln:URL>https://support.microsoft.com/help/5025239</vuln:URL>
-        <vuln:ProductID>11927</vuln:ProductID>
-        <vuln:ProductID>12085</vuln:ProductID>
-        <vuln:ProductID>12086</vuln:ProductID>
         <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
@@ -38241,6 +39465,24 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.19044.2846</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5025239</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5025239</vuln:URL>
+        <vuln:Supercedence>5023706</vuln:Supercedence>
+        <vuln:ProductID>12085</vuln:ProductID>
+        <vuln:ProductID>12086</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>10.0.22621.1555</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5025239</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5025239</vuln:URL>
+        <vuln:ProductID>12085</vuln:ProductID>
+        <vuln:ProductID>12086</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5025221</vuln:Description>
@@ -38336,7 +39578,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="79">
+  <vuln:Vulnerability Ordinal="93">
     <vuln:Title>Remote Desktop Protocol Client Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -39111,7 +40353,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="64">
+  <vuln:Vulnerability Ordinal="78">
     <vuln:Title>Windows Kerberos Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -39569,7 +40811,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="80">
+  <vuln:Vulnerability Ordinal="94">
     <vuln:Title>Netlogon RPC Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -40021,7 +41263,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="81">
+  <vuln:Vulnerability Ordinal="95">
     <vuln:Title>Windows Boot Manager Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -40704,7 +41946,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="65">
+  <vuln:Vulnerability Ordinal="79">
     <vuln:Title>Windows Registry Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -40887,7 +42129,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="82">
+  <vuln:Vulnerability Ordinal="96">
     <vuln:Title>Windows Lock Screen Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -41354,7 +42596,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="66">
+  <vuln:Vulnerability Ordinal="80">
     <vuln:Title>Windows Network File System Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -41632,7 +42874,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="67">
+  <vuln:Vulnerability Ordinal="81">
     <vuln:Title>Windows Kernel Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -42172,7 +43414,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="83">
+  <vuln:Vulnerability Ordinal="97">
     <vuln:Title>Windows Kernel Memory Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -43023,7 +44265,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="84">
+  <vuln:Vulnerability Ordinal="98">
     <vuln:Title>Windows Kernel Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -43874,7 +45116,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="68">
+  <vuln:Vulnerability Ordinal="82">
     <vuln:Title>Windows Boot Manager Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -44557,7 +45799,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="69">
+  <vuln:Vulnerability Ordinal="83">
     <vuln:Title>Windows Pragmatic General Multicast (PGM) Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -45415,7 +46657,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="85">
+  <vuln:Vulnerability Ordinal="99">
     <vuln:Title>Windows Clip Service Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -45958,7 +47200,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="86">
+  <vuln:Vulnerability Ordinal="100">
     <vuln:Title>Windows Win32k Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -46425,7 +47667,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="70">
+  <vuln:Vulnerability Ordinal="84">
     <vuln:Title>Windows Common Log File System Driver Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -47284,7 +48526,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="87">
+  <vuln:Vulnerability Ordinal="101">
     <vuln:Title>Microsoft WDAC OLE DB provider for SQL Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -48130,7 +49372,7 @@ merge-cipolicy &amp;quot;existing_policy.xml&amp;quot; -Rules $rule -OutputFileP
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="71">
+  <vuln:Vulnerability Ordinal="85">
     <vuln:Title>Windows Kernel Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -48984,7 +50226,7 @@ Alyssa Milburn and Ke Sun of Intel
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="88">
+  <vuln:Vulnerability Ordinal="102">
     <vuln:Title>Windows Group Policy Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -49835,7 +51077,7 @@ Alyssa Milburn and Ke Sun of Intel
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="72">
+  <vuln:Vulnerability Ordinal="86">
     <vuln:Title>Windows DNS Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -50281,7 +51523,7 @@ Alyssa Milburn and Ke Sun of Intel
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="89">
+  <vuln:Vulnerability Ordinal="103">
     <vuln:Title>Windows DNS Server Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -50371,7 +51613,7 @@ Alyssa Milburn and Ke Sun of Intel
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="73">
+  <vuln:Vulnerability Ordinal="87">
     <vuln:Title>Windows DNS Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -50820,7 +52062,7 @@ Alyssa Milburn and Ke Sun of Intel
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="90">
+  <vuln:Vulnerability Ordinal="104">
     <vuln:Title>Windows DNS Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -51269,7 +52511,7 @@ Alyssa Milburn and Ke Sun of Intel
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="74">
+  <vuln:Vulnerability Ordinal="88">
     <vuln:Title>Windows DNS Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -51718,7 +52960,7 @@ Alyssa Milburn and Ke Sun of Intel
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="75">
+  <vuln:Vulnerability Ordinal="89">
     <vuln:Title>.NET DLL Hijacking Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -51962,7 +53204,7 @@ Alyssa Milburn and Ke Sun of Intel
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="76">
+  <vuln:Vulnerability Ordinal="90">
     <vuln:Title>Visual Studio Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -52121,7 +53363,7 @@ Alyssa Milburn and Ke Sun of Intel
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="77">
+  <vuln:Vulnerability Ordinal="91">
     <vuln:Title>Visual Studio Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -52280,7 +53522,7 @@ Alyssa Milburn and Ke Sun of Intel
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="97">
+  <vuln:Vulnerability Ordinal="110">
     <vuln:Title>Windows Kernel Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -52913,6 +54155,7 @@ Alyssa Milburn and Ke Sun of Intel
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5025224</vuln:URL>
         <vuln:Supercedence>5023698</vuln:Supercedence>
         <vuln:ProductID>11926</vuln:ProductID>
+        <vuln:ProductID>11927</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
@@ -52922,26 +54165,7 @@ Alyssa Milburn and Ke Sun of Intel
         <vuln:Description>5025224</vuln:Description>
         <vuln:URL>https://support.microsoft.com/help/5025224</vuln:URL>
         <vuln:ProductID>11926</vuln:ProductID>
-        <vuln:AffectedFiles />
-      </vuln:Remediation>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>5025239</vuln:Description>
-        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5025239</vuln:URL>
-        <vuln:Supercedence>5023706</vuln:Supercedence>
         <vuln:ProductID>11927</vuln:ProductID>
-        <vuln:ProductID>12085</vuln:ProductID>
-        <vuln:ProductID>12086</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:RestartRequired>Yes</vuln:RestartRequired>
-        <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.22621.1555</vuln:FixedBuild>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Known Issue">
-        <vuln:Description>5025239</vuln:Description>
-        <vuln:URL>https://support.microsoft.com/help/5025239</vuln:URL>
-        <vuln:ProductID>11927</vuln:ProductID>
-        <vuln:ProductID>12085</vuln:ProductID>
-        <vuln:ProductID>12086</vuln:ProductID>
         <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
@@ -52955,6 +54179,24 @@ Alyssa Milburn and Ke Sun of Intel
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.19044.2846</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5025239</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5025239</vuln:URL>
+        <vuln:Supercedence>5023706</vuln:Supercedence>
+        <vuln:ProductID>12085</vuln:ProductID>
+        <vuln:ProductID>12086</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>10.0.22621.1555</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5025239</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5025239</vuln:URL>
+        <vuln:ProductID>12085</vuln:ProductID>
+        <vuln:ProductID>12086</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5025221</vuln:Description>
@@ -53128,7 +54370,7 @@ Alyssa Milburn and Ke Sun of Intel
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="99">
+  <vuln:Vulnerability Ordinal="112">
     <vuln:Title>Visual Studio Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -53318,7 +54560,7 @@ Alyssa Milburn and Ke Sun of Intel
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="102">
+  <vuln:Vulnerability Ordinal="115">
     <vuln:Title>Visual Studio Spoofing Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -53498,7 +54740,7 @@ Alyssa Milburn and Ke Sun of Intel
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="104">
+  <vuln:Vulnerability Ordinal="117">
     <vuln:Title>Microsoft Edge (Chromium-based) Tampering Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -53579,7 +54821,7 @@ Alyssa Milburn and Ke Sun of Intel
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="105">
+  <vuln:Vulnerability Ordinal="118">
     <vuln:Title>Microsoft Message Queuing Denial of Service Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -54212,6 +55454,7 @@ Alyssa Milburn and Ke Sun of Intel
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5025224</vuln:URL>
         <vuln:Supercedence>5023698</vuln:Supercedence>
         <vuln:ProductID>11926</vuln:ProductID>
+        <vuln:ProductID>11927</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
@@ -54221,26 +55464,7 @@ Alyssa Milburn and Ke Sun of Intel
         <vuln:Description>5025224</vuln:Description>
         <vuln:URL>https://support.microsoft.com/help/5025224</vuln:URL>
         <vuln:ProductID>11926</vuln:ProductID>
-        <vuln:AffectedFiles />
-      </vuln:Remediation>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>5025239</vuln:Description>
-        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5025239</vuln:URL>
-        <vuln:Supercedence>5023706</vuln:Supercedence>
         <vuln:ProductID>11927</vuln:ProductID>
-        <vuln:ProductID>12085</vuln:ProductID>
-        <vuln:ProductID>12086</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:RestartRequired>Yes</vuln:RestartRequired>
-        <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.22621.1555</vuln:FixedBuild>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Known Issue">
-        <vuln:Description>5025239</vuln:Description>
-        <vuln:URL>https://support.microsoft.com/help/5025239</vuln:URL>
-        <vuln:ProductID>11927</vuln:ProductID>
-        <vuln:ProductID>12085</vuln:ProductID>
-        <vuln:ProductID>12086</vuln:ProductID>
         <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
@@ -54254,6 +55478,24 @@ Alyssa Milburn and Ke Sun of Intel
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>10.0.19044.2846</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5025239</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5025239</vuln:URL>
+        <vuln:Supercedence>5023706</vuln:Supercedence>
+        <vuln:ProductID>12085</vuln:ProductID>
+        <vuln:ProductID>12086</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>10.0.22621.1555</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5025239</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5025239</vuln:URL>
+        <vuln:ProductID>12085</vuln:ProductID>
+        <vuln:ProductID>12086</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5025221</vuln:Description>
@@ -54431,7 +55673,7 @@ Alyssa Milburn and Ke Sun of Intel
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="106">
+  <vuln:Vulnerability Ordinal="119">
     <vuln:Title>Microsoft ODBC and OLE DB Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -54570,7 +55812,7 @@ Alyssa Milburn and Ke Sun of Intel
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="108">
+  <vuln:Vulnerability Ordinal="121">
     <vuln:Title>Windows DNS Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -55019,7 +56261,7 @@ Alyssa Milburn and Ke Sun of Intel
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="109">
+  <vuln:Vulnerability Ordinal="122">
     <vuln:Title>Windows DNS Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -55468,7 +56710,7 @@ Alyssa Milburn and Ke Sun of Intel
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="110">
+  <vuln:Vulnerability Ordinal="123">
     <vuln:Title>Windows DNS Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -55917,7 +57159,7 @@ Alyssa Milburn and Ke Sun of Intel
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="112">
+  <vuln:Vulnerability Ordinal="125">
     <vuln:Title>Microsoft Word Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -56042,7 +57284,7 @@ Alyssa Milburn and Ke Sun of Intel
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="113">
+  <vuln:Vulnerability Ordinal="126">
     <vuln:Title>Azure Machine Learning Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
