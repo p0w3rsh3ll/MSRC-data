@@ -75,7 +75,7 @@ if (Test-Path -Path "$($PSScriptRoot)\2023\xml-cvrf-document\cvrfDocument-$($cvr
 }
 
 if ($RepoVer) {
-    if ($OnlineVer -gt $RepoVer) {
+    if ([int]$OnlineVer -gt [int]$RepoVer) {
         'Update required, online version: {0}, repo version: {1}' -f $OnlineVer,$RepoVer
         exit 1
     } else {
@@ -92,6 +92,9 @@ $RepoCVECount = (([xml](Get-Content -Path "$($PSScriptRoot)\2023\xml-cvrf-docume
 if ($RepoCVECount -lt ($cvrfDocumentXML.cvrfdoc.Vulnerability.CVE).Count) {
         'Update required, online CVE count: {0}, repo count: {1}' -f "$(($cvrfDocumentXML.cvrfdoc.Vulnerability.CVE).Count)",$RepoCVECount
         exit 1
+} else {
+        'No update required, CVE count: {0}, repo count: {1}' -f  "$(($cvrfDocumentXML.cvrfdoc.Vulnerability.CVE).Count)",$RepoCVECount
+        exit 0
 }
 
 }
