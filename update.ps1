@@ -73,7 +73,7 @@ if (-not(Test-Path -Path "$($PSScriptRoot)\$((Get-Date).Tostring('yyyy'))" -Path
 
 if (Test-Path -Path "$($PSScriptRoot)\2023\xml-cvrf-document\cvrfDocument-$($cvrfID).xml" -PathType Leaf) {
  $RepoVer = ([xml](Get-Content -Path "$($PSScriptRoot)\2023\xml-cvrf-document\cvrfDocument-$($cvrfID).xml")).cvrfdoc.DocumentTracking.RevisionHistory.Revision.Number
- $RepoReleaseDate = ([datetime](([xml](Get-Content -Path "$($PSScriptRoot)\2023\xml-cvrf-document\cvrfDocument-$($cvrfID).xml")).cvrfdoc.DocumentTracking.CurrentReleaseDate)).ToString('s')
+ $RepoReleaseDate = ([datetime](([xml](Get-Content -Path "$($PSScriptRoot)\2023\xml-cvrf-document\cvrfDocument-$($cvrfID).xml")).cvrfdoc.DocumentTracking.CurrentReleaseDate)) #.ToString('s')
 }
 
 if ($RepoVer) {
