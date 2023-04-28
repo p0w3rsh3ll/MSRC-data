@@ -64,6 +64,7 @@ ForEach-Object {
 
 # Get the Number of the cvrf doc revision pulled from API
 $OnlineVer = $cvrfDocumentXML.cvrfdoc.DocumentTracking.RevisionHistory.Revision.Number
+$OnlineReleaseDate = $cvrfDocumentXML.cvrfdoc.DocumentTracking.CurrentReleaseDate.ToString('s')
 
 if (-not(Test-Path -Path "$($PSScriptRoot)\$((Get-Date).Tostring('yyyy'))" -PathType Container)) {
  mkdir "$($PSScriptRoot)\$((Get-Date).Tostring('yyyy'))\xml-cvrf-document"
@@ -72,29 +73,66 @@ if (-not(Test-Path -Path "$($PSScriptRoot)\$((Get-Date).Tostring('yyyy'))" -Path
 
 if (Test-Path -Path "$($PSScriptRoot)\2023\xml-cvrf-document\cvrfDocument-$($cvrfID).xml" -PathType Leaf) {
  $RepoVer = ([xml](Get-Content -Path "$($PSScriptRoot)\2023\xml-cvrf-document\cvrfDocument-$($cvrfID).xml")).cvrfdoc.DocumentTracking.RevisionHistory.Revision.Number
+ $RepoReleaseDate = ([xml](Get-Content -Path "$($PSScriptRoot)\2023\xml-cvrf-document\cvrfDocument-$($cvrfID).xml")).cvrfdoc.DocumentTracking.CurrentReleaseDate.ToString('s')
 }
 
 if ($RepoVer) {
     if ([int]$OnlineVer -gt [int]$RepoVer) {
         'Update required, online version: {0}, repo version: {1}' -f $OnlineVer,$RepoVer
-        exit 1
+        'Update required, online release date: {0}, repo release date: {1}' -f $OnlineReleaseDate,$RepoReleaseDate
+        $exitCode =  1
     } else {
         'No update required, online version: {0}, repo version: {1}' -f $OnlineVer,$RepoVer
+        'No update required, online release date: {0}, repo release date: {1}' -f $OnlineReleaseDate,$RepoReleaseDate
         # exit 0
     }
 } else {
- 'Need to add {0} version {1}' -f $cvrfID,$OnlineVer
-  exit 1
+ 'Need to add {0} version {1}, released {2}' -f $cvrfID,$OnlineVer,$OnlineReleaseDate
+  $exitCode = 1
 }
 
 # Testing the count of vulnerability
 $RepoCVECount = (([xml](Get-Content -Path "$($PSScriptRoot)\2023\xml-cvrf-document\cvrfDocument-$($cvrfID).xml")).cvrfdoc.Vulnerability.CVE).Count
 if ($RepoCVECount -lt ($cvrfDocumentXML.cvrfdoc.Vulnerability.CVE).Count) {
         'Update required, online CVE count: {0}, repo count: {1}' -f "$(($cvrfDocumentXML.cvrfdoc.Vulnerability.CVE).Count)",$RepoCVECount
-        exit 1
+        $exitCode = 1
 } else {
         'No update required, CVE count: {0}, repo count: {1}' -f  "$(($cvrfDocumentXML.cvrfdoc.Vulnerability.CVE).Count)",$RepoCVECount
-        exit 0
+        $exitCode = 0
 }
+
+# Display content
+$content = ($cvrfDocument).Vulnerability |
+Foreach-Object {
+ $v = $_
+
+ # $Disclosed = $Exploited = $null
+ # $Disclosed = ([regex]'Publicly\sDisclosed:(?<D>(Yes|No));').Match("$(($v.Threats | Where-Object { $_.Type -eq 1}).Description.Value)") |
+ # Select-Object -ExpandProperty Groups| Select-Object -Last 1 -ExpandProperty Value
+ # $Exploited = ([regex]'Exploited:(?<E>(Yes|No));').Match("$(($v.Threats | Where-Object { $_.Type -eq 1}).Description.Value)") |
+ # Select-Object -ExpandProperty Groups| Select-Object -Last 1 -ExpandProperty Value
+
+ [PSCustomObject]@{
+  CVEID = $v.CVE
+  # Tag = $($v.Notes | Where-Object { $_.Type -eq 7}).Value
+  # CNA = $($v.Notes | Where-Object {$_.Type -eq 8}).Value
+  Title = $v.Title.Value
+  Date = $($v.RevisionHistory | Select-Object -First 1 -ExpandProperty Date)
+  Revision = $($v.RevisionHistory | Select-Object -First 1 -ExpandProperty Number)
+  # Severity = $( ($v.Threats | Where-Object { $_.Type -eq 3 }).Description | Select-Object -ExpandProperty Value -ErrorAction SilentlyContinue | Sort-Object -Unique)
+  # CVSS = '{0:N1}' -f $($v.CVSSScoreSets.BaseScore | Sort-Object -Unique | ForEach-Object { [double]$_} | Sort-Object -Descending | Select-Object -First 1)
+  # Public = $Disclosed
+  # Exploited = $Exploited
+  # Type = $( ($v.Threats | Where-Object { $_.Type -eq 0 }).Description | Select-Object -ExpandProperty Value -ErrorAction SilentlyContinue | Sort-Object -Unique)
+ }
+} | Sort-Object -Property Date
+
+if ($RepoReleaseDate) {
+ $content | Where-Object { $_.Date -gt $RepoReleaseDate }
+} else {
+ $content
+}
+
+exit $ExitCode
 
 }
