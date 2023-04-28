@@ -63,21 +63,21 @@ ForEach-Object {
 }
 
 # Get the Number of the cvrf doc revision pulled from API
-$OnlineVer = $cvrfDocumentXML.cvrfdoc.DocumentTracking.RevisionHistory.Revision.Number
-$OnlineReleaseDate = $cvrfDocumentXML.cvrfdoc.DocumentTracking.CurrentReleaseDate # .ToString('s')
+$OnlineVer = [int]($cvrfDocumentXML.cvrfdoc.DocumentTracking.RevisionHistory.Revision.Number)
+$OnlineReleaseDate = [datetime]($cvrfDocumentXML.cvrfdoc.DocumentTracking.CurrentReleaseDate)
 
 if (-not(Test-Path -Path "$($PSScriptRoot)\$((Get-Date).Tostring('yyyy'))" -PathType Container)) {
  mkdir "$($PSScriptRoot)\$((Get-Date).Tostring('yyyy'))\xml-cvrf-document"
  mkdir "$($PSScriptRoot)\$((Get-Date).Tostring('yyyy'))\html-bulletin"
 }
 
-if (Test-Path -Path "$($PSScriptRoot)\2023\xml-cvrf-document\cvrfDocument-$($cvrfID).xml" -PathType Leaf) {
- $RepoVer = ([xml](Get-Content -Path "$($PSScriptRoot)\2023\xml-cvrf-document\cvrfDocument-$($cvrfID).xml")).cvrfdoc.DocumentTracking.RevisionHistory.Revision.Number
+if (Test-Path -Path "$($PSScriptRoot)\$((Get-Date).Tostring('yyyy'))\xml-cvrf-document\cvrfDocument-$($cvrfID).xml" -PathType Leaf) {
+ $RepoVer = [int](([xml](Get-Content -Path "$($PSScriptRoot)\$((Get-Date).Tostring('yyyy'))\xml-cvrf-document\cvrfDocument-$($cvrfID).xml")).cvrfdoc.DocumentTracking.RevisionHistory.Revision.Number)
  $RepoReleaseDate = ([datetime](([xml](Get-Content -Path "$($PSScriptRoot)\2023\xml-cvrf-document\cvrfDocument-$($cvrfID).xml")).cvrfdoc.DocumentTracking.CurrentReleaseDate)) #.ToString('s')
 }
 
 if ($RepoVer) {
-    if ([int]$OnlineVer -gt [int]$RepoVer) {
+    if ($OnlineVer -gt $RepoVer) {
         'Update required, online version: {0}, repo version: {1}' -f $OnlineVer,$RepoVer
         'Update required, online release date: {0}, repo release date: {1}' -f $OnlineReleaseDate,$RepoReleaseDate
         $exitCode =  1
@@ -92,7 +92,7 @@ if ($RepoVer) {
 }
 
 # Testing the count of vulnerability
-$RepoCVECount = (([xml](Get-Content -Path "$($PSScriptRoot)\2023\xml-cvrf-document\cvrfDocument-$($cvrfID).xml")).cvrfdoc.Vulnerability.CVE).Count
+$RepoCVECount = (([xml](Get-Content -Path "$($PSScriptRoot)\$((Get-Date).Tostring('yyyy'))\xml-cvrf-document\cvrfDocument-$($cvrfID).xml")).cvrfdoc.Vulnerability.CVE).Count
 if ($RepoCVECount -lt ($cvrfDocumentXML.cvrfdoc.Vulnerability.CVE).Count) {
         'Update required, online CVE count: {0}, repo count: {1}' -f "$(($cvrfDocumentXML.cvrfdoc.Vulnerability.CVE).Count)",$RepoCVECount
         $exitCode = 1
@@ -109,7 +109,7 @@ Foreach-Object {
  # $Disclosed = $Exploited = $null
  # $Disclosed = ([regex]'Publicly\sDisclosed:(?<D>(Yes|No));').Match("$(($v.Threats | Where-Object { $_.Type -eq 1}).Description.Value)") |
  # Select-Object -ExpandProperty Groups| Select-Object -Last 1 -ExpandProperty Value
- # $Exploited = ([regex]'Exploited:(?<E>(Yes|No));').Match("$(($v.Threats | Where-Object { $_.Type -eq 1}).Description.Value)") |
+ # $Exploited = ([regex]'Exploited:(?<E>(Yes|No));').Match("$(($v.Threats | Where-Ob$ject { $_.Type -eq 1}).Description.Value)") |
  # Select-Object -ExpandProperty Groups| Select-Object -Last 1 -ExpandProperty Value
 
  [PSCustomObject]@{
@@ -128,7 +128,7 @@ Foreach-Object {
 } | Sort-Object -Property Date
 
 if ($RepoReleaseDate) {
- $content | Where-Object { $_.Date -gt $RepoReleaseDate }
+ $content | Where-Object { [datetime]($_.Date) -gt $RepoReleaseDate }
 } else {
  $content
 }
