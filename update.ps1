@@ -64,7 +64,7 @@ ForEach-Object {
 
 # Get the Number of the cvrf doc revision pulled from API
 $OnlineVer = $cvrfDocumentXML.cvrfdoc.DocumentTracking.RevisionHistory.Revision.Number
-$OnlineReleaseDate = $cvrfDocumentXML.cvrfdoc.DocumentTracking.CurrentReleaseDate.ToString('s')
+$OnlineReleaseDate = $cvrfDocumentXML.cvrfdoc.DocumentTracking.CurrentReleaseDate # .ToString('s')
 
 if (-not(Test-Path -Path "$($PSScriptRoot)\$((Get-Date).Tostring('yyyy'))" -PathType Container)) {
  mkdir "$($PSScriptRoot)\$((Get-Date).Tostring('yyyy'))\xml-cvrf-document"
