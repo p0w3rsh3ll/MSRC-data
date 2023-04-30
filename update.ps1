@@ -128,7 +128,7 @@ Foreach-Object {
 } | Sort-Object -Property Date
 
 if ($RepoReleaseDate) {
- $content | Where-Object { [datetime]($_.Date) -gt $RepoReleaseDate }
+ $content | Where-Object { [datetime]($_.Date) -ge $RepoReleaseDate }
 } else {
  $content
 }
