@@ -60,10 +60,7 @@ PowerShellVersion = '5.1'
 # RequiredModules = @()
 
 # Assemblies that must be loaded prior to importing this module
-RequiredAssemblies = @(
-    'Microsoft.IdentityModel.Clients.ActiveDirectory.dll'
-    'Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll'
-)
+# RequiredAssemblies = @()
 
 # Script files (.ps1) that are run in the caller's environment prior to importing this module.
 # ScriptsToProcess = @()
@@ -88,7 +85,6 @@ FunctionsToExport = @(
     'Get-MsrcSecurityBulletinHtml',
     'Get-MsrcSecurityUpdate',
     'Get-MsrcVulnerabilityReportHtml',
-    'Set-MSRCAdalAccessToken',
     'Set-MSRCApiKey'
 )
 

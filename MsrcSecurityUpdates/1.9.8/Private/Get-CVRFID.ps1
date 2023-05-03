@@ -23,12 +23,7 @@ Process {
 
         $RestMethod.Add('ProxyCredential',$global:msrcProxyCredential)
 
-    } elseif ($global:MSRCAdalAccessToken) {
-
-        $RestMethod.Headers.Add('Authorization',$($global:MSRCAdalAccessToken.CreateAuthorizationHeader()))
-
     }
-
     try {
 
         [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12

@@ -38,10 +38,6 @@ Process {
             Write-Verbose -Message "Successfully defined a msrcProxyCredential global variable that points to $($global:msrcProxy)"
         }
 
-        if ($global:MSRCAdalAccessToken)
-        {
-            Remove-Variable -Name MSRCAdalAccessToken -Scope Global
-        }
     }
 }
 End {}
