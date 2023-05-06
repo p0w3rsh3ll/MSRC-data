@@ -85,7 +85,7 @@ FunctionsToExport = @(
     'Get-MsrcSecurityBulletinHtml',
     'Get-MsrcSecurityUpdate',
     'Get-MsrcVulnerabilityReportHtml',
-    'Set-MSRCApiKey'
+    'Set-MSRCApiConfig'
 )
 
 # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
@@ -130,7 +130,7 @@ April 13, 2023 - Update Exploitability Index Text
 Feb 17, 2022 - Update Mitre Urls and fix typo
 April 20, 2021 - Update API endpoint
 April 7, 2021 - Adding FixedBuild to vulnerability report
-March 2, 2021 - Fixing mitigation on vulnerability report 
+March 2, 2021 - Fixing mitigation on vulnerability report
 February 19, 2021 - Updating Vulnerability Report HTML Style
 February 3, 2021 - Removed Api-key requirement
 January 17, 2021 - Added Issuing CNA info to Get-MsrcVulnerabilityReportHtml

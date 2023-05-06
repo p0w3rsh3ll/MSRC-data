@@ -90,10 +90,10 @@ Describe 'Function: Get-MsrcCvrfDocument (calls the MSRC /cvrf API)' {
     }
 }
 
-Describe 'Function: Set-MSRCApiKey with proxy' {
+Describe 'Function: Set-MSRCApiConfig with proxy' {
     if (-not ($global:msrcProxy)) {
 
-       Write-Warning -Message 'This test requires you to use Set-MSRCApiKey first to set your API Key and proxy details'
+       Write-Warning -Message 'This test requires you to use Set-MSRCApiConfig first to set your proxy details'
        break
     }
 
