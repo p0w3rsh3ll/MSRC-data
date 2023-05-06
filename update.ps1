@@ -47,16 +47,12 @@ End {
      $null = mkdir $Output
     }
 
-    $cvrfID = Get-CVRFID
+    $cvrfID = Get-CVRFID | Where-Object { $_ -match "^$((Get-Date).ToString('yyyy-MMM',[System.Globalization.CultureInfo]'en-US'))"}
 
-    if (
-     $cvrfID |
-     Where-Object { $_ -match "^$((Get-Date).ToString('yyyy-MMM',[System.Globalization.CultureInfo]'en-US'))"}
-    ) {
+    if ($cvrfID) {
 
         # Create the cvfr doc xml
         $cvrfID |
-        Where-Object { $_ -match "^$((Get-Date).ToString('yyyy-MMM',[System.Globalization.CultureInfo]'en-US'))"}|
         ForEach-Object {
          $cvrfDocument = Get-MsrcCvrfDocument -ID $_ -WarningAction SilentlyContinue
          $cvrfDocumentXML = Get-MsrcCvrfDocument -ID $_ -asXML -WarningAction SilentlyContinue
