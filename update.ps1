@@ -82,6 +82,18 @@ End {
         exit 0
     }
 
+    # Testing the count of vulnerability
+    if (Test-Path -Path "$($PSScriptRoot)\$((Get-Date).Tostring('yyyy'))\xml-cvrf-document\cvrfDocument-$($cvrfID).xml" -PathType Leaf) {
+        $RepoCVECount = (([xml](Get-Content -Path "$($PSScriptRoot)\$((Get-Date).Tostring('yyyy'))\xml-cvrf-document\cvrfDocument-$($cvrfID).xml")).cvrfdoc.Vulnerability.CVE).Count
+        if ($RepoCVECount -lt ($cvrfDocumentXML.cvrfdoc.Vulnerability.CVE).Count) {
+                'Update required, online CVE count: {0}, repo count: {1}' -f "$(($cvrfDocumentXML.cvrfdoc.Vulnerability.CVE).Count)",$RepoCVECount
+                $exitCode = 1
+        } else {
+                'No update required, CVE count: {0}, repo count: {1}' -f  "$(($cvrfDocumentXML.cvrfdoc.Vulnerability.CVE).Count)",$RepoCVECount
+                $exitCode = 0
+        }
+    }
+
     if ($RepoVer) {
         if ($OnlineVer -gt $RepoVer) {
             'Update required, online version: {0}, repo version: {1}' -f $OnlineVer,$RepoVer
@@ -95,16 +107,6 @@ End {
     } else {
      'Need to add {0} version {1}, released {2}' -f $cvrfID,$OnlineVer,$OnlineReleaseDate
       $exitCode = 1
-    }
-
-    # Testing the count of vulnerability
-    $RepoCVECount = (([xml](Get-Content -Path "$($PSScriptRoot)\$((Get-Date).Tostring('yyyy'))\xml-cvrf-document\cvrfDocument-$($cvrfID).xml")).cvrfdoc.Vulnerability.CVE).Count
-    if ($RepoCVECount -lt ($cvrfDocumentXML.cvrfdoc.Vulnerability.CVE).Count) {
-            'Update required, online CVE count: {0}, repo count: {1}' -f "$(($cvrfDocumentXML.cvrfdoc.Vulnerability.CVE).Count)",$RepoCVECount
-            $exitCode = 1
-    } else {
-            'No update required, CVE count: {0}, repo count: {1}' -f  "$(($cvrfDocumentXML.cvrfdoc.Vulnerability.CVE).Count)",$RepoCVECount
-            $exitCode = 0
     }
 
     # Display content
