@@ -3070,11 +3070,15 @@
         <br>
         <b>FAQ:</b><br>None
         <br>
-        <b>Mitigations:</b><br>None
+        <b>Mitigations:</b><br><p>Mitigation refers to a setting, common configuration, or general best-practice, existing in a default state, that could reduce the severity of exploitation of a vulnerability. The following mitigating factors might be helpful in your situation:</p>
+<p>The Windows message queuing service, which is a Windows component, needs to be enabled for a system to be exploitable by this vulnerability. This feature can be added via the Control Panel.</p>
+<p>You can check to see if there is a service running named <strong>Message Queuing</strong> and TCP port 1801 is listening on the machine.</p>
+
         <br>
         <b>Workarounds:</b><br>None
         <br>
         <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp09/05/2023&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+<br>1.1&nbsp&nbsp&nbsp&nbsp10/05/2023&nbsp&nbsp&nbsp&nbsp<p>Added mitigation.  This is an informational change only.</p>
 
         <br></td>
      <td>Important</td>
@@ -5243,15 +5247,18 @@ OnlineTimeoutSec : 180
         <b>Executive Summary:</b> <br>None
         <br>
         <b>FAQ:</b><br><p><strong>How could an attacker exploit this vulnerability?</strong></p>
-<p>When Windows Message Queuing service is running in a PGM Server environment, an attacker could send a specially crafted file over the network to achieve remote code execution and attempt to trigger malicious code.</p>
+<p>When Windows message queuing service is running in a PGM Server environment, an attacker could send a specially crafted file over the network to achieve remote code execution and attempt to trigger malicious code.</p>
 
         <br>
-        <b>Mitigations:</b><br><p>Only PGM Server is vulnerable to this vulnerability. To mitigate risk, Microsoft recommends customers deploy newer technologies such as Unicast or Multicast server.</p>
+        <b>Mitigations:</b><br><p>Mitigation refers to a setting, common configuration, or general best-practice, existing in a default state, that could reduce the severity of exploitation of a vulnerability. The following mitigating factors might be helpful in your situation:</p>
+<p>The Windows message queuing service, which is a Windows component, needs to be enabled for a system to be exploitable by this vulnerability. This feature can be added via the Control Panel.</p>
+<p>You can check to see if there is a service running named <strong>Message Queuing</strong> and TCP port 1801 is listening on the machine.</p>
 
         <br>
         <b>Workarounds:</b><br>None
         <br>
         <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp09/05/2023&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+<br>1.1&nbsp&nbsp&nbsp&nbsp10/05/2023&nbsp&nbsp&nbsp&nbsp<p>Added mitigation.  This is an informational change only.</p>
 
         <br></td>
      <td>Critical</td>
@@ -5950,6 +5957,7 @@ OnlineTimeoutSec : 180
         <b>Workarounds:</b><br>None
         <br>
         <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp09/05/2023&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+<br>1.1&nbsp&nbsp&nbsp&nbsp12/05/2023&nbsp&nbsp&nbsp&nbsp<p>Added an acknowledgement. This is an informational change only.</p>
 
         <br></td>
      <td>Important</td>
@@ -6203,7 +6211,7 @@ OnlineTimeoutSec : 180
     </thead>
  <tr>
      <td>CVE-2023-24944</td>
-     <td>Keqi Hu<br><br><br></td>
+     <td>Keqi Hu<br><br><br>Bryan Gonzalez from Ocelot Team @ Metabase Q<br><br><br></td>
  </tr>
 </table><h1 id="CVE-2023-24945">CVE-2023-24945 - Windows iSCSI Target Service Information Disclosure Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
  <thead style="background-color: #ededed">
@@ -8113,7 +8121,7 @@ OnlineTimeoutSec : 180
     </thead>
  <tr>
      <td>CVE-2023-24950</td>
-     <td><a href="https://www.twitter.comchudypb">Piotr Bazydlo (@chudypb)</a> of <a href="https://www.zerodayinitiative.com/">Trend Micro Zero Day Initiative</a><br><br><br></td>
+     <td><a href="https://www.twitter.com/chudypb">Piotr Bazydlo (@chudypb)</a> of <a href="https://www.zerodayinitiative.com/">Trend Micro Zero Day Initiative</a><br><br><br></td>
  </tr>
 </table><h1 id="CVE-2023-24953">CVE-2023-24953 - Microsoft Excel Remote Code Execution Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
  <thead style="background-color: #ededed">

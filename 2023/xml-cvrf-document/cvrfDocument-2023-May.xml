@@ -15,13 +15,13 @@
     <cvrf:Version>1.0</cvrf:Version>
     <cvrf:RevisionHistory>
       <cvrf:Revision>
-        <cvrf:Number>2</cvrf:Number>
-        <cvrf:Date>2023-05-09T07:00:00</cvrf:Date>
+        <cvrf:Number>4</cvrf:Number>
+        <cvrf:Date>2023-05-12T07:00:00</cvrf:Date>
         <cvrf:Description>May 2023 Security Updates</cvrf:Description>
       </cvrf:Revision>
     </cvrf:RevisionHistory>
     <cvrf:InitialReleaseDate>2023-05-09T07:00:00</cvrf:InitialReleaseDate>
-    <cvrf:CurrentReleaseDate>2023-05-09T07:00:00</cvrf:CurrentReleaseDate>
+    <cvrf:CurrentReleaseDate>2023-05-12T07:00:00</cvrf:CurrentReleaseDate>
   </cvrf:DocumentTracking>
   <cvrf:DocumentNotes>
     <cvrf:Note Title="Release Notes" Audience="Public" Type="Details" Ordinal="0">&lt;h2&gt;This release consists of the following 40 Microsoft CVEs:&lt;/h2&gt;
@@ -5150,6 +5150,13 @@
         <vuln:SubType>Security Only</vuln:SubType>
         <vuln:FixedBuild>6.3.9600.20969</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Mitigation">
+        <vuln:Description>&lt;p&gt;Mitigation refers to a setting, common configuration, or general best-practice, existing in a default state, that could reduce the severity of exploitation of a vulnerability. The following mitigating factors might be helpful in your situation:&lt;/p&gt;
+&lt;p&gt;The Windows message queuing service, which is a Windows component, needs to be enabled for a system to be exploitable by this vulnerability. This feature can be added via the Control Panel.&lt;/p&gt;
+&lt;p&gt;You can check to see if there is a service running named &lt;strong&gt;Message Queuing&lt;/strong&gt; and TCP port 1801 is listening on the machine.&lt;/p&gt;
+</vuln:Description>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
     </vuln:Remediations>
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
@@ -5162,6 +5169,12 @@
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2023-05-09T07:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2023-05-10T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added mitigation.  This is an informational change only.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
     </vuln:RevisionHistory>
@@ -8057,7 +8070,7 @@ OnlineTimeoutSec : 180
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;How could an attacker exploit this vulnerability?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;When Windows Message Queuing service is running in a PGM Server environment, an attacker could send a specially crafted file over the network to achieve remote code execution and attempt to trigger malicious code.&lt;/p&gt;
+&lt;p&gt;When Windows message queuing service is running in a PGM Server environment, an attacker could send a specially crafted file over the network to achieve remote code execution and attempt to trigger malicious code.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="Windows PGM" Type="Tag" Ordinal="20">Windows PGM</vuln:Note>
       <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
@@ -8898,7 +8911,9 @@ OnlineTimeoutSec : 180
         <vuln:FixedBuild>6.3.9600.20969</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Mitigation">
-        <vuln:Description>&lt;p&gt;Only PGM Server is vulnerable to this vulnerability. To mitigate risk, Microsoft recommends customers deploy newer technologies such as Unicast or Multicast server.&lt;/p&gt;
+        <vuln:Description>&lt;p&gt;Mitigation refers to a setting, common configuration, or general best-practice, existing in a default state, that could reduce the severity of exploitation of a vulnerability. The following mitigating factors might be helpful in your situation:&lt;/p&gt;
+&lt;p&gt;The Windows message queuing service, which is a Windows component, needs to be enabled for a system to be exploitable by this vulnerability. This feature can be added via the Control Panel.&lt;/p&gt;
+&lt;p&gt;You can check to see if there is a service running named &lt;strong&gt;Message Queuing&lt;/strong&gt; and TCP port 1801 is listening on the machine.&lt;/p&gt;
 </vuln:Description>
         <vuln:AffectedFiles />
       </vuln:Remediation>
@@ -8914,6 +8929,12 @@ OnlineTimeoutSec : 180
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2023-05-09T07:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2023-05-10T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added mitigation.  This is an informational change only.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
     </vuln:RevisionHistory>
@@ -9711,12 +9732,22 @@ OnlineTimeoutSec : 180
         <vuln:Name>Keqi Hu</vuln:Name>
         <vuln:URL />
       </vuln:Acknowledgment>
+      <vuln:Acknowledgment>
+        <vuln:Name>Bryan Gonzalez from Ocelot Team @ Metabase Q</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
     </vuln:Acknowledgments>
     <vuln:RevisionHistory>
       <vuln:Revision>
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2023-05-09T07:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2023-05-12T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added an acknowledgement. This is an informational change only.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
     </vuln:RevisionHistory>
@@ -12753,7 +12784,7 @@ OnlineTimeoutSec : 180
     </vuln:Remediations>
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
-        <vuln:Name>&lt;a href="https://www.twitter.comchudypb"&gt;Piotr Bazydlo (@chudypb)&lt;/a&gt; of &lt;a href="https://www.zerodayinitiative.com/"&gt;Trend Micro Zero Day Initiative&lt;/a&gt;</vuln:Name>
+        <vuln:Name>&lt;a href="https://www.twitter.com/chudypb"&gt;Piotr Bazydlo (@chudypb)&lt;/a&gt; of &lt;a href="https://www.zerodayinitiative.com/"&gt;Trend Micro Zero Day Initiative&lt;/a&gt;</vuln:Name>
         <vuln:URL />
       </vuln:Acknowledgment>
     </vuln:Acknowledgments>
