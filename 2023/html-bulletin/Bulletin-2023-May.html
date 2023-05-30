@@ -89,6 +89,7 @@
 <tr><td>secalert@redhat.com</td><td>Mariner</td>    <td><a href="#CVE-2023-2019">CVE-2023-2019</a></td>    <td>Unknown</td></tr>
 <tr><td>security@google.com</td><td>Mariner</td>    <td><a href="#CVE-2023-2235">CVE-2023-2235</a></td>    <td>Unknown</td></tr>
 <tr><td>cve@mitre.org</td><td>Mariner</td>    <td><a href="#CVE-2023-32573">CVE-2023-32573</a></td>    <td>Unknown</td></tr>
+<tr><td>security@android.com</td><td>Mariner</td>    <td><a href="#CVE-2023-20958">CVE-2023-20958</a></td>    <td>Unknown</td></tr>
 <tr><td>Microsoft</td><td>Microsoft Bluetooth Driver</td>    <td><a href="#CVE-2023-24948">CVE-2023-24948</a></td>    <td>Windows Bluetooth Driver Elevation of Privilege Vulnerability</td></tr>
 <tr><td>Microsoft</td><td>Microsoft Bluetooth Driver</td>    <td><a href="#CVE-2023-24947">CVE-2023-24947</a></td>    <td>Windows Bluetooth Driver Remote Code Execution Vulnerability</td></tr>
 <tr><td>Microsoft</td><td>Microsoft Bluetooth Driver</td>    <td><a href="#CVE-2023-24944">CVE-2023-24944</a></td>    <td>Windows Bluetooth Driver Information Disclosure Vulnerability</td></tr>
@@ -1871,6 +1872,126 @@ Added hyperv-daemons to CBL-Mariner 2.0</p>
     </thead>
  <tr>
      <td>CVE-2023-32573</td>
+     <td>None</td>
+ </tr>
+</table><h1 id="CVE-2023-20958">CVE-2023-20958 - Unknown</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2023-20958">CVE-2023-20958</a>
+<br>
+<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-20958">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-20958">NVD</a>
+<p>Issuing CNA: security@android.com</p></td>
+     <td>        <b>CVE Title:</b> Unknown
+        <br>
+        <b>CVSS:</b> <br>                        <br> <b>CVSS:3.1 Highest BaseScore:7,1/TemporalScore:7,1</b>
+                        <table class="cvss_table" border=1 cellpadding=0 width="99%">
+                            <thead>
+                                <tr>
+                                    <td colspan="7"><b>Base score metrics</b></td>
+                                </tr>
+                            </thead>
+                            <tr><td title="This metric reflects the context by which vulnerability exploitation is possible. The Base Score increases the more remote (logically, and physically) an attacker can be in order to exploit the vulnerable component."><b>Attack Vector</b></td><td title="The vulnerable component is not bound to the network stack and the attacker�s path is via read/write/execute capabilities. Either: the attacker exploits the vulnerability by accessing the target system locally (e.g., keyboard, console), or remotely (e.g., SSH); or the attacker relies on User Interaction by another person to perform actions required to exploit the vulnerability (e.g., tricking a legitimate user into opening a malicious document)"><b>Local</b></td></tr><tr><td title="This metric describes the conditions beyond the attacker�s control that must exist in order to exploit the vulnerability. Such conditions may require the collection of more information about the target or computational exceptions. The assessment of this metric excludes any requirements for user interaction in order to exploit the vulnerability. If a specific configuration is required for an attack to succeed, the Base metrics should be scored assuming the vulnerable component is in that configuration."><b>Attack Complexity</b></td><td title="Specialized access conditions or extenuating circumstances do not exist. An attacker can expect repeatable success against the vulnerable component."><b>Low</b></td></tr><tr><td title="This metric describes the level of privileges an attacker must possess before successfully exploiting the vulnerability."><b>Privileges Required</b></td><td title="The attacker is authorized with (i.e., requires) privileges that provide basic user capabilities that could normally affect only settings and files owned by a user. Alternatively, an attacker with Low privileges may have the ability to cause an impact only to non-sensitive resources."><b>Low</b></td></tr><tr><td title="This metric captures the requirement for a user, other than the attacker, to participate in the successful compromise the vulnerable component. This metric determines whether the vulnerability can be exploited solely at the will of the attacker, or whether a separate user (or user-initiated process) must participate in some manner."><b>User Interaction</b></td><td title="The vulnerable system can be exploited without any interaction from any user."><b>None</b></td></tr><tr><td title="Does a successful attack impact a component other than the vulnerable component? If so, the Base Score increases and the Confidentiality, Integrity and Authentication metrics should be scored relative to the impacted component."><b>Scope</b></td><td title="An exploited vulnerability can only affect resources managed by the same security authority. In this case, the vulnerable component and the impacted component are either the same, or both are managed by the same security authority."><b>Unchanged</b></td></tr><tr><td title="This metric measures the impact to the confidentiality of the information resources managed by a software component due to a successfully exploited vulnerability. Confidentiality refers to limiting information access and disclosure to only authorized users, as well as preventing access by, or disclosure to, unauthorized ones."><b>Confidentiality</b></td><td title="There is total loss of confidentiality, resulting in all resources within the impacted component being divulged to the attacker. Alternatively, access to only some restricted information is obtained, but the disclosed information presents a direct, serious impact."><b>High</b></td></tr><tr><td title="This metric measures the impact to integrity of a successfully exploited vulnerability. Integrity refers to the trustworthiness and veracity of information."><b>Integrity</b></td><td title="There is no loss of integrity within the impacted component."><b>None</b></td></tr><tr><td title="This metric measures the impact to the availability of the impacted component resulting from a successfully exploited vulnerability. It refers to the loss of availability of the impacted component itself, such as a networked service (e.g., web, database, email). Since availability refers to the accessibility of information resources, attacks that consume network bandwidth, processor cycles, or disk space all impact the availability of an impacted component."><b>Availability</b></td><td title="There is total loss of availability, resulting in the attacker being able to fully deny access to resources in the impacted component; this loss is either sustained (while the attacker continues to deliver the attack) or persistent (the condition persists even after the attack has completed). Alternatively, the attacker has the ability to deny some availability, but the loss of availability presents a direct, serious consequence to the impacted component (e.g., the attacker cannot disrupt existing connections, but can prevent new connections; the attacker can repeatedly exploit a vulnerability that, in each instance of a successful attack, leaks a only small amount of memory, but after repeated exploitation causes a service to become completely unavailable)."><b>High</b></td></tr>
+                        </table>
+                        <table class="cvss_table" border=1 cellpadding=0 width="99%">
+                            <thead>
+                                <tr>
+                                    <td colspan="7"><b>Temporal score metrics</b></td>
+                                </tr>
+                            </thead>
+                            
+                        </table>
+        <br>
+        <b>Executive Summary:</b> <br>None
+        <br>
+        <b>FAQ:</b><br>None
+        <br>
+        <b>Mitigations:</b><br>None
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp23/05/2023&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Unknown</td>
+     <td>Unknown</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an <a href="https://www.microsoft.com/en-us/msrc/exploitability-index?rtc=1">exploitability assessment</a> for this vulnerability at the time of original publication.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Not Found</td>
+     <td>Not Found</td>
+     <td>Not Found</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="9"><b>CVE-2023-20958</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Fixed Build</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>CBL Mariner 2.0 ARM</td>
+                <td><a href="" >qt5-qtbase (CBL-Mariner)</td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: 7,1<br />Temporal: 7,1<br />Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:H<br /></td>
+                <td>5.12.11-5</td>
+                <td>Unknown</td>
+                <td>None</td>
+        </tr>        <tr>
+                <td>CBL Mariner 2.0 x64</td>
+                <td><a href="" >qt5-qtbase (CBL-Mariner)</td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: 7,1<br />Temporal: 7,1<br />Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:H<br /></td>
+                <td>5.12.11-5</td>
+                <td>Unknown</td>
+                <td>None</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2023-20958</td>
      <td>None</td>
  </tr>
 </table><h1 id="CVE-2023-2459">CVE-2023-2459 - Chromium: CVE-2023-2459 Inappropriate implementation in Prompts</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
