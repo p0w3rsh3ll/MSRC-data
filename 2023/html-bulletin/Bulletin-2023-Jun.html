@@ -76,7 +76,8 @@
   <th>CVE ID</th>
   <th>CVE Title</th>
  </tr>
- <tr><td>Microsoft</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2023-29345">CVE-2023-29345</a></td>    <td>Microsoft Edge (Chromium-based) Security Feature Bypass Vulnerability</td></tr>
+ <tr><td>Chrome</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2023-3079">CVE-2023-3079</a></td>    <td>Chromium: CVE-2023-3079 Type Confusion in V8</td></tr>
+<tr><td>Microsoft</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2023-29345">CVE-2023-29345</a></td>    <td>Microsoft Edge (Chromium-based) Security Feature Bypass Vulnerability</td></tr>
 <tr><td>Microsoft</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2023-33143">CVE-2023-33143</a></td>    <td>Microsoft Edge (Chromium-based) Elevation of Privilege Vulnerability</td></tr>
 <tr><td>Chrome</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2023-2929">CVE-2023-2929</a></td>    <td>Chromium: CVE-2023-2929 Out of bounds write in Swiftshader</td></tr>
 <tr><td>Chrome</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2023-2930">CVE-2023-2930</a></td>    <td>Chromium: CVE-2023-2930 Use after free in Extensions</td></tr>
@@ -91,9 +92,129 @@
 <tr><td>Chrome</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2023-2939">CVE-2023-2939</a></td>    <td>Chromium: CVE-2023-2939 Insufficient data validation in Installer</td></tr>
 <tr><td>Chrome</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2023-2940">CVE-2023-2940</a></td>    <td>Chromium: CVE-2023-2940 Inappropriate implementation in Downloads</td></tr>
 <tr><td>Chrome</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2023-2941">CVE-2023-2941</a></td>    <td>Chromium: CVE-2023-2941 Inappropriate implementation in Extensions API</td></tr>
-<tr><td>Microsoft</td><td>Microsoft Power Apps</td>    <td><a href="#CVE-2023-32024">CVE-2023-32024</a></td>    <td>Microsoft Power Apps Spoofing Vulnerability</td></tr>
 </table>
-<h1 id="CVE-2023-29345">CVE-2023-29345 - Microsoft Edge (Chromium-based) Security Feature Bypass Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+<h1 id="CVE-2023-3079">CVE-2023-3079 - Chromium: CVE-2023-3079 Type Confusion in V8</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2023-3079">CVE-2023-3079</a>
+<br>
+<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-3079">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-3079">NVD</a>
+<p>Issuing CNA: Chrome</p></td>
+     <td>        <b>CVE Title:</b> Chromium: CVE-2023-3079 Type Confusion in V8
+        <br>
+        <b>CVSS:</b> <br>None
+        <br>
+        <b>Executive Summary:</b> <br><p>This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see Google Chrome Releases for more information.</p>
+<p>Google is aware that an exploit for CVE-2023-3079 exists in the wild.</p>
+
+        <br>
+        <b>FAQ:</b><br><p><strong>Why is this Chrome CVE included in the Security Update Guide?</strong></p>
+<p>The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based).  It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.  Please see <a href="https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/">Security Update Guide Supports CVEs Assigned by Industry Partners</a> for more information.</p>
+<p><strong>How can I see the version of the browser?</strong></p>
+<ol>
+<li>In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window</li>
+<li>Click on <strong>Help and Feedback</strong></li>
+<li>Click on <strong>About Microsoft Edge</strong></li>
+</ol>
+<br><p><strong>What is the version information for this release?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Microsoft Edge Version</th>
+<th>Date Released</th>
+<th>Based on Chromium Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>114.0.1823.41</td>
+<td>6/6/2023</td>
+<td>114.0.5735.110</td>
+</tr>
+</tbody>
+</table>
+
+        <br>
+        <b>Mitigations:</b><br>None
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp06/06/2023&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Unknown</td>
+     <td>Unknown</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an <a href="https://www.microsoft.com/en-us/msrc/exploitability-index?rtc=1">exploitability assessment</a> for this vulnerability at the time of original publication.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Not Found</td>
+     <td>Not Found</td>
+     <td>Not Found</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="9"><b>CVE-2023-3079</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Fixed Build</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Edge (Chromium-based)</td>
+                <td><a href="" >Release Notes (Security Update)</td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>114.0.1823.41</td>
+                <td>No</td>
+                <td>None</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2023-3079</td>
+     <td>None</td>
+ </tr>
+</table><h1 id="CVE-2023-29345">CVE-2023-29345 - Microsoft Edge (Chromium-based) Security Feature Bypass Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
  <thead style="background-color: #ededed">
   <tr>
    <td><b>CVE ID</b></td>
@@ -191,13 +312,13 @@
         </tr>
                 <tr>
                 <td>Microsoft Edge (Chromium-based)</td>
-                <td></td>
+                <td><a href="" >Release Notes (Security Update)</td>
                 <td>Low</td>
                 <td>Security Feature Bypass</td>
                 <td>None</td>
                 <td>Base: 6,1<br />Temporal: 5,3<br />Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N/E:U/RL:O/RC:C<br /></td>
-                <td>Unknown</td>
-                <td>Unknown</td>
+                <td>114.0.1823.37</td>
+                <td>No</td>
                 <td>None</td>
         </tr>
 </table>
@@ -212,124 +333,6 @@
  <tr>
      <td>CVE-2023-29345</td>
      <td>lxhom<br><br><br></td>
- </tr>
-</table><h1 id="CVE-2023-32024">CVE-2023-32024 - Microsoft Power Apps Spoofing Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
- <thead style="background-color: #ededed">
-  <tr>
-   <td><b>CVE ID</b></td>
-   <td><b>Vulnerability Description</b></td>
-   <td><b>Maximum Severity Rating</b></td>
-   <td><b>Vulnerability Impact</b></td>
-  </tr>
- </thead>
- <tr>
-     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2023-32024">CVE-2023-32024</a>
-<br>
-<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-32024">MITRE</a>
-<br>
-<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-32024">NVD</a>
-<p>Issuing CNA: Microsoft</p></td>
-     <td>        <b>CVE Title:</b> Microsoft Power Apps Spoofing Vulnerability
-        <br>
-        <b>CVSS:</b> <br>                        <br> <b>CVSS:3.1 Highest BaseScore:3/TemporalScore:2,6</b>
-                        <table class="cvss_table" border=1 cellpadding=0 width="99%">
-                            <thead>
-                                <tr>
-                                    <td colspan="7"><b>Base score metrics</b></td>
-                                </tr>
-                            </thead>
-                            <tr><td title="This metric reflects the context by which vulnerability exploitation is possible. The Base Score increases the more remote (logically, and physically) an attacker can be in order to exploit the vulnerable component."><b>Attack Vector</b></td><td title="The vulnerable component is bound to the network stack and the set of possible attackers extends beyond the other options listed, up to and including the entire Internet. Such a vulnerability is often termed 'remotely exploitable' and can be thought of as an attack being exploitable at the protocol level one or more network hops away (e.g., across one or more routers)."><b>Network</b></td></tr><tr><td title="This metric describes the conditions beyond the attacker�s control that must exist in order to exploit the vulnerability. Such conditions may require the collection of more information about the target or computational exceptions. The assessment of this metric excludes any requirements for user interaction in order to exploit the vulnerability. If a specific configuration is required for an attack to succeed, the Base metrics should be scored assuming the vulnerable component is in that configuration."><b>Attack Complexity</b></td><td title="A successful attack depends on conditions beyond the attacker's control. That is, a successful attack cannot be accomplished at will, but requires the attacker to invest in some measurable amount of effort in preparation or execution against the vulnerable component before a successful attack can be expected. For example, a successful attack may require an attacker to: gather knowledge about the environment in which the vulnerable target/component exists; prepare the target environment to improve exploit reliability; or inject themselves into the logical network path between the target and the resource requested by the victim in order to read and/or modify network communications (e.g., a man in the middle attack)."><b>High</b></td></tr><tr><td title="This metric describes the level of privileges an attacker must possess before successfully exploiting the vulnerability."><b>Privileges Required</b></td><td title="The attacker is authorized with (i.e., requires) privileges that provide basic user capabilities that could normally affect only settings and files owned by a user. Alternatively, an attacker with Low privileges may have the ability to cause an impact only to non-sensitive resources."><b>Low</b></td></tr><tr><td title="This metric captures the requirement for a user, other than the attacker, to participate in the successful compromise the vulnerable component. This metric determines whether the vulnerability can be exploited solely at the will of the attacker, or whether a separate user (or user-initiated process) must participate in some manner."><b>User Interaction</b></td><td title="Successful exploitation of this vulnerability requires a user to take some action before the vulnerability can be exploited."><b>Required</b></td></tr><tr><td title="Does a successful attack impact a component other than the vulnerable component? If so, the Base Score increases and the Confidentiality, Integrity and Authentication metrics should be scored relative to the impacted component."><b>Scope</b></td><td title="An exploited vulnerability can affect resources beyond the security scope managed by the security authority of the vulnerable component. In this case, the vulnerable component and the impacted component are different and managed by different security authorities."><b>Changed</b></td></tr><tr><td title="This metric measures the impact to the confidentiality of the information resources managed by a software component due to a successfully exploited vulnerability. Confidentiality refers to limiting information access and disclosure to only authorized users, as well as preventing access by, or disclosure to, unauthorized ones."><b>Confidentiality</b></td><td title="There is some loss of confidentiality. Access to some restricted information is obtained, but the attacker does not have control over what information is obtained, or the amount or kind of loss is limited. The information disclosure does not cause a direct, serious loss to the impacted component."><b>Low</b></td></tr><tr><td title="This metric measures the impact to integrity of a successfully exploited vulnerability. Integrity refers to the trustworthiness and veracity of information."><b>Integrity</b></td><td title="There is no loss of integrity within the impacted component."><b>None</b></td></tr><tr><td title="This metric measures the impact to the availability of the impacted component resulting from a successfully exploited vulnerability. It refers to the loss of availability of the impacted component itself, such as a networked service (e.g., web, database, email). Since availability refers to the accessibility of information resources, attacks that consume network bandwidth, processor cycles, or disk space all impact the availability of an impacted component."><b>Availability</b></td><td title="There is no impact to availability within the impacted component."><b>None</b></td></tr>
-                        </table>
-                        <table class="cvss_table" border=1 cellpadding=0 width="99%">
-                            <thead>
-                                <tr>
-                                    <td colspan="7"><b>Temporal score metrics</b></td>
-                                </tr>
-                            </thead>
-                            <tr><td title="This metric measures the likelihood of the vulnerability being attacked, and is typically based on the current state of exploit techniques, exploit code availability, or active, 'in-the-wild' exploitation."><b>Exploit Code Maturity</b></td><td title="No exploit code is available, or an exploit is theoretical."><b>Unproven</b></td></tr><tr><td title="The Remediation Level of a vulnerability is an important factor for prioritization. The typical vulnerability is unpatched when initially published. Workarounds or hotfixes may offer interim remediation until an official patch or upgrade is issued. Each of these respective stages adjusts the temporal score downwards, reflecting the decreasing urgency as remediation becomes final."><b>Remediation Level</b></td><td title="A complete vendor solution is available. Either the vendor has issued an official patch, or an upgrade is available."><b>Official Fix</b></td></tr><tr><td title="This metric measures the degree of confidence in the existence of the vulnerability and the credibility of the known technical details. Sometimes only the existence of vulnerabilities are publicized, but without specific details. For example, an impact may be recognized as undesirable, but the root cause may not be known. The vulnerability may later be corroborated by research which suggests where the vulnerability may lie, though the research may not be certain. Finally, a vulnerability may be confirmed through acknowledgement by the author or vendor of the affected technology. The urgency of a vulnerability is higher when a vulnerability is known to exist with certainty. This metric also suggests the level of technical knowledge available to would-be attackers."><b>Report Confidence</b></td><td title="Detailed reports exist, or functional reproduction is possible (functional exploits may provide this). Source code is available to independently verify the assertions of the research, or the author or vendor of the affected code has confirmed the presence of the vulnerability."><b>Confirmed</b></td></tr>
-                        </table>
-        <br>
-        <b>Executive Summary:</b> <br>None
-        <br>
-        <b>FAQ:</b><br><p><strong>According to the CVSS metric, the attack complexity is high (AC:H). What does that mean for this vulnerability?</strong></p>
-<p>Successful exploitation of this vulnerability requires an attacker to take additional actions prior to exploitation to prepare the target environment.</p>
-<br><p><strong>According to the CVSS metric, user interaction is required (UI:R). What interaction would the user have to do?</strong></p>
-<p>The user would have to click on a specially crafted URL to be compromised by the attacker.</p>
-<br><p><strong>According to the CVSS metric, a successful exploitation could lead to a scope change (S:C). What does this mean for this vulnerability?</strong></p>
-<p>The vulnerability is in the web server, but the malicious scripts execute in the victim’s browser on their machine.</p>
-<br><p><strong>According to the CVSS metric, successful exploitation of this vulnerability could lead to some loss of confidentiality (C:L)? What does that mean for this vulnerability?</strong></p>
-<p>Information in the victim's browser associated with the vulnerable URL can be read by the malicious JavaScript code and sent to the attacker.</p>
-
-        <br>
-        <b>Mitigations:</b><br>None
-        <br>
-        <b>Workarounds:</b><br>None
-        <br>
-        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp13/06/2023&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
-
-        <br></td>
-     <td>Important</td>
-     <td>Spoofing</td>
- </tr>
-</table><h2>Exploitability Index</h2>
-
-<p>The following table provides an <a href="https://www.microsoft.com/en-us/msrc/exploitability-index?rtc=1">exploitability assessment</a> for this vulnerability at the time of original publication.</p>
-
-<table border=1 cellpadding=0 width="99%">
- <thead style="background-color: #ededed">
-  <tr>
-   <td><b>Exploitability Assessment</b></td>
-   <td><b>Publicly Disclosed</b></td>
-   <td><b>Exploited</b></td>
-  </tr>
- </thead>
- <tr>
-     <td>Exploitation Less Likely</td>
-     <td>No</td>
-     <td>No</td>
- </tr>
-</table><h2>Affected Software</h2>
-
-<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
-    <thead style="background-color: #ededed">
-        <tr>
-            <td colspan="9"><b>CVE-2023-32024</b></td>
-        </tr>
-    </thead>
-        <tr>
-            <td><b>Product</b></td>
-            <td><b>KB Article</b></td>
-            <td><b>Severity</b></td>
-            <td><b>Impact</b></td>
-            <td><b>Supercedence</b></td>
-            <td><b>CVSS Score Set</b></td>
-            <td><b>Fixed Build</b></td>
-            <td><b>Restart Required</b></td>
-            <td><b>Known Issue</b></td>
-        </tr>
-                <tr>
-                <td>Microsoft Power Apps</td>
-                <td></td>
-                <td>Important</td>
-                <td>Spoofing</td>
-                <td>None</td>
-                <td>Base: 3<br />Temporal: 2,6<br />Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:L/I:N/A:N/E:U/RL:O/RC:C<br /></td>
-                <td>Unknown</td>
-                <td>Unknown</td>
-                <td>None</td>
-        </tr>
-</table>
-<br><h2>Acknowledgements</h2>
-<table border=1 cellpadding=0 width="99%">
- <thead style="background-color: #ededed">
-    <tr>
-        <td><b>CVE ID</b></td>
-        <td><b>Acknowledgements</b></td>
-    </tr>
-    </thead>
- <tr>
-     <td>CVE-2023-32024</td>
-     <td>Jordan Hopkins<br><br><br></td>
  </tr>
 </table><h1 id="CVE-2023-33143">CVE-2023-33143 - Microsoft Edge (Chromium-based) Elevation of Privilege Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
  <thead style="background-color: #ededed">
