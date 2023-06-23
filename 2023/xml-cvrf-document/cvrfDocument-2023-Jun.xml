@@ -15,13 +15,13 @@
     <cvrf:Version>1.0</cvrf:Version>
     <cvrf:RevisionHistory>
       <cvrf:Revision>
-        <cvrf:Number>7</cvrf:Number>
-        <cvrf:Date>2023-06-19T07:00:00</cvrf:Date>
+        <cvrf:Number>1</cvrf:Number>
+        <cvrf:Date>2023-06-02T00:00:00</cvrf:Date>
         <cvrf:Description>June 2023 Security Updates</cvrf:Description>
       </cvrf:Revision>
     </cvrf:RevisionHistory>
     <cvrf:InitialReleaseDate>2023-06-13T07:00:00</cvrf:InitialReleaseDate>
-    <cvrf:CurrentReleaseDate>2023-06-19T07:00:00</cvrf:CurrentReleaseDate>
+    <cvrf:CurrentReleaseDate>2023-06-02T00:00:00</cvrf:CurrentReleaseDate>
   </cvrf:DocumentTracking>
   <cvrf:DocumentNotes>
     <cvrf:Note Title="Release Notes" Audience="Public" Type="Details" Ordinal="0">&lt;h2&gt;This release consists of the following 79 Microsoft CVEs:&lt;/h2&gt;
@@ -1238,6 +1238,7 @@
         <prod:FullProductName ProductID="12201">NuGet 6.3.2</prod:FullProductName>
         <prod:FullProductName ProductID="12199">NuGet 6.0.4</prod:FullProductName>
         <prod:FullProductName ProductID="12204">NuGet 6.6.0</prod:FullProductName>
+        <prod:FullProductName ProductID="12029">YARP 1.0</prod:FullProductName>
         <prod:FullProductName ProductID="12188">YARP 2.0</prod:FullProductName>
         <prod:FullProductName ProductID="11622">Visual Studio Code</prod:FullProductName>
       </prod:Branch>
@@ -1421,6 +1422,7 @@
     <prod:FullProductName ProductID="11961">Microsoft SharePoint Server Subscription Edition</prod:FullProductName>
     <prod:FullProductName ProductID="11969">Microsoft Visual Studio 2022 version 17.0</prod:FullProductName>
     <prod:FullProductName ProductID="12009">.NET 6.0</prod:FullProductName>
+    <prod:FullProductName ProductID="12029">YARP 1.0</prod:FullProductName>
     <prod:FullProductName ProductID="12038">Microsoft Exchange Server 2019 Cumulative Update 12</prod:FullProductName>
     <prod:FullProductName ProductID="12039">Microsoft Exchange Server 2016 Cumulative Update 23</prod:FullProductName>
     <prod:FullProductName ProductID="12051">Microsoft Visual Studio 2022 version 17.2</prod:FullProductName>
@@ -1492,6 +1494,123 @@
     <prod:FullProductName ProductID="9495-10049">Microsoft .NET Framework 3.5.1 on Windows Server 2008 R2 for x64-based Systems Service Pack 1 (Server Core installation)</prod:FullProductName>
     <prod:FullProductName ProductID="9495-10051">Microsoft .NET Framework 3.5.1 on Windows Server 2008 R2 for x64-based Systems Service Pack 1</prod:FullProductName>
   </prod:ProductTree>
+  <vuln:Vulnerability Ordinal="0">
+    <vuln:Title />
+    <vuln:Notes>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2023-0459</vuln:Note>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="security@google.com" Type="CNA" Ordinal="30">security@google.com</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2023-0459</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>12137</vuln:ProductID>
+        <vuln:ProductID>12138</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12137</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12138</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12137</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12138</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.5</vuln:BaseScore>
+        <vuln:TemporalScore>5.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N</vuln:Vector>
+        <vuln:ProductID>12137</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.5</vuln:BaseScore>
+        <vuln:TemporalScore>5.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N</vuln:Vector>
+        <vuln:ProductID>12138</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>kernel</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12137</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-5.10.181.1-1.cm1.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-devel-5.10.181.1-1.cm1.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-drivers-accessibility-5.10.181.1-1.cm1.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-drivers-sound-5.10.181.1-1.cm1.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-docs-5.10.181.1-1.cm1.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-oprofile-5.10.181.1-1.cm1.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-tools-5.10.181.1-1.cm1.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>bpftool-5.10.181.1-1.cm1.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>kernel-debuginfo-5.10.181.1-1.cm1.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>5.10.181.1-1</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>kernel</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12138</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>5.10.181.1-1</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2023-06-02T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
   <vuln:Vulnerability Ordinal="59">
     <vuln:Title>Chromium: CVE-2023-3079 Type Confusion in V8</vuln:Title>
     <vuln:Notes>
@@ -3838,7 +3957,7 @@
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19044.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19044.3086</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Known Issue">
         <vuln:Description>5027215</vuln:Description>
@@ -3879,7 +3998,7 @@
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19045.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19045.3086</vuln:FixedBuild>
       </vuln:Remediation>
     </vuln:Remediations>
     <vuln:Acknowledgments>
@@ -4242,7 +4361,7 @@
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19044.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19044.3086</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Known Issue">
         <vuln:Description>5027215</vuln:Description>
@@ -4283,7 +4402,7 @@
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19045.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19045.3086</vuln:FixedBuild>
       </vuln:Remediation>
     </vuln:Remediations>
     <vuln:Acknowledgments>
@@ -14305,7 +14424,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19044.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19044.3086</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Known Issue">
         <vuln:Description>5027215</vuln:Description>
@@ -14346,7 +14465,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19045.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19045.3086</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5027230</vuln:Description>
@@ -15390,7 +15509,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19044.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19044.3086</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Known Issue">
         <vuln:Description>5027215</vuln:Description>
@@ -15431,7 +15550,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19045.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19045.3086</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5027230</vuln:Description>
@@ -15875,7 +15994,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19044.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19044.3086</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Known Issue">
         <vuln:Description>5027215</vuln:Description>
@@ -15910,7 +16029,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19045.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19045.3086</vuln:FixedBuild>
       </vuln:Remediation>
     </vuln:Remediations>
     <vuln:Acknowledgments>
@@ -16893,7 +17012,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19044.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19044.3086</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Known Issue">
         <vuln:Description>5027215</vuln:Description>
@@ -16934,7 +17053,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19045.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19045.3086</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5027230</vuln:Description>
@@ -17684,7 +17803,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19044.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19044.3086</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Known Issue">
         <vuln:Description>5027215</vuln:Description>
@@ -17725,7 +17844,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19045.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19045.3086</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5027230</vuln:Description>
@@ -18295,7 +18414,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19044.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19044.3086</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Known Issue">
         <vuln:Description>5027215</vuln:Description>
@@ -18336,7 +18455,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19045.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19045.3086</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5027219</vuln:Description>
@@ -18621,7 +18740,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19044.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19044.3086</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Known Issue">
         <vuln:Description>5027215</vuln:Description>
@@ -18662,7 +18781,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19045.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19045.3086</vuln:FixedBuild>
       </vuln:Remediation>
     </vuln:Remediations>
     <vuln:Acknowledgments>
@@ -19106,7 +19225,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19044.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19044.3086</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Known Issue">
         <vuln:Description>5027215</vuln:Description>
@@ -19141,7 +19260,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19045.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19045.3086</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5027230</vuln:Description>
@@ -19846,7 +19965,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19044.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19044.3086</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Known Issue">
         <vuln:Description>5027215</vuln:Description>
@@ -19887,7 +20006,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19045.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19045.3086</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5027230</vuln:Description>
@@ -20597,7 +20716,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19044.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19044.3086</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Known Issue">
         <vuln:Description>5027215</vuln:Description>
@@ -20638,7 +20757,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19045.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19045.3086</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5027230</vuln:Description>
@@ -21286,7 +21405,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19044.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19044.3086</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Known Issue">
         <vuln:Description>5027215</vuln:Description>
@@ -21327,7 +21446,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19045.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19045.3086</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5027230</vuln:Description>
@@ -21699,7 +21818,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19044.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19044.3086</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Known Issue">
         <vuln:Description>5027215</vuln:Description>
@@ -21740,7 +21859,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19045.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19045.3086</vuln:FixedBuild>
       </vuln:Remediation>
     </vuln:Remediations>
     <vuln:Acknowledgments>
@@ -22576,7 +22695,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19044.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19044.3086</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Known Issue">
         <vuln:Description>5027215</vuln:Description>
@@ -22617,7 +22736,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19045.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19045.3086</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5027230</vuln:Description>
@@ -23496,7 +23615,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19044.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19044.3086</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Known Issue">
         <vuln:Description>5027215</vuln:Description>
@@ -23537,7 +23656,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19045.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19045.3086</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5027230</vuln:Description>
@@ -24173,7 +24292,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19044.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19044.3086</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Known Issue">
         <vuln:Description>5027215</vuln:Description>
@@ -24214,7 +24333,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19045.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19045.3086</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5027230</vuln:Description>
@@ -24964,7 +25083,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19044.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19044.3086</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Known Issue">
         <vuln:Description>5027215</vuln:Description>
@@ -25005,7 +25124,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19045.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19045.3086</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5027230</vuln:Description>
@@ -25758,7 +25877,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19044.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19044.3086</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Known Issue">
         <vuln:Description>5027215</vuln:Description>
@@ -25799,7 +25918,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19045.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19045.3086</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5027230</vuln:Description>
@@ -26402,7 +26521,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19044.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19044.3086</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Known Issue">
         <vuln:Description>5027215</vuln:Description>
@@ -26443,7 +26562,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19045.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19045.3086</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5027230</vuln:Description>
@@ -26896,7 +27015,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19044.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19044.3086</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Known Issue">
         <vuln:Description>5027215</vuln:Description>
@@ -26937,7 +27056,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19045.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19045.3086</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5027219</vuln:Description>
@@ -27643,7 +27762,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19044.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19044.3086</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Known Issue">
         <vuln:Description>5027215</vuln:Description>
@@ -27684,7 +27803,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19045.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19045.3086</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5027230</vuln:Description>
@@ -28047,7 +28166,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19044.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19044.3086</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Known Issue">
         <vuln:Description>5027215</vuln:Description>
@@ -28088,7 +28207,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19045.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19045.3086</vuln:FixedBuild>
       </vuln:Remediation>
     </vuln:Remediations>
     <vuln:Acknowledgments>
@@ -28358,7 +28477,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19044.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19044.3086</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Known Issue">
         <vuln:Description>5027215</vuln:Description>
@@ -28393,7 +28512,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19045.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19045.3086</vuln:FixedBuild>
       </vuln:Remediation>
     </vuln:Remediations>
     <vuln:Acknowledgments>
@@ -28999,7 +29118,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19044.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19044.3086</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Known Issue">
         <vuln:Description>5027215</vuln:Description>
@@ -29040,7 +29159,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19045.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19045.3086</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5027230</vuln:Description>
@@ -29797,7 +29916,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19044.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19044.3086</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Known Issue">
         <vuln:Description>5027215</vuln:Description>
@@ -29838,7 +29957,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19045.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19045.3086</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5027230</vuln:Description>
@@ -30595,7 +30714,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19044.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19044.3086</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Known Issue">
         <vuln:Description>5027215</vuln:Description>
@@ -30636,7 +30755,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19045.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19045.3086</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5027230</vuln:Description>
@@ -31389,7 +31508,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19044.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19044.3086</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Known Issue">
         <vuln:Description>5027215</vuln:Description>
@@ -31430,7 +31549,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19045.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19045.3086</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5027230</vuln:Description>
@@ -32096,7 +32215,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19044.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19044.3086</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Known Issue">
         <vuln:Description>5027215</vuln:Description>
@@ -32137,7 +32256,7 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19045.3087</vuln:FixedBuild>
+        <vuln:FixedBuild>10.0.19045.3086</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5027219</vuln:Description>
@@ -36860,13 +36979,22 @@ The Microsoft Store will not automatically install this update for those custome
     <vuln:CVE>CVE-2023-33141</vuln:CVE>
     <vuln:ProductStatuses>
       <vuln:Status Type="Known Affected">
+        <vuln:ProductID>12029</vuln:ProductID>
         <vuln:ProductID>12188</vuln:ProductID>
       </vuln:Status>
     </vuln:ProductStatuses>
     <vuln:Threats>
       <vuln:Threat Type="Impact">
         <vuln:Description>Denial of Service</vuln:Description>
+        <vuln:ProductID>12029</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Denial of Service</vuln:Description>
         <vuln:ProductID>12188</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>12029</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
         <vuln:Description>Important</vuln:Description>
@@ -36881,10 +37009,35 @@ The Microsoft Store will not automatically install this update for those custome
         <vuln:BaseScore>7.5</vuln:BaseScore>
         <vuln:TemporalScore>6.7</vuln:TemporalScore>
         <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>12029</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>6.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>12188</vuln:ProductID>
       </vuln:ScoreSet>
     </vuln:CVSSScoreSets>
-    <vuln:Remediations />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL>https://www.nuget.org/packages/Yarp.ReverseProxy/1.1.2</vuln:URL>
+        <vuln:ProductID>12029</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Maybe</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>1.1.2</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL>https://www.nuget.org/packages/Yarp.ReverseProxy/2.0.1</vuln:URL>
+        <vuln:ProductID>12188</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Maybe</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>2.0.1</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
     <vuln:Acknowledgments />
     <vuln:RevisionHistory>
       <vuln:Revision>
@@ -36897,6 +37050,12 @@ The Microsoft Store will not automatically install this update for those custome
         <cvrf:Number>1.1</cvrf:Number>
         <cvrf:Date>2023-06-14T07:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;FAQ added to explain that the YARP 2.0 is not immediately available. The update will be released as soon as possible, and when it is available, customers will be notified via a revision to this CVE information.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2023-06-22T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;The following revisions have been made in the Security Updates table: 1) Added YARP 1.0 as it is also affected by this vulnerability and an update is available. 2) The security update for YARP 2.0 is now available. Customers running these affected versions of YARP should install the update for their product to be protected from this vulnerability.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
     </vuln:RevisionHistory>
@@ -38124,123 +38283,6 @@ The Microsoft Store will not automatically install this update for those custome
       <vuln:Revision>
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2023-06-02T07:00:00</cvrf:Date>
-        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
-</cvrf:Description>
-      </vuln:Revision>
-    </vuln:RevisionHistory>
-  </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="0">
-    <vuln:Title />
-    <vuln:Notes>
-      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2023-0459</vuln:Note>
-      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
-      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
-      <vuln:Note Title="security@google.com" Type="CNA" Ordinal="30">security@google.com</vuln:Note>
-    </vuln:Notes>
-    <vuln:CVE>CVE-2023-0459</vuln:CVE>
-    <vuln:ProductStatuses>
-      <vuln:Status Type="Known Affected">
-        <vuln:ProductID>12137</vuln:ProductID>
-        <vuln:ProductID>12138</vuln:ProductID>
-      </vuln:Status>
-    </vuln:ProductStatuses>
-    <vuln:Threats>
-      <vuln:Threat Type="Impact">
-        <vuln:Description />
-        <vuln:ProductID>12137</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description />
-        <vuln:ProductID>12138</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description />
-        <vuln:ProductID>12137</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description />
-        <vuln:ProductID>12138</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Exploit Status">
-        <vuln:Description>DOS:N/A</vuln:Description>
-      </vuln:Threat>
-    </vuln:Threats>
-    <vuln:CVSSScoreSets>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>5.5</vuln:BaseScore>
-        <vuln:TemporalScore>5.5</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N</vuln:Vector>
-        <vuln:ProductID>12137</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>5.5</vuln:BaseScore>
-        <vuln:TemporalScore>5.5</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N</vuln:Vector>
-        <vuln:ProductID>12138</vuln:ProductID>
-      </vuln:ScoreSet>
-    </vuln:CVSSScoreSets>
-    <vuln:Remediations>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>kernel</vuln:Description>
-        <vuln:URL />
-        <vuln:ProductID>12137</vuln:ProductID>
-        <vuln:AffectedFiles>
-          <vuln:AffectedFile>
-            <vuln:FileName>kernel-5.10.181.1-1.cm1.x86_64.rpm</vuln:FileName>
-            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
-          </vuln:AffectedFile>
-          <vuln:AffectedFile>
-            <vuln:FileName>kernel-devel-5.10.181.1-1.cm1.x86_64.rpm</vuln:FileName>
-            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
-          </vuln:AffectedFile>
-          <vuln:AffectedFile>
-            <vuln:FileName>kernel-drivers-accessibility-5.10.181.1-1.cm1.x86_64.rpm</vuln:FileName>
-            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
-          </vuln:AffectedFile>
-          <vuln:AffectedFile>
-            <vuln:FileName>kernel-drivers-sound-5.10.181.1-1.cm1.x86_64.rpm</vuln:FileName>
-            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
-          </vuln:AffectedFile>
-          <vuln:AffectedFile>
-            <vuln:FileName>kernel-docs-5.10.181.1-1.cm1.x86_64.rpm</vuln:FileName>
-            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
-          </vuln:AffectedFile>
-          <vuln:AffectedFile>
-            <vuln:FileName>kernel-oprofile-5.10.181.1-1.cm1.x86_64.rpm</vuln:FileName>
-            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
-          </vuln:AffectedFile>
-          <vuln:AffectedFile>
-            <vuln:FileName>kernel-tools-5.10.181.1-1.cm1.x86_64.rpm</vuln:FileName>
-            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
-          </vuln:AffectedFile>
-          <vuln:AffectedFile>
-            <vuln:FileName>bpftool-5.10.181.1-1.cm1.x86_64.rpm</vuln:FileName>
-            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
-          </vuln:AffectedFile>
-          <vuln:AffectedFile>
-            <vuln:FileName>kernel-debuginfo-5.10.181.1-1.cm1.x86_64.rpm</vuln:FileName>
-            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
-          </vuln:AffectedFile>
-        </vuln:AffectedFiles>
-        <vuln:RestartRequired />
-        <vuln:SubType>CBL-Mariner</vuln:SubType>
-        <vuln:FixedBuild>5.10.181.1-1</vuln:FixedBuild>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>kernel</vuln:Description>
-        <vuln:URL />
-        <vuln:ProductID>12138</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:RestartRequired />
-        <vuln:SubType>CBL-Mariner</vuln:SubType>
-        <vuln:FixedBuild>5.10.181.1-1</vuln:FixedBuild>
-      </vuln:Remediation>
-    </vuln:Remediations>
-    <vuln:Acknowledgments />
-    <vuln:RevisionHistory>
-      <vuln:Revision>
-        <cvrf:Number>1.0</cvrf:Number>
-        <cvrf:Date>2023-06-02T00:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
