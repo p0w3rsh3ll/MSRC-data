@@ -1999,7 +1999,7 @@
     </thead>
  <tr>
      <td>CVE-2023-33165</td>
-     <td>Anonymous<br><br><br>Anonymous<br><br><br></td>
+     <td>Sergey Egorov<br><br><br>Anonymous<br><br><br></td>
  </tr>
 </table><h1 id="CVE-2023-33166">CVE-2023-33166 - Remote Procedure Call Runtime Denial of Service Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
  <thead style="background-color: #ededed">
@@ -21529,7 +21529,23 @@
 <p>Issuing CNA: Microsoft</p></td>
      <td>        <b>CVE Title:</b> Active Directory Federation Service Security Feature Bypass Vulnerability
         <br>
-        <b>CVSS:</b> <br>None
+        <b>CVSS:</b> <br>                        <br> <b>CVSS:3.1 Highest BaseScore:6,5/TemporalScore:6</b>
+                        <table class="cvss_table" border=1 cellpadding=0 width="99%">
+                            <thead>
+                                <tr>
+                                    <td colspan="7"><b>Base score metrics</b></td>
+                                </tr>
+                            </thead>
+                            <tr><td title="This metric reflects the context by which vulnerability exploitation is possible. The Base Score increases the more remote (logically, and physically) an attacker can be in order to exploit the vulnerable component."><b>Attack Vector</b></td><td title="The vulnerable component is bound to the network stack and the set of possible attackers extends beyond the other options listed, up to and including the entire Internet. Such a vulnerability is often termed 'remotely exploitable' and can be thought of as an attack being exploitable at the protocol level one or more network hops away (e.g., across one or more routers)."><b>Network</b></td></tr><tr><td title="This metric describes the conditions beyond the attacker�s control that must exist in order to exploit the vulnerability. Such conditions may require the collection of more information about the target or computational exceptions. The assessment of this metric excludes any requirements for user interaction in order to exploit the vulnerability. If a specific configuration is required for an attack to succeed, the Base metrics should be scored assuming the vulnerable component is in that configuration."><b>Attack Complexity</b></td><td title="Specialized access conditions or extenuating circumstances do not exist. An attacker can expect repeatable success against the vulnerable component."><b>Low</b></td></tr><tr><td title="This metric describes the level of privileges an attacker must possess before successfully exploiting the vulnerability."><b>Privileges Required</b></td><td title="The attacker is authorized with (i.e., requires) privileges that provide basic user capabilities that could normally affect only settings and files owned by a user. Alternatively, an attacker with Low privileges may have the ability to cause an impact only to non-sensitive resources."><b>Low</b></td></tr><tr><td title="This metric captures the requirement for a user, other than the attacker, to participate in the successful compromise the vulnerable component. This metric determines whether the vulnerability can be exploited solely at the will of the attacker, or whether a separate user (or user-initiated process) must participate in some manner."><b>User Interaction</b></td><td title="The vulnerable system can be exploited without any interaction from any user."><b>None</b></td></tr><tr><td title="Does a successful attack impact a component other than the vulnerable component? If so, the Base Score increases and the Confidentiality, Integrity and Authentication metrics should be scored relative to the impacted component."><b>Scope</b></td><td title="An exploited vulnerability can only affect resources managed by the same security authority. In this case, the vulnerable component and the impacted component are either the same, or both are managed by the same security authority."><b>Unchanged</b></td></tr><tr><td title="This metric measures the impact to the confidentiality of the information resources managed by a software component due to a successfully exploited vulnerability. Confidentiality refers to limiting information access and disclosure to only authorized users, as well as preventing access by, or disclosure to, unauthorized ones."><b>Confidentiality</b></td><td title="There is no loss of confidentiality within the impacted component."><b>None</b></td></tr><tr><td title="This metric measures the impact to integrity of a successfully exploited vulnerability. Integrity refers to the trustworthiness and veracity of information."><b>Integrity</b></td><td title="There is a total loss of integrity, or a complete loss of protection. For example, the attacker is able to modify any/all files protected by the impacted component. Alternatively, only some files can be modified, but malicious modification would present a direct, serious consequence to the impacted component."><b>High</b></td></tr><tr><td title="This metric measures the impact to the availability of the impacted component resulting from a successfully exploited vulnerability. It refers to the loss of availability of the impacted component itself, such as a networked service (e.g., web, database, email). Since availability refers to the accessibility of information resources, attacks that consume network bandwidth, processor cycles, or disk space all impact the availability of an impacted component."><b>Availability</b></td><td title="There is no impact to availability within the impacted component."><b>None</b></td></tr>
+                        </table>
+                        <table class="cvss_table" border=1 cellpadding=0 width="99%">
+                            <thead>
+                                <tr>
+                                    <td colspan="7"><b>Temporal score metrics</b></td>
+                                </tr>
+                            </thead>
+                            <tr><td title="This metric measures the likelihood of the vulnerability being attacked, and is typically based on the current state of exploit techniques, exploit code availability, or active, 'in-the-wild' exploitation."><b>Exploit Code Maturity</b></td><td title="Functional exploit code is available. The code works in most situations where the vulnerability exists."><b>Functional</b></td></tr><tr><td title="The Remediation Level of a vulnerability is an important factor for prioritization. The typical vulnerability is unpatched when initially published. Workarounds or hotfixes may offer interim remediation until an official patch or upgrade is issued. Each of these respective stages adjusts the temporal score downwards, reflecting the decreasing urgency as remediation becomes final."><b>Remediation Level</b></td><td title="A complete vendor solution is available. Either the vendor has issued an official patch, or an upgrade is available."><b>Official Fix</b></td></tr><tr><td title="This metric measures the degree of confidence in the existence of the vulnerability and the credibility of the known technical details. Sometimes only the existence of vulnerabilities are publicized, but without specific details. For example, an impact may be recognized as undesirable, but the root cause may not be known. The vulnerability may later be corroborated by research which suggests where the vulnerability may lie, though the research may not be certain. Finally, a vulnerability may be confirmed through acknowledgement by the author or vendor of the affected technology. The urgency of a vulnerability is higher when a vulnerability is known to exist with certainty. This metric also suggests the level of technical knowledge available to would-be attackers."><b>Report Confidence</b></td><td title="Detailed reports exist, or functional reproduction is possible (functional exploits may provide this). Source code is available to independently verify the assertions of the research, or the author or vendor of the affected code has confirmed the presence of the vulnerability."><b>Confirmed</b></td></tr>
+                        </table>
         <br>
         <b>Executive Summary:</b> <br>None
         <br>
@@ -21553,8 +21569,8 @@
         <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp11/07/2023&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
 
         <br></td>
-     <td>Unknown</td>
-     <td>Unknown</td>
+     <td>Important</td>
+     <td>Security Feature Bypass</td>
  </tr>
 </table><h2>Exploitability Index</h2>
 
@@ -21592,7 +21608,67 @@
             <td><b>Restart Required</b></td>
             <td><b>Known Issue</b></td>
         </tr>
-        
+                <tr>
+                <td>Windows Server 2016</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5028169" >5028169 (Security Update)</td>
+                <td>Important</td>
+                <td>Security Feature Bypass</td>
+                <td>5027219</td>
+                <td>Base: 6,5<br />Temporal: 6<br />Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N/E:F/RL:O/RC:C<br /></td>
+                <td>10.0.14393.6085</td>
+                <td>Yes</td>
+                <td>None</td>
+        </tr>        <tr>
+                <td>Windows Server 2016 (Server Core installation)</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5028169" >5028169 (Security Update)</td>
+                <td>Important</td>
+                <td>Security Feature Bypass</td>
+                <td>5027219</td>
+                <td>Base: 6,5<br />Temporal: 6<br />Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N/E:F/RL:O/RC:C<br /></td>
+                <td>10.0.14393.6085</td>
+                <td>Yes</td>
+                <td>None</td>
+        </tr>        <tr>
+                <td>Windows Server 2019</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5028168" >5028168 (Security Update)</td>
+                <td>Important</td>
+                <td>Security Feature Bypass</td>
+                <td>5027222<br /></td>
+                <td>Base: 6,5<br />Temporal: 6<br />Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N/E:F/RL:O/RC:C<br /></td>
+                <td>10.0.17763.4645<br /></td>
+                <td>Yes</td>
+                <td><a href="https://support.microsoft.com/help/5028168" >5028168</td>
+        </tr>        <tr>
+                <td>Windows Server 2019 (Server Core installation)</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5028168" >5028168 (Security Update)</td>
+                <td>Important</td>
+                <td>Security Feature Bypass</td>
+                <td>5027222<br /></td>
+                <td>Base: 6,5<br />Temporal: 6<br />Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N/E:F/RL:O/RC:C<br /></td>
+                <td>10.0.17763.4645<br /></td>
+                <td>Yes</td>
+                <td><a href="https://support.microsoft.com/help/5028168" >5028168</td>
+        </tr>        <tr>
+                <td>Windows Server 2022</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5028171" >5028171 (Security Update)</td>
+                <td>Important</td>
+                <td>Security Feature Bypass</td>
+                <td>5027225<br /></td>
+                <td>Base: 6,5<br />Temporal: 6<br />Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N/E:F/RL:O/RC:C<br /></td>
+                <td>10.0.20348.1850<br /></td>
+                <td>Yes</td>
+                <td><a href="https://support.microsoft.com/help/5028171" >5028171</td>
+        </tr>        <tr>
+                <td>Windows Server 2022 (Server Core installation)</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5028171" >5028171 (Security Update)</td>
+                <td>Important</td>
+                <td>Security Feature Bypass</td>
+                <td>5027225<br /></td>
+                <td>Base: 6,5<br />Temporal: 6<br />Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N/E:F/RL:O/RC:C<br /></td>
+                <td>10.0.20348.1850<br /></td>
+                <td>Yes</td>
+                <td><a href="https://support.microsoft.com/help/5028171" >5028171</td>
+        </tr>
 </table>
 <br><h2>Acknowledgements</h2>
 <table border=1 cellpadding=0 width="99%">
@@ -27110,15 +27186,18 @@
 <p>An attacker could create a specially crafted Microsoft Office document that enables them to perform remote code execution in the context of the victim. However, an attacker would have to convince the victim to open the malicious file.</p>
 <p>Upon completion of this investigation, Microsoft will take the appropriate action to help protect our customers. This might include providing a security update through our monthly release process or providing an out-of-cycle security update, depending on customer needs.</p>
 <p>Please see the Microsoft Threat Intelligence <a href="https://aka.ms/Storm-0978">Blog Entry</a> for important information about steps you can take to protect your system from this vulnerability.</p>
-<p>This CVE will be updated with new information and links to security updates when they become available.</p>
+<p>This CVE will be updated with new information and links to security updates when they become available. If you wish to be notified when these updates are released, we recommend that you register for the security notifications mailer to be alerted of content changes to this CVE. See <a href="https://www.microsoft.com/en-us/msrc/technical-security-notifications?rtc=1">Microsoft Technical Security Notifications</a> and <a href="https://msrc-blog.microsoft.com/2022/08/09/security-update-guide-notification-system-news-create-your-profile-now/">Security Update Guide Notification System News: Create your profile now – Microsoft Security Response Center</a>.</p>
 
         <br>
-        <b>FAQ:</b><br>None
+        <b>FAQ:</b><br><p><strong>If I'm running Office365 Semi-Annual Channel Extended, am I affected by this vulnerability?</strong></p>
+<p>Office365 Semi-Annual Channel Extended (specifically versions 2208 and 2202) are affected. Microsoft 365 Apps Semi-Annual Channel Extended (specifically versions 2208 and 2202) are affected. However, Microsoft 365 Semi-Annual Channel version 2302 (and all later versions) are protected from this vulnerability..  Please see <a href="https://learn.microsoft.com/en-us/officeupdates/update-history-microsoft365-apps-by-date">Update history for Microsoft 365 Apps (listed by date)</a> for information about those channels and their versions.</p>
+
         <br>
         <b>Mitigations:</b><br><ul>
 <li>Customers who use Microsoft Defender for Office are protected from attachments that attempt to exploit this vulnerability.</li>
 <li>In current attack chains, the use of the<a href="https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference?view=o365-worldwide#block-all-office-applications-from-creating-child-processes"> Block all Office applications from creating child processes</a> Attack Surface Reduction Rule will prevent the vulnerability from being exploited.</li>
-<li>Organizations who cannot take advantage of these protections can set the FEATURE_BLOCK_CROSS_PROTOCOL_FILE_NAVIGATION registry key to avoid exploitation.  Please note that while these registry settings would mitigate exploitation of this issue, it could affect regular functionality for certain use cases related to these applications. Add the following application names to this registry key as values of type REG_DWORD with data 1.:</li>
+<li>Organizations who cannot take advantage of these protections can set the FEATURE_BLOCK_CROSS_PROTOCOL_FILE_NAVIGATION registry key to avoid exploitation.  No OS restart is required, but restarting the applications that have had the registry key added for them is recommended in case the value was already queried and is cached.  Please note that while these registry settings would mitigate exploitation of this issue, it could affect regular functionality for certain use cases related to these applications. For this reason, we suggest testing. To disable the mitigation, delete the registry key or set it to “0”.</li>
+<li>Add the following application names to this registry key as values of type REG_DWORD with data 1.:</li>
 </ul>
 <p><code>Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_BLOCK_CROSS_PROTOCOL_FILE_NAVIGATION</code></p>
 <ul>
@@ -27126,7 +27205,7 @@
 <li>Graph.exe</li>
 <li>MSAccess.exe</li>
 <li>MSPub.exe</li>
-<li>PowerPoint.exe</li>
+<li>Powerpnt.exe</li>
 <li>Visio.exe</li>
 <li>WinProj.exe</li>
 <li>WinWord.exe</li>
@@ -27138,6 +27217,7 @@
         <b>Workarounds:</b><br>None
         <br>
         <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp11/07/2023&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+<br>1.1&nbsp&nbsp&nbsp&nbsp12/07/2023&nbsp&nbsp&nbsp&nbsp<p>Updated FAQ information. This is an informational change only.</p>
 
         <br></td>
      <td>Important</td>
