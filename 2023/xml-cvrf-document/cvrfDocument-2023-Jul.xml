@@ -15,13 +15,13 @@
     <cvrf:Version>1.0</cvrf:Version>
     <cvrf:RevisionHistory>
       <cvrf:Revision>
-        <cvrf:Number>2</cvrf:Number>
-        <cvrf:Date>2023-07-12T07:00:00</cvrf:Date>
+        <cvrf:Number>4</cvrf:Number>
+        <cvrf:Date>2023-07-14T07:00:00</cvrf:Date>
         <cvrf:Description>July 2023 Security Updates</cvrf:Description>
       </cvrf:Revision>
     </cvrf:RevisionHistory>
     <cvrf:InitialReleaseDate>2023-07-11T07:00:00</cvrf:InitialReleaseDate>
-    <cvrf:CurrentReleaseDate>2023-07-12T07:00:00</cvrf:CurrentReleaseDate>
+    <cvrf:CurrentReleaseDate>2023-07-14T07:00:00</cvrf:CurrentReleaseDate>
   </cvrf:DocumentTracking>
   <cvrf:DocumentNotes>
     <cvrf:Note Title="Release Notes" Audience="Public" Type="Details" Ordinal="0">&lt;h2&gt;Updates this Month&lt;/h2&gt;
@@ -1351,14 +1351,44 @@
 &lt;td&gt;No&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
+&lt;td&gt;Microsoft Edge (Chromium-based)&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2023-36883"&gt;CVE-2023-36883&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;4.3&lt;/td&gt;
+&lt;td&gt;CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N/E:U/RL:O/RC:C&lt;/td&gt;
+&lt;td&gt;Exploitation Less Likely&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Yes&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
 &lt;td&gt;Microsoft Office&lt;/td&gt;
 &lt;td&gt;&lt;a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2023-36884"&gt;CVE-2023-36884&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;8.3&lt;/td&gt;
 &lt;td&gt;CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:H/E:F/RL:U/RC:C&lt;/td&gt;
 &lt;td&gt;Exploitation Detected&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Yes&lt;/strong&gt;&lt;/td&gt;
 &lt;td&gt;No&lt;/td&gt;
 &lt;td&gt;&lt;strong&gt;Yes&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Microsoft Edge (Chromium-based)&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2023-36887"&gt;CVE-2023-36887&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;7.8&lt;/td&gt;
+&lt;td&gt;CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C&lt;/td&gt;
+&lt;td&gt;Exploitation Less Likely&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Yes&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Microsoft Edge (Chromium-based)&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2023-36888"&gt;CVE-2023-36888&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;6.3&lt;/td&gt;
+&lt;td&gt;CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L/E:U/RL:O/RC:C&lt;/td&gt;
+&lt;td&gt;Exploitation Less Likely&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Yes&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -1553,8 +1583,15 @@
         <prod:FullProductName ProductID="12051">Microsoft Visual Studio 2022 version 17.2</prod:FullProductName>
         <prod:FullProductName ProductID="12129">Microsoft Visual Studio 2022 version 17.4</prod:FullProductName>
         <prod:FullProductName ProductID="12187">Microsoft Visual Studio 2022 version 17.6</prod:FullProductName>
+        <prod:FullProductName ProductID="11970">PowerShell 7.2</prod:FullProductName>
+        <prod:FullProductName ProductID="12131">PowerShell 7.3</prod:FullProductName>
         <prod:FullProductName ProductID="11875">Mono 6.12.0</prod:FullProductName>
         <prod:FullProductName ProductID="11886">Visual Studio Code - GitHub Pull Requests and Issues Extension</prod:FullProductName>
+      </prod:Branch>
+      <prod:Branch Type="Product Family" Name="Browser">
+        <prod:FullProductName ProductID="11966">Microsoft Edge for iOS</prod:FullProductName>
+        <prod:FullProductName ProductID="11655">Microsoft Edge (Chromium-based)</prod:FullProductName>
+        <prod:FullProductName ProductID="11815">Microsoft Edge for Android</prod:FullProductName>
       </prod:Branch>
       <prod:Branch Type="Product Family" Name="System Center">
         <prod:FullProductName ProductID="11902">Microsoft Malware Protection Engine</prod:FullProductName>
@@ -1616,6 +1653,7 @@
     <prod:FullProductName ProductID="11585">Microsoft SharePoint Server 2019</prod:FullProductName>
     <prod:FullProductName ProductID="11605">Microsoft Office Online Server</prod:FullProductName>
     <prod:FullProductName ProductID="11629">Windows Admin Center</prod:FullProductName>
+    <prod:FullProductName ProductID="11655">Microsoft Edge (Chromium-based)</prod:FullProductName>
     <prod:FullProductName ProductID="11664">Microsoft Dynamics 365 (on-premises) version 9.0</prod:FullProductName>
     <prod:FullProductName ProductID="11758">Paint 3D</prod:FullProductName>
     <prod:FullProductName ProductID="11762">Microsoft 365 Apps for Enterprise for 32-bit Systems</prod:FullProductName>
@@ -1630,6 +1668,7 @@
     <prod:FullProductName ProductID="11804-12097">Raw Image Extension on Windows 10 Version 22H2 for x64-based Systems</prod:FullProductName>
     <prod:FullProductName ProductID="11804-12098">Raw Image Extension on Windows 10 Version 22H2 for ARM64-based Systems</prod:FullProductName>
     <prod:FullProductName ProductID="11804-12099">Raw Image Extension on Windows 10 Version 22H2 for 32-bit Systems</prod:FullProductName>
+    <prod:FullProductName ProductID="11815">Microsoft Edge for Android</prod:FullProductName>
     <prod:FullProductName ProductID="11875">Mono 6.12.0</prod:FullProductName>
     <prod:FullProductName ProductID="11884">VP9 Video Extensions</prod:FullProductName>
     <prod:FullProductName ProductID="11886">Visual Studio Code - GitHub Pull Requests and Issues Extension</prod:FullProductName>
@@ -1646,7 +1685,9 @@
     <prod:FullProductName ProductID="11952">Microsoft Office LTSC 2021 for 64-bit editions</prod:FullProductName>
     <prod:FullProductName ProductID="11953">Microsoft Office LTSC 2021 for 32-bit editions</prod:FullProductName>
     <prod:FullProductName ProductID="11961">Microsoft SharePoint Server Subscription Edition</prod:FullProductName>
+    <prod:FullProductName ProductID="11966">Microsoft Edge for iOS</prod:FullProductName>
     <prod:FullProductName ProductID="11969">Microsoft Visual Studio 2022 version 17.0</prod:FullProductName>
+    <prod:FullProductName ProductID="11970">PowerShell 7.2</prod:FullProductName>
     <prod:FullProductName ProductID="12009">.NET 6.0</prod:FullProductName>
     <prod:FullProductName ProductID="12051">Microsoft Visual Studio 2022 version 17.2</prod:FullProductName>
     <prod:FullProductName ProductID="12085">Windows 11 Version 22H2 for ARM64-based Systems</prod:FullProductName>
@@ -1656,6 +1697,7 @@
     <prod:FullProductName ProductID="12099">Windows 10 Version 22H2 for 32-bit Systems</prod:FullProductName>
     <prod:FullProductName ProductID="12129">Microsoft Visual Studio 2022 version 17.4</prod:FullProductName>
     <prod:FullProductName ProductID="12130">.NET 7.0</prod:FullProductName>
+    <prod:FullProductName ProductID="12131">PowerShell 7.3</prod:FullProductName>
     <prod:FullProductName ProductID="12156">Microsoft Office for Universal</prod:FullProductName>
     <prod:FullProductName ProductID="12171">Azure Service Fabric 9.1 for Windows</prod:FullProductName>
     <prod:FullProductName ProductID="12187">Microsoft Visual Studio 2022 version 17.6</prod:FullProductName>
@@ -15289,7 +15331,7 @@
     </vuln:Remediations>
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
-        <vuln:Name>R4nger</vuln:Name>
+        <vuln:Name>R4nger &amp; Kap0k</vuln:Name>
         <vuln:URL />
       </vuln:Acknowledgment>
     </vuln:Acknowledgments>
@@ -34977,10 +35019,6 @@
         <vuln:Name>OUYANG FEI</vuln:Name>
         <vuln:URL />
       </vuln:Acknowledgment>
-      <vuln:Acknowledgment>
-        <vuln:Name>T0</vuln:Name>
-        <vuln:URL />
-      </vuln:Acknowledgment>
     </vuln:Acknowledgments>
     <vuln:RevisionHistory>
       <vuln:Revision>
@@ -46177,6 +46215,72 @@
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
   <vuln:Vulnerability Ordinal="131">
+    <vuln:Title>Microsoft Edge for iOS Spoofing Vulnerability</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, user interaction is required (UI:R). What interaction would the user have to do?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The user would have to click on a specially crafted URL to be compromised by the attacker.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, successful exploitation of this vulnerability could lead to some loss of integrity (I:L)? What does that mean for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The attacker is only able to modify the content of the vulnerable link to redirect the victim to a malicious site.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2023-36883</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11966</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Spoofing</vuln:Description>
+        <vuln:ProductID>11966</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Moderate</vuln:Description>
+        <vuln:ProductID>11966</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation Less Likely;Older Software Release:Exploitation Less Likely;DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>4.3</vuln:BaseScore>
+        <vuln:TemporalScore>3.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11966</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11966</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>114.0.1823.82</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments>
+      <vuln:Acknowledgment>
+        <vuln:Name>&lt;a href="https://www.twitter.com/rafaybaloch"&gt;Rafay Baloch&lt;/a&gt; with &lt;a href="https://cybercitadel.com/"&gt;Cyber Citadel&lt;/a&gt;</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+    </vuln:Acknowledgments>
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2023-07-13T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="132">
     <vuln:Title>Office and Windows HTML Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;Microsoft is investigating reports of a series of remote code execution vulnerabilities impacting Windows and Office products. Microsoft is aware of targeted attacks that attempt to exploit these vulnerabilities by using specially-crafted Microsoft Office documents.&lt;/p&gt;
@@ -46880,6 +46984,144 @@
         <cvrf:Number>1.1</cvrf:Number>
         <cvrf:Date>2023-07-12T07:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Updated FAQ information. This is an informational change only.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="133">
+    <vuln:Title>Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, user interaction is required (UI:R). What interaction would the user have to do?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;An attacker must send the user a malicious file and convince them to open it.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, the attack vector is local (AV:L). Why does the CVE title indicate that this is a remote code execution?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The word &lt;strong&gt;Remote&lt;/strong&gt; in the title refers to the location of the attacker. This type of exploit is sometimes referred to as Arbitrary Code Execution (ACE). The attack itself is carried out locally. This means an attacker or victim needs to execute code from the local machine to exploit the vulnerability.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2023-36887</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation Less Likely;Older Software Release:Exploitation Less Likely;DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>6.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>114.0.1823.82</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments>
+      <vuln:Acknowledgment>
+        <vuln:Name>&lt;a href="https://www.talosintelligence.com/"&gt;Aleksandar Nikolic&lt;/a&gt; with &lt;a href="https://www.cisco.com/"&gt;Cisco Talos&lt;/a&gt;</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+    </vuln:Acknowledgments>
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2023-07-13T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="134">
+    <vuln:Title>Microsoft Edge for Android (Chromium-based) Tampering Vulnerability</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, successful exploitation of this vulnerability could lead to some loss of availability (A:L)? What does that mean for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The performance can be interrupted and/or reduced, but the attacker cannot fully deny service.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, successful exploitation of this vulnerability could lead to some loss of integrity (I:L)? What does that mean for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The attacker is only able to modify limited content of the affected API.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, successful exploitation of this vulnerability could lead to some loss of confidentiality (C:L)? What does that mean for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Exploitation of this vulnerability only discloses limited information, no sensitive information can be obtained.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, user interaction is required (UI:R). What interaction would the user have to do?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Exploitation of the vulnerability requires the victim to open the vulnerable app.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2023-36888</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11815</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Tampering</vuln:Description>
+        <vuln:ProductID>11815</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11815</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation Less Likely;Older Software Release:Exploitation Less Likely;DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>6.3</vuln:BaseScore>
+        <vuln:TemporalScore>5.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11815</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11815</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>114.0.1823.82</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments>
+      <vuln:Acknowledgment>
+        <vuln:Name>Tillson Galloway with &lt;a href="https://gatech.edu/"&gt;Georgia Tech&lt;/a&gt;</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+    </vuln:Acknowledgments>
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2023-07-13T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
     </vuln:RevisionHistory>
@@ -48388,6 +48630,8 @@
         <vuln:ProductID>12051</vuln:ProductID>
         <vuln:ProductID>12129</vuln:ProductID>
         <vuln:ProductID>12187</vuln:ProductID>
+        <vuln:ProductID>11970</vuln:ProductID>
+        <vuln:ProductID>12131</vuln:ProductID>
       </vuln:Status>
     </vuln:ProductStatuses>
     <vuln:Threats>
@@ -48415,6 +48659,14 @@
         <vuln:Description>Elevation of Privilege</vuln:Description>
         <vuln:ProductID>12187</vuln:ProductID>
       </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>11970</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>12131</vuln:ProductID>
+      </vuln:Threat>
       <vuln:Threat Type="Severity">
         <vuln:Description>Important</vuln:Description>
         <vuln:ProductID>12009</vuln:ProductID>
@@ -48438,6 +48690,14 @@
       <vuln:Threat Type="Severity">
         <vuln:Description>Important</vuln:Description>
         <vuln:ProductID>12187</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11970</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>12131</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Exploit Status">
         <vuln:Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation Less Likely;DOS:N/A</vuln:Description>
@@ -48479,6 +48739,18 @@
         <vuln:TemporalScore>7.3</vuln:TemporalScore>
         <vuln:Vector>CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>12187</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.1</vuln:BaseScore>
+        <vuln:TemporalScore>7.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11970</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.1</vuln:BaseScore>
+        <vuln:TemporalScore>7.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>12131</vuln:ProductID>
       </vuln:ScoreSet>
     </vuln:CVSSScoreSets>
     <vuln:Remediations>
@@ -48536,10 +48808,32 @@
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>17.6.5</vuln:FixedBuild>
       </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL>https://github.com/PowerShell/Announcements/issues/48</vuln:URL>
+        <vuln:ProductID>11970</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Maybe</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>7.2.13</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL>https://github.com/PowerShell/Announcements/issues/48</vuln:URL>
+        <vuln:ProductID>12131</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Maybe</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>7.3.6</vuln:FixedBuild>
+      </vuln:Remediation>
     </vuln:Remediations>
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
         <vuln:Name>&lt;a href="https://twitter.com/bohops"&gt;Jimmy Bayne&lt;/a&gt;</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+      <vuln:Acknowledgment>
+        <vuln:Name />
         <vuln:URL />
       </vuln:Acknowledgment>
     </vuln:Acknowledgments>
@@ -48548,6 +48842,12 @@
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2023-07-11T07:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2023-07-14T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Revised the Security Updates table to include PowerShell 7.2 and PowerShell 7.3 because these versions of PowerShell 7 are affected by this vulnerability. See &lt;a href="https://github.com/PowerShell/Announcements/issues/48"&gt;https://github.com/PowerShell/Announcements/issues/48&lt;/a&gt; for more information.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
     </vuln:RevisionHistory>
