@@ -12,3 +12,5 @@ jobs:
         - name: Update
           run: ./update.ps1
           shell: pwsh
+          with:
+            repo-token: ${{ secrets.GITHUB_TOKEN }}

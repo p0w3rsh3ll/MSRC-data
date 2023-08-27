@@ -75,7 +75,7 @@ End {
 
         if (Test-Path -Path "$($PSScriptRoot)\$((Get-Date).Tostring('yyyy'))\xml-cvrf-document\cvrfDocument-$($cvrfID).xml" -PathType Leaf) {
          $RepoVer = [int](([xml](Get-Content -Path "$($PSScriptRoot)\$((Get-Date).Tostring('yyyy'))\xml-cvrf-document\cvrfDocument-$($cvrfID).xml")).cvrfdoc.DocumentTracking.RevisionHistory.Revision.Number)
-         $RepoReleaseDate = ([datetime](([xml](Get-Content -Path "$($PSScriptRoot)\2023\xml-cvrf-document\cvrfDocument-$($cvrfID).xml")).cvrfdoc.DocumentTracking.CurrentReleaseDate)) #.ToString('s')
+         $RepoReleaseDate = ([datetime](([xml](Get-Content -Path "$($PSScriptRoot)\$((Get-Date).Tostring('yyyy'))\xml-cvrf-document\cvrfDocument-$($cvrfID).xml")).cvrfdoc.DocumentTracking.CurrentReleaseDate)) #.ToString('s')
         }
     } else {
         'Nothing online'
@@ -98,6 +98,13 @@ End {
         if ($OnlineVer -gt $RepoVer) {
             'Update required, online version: {0}, repo version: {1}' -f $OnlineVer,$RepoVer
             'Update required, online release date: {0}, repo release date: {1}' -f $OnlineReleaseDate,$RepoReleaseDate
+            Copy-Item -Path (Join-Path -Path $Output -ChildPath "cvrfDocument-$($cvrfID).xml") -Destination "$($PSScriptRoot)\$((Get-Date).Tostring('yyyy'))\xml-cvrf-document\cvrfDocument-$($cvrfID).xml"
+            Copy-Item -Path (Join-Path -Path $Output -ChildPath "Bulletin-$($cvrfID).html") -Destination "$($PSScriptRoot)\$((Get-Date).Tostring('yyyy'))\html-bulletin\Bulletin-$($cvrfID).html"
+            git config --global user.name='p0w3rsh3ll'
+            git config --global user.mail='p0w3rsh3ll@users.noreply.github.com'
+            git add "$($PSScriptRoot)\$((Get-Date).Tostring('yyyy'))"
+            git commit -m "Updating $($cvrfID)"
+            git push
             $exitCode =  1
         } else {
             'No update required, online version: {0}, repo version: {1}' -f $OnlineVer,$RepoVer
