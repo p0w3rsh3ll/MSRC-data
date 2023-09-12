@@ -1,0 +1,568 @@
+<html>
+<head>
+    <!-- Created by module version 1.9.8 -->
+    <!-- this is the css from the old bulletin site. Change this to better style your report to your liking -->
+    <!-- <link rel="stylesheet" href="https://i-technet.sec.s-msft.com/Combined.css?resources=0:ImageSprite,0:TopicResponsive,0:TopicResponsive.MediaQueries,1:CodeSnippet,1:ProgrammingSelector,1:ExpandableCollapsibleArea,0:CommunityContent,1:TopicNotInScope,1:FeedViewerBasic,1:ImageSprite,2:Header.2,2:HeaderFooterSprite,2:Header.MediaQueries,2:Banner.MediaQueries,3:megabladeMenu.1,3:MegabladeMenu.MediaQueries,3:MegabladeMenuSpriteCluster,0:Breadcrumbs,0:Breadcrumbs.MediaQueries,0:ResponsiveToc,0:ResponsiveToc.MediaQueries,1:NavSidebar,0:LibraryMemberFilter,4:StandardRating,2:Footer.2,5:LinkList,2:Footer.MediaQueries,0:BaseResponsive,6:MsdnResponsive,0:Tables.MediaQueries,7:SkinnyRatingResponsive,7:SkinnyRatingV2;/Areas/Library/Content:0,/Areas/Epx/Content/Css:1,/Areas/Epx/Themes/TechNet/Content:2,/Areas/Epx/Themes/Shared/Content:3,/Areas/Global/Content:4,/Areas/Epx/Themes/Base/Content:5,/Areas/Library/Themes/Msdn/Content:6,/Areas/Library/Themes/TechNet/Content:7&amp;v=9192817066EC5D087D15C766A0430C95"> -->
+
+    <!-- this style section changes cell widths in the exec header table so that the affected products at the end are wide enough to read -->
+    <style>
+            body {
+          background-color: white;
+          font-family: sans-serif;
+        }
+
+        h1 {
+          color: black;
+        }
+        table {
+          font-family: Arial, Helvetica, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+
+        table td, th {
+          border: 1px solid #ddd;
+          padding: 8px;
+        }
+
+        table tr:nth-child(even){
+          background-color: #ddd;
+        }
+
+        table tr:hover {background-color: #FAF0E6;}
+
+        table th {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          text-align: left;
+          background-color: #C0C0C0;
+        }
+        #execHeader td:first-child  { width: 10% ;}
+        #execHeader td:nth-child(5) { width: 37% ;}
+    </style>
+
+    <!-- this section defines explicit width for all cells in the affected software tables. This is so the column width is the same across each product -->
+    <style>
+        .affected_software td:first-child  { width: 34% ; }
+        .affected_software td:nth-child(2) { width: 14% ; }
+        .affected_software td:nth-child(3) { width: 6% ; }
+        .affected_software td:nth-child(4) { width: 6% ; }
+        .affected_software td:nth-child(5) { width: 7.5% ; }
+        .affected_software td:nth-child(6) { width: 28.5% ; }
+        .affected_software td:nth-child(7) { width: 4% ; }
+    </style>
+
+    <!-- remove spacing between table of contents cells -->
+    <style>
+        #tableOfContents tr td { padding: 2px; }
+    </style>
+
+    <style>
+        .cvss_table tr:nth-child(odd) {background: #ededed}
+    </style>
+
+</head>
+
+<body lang=EN-US link=blue>
+<div id="documentWrapper" style="width: 90%; margin-left: auto; margin-right: auto;">
+
+<h1 id="top">Microsoft CVE Summary</h1>
+
+<p style="margin:0; padding:0">This report contains detail for the following vulnerabilities:</p>
+<table id="tableOfContents" style="width:78%; margin-top:5">
+ <tr>
+  <th>CVE Issued by</th>
+  <th>Tag</th>
+  <th>CVE ID</th>
+  <th>CVE Title</th>
+ </tr>
+ <tr><td>Chrome</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2023-4761">CVE-2023-4761</a></td>    <td>Chromium: CVE-2023-4761 Out of bounds memory access in FedCM</td></tr>
+<tr><td>Chrome</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2023-4762">CVE-2023-4762</a></td>    <td>Chromium: CVE-2023-4762 Type Confusion in V8</td></tr>
+<tr><td>Chrome</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2023-4763">CVE-2023-4763</a></td>    <td>Chromium: CVE-2023-4763 Use after free in Networks</td></tr>
+<tr><td>Chrome</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2023-4764">CVE-2023-4764</a></td>    <td>Chromium: CVE-2023-4764 Incorrect security UI in BFCache</td></tr>
+</table>
+<h1 id="CVE-2023-4761">CVE-2023-4761 - Chromium: CVE-2023-4761 Out of bounds memory access in FedCM</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2023-4761">CVE-2023-4761</a>
+<br>
+<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-4761">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4761">NVD</a>
+<p>Issuing CNA: Chrome</p></td>
+     <td>        <b>CVE Title:</b> Chromium: CVE-2023-4761 Out of bounds memory access in FedCM
+        <br>
+        <b>CVSS:</b> <br>None
+        <br>
+        <b>Executive Summary:</b> <br><p>This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see <a href="https://chromereleases.googleblog.com/2023">Google Chrome Releases</a> for more information.</p>
+
+        <br>
+        <b>FAQ:</b><br><p><strong>Why is this Chrome CVE included in the Security Update Guide?</strong></p>
+<p>The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based).  It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.  Please see <a href="https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/">Security Update Guide Supports CVEs Assigned by Industry Partners</a> for more information.</p>
+<p><strong>How can I see the version of the browser?</strong></p>
+<ol>
+<li>In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window</li>
+<li>Click on <strong>Help and Feedback</strong></li>
+<li>Click on <strong>About Microsoft Edge</strong></li>
+</ol>
+<br><p><strong>What is the version information for this release?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Microsoft Edge Version</th>
+<th>Date Released</th>
+<th>Based on Chromium Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>116.0.1938.xxx</td>
+<td>9/7/2023</td>
+<td>116.0.5845.179/.180</td>
+</tr>
+</tbody>
+</table>
+
+        <br>
+        <b>Mitigations:</b><br>None
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp07/09/2023&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Unknown</td>
+     <td>Unknown</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an <a href="https://www.microsoft.com/en-us/msrc/exploitability-index?rtc=1">exploitability assessment</a> for this vulnerability at the time of original publication.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Not Found</td>
+     <td>Not Found</td>
+     <td>Not Found</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="9"><b>CVE-2023-4761</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Fixed Build</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Edge (Chromium-based)</td>
+                <td><a href="https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnote-stable-channel" >Release Notes (Security Update)</td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>116.0.1938.76</td>
+                <td>No</td>
+                <td>None</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2023-4761</td>
+     <td>None</td>
+ </tr>
+</table><h1 id="CVE-2023-4762">CVE-2023-4762 - Chromium: CVE-2023-4762 Type Confusion in V8</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2023-4762">CVE-2023-4762</a>
+<br>
+<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-4762">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4762">NVD</a>
+<p>Issuing CNA: Chrome</p></td>
+     <td>        <b>CVE Title:</b> Chromium: CVE-2023-4762 Type Confusion in V8
+        <br>
+        <b>CVSS:</b> <br>None
+        <br>
+        <b>Executive Summary:</b> <br><p>This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see <a href="https://chromereleases.googleblog.com/2023">Google Chrome Releases</a> for more information.</p>
+
+        <br>
+        <b>FAQ:</b><br><p><strong>Why is this Chrome CVE included in the Security Update Guide?</strong></p>
+<p>The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based).  It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.  Please see <a href="https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/">Security Update Guide Supports CVEs Assigned by Industry Partners</a> for more information.</p>
+<p><strong>How can I see the version of the browser?</strong></p>
+<ol>
+<li>In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window</li>
+<li>Click on <strong>Help and Feedback</strong></li>
+<li>Click on <strong>About Microsoft Edge</strong></li>
+</ol>
+<br><p><strong>What is the version information for this release?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Microsoft Edge Version</th>
+<th>Date Released</th>
+<th>Based on Chromium Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>116.0.1938.xxx</td>
+<td>9/7/2023</td>
+<td>116.0.5845.179/.180</td>
+</tr>
+</tbody>
+</table>
+
+        <br>
+        <b>Mitigations:</b><br>None
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp07/09/2023&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Unknown</td>
+     <td>Unknown</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an <a href="https://www.microsoft.com/en-us/msrc/exploitability-index?rtc=1">exploitability assessment</a> for this vulnerability at the time of original publication.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Not Found</td>
+     <td>Not Found</td>
+     <td>Not Found</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="9"><b>CVE-2023-4762</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Fixed Build</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Edge (Chromium-based)</td>
+                <td><a href="https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnote-stable-channel" >Release Notes (Security Update)</td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>116.0.1938.76</td>
+                <td>No</td>
+                <td>None</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2023-4762</td>
+     <td>None</td>
+ </tr>
+</table><h1 id="CVE-2023-4763">CVE-2023-4763 - Chromium: CVE-2023-4763 Use after free in Networks</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2023-4763">CVE-2023-4763</a>
+<br>
+<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-4763">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4763">NVD</a>
+<p>Issuing CNA: Chrome</p></td>
+     <td>        <b>CVE Title:</b> Chromium: CVE-2023-4763 Use after free in Networks
+        <br>
+        <b>CVSS:</b> <br>None
+        <br>
+        <b>Executive Summary:</b> <br><p>This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see <a href="https://chromereleases.googleblog.com/2023">Google Chrome Releases</a> for more information.</p>
+
+        <br>
+        <b>FAQ:</b><br><p><strong>Why is this Chrome CVE included in the Security Update Guide?</strong></p>
+<p>The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based).  It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.  Please see <a href="https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/">Security Update Guide Supports CVEs Assigned by Industry Partners</a> for more information.</p>
+<p><strong>How can I see the version of the browser?</strong></p>
+<ol>
+<li>In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window</li>
+<li>Click on <strong>Help and Feedback</strong></li>
+<li>Click on <strong>About Microsoft Edge</strong></li>
+</ol>
+<br><p><strong>What is the version information for this release?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Microsoft Edge Version</th>
+<th>Date Released</th>
+<th>Based on Chromium Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>116.0.1938.xxx</td>
+<td>9/7/2023</td>
+<td>116.0.5845.179/.180</td>
+</tr>
+</tbody>
+</table>
+
+        <br>
+        <b>Mitigations:</b><br>None
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp07/09/2023&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Unknown</td>
+     <td>Unknown</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an <a href="https://www.microsoft.com/en-us/msrc/exploitability-index?rtc=1">exploitability assessment</a> for this vulnerability at the time of original publication.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Not Found</td>
+     <td>Not Found</td>
+     <td>Not Found</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="9"><b>CVE-2023-4763</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Fixed Build</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Edge (Chromium-based)</td>
+                <td><a href="https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnote-stable-channel" >Release Notes (Security Update)</td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>116.0.1938.76</td>
+                <td>No</td>
+                <td>None</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2023-4763</td>
+     <td>None</td>
+ </tr>
+</table><h1 id="CVE-2023-4764">CVE-2023-4764 - Chromium: CVE-2023-4764 Incorrect security UI in BFCache</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2023-4764">CVE-2023-4764</a>
+<br>
+<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-4764">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4764">NVD</a>
+<p>Issuing CNA: Chrome</p></td>
+     <td>        <b>CVE Title:</b> Chromium: CVE-2023-4764 Incorrect security UI in BFCache
+        <br>
+        <b>CVSS:</b> <br>None
+        <br>
+        <b>Executive Summary:</b> <br><p>This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see <a href="https://chromereleases.googleblog.com/2023">Google Chrome Releases</a> for more information.</p>
+
+        <br>
+        <b>FAQ:</b><br><p><strong>Why is this Chrome CVE included in the Security Update Guide?</strong></p>
+<p>The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based).  It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.  Please see <a href="https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/">Security Update Guide Supports CVEs Assigned by Industry Partners</a> for more information.</p>
+<p><strong>How can I see the version of the browser?</strong></p>
+<ol>
+<li>In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window</li>
+<li>Click on <strong>Help and Feedback</strong></li>
+<li>Click on <strong>About Microsoft Edge</strong></li>
+</ol>
+<br><p><strong>What is the version information for this release?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Microsoft Edge Version</th>
+<th>Date Released</th>
+<th>Based on Chromium Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>116.0.1938.xxx</td>
+<td>9/7/2023</td>
+<td>116.0.5845.179/.180</td>
+</tr>
+</tbody>
+</table>
+
+        <br>
+        <b>Mitigations:</b><br>None
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp07/09/2023&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Unknown</td>
+     <td>Unknown</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an <a href="https://www.microsoft.com/en-us/msrc/exploitability-index?rtc=1">exploitability assessment</a> for this vulnerability at the time of original publication.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Not Found</td>
+     <td>Not Found</td>
+     <td>Not Found</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="9"><b>CVE-2023-4764</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Fixed Build</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Edge (Chromium-based)</td>
+                <td><a href="https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnote-stable-channel" >Release Notes (Security Update)</td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>116.0.1938.76</td>
+                <td>No</td>
+                <td>None</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2023-4764</td>
+     <td>None</td>
+ </tr>
+</table>
+</div>
+<br>
+ </body>
+</html>
