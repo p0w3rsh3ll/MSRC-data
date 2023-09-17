@@ -100,6 +100,10 @@ End {
             'Update required, online release date: {0}, repo release date: {1}' -f $OnlineReleaseDate,$RepoReleaseDate
             Copy-Item -Path (Join-Path -Path $Output -ChildPath "cvrfDocument-$($cvrfID).xml") -Destination "$($PSScriptRoot)\$((Get-Date).Tostring('yyyy'))\xml-cvrf-document\cvrfDocument-$($cvrfID).xml"
             Copy-Item -Path (Join-Path -Path $Output -ChildPath "Bulletin-$($cvrfID).html") -Destination "$($PSScriptRoot)\$((Get-Date).Tostring('yyyy'))\html-bulletin\Bulletin-$($cvrfID).html"
+            git branch temp-branch
+            git checkout master
+            git merge temp-branch
+            git push origin master
             git config --global user.name='p0w3rsh3ll'
             git config --global user.mail='p0w3rsh3ll@users.noreply.github.com'
             git add "$($PSScriptRoot)\$((Get-Date).Tostring('yyyy'))"
