@@ -15,13 +15,13 @@
     <cvrf:Version>1.0</cvrf:Version>
     <cvrf:RevisionHistory>
       <cvrf:Revision>
-        <cvrf:Number>8</cvrf:Number>
-        <cvrf:Date>2023-11-14T08:00:00</cvrf:Date>
+        <cvrf:Number>11</cvrf:Number>
+        <cvrf:Date>2023-11-16T17:35:26</cvrf:Date>
         <cvrf:Description>November 2023 Security Updates</cvrf:Description>
       </cvrf:Revision>
     </cvrf:RevisionHistory>
     <cvrf:InitialReleaseDate>2023-11-14T08:00:00</cvrf:InitialReleaseDate>
-    <cvrf:CurrentReleaseDate>2023-11-14T08:00:00</cvrf:CurrentReleaseDate>
+    <cvrf:CurrentReleaseDate>2023-11-16T17:35:26</cvrf:CurrentReleaseDate>
   </cvrf:DocumentTracking>
   <cvrf:DocumentNotes>
     <cvrf:Note Title="Release Notes" Audience="Public" Type="Details" Ordinal="0">&lt;h2&gt;This release consists of the following 63 Microsoft CVEs:&lt;/h2&gt;
@@ -1236,7 +1236,7 @@
     <prod:FullProductName ProductID="9495-10049">Microsoft .NET Framework 3.5.1 on Windows Server 2008 R2 for x64-based Systems Service Pack 1 (Server Core installation)</prod:FullProductName>
     <prod:FullProductName ProductID="9495-10051">Microsoft .NET Framework 3.5.1 on Windows Server 2008 R2 for x64-based Systems Service Pack 1</prod:FullProductName>
   </prod:ProductTree>
-  <vuln:Vulnerability Ordinal="82">
+  <vuln:Vulnerability Ordinal="84">
     <vuln:Title>Chromium: CVE-2023-5996 Use after free in WebAudio</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -1338,7 +1338,202 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="65">
+  <vuln:Vulnerability Ordinal="85">
+    <vuln:Title>Chromium: CVE-2023-5997 Use after free in Garbage Collection</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based). It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Channel&lt;/th&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Stable&lt;/td&gt;
+&lt;td&gt;119.0.2151.72&lt;/td&gt;
+&lt;td&gt;11/16/2023&lt;/td&gt;
+&lt;td&gt;119.0.6045.159/.160&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Extended Stable&lt;/td&gt;
+&lt;td&gt;118.0.2088.109&lt;/td&gt;
+&lt;td&gt;11/16/2023&lt;/td&gt;
+&lt;td&gt;118.0.5993.144&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2023-5997</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:ProductID>12142</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12142</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12142</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:ProductID>12142</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>119.0.2151.72</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2023-11-16T17:35:21</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="86">
+    <vuln:Title>Chromium: CVE-2023-6112 Use after free in Navigation</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based). It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Channel&lt;/th&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Stable&lt;/td&gt;
+&lt;td&gt;119.0.2151.72&lt;/td&gt;
+&lt;td&gt;11/16/2023&lt;/td&gt;
+&lt;td&gt;119.0.6045.159/.160&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Extended Stable&lt;/td&gt;
+&lt;td&gt;118.0.2088.109&lt;/td&gt;
+&lt;td&gt;11/16/2023&lt;/td&gt;
+&lt;td&gt;118.0.5993.144&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2023-6112</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:ProductID>12142</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12142</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12142</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12142</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>119.0.2151.72</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2023-11-16T17:35:26</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="67">
     <vuln:Title>Microsoft Host Integration Server 2020 Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -1431,7 +1626,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="64">
+  <vuln:Vulnerability Ordinal="66">
     <vuln:Title>Microsoft Speech Application Programming Interface (SAPI) Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -2110,7 +2305,6 @@
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5032202</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5032202</vuln:URL>
-        <vuln:Supercedence>5031364</vuln:Supercedence>
         <vuln:ProductID>12244</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
@@ -2261,7 +2455,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="63">
+  <vuln:Vulnerability Ordinal="65">
     <vuln:Title>Windows Installer Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -2937,7 +3131,6 @@
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5032202</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5032202</vuln:URL>
-        <vuln:Supercedence>5031364</vuln:Supercedence>
         <vuln:ProductID>12244</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
@@ -3084,7 +3277,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="62">
+  <vuln:Vulnerability Ordinal="64">
     <vuln:Title>ASP.NET Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -4518,7 +4711,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="59">
+  <vuln:Vulnerability Ordinal="61">
     <vuln:Title>Azure DevOps Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -4584,7 +4777,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="58">
+  <vuln:Vulnerability Ordinal="60">
     <vuln:Title>Microsoft Local Security Authority Subsystem Service Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -5260,7 +5453,6 @@
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5032202</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5032202</vuln:URL>
-        <vuln:Supercedence>5031364</vuln:Supercedence>
         <vuln:ProductID>12244</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
@@ -5407,7 +5599,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="57">
+  <vuln:Vulnerability Ordinal="59">
     <vuln:Title>Windows Hyper-V Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -5695,7 +5887,6 @@ In addition, the attacker can only populate data at the beginning of a page, and
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5032202</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5032202</vuln:URL>
-        <vuln:Supercedence>5031364</vuln:Supercedence>
         <vuln:ProductID>12244</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
@@ -5718,7 +5909,7 @@ In addition, the attacker can only populate data at the beginning of a page, and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="56">
+  <vuln:Vulnerability Ordinal="58">
     <vuln:Title>Windows Distributed File System (DFS) Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -6404,7 +6595,6 @@ In addition, the attacker can only populate data at the beginning of a page, and
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5032202</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5032202</vuln:URL>
-        <vuln:Supercedence>5031364</vuln:Supercedence>
         <vuln:ProductID>12244</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
@@ -6551,7 +6741,7 @@ In addition, the attacker can only populate data at the beginning of a page, and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="55">
+  <vuln:Vulnerability Ordinal="57">
     <vuln:Title>Windows Common Log File System Driver Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -7139,7 +7329,6 @@ In addition, the attacker can only populate data at the beginning of a page, and
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5032202</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5032202</vuln:URL>
-        <vuln:Supercedence>5031364</vuln:Supercedence>
         <vuln:ProductID>12244</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
@@ -7374,16 +7563,15 @@ In addition, the attacker can only populate data at the beginning of a page, and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="54">
+  <vuln:Vulnerability Ordinal="56">
     <vuln:Title>Microsoft Remote Registry Service Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
-      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, privileges required is low (PR:H). What does that mean for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Successful exploitation of this vulnerability requires the attacker must be an authenticated user on the network who is a member of the performance log users group.&lt;/p&gt;
-&lt;p&gt;Although this group defaults to only Administrators, it is possible for an Administrator to add other standard users to this group.&lt;/p&gt;
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, privileges required is low (PR:L).  What does that mean for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Any authenticated attacker could trigger this vulnerability. It does not require admin or other elevated privileges.&lt;/p&gt;
 </vuln:Note>
-      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;How could an attacker exploit this vulnerability?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;A remote, authenticated attacker who is on the domain and a member of the performance log users group could exploit an integer overflow vulnerability within regsvc to execute arbitrary code on the server.&lt;/p&gt;
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;&lt;strong&gt;How could an attacker exploit this vulnerability?&lt;/strong&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A remote, authenticated attacker who is on the domain could exploit an out of bounds write vulnerability within regsvc to execute arbitrary code on the server.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="Microsoft Remote Registry Service" Type="Tag" Ordinal="20">Microsoft Remote Registry Service</vuln:Note>
       <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
@@ -7724,219 +7912,219 @@ In addition, the attacker can only populate data at the beginning of a page, and
     </vuln:Threats>
     <vuln:CVSSScoreSets>
       <vuln:ScoreSet>
-        <vuln:BaseScore>7.2</vuln:BaseScore>
-        <vuln:TemporalScore>6.3</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11568</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
-        <vuln:BaseScore>7.2</vuln:BaseScore>
-        <vuln:TemporalScore>6.3</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11569</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
-        <vuln:BaseScore>7.2</vuln:BaseScore>
-        <vuln:TemporalScore>6.3</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11570</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
-        <vuln:BaseScore>7.2</vuln:BaseScore>
-        <vuln:TemporalScore>6.3</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11571</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
-        <vuln:BaseScore>7.2</vuln:BaseScore>
-        <vuln:TemporalScore>6.3</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11572</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
-        <vuln:BaseScore>7.2</vuln:BaseScore>
-        <vuln:TemporalScore>6.3</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11923</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
-        <vuln:BaseScore>7.2</vuln:BaseScore>
-        <vuln:TemporalScore>6.3</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11924</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
-        <vuln:BaseScore>7.2</vuln:BaseScore>
-        <vuln:TemporalScore>6.3</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11926</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
-        <vuln:BaseScore>7.2</vuln:BaseScore>
-        <vuln:TemporalScore>6.3</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11927</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
-        <vuln:BaseScore>7.2</vuln:BaseScore>
-        <vuln:TemporalScore>6.3</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11929</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
-        <vuln:BaseScore>7.2</vuln:BaseScore>
-        <vuln:TemporalScore>6.3</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11930</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
-        <vuln:BaseScore>7.2</vuln:BaseScore>
-        <vuln:TemporalScore>6.3</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11931</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
-        <vuln:BaseScore>7.2</vuln:BaseScore>
-        <vuln:TemporalScore>6.3</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>12085</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
-        <vuln:BaseScore>7.2</vuln:BaseScore>
-        <vuln:TemporalScore>6.3</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>12086</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
-        <vuln:BaseScore>7.2</vuln:BaseScore>
-        <vuln:TemporalScore>6.3</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>12097</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
-        <vuln:BaseScore>7.2</vuln:BaseScore>
-        <vuln:TemporalScore>6.3</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>12098</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
-        <vuln:BaseScore>7.2</vuln:BaseScore>
-        <vuln:TemporalScore>6.3</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>12099</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
-        <vuln:BaseScore>7.2</vuln:BaseScore>
-        <vuln:TemporalScore>6.3</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>12242</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
-        <vuln:BaseScore>7.2</vuln:BaseScore>
-        <vuln:TemporalScore>6.3</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>12243</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
-        <vuln:BaseScore>7.2</vuln:BaseScore>
-        <vuln:TemporalScore>6.3</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>12244</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
-        <vuln:BaseScore>7.2</vuln:BaseScore>
-        <vuln:TemporalScore>6.3</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>10729</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
-        <vuln:BaseScore>7.2</vuln:BaseScore>
-        <vuln:TemporalScore>6.3</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>10735</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
-        <vuln:BaseScore>7.2</vuln:BaseScore>
-        <vuln:TemporalScore>6.3</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>10852</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
-        <vuln:BaseScore>7.2</vuln:BaseScore>
-        <vuln:TemporalScore>6.3</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>10853</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
-        <vuln:BaseScore>7.2</vuln:BaseScore>
-        <vuln:TemporalScore>6.3</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>10816</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
-        <vuln:BaseScore>7.2</vuln:BaseScore>
-        <vuln:TemporalScore>6.3</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>10855</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
-        <vuln:BaseScore>7.2</vuln:BaseScore>
-        <vuln:TemporalScore>6.3</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>9312</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
-        <vuln:BaseScore>7.2</vuln:BaseScore>
-        <vuln:TemporalScore>6.3</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>10287</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
-        <vuln:BaseScore>7.2</vuln:BaseScore>
-        <vuln:TemporalScore>6.3</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>9318</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
-        <vuln:BaseScore>7.2</vuln:BaseScore>
-        <vuln:TemporalScore>6.3</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>9344</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
-        <vuln:BaseScore>7.2</vuln:BaseScore>
-        <vuln:TemporalScore>6.3</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>10051</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
-        <vuln:BaseScore>7.2</vuln:BaseScore>
-        <vuln:TemporalScore>6.3</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>10049</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
-        <vuln:BaseScore>7.2</vuln:BaseScore>
-        <vuln:TemporalScore>6.3</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>10378</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
-        <vuln:BaseScore>7.2</vuln:BaseScore>
-        <vuln:TemporalScore>6.3</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>10379</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
-        <vuln:BaseScore>7.2</vuln:BaseScore>
-        <vuln:TemporalScore>6.3</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>10483</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
-        <vuln:BaseScore>7.2</vuln:BaseScore>
-        <vuln:TemporalScore>6.3</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>10543</vuln:ProductID>
       </vuln:ScoreSet>
     </vuln:CVSSScoreSets>
@@ -8054,7 +8242,6 @@ In addition, the attacker can only populate data at the beginning of a page, and
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5032202</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5032202</vuln:URL>
-        <vuln:Supercedence>5031364</vuln:Supercedence>
         <vuln:ProductID>12244</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
@@ -8199,9 +8386,15 @@ In addition, the attacker can only populate data at the beginning of a page, and
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2023-11-16T08:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Updated one or more CVSS scores for the affected products. This is an informational change only.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="53">
+  <vuln:Vulnerability Ordinal="55">
     <vuln:Title>Microsoft Windows Defender Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -8312,7 +8505,7 @@ In addition, the attacker can only populate data at the beginning of a page, and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="52">
+  <vuln:Vulnerability Ordinal="54">
     <vuln:Title>Microsoft Office Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -8510,7 +8703,7 @@ In addition, the attacker can only populate data at the beginning of a page, and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="51">
+  <vuln:Vulnerability Ordinal="53">
     <vuln:Title>Microsoft Dynamics 365 (on-premises) Cross-site Scripting Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -8582,7 +8775,7 @@ In addition, the attacker can only populate data at the beginning of a page, and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="33">
+  <vuln:Vulnerability Ordinal="35">
     <vuln:Title>Azure CLI REST Command Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -8777,7 +8970,7 @@ In addition, the attacker can only populate data at the beginning of a page, and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="27">
+  <vuln:Vulnerability Ordinal="29">
     <vuln:Title>Open Management Infrastructure Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -8905,7 +9098,7 @@ More information can be found here: &lt;a href="https://github.com/Microsoft/omi
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="21">
+  <vuln:Vulnerability Ordinal="23">
     <vuln:Title>Windows Cloud Files Mini Filter Driver Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -9705,7 +9898,6 @@ More information can be found here: &lt;a href="https://github.com/Microsoft/omi
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5032202</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5032202</vuln:URL>
-        <vuln:Supercedence>5031364</vuln:Supercedence>
         <vuln:ProductID>12244</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
@@ -9729,7 +9921,7 @@ Microsoft Security Response Center</vuln:Name>
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="19">
+  <vuln:Vulnerability Ordinal="21">
     <vuln:Title>Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -9849,7 +10041,7 @@ Microsoft Security Response Center</vuln:Name>
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="11">
+  <vuln:Vulnerability Ordinal="12">
     <vuln:Title>Microsoft Edge (Chromium-based) Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -9979,7 +10171,7 @@ Microsoft Security Response Center</vuln:Name>
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="7">
+  <vuln:Vulnerability Ordinal="8">
     <vuln:Title>Windows Scripting Engine Memory Corruption Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -10694,7 +10886,6 @@ Microsoft Security Response Center</vuln:Name>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5032202</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5032202</vuln:URL>
-        <vuln:Supercedence>5031364</vuln:Supercedence>
         <vuln:ProductID>12244</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
@@ -10789,7 +10980,7 @@ Microsoft Security Response Center</vuln:Name>
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="66">
+  <vuln:Vulnerability Ordinal="68">
     <vuln:Title>Microsoft SharePoint Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -10900,7 +11091,7 @@ Microsoft Security Response Center</vuln:Name>
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="61">
+  <vuln:Vulnerability Ordinal="63">
     <vuln:Title>ASP.NET Core - Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -11092,6 +11283,7 @@ Microsoft Security Response Center</vuln:Name>
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>6.0.25</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5032884</vuln:Description>
@@ -11154,6 +11346,7 @@ Microsoft Security Response Center</vuln:Name>
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>7.0.14</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>Release Notes</vuln:Description>
@@ -11162,6 +11355,7 @@ Microsoft Security Response Center</vuln:Name>
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>8.0.0</vuln:FixedBuild>
       </vuln:Remediation>
     </vuln:Remediations>
     <vuln:Acknowledgments>
@@ -11179,7 +11373,7 @@ Microsoft Security Response Center</vuln:Name>
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="60">
+  <vuln:Vulnerability Ordinal="62">
     <vuln:Title>Microsoft Exchange Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -11302,7 +11496,7 @@ Microsoft Security Response Center</vuln:Name>
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="50">
+  <vuln:Vulnerability Ordinal="52">
     <vuln:Title>Windows Hyper-V Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -11684,7 +11878,6 @@ Microsoft Security Response Center</vuln:Name>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5032202</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5032202</vuln:URL>
-        <vuln:Supercedence>5031364</vuln:Supercedence>
         <vuln:ProductID>12244</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
@@ -11722,7 +11915,7 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="49">
+  <vuln:Vulnerability Ordinal="51">
     <vuln:Title>Windows Hyper-V Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -11934,7 +12127,6 @@ and
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5032202</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5032202</vuln:URL>
-        <vuln:Supercedence>5031364</vuln:Supercedence>
         <vuln:ProductID>12244</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
@@ -11957,7 +12149,7 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="48">
+  <vuln:Vulnerability Ordinal="50">
     <vuln:Title>Windows Hyper-V Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -12169,7 +12361,6 @@ and
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5032202</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5032202</vuln:URL>
-        <vuln:Supercedence>5031364</vuln:Supercedence>
         <vuln:ProductID>12244</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
@@ -12192,7 +12383,7 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="47">
+  <vuln:Vulnerability Ordinal="49">
     <vuln:Title>Windows Kernel Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -12691,7 +12882,6 @@ and
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5032202</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5032202</vuln:URL>
-        <vuln:Supercedence>5031364</vuln:Supercedence>
         <vuln:ProductID>12244</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
@@ -12727,7 +12917,7 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="46">
+  <vuln:Vulnerability Ordinal="48">
     <vuln:Title>Windows Kernel Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -13223,7 +13413,6 @@ and
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5032202</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5032202</vuln:URL>
-        <vuln:Supercedence>5031364</vuln:Supercedence>
         <vuln:ProductID>12244</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
@@ -13259,7 +13448,7 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="45">
+  <vuln:Vulnerability Ordinal="47">
     <vuln:Title>Windows Kernel Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -13938,7 +14127,6 @@ and
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5032202</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5032202</vuln:URL>
-        <vuln:Supercedence>5031364</vuln:Supercedence>
         <vuln:ProductID>12244</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
@@ -14085,7 +14273,7 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="44">
+  <vuln:Vulnerability Ordinal="46">
     <vuln:Title>Microsoft WDAC OLE DB provider for SQL Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -14767,7 +14955,6 @@ and
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5032202</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5032202</vuln:URL>
-        <vuln:Supercedence>5031364</vuln:Supercedence>
         <vuln:ProductID>12244</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
@@ -14918,7 +15105,7 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="43">
+  <vuln:Vulnerability Ordinal="45">
     <vuln:Title>Microsoft Remote Registry Service Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -15598,7 +15785,6 @@ and
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5032202</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5032202</vuln:URL>
-        <vuln:Supercedence>5031364</vuln:Supercedence>
         <vuln:ProductID>12244</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
@@ -15745,7 +15931,7 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="42">
+  <vuln:Vulnerability Ordinal="44">
     <vuln:Title>Windows HMAC Key Derivation Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -16277,7 +16463,6 @@ and
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5032202</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5032202</vuln:URL>
-        <vuln:Supercedence>5031364</vuln:Supercedence>
         <vuln:ProductID>12244</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
@@ -16319,7 +16504,7 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="41">
+  <vuln:Vulnerability Ordinal="43">
     <vuln:Title>Windows Storage Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -16483,7 +16668,6 @@ and
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5032202</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5032202</vuln:URL>
-        <vuln:Supercedence>5031364</vuln:Supercedence>
         <vuln:ProductID>12244</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
@@ -16557,7 +16741,7 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="40">
+  <vuln:Vulnerability Ordinal="42">
     <vuln:Title>Windows NTFS Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -17192,7 +17376,6 @@ and
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5032202</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5032202</vuln:URL>
-        <vuln:Supercedence>5031364</vuln:Supercedence>
         <vuln:ProductID>12244</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
@@ -17215,7 +17398,7 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="39">
+  <vuln:Vulnerability Ordinal="41">
     <vuln:Title>Windows Pragmatic General Multicast (PGM) Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -17891,7 +18074,6 @@ and
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5032202</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5032202</vuln:URL>
-        <vuln:Supercedence>5031364</vuln:Supercedence>
         <vuln:ProductID>12244</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
@@ -18045,7 +18227,7 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="38">
+  <vuln:Vulnerability Ordinal="40">
     <vuln:Title>Windows Compressed Folder Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -18167,7 +18349,7 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="37">
+  <vuln:Vulnerability Ordinal="39">
     <vuln:Title>Windows Deployment Services Denial of Service Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -18474,7 +18656,6 @@ and
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5032202</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5032202</vuln:URL>
-        <vuln:Supercedence>5031364</vuln:Supercedence>
         <vuln:ProductID>12244</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
@@ -18612,7 +18793,7 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="36">
+  <vuln:Vulnerability Ordinal="38">
     <vuln:Title>Windows Search Service Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -19081,7 +19262,7 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="35">
+  <vuln:Vulnerability Ordinal="37">
     <vuln:Title>Windows User Interface Application Core Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -19758,7 +19939,6 @@ and
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5032202</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5032202</vuln:URL>
-        <vuln:Supercedence>5031364</vuln:Supercedence>
         <vuln:ProductID>12244</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
@@ -19905,7 +20085,7 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="34">
+  <vuln:Vulnerability Ordinal="36">
     <vuln:Title>DHCP Server Service Denial of Service Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -20122,7 +20302,6 @@ and
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5032202</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5032202</vuln:URL>
-        <vuln:Supercedence>5031364</vuln:Supercedence>
         <vuln:ProductID>12244</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
@@ -20178,7 +20357,7 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="29">
+  <vuln:Vulnerability Ordinal="31">
     <vuln:Title>Windows Authentication Denial of Service Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -20349,7 +20528,6 @@ and
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5032202</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5032202</vuln:URL>
-        <vuln:Supercedence>5031364</vuln:Supercedence>
         <vuln:ProductID>12244</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
@@ -20372,7 +20550,7 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="30">
+  <vuln:Vulnerability Ordinal="32">
     <vuln:Title>Windows Authentication Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -20808,7 +20986,6 @@ and
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5032202</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5032202</vuln:URL>
-        <vuln:Supercedence>5031364</vuln:Supercedence>
         <vuln:ProductID>12244</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
@@ -20831,7 +21008,7 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="31">
+  <vuln:Vulnerability Ordinal="33">
     <vuln:Title>.NET, .NET Framework, and Visual Studio Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -22419,12 +22596,22 @@ and
         <vuln:Name>Piotr Bazydlo (@chudypb) of Trend Micro Zero Day Initiative</vuln:Name>
         <vuln:URL />
       </vuln:Acknowledgment>
+      <vuln:Acknowledgment>
+        <vuln:Name>&lt;a href="https://twitter.com/thezdi"&gt;Anonymous&lt;/a&gt; with &lt;a href="https://www.zerodayinitiative.com/"&gt;Trend Micro&lt;/a&gt;</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
     </vuln:Acknowledgments>
     <vuln:RevisionHistory>
       <vuln:Revision>
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2023-11-14T08:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2023-11-16T08:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Revised the Security Updates table to include PowerShell 7.2, PowerShell 7.3, and PowerShell 7.4 because these versions of PowerShell 7 are affected by this vulnerability. See &lt;a href="https://github.com/PowerShell/Announcements/issues/54"&gt;https://github.com/PowerShell/Announcements/issues/54&lt;/a&gt; for more information.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
     </vuln:RevisionHistory>
@@ -22744,7 +22931,6 @@ and
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5032202</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5032202</vuln:URL>
-        <vuln:Supercedence>5031364</vuln:Supercedence>
         <vuln:ProductID>12244</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
@@ -22767,7 +22953,7 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="32">
+  <vuln:Vulnerability Ordinal="34">
     <vuln:Title>Microsoft Exchange Server Spoofing Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -22887,7 +23073,7 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="24">
+  <vuln:Vulnerability Ordinal="26">
     <vuln:Title>Microsoft Exchange Server Spoofing Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -23010,7 +23196,7 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="25">
+  <vuln:Vulnerability Ordinal="27">
     <vuln:Title>Microsoft Excel Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -23229,7 +23415,7 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="26">
+  <vuln:Vulnerability Ordinal="28">
     <vuln:Title>Visual Studio Denial of Service Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -23385,7 +23571,7 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="28">
+  <vuln:Vulnerability Ordinal="30">
     <vuln:Title>Microsoft Office Graphics Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -23557,7 +23743,7 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="22">
+  <vuln:Vulnerability Ordinal="24">
     <vuln:Title>Microsoft Excel Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -23778,7 +23964,7 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="23">
+  <vuln:Vulnerability Ordinal="25">
     <vuln:Title>ASP.NET Core Denial of Service Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -23901,6 +24087,7 @@ and
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>8.0.0</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>Release Notes</vuln:Description>
@@ -23963,7 +24150,7 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="20">
+  <vuln:Vulnerability Ordinal="22">
     <vuln:Title>Microsoft Exchange Server Spoofing Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -24086,7 +24273,7 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="14">
+  <vuln:Vulnerability Ordinal="16">
     <vuln:Title>Microsoft Protected Extensible Authentication Protocol (PEAP) Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -24612,7 +24799,6 @@ and
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5032202</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5032202</vuln:URL>
-        <vuln:Supercedence>5031364</vuln:Supercedence>
         <vuln:ProductID>12244</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
@@ -24664,7 +24850,7 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="15">
+  <vuln:Vulnerability Ordinal="17">
     <vuln:Title>Microsoft Edge (Chromium-based) Spoofing Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -24756,7 +24942,7 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="16">
+  <vuln:Vulnerability Ordinal="18">
     <vuln:Title>Microsoft Dynamics 365 Sales Spoofing Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -24852,7 +25038,7 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="17">
+  <vuln:Vulnerability Ordinal="19">
     <vuln:Title>Microsoft Dynamics 365 (on-premises) Cross-site Scripting Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -24924,7 +25110,7 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="18">
+  <vuln:Vulnerability Ordinal="20">
     <vuln:Title>Windows DWM Core Library Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -25360,7 +25546,6 @@ and
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5032202</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5032202</vuln:URL>
-        <vuln:Supercedence>5031364</vuln:Supercedence>
         <vuln:ProductID>12244</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
@@ -25383,7 +25568,7 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="9">
+  <vuln:Vulnerability Ordinal="10">
     <vuln:Title>Microsoft On-Prem Data Gateway Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -25449,7 +25634,7 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="10">
+  <vuln:Vulnerability Ordinal="11">
     <vuln:Title>Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -25569,7 +25754,7 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="12">
+  <vuln:Vulnerability Ordinal="13">
     <vuln:Title>Windows SmartScreen Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -26248,7 +26433,6 @@ and
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5032202</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5032202</vuln:URL>
-        <vuln:Supercedence>5031364</vuln:Supercedence>
         <vuln:ProductID>12244</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
@@ -26395,7 +26579,118 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="13">
+  <vuln:Vulnerability Ordinal="14">
+    <vuln:Title>Microsoft Edge (Chromium-based) Spoofing Vulnerability</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is the severity for this CVE rated as Moderate, but the CVSS score is higher than normal?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.microsoft.com/en-us/msrc/bounty-new-edge"&gt;Per our severity guidelines&lt;/a&gt;, the amount of user interaction or preconditions required to allow this sort of exploitation downgraded the severity, specifically it says, &amp;quot;If a bug requires more than a click, a key press, or several preconditions, the severity will be downgraded&amp;quot;. The CVSS scoring system doesn't allow for this type of nuance.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, user interaction is required (UI:R). What interaction would the user have to do?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The user would have to click on a specially crafted URL to be compromised by the attacker.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, successful exploitation of this vulnerability could lead to some loss of integrity (I:L)? What does that mean for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The attacker is able to bypass the warning on the permissions message when visiting a potentially malicious website.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Channel&lt;/th&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Stable&lt;/td&gt;
+&lt;td&gt;119.0.2151.72&lt;/td&gt;
+&lt;td&gt;11/16/2023&lt;/td&gt;
+&lt;td&gt;119.0.6045.159/.160&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Extended Stable&lt;/td&gt;
+&lt;td&gt;118.0.2088.109&lt;/td&gt;
+&lt;td&gt;11/16/2023&lt;/td&gt;
+&lt;td&gt;118.0.5993.144&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2023-36026</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:ProductID>12142</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Spoofing</vuln:Description>
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Spoofing</vuln:Description>
+        <vuln:ProductID>12142</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Moderate</vuln:Description>
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Moderate</vuln:Description>
+        <vuln:ProductID>12142</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation Less Likely;Older Software Release:Exploitation Less Likely;DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>4.3</vuln:BaseScore>
+        <vuln:TemporalScore>3.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>4.3</vuln:BaseScore>
+        <vuln:TemporalScore>3.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>12142</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:ProductID>12142</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>119.0.2151.72</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments>
+      <vuln:Acknowledgment>
+        <vuln:Name>Anonymous</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+    </vuln:Acknowledgments>
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2023-11-16T08:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="15">
     <vuln:Title>Microsoft Edge (Chromium-based) Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -26518,7 +26813,7 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="5">
+  <vuln:Vulnerability Ordinal="6">
     <vuln:Title>Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -26614,7 +26909,7 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="6">
+  <vuln:Vulnerability Ordinal="7">
     <vuln:Title>Microsoft Dynamics 365 (on-premises) Cross-site Scripting Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -26710,7 +27005,7 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="8">
+  <vuln:Vulnerability Ordinal="9">
     <vuln:Title>Visual Studio Code Jupyter Extension Spoofing Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -26773,7 +27068,119 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="69">
+  <vuln:Vulnerability Ordinal="5">
+    <vuln:Title>Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, the attack vector is local (AV:L). Why does the CVE title indicate that this is a remote code execution?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The word &lt;strong&gt;Remote&lt;/strong&gt; in the title refers to the location of the attacker. This type of exploit is sometimes referred to as Arbitrary Code Execution (ACE). The attack itself is carried out locally.&lt;/p&gt;
+&lt;p&gt;For example, when the score indicates that the &lt;strong&gt;Attack Vector&lt;/strong&gt; is &lt;strong&gt;Local&lt;/strong&gt; and &lt;strong&gt;User Interaction&lt;/strong&gt; is &lt;strong&gt;Required&lt;/strong&gt;, this could describe an exploit in which an attacker, through social engineering, convinces a victim to download and open a specially crafted file from a website which leads to a local attack on their computer.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, successful exploitation of this vulnerability could lead to some loss of availability (A:L)? What does that mean for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The performance can be interrupted and/or reduced, but the attacker cannot fully deny service.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, successful exploitation of this vulnerability could lead to some loss of integrity (I:L). What does that mean for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The attacker who successfully exploited the vulnerability could have limited ability to perform code execution.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Channel&lt;/th&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Stable&lt;/td&gt;
+&lt;td&gt;119.0.2151.72&lt;/td&gt;
+&lt;td&gt;11/16/2023&lt;/td&gt;
+&lt;td&gt;119.0.6045.159/.160&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Extended Stable&lt;/td&gt;
+&lt;td&gt;118.0.2088.109&lt;/td&gt;
+&lt;td&gt;11/16/2023&lt;/td&gt;
+&lt;td&gt;118.0.5993.144&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2023-36008</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:ProductID>12142</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>12142</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Moderate</vuln:Description>
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Moderate</vuln:Description>
+        <vuln:ProductID>12142</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation Less Likely;Older Software Release:Exploitation Less Likely;DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>6.6</vuln:BaseScore>
+        <vuln:TemporalScore>5.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:L/A:L/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>6.6</vuln:BaseScore>
+        <vuln:TemporalScore>5.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:L/A:L/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>12142</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:ProductID>12142</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>119.0.2151.72</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments>
+      <vuln:Acknowledgment>
+        <vuln:Name>HAO LI of VenusTech ADLab</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+    </vuln:Acknowledgments>
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2023-11-16T08:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="71">
     <vuln:Title>Chromium: CVE-2023-5480 Inappropriate implementation in Payments</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -26849,7 +27256,7 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="70">
+  <vuln:Vulnerability Ordinal="72">
     <vuln:Title>Chromium: CVE-2023-5482 Insufficient data validation in USB</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -26925,7 +27332,7 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="71">
+  <vuln:Vulnerability Ordinal="73">
     <vuln:Title>Chromium: CVE-2023-5849 Integer overflow in USB</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -27001,7 +27408,7 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="72">
+  <vuln:Vulnerability Ordinal="74">
     <vuln:Title>Chromium: CVE-2023-5850 Incorrect security UI in Downloads</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -27077,7 +27484,7 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="73">
+  <vuln:Vulnerability Ordinal="75">
     <vuln:Title>Chromium: CVE-2023-5851 Inappropriate implementation in Downloads</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -27153,7 +27560,7 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="74">
+  <vuln:Vulnerability Ordinal="76">
     <vuln:Title>Chromium: CVE-2023-5852 Use after free in Printing</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -27229,7 +27636,7 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="75">
+  <vuln:Vulnerability Ordinal="77">
     <vuln:Title>Chromium: CVE-2023-5853 Incorrect security UI in Downloads</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -27305,7 +27712,7 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="76">
+  <vuln:Vulnerability Ordinal="78">
     <vuln:Title>Chromium: CVE-2023-5854 Use after free in Profiles</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -27381,7 +27788,7 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="77">
+  <vuln:Vulnerability Ordinal="79">
     <vuln:Title>Chromium: CVE-2023-5855 Use after free in Reading Mode</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -27457,7 +27864,7 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="78">
+  <vuln:Vulnerability Ordinal="80">
     <vuln:Title>Chromium: CVE-2023-5856 Use after free in Side Panel</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -27533,7 +27940,7 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="79">
+  <vuln:Vulnerability Ordinal="81">
     <vuln:Title>Chromium: CVE-2023-5857 Inappropriate implementation in Downloads</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -27609,7 +28016,7 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="80">
+  <vuln:Vulnerability Ordinal="82">
     <vuln:Title>Chromium: CVE-2023-5858 Inappropriate implementation in WebApp Provider</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -27685,7 +28092,7 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="81">
+  <vuln:Vulnerability Ordinal="83">
     <vuln:Title>Chromium: CVE-2023-5859 Incorrect security UI in Picture In Picture</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -27908,7 +28315,7 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="68">
+  <vuln:Vulnerability Ordinal="70">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2023-46753</vuln:Note>
@@ -28007,7 +28414,7 @@ and
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="67">
+  <vuln:Vulnerability Ordinal="69">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2023-46316</vuln:Note>
