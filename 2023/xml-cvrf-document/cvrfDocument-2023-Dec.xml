@@ -14,16 +14,16 @@
     <Version>1.0</Version>
     <RevisionHistory>
       <Revision>
-        <Number>7</Number>
-        <Date>2023-12-12T08:00:00</Date>
+        <Number>9</Number>
+        <Date>2023-12-14T08:00:00</Date>
         <Description>December 2023 Security Updates</Description>
       </Revision>
     </RevisionHistory>
     <InitialReleaseDate>2023-12-12T08:00:00</InitialReleaseDate>
-    <CurrentReleaseDate>2023-12-12T08:00:00</CurrentReleaseDate>
+    <CurrentReleaseDate>2023-12-14T08:00:00</CurrentReleaseDate>
   </DocumentTracking>
   <DocumentNotes>
-    <Note Title="Release Notes" Audience="Public" Type="Details" Ordinal="0">&lt;h2&gt;This release consists of the following 36 Microsoft CVEs:&lt;/h2&gt;
+    <Note Title="Release Notes" Audience="Public" Type="Details" Ordinal="0">&lt;h2&gt;This release consists of the following 37 Microsoft CVEs:&lt;/h2&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -43,6 +43,16 @@
 &lt;td&gt;&lt;a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2023-21740"&gt;CVE-2023-21740&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;7.8&lt;/td&gt;
 &lt;td&gt;CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C&lt;/td&gt;
+&lt;td&gt;Exploitation Less Likely&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Yes&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Azure DevOps&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2023-21751"&gt;CVE-2023-21751&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;6.5&lt;/td&gt;
+&lt;td&gt;CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N/E:U/RL:O/RC:C&lt;/td&gt;
 &lt;td&gt;Exploitation Less Likely&lt;/td&gt;
 &lt;td&gt;&lt;strong&gt;Yes&lt;/strong&gt;&lt;/td&gt;
 &lt;td&gt;No&lt;/td&gt;
@@ -617,8 +627,12 @@
       </Branch>
       <Branch Type="Product Family" Name="Azure">
         <FullProductName ProductID="12266">Azure Machine Learning SDK</FullProductName>
+        <FullProductName ProductID="12270">Azure DevOps Server 2022.1</FullProductName>
         <FullProductName ProductID="12228">Azure Logic Apps</FullProductName>
         <FullProductName ProductID="12264">Azure Connected Machine Agent</FullProductName>
+      </Branch>
+      <Branch Type="Product Family" Name="Developer Tools">
+        <FullProductName ProductID="12143">Azure DevOps Server 2020.1.2</FullProductName>
       </Branch>
       <Branch Type="Product Family" Name="System Center">
         <FullProductName ProductID="12183">Microsoft Malware Protection Platform</FullProductName>
@@ -666,6 +680,7 @@
     <FullProductName ProductID="12097">Windows 10 Version 22H2 for x64-based Systems</FullProductName>
     <FullProductName ProductID="12098">Windows 10 Version 22H2 for ARM64-based Systems</FullProductName>
     <FullProductName ProductID="12099">Windows 10 Version 22H2 for 32-bit Systems</FullProductName>
+    <FullProductName ProductID="12143">Azure DevOps Server 2020.1.2</FullProductName>
     <FullProductName ProductID="12183">Microsoft Malware Protection Platform</FullProductName>
     <FullProductName ProductID="12228">Azure Logic Apps</FullProductName>
     <FullProductName ProductID="12242">Windows 11 Version 23H2 for ARM64-based Systems</FullProductName>
@@ -677,11 +692,12 @@
     <FullProductName ProductID="12267">Dynamics 365 for Finance and Operations Version 10.0.37 Platform Update 61</FullProductName>
     <FullProductName ProductID="12268">Dynamics 365 for Finance and Operations Version 10.0.38 Platform Update 62</FullProductName>
     <FullProductName ProductID="12269">Dynamics 365 for Finance and Operations Platform Update 60</FullProductName>
+    <FullProductName ProductID="12270">Azure DevOps Server 2022.1</FullProductName>
     <FullProductName ProductID="9312">Windows Server 2008 for 32-bit Systems Service Pack 2</FullProductName>
     <FullProductName ProductID="9318">Windows Server 2008 for x64-based Systems Service Pack 2</FullProductName>
     <FullProductName ProductID="9344">Windows Server 2008 for x64-based Systems Service Pack 2 (Server Core installation)</FullProductName>
   </ProductTree>
-  <Vulnerability Ordinal="37" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="39" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Chromium: CVE-2023-6508 Use after free in Media Stream</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -757,7 +773,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="38" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="40" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Chromium: CVE-2023-6509 Use after free in Side Panel Search</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -833,7 +849,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="39" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="41" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Chromium: CVE-2023-6510 Use after free in Media Capture</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -909,7 +925,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="40" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="42" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Chromium: CVE-2023-6511 Inappropriate implementation in Autofill</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -985,7 +1001,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="41" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="43" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Chromium: CVE-2023-6512 Inappropriate implementation in Web Browser UI</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -1061,7 +1077,463 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="34" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="44" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+    <Title>Chromium: CVE-2023-6702 Type Confusion in V8</Title>
+    <Notes>
+      <Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</Note>
+      <Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based). It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</Note>
+      <Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;120.0.2210.77&lt;/td&gt;
+&lt;td&gt;12/14/2023&lt;/td&gt;
+&lt;td&gt;120.0.6099.109&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</Note>
+      <Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</Note>
+      <Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</Note>
+    </Notes>
+    <CVE>CVE-2023-6702</CVE>
+    <ProductStatuses>
+      <Status Type="Known Affected">
+        <ProductID>11655</ProductID>
+      </Status>
+    </ProductStatuses>
+    <Threats>
+      <Threat Type="Impact">
+        <Description />
+        <ProductID>11655</ProductID>
+      </Threat>
+      <Threat Type="Severity">
+        <Description />
+        <ProductID>11655</ProductID>
+      </Threat>
+      <Threat Type="Exploit Status">
+        <Description>DOS:N/A</Description>
+      </Threat>
+    </Threats>
+    <CVSSScoreSets />
+    <Remediations>
+      <Remediation Type="Vendor Fix">
+        <Description>Release Notes</Description>
+        <URL />
+        <ProductID>11655</ProductID>
+        <AffectedFiles />
+        <RestartRequired>No</RestartRequired>
+        <SubType>Security Update</SubType>
+        <FixedBuild>120.0.2210.77</FixedBuild>
+      </Remediation>
+    </Remediations>
+    <Acknowledgments />
+    <RevisionHistory>
+      <Revision>
+        <Number xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">1.0</Number>
+        <Date xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">2023-12-14T08:00:00</Date>
+        <Description xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">&lt;p&gt;Information published.&lt;/p&gt;
+</Description>
+      </Revision>
+    </RevisionHistory>
+  </Vulnerability>
+  <Vulnerability Ordinal="45" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+    <Title>Chromium: CVE-2023-6703 Use after free in Blink</Title>
+    <Notes>
+      <Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</Note>
+      <Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based). It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</Note>
+      <Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;120.0.2210.77&lt;/td&gt;
+&lt;td&gt;12/14/2023&lt;/td&gt;
+&lt;td&gt;120.0.6099.109&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</Note>
+      <Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</Note>
+      <Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</Note>
+    </Notes>
+    <CVE>CVE-2023-6703</CVE>
+    <ProductStatuses>
+      <Status Type="Known Affected">
+        <ProductID>11655</ProductID>
+      </Status>
+    </ProductStatuses>
+    <Threats>
+      <Threat Type="Impact">
+        <Description />
+        <ProductID>11655</ProductID>
+      </Threat>
+      <Threat Type="Severity">
+        <Description />
+        <ProductID>11655</ProductID>
+      </Threat>
+      <Threat Type="Exploit Status">
+        <Description>DOS:N/A</Description>
+      </Threat>
+    </Threats>
+    <CVSSScoreSets />
+    <Remediations>
+      <Remediation Type="Vendor Fix">
+        <Description>Release Notes</Description>
+        <URL />
+        <ProductID>11655</ProductID>
+        <AffectedFiles />
+        <RestartRequired>No</RestartRequired>
+        <SubType>Security Update</SubType>
+        <FixedBuild>120.0.2210.77</FixedBuild>
+      </Remediation>
+    </Remediations>
+    <Acknowledgments />
+    <RevisionHistory>
+      <Revision>
+        <Number xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">1.0</Number>
+        <Date xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">2023-12-14T08:00:00</Date>
+        <Description xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">&lt;p&gt;Information published.&lt;/p&gt;
+</Description>
+      </Revision>
+    </RevisionHistory>
+  </Vulnerability>
+  <Vulnerability Ordinal="46" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+    <Title>Chromium: CVE-2023-6704 Use after free in libavif</Title>
+    <Notes>
+      <Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</Note>
+      <Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based). It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</Note>
+      <Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;120.0.2210.77&lt;/td&gt;
+&lt;td&gt;12/14/2023&lt;/td&gt;
+&lt;td&gt;120.0.6099.109&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</Note>
+      <Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</Note>
+      <Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</Note>
+    </Notes>
+    <CVE>CVE-2023-6704</CVE>
+    <ProductStatuses>
+      <Status Type="Known Affected">
+        <ProductID>11655</ProductID>
+      </Status>
+    </ProductStatuses>
+    <Threats>
+      <Threat Type="Impact">
+        <Description />
+        <ProductID>11655</ProductID>
+      </Threat>
+      <Threat Type="Severity">
+        <Description />
+        <ProductID>11655</ProductID>
+      </Threat>
+      <Threat Type="Exploit Status">
+        <Description>DOS:N/A</Description>
+      </Threat>
+    </Threats>
+    <CVSSScoreSets />
+    <Remediations>
+      <Remediation Type="Vendor Fix">
+        <Description>Release Notes</Description>
+        <URL />
+        <ProductID>11655</ProductID>
+        <AffectedFiles />
+        <RestartRequired>No</RestartRequired>
+        <SubType>Security Update</SubType>
+        <FixedBuild>120.0.2210.77</FixedBuild>
+      </Remediation>
+    </Remediations>
+    <Acknowledgments />
+    <RevisionHistory>
+      <Revision>
+        <Number xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">1.0</Number>
+        <Date xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">2023-12-14T08:00:00</Date>
+        <Description xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">&lt;p&gt;Information published.&lt;/p&gt;
+</Description>
+      </Revision>
+    </RevisionHistory>
+  </Vulnerability>
+  <Vulnerability Ordinal="47" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+    <Title>Chromium: CVE-2023-6705 Use after free in WebRTC</Title>
+    <Notes>
+      <Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</Note>
+      <Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based). It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</Note>
+      <Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;120.0.2210.77&lt;/td&gt;
+&lt;td&gt;12/14/2023&lt;/td&gt;
+&lt;td&gt;120.0.6099.109&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</Note>
+      <Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</Note>
+      <Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</Note>
+    </Notes>
+    <CVE>CVE-2023-6705</CVE>
+    <ProductStatuses>
+      <Status Type="Known Affected">
+        <ProductID>11655</ProductID>
+      </Status>
+    </ProductStatuses>
+    <Threats>
+      <Threat Type="Impact">
+        <Description />
+        <ProductID>11655</ProductID>
+      </Threat>
+      <Threat Type="Severity">
+        <Description />
+        <ProductID>11655</ProductID>
+      </Threat>
+      <Threat Type="Exploit Status">
+        <Description>DOS:N/A</Description>
+      </Threat>
+    </Threats>
+    <CVSSScoreSets />
+    <Remediations>
+      <Remediation Type="Vendor Fix">
+        <Description>Release Notes</Description>
+        <URL />
+        <ProductID>11655</ProductID>
+        <AffectedFiles />
+        <RestartRequired>No</RestartRequired>
+        <SubType>Security Update</SubType>
+        <FixedBuild>120.0.2210.77</FixedBuild>
+      </Remediation>
+    </Remediations>
+    <Acknowledgments />
+    <RevisionHistory>
+      <Revision>
+        <Number xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">1.0</Number>
+        <Date xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">2023-12-14T08:00:00</Date>
+        <Description xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">&lt;p&gt;Information published.&lt;/p&gt;
+</Description>
+      </Revision>
+    </RevisionHistory>
+  </Vulnerability>
+  <Vulnerability Ordinal="48" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+    <Title>Chromium: CVE-2023-6706 Use after free in FedCM</Title>
+    <Notes>
+      <Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</Note>
+      <Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based). It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</Note>
+      <Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;120.0.2210.77&lt;/td&gt;
+&lt;td&gt;12/14/2023&lt;/td&gt;
+&lt;td&gt;120.0.6099.109&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</Note>
+      <Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</Note>
+      <Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</Note>
+    </Notes>
+    <CVE>CVE-2023-6706</CVE>
+    <ProductStatuses>
+      <Status Type="Known Affected">
+        <ProductID>11655</ProductID>
+      </Status>
+    </ProductStatuses>
+    <Threats>
+      <Threat Type="Impact">
+        <Description />
+        <ProductID>11655</ProductID>
+      </Threat>
+      <Threat Type="Severity">
+        <Description />
+        <ProductID>11655</ProductID>
+      </Threat>
+      <Threat Type="Exploit Status">
+        <Description>DOS:N/A</Description>
+      </Threat>
+    </Threats>
+    <CVSSScoreSets />
+    <Remediations>
+      <Remediation Type="Vendor Fix">
+        <Description>Release Notes</Description>
+        <URL />
+        <ProductID>11655</ProductID>
+        <AffectedFiles />
+        <RestartRequired>No</RestartRequired>
+        <SubType>Security Update</SubType>
+        <FixedBuild>120.0.2210.77</FixedBuild>
+      </Remediation>
+    </Remediations>
+    <Acknowledgments />
+    <RevisionHistory>
+      <Revision>
+        <Number xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">1.0</Number>
+        <Date xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">2023-12-14T08:00:00</Date>
+        <Description xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">&lt;p&gt;Information published.&lt;/p&gt;
+</Description>
+      </Revision>
+    </RevisionHistory>
+  </Vulnerability>
+  <Vulnerability Ordinal="49" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+    <Title>Chromium: CVE-2023-6707 Use after free in CSS</Title>
+    <Notes>
+      <Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</Note>
+      <Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based). It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</Note>
+      <Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;120.0.2210.77&lt;/td&gt;
+&lt;td&gt;12/14/2023&lt;/td&gt;
+&lt;td&gt;120.0.6099.109&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</Note>
+      <Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</Note>
+      <Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</Note>
+    </Notes>
+    <CVE>CVE-2023-6707</CVE>
+    <ProductStatuses>
+      <Status Type="Known Affected">
+        <ProductID>11655</ProductID>
+      </Status>
+    </ProductStatuses>
+    <Threats>
+      <Threat Type="Impact">
+        <Description />
+        <ProductID>11655</ProductID>
+      </Threat>
+      <Threat Type="Severity">
+        <Description />
+        <ProductID>11655</ProductID>
+      </Threat>
+      <Threat Type="Exploit Status">
+        <Description>DOS:N/A</Description>
+      </Threat>
+    </Threats>
+    <CVSSScoreSets />
+    <Remediations>
+      <Remediation Type="Vendor Fix">
+        <Description>Release Notes</Description>
+        <URL />
+        <ProductID>11655</ProductID>
+        <AffectedFiles />
+        <RestartRequired>No</RestartRequired>
+        <SubType>Security Update</SubType>
+        <FixedBuild>120.0.2210.77</FixedBuild>
+      </Remediation>
+    </Remediations>
+    <Acknowledgments />
+    <RevisionHistory>
+      <Revision>
+        <Number xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">1.0</Number>
+        <Date xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">2023-12-14T08:00:00</Date>
+        <Description xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">&lt;p&gt;Information published.&lt;/p&gt;
+</Description>
+      </Revision>
+    </RevisionHistory>
+  </Vulnerability>
+  <Vulnerability Ordinal="35" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Windows Cloud Files Mini Filter Driver Elevation of Privilege Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -1547,7 +2019,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="33" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="34" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Local Security Authority Subsystem Service Elevation of Privilege Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -1634,7 +2106,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="32" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="33" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Microsoft Dynamics 365 (on-premises) Cross-site Scripting Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -1698,7 +2170,7 @@
     <Remediations>
       <Remediation Type="Vendor Fix">
         <Description>5032297</Description>
-        <URL>https://www.microsoft.com/download/details.aspx?familyid=6fe9f212-a711-4dfb-9831-fcb38f247e7d</URL>
+        <URL>https://www.microsoft.com/en-us/download/details.aspx?id=105717</URL>
         <ProductID>11921</ProductID>
         <AffectedFiles />
         <RestartRequired>Maybe</RestartRequired>
@@ -1707,7 +2179,7 @@
       </Remediation>
       <Remediation Type="Vendor Fix">
         <Description>5032298</Description>
-        <URL>https://www.microsoft.com/download/details.aspx?familyid=078a9261-e98a-4bd2-b0ba-16878898f0c3</URL>
+        <URL>https://www.microsoft.com/en-us/download/details.aspx?id=105716</URL>
         <ProductID>11664</ProductID>
         <AffectedFiles />
         <RestartRequired>Maybe</RestartRequired>
@@ -1730,7 +2202,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="27" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="28" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Microsoft Word Information Disclosure Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -1948,7 +2420,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="29" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="30" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Win32k Elevation of Privilege Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -2630,7 +3102,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="2" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="3" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Microsoft Edge (Chromium-based) Elevation of Privilege Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -2645,6 +3117,24 @@
 </Note>
       <Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What privileges could be gained by an attacker who successfully exploited the vulnerability?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;An attacker who successfully exploited this vulnerability could allow the attacker to gain the privileges needed to perform code execution.&lt;/p&gt;
+</Note>
+      <Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;120.0.2210.61&lt;/td&gt;
+&lt;td&gt;12/7/2023&lt;/td&gt;
+&lt;td&gt;120.0.6099.62/.63&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 </Note>
       <Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</Note>
       <Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</Note>
@@ -2698,6 +3188,12 @@
         <Number xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">1.0</Number>
         <Date xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">2023-12-07T08:00:00</Date>
         <Description xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">&lt;p&gt;Information published.&lt;/p&gt;
+</Description>
+      </Revision>
+      <Revision>
+        <Number xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">1.1</Number>
+        <Date xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">2023-12-14T08:00:00</Date>
+        <Description xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">&lt;p&gt;Added FAQ to indicate the version numbers for this CVE. This is an informational change only.&lt;/p&gt;
 </Description>
       </Revision>
     </RevisionHistory>
@@ -3334,7 +3830,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="7" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="8" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Azure Machine Learning Compute Instance for SDK Users Information Disclosure Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -4160,7 +4656,97 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="36" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="2" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+    <Title>Azure DevOps Server Spoofing Vulnerability</Title>
+    <Notes>
+      <Note Title="Description" Type="Description" Ordinal="0" />
+      <Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric,privileges required is low(PR:L). What does that mean for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This means that an attacker needs to have a user account in the organization with the ability to run builds.&lt;/p&gt;
+</Note>
+      <Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, successful exploitation of this vulnerability could impact the integrity(I:H). What does that mean for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Successful exploitation compromises the integrity of the build verification process, allowing an attacker to spoof and bypass verification.&lt;/p&gt;
+</Note>
+      <Note Title="Azure DevOps" Type="Tag" Ordinal="20">Azure DevOps</Note>
+      <Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</Note>
+    </Notes>
+    <CVE>CVE-2023-21751</CVE>
+    <ProductStatuses>
+      <Status Type="Known Affected">
+        <ProductID>12270</ProductID>
+        <ProductID>12143</ProductID>
+      </Status>
+    </ProductStatuses>
+    <Threats>
+      <Threat Type="Impact">
+        <Description>Spoofing</Description>
+        <ProductID>12270</ProductID>
+      </Threat>
+      <Threat Type="Impact">
+        <Description>Spoofing</Description>
+        <ProductID>12143</ProductID>
+      </Threat>
+      <Threat Type="Severity">
+        <Description>Important</Description>
+        <ProductID>12270</ProductID>
+      </Threat>
+      <Threat Type="Severity">
+        <Description>Important</Description>
+        <ProductID>12143</ProductID>
+      </Threat>
+      <Threat Type="Exploit Status">
+        <Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation Less Likely;DOS:N/A</Description>
+      </Threat>
+    </Threats>
+    <CVSSScoreSets>
+      <ScoreSet>
+        <BaseScore>6.5</BaseScore>
+        <TemporalScore>5.7</TemporalScore>
+        <Vector>CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N/E:U/RL:O/RC:C</Vector>
+        <ProductID>12270</ProductID>
+      </ScoreSet>
+      <ScoreSet>
+        <BaseScore>6.5</BaseScore>
+        <TemporalScore>5.7</TemporalScore>
+        <Vector>CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N/E:U/RL:O/RC:C</Vector>
+        <ProductID>12143</ProductID>
+      </ScoreSet>
+    </CVSSScoreSets>
+    <Remediations>
+      <Remediation Type="Vendor Fix">
+        <Description>Release Notes</Description>
+        <URL />
+        <ProductID>12270</ProductID>
+        <AffectedFiles />
+        <RestartRequired>Maybe</RestartRequired>
+        <SubType>Security Update</SubType>
+        <FixedBuild>20231128.1</FixedBuild>
+      </Remediation>
+      <Remediation Type="Vendor Fix">
+        <Description>Release Notes</Description>
+        <URL />
+        <ProductID>12143</ProductID>
+        <AffectedFiles />
+        <RestartRequired>Maybe</RestartRequired>
+        <SubType>Security Update</SubType>
+        <FixedBuild>20231127.4</FixedBuild>
+      </Remediation>
+    </Remediations>
+    <Acknowledgments>
+      <Acknowledgment>
+        <Name>&lt;a href="https://twitter.com/agdosil"&gt;Anton Garcia Dosil&lt;/a&gt;</Name>
+        <URL />
+      </Acknowledgment>
+    </Acknowledgments>
+    <RevisionHistory>
+      <Revision>
+        <Number xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">1.0</Number>
+        <Date xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">2023-12-13T08:00:00</Date>
+        <Description xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">&lt;p&gt;Information published. This CVE was addressed by updates that were released in December 2023, but the CVE was inadvertently omitted from the December 2023 Security Updates. Microsoft strongly recommends that customers running affected versions of Azure DevOps Server install the December 2023 updates to be protected from this vulnerability.&lt;/p&gt;
+</Description>
+      </Revision>
+    </RevisionHistory>
+  </Vulnerability>
+  <Vulnerability Ordinal="38" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Microsoft Edge (Chromium-based) Information Disclosure Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -4169,6 +4755,24 @@
 </Note>
       <Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, successful exploitation of this vulnerability could lead to some loss of confidentiality (C:L)? What does that mean for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Exploitation of this vulnerability only discloses limited information, no sensitive information can be obtained.&lt;/p&gt;
+</Note>
+      <Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;120.0.2210.61&lt;/td&gt;
+&lt;td&gt;12/7/2023&lt;/td&gt;
+&lt;td&gt;120.0.6099.62/.63&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 </Note>
       <Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</Note>
       <Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</Note>
@@ -4219,6 +4823,12 @@
     </Acknowledgments>
     <RevisionHistory>
       <Revision>
+        <Number xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">1.1</Number>
+        <Date xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">2023-12-14T08:00:00</Date>
+        <Description xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">&lt;p&gt;Added FAQ to indicate the version numbers for this CVE. This is an informational change only.&lt;/p&gt;
+</Description>
+      </Revision>
+      <Revision>
         <Number xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">1.0</Number>
         <Date xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">2023-12-07T08:00:00</Date>
         <Description xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">&lt;p&gt;Information published.&lt;/p&gt;
@@ -4226,7 +4836,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="31" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="32" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Microsoft Power Platform Connector Spoofing Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -4335,7 +4945,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="28" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="29" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Microsoft Defender Denial of Service Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -4382,7 +4992,7 @@
     </Remediations>
     <Acknowledgments>
       <Acknowledgment>
-        <Name>Tomer Bar with &lt;a href="https://safebreach.com/"&gt;SafeBreach&lt;/a&gt;</Name>
+        <Name>Tomer Bar with &lt;a href="https://safebreach.com/"&gt;SafeBreach&lt;/a&gt; and Shmuel Cohen with &lt;a href="https://safebreach.com/"&gt;SafeBreach&lt;/a&gt;</Name>
         <URL />
       </Acknowledgment>
     </Acknowledgments>
@@ -4395,7 +5005,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="30" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="31" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>DHCP Server Service Information Disclosure Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -4852,7 +5462,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="23" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="24" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>XAML Diagnostics Elevation of Privilege Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -5459,7 +6069,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="24" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="25" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Windows DPAPI (Data Protection Application Programming Interface) Spoofing Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -6319,7 +6929,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="25" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="26" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Windows Telephony Server Elevation of Privilege Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -7172,7 +7782,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="26" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="27" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Microsoft WDAC OLE DB provider for SQL Server Remote Code Execution Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -8068,7 +8678,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="17" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="18" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>DHCP Server Service Denial of Service Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -8351,7 +8961,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="18" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="19" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Microsoft ODBC Driver Remote Code Execution Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -9207,7 +9817,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="19" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="20" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Internet Connection Sharing (ICS) Remote Code Execution Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -10044,6 +10654,12 @@
         <SubType>Monthly Rollup</SubType>
         <FixedBuild>6.3.9600.21715</FixedBuild>
       </Remediation>
+      <Remediation Type="Mitigation">
+        <Description>&lt;p&gt;The following &lt;a href="https://technet.microsoft.com/library/security/dn848375.aspx"&gt;mitigating factors&lt;/a&gt; might be helpful in your situation:&lt;/p&gt;
+&lt;p&gt;Exploitation of this vulnerability requires that the Internet Connection Sharing (ICS) is enabled.&lt;/p&gt;
+</Description>
+        <AffectedFiles />
+      </Remediation>
     </Remediations>
     <Acknowledgments>
       <Acknowledgment>
@@ -10065,6 +10681,12 @@
     </Acknowledgments>
     <RevisionHistory>
       <Revision>
+        <Number xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">1.1</Number>
+        <Date xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">2023-12-13T08:00:00</Date>
+        <Description xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">&lt;p&gt;Added mitigation.  This is an informational change only.&lt;/p&gt;
+</Description>
+      </Revision>
+      <Revision>
         <Number xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">1.0</Number>
         <Date xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">2023-12-12T08:00:00</Date>
         <Description xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">&lt;p&gt;Information published.&lt;/p&gt;
@@ -10072,7 +10694,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="20" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="21" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Internet Connection Sharing (ICS) Denial of Service Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -10922,7 +11544,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="21" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="22" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>DHCP Server Service Information Disclosure Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -11208,7 +11830,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="22" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="23" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Windows Sysmain Service Elevation of Privilege</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -11698,7 +12320,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="8" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="9" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Windows MSHTML Platform Remote Code Execution Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -12475,7 +13097,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="9" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="10" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Microsoft USBHUB 3.0 Device Driver Remote Code Execution Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -12802,7 +13424,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="10" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="11" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Internet Connection Sharing (ICS) Remote Code Execution Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -13659,7 +14281,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="11" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="12" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Win32k Elevation of Privilege Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -13870,7 +14492,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="12" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="13" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -14395,7 +15017,7 @@ Microsoft Security Response Center</Name>
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="13" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="14" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Windows Kernel Elevation of Privilege Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -14725,7 +15347,7 @@ Microsoft Security Response Center</Name>
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="14" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="15" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Windows Bluetooth Driver Remote Code Execution Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -14914,7 +15536,7 @@ Microsoft Security Response Center</Name>
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="15" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="16" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Windows Kernel Denial of Service Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -15052,7 +15674,7 @@ Microsoft Security Response Center</Name>
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="16" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="17" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Microsoft Outlook Information Disclosure Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -15254,7 +15876,7 @@ Microsoft Security Response Center</Name>
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="3" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="4" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Microsoft Outlook for Mac Spoofing Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -15320,7 +15942,7 @@ Microsoft Security Response Center</Name>
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="4" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="5" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Microsoft Dynamics 365 Finance and Operations Denial of Service Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -15428,7 +16050,7 @@ Microsoft Security Response Center</Name>
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="5" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="6" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Windows DNS Spoofing Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -15874,7 +16496,7 @@ Microsoft Security Response Center</Name>
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="6" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="7" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Azure Connected Machine Agent Elevation of Privilege Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -15940,7 +16562,7 @@ Microsoft Security Response Center</Name>
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="35" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="37" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Microsoft Edge (Chromium-based) Information Disclosure Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -15952,6 +16574,24 @@ Microsoft Security Response Center</Name>
 </Note>
       <Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, the attack complexity is high (AC:H). What does that mean for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Successful exploitation of this vulnerability requires an attacker to gather information specific to the environment and take additional actions prior to exploitation to prepare the target environment.&lt;/p&gt;
+</Note>
+      <Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;120.0.2210.61&lt;/td&gt;
+&lt;td&gt;12/7/2023&lt;/td&gt;
+&lt;td&gt;120.0.6099.62/.63&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 </Note>
       <Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</Note>
       <Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</Note>
@@ -16002,8 +16642,98 @@ Microsoft Security Response Center</Name>
     </Acknowledgments>
     <RevisionHistory>
       <Revision>
+        <Number xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">1.1</Number>
+        <Date xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">2023-12-14T08:00:00</Date>
+        <Description xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">&lt;p&gt;Added FAQ to indicate the version numbers for this CVE. This is an informational change only.&lt;/p&gt;
+</Description>
+      </Revision>
+      <Revision>
         <Number xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">1.0</Number>
         <Date xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">2023-12-07T08:00:00</Date>
+        <Description xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">&lt;p&gt;Information published.&lt;/p&gt;
+</Description>
+      </Revision>
+    </RevisionHistory>
+  </Vulnerability>
+  <Vulnerability Ordinal="36" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+    <Title>Microsoft Edge (Chromium-based) Security Feature Bypass Vulnerability</Title>
+    <Notes>
+      <Note Title="Description" Type="Description" Ordinal="0" />
+      <Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;How could an attacker exploit this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;To exploit this vulnerability, an attacker would first have to log on to the system. An attacker could then run a specially crafted application that could exploit the vulnerability and take control of an affected system.&lt;/p&gt;
+&lt;p&gt;Additionally, an attacker could convince a local user to open a malicious file. The attacker would have to convince the user to click a link, typically by way of an enticement in an email or instant message, and then convince them to open the specially crafted file.&lt;/p&gt;
+</Note>
+      <Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What kind of security feature could be bypassed by successfully exploiting this vulnerability?&lt;/strong&gt; The attacker would be able to bypass the protection in Edge that does not block &lt;img&gt; tags which may contain blocked websites to be loaded. If an attacker successfully exploited this vulnerability it could load a malicious image file.&lt;/p&gt;
+</Note>
+      <Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;120.0.2210.77&lt;/td&gt;
+&lt;td&gt;12/14/2023&lt;/td&gt;
+&lt;td&gt;120.0.6099.109&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</Note>
+      <Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</Note>
+      <Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</Note>
+    </Notes>
+    <CVE>CVE-2023-36878</CVE>
+    <ProductStatuses>
+      <Status Type="Known Affected">
+        <ProductID>11655</ProductID>
+      </Status>
+    </ProductStatuses>
+    <Threats>
+      <Threat Type="Impact">
+        <Description>Security Feature Bypass</Description>
+        <ProductID>11655</ProductID>
+      </Threat>
+      <Threat Type="Severity">
+        <Description>Low</Description>
+        <ProductID>11655</ProductID>
+      </Threat>
+      <Threat Type="Exploit Status">
+        <Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation Less Likely;Older Software Release:Exploitation Less Likely;DOS:N/A</Description>
+      </Threat>
+    </Threats>
+    <CVSSScoreSets>
+      <ScoreSet>
+        <BaseScore>4.3</BaseScore>
+        <TemporalScore>3.8</TemporalScore>
+        <Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N/E:U/RL:O/RC:C</Vector>
+        <ProductID>11655</ProductID>
+      </ScoreSet>
+    </CVSSScoreSets>
+    <Remediations>
+      <Remediation Type="Vendor Fix">
+        <Description>Release Notes</Description>
+        <URL />
+        <ProductID>11655</ProductID>
+        <AffectedFiles />
+        <RestartRequired>No</RestartRequired>
+        <SubType>Security Update</SubType>
+        <FixedBuild>120.0.2210.77</FixedBuild>
+      </Remediation>
+    </Remediations>
+    <Acknowledgments>
+      <Acknowledgment>
+        <Name>&lt;a href="https://www.onecategory.com"&gt;Khiem Tran&lt;/a&gt;</Name>
+        <URL />
+      </Acknowledgment>
+    </Acknowledgments>
+    <RevisionHistory>
+      <Revision>
+        <Number xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">1.0</Number>
+        <Date xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">2023-12-14T08:00:00</Date>
         <Description xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">&lt;p&gt;Information published.&lt;/p&gt;
 </Description>
       </Revision>
