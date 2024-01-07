@@ -1,0 +1,368 @@
+<cvrfdoc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">
+  <DocumentTitle>January 2024 Early Security Updates</DocumentTitle>
+  <DocumentType>Security Update</DocumentType>
+  <DocumentPublisher Type="Vendor">
+    <ContactDetails>secure@microsoft.com</ContactDetails>
+    <IssuingAuthority>The Microsoft Security Response Center (MSRC) identifies, monitors, resolves, and responds to security incidents and Microsoft software security vulnerabilities. For more information, see http://www.microsoft.com/security/msrc.</IssuingAuthority>
+  </DocumentPublisher>
+  <DocumentTracking>
+    <Identification>
+      <ID>2024-Jan</ID>
+      <Alias>2024-Jan</Alias>
+    </Identification>
+    <Status>Final</Status>
+    <Version>1.0</Version>
+    <RevisionHistory>
+      <Revision>
+        <Number>4</Number>
+        <Date>2024-01-05T17:08:32</Date>
+        <Description>January 2024 Early Security Updates</Description>
+      </Revision>
+    </RevisionHistory>
+    <InitialReleaseDate>2024-01-05T08:00:00</InitialReleaseDate>
+    <CurrentReleaseDate>2024-01-05T17:08:32</CurrentReleaseDate>
+  </DocumentTracking>
+  <DocumentNotes>
+    <Note Title="Release Notes" Audience="Public" Type="Details" Ordinal="0">&lt;p&gt;1/5/2024 - A new version of Microsoft Edge (Chromium-based) was released&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Channel&lt;/th&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Stable&lt;/td&gt;
+&lt;td&gt;120.0.2210.121&lt;/td&gt;
+&lt;td&gt;120.0.6099.199/200&lt;/td&gt;
+&lt;td&gt;1/5/2024&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</Note>
+    <Note Title="Legal Disclaimer" Audience="Public" Type="Legal Disclaimer" Ordinal="1">The information provided in the Microsoft Knowledge Base is provided "as is" without warranty of any kind. Microsoft disclaims all warranties, either express or implied, including the warranties of merchantability and fitness for a particular purpose. In no event shall Microsoft Corporation or its suppliers be liable for any damages whatsoever including direct, indirect, incidental, consequential, loss of business profits or special damages, even if Microsoft Corporation or its suppliers have been advised of the possibility of such damages. Some states do not allow the exclusion or limitation of liability for consequential or incidental damages so the foregoing limitation may not apply.</Note>
+  </DocumentNotes>
+  <ProductTree xmlns="http://www.icasi.org/CVRF/schema/prod/1.1">
+    <Branch Type="Vendor" Name="Microsoft">
+      <Branch Type="Product Family" Name="Browser">
+        <FullProductName ProductID="11655">Microsoft Edge (Chromium-based)</FullProductName>
+      </Branch>
+    </Branch>
+    <FullProductName ProductID="11655">Microsoft Edge (Chromium-based)</FullProductName>
+  </ProductTree>
+  <Vulnerability Ordinal="0" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+    <Title>Chromium: CVE-2024-0222 Use after free in ANGLE</Title>
+    <Notes>
+      <Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</Note>
+      <Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based). It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</Note>
+      <Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Channel&lt;/th&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Stable&lt;/td&gt;
+&lt;td&gt;120.0.2210.121&lt;/td&gt;
+&lt;td&gt;120.0.6099.199/200&lt;/td&gt;
+&lt;td&gt;1/5/2024&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</Note>
+      <Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</Note>
+      <Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</Note>
+    </Notes>
+    <CVE>CVE-2024-0222</CVE>
+    <ProductStatuses>
+      <Status Type="Known Affected">
+        <ProductID>11655</ProductID>
+      </Status>
+    </ProductStatuses>
+    <Threats>
+      <Threat Type="Impact">
+        <Description />
+        <ProductID>11655</ProductID>
+      </Threat>
+      <Threat Type="Severity">
+        <Description />
+        <ProductID>11655</ProductID>
+      </Threat>
+      <Threat Type="Exploit Status">
+        <Description>DOS:N/A</Description>
+      </Threat>
+    </Threats>
+    <CVSSScoreSets />
+    <Remediations>
+      <Remediation Type="Vendor Fix">
+        <Description>Release Notes</Description>
+        <URL />
+        <ProductID>11655</ProductID>
+        <AffectedFiles />
+        <RestartRequired>No</RestartRequired>
+        <SubType>Security Update</SubType>
+        <FixedBuild>120.0.2210.121</FixedBuild>
+      </Remediation>
+    </Remediations>
+    <Acknowledgments />
+    <RevisionHistory>
+      <Revision>
+        <Number xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">1.0</Number>
+        <Date xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">2024-01-05T17:08:23</Date>
+        <Description xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">&lt;p&gt;Information published.&lt;/p&gt;
+</Description>
+      </Revision>
+    </RevisionHistory>
+  </Vulnerability>
+  <Vulnerability Ordinal="1" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+    <Title>Chromium: CVE-2024-0223 Heap buffer overflow in ANGLE</Title>
+    <Notes>
+      <Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</Note>
+      <Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based). It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</Note>
+      <Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Channel&lt;/th&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Stable&lt;/td&gt;
+&lt;td&gt;120.0.2210.121&lt;/td&gt;
+&lt;td&gt;120.0.6099.199/200&lt;/td&gt;
+&lt;td&gt;1/5/2024&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</Note>
+      <Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</Note>
+      <Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</Note>
+    </Notes>
+    <CVE>CVE-2024-0223</CVE>
+    <ProductStatuses>
+      <Status Type="Known Affected">
+        <ProductID>11655</ProductID>
+      </Status>
+    </ProductStatuses>
+    <Threats>
+      <Threat Type="Impact">
+        <Description />
+        <ProductID>11655</ProductID>
+      </Threat>
+      <Threat Type="Severity">
+        <Description />
+        <ProductID>11655</ProductID>
+      </Threat>
+      <Threat Type="Exploit Status">
+        <Description>DOS:N/A</Description>
+      </Threat>
+    </Threats>
+    <CVSSScoreSets />
+    <Remediations>
+      <Remediation Type="Vendor Fix">
+        <Description>Release Notes</Description>
+        <URL />
+        <ProductID>11655</ProductID>
+        <AffectedFiles />
+        <RestartRequired>No</RestartRequired>
+        <SubType>Security Update</SubType>
+        <FixedBuild>120.0.2210.121</FixedBuild>
+      </Remediation>
+    </Remediations>
+    <Acknowledgments />
+    <RevisionHistory>
+      <Revision>
+        <Number xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">1.0</Number>
+        <Date xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">2024-01-05T17:08:28</Date>
+        <Description xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">&lt;p&gt;Information published.&lt;/p&gt;
+</Description>
+      </Revision>
+    </RevisionHistory>
+  </Vulnerability>
+  <Vulnerability Ordinal="2" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+    <Title>Chromium: CVE-2024-0224 Use after free in WebAudio</Title>
+    <Notes>
+      <Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</Note>
+      <Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based). It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</Note>
+      <Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Channel&lt;/th&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Stable&lt;/td&gt;
+&lt;td&gt;120.0.2210.121&lt;/td&gt;
+&lt;td&gt;120.0.6099.199/200&lt;/td&gt;
+&lt;td&gt;1/5/2024&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</Note>
+      <Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</Note>
+      <Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</Note>
+    </Notes>
+    <CVE>CVE-2024-0224</CVE>
+    <ProductStatuses>
+      <Status Type="Known Affected">
+        <ProductID>11655</ProductID>
+      </Status>
+    </ProductStatuses>
+    <Threats>
+      <Threat Type="Impact">
+        <Description />
+        <ProductID>11655</ProductID>
+      </Threat>
+      <Threat Type="Severity">
+        <Description />
+        <ProductID>11655</ProductID>
+      </Threat>
+      <Threat Type="Exploit Status">
+        <Description>DOS:N/A</Description>
+      </Threat>
+    </Threats>
+    <CVSSScoreSets />
+    <Remediations>
+      <Remediation Type="Vendor Fix">
+        <Description>Release Notes</Description>
+        <URL />
+        <ProductID>11655</ProductID>
+        <AffectedFiles />
+        <RestartRequired>No</RestartRequired>
+        <SubType>Security Update</SubType>
+        <FixedBuild>120.0.2210.121</FixedBuild>
+      </Remediation>
+    </Remediations>
+    <Acknowledgments />
+    <RevisionHistory>
+      <Revision>
+        <Number xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">1.0</Number>
+        <Date xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">2024-01-05T17:08:30</Date>
+        <Description xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">&lt;p&gt;Information published.&lt;/p&gt;
+</Description>
+      </Revision>
+    </RevisionHistory>
+  </Vulnerability>
+  <Vulnerability Ordinal="3" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+    <Title>Chromium: CVE-2024-0225 Use after free in WebGPU</Title>
+    <Notes>
+      <Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</Note>
+      <Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based). It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</Note>
+      <Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Channel&lt;/th&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Stable&lt;/td&gt;
+&lt;td&gt;120.0.2210.121&lt;/td&gt;
+&lt;td&gt;120.0.6099.199/200&lt;/td&gt;
+&lt;td&gt;1/5/2024&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</Note>
+      <Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</Note>
+      <Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</Note>
+    </Notes>
+    <CVE>CVE-2024-0225</CVE>
+    <ProductStatuses>
+      <Status Type="Known Affected">
+        <ProductID>11655</ProductID>
+      </Status>
+    </ProductStatuses>
+    <Threats>
+      <Threat Type="Impact">
+        <Description />
+        <ProductID>11655</ProductID>
+      </Threat>
+      <Threat Type="Severity">
+        <Description />
+        <ProductID>11655</ProductID>
+      </Threat>
+      <Threat Type="Exploit Status">
+        <Description>DOS:N/A</Description>
+      </Threat>
+    </Threats>
+    <CVSSScoreSets />
+    <Remediations>
+      <Remediation Type="Vendor Fix">
+        <Description>Release Notes</Description>
+        <URL />
+        <ProductID>11655</ProductID>
+        <AffectedFiles />
+        <RestartRequired>No</RestartRequired>
+        <SubType>Security Update</SubType>
+        <FixedBuild>120.0.2210.121</FixedBuild>
+      </Remediation>
+    </Remediations>
+    <Acknowledgments />
+    <RevisionHistory>
+      <Revision>
+        <Number xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">1.0</Number>
+        <Date xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">2024-01-05T17:08:32</Date>
+        <Description xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">&lt;p&gt;Information published.&lt;/p&gt;
+</Description>
+      </Revision>
+    </RevisionHistory>
+  </Vulnerability>
+</cvrfdoc>
