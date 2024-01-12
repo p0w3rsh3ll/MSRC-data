@@ -14,13 +14,13 @@
     <Version>1.0</Version>
     <RevisionHistory>
       <Revision>
-        <Number>5</Number>
-        <Date>2024-01-09T08:00:00</Date>
+        <Number>8</Number>
+        <Date>2024-01-11T18:40:56</Date>
         <Description>January 2024 Security Updates</Description>
       </Revision>
     </RevisionHistory>
     <InitialReleaseDate>2024-01-09T08:00:00</InitialReleaseDate>
-    <CurrentReleaseDate>2024-01-09T08:00:00</CurrentReleaseDate>
+    <CurrentReleaseDate>2024-01-11T18:40:56</CurrentReleaseDate>
   </DocumentTracking>
   <DocumentNotes>
     <Note Title="Release Notes" Audience="Public" Type="Details" Ordinal="0">&lt;h2&gt;This release consists of the following 48 Microsoft CVEs:&lt;/h2&gt;
@@ -627,10 +627,6 @@
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href="https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-23h2#printer-names-and-icons-might-be-changed-and-hp-smart-app-automatically-installs"&gt;nstalls&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;KB Article Title&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
 &lt;td&gt;&lt;a href="https://support.microsoft.com/help/5034121"&gt;5034121&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Windows 11, version 21H2&lt;/td&gt;
 &lt;/tr&gt;
@@ -641,10 +637,6 @@
 &lt;tr&gt;
 &lt;td&gt;&lt;a href="https://support.microsoft.com/help/5034123"&gt;5034123&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Windows 11, version 22H2, Windows 11, version 23H2&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href="https://support.microsoft.com/help/5034127"&gt;5034127&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Windows 10, version 1809, Windows Server 2019&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;a href="https://support.microsoft.com/help/5034167"&gt;5034167&lt;/a&gt;&lt;/td&gt;
@@ -699,6 +691,7 @@
         <FullProductName ProductID="10853">Windows 10 Version 1607 for x64-based Systems</FullProductName>
         <FullProductName ProductID="10816">Windows Server 2016</FullProductName>
         <FullProductName ProductID="10855">Windows Server 2016 (Server Core installation)</FullProductName>
+        <FullProductName ProductID="11849">Remote Desktop client for Windows Desktop</FullProductName>
         <FullProductName ProductID="12273">Microsoft Printer Metadata Troubleshooter Tool</FullProductName>
       </Branch>
       <Branch Type="Product Family" Name="ESU">
@@ -884,6 +877,7 @@
     <FullProductName ProductID="11677-11572">Microsoft .NET Framework 3.5 AND 4.7.2 on Windows Server 2019 (Server Core installation)</FullProductName>
     <FullProductName ProductID="11762">Microsoft 365 Apps for Enterprise for 32-bit Systems</FullProductName>
     <FullProductName ProductID="11763">Microsoft 365 Apps for Enterprise for 64-bit Systems</FullProductName>
+    <FullProductName ProductID="11849">Remote Desktop client for Windows Desktop</FullProductName>
     <FullProductName ProductID="11863-10049">Microsoft .NET Framework 4.6.2/4.7/4.7.1/4.7.2 on Windows Server 2008 R2 for x64-based Systems Service Pack 1 (Server Core installation)</FullProductName>
     <FullProductName ProductID="11863-10051">Microsoft .NET Framework 4.6.2/4.7/4.7.1/4.7.2 on Windows Server 2008 R2 for x64-based Systems Service Pack 1</FullProductName>
     <FullProductName ProductID="11863-10378">Microsoft .NET Framework 4.6.2/4.7/4.7.1/4.7.2 on Windows Server 2012</FullProductName>
@@ -1275,7 +1269,85 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="19" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="7" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+    <Title>Chromium: CVE-2024-0333 Insufficient data validation in Extensions</Title>
+    <Notes>
+      <Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2024"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</Note>
+      <Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based). It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</Note>
+      <Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Channel&lt;/th&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Stable&lt;/td&gt;
+&lt;td&gt;120.0.2336.0&lt;/td&gt;
+&lt;td&gt;120.0.6099.216/217&lt;/td&gt;
+&lt;td&gt;1/11/2024&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</Note>
+      <Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</Note>
+      <Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</Note>
+    </Notes>
+    <CVE>CVE-2024-0333</CVE>
+    <ProductStatuses>
+      <Status Type="Known Affected">
+        <ProductID>11655</ProductID>
+      </Status>
+    </ProductStatuses>
+    <Threats>
+      <Threat Type="Impact">
+        <Description />
+        <ProductID>11655</ProductID>
+      </Threat>
+      <Threat Type="Severity">
+        <Description />
+        <ProductID>11655</ProductID>
+      </Threat>
+      <Threat Type="Exploit Status">
+        <Description>DOS:N/A</Description>
+      </Threat>
+    </Threats>
+    <CVSSScoreSets />
+    <Remediations>
+      <Remediation Type="Vendor Fix">
+        <Description>Release Notes</Description>
+        <URL />
+        <ProductID>11655</ProductID>
+        <AffectedFiles />
+        <RestartRequired>No</RestartRequired>
+        <SubType>Security Update</SubType>
+        <FixedBuild>120.0.2210.133</FixedBuild>
+      </Remediation>
+    </Remediations>
+    <Acknowledgments />
+    <RevisionHistory>
+      <Revision>
+        <Number xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">1.0</Number>
+        <Date xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">2024-01-11T18:40:56</Date>
+        <Description xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">&lt;p&gt;Information published.&lt;/p&gt;
+</Description>
+      </Revision>
+    </RevisionHistory>
+  </Vulnerability>
+  <Vulnerability Ordinal="20" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>BitLocker Security Feature Bypass Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -1291,7 +1363,7 @@
 &lt;li&gt;Windows 11 Version 22H2 for x64-based Systems&lt;/li&gt;
 &lt;li&gt;Windows 11 Version 22H2 for ARM64-based Systems&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;For the following Windows versions an automated solution is available.  For devices using Windows Update no further action is needed.   If you are using WSUS simply approve the standalone update in WSUS:&lt;/p&gt;
+&lt;p&gt;For the following Windows versions an automated solution is available.  For devices using Windows Update no further action is needed.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Windows Server 2022 (Server Core installation) (&lt;a href="https://support.microsoft.com/help/5034439"&gt;Link to KB article&lt;/a&gt;)&lt;/li&gt;
 &lt;li&gt;Windows Server 2022 (&lt;a href="https://support.microsoft.com/help/5034439"&gt;Link to KB article&lt;/a&gt;)&lt;/li&gt;
@@ -1732,16 +1804,6 @@
         <SubType>Security Update</SubType>
         <FixedBuild>10.0.17763.5329</FixedBuild>
       </Remediation>
-      <Remediation Type="Known Issue">
-        <Description>5034127</Description>
-        <URL>https://support.microsoft.com/help/5034127</URL>
-        <ProductID>11568</ProductID>
-        <ProductID>11569</ProductID>
-        <ProductID>11570</ProductID>
-        <ProductID>11571</ProductID>
-        <ProductID>11572</ProductID>
-        <AffectedFiles />
-      </Remediation>
       <Remediation Type="Vendor Fix">
         <Description>5034129</Description>
         <URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034129</URL>
@@ -1885,9 +1947,15 @@
         <Description xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">&lt;p&gt;Information published.&lt;/p&gt;
 </Description>
       </Revision>
+      <Revision>
+        <Number xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">1.1</Number>
+        <Date xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">2024-01-10T08:00:00</Date>
+        <Description xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">&lt;p&gt;Updated FAQ information. This is an informational change only.&lt;/p&gt;
+</Description>
+      </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="21" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="22" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Windows Kerberos Security Feature Bypass Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -1898,7 +1966,7 @@
 &lt;p&gt;An exploited vulnerability can affect resources beyond the security scope managed by the security authority of the vulnerable component. In this case, the vulnerable component and the impacted component are different and managed by different security authorities.&lt;/p&gt;
 </Note>
       <Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;How could an attacker exploit this vulnerability?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;An unauthenticated attacker could exploit this vulnerability by establishing a machine-in-the-middle (MITM) attack or other local network spoofing technique, then sending a malicious Kerberos message to the client victim machine to spoof itself as the Kerberos authentication server.&lt;/p&gt;
+&lt;p&gt;An authenticated attacker could exploit this vulnerability by establishing a machine-in-the-middle (MITM) attack or other local network spoofing technique, then sending a malicious Kerberos message to the client victim machine to spoof itself as the Kerberos authentication server.&lt;/p&gt;
 </Note>
       <Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, the attack vector is adjacent (AV:A). What does that mean for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Successful exploitation of this vulnerability requires that an attacker will need to first gain access to the restricted network before running an attack.&lt;/p&gt;
@@ -2473,16 +2541,6 @@
         <SubType>Security Update</SubType>
         <FixedBuild>10.0.17763.5329</FixedBuild>
       </Remediation>
-      <Remediation Type="Known Issue">
-        <Description>5034127</Description>
-        <URL>https://support.microsoft.com/help/5034127</URL>
-        <ProductID>11568</ProductID>
-        <ProductID>11569</ProductID>
-        <ProductID>11570</ProductID>
-        <ProductID>11571</ProductID>
-        <ProductID>11572</ProductID>
-        <AffectedFiles />
-      </Remediation>
       <Remediation Type="Vendor Fix">
         <Description>5034129</Description>
         <URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034129</URL>
@@ -2726,9 +2784,110 @@
         <Description xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">&lt;p&gt;Information published.&lt;/p&gt;
 </Description>
       </Revision>
+      <Revision>
+        <Number xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">1.1</Number>
+        <Date xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">2024-01-09T08:00:00</Date>
+        <Description xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">&lt;p&gt;Updated FAQ information. This is an informational change only.&lt;/p&gt;
+</Description>
+      </Revision>
     </RevisionHistory>
   </Vulnerability>
   <Vulnerability Ordinal="23" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+    <Title>Microsoft Edge (Chromium-based) Security Feature Bypass Vulnerability</Title>
+    <Notes>
+      <Note Title="Description" Type="Description" Ordinal="0" />
+      <Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metrics, successful exploitation of this vulnerability could lead to minor loss of confidentiality (C:L), integrity (I:L) and availability (A:L). What does that mean for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;While we cannot rule out the impact to Confidentiality, Integrity, and Availability, the ability to exploit this vulnerability by itself is limited. An attacker would need to combine this with other vulnerabilities to perform an attack.&lt;/p&gt;
+</Note>
+      <Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is the severity for this CVE rated as Moderate, but the CVSS score is higher than normal?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.microsoft.com/en-us/msrc/bounty-new-edge"&gt;Per our severity guidelines&lt;/a&gt;, the amount of user interaction or preconditions required to allow this sort of exploitation downgraded the severity, specifically it says, &amp;quot;If a bug requires more than a click, a key press, or several preconditions, the severity will be downgraded&amp;quot;. The CVSS scoring system doesn't allow for this type of nuance.&lt;/p&gt;
+</Note>
+      <Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, user interaction is required (UI:R). What interaction would the user have to do?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The user would have to click on a specially crafted URL to be compromised by the attacker.&lt;/p&gt;
+</Note>
+      <Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What kind of security feature could be bypassed by successfully exploiting this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The attacker would be able to bypass the protection in Edge that prevents a potentially dangerous extension from being downloaded or updated.&lt;/p&gt;
+</Note>
+      <Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Channel&lt;/th&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Stable&lt;/td&gt;
+&lt;td&gt;120.0.2336.0&lt;/td&gt;
+&lt;td&gt;120.0.6099.216/217&lt;/td&gt;
+&lt;td&gt;1/11/2024&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</Note>
+      <Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, user interaction is required (UI:R). What interaction would the user have to do?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The user would have to click on install to be compromised by the attacker.&lt;/p&gt;
+</Note>
+      <Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</Note>
+      <Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</Note>
+    </Notes>
+    <CVE>CVE-2024-20675</CVE>
+    <ProductStatuses>
+      <Status Type="Known Affected">
+        <ProductID>11655</ProductID>
+      </Status>
+    </ProductStatuses>
+    <Threats>
+      <Threat Type="Impact">
+        <Description>Security Feature Bypass</Description>
+        <ProductID>11655</ProductID>
+      </Threat>
+      <Threat Type="Severity">
+        <Description>Low</Description>
+        <ProductID>11655</ProductID>
+      </Threat>
+      <Threat Type="Exploit Status">
+        <Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation Less Likely;Older Software Release:Exploitation Less Likely;DOS:N/A</Description>
+      </Threat>
+    </Threats>
+    <CVSSScoreSets>
+      <ScoreSet>
+        <BaseScore>6.3</BaseScore>
+        <TemporalScore>5.5</TemporalScore>
+        <Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L/E:U/RL:O/RC:C</Vector>
+        <ProductID>11655</ProductID>
+      </ScoreSet>
+    </CVSSScoreSets>
+    <Remediations>
+      <Remediation Type="Vendor Fix">
+        <Description>Release Notes</Description>
+        <URL />
+        <ProductID>11655</ProductID>
+        <AffectedFiles />
+        <RestartRequired>No</RestartRequired>
+        <SubType>Security Update</SubType>
+        <FixedBuild>120.0.2210.133</FixedBuild>
+      </Remediation>
+    </Remediations>
+    <Acknowledgments>
+      <Acknowledgment>
+        <Name>Jos&amp;#233; Miguel Moreno with &lt;a href="https://cosec.inf.uc3m.es/"&gt;COSEC (UC3M)&lt;/a&gt;</Name>
+        <URL />
+      </Acknowledgment>
+    </Acknowledgments>
+    <RevisionHistory>
+      <Revision>
+        <Number xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">1.0</Number>
+        <Date xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">2024-01-11T08:00:00</Date>
+        <Description xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">&lt;p&gt;Information published.&lt;/p&gt;
+</Description>
+      </Revision>
+    </RevisionHistory>
+  </Vulnerability>
+  <Vulnerability Ordinal="25" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Microsoft Office Remote Code Execution Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;A security vulnerability exists in FBX that could lead to remote code execution. To mitigate this vulnerability, the ability to insert FBX files has been disabled in Word, Excel, PowerPoint and Outlook for Windows and Mac. Versions of Office that had this feature enabled will no longer have access to it. This includes Office 2019, Office 2021, Office LTSC for Mac 2021, and Microsoft 365.&lt;/p&gt;
@@ -2910,7 +3069,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="22" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="24" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Azure Storage Mover Remote Code Execution Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -2983,7 +3142,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="9" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="10" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Microsoft ODBC Driver Remote Code Execution Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -3569,16 +3728,6 @@
         <SubType>Security Update</SubType>
         <FixedBuild>10.0.17763.5329</FixedBuild>
       </Remediation>
-      <Remediation Type="Known Issue">
-        <Description>5034127</Description>
-        <URL>https://support.microsoft.com/help/5034127</URL>
-        <ProductID>11568</ProductID>
-        <ProductID>11569</ProductID>
-        <ProductID>11570</ProductID>
-        <ProductID>11571</ProductID>
-        <ProductID>11572</ProductID>
-        <AffectedFiles />
-      </Remediation>
       <Remediation Type="Vendor Fix">
         <Description>5034129</Description>
         <URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034129</URL>
@@ -3824,7 +3973,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="12" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="13" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Windows Group Policy Elevation of Privilege Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -4404,16 +4553,6 @@
         <SubType>Security Update</SubType>
         <FixedBuild>10.0.17763.5329</FixedBuild>
       </Remediation>
-      <Remediation Type="Known Issue">
-        <Description>5034127</Description>
-        <URL>https://support.microsoft.com/help/5034127</URL>
-        <ProductID>11568</ProductID>
-        <ProductID>11569</ProductID>
-        <ProductID>11570</ProductID>
-        <ProductID>11571</ProductID>
-        <ProductID>11572</ProductID>
-        <AffectedFiles />
-      </Remediation>
       <Remediation Type="Vendor Fix">
         <Description>5034129</Description>
         <URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034129</URL>
@@ -4659,12 +4798,12 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="13" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="14" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Microsoft Virtual Hard Disk Elevation of Privilege Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
-      <Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What privileges an attacker could gain with a successful exploitation?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;An attacker who successfully exploited this vulnerability could gain privilege escalation in the processing of .vhdx files in the Windows Kernel.&lt;/p&gt;
+      <Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What privileges could be gained by an attacker who successfully exploited this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;An attacker who successfully exploited this vulnerability could gain SYSTEM privileges.&lt;/p&gt;
 </Note>
       <Note Title="Microsoft Virtual Hard Drive" Type="Tag" Ordinal="20">Microsoft Virtual Hard Drive</Note>
       <Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</Note>
@@ -5146,16 +5285,6 @@
         <SubType>Security Update</SubType>
         <FixedBuild>10.0.17763.5329</FixedBuild>
       </Remediation>
-      <Remediation Type="Known Issue">
-        <Description>5034127</Description>
-        <URL>https://support.microsoft.com/help/5034127</URL>
-        <ProductID>11568</ProductID>
-        <ProductID>11569</ProductID>
-        <ProductID>11570</ProductID>
-        <ProductID>11571</ProductID>
-        <ProductID>11572</ProductID>
-        <AffectedFiles />
-      </Remediation>
       <Remediation Type="Vendor Fix">
         <Description>5034129</Description>
         <URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034129</URL>
@@ -5323,7 +5452,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="24" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="26" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Windows Message Queuing Client (MSMQC) Information Disclosure</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -5900,16 +6029,6 @@
         <SubType>Security Update</SubType>
         <FixedBuild>10.0.17763.5329</FixedBuild>
       </Remediation>
-      <Remediation Type="Known Issue">
-        <Description>5034127</Description>
-        <URL>https://support.microsoft.com/help/5034127</URL>
-        <ProductID>11568</ProductID>
-        <ProductID>11569</ProductID>
-        <ProductID>11570</ProductID>
-        <ProductID>11571</ProductID>
-        <ProductID>11572</ProductID>
-        <AffectedFiles />
-      </Remediation>
       <Remediation Type="Vendor Fix">
         <Description>5034129</Description>
         <URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034129</URL>
@@ -6155,7 +6274,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="26" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="28" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Windows Cryptographic Services Remote Code Execution Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -6645,16 +6764,6 @@
         <SubType>Security Update</SubType>
         <FixedBuild>10.0.17763.5329</FixedBuild>
       </Remediation>
-      <Remediation Type="Known Issue">
-        <Description>5034127</Description>
-        <URL>https://support.microsoft.com/help/5034127</URL>
-        <ProductID>11568</ProductID>
-        <ProductID>11569</ProductID>
-        <ProductID>11570</ProductID>
-        <ProductID>11571</ProductID>
-        <ProductID>11572</ProductID>
-        <AffectedFiles />
-      </Remediation>
       <Remediation Type="Vendor Fix">
         <Description>5034129</Description>
         <URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034129</URL>
@@ -6822,7 +6931,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="27" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="29" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Win32k Elevation of Privilege Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -7399,16 +7508,6 @@
         <SubType>Security Update</SubType>
         <FixedBuild>10.0.17763.5329</FixedBuild>
       </Remediation>
-      <Remediation Type="Known Issue">
-        <Description>5034127</Description>
-        <URL>https://support.microsoft.com/help/5034127</URL>
-        <ProductID>11568</ProductID>
-        <ProductID>11569</ProductID>
-        <ProductID>11570</ProductID>
-        <ProductID>11571</ProductID>
-        <ProductID>11572</ProductID>
-        <AffectedFiles />
-      </Remediation>
       <Remediation Type="Vendor Fix">
         <Description>5034129</Description>
         <URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034129</URL>
@@ -7654,7 +7753,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="30" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="32" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Windows Nearby Sharing Spoofing Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -7914,14 +8013,6 @@
         <SubType>Security Update</SubType>
         <FixedBuild>10.0.17763.5329</FixedBuild>
       </Remediation>
-      <Remediation Type="Known Issue">
-        <Description>5034127</Description>
-        <URL>https://support.microsoft.com/help/5034127</URL>
-        <ProductID>11568</ProductID>
-        <ProductID>11569</ProductID>
-        <ProductID>11570</ProductID>
-        <AffectedFiles />
-      </Remediation>
       <Remediation Type="Vendor Fix">
         <Description>5034121</Description>
         <URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034121</URL>
@@ -8022,7 +8113,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="31" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="33" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Windows Themes Information Disclosure Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -8542,16 +8633,6 @@
         <SubType>Security Update</SubType>
         <FixedBuild>10.0.17763.5329</FixedBuild>
       </Remediation>
-      <Remediation Type="Known Issue">
-        <Description>5034127</Description>
-        <URL>https://support.microsoft.com/help/5034127</URL>
-        <ProductID>11568</ProductID>
-        <ProductID>11569</ProductID>
-        <ProductID>11570</ProductID>
-        <ProductID>11571</ProductID>
-        <ProductID>11572</ProductID>
-        <AffectedFiles />
-      </Remediation>
       <Remediation Type="Vendor Fix">
         <Description>5034129</Description>
         <URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034129</URL>
@@ -8754,7 +8835,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="33" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="35" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Windows CoreMessaging Information Disclosure  Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -9150,16 +9231,6 @@
         <RestartRequired>Yes</RestartRequired>
         <SubType>Security Update</SubType>
         <FixedBuild>10.0.17763.5329</FixedBuild>
-      </Remediation>
-      <Remediation Type="Known Issue">
-        <Description>5034127</Description>
-        <URL>https://support.microsoft.com/help/5034127</URL>
-        <ProductID>11568</ProductID>
-        <ProductID>11569</ProductID>
-        <ProductID>11570</ProductID>
-        <ProductID>11571</ProductID>
-        <ProductID>11572</ProductID>
-        <AffectedFiles />
       </Remediation>
       <Remediation Type="Vendor Fix">
         <Description>5034129</Description>
@@ -9592,16 +9663,6 @@
         <SubType>Security Update</SubType>
         <FixedBuild>10.0.17763.5329</FixedBuild>
       </Remediation>
-      <Remediation Type="Known Issue">
-        <Description>5034127</Description>
-        <URL>https://support.microsoft.com/help/5034127</URL>
-        <ProductID>11568</ProductID>
-        <ProductID>11569</ProductID>
-        <ProductID>11570</ProductID>
-        <ProductID>11571</ProductID>
-        <ProductID>11572</ProductID>
-        <AffectedFiles />
-      </Remediation>
       <Remediation Type="Vendor Fix">
         <Description>5034129</Description>
         <URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034129</URL>
@@ -9659,7 +9720,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="34" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="36" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Windows Libarchive Remote Code Execution Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -9999,16 +10060,6 @@
         <SubType>Security Update</SubType>
         <FixedBuild>10.0.17763.5329</FixedBuild>
       </Remediation>
-      <Remediation Type="Known Issue">
-        <Description>5034127</Description>
-        <URL>https://support.microsoft.com/help/5034127</URL>
-        <ProductID>11568</ProductID>
-        <ProductID>11569</ProductID>
-        <ProductID>11570</ProductID>
-        <ProductID>11571</ProductID>
-        <ProductID>11572</ProductID>
-        <AffectedFiles />
-      </Remediation>
       <Remediation Type="Vendor Fix">
         <Description>5034129</Description>
         <URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034129</URL>
@@ -10134,7 +10185,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="35" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="37" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Windows Libarchive Remote Code Execution Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -10296,7 +10347,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="36" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="38" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Windows Kernel Elevation of Privilege Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -10633,16 +10684,6 @@
         <SubType>Security Update</SubType>
         <FixedBuild>10.0.17763.5329</FixedBuild>
       </Remediation>
-      <Remediation Type="Known Issue">
-        <Description>5034127</Description>
-        <URL>https://support.microsoft.com/help/5034127</URL>
-        <ProductID>11568</ProductID>
-        <ProductID>11569</ProductID>
-        <ProductID>11570</ProductID>
-        <ProductID>11571</ProductID>
-        <ProductID>11572</ProductID>
-        <AffectedFiles />
-      </Remediation>
       <Remediation Type="Vendor Fix">
         <Description>5034129</Description>
         <URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034129</URL>
@@ -10764,7 +10805,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="37" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="39" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Windows Hyper-V Denial of Service Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -10964,14 +11005,6 @@
         <SubType>Security Update</SubType>
         <FixedBuild>10.0.17763.5329</FixedBuild>
       </Remediation>
-      <Remediation Type="Known Issue">
-        <Description>5034127</Description>
-        <URL>https://support.microsoft.com/help/5034127</URL>
-        <ProductID>11569</ProductID>
-        <ProductID>11571</ProductID>
-        <ProductID>11572</ProductID>
-        <AffectedFiles />
-      </Remediation>
       <Remediation Type="Vendor Fix">
         <Description>5034129</Description>
         <URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034129</URL>
@@ -11074,7 +11107,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="38" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="40" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Windows Hyper-V Remote Code Execution Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -11322,14 +11355,6 @@
         <SubType>Security Update</SubType>
         <FixedBuild>10.0.17763.5329</FixedBuild>
       </Remediation>
-      <Remediation Type="Known Issue">
-        <Description>5034127</Description>
-        <URL>https://support.microsoft.com/help/5034127</URL>
-        <ProductID>11569</ProductID>
-        <ProductID>11571</ProductID>
-        <ProductID>11572</ProductID>
-        <AffectedFiles />
-      </Remediation>
       <Remediation Type="Vendor Fix">
         <Description>5034129</Description>
         <URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034129</URL>
@@ -11447,7 +11472,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="39" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="43" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Hypervisor-Protected Code Integrity (HVCI) Security Feature Bypass Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -11805,16 +11830,6 @@
         <SubType>Security Update</SubType>
         <FixedBuild>10.0.17763.5329</FixedBuild>
       </Remediation>
-      <Remediation Type="Known Issue">
-        <Description>5034127</Description>
-        <URL>https://support.microsoft.com/help/5034127</URL>
-        <ProductID>11568</ProductID>
-        <ProductID>11569</ProductID>
-        <ProductID>11570</ProductID>
-        <ProductID>11571</ProductID>
-        <ProductID>11572</ProductID>
-        <AffectedFiles />
-      </Remediation>
       <Remediation Type="Vendor Fix">
         <Description>5034129</Description>
         <URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034129</URL>
@@ -11936,7 +11951,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="41" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="45" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Remote Desktop Client Remote Code Execution Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -11957,6 +11972,7 @@
         <ProductID>11570</ProductID>
         <ProductID>11571</ProductID>
         <ProductID>11572</ProductID>
+        <ProductID>11849</ProductID>
         <ProductID>11923</ProductID>
         <ProductID>11924</ProductID>
         <ProductID>11926</ProductID>
@@ -12008,6 +12024,10 @@
       </Threat>
       <Threat Type="Impact">
         <Description>Remote Code Execution</Description>
+        <ProductID>11849</ProductID>
+      </Threat>
+      <Threat Type="Impact">
+        <Description>Remote Code Execution</Description>
         <ProductID>11923</ProductID>
       </Threat>
       <Threat Type="Impact">
@@ -12129,6 +12149,10 @@
       <Threat Type="Severity">
         <Description>Important</Description>
         <ProductID>11572</ProductID>
+      </Threat>
+      <Threat Type="Severity">
+        <Description>Important</Description>
+        <ProductID>11849</ProductID>
       </Threat>
       <Threat Type="Severity">
         <Description>Important</Description>
@@ -12268,6 +12292,12 @@
         <TemporalScore>6.5</TemporalScore>
         <Vector>CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</Vector>
         <ProductID>11572</ProductID>
+      </ScoreSet>
+      <ScoreSet>
+        <BaseScore>7.5</BaseScore>
+        <TemporalScore>6.5</TemporalScore>
+        <Vector>CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</Vector>
+        <ProductID>11849</ProductID>
       </ScoreSet>
       <ScoreSet>
         <BaseScore>7.5</BaseScore>
@@ -12441,15 +12471,14 @@
         <SubType>Security Update</SubType>
         <FixedBuild>10.0.17763.5329</FixedBuild>
       </Remediation>
-      <Remediation Type="Known Issue">
-        <Description>5034127</Description>
-        <URL>https://support.microsoft.com/help/5034127</URL>
-        <ProductID>11568</ProductID>
-        <ProductID>11569</ProductID>
-        <ProductID>11570</ProductID>
-        <ProductID>11571</ProductID>
-        <ProductID>11572</ProductID>
+      <Remediation Type="Vendor Fix">
+        <Description>Release Notes</Description>
+        <URL>https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-client-windows#updates-for-version-124337</URL>
+        <ProductID>11849</ProductID>
         <AffectedFiles />
+        <RestartRequired>Maybe</RestartRequired>
+        <SubType>Security Update</SubType>
+        <FixedBuild>1.2.5105.0</FixedBuild>
       </Remediation>
       <Remediation Type="Vendor Fix">
         <Description>5034129</Description>
@@ -12641,10 +12670,6 @@
         <Name>&lt;a href="https://twitter.com/cyberestro"&gt;MingjiaLiu&lt;/a&gt; with &lt;a href="https://www.dbappsecurity.com.cn/product/cloud250.html"&gt;DBAPPSecurity WeBin Lab&lt;/a&gt;</Name>
         <URL />
       </Acknowledgment>
-      <Acknowledgment>
-        <Name>&lt;a href="https://twitter.com/mas0nshi"&gt;YingQi Shi&lt;/a&gt; with &lt;a href="https://www.dbappsecurity.com.cn/product/cloud250.html"&gt;DBAPPSecurity WeBin Lab&lt;/a&gt;, &lt;a href="https://twitter.com/jq0904"&gt;Quan Jin&lt;/a&gt; and &lt;a href="https://twitter.com/cyberestro"&gt;MingjiaLiu&lt;/a&gt; with &lt;a href="https://www.dbappsecurity.com.cn/product/cloud250.html"&gt;DBAPPSecurity WeBin Lab&lt;/a&gt;</Name>
-        <URL />
-      </Acknowledgment>
     </Acknowledgments>
     <RevisionHistory>
       <Revision>
@@ -12653,9 +12678,15 @@
         <Description xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">&lt;p&gt;Information published.&lt;/p&gt;
 </Description>
       </Revision>
+      <Revision>
+        <Number xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">2.0</Number>
+        <Date xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">2024-01-10T08:00:00</Date>
+        <Description xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">&lt;p&gt;In the Security Updates table, added Remote Desktop client for Windows Desktop as it is also affected by this vulnerability. Customers running Remote Desktop client for Windows Desktop should ensure that they have version 1.2.5105.0 or higher to be protected from this vulnerability.&lt;/p&gt;
+</Description>
+      </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="46" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="50" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Windows TCP/IP Information Disclosure Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -13235,16 +13266,6 @@
         <SubType>Security Update</SubType>
         <FixedBuild>10.0.17763.5329</FixedBuild>
       </Remediation>
-      <Remediation Type="Known Issue">
-        <Description>5034127</Description>
-        <URL>https://support.microsoft.com/help/5034127</URL>
-        <ProductID>11568</ProductID>
-        <ProductID>11569</ProductID>
-        <ProductID>11570</ProductID>
-        <ProductID>11571</ProductID>
-        <ProductID>11572</ProductID>
-        <AffectedFiles />
-      </Remediation>
       <Remediation Type="Vendor Fix">
         <Description>5034129</Description>
         <URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034129</URL>
@@ -13490,7 +13511,89 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="52" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="42" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+    <Title>Adobe Systems Incorporated: CVE-2024-20721 Improper Input Validation Denial of Service Vulnerability</Title>
+    <Notes>
+      <Note Title="Description" Type="Description" Ordinal="0" />
+      <Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Channel&lt;/th&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Stable&lt;/td&gt;
+&lt;td&gt;120.0.2336.0&lt;/td&gt;
+&lt;td&gt;120.0.6099.216/217&lt;/td&gt;
+&lt;td&gt;1/11/2024&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</Note>
+      <Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Adobe CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Adobe Software which is consumed by Microsoft Edge (Chromium-based). It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</Note>
+      <Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</Note>
+      <Note Title="Adobe Systems Incorporated" Type="CNA" Ordinal="30">Adobe Systems Incorporated</Note>
+    </Notes>
+    <CVE>CVE-2024-20721</CVE>
+    <ProductStatuses>
+      <Status Type="Known Affected">
+        <ProductID>11655</ProductID>
+      </Status>
+    </ProductStatuses>
+    <Threats>
+      <Threat Type="Impact">
+        <Description>Remote Code Execution</Description>
+        <ProductID>11655</ProductID>
+      </Threat>
+      <Threat Type="Severity">
+        <Description>Moderate</Description>
+        <ProductID>11655</ProductID>
+      </Threat>
+      <Threat Type="Exploit Status">
+        <Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation Less Likely;Older Software Release:Exploitation Less Likely;DOS:N/A</Description>
+      </Threat>
+    </Threats>
+    <CVSSScoreSets />
+    <Remediations>
+      <Remediation Type="Vendor Fix">
+        <Description>Release Notes</Description>
+        <URL />
+        <ProductID>11655</ProductID>
+        <AffectedFiles />
+        <RestartRequired>No</RestartRequired>
+        <SubType>Security Update</SubType>
+        <FixedBuild>120.0.2210.133</FixedBuild>
+      </Remediation>
+    </Remediations>
+    <Acknowledgments>
+      <Acknowledgment>
+        <Name>HAO LI of VenusTech ADLab</Name>
+        <URL />
+      </Acknowledgment>
+    </Acknowledgments>
+    <RevisionHistory>
+      <Revision>
+        <Number xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">1.0</Number>
+        <Date xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">2024-01-11T08:00:00</Date>
+        <Description xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">&lt;p&gt;Information published.&lt;/p&gt;
+</Description>
+      </Revision>
+    </RevisionHistory>
+  </Vulnerability>
+  <Vulnerability Ordinal="56" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Microsoft Printer Metadata Troubleshooter Tool Remote Code Execution Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -13536,12 +13639,6 @@
         <SubType>Security Update</SubType>
         <FixedBuild>1.0.0.1</FixedBuild>
       </Remediation>
-      <Remediation Type="Known Issue">
-        <Description>Known Issues</Description>
-        <URL>https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-23h2#printer-names-and-icons-might-be-changed-and-hp-smart-app-automatically-installs</URL>
-        <ProductID>12273</ProductID>
-        <AffectedFiles />
-      </Remediation>
     </Remediations>
     <Acknowledgments>
       <Acknowledgment>
@@ -13558,11 +13655,94 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="20" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
-    <Title>.NET Core and Visual Studio Denial of Service Vulnerability</Title>
+  <Vulnerability Ordinal="41" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+    <Title>Adobe Systems Incorporated: CVE-2024-20709 Javascript Implementation PDF Vulnerability</Title>
+    <Notes>
+      <Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Adobe Systems Incorporated.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2023"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</Note>
+      <Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Channel&lt;/th&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Stable&lt;/td&gt;
+&lt;td&gt;120.0.2336.0&lt;/td&gt;
+&lt;td&gt;120.0.6099.216/217&lt;/td&gt;
+&lt;td&gt;1/11/2024&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</Note>
+      <Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Adobe CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Adobe Software which is consumed by Microsoft Edge (Chromium-based). It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</Note>
+      <Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</Note>
+      <Note Title="Adobe Systems Incorporated" Type="CNA" Ordinal="30">Adobe Systems Incorporated</Note>
+    </Notes>
+    <CVE>CVE-2024-20709</CVE>
+    <ProductStatuses>
+      <Status Type="Known Affected">
+        <ProductID>11655</ProductID>
+      </Status>
+    </ProductStatuses>
+    <Threats>
+      <Threat Type="Impact">
+        <Description />
+        <ProductID>11655</ProductID>
+      </Threat>
+      <Threat Type="Severity">
+        <Description />
+        <ProductID>11655</ProductID>
+      </Threat>
+      <Threat Type="Exploit Status">
+        <Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation Less Likely;Older Software Release:Exploitation Less Likely;DOS:N/A</Description>
+      </Threat>
+    </Threats>
+    <CVSSScoreSets />
+    <Remediations>
+      <Remediation Type="Vendor Fix">
+        <Description>Release Notes</Description>
+        <URL />
+        <ProductID>11655</ProductID>
+        <AffectedFiles />
+        <RestartRequired>No</RestartRequired>
+        <SubType>Security Update</SubType>
+        <FixedBuild>120.0.2210.133</FixedBuild>
+      </Remediation>
+    </Remediations>
+    <Acknowledgments>
+      <Acknowledgment>
+        <Name>Anonymous</Name>
+        <URL />
+      </Acknowledgment>
+    </Acknowledgments>
+    <RevisionHistory>
+      <Revision>
+        <Number xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">1.0</Number>
+        <Date xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">2024-01-11T08:00:00</Date>
+        <Description xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">&lt;p&gt;Information published.&lt;/p&gt;
+</Description>
+      </Revision>
+    </RevisionHistory>
+  </Vulnerability>
+  <Vulnerability Ordinal="21" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+    <Title>.NET Denial of Service Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
-      <Note Title=".NET Core &amp; Visual Studio" Type="Tag" Ordinal="20">.NET Core &amp; Visual Studio</Note>
+      <Note Title=".NET" Type="Tag" Ordinal="20">.NET</Note>
       <Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</Note>
     </Notes>
     <CVE>CVE-2024-20672</CVE>
@@ -13683,7 +13863,7 @@
 &lt;td&gt;5033592&lt;/td&gt;
 &lt;td&gt;Security update for SQL Server 2022 CU10+GDR&lt;/td&gt;
 &lt;td&gt;16.0.4003.1 - 16.0.4095.4&lt;/td&gt;
-&lt;td&gt;KB 5031778 - SQL2022 RTM CU8&lt;/td&gt;
+&lt;td&gt;KB 5031778 - SQL2022 RTM CU10&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;5032968&lt;/td&gt;
@@ -13811,7 +13991,7 @@
         <ProductID>12260</ProductID>
       </Threat>
       <Threat Type="Impact">
-        <Description>Repudiation</Description>
+        <Description>Security Feature Bypass</Description>
         <ProductID>12277</ProductID>
       </Threat>
       <Threat Type="Impact">
@@ -13823,11 +14003,11 @@
         <ProductID>12279</ProductID>
       </Threat>
       <Threat Type="Impact">
-        <Description>Repudiation</Description>
+        <Description>Security Feature Bypass</Description>
         <ProductID>12280</ProductID>
       </Threat>
       <Threat Type="Impact">
-        <Description>Repudiation</Description>
+        <Description>Security Feature Bypass</Description>
         <ProductID>12281</ProductID>
       </Threat>
       <Threat Type="Impact">
@@ -16485,7 +16665,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="7" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="8" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Windows HTML Platforms Security Feature Bypass Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -17005,16 +17185,6 @@
         <SubType>Security Update</SubType>
         <FixedBuild>10.0.17763.5329</FixedBuild>
       </Remediation>
-      <Remediation Type="Known Issue">
-        <Description>5034127</Description>
-        <URL>https://support.microsoft.com/help/5034127</URL>
-        <ProductID>11568</ProductID>
-        <ProductID>11569</ProductID>
-        <ProductID>11570</ProductID>
-        <ProductID>11571</ProductID>
-        <ProductID>11572</ProductID>
-        <AffectedFiles />
-      </Remediation>
       <Remediation Type="Vendor Fix">
         <Description>5034129</Description>
         <URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034129</URL>
@@ -17232,7 +17402,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="8" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="9" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Microsoft Common Log File System Elevation of Privilege Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -17839,16 +18009,6 @@
         <SubType>Security Update</SubType>
         <FixedBuild>10.0.17763.5329</FixedBuild>
       </Remediation>
-      <Remediation Type="Known Issue">
-        <Description>5034127</Description>
-        <URL>https://support.microsoft.com/help/5034127</URL>
-        <ProductID>11568</ProductID>
-        <ProductID>11569</ProductID>
-        <ProductID>11570</ProductID>
-        <ProductID>11571</ProductID>
-        <ProductID>11572</ProductID>
-        <AffectedFiles />
-      </Remediation>
       <Remediation Type="Vendor Fix">
         <Description>5034129</Description>
         <URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034129</URL>
@@ -18092,7 +18252,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="10" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="11" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Microsoft Online Certificate Status Protocol (OCSP) Remote Code Execution Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -18384,13 +18544,6 @@
         <SubType>Security Update</SubType>
         <FixedBuild>10.0.17763.5329</FixedBuild>
       </Remediation>
-      <Remediation Type="Known Issue">
-        <Description>5034127</Description>
-        <URL>https://support.microsoft.com/help/5034127</URL>
-        <ProductID>11571</ProductID>
-        <ProductID>11572</ProductID>
-        <AffectedFiles />
-      </Remediation>
       <Remediation Type="Vendor Fix">
         <Description>5034129</Description>
         <URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034129</URL>
@@ -18539,7 +18692,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="11" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="12" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Visual Studio Elevation of Privilege Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -18722,7 +18875,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="14" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="15" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Microsoft Message Queuing Information Disclosure Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -19299,16 +19452,6 @@
         <SubType>Security Update</SubType>
         <FixedBuild>10.0.17763.5329</FixedBuild>
       </Remediation>
-      <Remediation Type="Known Issue">
-        <Description>5034127</Description>
-        <URL>https://support.microsoft.com/help/5034127</URL>
-        <ProductID>11568</ProductID>
-        <ProductID>11569</ProductID>
-        <ProductID>11570</ProductID>
-        <ProductID>11571</ProductID>
-        <ProductID>11572</ProductID>
-        <AffectedFiles />
-      </Remediation>
       <Remediation Type="Vendor Fix">
         <Description>5034129</Description>
         <URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034129</URL>
@@ -19554,7 +19697,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="15" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="16" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Microsoft Message Queuing Denial of Service Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -20128,16 +20271,6 @@
         <SubType>Security Update</SubType>
         <FixedBuild>10.0.17763.5329</FixedBuild>
       </Remediation>
-      <Remediation Type="Known Issue">
-        <Description>5034127</Description>
-        <URL>https://support.microsoft.com/help/5034127</URL>
-        <ProductID>11568</ProductID>
-        <ProductID>11569</ProductID>
-        <ProductID>11570</ProductID>
-        <ProductID>11571</ProductID>
-        <ProductID>11572</ProductID>
-        <AffectedFiles />
-      </Remediation>
       <Remediation Type="Vendor Fix">
         <Description>5034129</Description>
         <URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034129</URL>
@@ -20383,7 +20516,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="16" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="17" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Windows Online Certificate Status Protocol (OCSP) Information Disclosure Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -20675,13 +20808,6 @@
         <SubType>Security Update</SubType>
         <FixedBuild>10.0.17763.5329</FixedBuild>
       </Remediation>
-      <Remediation Type="Known Issue">
-        <Description>5034127</Description>
-        <URL>https://support.microsoft.com/help/5034127</URL>
-        <ProductID>11571</ProductID>
-        <ProductID>11572</ProductID>
-        <AffectedFiles />
-      </Remediation>
       <Remediation Type="Vendor Fix">
         <Description>5034129</Description>
         <URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034129</URL>
@@ -20830,7 +20956,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="17" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="18" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Windows Message Queuing Client (MSMQC) Information Disclosure</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -21407,16 +21533,6 @@
         <SubType>Security Update</SubType>
         <FixedBuild>10.0.17763.5329</FixedBuild>
       </Remediation>
-      <Remediation Type="Known Issue">
-        <Description>5034127</Description>
-        <URL>https://support.microsoft.com/help/5034127</URL>
-        <ProductID>11568</ProductID>
-        <ProductID>11569</ProductID>
-        <ProductID>11570</ProductID>
-        <ProductID>11571</ProductID>
-        <ProductID>11572</ProductID>
-        <AffectedFiles />
-      </Remediation>
       <Remediation Type="Vendor Fix">
         <Description>5034129</Description>
         <URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034129</URL>
@@ -21662,7 +21778,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="18" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="19" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Microsoft Message Queuing Information Disclosure Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -22239,16 +22355,6 @@
         <SubType>Security Update</SubType>
         <FixedBuild>10.0.17763.5329</FixedBuild>
       </Remediation>
-      <Remediation Type="Known Issue">
-        <Description>5034127</Description>
-        <URL>https://support.microsoft.com/help/5034127</URL>
-        <ProductID>11568</ProductID>
-        <ProductID>11569</ProductID>
-        <ProductID>11570</ProductID>
-        <ProductID>11571</ProductID>
-        <ProductID>11572</ProductID>
-        <AffectedFiles />
-      </Remediation>
       <Remediation Type="Vendor Fix">
         <Description>5034129</Description>
         <URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034129</URL>
@@ -22494,7 +22600,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="48" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="52" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Windows Server Key Distribution Service Security Feature Bypass</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -22891,16 +22997,6 @@
         <SubType>Security Update</SubType>
         <FixedBuild>10.0.17763.5329</FixedBuild>
       </Remediation>
-      <Remediation Type="Known Issue">
-        <Description>5034127</Description>
-        <URL>https://support.microsoft.com/help/5034127</URL>
-        <ProductID>11568</ProductID>
-        <ProductID>11569</ProductID>
-        <ProductID>11570</ProductID>
-        <ProductID>11571</ProductID>
-        <ProductID>11572</ProductID>
-        <AffectedFiles />
-      </Remediation>
       <Remediation Type="Vendor Fix">
         <Description>5034129</Description>
         <URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034129</URL>
@@ -23030,7 +23126,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="25" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="27" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Windows Subsystem for Linux Elevation of Privilege Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -23399,7 +23495,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="28" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="30" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Win32k Elevation of Privilege Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -23463,7 +23559,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="29" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="31" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Microsoft AllJoyn API Denial of Service Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -23887,16 +23983,6 @@
         <SubType>Security Update</SubType>
         <FixedBuild>10.0.17763.5329</FixedBuild>
       </Remediation>
-      <Remediation Type="Known Issue">
-        <Description>5034127</Description>
-        <URL>https://support.microsoft.com/help/5034127</URL>
-        <ProductID>11568</ProductID>
-        <ProductID>11569</ProductID>
-        <ProductID>11570</ProductID>
-        <ProductID>11571</ProductID>
-        <ProductID>11572</ProductID>
-        <AffectedFiles />
-      </Remediation>
       <Remediation Type="Vendor Fix">
         <Description>5034129</Description>
         <URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034129</URL>
@@ -24042,7 +24128,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="32" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="34" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Microsoft Local Security Authority Subsystem Service Information Disclosure Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -24622,16 +24708,6 @@
         <SubType>Security Update</SubType>
         <FixedBuild>10.0.17763.5329</FixedBuild>
       </Remediation>
-      <Remediation Type="Known Issue">
-        <Description>5034127</Description>
-        <URL>https://support.microsoft.com/help/5034127</URL>
-        <ProductID>11568</ProductID>
-        <ProductID>11569</ProductID>
-        <ProductID>11570</ProductID>
-        <ProductID>11571</ProductID>
-        <ProductID>11572</ProductID>
-        <AffectedFiles />
-      </Remediation>
       <Remediation Type="Vendor Fix">
         <Description>5034129</Description>
         <URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034129</URL>
@@ -24877,7 +24953,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="40" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="44" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Microsoft Bluetooth Driver Spoofing Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -25249,7 +25325,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="42" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="46" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Windows Kernel-Mode Driver Elevation of Privilege Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -25493,7 +25569,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="43" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="47" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Windows Cloud Files Mini Filter Driver Elevation of Privilege Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -25830,16 +25906,6 @@
         <SubType>Security Update</SubType>
         <FixedBuild>10.0.17763.5329</FixedBuild>
       </Remediation>
-      <Remediation Type="Known Issue">
-        <Description>5034127</Description>
-        <URL>https://support.microsoft.com/help/5034127</URL>
-        <ProductID>11568</ProductID>
-        <ProductID>11569</ProductID>
-        <ProductID>11570</ProductID>
-        <ProductID>11571</ProductID>
-        <ProductID>11572</ProductID>
-        <AffectedFiles />
-      </Remediation>
       <Remediation Type="Vendor Fix">
         <Description>5034129</Description>
         <URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034129</URL>
@@ -25965,7 +26031,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="44" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="48" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Windows Cryptographic Services Information Disclosure Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -26545,16 +26611,6 @@
         <SubType>Security Update</SubType>
         <FixedBuild>10.0.17763.5329</FixedBuild>
       </Remediation>
-      <Remediation Type="Known Issue">
-        <Description>5034127</Description>
-        <URL>https://support.microsoft.com/help/5034127</URL>
-        <ProductID>11568</ProductID>
-        <ProductID>11569</ProductID>
-        <ProductID>11570</ProductID>
-        <ProductID>11571</ProductID>
-        <ProductID>11572</ProductID>
-        <AffectedFiles />
-      </Remediation>
       <Remediation Type="Vendor Fix">
         <Description>5034129</Description>
         <URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034129</URL>
@@ -26800,7 +26856,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="45" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="49" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>.NET Framework Denial of Service Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -27872,7 +27928,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="47" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="51" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Microsoft Message Queuing Information Disclosure Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -28449,16 +28505,6 @@
         <SubType>Security Update</SubType>
         <FixedBuild>10.0.17763.5329</FixedBuild>
       </Remediation>
-      <Remediation Type="Known Issue">
-        <Description>5034127</Description>
-        <URL>https://support.microsoft.com/help/5034127</URL>
-        <ProductID>11568</ProductID>
-        <ProductID>11569</ProductID>
-        <ProductID>11570</ProductID>
-        <ProductID>11571</ProductID>
-        <ProductID>11572</ProductID>
-        <AffectedFiles />
-      </Remediation>
       <Remediation Type="Vendor Fix">
         <Description>5034129</Description>
         <URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034129</URL>
@@ -28704,7 +28750,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="49" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="53" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Microsoft SharePoint Server Remote Code Execution Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -28805,7 +28851,7 @@
     </Remediations>
     <Acknowledgments>
       <Acknowledgment>
-        <Name>Ngo Wei Lin, Billy Jheng Bing Jhong, L&amp;#234; Hữu Quang Linh, Bruce Chen, Nguyễn Tiền Giang with &lt;a href="https://starlabs.sg/"&gt;STAR Labs SG Pte. Ltd.&lt;/a&gt;</Name>
+        <Name>Ngo Wei Lin, Billy Jheng Bing Jhong, L&amp;#234; Hữu Quang Linh, Bruce Chen, Nguyn Tin Giang of &lt;a href="https://starlabs.sg/"&gt;STAR Labs SG Pte. Ltd.&lt;/a&gt;</Name>
         <URL />
       </Acknowledgment>
     </Acknowledgments>
@@ -28818,7 +28864,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="50" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="54" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Microsoft Identity Denial of service vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -29152,7 +29198,7 @@
       </Revision>
     </RevisionHistory>
   </Vulnerability>
-  <Vulnerability Ordinal="51" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+  <Vulnerability Ordinal="55" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
     <Title>Windows Themes Spoofing Vulnerability</Title>
     <Notes>
       <Note Title="Description" Type="Description" Ordinal="0" />
@@ -29624,16 +29670,6 @@
         <SubType>Security Update</SubType>
         <FixedBuild>10.0.17763.5329</FixedBuild>
       </Remediation>
-      <Remediation Type="Known Issue">
-        <Description>5034127</Description>
-        <URL>https://support.microsoft.com/help/5034127</URL>
-        <ProductID>11568</ProductID>
-        <ProductID>11569</ProductID>
-        <ProductID>11570</ProductID>
-        <ProductID>11571</ProductID>
-        <ProductID>11572</ProductID>
-        <AffectedFiles />
-      </Remediation>
       <Remediation Type="Vendor Fix">
         <Description>5034129</Description>
         <URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034129</URL>
@@ -29803,6 +29839,98 @@
       <Revision>
         <Number xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">1.0</Number>
         <Date xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">2024-01-09T08:00:00</Date>
+        <Description xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">&lt;p&gt;Information published.&lt;/p&gt;
+</Description>
+      </Revision>
+    </RevisionHistory>
+  </Vulnerability>
+  <Vulnerability Ordinal="57" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+    <Title>Microsoft Edge (Chromium-based) Elevation of Privilege Vulnerability</Title>
+    <Notes>
+      <Note Title="Description" Type="Description" Ordinal="0" />
+      <Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, a successful exploitation could lead to a scope change (S:C). What does this mean for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This vulnerability could lead to a browser sandbox escape.&lt;/p&gt;
+</Note>
+      <Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, the attack complexity is high (AC:H). What does that mean for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Successful exploitation of this vulnerability requires an attacker to take additional actions prior to exploitation to prepare the target environment.&lt;/p&gt;
+</Note>
+      <Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metrics, successful exploitation of this vulnerability could lead to minor loss of confidentiality (C:L), integrity (I:L) and availability (A:L). What does that mean for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;While we cannot rule out the impact to Confidentiality, Integrity, and Availability, the ability to exploit this vulnerability by itself is limited. An attacker would need to combine this with other vulnerabilities to perform an attack.&lt;/p&gt;
+</Note>
+      <Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Channel&lt;/th&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Stable&lt;/td&gt;
+&lt;td&gt;120.0.2336.0&lt;/td&gt;
+&lt;td&gt;120.0.6099.216/217&lt;/td&gt;
+&lt;td&gt;1/11/2024&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</Note>
+      <Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, the attack vector is local (AV:L) and user interaction is required (UI:R), what does that mean for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The attack itself is carried out locally. For example, when the score indicates that the &lt;strong&gt;Attack Vector&lt;/strong&gt; is &lt;strong&gt;Local&lt;/strong&gt; and &lt;strong&gt;User Interaction&lt;/strong&gt; is &lt;strong&gt;Required&lt;/strong&gt;, this could describe an exploit in which an attacker, through social engineering, convinces a victim to click on a local file path link or download and run a malicious application or file.&lt;/p&gt;
+</Note>
+      <Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</Note>
+      <Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</Note>
+    </Notes>
+    <CVE>CVE-2024-21337</CVE>
+    <ProductStatuses>
+      <Status Type="Known Affected">
+        <ProductID>11655</ProductID>
+      </Status>
+    </ProductStatuses>
+    <Threats>
+      <Threat Type="Impact">
+        <Description>Elevation of Privilege</Description>
+        <ProductID>11655</ProductID>
+      </Threat>
+      <Threat Type="Severity">
+        <Description>Moderate</Description>
+        <ProductID>11655</ProductID>
+      </Threat>
+      <Threat Type="Exploit Status">
+        <Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation Less Likely;Older Software Release:Exploitation Less Likely;DOS:N/A</Description>
+      </Threat>
+    </Threats>
+    <CVSSScoreSets>
+      <ScoreSet>
+        <BaseScore>5.2</BaseScore>
+        <TemporalScore>4.5</TemporalScore>
+        <Vector>CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:C/C:L/I:L/A:L/E:U/RL:O/RC:C</Vector>
+        <ProductID>11655</ProductID>
+      </ScoreSet>
+    </CVSSScoreSets>
+    <Remediations>
+      <Remediation Type="Vendor Fix">
+        <Description>Release Notes</Description>
+        <URL />
+        <ProductID>11655</ProductID>
+        <AffectedFiles />
+        <RestartRequired>No</RestartRequired>
+        <SubType>Security Update</SubType>
+        <FixedBuild>120.0.2210.133</FixedBuild>
+      </Remediation>
+    </Remediations>
+    <Acknowledgments>
+      <Acknowledgment>
+        <Name>&lt;a href="https://twitter.com/jq0904"&gt;Quan Jin&lt;/a&gt; with &lt;a href="https://www.dbappsecurity.com.cn/product/cloud250.html"&gt;DBAPPSecurity WeBin Lab&lt;/a&gt;</Name>
+        <URL />
+      </Acknowledgment>
+    </Acknowledgments>
+    <RevisionHistory>
+      <Revision>
+        <Number xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">1.0</Number>
+        <Date xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">2024-01-11T08:00:00</Date>
         <Description xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1">&lt;p&gt;Information published.&lt;/p&gt;
 </Description>
       </Revision>
