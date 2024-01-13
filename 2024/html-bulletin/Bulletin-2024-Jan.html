@@ -794,18 +794,18 @@
 <li>Windows 11 Version 22H2 for x64-based Systems</li>
 <li>Windows 11 Version 22H2 for ARM64-based Systems</li>
 </ul>
-<p>For the following Windows versions an automated solution is available.  For devices using Windows Update no further action is needed.</p>
+<p>For the following versions of Windows, Windows Recovery Environment updates listed below are available that automatically apply latest Safe OS Dynamic Update to WinRE from the running Windows OS:</p>
 <ul>
-<li>Windows Server 2022 (Server Core installation) (<a href="https://support.microsoft.com/help/5034439">Link to KB article</a>)</li>
-<li>Windows Server 2022 (<a href="https://support.microsoft.com/help/5034439">Link to KB article</a>)</li>
-<li>Windows Server 2022, 23H2 Edition (Server Core installation) (<a href="https://support.microsoft.com/help/5034439">Link to KB article</a>)</li>
-<li>Windows 10 Version 22H2 for x64-based Systems (<a href="https://support.microsoft.com/help/5034441">Link to KB article</a>)</li>
-<li>Windows 10 Version 22H2 for 32-bit Systems (<a href="https://support.microsoft.com/help/5034441">Link to KB article</a>)</li>
-<li>Windows 10 Version 21H2 for x64-based Systems (<a href="https://support.microsoft.com/help/5034441">Link to KB article</a>)</li>
-<li>Windows 10 Version 21H2 for 32-bit Systems (<a href="https://support.microsoft.com/help/5034441">Link to KB article</a>)</li>
-<li>Windows 11 version 21H2 for x64-based Systems (<a href="https://support.microsoft.com/help/5034440">Link to KB article</a>)</li>
+<li>Windows Server 2022 (Server Core installation) (<a href="https://support.microsoft.com/help/5034439">KB5034439: Windows Recovery Environment update for Azure Stack HCI, version 22H2 and Windows Server 2022: Jan 9, 2024</a>)</li>
+<li>Windows Server 2022 (<a href="https://support.microsoft.com/help/5034439">KB5034439: Windows Recovery Environment update for Azure Stack HCI, version 22H2 and Windows Server 2022: January 9, 2024</a>)</li>
+<li>Windows Server 2022, 23H2 Edition (Server Core installation) (<a href="https://support.microsoft.com/help/5034439">KB5034439: Windows Recovery Environment update for Azure Stack HCI, version 22H2 and Windows Server 2022: January 9, 2024</a>)</li>
+<li>Windows 11 version 21H2 for x64-based Systems (<a href="https://support.microsoft.com/help/5034440">KB5034440: Windows Recovery Environment update for Windows 11, version 21H2: January 9, 2024</a>)</li>
+<li>Windows 10 Version 22H2 for x64-based Systems (<a href="https://support.microsoft.com/help/5034441">KB5034441: Windows Recovery Environment update for Windows 10, version 21H2 and 22H2: January 9, 2024</a>)</li>
+<li>Windows 10 Version 22H2 for 32-bit Systems (<a href="https://support.microsoft.com/help/5034441">KB5034441: Windows Recovery Environment update for Windows 10, version 21H2 and 22H2: January 9, 2024</a>)</li>
+<li>Windows 10 Version 21H2 for x64-based Systems (<a href="https://support.microsoft.com/help/5034441">KB5034441: Windows Recovery Environment update for Windows 10, version 21H2 and 22H2: January 9, 2024</a>)</li>
+<li>Windows 10 Version 21H2 for 32-bit Systems (<a href="https://support.microsoft.com/help/5034441">KB5034441: Windows Recovery Environment update for Windows 10, version 21H2 and 22H2: January 9, 2024</a>)</li>
 </ul>
-<p>If your version of Windows is not listed above, you can download the latest Windows Safe OS Dynamic Update from the <a href="https://www.catalog.update.microsoft.com/Search.aspx?q=Windows%20Safe%20OS%20Dynamic%20Update">Microsoft Update Catalog</a>.  You can then apply the WinRE update, see <a href="https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/add-update-to-winre">Add an update package to Windows RE</a>. To automate your installation Microsoft has developed a sample script that can help you automate updating WinRE from the running Windows OS. Please see <a href="https://support.microsoft.com/help/5034957">KB5034957: Updating the WinRE partition on deployed devices to address security vulnerabilities in CVE-2024-20666</a> for more information.</p>
+<p>As an alternative to updates provided above or if your version of Windows is not listed above, you can download the latest Windows Safe OS Dynamic Update from the <a href="https://www.catalog.update.microsoft.com/Search.aspx?q=Windows%20Safe%20OS%20Dynamic%20Update">Microsoft Update Catalog</a>. You can then apply the WinRE update, see  <a href="https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/add-update-to-winre?view=windows-11">Add an update package to Windows RE</a>. To automate your installation Microsoft has developed a sample script that can help with updating WinRE from the running Windows OS. Please see <a href="https://support.microsoft.com/en-us/topic/kb5034957-updating-the-winre-partition-on-deployed-devices-to-address-security-vulnerabilities-in-cve-2024-20666-0190331b-1ca3-42d8-8a55-7fc406910c10">KB5034957: Updating the WinRE partition on deployed devices to address security vulnerabilities in CVE-2024-20666</a> for more information.</p>
 <p><strong>Can a bootable Windows ISO or USB flash drive that boot to Windows RE be used to exploit this vulnerability?</strong></p>
 <p>No. The exploit is only possible with the winre.wim on the recovery partition of the device.</p>
 <p><strong>Can a vulnerable version of WinRE WIM file be used to exploit this vulnerability?</strong></p>
@@ -813,7 +813,7 @@
 <p><strong>If TPM+PIN BitLocker protectors are being used, can the vulnerability be exploited if the attacker does not know the TPM PIN?</strong></p>
 <p>No. To exploit the vulnerability the attacker needs to know the TPM PIN if the user is protected by the BitLocker TPM+PIN.</p>
 <p><strong>How do I check whether WinRE has successfully updated?</strong></p>
-<p>Follow all steps in complete all steps in <a href="https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/add-update-to-winre?view=windows-11#check-the-winre-image-version">Microsoft Learn | Check the WinRE image version</a>  to ensure that the updated Windows RE image is updated to the current ServicePackBuild.</p>
+<p>Use DISM /Get-Packages on a mounted WinRE image to ensure latest Safe OS Dynamic Update package is present. For more information, see <a href="https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/add-update-to-winre?view=windows-11#check-the-winre-image-version">Check the WinRE image version</a>.</p>
 
         <br>
         <b>Mitigations:</b><br>None
@@ -822,6 +822,7 @@
         <br>
         <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp09/01/2024&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
 <br>1.1&nbsp&nbsp&nbsp&nbsp10/01/2024&nbsp&nbsp&nbsp&nbsp<p>Updated FAQ information. This is an informational change only.</p>
+<br>1.2&nbsp&nbsp&nbsp&nbsp12/01/2024&nbsp&nbsp&nbsp&nbsp<p>Updated FAQ information. This is an informational change only.</p>
 
         <br></td>
      <td>Important</td>
@@ -1155,14 +1156,14 @@
 <p>Issuing CNA: Microsoft</p></td>
      <td>        <b>CVE Title:</b> Windows Kerberos Security Feature Bypass Vulnerability
         <br>
-        <b>CVSS:</b> <br>                        <br> <b>CVSS:3.1 Highest BaseScore:9/TemporalScore:7,8</b>
+        <b>CVSS:</b> <br>                        <br> <b>CVSS:3.1 Highest BaseScore:8,8/TemporalScore:7,7</b>
                         <table class="cvss_table" border=1 cellpadding=0 width="99%">
                             <thead>
                                 <tr>
                                     <td colspan="7"><b>Base score metrics</b></td>
                                 </tr>
                             </thead>
-                            <tr><td title="This metric reflects the context by which vulnerability exploitation is possible. The Base Score increases the more remote (logically, and physically) an attacker can be in order to exploit the vulnerable component."><b>Attack Vector</b></td><td title="The vulnerable component is bound to the network stack, but the attack is limited at the protocol level to a logically adjacent topology. This can mean an attack must be launched from the same shared physical (e.g., Bluetooth or IEEE 802.11) or logical (e.g., local IP subnet) network, or from within a secure or otherwise limited administrative domain (e.g., MPLS, secure VPN to an administrative network zone)"><b>Adjacent</b></td></tr><tr><td title="This metric describes the conditions beyond the attacker�s control that must exist in order to exploit the vulnerability. Such conditions may require the collection of more information about the target or computational exceptions. The assessment of this metric excludes any requirements for user interaction in order to exploit the vulnerability. If a specific configuration is required for an attack to succeed, the Base metrics should be scored assuming the vulnerable component is in that configuration."><b>Attack Complexity</b></td><td title="Specialized access conditions or extenuating circumstances do not exist. An attacker can expect repeatable success against the vulnerable component."><b>Low</b></td></tr><tr><td title="This metric describes the level of privileges an attacker must possess before successfully exploiting the vulnerability."><b>Privileges Required</b></td><td title="The attacker is authorized with (i.e., requires) privileges that provide basic user capabilities that could normally affect only settings and files owned by a user. Alternatively, an attacker with Low privileges may have the ability to cause an impact only to non-sensitive resources."><b>Low</b></td></tr><tr><td title="This metric captures the requirement for a user, other than the attacker, to participate in the successful compromise the vulnerable component. This metric determines whether the vulnerability can be exploited solely at the will of the attacker, or whether a separate user (or user-initiated process) must participate in some manner."><b>User Interaction</b></td><td title="The vulnerable system can be exploited without any interaction from any user."><b>None</b></td></tr><tr><td title="Does a successful attack impact a component other than the vulnerable component? If so, the Base Score increases and the Confidentiality, Integrity and Authentication metrics should be scored relative to the impacted component."><b>Scope</b></td><td title="An exploited vulnerability can affect resources beyond the security scope managed by the security authority of the vulnerable component. In this case, the vulnerable component and the impacted component are different and managed by different security authorities."><b>Changed</b></td></tr><tr><td title="This metric measures the impact to the confidentiality of the information resources managed by a software component due to a successfully exploited vulnerability. Confidentiality refers to limiting information access and disclosure to only authorized users, as well as preventing access by, or disclosure to, unauthorized ones."><b>Confidentiality</b></td><td title="There is total loss of confidentiality, resulting in all resources within the impacted component being divulged to the attacker. Alternatively, access to only some restricted information is obtained, but the disclosed information presents a direct, serious impact."><b>High</b></td></tr><tr><td title="This metric measures the impact to integrity of a successfully exploited vulnerability. Integrity refers to the trustworthiness and veracity of information."><b>Integrity</b></td><td title="There is a total loss of integrity, or a complete loss of protection. For example, the attacker is able to modify any/all files protected by the impacted component. Alternatively, only some files can be modified, but malicious modification would present a direct, serious consequence to the impacted component."><b>High</b></td></tr><tr><td title="This metric measures the impact to the availability of the impacted component resulting from a successfully exploited vulnerability. It refers to the loss of availability of the impacted component itself, such as a networked service (e.g., web, database, email). Since availability refers to the accessibility of information resources, attacks that consume network bandwidth, processor cycles, or disk space all impact the availability of an impacted component."><b>Availability</b></td><td title="There is total loss of availability, resulting in the attacker being able to fully deny access to resources in the impacted component; this loss is either sustained (while the attacker continues to deliver the attack) or persistent (the condition persists even after the attack has completed). Alternatively, the attacker has the ability to deny some availability, but the loss of availability presents a direct, serious consequence to the impacted component (e.g., the attacker cannot disrupt existing connections, but can prevent new connections; the attacker can repeatedly exploit a vulnerability that, in each instance of a successful attack, leaks a only small amount of memory, but after repeated exploitation causes a service to become completely unavailable)."><b>High</b></td></tr>
+                            <tr><td title="This metric reflects the context by which vulnerability exploitation is possible. The Base Score increases the more remote (logically, and physically) an attacker can be in order to exploit the vulnerable component."><b>Attack Vector</b></td><td title="The vulnerable component is bound to the network stack and the set of possible attackers extends beyond the other options listed, up to and including the entire Internet. Such a vulnerability is often termed 'remotely exploitable' and can be thought of as an attack being exploitable at the protocol level one or more network hops away (e.g., across one or more routers)."><b>Network</b></td></tr><tr><td title="This metric describes the conditions beyond the attacker�s control that must exist in order to exploit the vulnerability. Such conditions may require the collection of more information about the target or computational exceptions. The assessment of this metric excludes any requirements for user interaction in order to exploit the vulnerability. If a specific configuration is required for an attack to succeed, the Base metrics should be scored assuming the vulnerable component is in that configuration."><b>Attack Complexity</b></td><td title="Specialized access conditions or extenuating circumstances do not exist. An attacker can expect repeatable success against the vulnerable component."><b>Low</b></td></tr><tr><td title="This metric describes the level of privileges an attacker must possess before successfully exploiting the vulnerability."><b>Privileges Required</b></td><td title="The attacker is unauthorized prior to attack, and therefore does not require any access to settings or files to carry out an attack."><b>None</b></td></tr><tr><td title="This metric captures the requirement for a user, other than the attacker, to participate in the successful compromise the vulnerable component. This metric determines whether the vulnerability can be exploited solely at the will of the attacker, or whether a separate user (or user-initiated process) must participate in some manner."><b>User Interaction</b></td><td title="Successful exploitation of this vulnerability requires a user to take some action before the vulnerability can be exploited."><b>Required</b></td></tr><tr><td title="Does a successful attack impact a component other than the vulnerable component? If so, the Base Score increases and the Confidentiality, Integrity and Authentication metrics should be scored relative to the impacted component."><b>Scope</b></td><td title="An exploited vulnerability can only affect resources managed by the same security authority. In this case, the vulnerable component and the impacted component are either the same, or both are managed by the same security authority."><b>Unchanged</b></td></tr><tr><td title="This metric measures the impact to the confidentiality of the information resources managed by a software component due to a successfully exploited vulnerability. Confidentiality refers to limiting information access and disclosure to only authorized users, as well as preventing access by, or disclosure to, unauthorized ones."><b>Confidentiality</b></td><td title="There is total loss of confidentiality, resulting in all resources within the impacted component being divulged to the attacker. Alternatively, access to only some restricted information is obtained, but the disclosed information presents a direct, serious impact."><b>High</b></td></tr><tr><td title="This metric measures the impact to integrity of a successfully exploited vulnerability. Integrity refers to the trustworthiness and veracity of information."><b>Integrity</b></td><td title="There is a total loss of integrity, or a complete loss of protection. For example, the attacker is able to modify any/all files protected by the impacted component. Alternatively, only some files can be modified, but malicious modification would present a direct, serious consequence to the impacted component."><b>High</b></td></tr><tr><td title="This metric measures the impact to the availability of the impacted component resulting from a successfully exploited vulnerability. It refers to the loss of availability of the impacted component itself, such as a networked service (e.g., web, database, email). Since availability refers to the accessibility of information resources, attacks that consume network bandwidth, processor cycles, or disk space all impact the availability of an impacted component."><b>Availability</b></td><td title="There is total loss of availability, resulting in the attacker being able to fully deny access to resources in the impacted component; this loss is either sustained (while the attacker continues to deliver the attack) or persistent (the condition persists even after the attack has completed). Alternatively, the attacker has the ability to deny some availability, but the loss of availability presents a direct, serious consequence to the impacted component (e.g., the attacker cannot disrupt existing connections, but can prevent new connections; the attacker can repeatedly exploit a vulnerability that, in each instance of a successful attack, leaks a only small amount of memory, but after repeated exploitation causes a service to become completely unavailable)."><b>High</b></td></tr>
                         </table>
                         <table class="cvss_table" border=1 cellpadding=0 width="99%">
                             <thead>
@@ -1177,6 +1178,8 @@
         <br>
         <b>FAQ:</b><br><p><strong>What kind of security feature could be bypassed by successfully exploiting this vulnerability?</strong></p>
 <p>The authentication feature could be bypassed as this vulnerability allows impersonation.</p>
+<br><p><strong>According to the CVSS metric, the attack complexity is high (AC:H). What does that mean for this vulnerability?</strong></p>
+<p>The attacker must inject themselves into the logical network path between the target and the resource requested by the victim to read or modify network communications. This is called a machine-in-the-middle (MITM) attack.</p>
 <br><p><strong>According to the CVSS metric, a successful exploitation could lead to a scope change (S:C). What does this mean for this vulnerability?</strong></p>
 <p>An exploited vulnerability can affect resources beyond the security scope managed by the security authority of the vulnerable component. In this case, the vulnerable component and the impacted component are different and managed by different security authorities.</p>
 <br><p><strong>How could an attacker exploit this vulnerability?</strong></p>
@@ -1238,7 +1241,7 @@
                 <td>Critical</td>
                 <td>Security Feature Bypass</td>
                 <td>5033379</td>
-                <td>Base: 9<br />Temporal: 7,8<br />Vector: CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
+                <td>Base: 8,8<br />Temporal: 7,7<br />Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
                 <td>10.0.10240.20402</td>
                 <td>Yes</td>
                 <td>None</td>
@@ -1248,7 +1251,7 @@
                 <td>Critical</td>
                 <td>Security Feature Bypass</td>
                 <td>5033379</td>
-                <td>Base: 9<br />Temporal: 7,8<br />Vector: CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
+                <td>Base: 8,8<br />Temporal: 7,7<br />Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
                 <td>10.0.10240.20402</td>
                 <td>Yes</td>
                 <td>None</td>
@@ -1258,7 +1261,7 @@
                 <td>Critical</td>
                 <td>Security Feature Bypass</td>
                 <td>5033373</td>
-                <td>Base: 9<br />Temporal: 7,8<br />Vector: CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
+                <td>Base: 8,8<br />Temporal: 7,7<br />Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
                 <td>10.0.14393.6614</td>
                 <td>Yes</td>
                 <td>None</td>
@@ -1268,7 +1271,7 @@
                 <td>Critical</td>
                 <td>Security Feature Bypass</td>
                 <td>5033373</td>
-                <td>Base: 9<br />Temporal: 7,8<br />Vector: CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
+                <td>Base: 8,8<br />Temporal: 7,7<br />Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
                 <td>10.0.14393.6614</td>
                 <td>Yes</td>
                 <td>None</td>
@@ -1278,7 +1281,7 @@
                 <td>Critical</td>
                 <td>Security Feature Bypass</td>
                 <td>5033371</td>
-                <td>Base: 9<br />Temporal: 7,8<br />Vector: CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
+                <td>Base: 8,8<br />Temporal: 7,7<br />Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
                 <td>10.0.17763.5329</td>
                 <td>Yes</td>
                 <td>None</td>
@@ -1288,7 +1291,7 @@
                 <td>Critical</td>
                 <td>Security Feature Bypass</td>
                 <td>5033371</td>
-                <td>Base: 9<br />Temporal: 7,8<br />Vector: CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
+                <td>Base: 8,8<br />Temporal: 7,7<br />Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
                 <td>10.0.17763.5329</td>
                 <td>Yes</td>
                 <td>None</td>
@@ -1298,7 +1301,7 @@
                 <td>Critical</td>
                 <td>Security Feature Bypass</td>
                 <td>5033371</td>
-                <td>Base: 9<br />Temporal: 7,8<br />Vector: CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
+                <td>Base: 8,8<br />Temporal: 7,7<br />Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
                 <td>10.0.17763.5329</td>
                 <td>Yes</td>
                 <td>None</td>
@@ -1308,7 +1311,7 @@
                 <td>Critical</td>
                 <td>Security Feature Bypass</td>
                 <td>5033372<br /></td>
-                <td>Base: 9<br />Temporal: 7,8<br />Vector: CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
+                <td>Base: 8,8<br />Temporal: 7,7<br />Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
                 <td>10.0.19044.3930<br /></td>
                 <td>Yes</td>
                 <td><a href="https://support.microsoft.com/help/5034122" >5034122</td>
@@ -1318,7 +1321,7 @@
                 <td>Critical</td>
                 <td>Security Feature Bypass</td>
                 <td>5033372<br /></td>
-                <td>Base: 9<br />Temporal: 7,8<br />Vector: CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
+                <td>Base: 8,8<br />Temporal: 7,7<br />Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
                 <td>10.0.19044.3930<br /></td>
                 <td>Yes</td>
                 <td><a href="https://support.microsoft.com/help/5034122" >5034122</td>
@@ -1328,7 +1331,7 @@
                 <td>Critical</td>
                 <td>Security Feature Bypass</td>
                 <td>5033372<br /></td>
-                <td>Base: 9<br />Temporal: 7,8<br />Vector: CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
+                <td>Base: 8,8<br />Temporal: 7,7<br />Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
                 <td>10.0.19044.3930<br /></td>
                 <td>Yes</td>
                 <td><a href="https://support.microsoft.com/help/5034122" >5034122</td>
@@ -1338,7 +1341,7 @@
                 <td>Critical</td>
                 <td>Security Feature Bypass</td>
                 <td><br />5033372</td>
-                <td>Base: 9<br />Temporal: 7,8<br />Vector: CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
+                <td>Base: 8,8<br />Temporal: 7,7<br />Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
                 <td><br />10.0.19045.3930</td>
                 <td>Yes</td>
                 <td><a href="https://support.microsoft.com/help/5034122" >5034122</td>
@@ -1348,7 +1351,7 @@
                 <td>Critical</td>
                 <td>Security Feature Bypass</td>
                 <td><br />5033372</td>
-                <td>Base: 9<br />Temporal: 7,8<br />Vector: CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
+                <td>Base: 8,8<br />Temporal: 7,7<br />Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
                 <td><br />10.0.19045.3930</td>
                 <td>Yes</td>
                 <td><a href="https://support.microsoft.com/help/5034122" >5034122</td>
@@ -1358,7 +1361,7 @@
                 <td>Critical</td>
                 <td>Security Feature Bypass</td>
                 <td><br />5033372</td>
-                <td>Base: 9<br />Temporal: 7,8<br />Vector: CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
+                <td>Base: 8,8<br />Temporal: 7,7<br />Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
                 <td><br />10.0.19045.3930</td>
                 <td>Yes</td>
                 <td><a href="https://support.microsoft.com/help/5034122" >5034122</td>
@@ -1368,7 +1371,7 @@
                 <td>Critical</td>
                 <td>Security Feature Bypass</td>
                 <td>5033369<br /></td>
-                <td>Base: 9<br />Temporal: 7,8<br />Vector: CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
+                <td>Base: 8,8<br />Temporal: 7,7<br />Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
                 <td>10.0.22000.2713<br /></td>
                 <td>Yes</td>
                 <td><a href="https://support.microsoft.com/help/5034121" >5034121</td>
@@ -1378,7 +1381,7 @@
                 <td>Critical</td>
                 <td>Security Feature Bypass</td>
                 <td>5033369<br /></td>
-                <td>Base: 9<br />Temporal: 7,8<br />Vector: CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
+                <td>Base: 8,8<br />Temporal: 7,7<br />Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
                 <td>10.0.22000.2713<br /></td>
                 <td>Yes</td>
                 <td><a href="https://support.microsoft.com/help/5034121" >5034121</td>
@@ -1388,7 +1391,7 @@
                 <td>Critical</td>
                 <td>Security Feature Bypass</td>
                 <td>5033375<br /></td>
-                <td>Base: 9<br />Temporal: 7,8<br />Vector: CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
+                <td>Base: 8,8<br />Temporal: 7,7<br />Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
                 <td>10.0.22621.3007<br /></td>
                 <td>Yes</td>
                 <td><a href="https://support.microsoft.com/help/5034123" >5034123</td>
@@ -1398,7 +1401,7 @@
                 <td>Critical</td>
                 <td>Security Feature Bypass</td>
                 <td>5033375<br /></td>
-                <td>Base: 9<br />Temporal: 7,8<br />Vector: CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
+                <td>Base: 8,8<br />Temporal: 7,7<br />Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
                 <td>10.0.22621.3007<br /></td>
                 <td>Yes</td>
                 <td><a href="https://support.microsoft.com/help/5034123" >5034123</td>
@@ -1408,7 +1411,7 @@
                 <td>Critical</td>
                 <td>Security Feature Bypass</td>
                 <td><br />5033375</td>
-                <td>Base: 9<br />Temporal: 7,8<br />Vector: CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
+                <td>Base: 8,8<br />Temporal: 7,7<br />Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
                 <td><br />10.0.22631.3007</td>
                 <td>Yes</td>
                 <td><a href="https://support.microsoft.com/help/5034123" >5034123</td>
@@ -1418,7 +1421,7 @@
                 <td>Critical</td>
                 <td>Security Feature Bypass</td>
                 <td><br />5033375</td>
-                <td>Base: 9<br />Temporal: 7,8<br />Vector: CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
+                <td>Base: 8,8<br />Temporal: 7,7<br />Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
                 <td><br />10.0.22631.3007</td>
                 <td>Yes</td>
                 <td><a href="https://support.microsoft.com/help/5034123" >5034123</td>
@@ -1428,7 +1431,7 @@
                 <td>Critical</td>
                 <td>Security Feature Bypass</td>
                 <td>5033422<br /></td>
-                <td>Base: 9<br />Temporal: 7,8<br />Vector: CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
+                <td>Base: 8,8<br />Temporal: 7,7<br />Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
                 <td>6.0.6003.22464<br /></td>
                 <td>Yes</td>
                 <td><a href="https://support.microsoft.com/help/5034173" >5034173<br /><a href="https://support.microsoft.com/help/5034176" >5034176</td>
@@ -1438,7 +1441,7 @@
                 <td>Critical</td>
                 <td>Security Feature Bypass</td>
                 <td>5033422<br /></td>
-                <td>Base: 9<br />Temporal: 7,8<br />Vector: CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
+                <td>Base: 8,8<br />Temporal: 7,7<br />Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
                 <td>6.0.6003.22464<br /></td>
                 <td>Yes</td>
                 <td><a href="https://support.microsoft.com/help/5034173" >5034173<br /><a href="https://support.microsoft.com/help/5034176" >5034176</td>
@@ -1448,7 +1451,7 @@
                 <td>Critical</td>
                 <td>Security Feature Bypass</td>
                 <td>5033422<br /></td>
-                <td>Base: 9<br />Temporal: 7,8<br />Vector: CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
+                <td>Base: 8,8<br />Temporal: 7,7<br />Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
                 <td>6.0.6003.22464<br /></td>
                 <td>Yes</td>
                 <td><a href="https://support.microsoft.com/help/5034173" >5034173<br /><a href="https://support.microsoft.com/help/5034176" >5034176</td>
@@ -1458,7 +1461,7 @@
                 <td>Critical</td>
                 <td>Security Feature Bypass</td>
                 <td>5033422<br /></td>
-                <td>Base: 9<br />Temporal: 7,8<br />Vector: CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
+                <td>Base: 8,8<br />Temporal: 7,7<br />Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
                 <td>6.0.6003.22464<br /></td>
                 <td>Yes</td>
                 <td><a href="https://support.microsoft.com/help/5034173" >5034173<br /><a href="https://support.microsoft.com/help/5034176" >5034176</td>
@@ -1468,7 +1471,7 @@
                 <td>Critical</td>
                 <td>Security Feature Bypass</td>
                 <td>5033433<br /></td>
-                <td>Base: 9<br />Temporal: 7,8<br />Vector: CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
+                <td>Base: 8,8<br />Temporal: 7,7<br />Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
                 <td>6.1.7601.26910<br /></td>
                 <td>Yes</td>
                 <td><a href="https://support.microsoft.com/help/5034169" >5034169<br /><a href="https://support.microsoft.com/help/5034167" >5034167</td>
@@ -1478,7 +1481,7 @@
                 <td>Critical</td>
                 <td>Security Feature Bypass</td>
                 <td>5033433<br /></td>
-                <td>Base: 9<br />Temporal: 7,8<br />Vector: CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
+                <td>Base: 8,8<br />Temporal: 7,7<br />Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
                 <td>6.1.7601.26910<br /></td>
                 <td>Yes</td>
                 <td><a href="https://support.microsoft.com/help/5034169" >5034169<br /><a href="https://support.microsoft.com/help/5034167" >5034167</td>
@@ -1488,7 +1491,7 @@
                 <td>Critical</td>
                 <td>Security Feature Bypass</td>
                 <td>5033429</td>
-                <td>Base: 9<br />Temporal: 7,8<br />Vector: CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
+                <td>Base: 8,8<br />Temporal: 7,7<br />Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
                 <td>6.2.9200.24664</td>
                 <td>Yes</td>
                 <td>None</td>
@@ -1498,7 +1501,7 @@
                 <td>Critical</td>
                 <td>Security Feature Bypass</td>
                 <td>5033429</td>
-                <td>Base: 9<br />Temporal: 7,8<br />Vector: CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
+                <td>Base: 8,8<br />Temporal: 7,7<br />Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
                 <td>6.2.9200.24664</td>
                 <td>Yes</td>
                 <td>None</td>
@@ -1508,7 +1511,7 @@
                 <td>Critical</td>
                 <td>Security Feature Bypass</td>
                 <td>5033420</td>
-                <td>Base: 9<br />Temporal: 7,8<br />Vector: CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
+                <td>Base: 8,8<br />Temporal: 7,7<br />Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
                 <td>6.3.9600.21765</td>
                 <td>Yes</td>
                 <td>None</td>
@@ -1518,7 +1521,7 @@
                 <td>Critical</td>
                 <td>Security Feature Bypass</td>
                 <td>5033420</td>
-                <td>Base: 9<br />Temporal: 7,8<br />Vector: CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
+                <td>Base: 8,8<br />Temporal: 7,7<br />Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
                 <td>6.3.9600.21765</td>
                 <td>Yes</td>
                 <td>None</td>
@@ -1528,7 +1531,7 @@
                 <td>Critical</td>
                 <td>Security Feature Bypass</td>
                 <td>5033373</td>
-                <td>Base: 9<br />Temporal: 7,8<br />Vector: CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
+                <td>Base: 8,8<br />Temporal: 7,7<br />Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
                 <td>10.0.14393.6614</td>
                 <td>Yes</td>
                 <td>None</td>
@@ -1538,7 +1541,7 @@
                 <td>Critical</td>
                 <td>Security Feature Bypass</td>
                 <td>5033373</td>
-                <td>Base: 9<br />Temporal: 7,8<br />Vector: CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
+                <td>Base: 8,8<br />Temporal: 7,7<br />Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
                 <td>10.0.14393.6614</td>
                 <td>Yes</td>
                 <td>None</td>
@@ -1548,7 +1551,7 @@
                 <td>Critical</td>
                 <td>Security Feature Bypass</td>
                 <td>5033371</td>
-                <td>Base: 9<br />Temporal: 7,8<br />Vector: CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
+                <td>Base: 8,8<br />Temporal: 7,7<br />Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
                 <td>10.0.17763.5329</td>
                 <td>Yes</td>
                 <td>None</td>
@@ -1558,7 +1561,7 @@
                 <td>Critical</td>
                 <td>Security Feature Bypass</td>
                 <td>5033371</td>
-                <td>Base: 9<br />Temporal: 7,8<br />Vector: CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
+                <td>Base: 8,8<br />Temporal: 7,7<br />Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
                 <td>10.0.17763.5329</td>
                 <td>Yes</td>
                 <td>None</td>
@@ -1568,7 +1571,7 @@
                 <td>Critical</td>
                 <td>Security Feature Bypass</td>
                 <td>5033118</td>
-                <td>Base: 9<br />Temporal: 7,8<br />Vector: CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
+                <td>Base: 8,8<br />Temporal: 7,7<br />Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
                 <td>10.0.20348.2227</td>
                 <td>Yes</td>
                 <td>None</td>
@@ -1578,7 +1581,7 @@
                 <td>Critical</td>
                 <td>Security Feature Bypass</td>
                 <td>5033118</td>
-                <td>Base: 9<br />Temporal: 7,8<br />Vector: CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
+                <td>Base: 8,8<br />Temporal: 7,7<br />Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
                 <td>10.0.20348.2227</td>
                 <td>Yes</td>
                 <td>None</td>
@@ -1588,7 +1591,7 @@
                 <td>Critical</td>
                 <td>Security Feature Bypass</td>
                 <td>5033383</td>
-                <td>Base: 9<br />Temporal: 7,8<br />Vector: CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
+                <td>Base: 8,8<br />Temporal: 7,7<br />Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C<br /></td>
                 <td>10.0.25398.643</td>
                 <td>Yes</td>
                 <td>None</td>
@@ -3024,6 +3027,7 @@
         <b>Workarounds:</b><br>None
         <br>
         <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp09/01/2024&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+<br>1.1&nbsp&nbsp&nbsp&nbsp12/01/2024&nbsp&nbsp&nbsp&nbsp<p>Updated FAQ information. This is an informational change only.</p>
 
         <br></td>
      <td>Important</td>
@@ -8984,6 +8988,7 @@
         <b>Workarounds:</b><br>None
         <br>
         <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp09/01/2024&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+<br>1.1&nbsp&nbsp&nbsp&nbsp12/01/2024&nbsp&nbsp&nbsp&nbsp<p>Corrected Download and Article links in the Security Updates table. This is an informational change only.</p>
 
         <br></td>
      <td>Important</td>
@@ -9357,7 +9362,7 @@
                 <td>None</td>
         </tr>        <tr>
                 <td>Microsoft .NET Framework 3.5 AND 4.8.1 on Windows 10 Version 22H2 for x64-based Systems</td>
-                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5033918" >5034274 (Security Update)</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5033918" >5034275 (Security Update)</td>
                 <td>Important</td>
                 <td>Security Feature Bypass</td>
                 <td>None</td>
@@ -9387,7 +9392,7 @@
                 <td>None</td>
         </tr>        <tr>
                 <td>Microsoft .NET Framework 3.5 AND 4.8.1 on Windows 11 Version 22H2 for ARM64-based Systems</td>
-                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5033918" >5034275 (Security Update)</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5033920" >5033920 (Security Update)</td>
                 <td>Important</td>
                 <td>Security Feature Bypass</td>
                 <td>None</td>
@@ -9791,6 +9796,7 @@
         <b>Workarounds:</b><br>None
         <br>
         <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp09/01/2024&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+<br>2.0&nbsp&nbsp&nbsp&nbsp12/01/2024&nbsp&nbsp&nbsp&nbsp<p>Revised the Security Updates table as follows: Added PowerShell 7.2, PowerShell 7.3, and PowerShell 7.4 because these versions of PowerShell 7 are affected by this vulnerability. See <a href="https://github.com/PowerShell/Announcements/issues/72">https://github.com/PowerShell/Announcements/issues/72</a> for more information. Corrected Download and Article links for .NET Framework 3.5 and 4.8.1 installed on Windows 10 version 22H2.</p>
 
         <br></td>
      <td>Important</td>
@@ -10174,7 +10180,7 @@
                 <td>None</td>
         </tr>        <tr>
                 <td>Microsoft .NET Framework 3.5 AND 4.8.1 on Windows 10 Version 22H2 for ARM64-based Systems</td>
-                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5033920" >5033920 (Security Update)</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5033918" >5034275 (Security Update)</td>
                 <td>Important</td>
                 <td>Security Feature Bypass</td>
                 <td>None</td>
@@ -10480,6 +10486,36 @@
                 <td>None</td>
                 <td>Base: 9,1<br />Temporal: 8,2<br />Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N/E:P/RL:O/RC:C<br /></td>
                 <td>17.8.4</td>
+                <td>Maybe</td>
+                <td>None</td>
+        </tr>        <tr>
+                <td>PowerShell 7.2</td>
+                <td><a href="https://github.com/PowerShell/Announcements/issues/72" >Release Notes (Security Update)</td>
+                <td>Important</td>
+                <td>Security Feature Bypass</td>
+                <td>None</td>
+                <td>Base: 9,1<br />Temporal: 8,2<br />Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N/E:P/RL:O/RC:C<br /></td>
+                <td>7.2.18</td>
+                <td>Maybe</td>
+                <td>None</td>
+        </tr>        <tr>
+                <td>PowerShell 7.3</td>
+                <td><a href="https://github.com/PowerShell/Announcements/issues/72" >Release Notes (Security Update)</td>
+                <td>Important</td>
+                <td>Security Feature Bypass</td>
+                <td>None</td>
+                <td>Base: 9,1<br />Temporal: 8,2<br />Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N/E:P/RL:O/RC:C<br /></td>
+                <td>7.3.11</td>
+                <td>Maybe</td>
+                <td>None</td>
+        </tr>        <tr>
+                <td>PowerShell 7.4</td>
+                <td><a href="https://github.com/PowerShell/Announcements/issues/72" >Release Notes (Security Update)</td>
+                <td>Important</td>
+                <td>Security Feature Bypass</td>
+                <td>None</td>
+                <td>Base: 9,1<br />Temporal: 8,2<br />Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N/E:P/RL:O/RC:C<br /></td>
+                <td>7.4.1</td>
                 <td>Maybe</td>
                 <td>None</td>
         </tr>
@@ -16727,6 +16763,7 @@
         <b>Workarounds:</b><br>None
         <br>
         <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp09/01/2024&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+<br>1.1&nbsp&nbsp&nbsp&nbsp12/01/2024&nbsp&nbsp&nbsp&nbsp<p>Corrected Download and Article links in the Security Updates table. This is an informational change only.</p>
 
         <br></td>
      <td>Important</td>
@@ -17050,7 +17087,7 @@
                 <td>None</td>
         </tr>        <tr>
                 <td>Microsoft .NET Framework 3.5 AND 4.8.1 on Windows 10 Version 22H2 for x64-based Systems</td>
-                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5033918" >5034274 (Security Update)</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5033918" >5034275 (Security Update)</td>
                 <td>Important</td>
                 <td>Denial of Service</td>
                 <td>None</td>
