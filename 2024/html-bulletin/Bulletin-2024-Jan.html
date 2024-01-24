@@ -85,6 +85,7 @@
 <tr><td>cve@mitre.org</td><td>Mariner</td>    <td><a href="#CVE-2023-51764">CVE-2023-51764</a></td>    <td>Unknown</td></tr>
 <tr><td>report@snyk.io</td><td>Mariner</td>    <td><a href="#CVE-2023-26159">CVE-2023-26159</a></td>    <td>Unknown</td></tr>
 <tr><td>cna@vuldb.com</td><td>Mariner</td>    <td><a href="#CVE-2023-7104">CVE-2023-7104</a></td>    <td>Unknown</td></tr>
+<tr><td>cve@mitre.org</td><td>Mariner</td>    <td><a href="#CVE-2023-51714">CVE-2023-51714</a></td>    <td>Unknown</td></tr>
 <tr><td>Microsoft</td><td>Microsoft Bluetooth Driver</td>    <td><a href="#CVE-2024-21306">CVE-2024-21306</a></td>    <td>Microsoft Bluetooth Driver Spoofing Vulnerability</td></tr>
 <tr><td>Microsoft</td><td>Microsoft Devices</td>    <td><a href="#CVE-2024-21325">CVE-2024-21325</a></td>    <td>Microsoft Printer Metadata Troubleshooter Tool Remote Code Execution Vulnerability</td></tr>
 <tr><td>Adobe Systems Incorporated</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2024-20709">CVE-2024-20709</a></td>    <td>Adobe Systems Incorporated: CVE-2024-20709 Javascript Implementation PDF Vulnerability</td></tr>
@@ -741,6 +742,126 @@
     </thead>
  <tr>
      <td>CVE-2023-7104</td>
+     <td>None</td>
+ </tr>
+</table><h1 id="CVE-2023-51714">CVE-2023-51714 - Unknown</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2023-51714">CVE-2023-51714</a>
+<br>
+<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-51714">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-51714">NVD</a>
+<p>Issuing CNA: cve@mitre.org</p></td>
+     <td>        <b>CVE Title:</b> Unknown
+        <br>
+        <b>CVSS:</b> <br>                        <br> <b>CVSS:3.1 Highest BaseScore:9,8/TemporalScore:9,8</b>
+                        <table class="cvss_table" border=1 cellpadding=0 width="99%">
+                            <thead>
+                                <tr>
+                                    <td colspan="7"><b>Base score metrics</b></td>
+                                </tr>
+                            </thead>
+                            <tr><td title="This metric reflects the context by which vulnerability exploitation is possible. The Base Score increases the more remote (logically, and physically) an attacker can be in order to exploit the vulnerable component."><b>Attack Vector</b></td><td title="The vulnerable component is bound to the network stack and the set of possible attackers extends beyond the other options listed, up to and including the entire Internet. Such a vulnerability is often termed 'remotely exploitable' and can be thought of as an attack being exploitable at the protocol level one or more network hops away (e.g., across one or more routers)."><b>Network</b></td></tr><tr><td title="This metric describes the conditions beyond the attacker�s control that must exist in order to exploit the vulnerability. Such conditions may require the collection of more information about the target or computational exceptions. The assessment of this metric excludes any requirements for user interaction in order to exploit the vulnerability. If a specific configuration is required for an attack to succeed, the Base metrics should be scored assuming the vulnerable component is in that configuration."><b>Attack Complexity</b></td><td title="Specialized access conditions or extenuating circumstances do not exist. An attacker can expect repeatable success against the vulnerable component."><b>Low</b></td></tr><tr><td title="This metric describes the level of privileges an attacker must possess before successfully exploiting the vulnerability."><b>Privileges Required</b></td><td title="The attacker is unauthorized prior to attack, and therefore does not require any access to settings or files to carry out an attack."><b>None</b></td></tr><tr><td title="This metric captures the requirement for a user, other than the attacker, to participate in the successful compromise the vulnerable component. This metric determines whether the vulnerability can be exploited solely at the will of the attacker, or whether a separate user (or user-initiated process) must participate in some manner."><b>User Interaction</b></td><td title="The vulnerable system can be exploited without any interaction from any user."><b>None</b></td></tr><tr><td title="Does a successful attack impact a component other than the vulnerable component? If so, the Base Score increases and the Confidentiality, Integrity and Authentication metrics should be scored relative to the impacted component."><b>Scope</b></td><td title="An exploited vulnerability can only affect resources managed by the same security authority. In this case, the vulnerable component and the impacted component are either the same, or both are managed by the same security authority."><b>Unchanged</b></td></tr><tr><td title="This metric measures the impact to the confidentiality of the information resources managed by a software component due to a successfully exploited vulnerability. Confidentiality refers to limiting information access and disclosure to only authorized users, as well as preventing access by, or disclosure to, unauthorized ones."><b>Confidentiality</b></td><td title="There is total loss of confidentiality, resulting in all resources within the impacted component being divulged to the attacker. Alternatively, access to only some restricted information is obtained, but the disclosed information presents a direct, serious impact."><b>High</b></td></tr><tr><td title="This metric measures the impact to integrity of a successfully exploited vulnerability. Integrity refers to the trustworthiness and veracity of information."><b>Integrity</b></td><td title="There is a total loss of integrity, or a complete loss of protection. For example, the attacker is able to modify any/all files protected by the impacted component. Alternatively, only some files can be modified, but malicious modification would present a direct, serious consequence to the impacted component."><b>High</b></td></tr><tr><td title="This metric measures the impact to the availability of the impacted component resulting from a successfully exploited vulnerability. It refers to the loss of availability of the impacted component itself, such as a networked service (e.g., web, database, email). Since availability refers to the accessibility of information resources, attacks that consume network bandwidth, processor cycles, or disk space all impact the availability of an impacted component."><b>Availability</b></td><td title="There is total loss of availability, resulting in the attacker being able to fully deny access to resources in the impacted component; this loss is either sustained (while the attacker continues to deliver the attack) or persistent (the condition persists even after the attack has completed). Alternatively, the attacker has the ability to deny some availability, but the loss of availability presents a direct, serious consequence to the impacted component (e.g., the attacker cannot disrupt existing connections, but can prevent new connections; the attacker can repeatedly exploit a vulnerability that, in each instance of a successful attack, leaks a only small amount of memory, but after repeated exploitation causes a service to become completely unavailable)."><b>High</b></td></tr>
+                        </table>
+                        <table class="cvss_table" border=1 cellpadding=0 width="99%">
+                            <thead>
+                                <tr>
+                                    <td colspan="7"><b>Temporal score metrics</b></td>
+                                </tr>
+                            </thead>
+                            
+                        </table>
+        <br>
+        <b>Executive Summary:</b> <br>None
+        <br>
+        <b>FAQ:</b><br>None
+        <br>
+        <b>Mitigations:</b><br>None
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp21/01/2024&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Unknown</td>
+     <td>Unknown</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an <a href="https://www.microsoft.com/en-us/msrc/exploitability-index?rtc=1">exploitability assessment</a> for this vulnerability at the time of original publication.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Not Found</td>
+     <td>Not Found</td>
+     <td>Not Found</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="9"><b>CVE-2023-51714</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Fixed Build</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>CBL Mariner 2.0 ARM</td>
+                <td><a href="" >qt5-qtbase (CBL-Mariner)</td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: 9,8<br />Temporal: 9,8<br />Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H<br /></td>
+                <td>5.12.11-10</td>
+                <td>Unknown</td>
+                <td>None</td>
+        </tr>        <tr>
+                <td>CBL Mariner 2.0 x64</td>
+                <td><a href="" >qt5-qtbase (CBL-Mariner)</td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: 9,8<br />Temporal: 9,8<br />Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H<br /></td>
+                <td>5.12.11-10</td>
+                <td>Unknown</td>
+                <td>None</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2023-51714</td>
      <td>None</td>
  </tr>
 </table><h1 id="CVE-2024-0222">CVE-2024-0222 - Chromium: CVE-2024-0222 Use after free in ANGLE</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
@@ -9967,6 +10088,7 @@
         <br>
         <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp09/01/2024&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
 <br>1.1&nbsp&nbsp&nbsp&nbsp12/01/2024&nbsp&nbsp&nbsp&nbsp<p>Corrected Download and Article links in the Security Updates table. This is an informational change only.</p>
+<br>1.2&nbsp&nbsp&nbsp&nbsp22/01/2024&nbsp&nbsp&nbsp&nbsp<p>Corrected Download links in the Security Updates table. This is an informational change only.</p>
 
         <br></td>
      <td>Important</td>
@@ -10170,7 +10292,7 @@
                 <td>None</td>
         </tr>        <tr>
                 <td>Microsoft .NET Framework 3.5 AND 4.8 on Windows 10 Version 21H2 for 32-bit Systems</td>
-                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5033909" >5034274 (Security Update)</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034274" >5034274 (Security Update)</td>
                 <td>Important</td>
                 <td>Security Feature Bypass</td>
                 <td>None</td>
@@ -10180,7 +10302,7 @@
                 <td>None</td>
         </tr>        <tr>
                 <td>Microsoft .NET Framework 3.5 AND 4.8 on Windows 10 Version 21H2 for ARM64-based Systems</td>
-                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5033909" >5034274 (Security Update)</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034274" >5034274 (Security Update)</td>
                 <td>Important</td>
                 <td>Security Feature Bypass</td>
                 <td>None</td>
@@ -10190,7 +10312,7 @@
                 <td>None</td>
         </tr>        <tr>
                 <td>Microsoft .NET Framework 3.5 AND 4.8 on Windows 10 Version 21H2 for x64-based Systems</td>
-                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5033909" >5034274 (Security Update)</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034274" >5034274 (Security Update)</td>
                 <td>Important</td>
                 <td>Security Feature Bypass</td>
                 <td>None</td>
@@ -10200,7 +10322,7 @@
                 <td>None</td>
         </tr>        <tr>
                 <td>Microsoft .NET Framework 3.5 AND 4.8 on Windows 10 Version 22H2 for 32-bit Systems</td>
-                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5033909" >5034275 (Security Update)</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034275" >5034275 (Security Update)</td>
                 <td>Important</td>
                 <td>Security Feature Bypass</td>
                 <td>None</td>
@@ -10210,7 +10332,7 @@
                 <td>None</td>
         </tr>        <tr>
                 <td>Microsoft .NET Framework 3.5 AND 4.8 on Windows 10 Version 22H2 for ARM64-based Systems</td>
-                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5033909" >5034275 (Security Update)</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034275" >5034275 (Security Update)</td>
                 <td>Important</td>
                 <td>Security Feature Bypass</td>
                 <td>None</td>
@@ -10220,7 +10342,7 @@
                 <td>None</td>
         </tr>        <tr>
                 <td>Microsoft .NET Framework 3.5 AND 4.8 on Windows 10 Version 22H2 for x64-based Systems</td>
-                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5033909" >5034275 (Security Update)</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034275" >5034275 (Security Update)</td>
                 <td>Important</td>
                 <td>Security Feature Bypass</td>
                 <td>None</td>
@@ -10270,7 +10392,7 @@
                 <td>None</td>
         </tr>        <tr>
                 <td>Microsoft .NET Framework 3.5 AND 4.8 on Windows Server 2022</td>
-                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5033914" >5034272 (Security Update)</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034272" >5034272 (Security Update)</td>
                 <td>Important</td>
                 <td>Security Feature Bypass</td>
                 <td>None</td>
@@ -10280,7 +10402,7 @@
                 <td>None</td>
         </tr>        <tr>
                 <td>Microsoft .NET Framework 3.5 AND 4.8 on Windows Server 2022 (Server Core installation)</td>
-                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5033914" >5034272 (Security Update)</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034272" >5034272 (Security Update)</td>
                 <td>Important</td>
                 <td>Security Feature Bypass</td>
                 <td>None</td>
@@ -10776,6 +10898,7 @@
         <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp09/01/2024&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
 <br>2.0&nbsp&nbsp&nbsp&nbsp12/01/2024&nbsp&nbsp&nbsp&nbsp<p>Revised the Security Updates table as follows: Added PowerShell 7.2, PowerShell 7.3, and PowerShell 7.4 because these versions of PowerShell 7 are affected by this vulnerability. See <a href="https://github.com/PowerShell/Announcements/issues/72">https://github.com/PowerShell/Announcements/issues/72</a> for more information. Corrected Download and Article links for .NET Framework 3.5 and 4.8.1 installed on Windows 10 version 22H2.</p>
 <br>2.1&nbsp&nbsp&nbsp&nbsp16/01/2024&nbsp&nbsp&nbsp&nbsp<p>Corrected Download and Article links in the Security Updates table. This is an informational change only.</p>
+<br>2.2&nbsp&nbsp&nbsp&nbsp22/01/2024&nbsp&nbsp&nbsp&nbsp<p>Corrected Download links in the Security Updates table. This is an informational change only.</p>
 
         <br></td>
      <td>Important</td>
@@ -10999,7 +11122,7 @@
                 <td>None</td>
         </tr>        <tr>
                 <td>Microsoft .NET Framework 3.5 AND 4.8 on Windows 10 Version 21H2 for 32-bit Systems</td>
-                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5033909" >5034274 (Security Update)</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034274" >5034274 (Security Update)</td>
                 <td>Important</td>
                 <td>Security Feature Bypass</td>
                 <td>None</td>
@@ -11009,7 +11132,7 @@
                 <td>None</td>
         </tr>        <tr>
                 <td>Microsoft .NET Framework 3.5 AND 4.8 on Windows 10 Version 21H2 for ARM64-based Systems</td>
-                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5033909" >5034274 (Security Update)</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034274" >5034274 (Security Update)</td>
                 <td>Important</td>
                 <td>Security Feature Bypass</td>
                 <td>None</td>
@@ -11019,7 +11142,7 @@
                 <td>None</td>
         </tr>        <tr>
                 <td>Microsoft .NET Framework 3.5 AND 4.8 on Windows 10 Version 21H2 for x64-based Systems</td>
-                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5033909" >5034274 (Security Update)</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034274" >5034274 (Security Update)</td>
                 <td>Important</td>
                 <td>Security Feature Bypass</td>
                 <td>None</td>
@@ -11029,7 +11152,7 @@
                 <td>None</td>
         </tr>        <tr>
                 <td>Microsoft .NET Framework 3.5 AND 4.8 on Windows 10 Version 22H2 for 32-bit Systems</td>
-                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5033909" >5034275 (Security Update)</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034275" >5034275 (Security Update)</td>
                 <td>Important</td>
                 <td>Security Feature Bypass</td>
                 <td>None</td>
@@ -11039,7 +11162,7 @@
                 <td>None</td>
         </tr>        <tr>
                 <td>Microsoft .NET Framework 3.5 AND 4.8 on Windows 10 Version 22H2 for ARM64-based Systems</td>
-                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5033909" >5034275 (Security Update)</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034275" >5034275 (Security Update)</td>
                 <td>Important</td>
                 <td>Security Feature Bypass</td>
                 <td>None</td>
@@ -11049,7 +11172,7 @@
                 <td>None</td>
         </tr>        <tr>
                 <td>Microsoft .NET Framework 3.5 AND 4.8 on Windows 10 Version 22H2 for x64-based Systems</td>
-                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5033909" >5034275 (Security Update)</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034275" >5034275 (Security Update)</td>
                 <td>Important</td>
                 <td>Security Feature Bypass</td>
                 <td>None</td>
@@ -11099,7 +11222,7 @@
                 <td>None</td>
         </tr>        <tr>
                 <td>Microsoft .NET Framework 3.5 AND 4.8 on Windows Server 2022</td>
-                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5033914" >5034272 (Security Update)</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034272" >5034272 (Security Update)</td>
                 <td>Important</td>
                 <td>Security Feature Bypass</td>
                 <td>None</td>
@@ -11109,7 +11232,7 @@
                 <td>None</td>
         </tr>        <tr>
                 <td>Microsoft .NET Framework 3.5 AND 4.8 on Windows Server 2022 (Server Core installation)</td>
-                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5033914" >5034272 (Security Update)</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034272" >5034272 (Security Update)</td>
                 <td>Important</td>
                 <td>Security Feature Bypass</td>
                 <td>None</td>
@@ -17743,6 +17866,7 @@
         <br>
         <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp09/01/2024&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
 <br>1.1&nbsp&nbsp&nbsp&nbsp12/01/2024&nbsp&nbsp&nbsp&nbsp<p>Corrected Download and Article links in the Security Updates table. This is an informational change only.</p>
+<br>1.2&nbsp&nbsp&nbsp&nbsp22/01/2024&nbsp&nbsp&nbsp&nbsp<p>Corrected Download links in the Security Updates table. This is an informational change only.</p>
 
         <br></td>
      <td>Important</td>
@@ -17896,7 +18020,7 @@
                 <td>None</td>
         </tr>        <tr>
                 <td>Microsoft .NET Framework 3.5 AND 4.8 on Windows 10 Version 21H2 for 32-bit Systems</td>
-                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5033909" >5034274 (Security Update)</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034274" >5034274 (Security Update)</td>
                 <td>Important</td>
                 <td>Denial of Service</td>
                 <td>None</td>
@@ -17906,7 +18030,7 @@
                 <td>None</td>
         </tr>        <tr>
                 <td>Microsoft .NET Framework 3.5 AND 4.8 on Windows 10 Version 21H2 for ARM64-based Systems</td>
-                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5033909" >5034274 (Security Update)</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034274" >5034274 (Security Update)</td>
                 <td>Important</td>
                 <td>Denial of Service</td>
                 <td>None</td>
@@ -17916,7 +18040,7 @@
                 <td>None</td>
         </tr>        <tr>
                 <td>Microsoft .NET Framework 3.5 AND 4.8 on Windows 10 Version 21H2 for x64-based Systems</td>
-                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5033909" >5034274 (Security Update)</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034274" >5034274 (Security Update)</td>
                 <td>Important</td>
                 <td>Denial of Service</td>
                 <td>None</td>
@@ -17926,7 +18050,7 @@
                 <td>None</td>
         </tr>        <tr>
                 <td>Microsoft .NET Framework 3.5 AND 4.8 on Windows 10 Version 22H2 for 32-bit Systems</td>
-                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5033909" >5034275 (Security Update)</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034275" >5034275 (Security Update)</td>
                 <td>Important</td>
                 <td>Denial of Service</td>
                 <td>None</td>
@@ -17936,7 +18060,7 @@
                 <td>None</td>
         </tr>        <tr>
                 <td>Microsoft .NET Framework 3.5 AND 4.8 on Windows 10 Version 22H2 for ARM64-based Systems</td>
-                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5033909" >5034275 (Security Update)</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034275" >5034275 (Security Update)</td>
                 <td>Important</td>
                 <td>Denial of Service</td>
                 <td>None</td>
@@ -17946,7 +18070,7 @@
                 <td>None</td>
         </tr>        <tr>
                 <td>Microsoft .NET Framework 3.5 AND 4.8 on Windows 10 Version 22H2 for x64-based Systems</td>
-                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5033909" >5034275 (Security Update)</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034275" >5034275 (Security Update)</td>
                 <td>Important</td>
                 <td>Denial of Service</td>
                 <td>None</td>
@@ -17996,7 +18120,7 @@
                 <td>None</td>
         </tr>        <tr>
                 <td>Microsoft .NET Framework 3.5 AND 4.8 on Windows Server 2022</td>
-                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5033914" >5034272 (Security Update)</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034272" >5034272 (Security Update)</td>
                 <td>Important</td>
                 <td>Denial of Service</td>
                 <td>None</td>
@@ -18006,7 +18130,7 @@
                 <td>None</td>
         </tr>        <tr>
                 <td>Microsoft .NET Framework 3.5 AND 4.8 on Windows Server 2022 (Server Core installation)</td>
-                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5033914" >5034272 (Security Update)</td>
+                <td><a href="https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5034272" >5034272 (Security Update)</td>
                 <td>Important</td>
                 <td>Denial of Service</td>
                 <td>None</td>
