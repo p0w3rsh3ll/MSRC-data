@@ -14,16 +14,16 @@
     <cvrf:Version>1.0</cvrf:Version>
     <cvrf:RevisionHistory>
       <cvrf:Revision>
-        <cvrf:Number>21</cvrf:Number>
-        <cvrf:Date>2024-01-25T08:00:00</cvrf:Date>
+        <cvrf:Number>22</cvrf:Number>
+        <cvrf:Date>2024-01-26T08:00:00</cvrf:Date>
         <cvrf:Description>January 2024 Security Updates</cvrf:Description>
       </cvrf:Revision>
     </cvrf:RevisionHistory>
     <cvrf:InitialReleaseDate>2024-01-09T08:00:00</cvrf:InitialReleaseDate>
-    <cvrf:CurrentReleaseDate>2024-01-25T08:00:00</cvrf:CurrentReleaseDate>
+    <cvrf:CurrentReleaseDate>2024-01-26T08:00:00</cvrf:CurrentReleaseDate>
   </cvrf:DocumentTracking>
   <cvrf:DocumentNotes>
-    <cvrf:Note Title="Release Notes" Audience="Public" Type="Details" Ordinal="0">&lt;h2 id="this-release-consists-of-the-following-55-microsoft-cves"&gt;This release consists of the following 55 Microsoft CVEs:&lt;/h2&gt;
+    <cvrf:Note Title="Release Notes" Audience="Public" Type="Details" Ordinal="0">&lt;h2 id="this-release-consists-of-the-following-56-microsoft-cves"&gt;This release consists of the following 56 Microsoft CVEs:&lt;/h2&gt;
 &lt;table title="This release consists of the following Microsoft CVEs"&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -533,6 +533,16 @@
 &lt;td&gt;&lt;a href="https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2024-21326"&gt;CVE-2024-21326&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;9.6&lt;/td&gt;
 &lt;td&gt;CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C&lt;/td&gt;
+&lt;td&gt;Exploitation Less Likely&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Yes&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Microsoft Edge (Chromium-based)&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2024-21336"&gt;CVE-2024-21336&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2.5&lt;/td&gt;
+&lt;td&gt;CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:N/I:L/A:N/E:U/RL:O/RC:C&lt;/td&gt;
 &lt;td&gt;Exploitation Less Likely&lt;/td&gt;
 &lt;td&gt;&lt;strong&gt;Yes&lt;/strong&gt;&lt;/td&gt;
 &lt;td&gt;No&lt;/td&gt;
@@ -15169,6 +15179,101 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="78">
+    <vuln:Title>Microsoft Edge (Chromium-based) Spoofing Vulnerability</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, the attack complexity is high (AC:H). What does that mean for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Successful exploitation of this vulnerability requires an attacker to take additional actions prior to exploitation to prepare the target environment.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, user interaction is required (UI:R). What interaction would the user have to do?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Exploitation of the vulnerability requires the victim to open the vulnerable app.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, successful exploitation of this vulnerability could lead to some loss of integrity (I:L)? What does that mean for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The attacker is able to cover and spoof elements of the UI. The modified information is only visual.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Channel&lt;/th&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Stable&lt;/td&gt;
+&lt;td&gt;121.0.2277.83&lt;/td&gt;
+&lt;td&gt;1/25/2024&lt;/td&gt;
+&lt;td&gt;121.0.6167.85/.86&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Extended Stable&lt;/td&gt;
+&lt;td&gt;120.0.2210.160&lt;/td&gt;
+&lt;td&gt;1/25/2024&lt;/td&gt;
+&lt;td&gt;120.0.6099.268&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2024-21336</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Spoofing</vuln:Description>
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Low</vuln:Description>
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation Less Likely;Older Software Release:Exploitation Less Likely;DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>2.5</vuln:BaseScore>
+        <vuln:TemporalScore>2.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:N/I:L/A:N/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>121.0.2277.83</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments>
+      <vuln:Acknowledgment>
+        <vuln:Name>&lt;a href="https://www.linkedin.com/in/hafiizh-7aa6bb31/"&gt;Hafiizh&lt;/a&gt; with https://www.linkedin.com/in/hafiizh-7aa6bb31/</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+    </vuln:Acknowledgments>
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2024-01-26T08:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
   <vuln:Vulnerability Ordinal="61">
     <vuln:Title>Adobe Systems Incorporated: CVE-2024-20709 Javascript Implementation PDF Vulnerability</vuln:Title>
     <vuln:Notes>
@@ -15258,7 +15363,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="79">
+  <vuln:Vulnerability Ordinal="80">
     <vuln:Title>Microsoft Edge for Android Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -31570,7 +31675,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="78">
+  <vuln:Vulnerability Ordinal="79">
     <vuln:Title>Microsoft Edge (Chromium-based) Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -31692,7 +31797,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="80">
+  <vuln:Vulnerability Ordinal="81">
     <vuln:Title>Microsoft Edge (Chromium-based) Spoofing Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -31784,7 +31889,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="81">
+  <vuln:Vulnerability Ordinal="82">
     <vuln:Title>Microsoft Edge (Chromium-based) Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -31885,7 +31990,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="82">
+  <vuln:Vulnerability Ordinal="83">
     <vuln:Title>Microsoft Edge for Android Spoofing Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
