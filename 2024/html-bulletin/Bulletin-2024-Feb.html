@@ -76,12 +76,288 @@
   <th>CVE ID</th>
   <th>CVE Title</th>
  </tr>
- <tr><td>Microsoft</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2024-21399">CVE-2024-21399</a></td>    <td>Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability</td></tr>
+ <tr><td>Chrome</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2024-1283">CVE-2024-1283</a></td>    <td>Chromium: CVE-2024-1283 Heap buffer overflow in Skia</td></tr>
+<tr><td>Chrome</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2024-1284">CVE-2024-1284</a></td>    <td>Chromium: CVE-2024-1284 Use after free in Mojo</td></tr>
+<tr><td>Microsoft</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2024-21399">CVE-2024-21399</a></td>    <td>Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability</td></tr>
 <tr><td>Chrome</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2024-1060">CVE-2024-1060</a></td>    <td>Chromium: CVE-2024-1060 Use after free in Canvas</td></tr>
 <tr><td>Chrome</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2024-1059">CVE-2024-1059</a></td>    <td>Chromium: CVE-2024-1059 Use after free in WebRTC</td></tr>
 <tr><td>Chrome</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2024-1077">CVE-2024-1077</a></td>    <td>Chromium: CVE-2024-1077 Use after free in Network</td></tr>
 </table>
-<h1 id="CVE-2024-21399">CVE-2024-21399 - Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+<h1 id="CVE-2024-1283">CVE-2024-1283 - Chromium: CVE-2024-1283 Heap buffer overflow in Skia</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2024-1283">CVE-2024-1283</a>
+<br>
+<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-1283">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2024-1283">NVD</a>
+<p>Issuing CNA: Chrome</p></td>
+     <td>        <b>CVE Title:</b> Chromium: CVE-2024-1283 Heap buffer overflow in Skia
+        <br>
+        <b>CVSS:</b> <br>None
+        <br>
+        <b>Executive Summary:</b> <br><p>This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see <a href="https://chromereleases.googleblog.com/2024">Google Chrome Releases</a> for more information.</p>
+
+        <br>
+        <b>FAQ:</b><br><p><strong>Why is this Chrome CVE included in the Security Update Guide?</strong></p>
+<p>The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based). It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.</p>
+<p><strong>How can I see the version of the browser?</strong></p>
+<ol>
+<li>In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window</li>
+<li>Click on <strong>Help and Feedback</strong></li>
+<li>Click on <strong>About Microsoft Edge</strong></li>
+</ol>
+<br><table>
+<thead>
+<tr>
+<th>Microsoft Edge Channel</th>
+<th>Microsoft Edge Version</th>
+<th>Date Released</th>
+<th>Based on Chromium Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Stable</td>
+<td>121.0.2277.113</td>
+<td>2/8/2024</td>
+<td>121.0.6167.160/161</td>
+</tr>
+<tr>
+<td>Extended Stable</td>
+<td>120.0.2210.175</td>
+<td>2/8/2024</td>
+<td>120.0.6099.283</td>
+</tr>
+</tbody>
+</table>
+
+        <br>
+        <b>Mitigations:</b><br>None
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp08/02/2024&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Unknown</td>
+     <td>Unknown</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an <a href="https://www.microsoft.com/en-us/msrc/exploitability-index?rtc=1">exploitability assessment</a> for this vulnerability at the time of original publication.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Not Found</td>
+     <td>Not Found</td>
+     <td>Not Found</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="9"><b>CVE-2024-1283</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Fixed Build</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Edge (Chromium-based)</td>
+                <td><a href="https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnote-stable-channel" >Release Notes (Security Update)</td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>121.0.2277.113</td>
+                <td>No</td>
+                <td>None</td>
+        </tr>        <tr>
+                <td>Microsoft Edge (Chromium-based) Extended Stable</td>
+                <td><a href="" >Release Notes (Security Update)</td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>120.0.2210.175</td>
+                <td>No</td>
+                <td>None</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2024-1283</td>
+     <td>None</td>
+ </tr>
+</table><h1 id="CVE-2024-1284">CVE-2024-1284 - Chromium: CVE-2024-1284 Use after free in Mojo</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2024-1284">CVE-2024-1284</a>
+<br>
+<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-1284">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2024-1284">NVD</a>
+<p>Issuing CNA: Chrome</p></td>
+     <td>        <b>CVE Title:</b> Chromium: CVE-2024-1284 Use after free in Mojo
+        <br>
+        <b>CVSS:</b> <br>None
+        <br>
+        <b>Executive Summary:</b> <br><p>This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see <a href="https://chromereleases.googleblog.com/2024">Google Chrome Releases</a> for more information.</p>
+
+        <br>
+        <b>FAQ:</b><br><p><strong>Why is this Chrome CVE included in the Security Update Guide?</strong></p>
+<p>The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based). It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.</p>
+<p><strong>How can I see the version of the browser?</strong></p>
+<ol>
+<li>In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window</li>
+<li>Click on <strong>Help and Feedback</strong></li>
+<li>Click on <strong>About Microsoft Edge</strong></li>
+</ol>
+<br><table>
+<thead>
+<tr>
+<th>Microsoft Edge Channel</th>
+<th>Microsoft Edge Version</th>
+<th>Date Released</th>
+<th>Based on Chromium Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Stable</td>
+<td>121.0.2277.113</td>
+<td>2/8/2024</td>
+<td>121.0.6167.160/161</td>
+</tr>
+<tr>
+<td>Extended Stable</td>
+<td>120.0.2210.175</td>
+<td>2/8/2024</td>
+<td>120.0.6099.283</td>
+</tr>
+</tbody>
+</table>
+
+        <br>
+        <b>Mitigations:</b><br>None
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp08/02/2024&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Unknown</td>
+     <td>Unknown</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an <a href="https://www.microsoft.com/en-us/msrc/exploitability-index?rtc=1">exploitability assessment</a> for this vulnerability at the time of original publication.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Not Found</td>
+     <td>Not Found</td>
+     <td>Not Found</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="9"><b>CVE-2024-1284</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Fixed Build</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Edge (Chromium-based)</td>
+                <td><a href="https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnote-stable-channel" >Release Notes (Security Update)</td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>121.0.2277.113</td>
+                <td>No</td>
+                <td>None</td>
+        </tr>        <tr>
+                <td>Microsoft Edge (Chromium-based) Extended Stable</td>
+                <td><a href="" >Release Notes (Security Update)</td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>120.0.2210.175</td>
+                <td>No</td>
+                <td>None</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2024-1284</td>
+     <td>None</td>
+ </tr>
+</table><h1 id="CVE-2024-21399">CVE-2024-21399 - Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
  <thead style="background-color: #ededed">
   <tr>
    <td><b>CVE ID</b></td>
