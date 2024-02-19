@@ -14,13 +14,13 @@
     <cvrf:Version>1.0</cvrf:Version>
     <cvrf:RevisionHistory>
       <cvrf:Revision>
-        <cvrf:Number>9</cvrf:Number>
-        <cvrf:Date>2024-02-14T08:00:00</cvrf:Date>
+        <cvrf:Number>10</cvrf:Number>
+        <cvrf:Date>2024-02-15T08:00:00</cvrf:Date>
         <cvrf:Description>February 2024 Security Updates</cvrf:Description>
       </cvrf:Revision>
     </cvrf:RevisionHistory>
     <cvrf:InitialReleaseDate>2024-02-13T08:00:00</cvrf:InitialReleaseDate>
-    <cvrf:CurrentReleaseDate>2024-02-14T08:00:00</cvrf:CurrentReleaseDate>
+    <cvrf:CurrentReleaseDate>2024-02-15T08:00:00</cvrf:CurrentReleaseDate>
   </cvrf:DocumentTracking>
   <cvrf:DocumentNotes>
     <cvrf:Note Title="Release Notes" Audience="Public" Type="Details" Ordinal="0">&lt;h2 id="this-release-consists-of-the-following-73-microsoft-cves"&gt;This release consists of the following 73 Microsoft CVEs:&lt;/h2&gt;
@@ -1207,7 +1207,7 @@
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;Stable&lt;/td&gt;
-&lt;td&gt;121.0.2277.113&lt;/td&gt;
+&lt;td&gt;121.0.2277.112&lt;/td&gt;
 &lt;td&gt;2/8/2024&lt;/td&gt;
 &lt;td&gt;121.0.6167.160/161&lt;/td&gt;
 &lt;/tr&gt;
@@ -1308,7 +1308,7 @@
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;Stable&lt;/td&gt;
-&lt;td&gt;121.0.2277.113&lt;/td&gt;
+&lt;td&gt;121.0.2277.112&lt;/td&gt;
 &lt;td&gt;2/8/2024&lt;/td&gt;
 &lt;td&gt;121.0.6167.160/161&lt;/td&gt;
 &lt;/tr&gt;
@@ -1810,6 +1810,9 @@
     <vuln:Title>Azure Connected Machine Agent Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is the update for Azure Connected Machine Agents unavailable?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The update was removed from the Microsoft Update Catalog due to reports of installation failing. The update will be re-released when the issue is resolved, and this CVE will be updated at that time.&lt;/p&gt;
+</vuln:Note>
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, user interaction is required (UI:R) and privileges required is Low (PR:L). What does that mean for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;A non-admin local user who has sufficient permissions to create symbolic links on a Windows computer that has Azure Connected Machine Agent installed (or before the agent is installed) could create links from a directory used by the agent to other privileged files on the computer. If the administrator later installs virtual machine extensions on the machine, those files could be deleted.&lt;/p&gt;
 </vuln:Note>
@@ -1868,6 +1871,12 @@
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2024-02-13T08:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2024-02-15T08:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;In the Security Updates table, removed the Article and Download links because the update is not available for Azure Connected Machine Agent. Customers will be notified via a revision to this CVE information when the update becomes available.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
     </vuln:RevisionHistory>
@@ -2078,122 +2087,122 @@
     <vuln:CVSSScoreSets>
       <vuln:ScoreSet>
         <vuln:BaseScore>7.8</vuln:BaseScore>
-        <vuln:TemporalScore>6.8</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:TemporalScore>7.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11568</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>7.8</vuln:BaseScore>
-        <vuln:TemporalScore>6.8</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:TemporalScore>7.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11569</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>7.8</vuln:BaseScore>
-        <vuln:TemporalScore>6.8</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:TemporalScore>7.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11570</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>7.8</vuln:BaseScore>
-        <vuln:TemporalScore>6.8</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:TemporalScore>7.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11571</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>7.8</vuln:BaseScore>
-        <vuln:TemporalScore>6.8</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:TemporalScore>7.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11572</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>7.8</vuln:BaseScore>
-        <vuln:TemporalScore>6.8</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:TemporalScore>7.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11923</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>7.8</vuln:BaseScore>
-        <vuln:TemporalScore>6.8</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:TemporalScore>7.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11924</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>7.8</vuln:BaseScore>
-        <vuln:TemporalScore>6.8</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:TemporalScore>7.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11926</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>7.8</vuln:BaseScore>
-        <vuln:TemporalScore>6.8</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:TemporalScore>7.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11927</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>7.8</vuln:BaseScore>
-        <vuln:TemporalScore>6.8</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:TemporalScore>7.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11929</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>7.8</vuln:BaseScore>
-        <vuln:TemporalScore>6.8</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:TemporalScore>7.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11930</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>7.8</vuln:BaseScore>
-        <vuln:TemporalScore>6.8</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:TemporalScore>7.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11931</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>7.8</vuln:BaseScore>
-        <vuln:TemporalScore>6.8</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:TemporalScore>7.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>12085</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>7.8</vuln:BaseScore>
-        <vuln:TemporalScore>6.8</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:TemporalScore>7.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>12086</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>7.8</vuln:BaseScore>
-        <vuln:TemporalScore>6.8</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:TemporalScore>7.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>12097</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>7.8</vuln:BaseScore>
-        <vuln:TemporalScore>6.8</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:TemporalScore>7.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>12098</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>7.8</vuln:BaseScore>
-        <vuln:TemporalScore>6.8</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:TemporalScore>7.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>12099</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>7.8</vuln:BaseScore>
-        <vuln:TemporalScore>6.8</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:TemporalScore>7.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>12242</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>7.8</vuln:BaseScore>
-        <vuln:TemporalScore>6.8</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:TemporalScore>7.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>12243</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>7.8</vuln:BaseScore>
-        <vuln:TemporalScore>6.8</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:TemporalScore>7.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>12244</vuln:ProductID>
       </vuln:ScoreSet>
     </vuln:CVSSScoreSets>
@@ -2320,6 +2329,12 @@
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2024-02-13T08:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2024-02-15T08:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Updated one or more CVSS scores for the affected products. This is an informational change only.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
     </vuln:RevisionHistory>
@@ -4731,8 +4746,8 @@
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the relationship between Mark of the Web and Windows SmartScreen?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;When you download a file from the internet, Windows adds the zone identifier or Mark of the Web as an NTFS stream to the file. So, when you run the file, Windows SmartScreen checks if there is a zone identifier Alternate Data Stream (ADS) attached to the file. If the ADS indicates ZoneId=3 which means that the file was downloaded from the internet, the SmartScreen does a reputation check. For more information on SmartScreen, please visit &lt;a href="https://learn.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview"&gt;Microsoft Defender SmartScreen overview | Microsoft Learn&lt;/a&gt;.&lt;/p&gt;
 </vuln:Note>
-      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, user interaction is required (UI:R) and privileges required  is low (PR:L). What does that mean for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;An authorized attacker must send the user a malicious file and convince the user to open it.&lt;/p&gt;
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, user interaction is required (UI:R). What interaction would the user have to do?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;An attacker must send the user a malicious file and convince them to open it.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What kind of security feature could be bypassed by successfully exploiting this vulnerability?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;An attacker who successfully exploited this vulnerability could bypass the SmartScreen user experience.&lt;/p&gt;
@@ -5218,6 +5233,12 @@
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2024-02-13T08:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2024-02-15T08:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Updated FAQ information. This is an informational change only.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
     </vuln:RevisionHistory>
@@ -33185,7 +33206,9 @@
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metrics, successful exploitation of this vulnerability could lead to major loss of confidentiality (C:H), integrity (I:H) and availability (A:H). What does that mean for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;An attacker who successfully exploited this vulnerability could relay a user's leaked Net-NTLMv2 hash against a vulnerable Exchange Server and authenticate as the user.&lt;/p&gt;
 </vuln:Note>
-      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;How do I protect myself from this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this CVE listed as being exploited?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This CVE for Exchange Server 2019 Cumulative Update 14 enforces previous mitigations by default. We provided an optional mitigation for NTLM relay attacks in general in August 2022. Microsoft was aware of targeted NTLM relay attacks back in 2023. These were documented by an Outlook CVE (&lt;a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-23397"&gt;CVE-2023-23397&lt;/a&gt;).  Microsoft strongly recommends installing CU14 on Exchange Server 2019 or enabling Extended Protection within your organization as per &lt;a href="https://learn.microsoft.com/en-us/exchange/plan-and-deploy/post-installation-tasks/security-best-practices/exchange-extended-protection?view=exchserver-2019"&gt;Configure Windows Extended Protection in Exchange Server&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How do I protect myself from this vulnerability?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Prior to the Exchange Server 2019 Cumulative Update 14 (CU14) update, Exchange Server did not enable NTLM credentials Relay Protections (called Extended Protection for Authentication or EPA) by default. Without the protection enabled, an attacker can target Exchange Server to relay leaked NTLM credentials from other targets (for example Outlook). Exchange Server 2019 CU14 enables EPA by default on Exchange servers. For more information regarding this update, please refer to the latest &lt;a href="https://techcommunity.microsoft.com/t5/exchange-team-blog/released-2024-h1-cumulative-update-for-exchange-server/ba-p/4047506"&gt;Exchange Blog Post&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;I'm running Microsoft Exchange Server 2016 Cumulative Update 23.  How do I protect myself from this vulnerability?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Microsoft introduced Extended Protection support  as an optional feature for Exchange Server 2016 CU23 with the August 2022 security update (build 15.01.2507.012). We strongly recommend to download the latest security update for Exchange Server 2016 CU23 prior turning Extended Protection by the help of the &lt;a href="https://aka.ms/ExchangeEPScript"&gt;ExchangeExtendedProtectionManagement.ps1&lt;/a&gt; on.&lt;/p&gt;
@@ -33290,6 +33313,12 @@
         <cvrf:Number>1.1</cvrf:Number>
         <cvrf:Date>2024-02-14T08:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Updated the Exploited flag and Exploitability Assessment to indicate that Microsoft was aware of exploitation of this vulnerability. This is an informational change only.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.2</cvrf:Number>
+        <cvrf:Date>2024-02-15T08:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added FAQ information. This is an informational change only.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
       <vuln:Revision>
@@ -33506,122 +33535,122 @@
     <vuln:CVSSScoreSets>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.1</vuln:BaseScore>
-        <vuln:TemporalScore>7.1</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:TemporalScore>7.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11927</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.1</vuln:BaseScore>
-        <vuln:TemporalScore>7.1</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:TemporalScore>7.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11570</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.1</vuln:BaseScore>
-        <vuln:TemporalScore>7.1</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:TemporalScore>7.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11929</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.1</vuln:BaseScore>
-        <vuln:TemporalScore>7.1</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:TemporalScore>7.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11930</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.1</vuln:BaseScore>
-        <vuln:TemporalScore>7.1</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:TemporalScore>7.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11931</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.1</vuln:BaseScore>
-        <vuln:TemporalScore>7.1</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:TemporalScore>7.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11924</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.1</vuln:BaseScore>
-        <vuln:TemporalScore>7.1</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:TemporalScore>7.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>12085</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.1</vuln:BaseScore>
-        <vuln:TemporalScore>7.1</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:TemporalScore>7.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>12086</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.1</vuln:BaseScore>
-        <vuln:TemporalScore>7.1</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:TemporalScore>7.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>12097</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.1</vuln:BaseScore>
-        <vuln:TemporalScore>7.1</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:TemporalScore>7.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11571</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.1</vuln:BaseScore>
-        <vuln:TemporalScore>7.1</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:TemporalScore>7.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>12098</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.1</vuln:BaseScore>
-        <vuln:TemporalScore>7.1</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:TemporalScore>7.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>12099</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.1</vuln:BaseScore>
-        <vuln:TemporalScore>7.1</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:TemporalScore>7.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>12242</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.1</vuln:BaseScore>
-        <vuln:TemporalScore>7.1</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:TemporalScore>7.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11926</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.1</vuln:BaseScore>
-        <vuln:TemporalScore>7.1</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:TemporalScore>7.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11923</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.1</vuln:BaseScore>
-        <vuln:TemporalScore>7.1</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:TemporalScore>7.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>12243</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.1</vuln:BaseScore>
-        <vuln:TemporalScore>7.1</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:TemporalScore>7.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>12244</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.1</vuln:BaseScore>
-        <vuln:TemporalScore>7.1</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:TemporalScore>7.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11569</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.1</vuln:BaseScore>
-        <vuln:TemporalScore>7.1</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:TemporalScore>7.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11568</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
         <vuln:BaseScore>8.1</vuln:BaseScore>
-        <vuln:TemporalScore>7.1</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:TemporalScore>7.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N/E:F/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>11572</vuln:ProductID>
       </vuln:ScoreSet>
     </vuln:CVSSScoreSets>
@@ -33756,6 +33785,12 @@
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2024-02-13T08:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2024-02-15T08:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Updated one or more CVSS scores for the affected products. This is an informational change only.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
     </vuln:RevisionHistory>
