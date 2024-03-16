@@ -14,17 +14,17 @@
     <cvrf:Version>1.0</cvrf:Version>
     <cvrf:RevisionHistory>
       <cvrf:Revision>
-        <cvrf:Number>5</cvrf:Number>
-        <cvrf:Date>2024-03-12T07:00:00</cvrf:Date>
+        <cvrf:Number>9</cvrf:Number>
+        <cvrf:Date>2024-03-15T07:00:00</cvrf:Date>
         <cvrf:Description>March 2024 Security Updates</cvrf:Description>
       </cvrf:Revision>
     </cvrf:RevisionHistory>
     <cvrf:InitialReleaseDate>2024-03-12T07:00:00</cvrf:InitialReleaseDate>
-    <cvrf:CurrentReleaseDate>2024-03-12T07:00:00</cvrf:CurrentReleaseDate>
+    <cvrf:CurrentReleaseDate>2024-03-15T07:00:00</cvrf:CurrentReleaseDate>
   </cvrf:DocumentTracking>
   <cvrf:DocumentNotes>
     <cvrf:Note Title="Release Notes" Audience="Public" Type="Details" Ordinal="0">&lt;h2 id="this-release-consists-of-the-following-61-microsoft-cves"&gt;This release consists of the following 61 Microsoft CVEs:&lt;/h2&gt;
-&lt;table title="This release consists of the following Microsoft CVEs"&gt;
+&lt;table title="This release consists of the following 61 Microsoft CVEs"&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;Tag&lt;/th&gt;
@@ -773,6 +773,11 @@
   </cvrf:DocumentNotes>
   <prod:ProductTree>
     <prod:Branch Type="Vendor" Name="Microsoft">
+      <prod:Branch Type="Product Family" Name="Browser">
+        <prod:FullProductName ProductID="11655">Microsoft Edge (Chromium-based)</prod:FullProductName>
+        <prod:FullProductName ProductID="11815">Microsoft Edge for Android</prod:FullProductName>
+        <prod:FullProductName ProductID="12142">Microsoft Edge (Chromium-based) Extended Stable</prod:FullProductName>
+      </prod:Branch>
       <prod:Branch Type="Product Family" Name="System Center">
         <prod:FullProductName ProductID="11744">Windows Defender Antimalware Platform</prod:FullProductName>
         <prod:FullProductName ProductID="12057">System Center Operations Manager (SCOM) 2019</prod:FullProductName>
@@ -868,10 +873,6 @@
       <prod:Branch Type="Product Family" Name="Microsoft Dynamics">
         <prod:FullProductName ProductID="11921">Microsoft Dynamics 365 (on-premises) version 9.1</prod:FullProductName>
       </prod:Branch>
-      <prod:Branch Type="Product Family" Name="Browser">
-        <prod:FullProductName ProductID="11815">Microsoft Edge for Android</prod:FullProductName>
-        <prod:FullProductName ProductID="11655">Microsoft Edge (Chromium-based)</prod:FullProductName>
-      </prod:Branch>
     </prod:Branch>
     <prod:FullProductName ProductID="10049">Windows Server 2008 R2 for x64-based Systems Service Pack 1 (Server Core installation)</prod:FullProductName>
     <prod:FullProductName ProductID="10051">Windows Server 2008 R2 for x64-based Systems Service Pack 1</prod:FullProductName>
@@ -927,6 +928,7 @@
     <prod:FullProductName ProductID="12099">Windows 10 Version 22H2 for 32-bit Systems</prod:FullProductName>
     <prod:FullProductName ProductID="12129">Microsoft Visual Studio 2022 version 17.4</prod:FullProductName>
     <prod:FullProductName ProductID="12130">.NET 7.0</prod:FullProductName>
+    <prod:FullProductName ProductID="12142">Microsoft Edge (Chromium-based) Extended Stable</prod:FullProductName>
     <prod:FullProductName ProductID="12187">Microsoft Visual Studio 2022 version 17.6</prod:FullProductName>
     <prod:FullProductName ProductID="12191">Microsoft Exchange Server 2019 Cumulative Update 13</prod:FullProductName>
     <prod:FullProductName ProductID="12242">Windows 11 Version 23H2 for ARM64-based Systems</prod:FullProductName>
@@ -951,6 +953,89 @@
     <prod:FullProductName ProductID="9318">Windows Server 2008 for x64-based Systems Service Pack 2</prod:FullProductName>
     <prod:FullProductName ProductID="9344">Windows Server 2008 for x64-based Systems Service Pack 2 (Server Core installation)</prod:FullProductName>
   </prod:ProductTree>
+  <vuln:Vulnerability Ordinal="39">
+    <vuln:Title>Chromium: CVE-2024-2400 Use after free in Performance Manager</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2024"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based). It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Channel&lt;/th&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Stable&lt;/td&gt;
+&lt;td&gt;122.0.2365.92&lt;/td&gt;
+&lt;td&gt;3/14/2024&lt;/td&gt;
+&lt;td&gt;122.0.6261.128/.129&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Extended Stable&lt;/td&gt;
+&lt;td&gt;122.0.2365.92&lt;/td&gt;
+&lt;td&gt;3/14/2024&lt;/td&gt;
+&lt;td&gt;122.0.6261.128/.129&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2024-2400</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>122.0.2365.92</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2024-03-14T20:14:06</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
   <vuln:Vulnerability Ordinal="1">
     <vuln:Title>Microsoft Defender Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
@@ -9669,7 +9754,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="58">
+  <vuln:Vulnerability Ordinal="60">
     <vuln:Title>Windows Standards-Based Storage Management Service Denial of Service Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -9880,7 +9965,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="39">
+  <vuln:Vulnerability Ordinal="40">
     <vuln:Title>Microsoft ODBC Driver Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -10683,7 +10768,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="57">
+  <vuln:Vulnerability Ordinal="59">
     <vuln:Title>Microsoft QUIC Denial of Service Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -11058,7 +11143,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="59">
+  <vuln:Vulnerability Ordinal="61">
     <vuln:Title>Microsoft Exchange Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -11193,7 +11278,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="60">
+  <vuln:Vulnerability Ordinal="62">
     <vuln:Title>Microsoft Office Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -11259,7 +11344,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="61">
+  <vuln:Vulnerability Ordinal="63">
     <vuln:Title>Microsoft Intune Linux Agent Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -11310,7 +11395,7 @@
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>2402</vuln:FixedBuild>
+        <vuln:FixedBuild>1.2402.12</vuln:FixedBuild>
       </vuln:Remediation>
     </vuln:Remediations>
     <vuln:Acknowledgments>
@@ -11326,9 +11411,15 @@
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2024-03-14T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Updated the build numbers.  This is an informational update only.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="62">
+  <vuln:Vulnerability Ordinal="64">
     <vuln:Title>Azure Data Studio Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -11394,7 +11485,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="41">
+  <vuln:Vulnerability Ordinal="42">
     <vuln:Title>Microsoft WDAC OLE DB provider for SQL Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -12200,7 +12291,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="43">
+  <vuln:Vulnerability Ordinal="45">
     <vuln:Title>Microsoft Django Backend for SQL Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -13909,6 +14000,10 @@ More information can be found here: &lt;a href="https://github.com/Microsoft/omi
     </vuln:Remediations>
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
+        <vuln:Name>&lt;a href="https://www.linkedin.com/in/wei-jian-lim-63832410a"&gt;Lim Wei Jian&lt;/a&gt;</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+      <vuln:Acknowledgment>
         <vuln:Name>Artem with &lt;a href="https://gethacked.ca/"&gt;GetHacked Inc.&lt;/a&gt;</vuln:Name>
         <vuln:URL />
       </vuln:Acknowledgment>
@@ -13918,6 +14013,12 @@ More information can be found here: &lt;a href="https://github.com/Microsoft/omi
       </vuln:Acknowledgment>
     </vuln:Acknowledgments>
     <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2024-03-13T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added an acknowledgement. This is an informational change only.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
       <vuln:Revision>
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2024-03-12T07:00:00</cvrf:Date>
@@ -19325,7 +19426,7 @@ More information can be found here: &lt;a href="https://github.com/Microsoft/omi
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="40">
+  <vuln:Vulnerability Ordinal="41">
     <vuln:Title>Windows Cloud Files Mini Filter Driver Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -19471,7 +19572,7 @@ More information can be found here: &lt;a href="https://github.com/Microsoft/omi
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="42">
+  <vuln:Vulnerability Ordinal="43">
     <vuln:Title>Microsoft ODBC Driver Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -20274,7 +20375,7 @@ More information can be found here: &lt;a href="https://github.com/Microsoft/omi
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="45">
+  <vuln:Vulnerability Ordinal="47">
     <vuln:Title>Microsoft WDAC OLE DB provider for SQL Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -21080,7 +21181,7 @@ More information can be found here: &lt;a href="https://github.com/Microsoft/omi
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="47">
+  <vuln:Vulnerability Ordinal="49">
     <vuln:Title>Windows Error Reporting Service Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -21688,7 +21789,7 @@ More information can be found here: &lt;a href="https://github.com/Microsoft/omi
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="48">
+  <vuln:Vulnerability Ordinal="50">
     <vuln:Title>Windows Composite Image File System (CimFS) Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -22052,7 +22153,7 @@ More information can be found here: &lt;a href="https://github.com/Microsoft/omi
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="49">
+  <vuln:Vulnerability Ordinal="51">
     <vuln:Title>Windows Kernel Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -22855,7 +22956,7 @@ More information can be found here: &lt;a href="https://github.com/Microsoft/omi
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="50">
+  <vuln:Vulnerability Ordinal="52">
     <vuln:Title>Windows Kernel Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -23658,7 +23759,7 @@ More information can be found here: &lt;a href="https://github.com/Microsoft/omi
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="51">
+  <vuln:Vulnerability Ordinal="53">
     <vuln:Title>Windows Kernel Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -24461,7 +24562,7 @@ More information can be found here: &lt;a href="https://github.com/Microsoft/omi
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="52">
+  <vuln:Vulnerability Ordinal="54">
     <vuln:Title>Windows Kernel Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -25264,7 +25365,7 @@ More information can be found here: &lt;a href="https://github.com/Microsoft/omi
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="53">
+  <vuln:Vulnerability Ordinal="55">
     <vuln:Title>Windows Kernel Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -26067,7 +26168,7 @@ More information can be found here: &lt;a href="https://github.com/Microsoft/omi
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="54">
+  <vuln:Vulnerability Ordinal="56">
     <vuln:Title>Windows Kernel Denial of Service Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -26867,7 +26968,7 @@ More information can be found here: &lt;a href="https://github.com/Microsoft/omi
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="55">
+  <vuln:Vulnerability Ordinal="57">
     <vuln:Title>Windows Kernel Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -27193,7 +27294,7 @@ More information can be found here: &lt;a href="https://github.com/Microsoft/omi
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="56">
+  <vuln:Vulnerability Ordinal="58">
     <vuln:Title>Windows Compressed Folder Tampering Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -27813,7 +27914,7 @@ More information can be found here: &lt;a href="https://github.com/Microsoft/omi
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="63">
+  <vuln:Vulnerability Ordinal="65">
     <vuln:Title>Outlook for Android Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -27876,7 +27977,7 @@ More information can be found here: &lt;a href="https://github.com/Microsoft/omi
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="44">
+  <vuln:Vulnerability Ordinal="46">
     <vuln:Title>Visual Studio Code Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -27931,7 +28032,7 @@ More information can be found here: &lt;a href="https://github.com/Microsoft/omi
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="46">
+  <vuln:Vulnerability Ordinal="48">
     <vuln:Title>Microsoft Edge for Android Spoofing Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -27943,11 +28044,36 @@ More information can be found here: &lt;a href="https://github.com/Microsoft/omi
 &lt;/ul&gt;
 &lt;p&gt;An attacker would have no way to force users to visit the website. Instead, an attacker would have to convince users to click a link, typically by way of an enticement in an email or instant message, and then convince them to open the specially crafted file.&lt;/p&gt;
 </vuln:Note>
-      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, Confidentiality and Integrity are rated as Low and Availability is None (C:L, I:L, A:N). What does that mean for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;An attacker is only able to comprise files that they were allowed access to as part of their initial privilege but cannot affect the availability of the browser.&lt;/p&gt;
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, successful exploitation of this vulnerability could lead to some loss of integrity (I:L)? What does that mean for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;An attacker who successfully exploited this vulnerability could to cover and spoof elements of the UI. The modified information is only visual.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Is the update for Edge for Android currently available?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;The security update for Edge for Android is not immediately available. The update will be released as soon as possible, and when it is available, customers will be notified via a revision to this CVE information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Channel&lt;/th&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Stable&lt;/td&gt;
+&lt;td&gt;122.0.2365.92&lt;/td&gt;
+&lt;td&gt;3/14/2024&lt;/td&gt;
+&lt;td&gt;122.0.6261.128/.129&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Extended Stable&lt;/td&gt;
+&lt;td&gt;122.0.2365.92&lt;/td&gt;
+&lt;td&gt;3/14/2024&lt;/td&gt;
+&lt;td&gt;122.0.6261.128/.129&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 </vuln:Note>
       <vuln:Note Title="Microsoft Edge for Android" Type="Tag" Ordinal="20">Microsoft Edge for Android</vuln:Note>
       <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
@@ -27960,11 +28086,11 @@ More information can be found here: &lt;a href="https://github.com/Microsoft/omi
     </vuln:ProductStatuses>
     <vuln:Threats>
       <vuln:Threat Type="Impact">
-        <vuln:Description />
+        <vuln:Description>Spoofing</vuln:Description>
         <vuln:ProductID>11815</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
-        <vuln:Description />
+        <vuln:Description>Low</vuln:Description>
         <vuln:ProductID>11815</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Exploit Status">
@@ -27979,7 +28105,17 @@ More information can be found here: &lt;a href="https://github.com/Microsoft/omi
         <vuln:ProductID>11815</vuln:ProductID>
       </vuln:ScoreSet>
     </vuln:CVSSScoreSets>
-    <vuln:Remediations />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11815</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>122.0.2365.92</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
         <vuln:Name>&lt;a href="https://www.linkedin.com/in/hafiizh-7aa6bb31/"&gt;Hafiizh&lt;/a&gt; with https://www.linkedin.com/in/hafiizh-7aa6bb31/</vuln:Name>
@@ -27994,9 +28130,234 @@ More information can be found here: &lt;a href="https://github.com/Microsoft/omi
 </cvrf:Description>
       </vuln:Revision>
       <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2024-03-14T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;The security update 122.0.2365.92 for Edge for Android is now available. See the Security Updates table for more information.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2024-03-07T08:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="44">
+    <vuln:Title>Microsoft Edge (Chromium-based) Security Feature Bypass Vulnerability</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, a successful exploitation could lead to a scope change (S:C). What does this mean for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This vulnerability could lead to a browser sandbox escape.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;How could an attacker exploit this vulnerability via the Network?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;An attacker could host a specially crafted website designed to exploit the vulnerability through Microsoft Edge and then convince a user to view the website. However, in all cases an attacker would have no way to force a user to view the attacker-controlled content. Instead, an attacker would have to convince a user to take action, typically by an enticement in an email or instant message, or by getting the user to open an attachment sent through email.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, successful exploitation of this vulnerability could lead to some loss of Integrity (I:L)? What does that mean for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Attacker is able to bypass Content Security Policy (CSP) and Pop-up blocker this this vulnerability, but cannot modify additional content of the browser itself.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Channel&lt;/th&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Stable&lt;/td&gt;
+&lt;td&gt;122.0.2365.92&lt;/td&gt;
+&lt;td&gt;3/14/2024&lt;/td&gt;
+&lt;td&gt;122.0.6261.128/.129&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Extended Stable&lt;/td&gt;
+&lt;td&gt;122.0.2365.92&lt;/td&gt;
+&lt;td&gt;3/14/2024&lt;/td&gt;
+&lt;td&gt;122.0.6261.128/.129&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2024-26163</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:ProductID>12142</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Security Feature Bypass</vuln:Description>
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Security Feature Bypass</vuln:Description>
+        <vuln:ProductID>12142</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Low</vuln:Description>
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Low</vuln:Description>
+        <vuln:ProductID>12142</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation Less Likely;Older Software Release:Exploitation Less Likely;DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>4.7</vuln:BaseScore>
+        <vuln:TemporalScore>4.1</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:N/I:L/A:N/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>4.7</vuln:BaseScore>
+        <vuln:TemporalScore>4.1</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:N/I:L/A:N/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>12142</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:ProductID>12142</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>122.0.2365.92</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments>
+      <vuln:Acknowledgment>
+        <vuln:Name>&lt;a href="https://twitter.com/shhnjk"&gt;Jun Kokatsu&lt;/a&gt;</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+    </vuln:Acknowledgments>
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2024-03-14T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2024-03-15T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Updated CVE Tag. This is an informational change only.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2024-03-15T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;In the Security Updates table, added Microsoft Edge (Chromium-based) Extended Stable because this versions of Microsoft Edge (Chromium-based) is also affected by this vulnerability. Microsoft strongly recommends that customers running Microsoft Edge (Chromium-based) install the updates to be fully protected from the vulnerability.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="66">
+    <vuln:Title>Microsoft Edge (Chromium-based) Security Feature Bypass Vulnerability</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What kind of security feature could be bypassed by successfully exploiting this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;An attacker who successfully exploited this could bypass the Edge AutoFill Protection feature&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, the attack vector is physical (AV:P), user interaction is required (UI:R), and privileges required is high (PR:H). What does that mean for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;An authorized attacker with physical access to victim's unsecured Android phone must use the autofill feature on Edge Android to access victim's saved credentials.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Channel&lt;/th&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Stable&lt;/td&gt;
+&lt;td&gt;122.0.2365.92&lt;/td&gt;
+&lt;td&gt;3/14/2024&lt;/td&gt;
+&lt;td&gt;122.0.6261.128/.129&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Extended Stable&lt;/td&gt;
+&lt;td&gt;122.0.2365.92&lt;/td&gt;
+&lt;td&gt;3/14/2024&lt;/td&gt;
+&lt;td&gt;122.0.6261.128/.129&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2024-26246</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11815</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Security Feature Bypass</vuln:Description>
+        <vuln:ProductID>11815</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Low</vuln:Description>
+        <vuln:ProductID>11815</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation Less Likely;Older Software Release:Exploitation Less Likely;DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>3.9</vuln:BaseScore>
+        <vuln:TemporalScore>3.4</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:P/AC:L/PR:H/UI:R/S:U/C:H/I:N/A:N/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11815</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11815</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>122.0.2365.92</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments>
+      <vuln:Acknowledgment>
+        <vuln:Name>Vlad</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+    </vuln:Acknowledgments>
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2024-03-14T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2024-03-15T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Updated CVE Tag. This is an informational change only.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
     </vuln:RevisionHistory>
