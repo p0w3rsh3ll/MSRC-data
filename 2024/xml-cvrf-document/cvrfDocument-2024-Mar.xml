@@ -14,13 +14,13 @@
     <cvrf:Version>1.0</cvrf:Version>
     <cvrf:RevisionHistory>
       <cvrf:Revision>
-        <cvrf:Number>9</cvrf:Number>
-        <cvrf:Date>2024-03-15T07:00:00</cvrf:Date>
+        <cvrf:Number>11</cvrf:Number>
+        <cvrf:Date>2024-03-21T07:00:00</cvrf:Date>
         <cvrf:Description>March 2024 Security Updates</cvrf:Description>
       </cvrf:Revision>
     </cvrf:RevisionHistory>
     <cvrf:InitialReleaseDate>2024-03-12T07:00:00</cvrf:InitialReleaseDate>
-    <cvrf:CurrentReleaseDate>2024-03-15T07:00:00</cvrf:CurrentReleaseDate>
+    <cvrf:CurrentReleaseDate>2024-03-21T07:00:00</cvrf:CurrentReleaseDate>
   </cvrf:DocumentTracking>
   <cvrf:DocumentNotes>
     <cvrf:Note Title="Release Notes" Audience="Public" Type="Details" Ordinal="0">&lt;h2 id="this-release-consists-of-the-following-61-microsoft-cves"&gt;This release consists of the following 61 Microsoft CVEs:&lt;/h2&gt;
@@ -795,6 +795,7 @@
       <prod:Branch Type="Product Family" Name="Apps">
         <prod:FullProductName ProductID="12310">Skype for Consumer</prod:FullProductName>
         <prod:FullProductName ProductID="12307">Intune Company Portal for Android</prod:FullProductName>
+        <prod:FullProductName ProductID="12316">Xbox Gaming Services</prod:FullProductName>
         <prod:FullProductName ProductID="12292">Microsoft Authenticator</prod:FullProductName>
         <prod:FullProductName ProductID="10685">Microsoft Outlook for Android</prod:FullProductName>
       </prod:Branch>
@@ -949,6 +950,7 @@
     <prod:FullProductName ProductID="12312">Software for Open Networking in the Cloud (SONiC) 202012</prod:FullProductName>
     <prod:FullProductName ProductID="12313">Software for Open Networking in the Cloud (SONiC) 201911</prod:FullProductName>
     <prod:FullProductName ProductID="12314">Software for Open Networking in the Cloud (SONiC) 201811</prod:FullProductName>
+    <prod:FullProductName ProductID="12316">Xbox Gaming Services</prod:FullProductName>
     <prod:FullProductName ProductID="9312">Windows Server 2008 for 32-bit Systems Service Pack 2</prod:FullProductName>
     <prod:FullProductName ProductID="9318">Windows Server 2008 for x64-based Systems Service Pack 2</prod:FullProductName>
     <prod:FullProductName ProductID="9344">Windows Server 2008 for x64-based Systems Service Pack 2 (Server Core installation)</prod:FullProductName>
@@ -1707,6 +1709,12 @@
         <vuln:RestartRequired>Maybe</vuln:RestartRequired>
         <vuln:SubType>Security Update</vuln:SubType>
         <vuln:FixedBuild>16.0.17328.20136</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5002564</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5002564</vuln:URL>
+        <vuln:ProductID>11961</vuln:ProductID>
+        <vuln:AffectedFiles />
       </vuln:Remediation>
     </vuln:Remediations>
     <vuln:Acknowledgments>
@@ -12352,6 +12360,85 @@
       <vuln:Revision>
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2024-03-12T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="67">
+    <vuln:Title>Xbox Gaming Services Elevation of Privilege Vulnerability</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What privileges could be gained by an attacker who successfully exploited this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;An attacker who successfully exploited this vulnerability could gain SYSTEM privileges.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metrics, the attack vector is local (AV:L) and privilege required is low (PR:L). What does that mean for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;An attacker must have local access to the targeted machine and must be able to create folders and performance traces on the machine, with restricted privileges that normal users have by default.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, a successful exploitation could lead to a scope change (S:C). What does this mean for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;An exploited vulnerability can affect resources beyond the security scope managed by the security authority of the vulnerable component. In this case, the vulnerable component and the impacted component are different and managed by different security authorities.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;How do I get the updated app?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The Microsoft Store will automatically update affected customers. Alternatively, customers can get the update immediately; see &lt;a href="https://support.microsoft.com/en-us/account-billing/get-updates-for-apps-and-games-in-microsoft-store-a1fe19c0-532d-ec47-7035-d1c5a1dd464f"&gt;here&lt;/a&gt; for information about the apps installed on your device.&lt;/p&gt;
+&lt;p&gt;It is possible for customers to disable automatic updates for the Microsoft Store. The Microsoft Store will not automatically install this update for those customers.&lt;/p&gt;
+&lt;p&gt;If you want to get updates immediately, or if you don't have automatic updates enabled, select &lt;strong&gt;Get Updates&lt;/strong&gt;. You can then update apps individually by selecting &lt;strong&gt;Update&lt;/strong&gt; for each app, or you can select &lt;strong&gt;Update all&lt;/strong&gt; to install all updates. We recommend that you select &lt;strong&gt;Update all&lt;/strong&gt; as a best practice to stay protected.&lt;/p&gt;
+&lt;p&gt;Customers using the Microsoft Store for Business and Microsoft Store for Education can get this update through their organizations.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I check if the update is installed?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;App package versions &lt;strong&gt;19.87.13001.0&lt;/strong&gt; and later contain this update.&lt;/p&gt;
+&lt;p&gt;You can check the package version in PowerShell:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;get-appxpackage Microsoft.GamingServices&lt;/code&gt;&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="XBox Crypto Graphic Services" Type="Tag" Ordinal="20">XBox Crypto Graphic Services</vuln:Note>
+      <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2024-28916</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>12316</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>12316</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>12316</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>Publicly Disclosed:Yes;Exploited:No;Latest Software Release:Exploitation More Likely;DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.9</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>12316</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL>ms-windows-store://pdp/?productid=9MWPM2CQNLHN</vuln:URL>
+        <vuln:ProductID>12316</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Maybe</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>19.87.13001.0</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments>
+      <vuln:Acknowledgment>
+        <vuln:Name>&lt;a href="https://twitter.com/filip_dragovic"&gt;Filip Dragović&lt;/a&gt;</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+    </vuln:Acknowledgments>
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2024-03-20T07:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
@@ -28358,6 +28445,44 @@ More information can be found here: &lt;a href="https://github.com/Microsoft/omi
         <cvrf:Number>1.1</cvrf:Number>
         <cvrf:Date>2024-03-15T07:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Updated CVE Tag. This is an informational change only.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="68">
+    <vuln:Title>Microsoft Edge (Chromium-based) Spoofing Vulnerability</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, user interaction is required (UI:R). What interaction would the user have to do?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The user would have to click on a specially crafted URL to be compromised by the attacker.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, successful exploitation of this vulnerability could lead to some loss of integrity (I:L)? What does that mean for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;An attacker who successfully exploited this vulnerability could to cover and spoof elements of the UI. The modified information is only visual.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2024-29057</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected" />
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation Less Likely;Older Software Release:Exploitation Less Likely;DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations />
+    <vuln:Acknowledgments>
+      <vuln:Acknowledgment>
+        <vuln:Name>&lt;a href="https://www.linkedin.com/in/afif-hidayatullah"&gt;Om Apip&lt;/a&gt; with &lt;a href="https://itsec.asia/"&gt;ITSEC Asia&lt;/a&gt;</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+    </vuln:Acknowledgments>
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2024-03-21T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
     </vuln:RevisionHistory>
