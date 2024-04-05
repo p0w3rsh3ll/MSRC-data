@@ -1,0 +1,879 @@
+<cvrf:cvrfdoc xmlns:vuln="http://www.icasi.org/CVRF/schema/vuln/1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cvrf-common="http://www.icasi.org/CVRF/schema/common/1.1" xmlns:prod="http://www.icasi.org/CVRF/schema/prod/1.1" xmlns:scap-core="https://scap.nist.gov/schema/scap-core/1.0" xmlns:cvssv2="https://scap.nist.gov/schema/cvss-v2/1.0" xmlns:cpe-lang="http://cpe.mitre.org/language/2.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:cvrf="http://www.icasi.org/CVRF/schema/cvrf/1.1">
+  <cvrf:DocumentTitle>April 2024 Early Security Updates</cvrf:DocumentTitle>
+  <cvrf:DocumentType>Security Update</cvrf:DocumentType>
+  <cvrf:DocumentPublisher Type="Vendor">
+    <cvrf:ContactDetails>secure@microsoft.com</cvrf:ContactDetails>
+    <cvrf:IssuingAuthority>The Microsoft Security Response Center (MSRC) identifies, monitors, resolves, and responds to security incidents and Microsoft software security vulnerabilities. For more information, see http://www.microsoft.com/security/msrc.</cvrf:IssuingAuthority>
+  </cvrf:DocumentPublisher>
+  <cvrf:DocumentTracking>
+    <cvrf:Identification>
+      <cvrf:ID>2024-Apr</cvrf:ID>
+      <cvrf:Alias>2024-Apr</cvrf:Alias>
+    </cvrf:Identification>
+    <cvrf:Status>Final</cvrf:Status>
+    <cvrf:Version>1.0</cvrf:Version>
+    <cvrf:RevisionHistory>
+      <cvrf:Revision>
+        <cvrf:Number>1</cvrf:Number>
+        <cvrf:Date>2024-04-02T00:00:00</cvrf:Date>
+        <cvrf:Description>April 2024 Early Security Updates</cvrf:Description>
+      </cvrf:Revision>
+    </cvrf:RevisionHistory>
+    <cvrf:InitialReleaseDate>2024-04-04T07:00:00</cvrf:InitialReleaseDate>
+    <cvrf:CurrentReleaseDate>2024-04-02T00:00:00</cvrf:CurrentReleaseDate>
+  </cvrf:DocumentTracking>
+  <cvrf:DocumentNotes>
+    <cvrf:Note Title="Release Notes" Audience="Public" Type="Details" Ordinal="0">&lt;p&gt;4/4/2024 - A new version of Microsoft Edge (Chromium-based) was released&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Channel&lt;/th&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Stable&lt;/td&gt;
+&lt;td&gt;123.0.2420.81&lt;/td&gt;
+&lt;td&gt;4/4/2024&lt;/td&gt;
+&lt;td&gt;123.0.6312.105/.106/.107&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Extended Stable&lt;/td&gt;
+&lt;td&gt;122.0.2365.120&lt;/td&gt;
+&lt;td&gt;4/4/2024&lt;/td&gt;
+&lt;td&gt;122.0.6261.156&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</cvrf:Note>
+    <cvrf:Note Title="Legal Disclaimer" Audience="Public" Type="Legal Disclaimer" Ordinal="1">The information provided in the Microsoft Knowledge Base is provided "as is" without warranty of any kind. Microsoft disclaims all warranties, either express or implied, including the warranties of merchantability and fitness for a particular purpose. In no event shall Microsoft Corporation or its suppliers be liable for any damages whatsoever including direct, indirect, incidental, consequential, loss of business profits or special damages, even if Microsoft Corporation or its suppliers have been advised of the possibility of such damages. Some states do not allow the exclusion or limitation of liability for consequential or incidental damages so the foregoing limitation may not apply.</cvrf:Note>
+  </cvrf:DocumentNotes>
+  <prod:ProductTree>
+    <prod:Branch Type="Vendor" Name="Microsoft">
+      <prod:Branch Type="Product Family" Name="Browser">
+        <prod:FullProductName ProductID="11655">Microsoft Edge (Chromium-based)</prod:FullProductName>
+        <prod:FullProductName ProductID="12142">Microsoft Edge (Chromium-based) Extended Stable</prod:FullProductName>
+      </prod:Branch>
+      <prod:Branch Type="Product Family" Name="Mariner">
+        <prod:FullProductName ProductID="12139">CBL Mariner 2.0 x64</prod:FullProductName>
+        <prod:FullProductName ProductID="12140">CBL Mariner 2.0 ARM</prod:FullProductName>
+      </prod:Branch>
+    </prod:Branch>
+    <prod:FullProductName ProductID="11655">Microsoft Edge (Chromium-based)</prod:FullProductName>
+    <prod:FullProductName ProductID="12139">CBL Mariner 2.0 x64</prod:FullProductName>
+    <prod:FullProductName ProductID="12140">CBL Mariner 2.0 ARM</prod:FullProductName>
+    <prod:FullProductName ProductID="12142">Microsoft Edge (Chromium-based) Extended Stable</prod:FullProductName>
+  </prod:ProductTree>
+  <vuln:Vulnerability Ordinal="0">
+    <vuln:Title />
+    <vuln:Notes>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2019-3816</vuln:Note>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2019-3816</vuln:Note>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="secalert@redhat.com" Type="CNA" Ordinal="30">secalert@redhat.com</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2019-3816</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>7.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N</vuln:Vector>
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>7.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N</vuln:Vector>
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>openwsman</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>libwsman1-2.6.8-13.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>libwsman-devel-2.6.8-13.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openwsman-client-2.6.8-13.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openwsman-server-2.6.8-13.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openwsman-python3-2.6.8-13.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openwsman-perl-2.6.8-13.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openwsman-debuginfo-2.6.8-13.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>2.6.8-13</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>openwsman</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12140</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>libwsman1-2.6.8-13.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>libwsman-devel-2.6.8-13.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openwsman-client-2.6.8-13.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openwsman-server-2.6.8-13.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openwsman-python3-2.6.8-13.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openwsman-perl-2.6.8-13.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openwsman-debuginfo-2.6.8-13.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>2.6.8-13</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2024-04-02T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="1">
+    <vuln:Title />
+    <vuln:Notes>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2019-3833</vuln:Note>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2019-3833</vuln:Note>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="secalert@redhat.com" Type="CNA" Ordinal="30">secalert@redhat.com</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2019-3833</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>7.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>7.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>openwsman</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>libwsman1-2.6.8-13.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>libwsman-devel-2.6.8-13.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openwsman-client-2.6.8-13.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openwsman-server-2.6.8-13.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openwsman-python3-2.6.8-13.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openwsman-perl-2.6.8-13.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openwsman-debuginfo-2.6.8-13.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>2.6.8-13</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>openwsman</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12140</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>libwsman1-2.6.8-13.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>libwsman-devel-2.6.8-13.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openwsman-client-2.6.8-13.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openwsman-server-2.6.8-13.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openwsman-python3-2.6.8-13.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openwsman-perl-2.6.8-13.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openwsman-debuginfo-2.6.8-13.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>2.6.8-13</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2024-04-02T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="4">
+    <vuln:Title>Chromium: CVE-2024-3156 Inappropriate implementation in V8</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2024"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based). It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Channel&lt;/th&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Stable&lt;/td&gt;
+&lt;td&gt;123.0.2420.81&lt;/td&gt;
+&lt;td&gt;4/4/2024&lt;/td&gt;
+&lt;td&gt;123.0.6312.105/.106/.107&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Extended Stable&lt;/td&gt;
+&lt;td&gt;122.0.2365.120&lt;/td&gt;
+&lt;td&gt;4/4/2024&lt;/td&gt;
+&lt;td&gt;122.0.6261.156&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2024-3156</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:ProductID>12142</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12142</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12142</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>123.0.2420.81</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12142</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>122.0.2365.120</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2024-04-04T16:11:24</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="5">
+    <vuln:Title>Chromium: CVE-2024-3158 Use after free in Bookmarks</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2024"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based). It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Channel&lt;/th&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Stable&lt;/td&gt;
+&lt;td&gt;123.0.2420.81&lt;/td&gt;
+&lt;td&gt;4/4/2024&lt;/td&gt;
+&lt;td&gt;123.0.6312.105/.106/.107&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Extended Stable&lt;/td&gt;
+&lt;td&gt;122.0.2365.120&lt;/td&gt;
+&lt;td&gt;4/4/2024&lt;/td&gt;
+&lt;td&gt;122.0.6261.156&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2024-3158</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:ProductID>12142</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12142</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12142</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>123.0.2420.81</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12142</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>122.0.2365.120</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2024-04-04T16:11:28</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="6">
+    <vuln:Title>Chromium: CVE-2024-3159 Out of bounds memory access in V8</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2024"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based). It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Channel&lt;/th&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Stable&lt;/td&gt;
+&lt;td&gt;123.0.2420.81&lt;/td&gt;
+&lt;td&gt;4/4/2024&lt;/td&gt;
+&lt;td&gt;123.0.6312.105/.106/.107&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Extended Stable&lt;/td&gt;
+&lt;td&gt;122.0.2365.120&lt;/td&gt;
+&lt;td&gt;4/4/2024&lt;/td&gt;
+&lt;td&gt;122.0.6261.156&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2024-3159</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:ProductID>12142</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12142</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12142</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>123.0.2420.81</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12142</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>122.0.2365.120</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2024-04-04T16:11:30</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="3">
+    <vuln:Title>Microsoft Edge (Chromium-based) Spoofing Vulnerability</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is the severity for this CVE rated as Moderate, but the CVSS score is higher than normal?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.microsoft.com/en-us/msrc/bounty-new-edge"&gt;Per our severity guidelines&lt;/a&gt;, the amount of user interaction or preconditions required to allow this sort of exploitation downgraded the severity, specifically it says, &amp;quot;If a bug requires more than a click, a key press, or several preconditions, the severity will be downgraded&amp;quot;. The CVSS scoring system doesn't allow for this type of nuance.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, successful exploitation of this vulnerability could lead to some loss of integrity (I:L)? What does that mean for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;An attacker who successfully exploited this vulnerability could cover and spoof elements of the UI. The modified information is only visual.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Channel&lt;/th&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Stable&lt;/td&gt;
+&lt;td&gt;123.0.2420.81&lt;/td&gt;
+&lt;td&gt;4/4/2024&lt;/td&gt;
+&lt;td&gt;123.0.6312.105/.106/.107&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Extended Stable&lt;/td&gt;
+&lt;td&gt;122.0.2365.120&lt;/td&gt;
+&lt;td&gt;4/4/2024&lt;/td&gt;
+&lt;td&gt;122.0.6261.156&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;How could an attacker exploit this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;To exploit this vulnerability, an attacker would first have to log on to the system. An attacker could then run a specially crafted application that could exploit the vulnerability and take control of an affected system.&lt;/p&gt;
+&lt;p&gt;Additionally, an attacker could convince a local user to open a malicious file. The attacker would have to convince the user to click a link, typically by way of an enticement in an email or instant message, and then convince them to open the specially crafted file.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2024-29981</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:ProductID>12142</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Spoofing</vuln:Description>
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Spoofing</vuln:Description>
+        <vuln:ProductID>12142</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Low</vuln:Description>
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Low</vuln:Description>
+        <vuln:ProductID>12142</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation Less Likely;Older Software Release:Exploitation Less Likely;DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>4.3</vuln:BaseScore>
+        <vuln:TemporalScore>3.9</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N/E:P/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>123.0.2420.81</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12142</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>122.0.2365.120</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments>
+      <vuln:Acknowledgment>
+        <vuln:Name>&lt;a href="https://www.linkedin.com/in/hafiizh-7aa6bb31/"&gt;Hafiizh&lt;/a&gt; with https://www.linkedin.com/in/hafiizh-7aa6bb31/</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+    </vuln:Acknowledgments>
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2024-04-04T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="2">
+    <vuln:Title>Microsoft Edge (Chromium-based) Webview2 Spoofing Vulnerability</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, the attack complexity is high (AC:H). What does that mean for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Successful exploitation of this vulnerability requires an attacker to take additional actions prior to exploitation to prepare the target environment.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, a successful exploitation could lead to a scope change (S:C). What does this mean for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability is in the web server, but the malicious scripts execute in the victim’s browser on their machine.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, user interaction is required (UI:R). What interaction would the user have to do?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;An attacker must send the user a malicious file and convince them to open it.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metrics, successful exploitation of this vulnerability could lead to minor loss of confidentiality (C:L), integrity (I:L) and availability (A:N). What does that mean for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;There are limited impact to Confidentiality and Integrity and no Avaibility impact from exploiting this vulnerability. An attacker would need to combine this with other vulnerabilities to perform an attack.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Channel&lt;/th&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Stable&lt;/td&gt;
+&lt;td&gt;123.0.2420.81&lt;/td&gt;
+&lt;td&gt;4/4/2024&lt;/td&gt;
+&lt;td&gt;123.0.6312.105/.106/.107&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Extended Stable&lt;/td&gt;
+&lt;td&gt;122.0.2365.120&lt;/td&gt;
+&lt;td&gt;4/4/2024&lt;/td&gt;
+&lt;td&gt;122.0.6261.156&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2024-29049</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>12142</vuln:ProductID>
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Spoofing</vuln:Description>
+        <vuln:ProductID>12142</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Spoofing</vuln:Description>
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Moderate</vuln:Description>
+        <vuln:ProductID>12142</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Moderate</vuln:Description>
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation Less Likely;Older Software Release:Exploitation Less Likely;DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>4.1</vuln:BaseScore>
+        <vuln:TemporalScore>3.6</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:C/C:L/I:L/A:N/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12142</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>122.0.2365.120</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>123.0.2420.81</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments>
+      <vuln:Acknowledgment>
+        <vuln:Name>Abdan Mukhithon Alkayyis</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+    </vuln:Acknowledgments>
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2024-04-04T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+</cvrf:cvrfdoc>
