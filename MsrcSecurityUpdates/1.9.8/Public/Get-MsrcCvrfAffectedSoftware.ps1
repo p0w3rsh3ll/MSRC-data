@@ -38,7 +38,7 @@ Begin {
     $MaximumSeverityType = 3
     $ThreatsImpactType = 0
     $RemediationsKBType = 2
-    $RemediationsKnownIssue =5
+    $RemediationsKnownIssue = 5
 }
 Process {
     $Vulnerability | ForEach-Object {
