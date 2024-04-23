@@ -14,13 +14,13 @@
     <cvrf:Version>1.0</cvrf:Version>
     <cvrf:RevisionHistory>
       <cvrf:Revision>
-        <cvrf:Number>28</cvrf:Number>
-        <cvrf:Date>2024-04-19T07:00:00</cvrf:Date>
+        <cvrf:Number>4</cvrf:Number>
+        <cvrf:Date>2024-04-15T00:00:00</cvrf:Date>
         <cvrf:Description>April 2024 Security Updates</cvrf:Description>
       </cvrf:Revision>
     </cvrf:RevisionHistory>
     <cvrf:InitialReleaseDate>2024-04-09T07:00:00</cvrf:InitialReleaseDate>
-    <cvrf:CurrentReleaseDate>2024-04-19T07:00:00</cvrf:CurrentReleaseDate>
+    <cvrf:CurrentReleaseDate>2024-04-15T00:00:00</cvrf:CurrentReleaseDate>
   </cvrf:DocumentTracking>
   <cvrf:DocumentNotes>
     <cvrf:Note Title="Release Notes" Audience="Public" Type="Details" Ordinal="0">&lt;h2 id="this-release-consists-of-the-following-149-microsoft-cves"&gt;This release consists of the following 149 Microsoft CVEs:&lt;/h2&gt;
@@ -1975,7 +1975,1269 @@
     <prod:FullProductName ProductID="9318">Windows Server 2008 for x64-based Systems Service Pack 2</prod:FullProductName>
     <prod:FullProductName ProductID="9344">Windows Server 2008 for x64-based Systems Service Pack 2 (Server Core installation)</prod:FullProductName>
   </prod:ProductTree>
-  <vuln:Vulnerability Ordinal="157">
+  <vuln:Vulnerability Ordinal="0">
+    <vuln:Title />
+    <vuln:Notes>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2019-3816</vuln:Note>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2019-3816</vuln:Note>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="secalert@redhat.com" Type="CNA" Ordinal="30">secalert@redhat.com</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2019-3816</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>7.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N</vuln:Vector>
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>7.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N</vuln:Vector>
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>openwsman</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>libwsman1-2.6.8-13.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>libwsman-devel-2.6.8-13.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openwsman-client-2.6.8-13.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openwsman-server-2.6.8-13.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openwsman-python3-2.6.8-13.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openwsman-perl-2.6.8-13.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openwsman-debuginfo-2.6.8-13.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>2.6.8-13</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>openwsman</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12140</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>libwsman1-2.6.8-13.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>libwsman-devel-2.6.8-13.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openwsman-client-2.6.8-13.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openwsman-server-2.6.8-13.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openwsman-python3-2.6.8-13.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openwsman-perl-2.6.8-13.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openwsman-debuginfo-2.6.8-13.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>2.6.8-13</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2024-04-02T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="1">
+    <vuln:Title />
+    <vuln:Notes>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2019-3833</vuln:Note>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2019-3833</vuln:Note>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="secalert@redhat.com" Type="CNA" Ordinal="30">secalert@redhat.com</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2019-3833</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>7.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>7.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>openwsman</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>libwsman1-2.6.8-13.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>libwsman-devel-2.6.8-13.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openwsman-client-2.6.8-13.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openwsman-server-2.6.8-13.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openwsman-python3-2.6.8-13.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openwsman-perl-2.6.8-13.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openwsman-debuginfo-2.6.8-13.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>2.6.8-13</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>openwsman</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12140</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>libwsman1-2.6.8-13.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>libwsman-devel-2.6.8-13.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openwsman-client-2.6.8-13.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openwsman-server-2.6.8-13.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openwsman-python3-2.6.8-13.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openwsman-perl-2.6.8-13.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>openwsman-debuginfo-2.6.8-13.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>2.6.8-13</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2024-04-02T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="8">
+    <vuln:Title />
+    <vuln:Notes>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-24786</vuln:Note>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-24786</vuln:Note>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-24786</vuln:Note>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-24786</vuln:Note>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="security@golang.org" Type="CNA" Ordinal="30">security@golang.org</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2024-24786</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>node-problem-detector</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>node-problem-detector-0.8.17-2.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>node-problem-detector-config-0.8.17-2.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>node-problem-detector-debuginfo-0.8.17-2.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>0.8.17-2</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>opa</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>opa-0.63.0-1.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>opa-debuginfo-0.63.0-1.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>0.63.0-1</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>node-problem-detector</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12140</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>node-problem-detector-0.8.17-2.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>node-problem-detector-config-0.8.17-2.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>node-problem-detector-debuginfo-0.8.17-2.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>0.8.17-2</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>opa</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12140</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>opa-0.63.0-1.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>opa-debuginfo-0.63.0-1.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>0.63.0-1</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2024-03-08T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2024-04-01T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added node-problem-detector to CBL-Mariner 2.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="2">
+    <vuln:Title />
+    <vuln:Notes>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2022-1708</vuln:Note>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2022-1708</vuln:Note>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="secalert@redhat.com" Type="CNA" Ordinal="30">secalert@redhat.com</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2022-1708</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>7.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.5</vuln:BaseScore>
+        <vuln:TemporalScore>7.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>cri-o</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>cri-o-1.21.7-1.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>cri-o-kubeadm-criconfig-1.21.7-1.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>1.21.7-1</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>cri-o</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12140</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>cri-o-1.21.7-1.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>cri-o-kubeadm-criconfig-1.21.7-1.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>1.21.7-1</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2024-04-01T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="3">
+    <vuln:Title />
+    <vuln:Notes>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2023-32324</vuln:Note>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2023-32324</vuln:Note>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="security-advisories@github.com" Type="CNA" Ordinal="30">security-advisories@github.com</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2023-32324</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.5</vuln:BaseScore>
+        <vuln:TemporalScore>5.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.5</vuln:BaseScore>
+        <vuln:TemporalScore>5.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>cups</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-2.3.3op2-7.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-client-2.3.3op2-7.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-devel-2.3.3op2-7.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-libs-2.3.3op2-7.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-filesystem-2.3.3op2-7.cm2.noarch.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-lpd-2.3.3op2-7.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-ipptool-2.3.3op2-7.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-printerapp-2.3.3op2-7.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-debuginfo-2.3.3op2-7.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>2.3.3op2-7</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>cups</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12140</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-2.3.3op2-7.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-client-2.3.3op2-7.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-devel-2.3.3op2-7.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-libs-2.3.3op2-7.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-filesystem-2.3.3op2-7.cm2.noarch.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-lpd-2.3.3op2-7.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-ipptool-2.3.3op2-7.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-printerapp-2.3.3op2-7.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-debuginfo-2.3.3op2-7.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>2.3.3op2-7</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2024-04-01T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="4">
+    <vuln:Title />
+    <vuln:Notes>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2023-34241</vuln:Note>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2023-34241</vuln:Note>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="security-advisories@github.com" Type="CNA" Ordinal="30">security-advisories@github.com</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2023-34241</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.1</vuln:BaseScore>
+        <vuln:TemporalScore>7.1</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.1</vuln:BaseScore>
+        <vuln:TemporalScore>7.1</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>cups</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-2.3.3op2-7.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-client-2.3.3op2-7.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-devel-2.3.3op2-7.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-libs-2.3.3op2-7.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-filesystem-2.3.3op2-7.cm2.noarch.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-lpd-2.3.3op2-7.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-ipptool-2.3.3op2-7.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-printerapp-2.3.3op2-7.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-debuginfo-2.3.3op2-7.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>2.3.3op2-7</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>cups</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12140</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-2.3.3op2-7.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-client-2.3.3op2-7.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-devel-2.3.3op2-7.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-libs-2.3.3op2-7.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-filesystem-2.3.3op2-7.cm2.noarch.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-lpd-2.3.3op2-7.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-ipptool-2.3.3op2-7.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-printerapp-2.3.3op2-7.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-debuginfo-2.3.3op2-7.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>2.3.3op2-7</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2024-04-01T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="5">
+    <vuln:Title />
+    <vuln:Notes>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2023-4504</vuln:Note>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2023-4504</vuln:Note>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="cve@takeonme.org" Type="CNA" Ordinal="30">cve@takeonme.org</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2023-4504</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.0</vuln:BaseScore>
+        <vuln:TemporalScore>7.0</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H</vuln:Vector>
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.0</vuln:BaseScore>
+        <vuln:TemporalScore>7.0</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H</vuln:Vector>
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>cups</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-2.3.3op2-7.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-client-2.3.3op2-7.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-devel-2.3.3op2-7.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-libs-2.3.3op2-7.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-filesystem-2.3.3op2-7.cm2.noarch.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-lpd-2.3.3op2-7.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-ipptool-2.3.3op2-7.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-printerapp-2.3.3op2-7.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-debuginfo-2.3.3op2-7.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>2.3.3op2-7</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>cups</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12140</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-2.3.3op2-7.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-client-2.3.3op2-7.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-devel-2.3.3op2-7.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-libs-2.3.3op2-7.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-filesystem-2.3.3op2-7.cm2.noarch.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-lpd-2.3.3op2-7.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-ipptool-2.3.3op2-7.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-printerapp-2.3.3op2-7.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>cups-debuginfo-2.3.3op2-7.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>2.3.3op2-7</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2024-04-01T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="7">
+    <vuln:Title />
+    <vuln:Notes>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-23722</vuln:Note>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-23722</vuln:Note>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="cve@mitre.org" Type="CNA" Ordinal="30">cve@mitre.org</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2024-23722</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>fluent-bit</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>fluent-bit-2.2.2-1.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>fluent-bit-devel-2.2.2-1.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>fluent-bit-debuginfo-2.2.2-1.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>2.2.2-1</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>fluent-bit</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12140</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>fluent-bit-2.2.2-1.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>fluent-bit-devel-2.2.2-1.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>fluent-bit-debuginfo-2.2.2-1.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>2.2.2-1</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2024-04-01T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="9">
+    <vuln:Title />
+    <vuln:Notes>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-28085</vuln:Note>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-28085</vuln:Note>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="cve@mitre.org" Type="CNA" Ordinal="30">cve@mitre.org</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2024-28085</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>util-linux</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>util-linux-2.37.4-9.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>util-linux-lang-2.37.4-9.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>util-linux-devel-2.37.4-9.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>util-linux-libs-2.37.4-9.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>util-linux-debuginfo-2.37.4-9.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>2.37.4-9</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>util-linux</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12140</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>util-linux-2.37.4-9.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>util-linux-lang-2.37.4-9.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>util-linux-devel-2.37.4-9.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>util-linux-libs-2.37.4-9.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>util-linux-debuginfo-2.37.4-9.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>2.37.4-9</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2024-04-01T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="6">
+    <vuln:Title />
+    <vuln:Notes>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-22189</vuln:Note>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-22189</vuln:Note>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="security-advisories@github.com" Type="CNA" Ordinal="30">security-advisories@github.com</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2024-22189</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>coredns</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>coredns-1.11.1-6.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>1.11.1-6</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>coredns</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12140</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>coredns-1.11.1-6.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>1.11.1-6</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2024-04-15T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="164">
     <vuln:Title>Chromium: CVE-2024-3156 Inappropriate implementation in V8</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2024"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -2076,7 +3338,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="159">
+  <vuln:Vulnerability Ordinal="166">
     <vuln:Title>Chromium: CVE-2024-3158 Use after free in Bookmarks</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2024"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -2177,7 +3439,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="160">
+  <vuln:Vulnerability Ordinal="167">
     <vuln:Title>Chromium: CVE-2024-3159 Out of bounds memory access in V8</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2024"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -2278,7 +3540,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="163">
+  <vuln:Vulnerability Ordinal="170">
     <vuln:Title>Chromium: CVE-2024-3832 Object corruption in V8</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2024"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -2355,7 +3617,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="164">
+  <vuln:Vulnerability Ordinal="171">
     <vuln:Title>Chromium: CVE-2024-3833 Object corruption in WebAssembly</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2024"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -2432,7 +3694,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="176">
+  <vuln:Vulnerability Ordinal="183">
     <vuln:Title>Chromium: CVE-2024-3914 Use after free in V8</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2024"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -2509,7 +3771,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="165">
+  <vuln:Vulnerability Ordinal="172">
     <vuln:Title>Chromium: CVE-2024-3834 Use after free in Downloads</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2024"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -2586,7 +3848,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="166">
+  <vuln:Vulnerability Ordinal="173">
     <vuln:Title>Chromium: CVE-2024-3837 Use after free in QUIC</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2024"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -2663,7 +3925,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="167">
+  <vuln:Vulnerability Ordinal="174">
     <vuln:Title>Chromium: CVE-2024-3838 Inappropriate implementation in Autofill</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2024"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -2740,7 +4002,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="168">
+  <vuln:Vulnerability Ordinal="175">
     <vuln:Title>Chromium: CVE-2024-3839 Out of bounds read in Fonts</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2024"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -2817,7 +4079,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="169">
+  <vuln:Vulnerability Ordinal="176">
     <vuln:Title>Chromium: CVE-2024-3840 Insufficient policy enforcement in Site Isolation</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2024"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -2894,7 +4156,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="170">
+  <vuln:Vulnerability Ordinal="177">
     <vuln:Title>Chromium: CVE-2024-3841 Insufficient data validation in Browser Switcher</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2024"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -2971,7 +4233,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="171">
+  <vuln:Vulnerability Ordinal="178">
     <vuln:Title>Chromium: CVE-2024-3843 Insufficient data validation in Downloads</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2024"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -3048,7 +4310,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="172">
+  <vuln:Vulnerability Ordinal="179">
     <vuln:Title>Chromium: CVE-2024-3844 Inappropriate implementation in Extensions</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2024"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -3125,7 +4387,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="173">
+  <vuln:Vulnerability Ordinal="180">
     <vuln:Title>Chromium: CVE-2024-3845 Inappropriate implementation in Network</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2024"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -3202,7 +4464,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="174">
+  <vuln:Vulnerability Ordinal="181">
     <vuln:Title>Chromium: CVE-2024-3846 Inappropriate implementation in Prompts</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2024"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -3279,7 +4541,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="175">
+  <vuln:Vulnerability Ordinal="182">
     <vuln:Title>Chromium: CVE-2024-3847 Insufficient policy enforcement in WebUI</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2024"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -3356,7 +4618,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="4">
+  <vuln:Vulnerability Ordinal="8">
     <vuln:Title>Secure Boot Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -4005,7 +5267,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="8">
+  <vuln:Vulnerability Ordinal="12">
     <vuln:Title>Secure Boot Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -4139,7 +5401,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="9">
+  <vuln:Vulnerability Ordinal="13">
     <vuln:Title>Secure Boot Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -4273,7 +5535,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="14">
+  <vuln:Vulnerability Ordinal="18">
     <vuln:Title>.NET, .NET Framework, and Visual Studio Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -5678,7 +6940,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="15">
+  <vuln:Vulnerability Ordinal="19">
     <vuln:Title>Azure Compute Gallery Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -5748,7 +7010,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="72">
+  <vuln:Vulnerability Ordinal="78">
     <vuln:Title>Secure Boot Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -6390,7 +7652,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="74">
+  <vuln:Vulnerability Ordinal="80">
     <vuln:Title>Windows rndismp6.sys Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -7183,7 +8445,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="75">
+  <vuln:Vulnerability Ordinal="81">
     <vuln:Title>Windows rndismp6.sys Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -7976,7 +9238,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="76">
+  <vuln:Vulnerability Ordinal="82">
     <vuln:Title>Microsoft Virtual Machine Bus (VMBus) Denial of Service Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -8424,7 +9686,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="77">
+  <vuln:Vulnerability Ordinal="83">
     <vuln:Title>Windows Remote Access Connection Manager Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -8867,7 +10129,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="78">
+  <vuln:Vulnerability Ordinal="84">
     <vuln:Title>libarchive Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -9017,7 +10279,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="22">
+  <vuln:Vulnerability Ordinal="28">
     <vuln:Title>Windows DWM Core Library Information Disclosure  Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -9460,7 +10722,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="24">
+  <vuln:Vulnerability Ordinal="30">
     <vuln:Title>Windows Routing and Remote Access Service (RRAS) Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -10256,7 +11518,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="31">
+  <vuln:Vulnerability Ordinal="37">
     <vuln:Title>Windows Routing and Remote Access Service (RRAS) Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -11052,7 +12314,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="33">
+  <vuln:Vulnerability Ordinal="39">
     <vuln:Title>Windows Routing and Remote Access Service (RRAS) Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -11848,7 +13110,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="19">
+  <vuln:Vulnerability Ordinal="25">
     <vuln:Title>Microsoft Install Service Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -12641,7 +13903,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="58">
+  <vuln:Vulnerability Ordinal="64">
     <vuln:Title>Microsoft Message Queuing (MSMQ) Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -13444,7 +14706,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="101">
+  <vuln:Vulnerability Ordinal="108">
     <vuln:Title>Secure Boot Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -13890,7 +15152,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="103">
+  <vuln:Vulnerability Ordinal="110">
     <vuln:Title>Secure Boot Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -14532,7 +15794,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="102">
+  <vuln:Vulnerability Ordinal="109">
     <vuln:Title>Secure Boot Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -15174,7 +16436,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="100">
+  <vuln:Vulnerability Ordinal="107">
     <vuln:Title>Secure Boot Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -15816,7 +17078,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="104">
+  <vuln:Vulnerability Ordinal="111">
     <vuln:Title>Secure Boot Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -16465,7 +17727,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="80">
+  <vuln:Vulnerability Ordinal="87">
     <vuln:Title>Secure Boot Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -17113,7 +18375,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="82">
+  <vuln:Vulnerability Ordinal="89">
     <vuln:Title>Secure Boot Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -17767,7 +19029,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="84">
+  <vuln:Vulnerability Ordinal="91">
     <vuln:Title>Windows Remote Access Connection Manager Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -18365,7 +19627,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="85">
+  <vuln:Vulnerability Ordinal="92">
     <vuln:Title>Windows Remote Access Connection Manager Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -18963,7 +20225,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="86">
+  <vuln:Vulnerability Ordinal="93">
     <vuln:Title>Secure Boot Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -19605,7 +20867,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="88">
+  <vuln:Vulnerability Ordinal="95">
     <vuln:Title>Microsoft Brokering File System Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -19676,7 +20938,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="89">
+  <vuln:Vulnerability Ordinal="96">
     <vuln:Title>Microsoft OLE DB Driver for SQL Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -19712,7 +20974,7 @@
 &lt;td&gt;5036343&lt;/td&gt;
 &lt;td&gt;Security update for SQL Server 2022 CU12+GDR&lt;/td&gt;
 &lt;td&gt;16.0.4003.1 - 16.0.4115.5&lt;/td&gt;
-&lt;td&gt;[KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
+&lt;td&gt;KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;5035432&lt;/td&gt;
@@ -19933,7 +21195,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="91">
+  <vuln:Vulnerability Ordinal="98">
     <vuln:Title>Microsoft OLE DB Driver for SQL Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -19969,7 +21231,7 @@
 &lt;td&gt;5036343&lt;/td&gt;
 &lt;td&gt;Security update for SQL Server 2022 CU12+GDR&lt;/td&gt;
 &lt;td&gt;16.0.4003.1 - 16.0.4115.5&lt;/td&gt;
-&lt;td&gt;[KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
+&lt;td&gt;KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;5035432&lt;/td&gt;
@@ -20190,7 +21452,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="92">
+  <vuln:Vulnerability Ordinal="99">
     <vuln:Title>Microsoft OLE DB Driver for SQL Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -20226,7 +21488,7 @@
 &lt;td&gt;5036343&lt;/td&gt;
 &lt;td&gt;Security update for SQL Server 2022 CU12+GDR&lt;/td&gt;
 &lt;td&gt;16.0.4003.1 - 16.0.4115.5&lt;/td&gt;
-&lt;td&gt;[KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
+&lt;td&gt;KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;5035432&lt;/td&gt;
@@ -20447,7 +21709,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="93">
+  <vuln:Vulnerability Ordinal="100">
     <vuln:Title>Microsoft OLE DB Driver for SQL Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -20483,7 +21745,7 @@
 &lt;td&gt;5036343&lt;/td&gt;
 &lt;td&gt;Security update for SQL Server 2022 CU12+GDR&lt;/td&gt;
 &lt;td&gt;16.0.4003.1 - 16.0.4115.5&lt;/td&gt;
-&lt;td&gt;[KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
+&lt;td&gt;KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;5035432&lt;/td&gt;
@@ -20704,7 +21966,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="94">
+  <vuln:Vulnerability Ordinal="101">
     <vuln:Title>Microsoft OLE DB Driver for SQL Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -20737,7 +21999,7 @@
 &lt;td&gt;5036343&lt;/td&gt;
 &lt;td&gt;Security update for SQL Server 2022 CU12+GDR&lt;/td&gt;
 &lt;td&gt;16.0.4003.1 - 16.0.4115.5&lt;/td&gt;
-&lt;td&gt;[KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
+&lt;td&gt;KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;5035432&lt;/td&gt;
@@ -20961,7 +22223,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="95">
+  <vuln:Vulnerability Ordinal="102">
     <vuln:Title>Microsoft OLE DB Driver for SQL Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -20994,7 +22256,7 @@
 &lt;td&gt;5036343&lt;/td&gt;
 &lt;td&gt;Security update for SQL Server 2022 CU12+GDR&lt;/td&gt;
 &lt;td&gt;16.0.4003.1 - 16.0.4115.5&lt;/td&gt;
-&lt;td&gt;[KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
+&lt;td&gt;KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;5035432&lt;/td&gt;
@@ -21218,7 +22480,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="96">
+  <vuln:Vulnerability Ordinal="103">
     <vuln:Title>Microsoft OLE DB Driver for SQL Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -21251,7 +22513,7 @@
 &lt;td&gt;5036343&lt;/td&gt;
 &lt;td&gt;Security update for SQL Server 2022 CU12+GDR&lt;/td&gt;
 &lt;td&gt;16.0.4003.1 - 16.0.4115.5&lt;/td&gt;
-&lt;td&gt;[KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
+&lt;td&gt;KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;5035432&lt;/td&gt;
@@ -21475,7 +22737,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="97">
+  <vuln:Vulnerability Ordinal="104">
     <vuln:Title>Microsoft OLE DB Driver for SQL Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -21508,7 +22770,7 @@
 &lt;td&gt;5036343&lt;/td&gt;
 &lt;td&gt;Security update for SQL Server 2022 CU12+GDR&lt;/td&gt;
 &lt;td&gt;16.0.4003.1 - 16.0.4115.5&lt;/td&gt;
-&lt;td&gt;[KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
+&lt;td&gt;KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;5035432&lt;/td&gt;
@@ -21732,7 +22994,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="98">
+  <vuln:Vulnerability Ordinal="105">
     <vuln:Title>Microsoft OLE DB Driver for SQL Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -21765,7 +23027,7 @@
 &lt;td&gt;5036343&lt;/td&gt;
 &lt;td&gt;Security update for SQL Server 2022 CU12+GDR&lt;/td&gt;
 &lt;td&gt;16.0.4003.1 - 16.0.4115.5&lt;/td&gt;
-&lt;td&gt;[KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
+&lt;td&gt;KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;5035432&lt;/td&gt;
@@ -21989,7 +23251,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="109">
+  <vuln:Vulnerability Ordinal="116">
     <vuln:Title>Microsoft ODBC Driver for SQL Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -22022,7 +23284,7 @@
 &lt;td&gt;5036343&lt;/td&gt;
 &lt;td&gt;Security update for SQL Server 2022 CU12+GDR&lt;/td&gt;
 &lt;td&gt;16.0.4003.1 - 16.0.4115.5&lt;/td&gt;
-&lt;td&gt;[KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
+&lt;td&gt;KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;5035432&lt;/td&gt;
@@ -22460,7 +23722,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="111">
+  <vuln:Vulnerability Ordinal="118">
     <vuln:Title>Microsoft ODBC Driver for SQL Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -22493,7 +23755,7 @@
 &lt;td&gt;5036343&lt;/td&gt;
 &lt;td&gt;Security update for SQL Server 2022 CU12+GDR&lt;/td&gt;
 &lt;td&gt;16.0.4003.1 - 16.0.4115.5&lt;/td&gt;
-&lt;td&gt;[KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
+&lt;td&gt;KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;5035432&lt;/td&gt;
@@ -22931,7 +24193,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="112">
+  <vuln:Vulnerability Ordinal="119">
     <vuln:Title>Microsoft ODBC Driver for SQL Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -22964,7 +24226,7 @@
 &lt;td&gt;5036343&lt;/td&gt;
 &lt;td&gt;Security update for SQL Server 2022 CU12+GDR&lt;/td&gt;
 &lt;td&gt;16.0.4003.1 - 16.0.4115.5&lt;/td&gt;
-&lt;td&gt;[KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
+&lt;td&gt;KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;5035432&lt;/td&gt;
@@ -23405,7 +24667,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="116">
+  <vuln:Vulnerability Ordinal="123">
     <vuln:Title>Microsoft ODBC Driver for SQL Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -23435,7 +24697,7 @@
 &lt;td&gt;5036343&lt;/td&gt;
 &lt;td&gt;Security update for SQL Server 2022 CU12+GDR&lt;/td&gt;
 &lt;td&gt;16.0.4003.1 - 16.0.4115.5&lt;/td&gt;
-&lt;td&gt;[KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
+&lt;td&gt;KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;5035432&lt;/td&gt;
@@ -23873,7 +25135,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="119">
+  <vuln:Vulnerability Ordinal="126">
     <vuln:Title>Microsoft OLE DB Driver for SQL Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -23903,7 +25165,7 @@
 &lt;td&gt;5036343&lt;/td&gt;
 &lt;td&gt;Security update for SQL Server 2022 CU12+GDR&lt;/td&gt;
 &lt;td&gt;16.0.4003.1 - 16.0.4115.5&lt;/td&gt;
-&lt;td&gt;[KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
+&lt;td&gt;KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;5035432&lt;/td&gt;
@@ -24127,7 +25389,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="122">
+  <vuln:Vulnerability Ordinal="129">
     <vuln:Title>Microsoft OLE DB Driver for SQL Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -24157,7 +25419,7 @@
 &lt;td&gt;5036343&lt;/td&gt;
 &lt;td&gt;Security update for SQL Server 2022 CU12+GDR&lt;/td&gt;
 &lt;td&gt;16.0.4003.1 - 16.0.4115.5&lt;/td&gt;
-&lt;td&gt;[KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
+&lt;td&gt;KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;5035432&lt;/td&gt;
@@ -24381,7 +25643,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="125">
+  <vuln:Vulnerability Ordinal="132">
     <vuln:Title>Microsoft OLE DB Driver for SQL Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -24411,7 +25673,7 @@
 &lt;td&gt;5036343&lt;/td&gt;
 &lt;td&gt;Security update for SQL Server 2022 CU12+GDR&lt;/td&gt;
 &lt;td&gt;16.0.4003.1 - 16.0.4115.5&lt;/td&gt;
-&lt;td&gt;[KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
+&lt;td&gt;KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;5035432&lt;/td&gt;
@@ -24635,7 +25897,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="126">
+  <vuln:Vulnerability Ordinal="133">
     <vuln:Title>Microsoft ODBC Driver for SQL Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -24668,7 +25930,7 @@
 &lt;td&gt;5036343&lt;/td&gt;
 &lt;td&gt;Security update for SQL Server 2022 CU12+GDR&lt;/td&gt;
 &lt;td&gt;16.0.4003.1 - 16.0.4115.5&lt;/td&gt;
-&lt;td&gt;[KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
+&lt;td&gt;KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;5035432&lt;/td&gt;
@@ -24986,7 +26248,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="128">
+  <vuln:Vulnerability Ordinal="135">
     <vuln:Title>Microsoft OLE DB Driver for SQL Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -25016,7 +26278,7 @@
 &lt;td&gt;5036343&lt;/td&gt;
 &lt;td&gt;Security update for SQL Server 2022 CU12+GDR&lt;/td&gt;
 &lt;td&gt;16.0.4003.1 - 16.0.4115.5&lt;/td&gt;
-&lt;td&gt;[KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
+&lt;td&gt;KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;5035432&lt;/td&gt;
@@ -25243,7 +26505,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="130">
+  <vuln:Vulnerability Ordinal="137">
     <vuln:Title>Microsoft OLE DB Driver for SQL Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -25273,7 +26535,7 @@
 &lt;td&gt;5036343&lt;/td&gt;
 &lt;td&gt;Security update for SQL Server 2022 CU12+GDR&lt;/td&gt;
 &lt;td&gt;16.0.4003.1 - 16.0.4115.5&lt;/td&gt;
-&lt;td&gt;[KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
+&lt;td&gt;KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;5035432&lt;/td&gt;
@@ -25405,7 +26667,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="133">
+  <vuln:Vulnerability Ordinal="140">
     <vuln:Title>Windows Cryptographic Services Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -26205,7 +27467,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="141">
+  <vuln:Vulnerability Ordinal="148">
     <vuln:Title>Azure AI Search Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -26272,7 +27534,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="142">
+  <vuln:Vulnerability Ordinal="149">
     <vuln:Title>Windows Hyper-V Denial of Service Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -26694,7 +27956,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="143">
+  <vuln:Vulnerability Ordinal="150">
     <vuln:Title>Windows Distributed File System (DFS) Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -27118,7 +28380,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="7">
+  <vuln:Vulnerability Ordinal="11">
     <vuln:Title>Azure Private 5G Core Denial of Service Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -27182,7 +28444,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="144">
+  <vuln:Vulnerability Ordinal="151">
     <vuln:Title>Microsoft Edge (Chromium-based) Spoofing Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -27296,7 +28558,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="18">
+  <vuln:Vulnerability Ordinal="23">
     <vuln:Title>Lenovo: CVE-2024-23594 Stack buffer overflow in Lenovo system recovery boot manager</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -27753,7 +29015,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="151">
+  <vuln:Vulnerability Ordinal="158">
     <vuln:Title>SmartScreen Prompt Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -28207,7 +29469,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="153">
+  <vuln:Vulnerability Ordinal="160">
     <vuln:Title>Microsoft Azure Kubernetes Service Confidential Container Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -29133,7 +30395,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="6">
+  <vuln:Vulnerability Ordinal="10">
     <vuln:Title>Remote Procedure Call Runtime Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -29932,7 +31194,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="3">
+  <vuln:Vulnerability Ordinal="7">
     <vuln:Title>BitLocker Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -30578,7 +31840,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="10">
+  <vuln:Vulnerability Ordinal="14">
     <vuln:Title>Windows Kernel Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -31143,7 +32405,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="11">
+  <vuln:Vulnerability Ordinal="15">
     <vuln:Title>Microsoft Defender for IoT Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -31216,7 +32478,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="12">
+  <vuln:Vulnerability Ordinal="16">
     <vuln:Title>Microsoft Defender for IoT Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -31292,7 +32554,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="13">
+  <vuln:Vulnerability Ordinal="17">
     <vuln:Title>Microsoft Defender for IoT Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -31368,7 +32630,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="16">
+  <vuln:Vulnerability Ordinal="20">
     <vuln:Title>Windows Authentication Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -31722,7 +32984,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="28">
+  <vuln:Vulnerability Ordinal="34">
     <vuln:Title>Azure Migrate Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -31789,7 +33051,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="20">
+  <vuln:Vulnerability Ordinal="26">
     <vuln:Title>Secure Boot Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -32390,7 +33652,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="21">
+  <vuln:Vulnerability Ordinal="27">
     <vuln:Title>Secure Boot Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -33036,7 +34298,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="23">
+  <vuln:Vulnerability Ordinal="29">
     <vuln:Title>Secure Boot Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -33690,7 +34952,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="25">
+  <vuln:Vulnerability Ordinal="31">
     <vuln:Title>Secure Boot Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -34338,7 +35600,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="26">
+  <vuln:Vulnerability Ordinal="32">
     <vuln:Title>Windows Kerberos Denial of Service Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -35103,7 +36365,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="27">
+  <vuln:Vulnerability Ordinal="33">
     <vuln:Title>Secure Boot Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -35754,7 +37016,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="29">
+  <vuln:Vulnerability Ordinal="35">
     <vuln:Title>Secure Boot Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -36553,7 +37815,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="30">
+  <vuln:Vulnerability Ordinal="36">
     <vuln:Title>DHCP Server Service Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -36878,7 +38140,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="32">
+  <vuln:Vulnerability Ordinal="38">
     <vuln:Title>DHCP Server Service Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -37148,7 +38410,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="36">
+  <vuln:Vulnerability Ordinal="42">
     <vuln:Title>Microsoft Local Security Authority Subsystem Service Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -37746,7 +39008,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="45">
+  <vuln:Vulnerability Ordinal="51">
     <vuln:Title>Windows Kernel Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -38189,7 +39451,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="46">
+  <vuln:Vulnerability Ordinal="52">
     <vuln:Title>HTTP.sys Denial of Service Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -38629,7 +39891,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="47">
+  <vuln:Vulnerability Ordinal="53">
     <vuln:Title>Windows Mobile Hotspot Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -39193,7 +40455,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="48">
+  <vuln:Vulnerability Ordinal="54">
     <vuln:Title>Windows DNS Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -39381,7 +40643,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="49">
+  <vuln:Vulnerability Ordinal="55">
     <vuln:Title>Windows DNS Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -39569,7 +40831,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="50">
+  <vuln:Vulnerability Ordinal="56">
     <vuln:Title>Windows DNS Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -39757,7 +41019,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="51">
+  <vuln:Vulnerability Ordinal="57">
     <vuln:Title>Windows DNS Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -39945,7 +41207,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="53">
+  <vuln:Vulnerability Ordinal="59">
     <vuln:Title>Windows DNS Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -40133,7 +41395,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="57">
+  <vuln:Vulnerability Ordinal="63">
     <vuln:Title>Windows DNS Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -40321,7 +41583,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="59">
+  <vuln:Vulnerability Ordinal="65">
     <vuln:Title>Windows DNS Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -40509,7 +41771,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="66">
+  <vuln:Vulnerability Ordinal="72">
     <vuln:Title>Win32k Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -41277,7 +42539,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="68">
+  <vuln:Vulnerability Ordinal="74">
     <vuln:Title>Windows USB Print Driver Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -41634,7 +42896,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="71">
+  <vuln:Vulnerability Ordinal="77">
     <vuln:Title>Windows Kerberos Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -42433,7 +43695,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="37">
+  <vuln:Vulnerability Ordinal="43">
     <vuln:Title>Microsoft WDAC OLE DB Provider for SQL Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -43230,7 +44492,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="55">
+  <vuln:Vulnerability Ordinal="61">
     <vuln:Title>Windows CSC Service Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -44023,7 +45285,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="60">
+  <vuln:Vulnerability Ordinal="66">
     <vuln:Title>Proxy Driver Spoofing Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -44829,7 +46091,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="61">
+  <vuln:Vulnerability Ordinal="67">
     <vuln:Title>Windows Update Stack Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -44894,7 +46156,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="62">
+  <vuln:Vulnerability Ordinal="68">
     <vuln:Title>Windows Update Stack Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -44966,7 +46228,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="63">
+  <vuln:Vulnerability Ordinal="69">
     <vuln:Title>Windows Defender Credential Guard Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -45409,7 +46671,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="67">
+  <vuln:Vulnerability Ordinal="73">
     <vuln:Title>Windows Telephony Server Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -46204,7 +47466,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="69">
+  <vuln:Vulnerability Ordinal="75">
     <vuln:Title>Microsoft WDAC OLE DB Provider for SQL Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -46996,7 +48258,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="70">
+  <vuln:Vulnerability Ordinal="76">
     <vuln:Title>Windows SMB Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -47077,7 +48339,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="34">
+  <vuln:Vulnerability Ordinal="40">
     <vuln:Title>Windows Remote Access Connection Manager Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -47674,7 +48936,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="35">
+  <vuln:Vulnerability Ordinal="41">
     <vuln:Title>Microsoft Message Queuing (MSMQ) Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -48469,7 +49731,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="38">
+  <vuln:Vulnerability Ordinal="44">
     <vuln:Title>Windows Remote Access Connection Manager Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -49066,7 +50328,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="39">
+  <vuln:Vulnerability Ordinal="45">
     <vuln:Title>DHCP Server Service Denial of Service Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -49486,7 +50748,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="40">
+  <vuln:Vulnerability Ordinal="46">
     <vuln:Title>Microsoft Brokering File System Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -49558,7 +50820,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="41">
+  <vuln:Vulnerability Ordinal="47">
     <vuln:Title>Microsoft WDAC SQL Server ODBC Driver Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -50356,7 +51618,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="42">
+  <vuln:Vulnerability Ordinal="48">
     <vuln:Title>DHCP Server Service Denial of Service Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -50776,7 +52038,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="43">
+  <vuln:Vulnerability Ordinal="49">
     <vuln:Title>Windows File Server Resource Management Service Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -51221,7 +52483,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="44">
+  <vuln:Vulnerability Ordinal="50">
     <vuln:Title>Windows Remote Access Connection Manager Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -51818,7 +53080,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="52">
+  <vuln:Vulnerability Ordinal="58">
     <vuln:Title>Windows Distributed File System (DFS) Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -52245,7 +53507,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="54">
+  <vuln:Vulnerability Ordinal="60">
     <vuln:Title>Windows Cryptographic Services Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -53037,7 +54299,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="56">
+  <vuln:Vulnerability Ordinal="62">
     <vuln:Title>Windows Telephony Server Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -53824,7 +55086,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="64">
+  <vuln:Vulnerability Ordinal="70">
     <vuln:Title>Windows Telephony Server Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -54421,7 +55683,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="65">
+  <vuln:Vulnerability Ordinal="71">
     <vuln:Title>Secure Boot Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -55226,7 +56488,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="73">
+  <vuln:Vulnerability Ordinal="79">
     <vuln:Title>Microsoft SharePoint Server Spoofing Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -55342,7 +56604,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="79">
+  <vuln:Vulnerability Ordinal="85">
     <vuln:Title>Microsoft Excel Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -55452,7 +56714,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="105">
+  <vuln:Vulnerability Ordinal="112">
     <vuln:Title>Secure Boot Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -56097,7 +57359,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="106">
+  <vuln:Vulnerability Ordinal="113">
     <vuln:Title>Secure Boot Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -56899,7 +58161,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="81">
+  <vuln:Vulnerability Ordinal="88">
     <vuln:Title>Secure Boot Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -57544,7 +58806,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="83">
+  <vuln:Vulnerability Ordinal="90">
     <vuln:Title>Windows Remote Access Connection Manager Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -58142,7 +59404,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="87">
+  <vuln:Vulnerability Ordinal="94">
     <vuln:Title>Microsoft Brokering File System Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -58216,7 +59478,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="90">
+  <vuln:Vulnerability Ordinal="97">
     <vuln:Title>Microsoft Brokering File System Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -58287,7 +59549,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="99">
+  <vuln:Vulnerability Ordinal="106">
     <vuln:Title>Azure Arc-enabled Kubernetes Extension Cluster-Scope Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -58508,7 +59770,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="107">
+  <vuln:Vulnerability Ordinal="114">
     <vuln:Title>Microsoft OLE DB Driver for SQL Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -58538,7 +59800,7 @@
 &lt;td&gt;5036343&lt;/td&gt;
 &lt;td&gt;Security update for SQL Server 2022 CU12+GDR&lt;/td&gt;
 &lt;td&gt;16.0.4003.1 - 16.0.4115.5&lt;/td&gt;
-&lt;td&gt;[KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
+&lt;td&gt;KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;5035432&lt;/td&gt;
@@ -58762,7 +60024,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="108">
+  <vuln:Vulnerability Ordinal="115">
     <vuln:Title>Microsoft OLE DB Driver for SQL Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -58798,7 +60060,7 @@
 &lt;td&gt;5036343&lt;/td&gt;
 &lt;td&gt;Security update for SQL Server 2022 CU12+GDR&lt;/td&gt;
 &lt;td&gt;16.0.4003.1 - 16.0.4115.5&lt;/td&gt;
-&lt;td&gt;[KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
+&lt;td&gt;KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;5035432&lt;/td&gt;
@@ -59023,7 +60285,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="110">
+  <vuln:Vulnerability Ordinal="117">
     <vuln:Title>Microsoft ODBC Driver for SQL Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -59056,7 +60318,7 @@
 &lt;td&gt;5036343&lt;/td&gt;
 &lt;td&gt;Security update for SQL Server 2022 CU12+GDR&lt;/td&gt;
 &lt;td&gt;16.0.4003.1 - 16.0.4115.5&lt;/td&gt;
-&lt;td&gt;[KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
+&lt;td&gt;KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;5035432&lt;/td&gt;
@@ -59514,7 +60776,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="113">
+  <vuln:Vulnerability Ordinal="120">
     <vuln:Title>Microsoft ODBC Driver for SQL Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -59547,7 +60809,7 @@
 &lt;td&gt;5036343&lt;/td&gt;
 &lt;td&gt;Security update for SQL Server 2022 CU12+GDR&lt;/td&gt;
 &lt;td&gt;16.0.4003.1 - 16.0.4115.5&lt;/td&gt;
-&lt;td&gt;[KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
+&lt;td&gt;KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;5035432&lt;/td&gt;
@@ -59985,7 +61247,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="114">
+  <vuln:Vulnerability Ordinal="121">
     <vuln:Title>Microsoft ODBC Driver for SQL Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -60018,7 +61280,7 @@
 &lt;td&gt;5036343&lt;/td&gt;
 &lt;td&gt;Security update for SQL Server 2022 CU12+GDR&lt;/td&gt;
 &lt;td&gt;16.0.4003.1 - 16.0.4115.5&lt;/td&gt;
-&lt;td&gt;[KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
+&lt;td&gt;KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;5035432&lt;/td&gt;
@@ -60460,7 +61722,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="115">
+  <vuln:Vulnerability Ordinal="122">
     <vuln:Title>Microsoft ODBC Driver for SQL Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -60493,7 +61755,7 @@
 &lt;td&gt;5036343&lt;/td&gt;
 &lt;td&gt;Security update for SQL Server 2022 CU12+GDR&lt;/td&gt;
 &lt;td&gt;16.0.4003.1 - 16.0.4115.5&lt;/td&gt;
-&lt;td&gt;[KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
+&lt;td&gt;KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;5035432&lt;/td&gt;
@@ -60935,7 +62197,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="117">
+  <vuln:Vulnerability Ordinal="124">
     <vuln:Title>Microsoft ODBC Driver for SQL Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -60968,7 +62230,7 @@
 &lt;td&gt;5036343&lt;/td&gt;
 &lt;td&gt;Security update for SQL Server 2022 CU12+GDR&lt;/td&gt;
 &lt;td&gt;16.0.4003.1 - 16.0.4115.5&lt;/td&gt;
-&lt;td&gt;[KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
+&lt;td&gt;KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;5035432&lt;/td&gt;
@@ -61406,7 +62668,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="118">
+  <vuln:Vulnerability Ordinal="125">
     <vuln:Title>Microsoft ODBC Driver for SQL Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -61439,7 +62701,7 @@
 &lt;td&gt;5036343&lt;/td&gt;
 &lt;td&gt;Security update for SQL Server 2022 CU12+GDR&lt;/td&gt;
 &lt;td&gt;16.0.4003.1 - 16.0.4115.5&lt;/td&gt;
-&lt;td&gt;[KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
+&lt;td&gt;KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;5035432&lt;/td&gt;
@@ -61877,7 +63139,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="120">
+  <vuln:Vulnerability Ordinal="127">
     <vuln:Title>Microsoft OLE DB Driver for SQL Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -61907,7 +63169,7 @@
 &lt;td&gt;5036343&lt;/td&gt;
 &lt;td&gt;Security update for SQL Server 2022 CU12+GDR&lt;/td&gt;
 &lt;td&gt;16.0.4003.1 - 16.0.4115.5&lt;/td&gt;
-&lt;td&gt;[KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
+&lt;td&gt;KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;5035432&lt;/td&gt;
@@ -62131,7 +63393,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="121">
+  <vuln:Vulnerability Ordinal="128">
     <vuln:Title>Microsoft ODBC Driver for SQL Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -62164,7 +63426,7 @@
 &lt;td&gt;5036343&lt;/td&gt;
 &lt;td&gt;Security update for SQL Server 2022 CU12+GDR&lt;/td&gt;
 &lt;td&gt;16.0.4003.1 - 16.0.4115.5&lt;/td&gt;
-&lt;td&gt;[KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
+&lt;td&gt;KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;5035432&lt;/td&gt;
@@ -62482,7 +63744,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="123">
+  <vuln:Vulnerability Ordinal="130">
     <vuln:Title>Microsoft ODBC Driver for SQL Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -62515,7 +63777,7 @@
 &lt;td&gt;5036343&lt;/td&gt;
 &lt;td&gt;Security update for SQL Server 2022 CU12+GDR&lt;/td&gt;
 &lt;td&gt;16.0.4003.1 - 16.0.4115.5&lt;/td&gt;
-&lt;td&gt;[KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
+&lt;td&gt;KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;5035432&lt;/td&gt;
@@ -62833,7 +64095,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="124">
+  <vuln:Vulnerability Ordinal="131">
     <vuln:Title>Microsoft OLE DB Driver for SQL Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -62863,7 +64125,7 @@
 &lt;td&gt;5036343&lt;/td&gt;
 &lt;td&gt;Security update for SQL Server 2022 CU12+GDR&lt;/td&gt;
 &lt;td&gt;16.0.4003.1 - 16.0.4115.5&lt;/td&gt;
-&lt;td&gt;[KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
+&lt;td&gt;KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;5035432&lt;/td&gt;
@@ -63087,7 +64349,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="127">
+  <vuln:Vulnerability Ordinal="134">
     <vuln:Title>Microsoft OLE DB Driver for SQL Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -63117,7 +64379,7 @@
 &lt;td&gt;5036343&lt;/td&gt;
 &lt;td&gt;Security update for SQL Server 2022 CU12+GDR&lt;/td&gt;
 &lt;td&gt;16.0.4003.1 - 16.0.4115.5&lt;/td&gt;
-&lt;td&gt;[KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
+&lt;td&gt;KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;5035432&lt;/td&gt;
@@ -63341,7 +64603,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="129">
+  <vuln:Vulnerability Ordinal="136">
     <vuln:Title>Microsoft OLE DB Driver for SQL Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -63374,7 +64636,7 @@
 &lt;td&gt;5036343&lt;/td&gt;
 &lt;td&gt;Security update for SQL Server 2022 CU12+GDR&lt;/td&gt;
 &lt;td&gt;16.0.4003.1 - 16.0.4115.5&lt;/td&gt;
-&lt;td&gt;[KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
+&lt;td&gt;KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;5035432&lt;/td&gt;
@@ -63595,7 +64857,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="131">
+  <vuln:Vulnerability Ordinal="138">
     <vuln:Title>Microsoft OLE DB Driver for SQL Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -63625,7 +64887,7 @@
 &lt;td&gt;5036343&lt;/td&gt;
 &lt;td&gt;Security update for SQL Server 2022 CU12+GDR&lt;/td&gt;
 &lt;td&gt;16.0.4003.1 - 16.0.4115.5&lt;/td&gt;
-&lt;td&gt;[KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
+&lt;td&gt;KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;5035432&lt;/td&gt;
@@ -63849,7 +65111,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="132">
+  <vuln:Vulnerability Ordinal="139">
     <vuln:Title>Microsoft Edge (Chromium-based) Webview2 Spoofing Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -63965,7 +65227,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="134">
+  <vuln:Vulnerability Ordinal="141">
     <vuln:Title>Windows Storage Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -64319,7 +65581,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="135">
+  <vuln:Vulnerability Ordinal="142">
     <vuln:Title>Microsoft Defender for IoT Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -64399,7 +65661,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="137">
+  <vuln:Vulnerability Ordinal="144">
     <vuln:Title>Microsoft Defender for IoT Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -64475,7 +65737,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="136">
+  <vuln:Vulnerability Ordinal="143">
     <vuln:Title>Microsoft Defender for IoT Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -64551,7 +65813,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="138">
+  <vuln:Vulnerability Ordinal="145">
     <vuln:Title>Windows Authentication Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -64976,7 +66238,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="139">
+  <vuln:Vulnerability Ordinal="146">
     <vuln:Title>Secure Boot Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -65618,7 +66880,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="140">
+  <vuln:Vulnerability Ordinal="147">
     <vuln:Title>Secure Boot Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -66269,7 +67531,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="5">
+  <vuln:Vulnerability Ordinal="9">
     <vuln:Title>Outlook for Windows Spoofing Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -66339,7 +67601,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="145">
+  <vuln:Vulnerability Ordinal="152">
     <vuln:Title>Microsoft OLE DB Driver for SQL Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -66369,7 +67631,7 @@
 &lt;td&gt;5036343&lt;/td&gt;
 &lt;td&gt;Security update for SQL Server 2022 CU12+GDR&lt;/td&gt;
 &lt;td&gt;16.0.4003.1 - 16.0.4115.5&lt;/td&gt;
-&lt;td&gt;[KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
+&lt;td&gt;KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;5035432&lt;/td&gt;
@@ -66593,7 +67855,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="146">
+  <vuln:Vulnerability Ordinal="153">
     <vuln:Title>Microsoft OLE DB Driver for SQL Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -66623,7 +67885,7 @@
 &lt;td&gt;5036343&lt;/td&gt;
 &lt;td&gt;Security update for SQL Server 2022 CU12+GDR&lt;/td&gt;
 &lt;td&gt;16.0.4003.1 - 16.0.4115.5&lt;/td&gt;
-&lt;td&gt;[KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
+&lt;td&gt;KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;5035432&lt;/td&gt;
@@ -66847,7 +68109,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="147">
+  <vuln:Vulnerability Ordinal="154">
     <vuln:Title>Microsoft OLE DB Driver for SQL Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -66877,7 +68139,7 @@
 &lt;td&gt;5036343&lt;/td&gt;
 &lt;td&gt;Security update for SQL Server 2022 CU12+GDR&lt;/td&gt;
 &lt;td&gt;16.0.4003.1 - 16.0.4115.5&lt;/td&gt;
-&lt;td&gt;[KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
+&lt;td&gt;KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;5035432&lt;/td&gt;
@@ -67105,7 +68367,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="148">
+  <vuln:Vulnerability Ordinal="155">
     <vuln:Title>Microsoft OLE DB Driver for SQL Server Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -67135,7 +68397,7 @@
 &lt;td&gt;5036343&lt;/td&gt;
 &lt;td&gt;Security update for SQL Server 2022 CU12+GDR&lt;/td&gt;
 &lt;td&gt;16.0.4003.1 - 16.0.4115.5&lt;/td&gt;
-&lt;td&gt;[KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
+&lt;td&gt;KB 5033663 - SQL2022 RTM CU12&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;5035432&lt;/td&gt;
@@ -67359,7 +68621,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="149">
+  <vuln:Vulnerability Ordinal="156">
     <vuln:Title>Microsoft Edge for Android (Chromium-based) Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -67452,7 +68714,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="150">
+  <vuln:Vulnerability Ordinal="157">
     <vuln:Title>Microsoft Edge (Chromium-based) Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -67540,7 +68802,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="17">
+  <vuln:Vulnerability Ordinal="22">
     <vuln:Title>Lenovo: CVE-2024-23593 Zero Out Boot Manager and drop to UEFI Shell</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -67993,7 +69255,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="152">
+  <vuln:Vulnerability Ordinal="159">
     <vuln:Title>Azure Monitor Agent Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -68074,7 +69336,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="154">
+  <vuln:Vulnerability Ordinal="161">
     <vuln:Title>Microsoft Edge (Chromium-based) Security Feature Bypass Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -68166,7 +69428,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="155">
+  <vuln:Vulnerability Ordinal="162">
     <vuln:Title>Azure Identity Library for .NET Information Disclosure Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -68236,7 +69498,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="156">
+  <vuln:Vulnerability Ordinal="163">
     <vuln:Title>Azure CycleCloud Elevation of Privilege Vulnerability</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -68303,7 +69565,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="161">
+  <vuln:Vulnerability Ordinal="168">
     <vuln:Title>Chromium: CVE-2024-3515 Use after free in Dawn</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2024"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -68380,7 +69642,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="162">
+  <vuln:Vulnerability Ordinal="169">
     <vuln:Title>Chromium: CVE-2024-3516 Heap buffer overflow in ANGLE</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2024"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -68457,7 +69719,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="158">
+  <vuln:Vulnerability Ordinal="165">
     <vuln:Title>Chromium: CVE-2024-3157 Out of bounds write in Compositing</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2024"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
@@ -68529,284 +69791,6 @@
       <vuln:Revision>
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2024-04-12T15:52:08</cvrf:Date>
-        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
-</cvrf:Description>
-      </vuln:Revision>
-    </vuln:RevisionHistory>
-  </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="0">
-    <vuln:Title />
-    <vuln:Notes>
-      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2019-3816</vuln:Note>
-      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2019-3816</vuln:Note>
-      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
-      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
-      <vuln:Note Title="secalert@redhat.com" Type="CNA" Ordinal="30">secalert@redhat.com</vuln:Note>
-    </vuln:Notes>
-    <vuln:CVE>CVE-2019-3816</vuln:CVE>
-    <vuln:ProductStatuses>
-      <vuln:Status Type="Known Affected">
-        <vuln:ProductID>12139</vuln:ProductID>
-        <vuln:ProductID>12140</vuln:ProductID>
-      </vuln:Status>
-    </vuln:ProductStatuses>
-    <vuln:Threats>
-      <vuln:Threat Type="Impact">
-        <vuln:Description />
-        <vuln:ProductID>12139</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description />
-        <vuln:ProductID>12140</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description />
-        <vuln:ProductID>12139</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description />
-        <vuln:ProductID>12140</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Exploit Status">
-        <vuln:Description>DOS:N/A</vuln:Description>
-      </vuln:Threat>
-    </vuln:Threats>
-    <vuln:CVSSScoreSets>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>7.5</vuln:BaseScore>
-        <vuln:TemporalScore>7.5</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N</vuln:Vector>
-        <vuln:ProductID>12139</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>7.5</vuln:BaseScore>
-        <vuln:TemporalScore>7.5</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N</vuln:Vector>
-        <vuln:ProductID>12140</vuln:ProductID>
-      </vuln:ScoreSet>
-    </vuln:CVSSScoreSets>
-    <vuln:Remediations>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>openwsman</vuln:Description>
-        <vuln:URL />
-        <vuln:ProductID>12139</vuln:ProductID>
-        <vuln:AffectedFiles>
-          <vuln:AffectedFile>
-            <vuln:FileName>libwsman1-2.6.8-13.cm2.x86_64.rpm</vuln:FileName>
-            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
-          </vuln:AffectedFile>
-          <vuln:AffectedFile>
-            <vuln:FileName>libwsman-devel-2.6.8-13.cm2.x86_64.rpm</vuln:FileName>
-            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
-          </vuln:AffectedFile>
-          <vuln:AffectedFile>
-            <vuln:FileName>openwsman-client-2.6.8-13.cm2.x86_64.rpm</vuln:FileName>
-            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
-          </vuln:AffectedFile>
-          <vuln:AffectedFile>
-            <vuln:FileName>openwsman-server-2.6.8-13.cm2.x86_64.rpm</vuln:FileName>
-            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
-          </vuln:AffectedFile>
-          <vuln:AffectedFile>
-            <vuln:FileName>openwsman-python3-2.6.8-13.cm2.x86_64.rpm</vuln:FileName>
-            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
-          </vuln:AffectedFile>
-          <vuln:AffectedFile>
-            <vuln:FileName>openwsman-perl-2.6.8-13.cm2.x86_64.rpm</vuln:FileName>
-            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
-          </vuln:AffectedFile>
-          <vuln:AffectedFile>
-            <vuln:FileName>openwsman-debuginfo-2.6.8-13.cm2.x86_64.rpm</vuln:FileName>
-            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
-          </vuln:AffectedFile>
-        </vuln:AffectedFiles>
-        <vuln:RestartRequired />
-        <vuln:SubType>CBL-Mariner</vuln:SubType>
-        <vuln:FixedBuild>2.6.8-13</vuln:FixedBuild>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>openwsman</vuln:Description>
-        <vuln:URL />
-        <vuln:ProductID>12140</vuln:ProductID>
-        <vuln:AffectedFiles>
-          <vuln:AffectedFile>
-            <vuln:FileName>libwsman1-2.6.8-13.cm2.aarch64.rpm</vuln:FileName>
-            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
-          </vuln:AffectedFile>
-          <vuln:AffectedFile>
-            <vuln:FileName>libwsman-devel-2.6.8-13.cm2.aarch64.rpm</vuln:FileName>
-            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
-          </vuln:AffectedFile>
-          <vuln:AffectedFile>
-            <vuln:FileName>openwsman-client-2.6.8-13.cm2.aarch64.rpm</vuln:FileName>
-            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
-          </vuln:AffectedFile>
-          <vuln:AffectedFile>
-            <vuln:FileName>openwsman-server-2.6.8-13.cm2.aarch64.rpm</vuln:FileName>
-            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
-          </vuln:AffectedFile>
-          <vuln:AffectedFile>
-            <vuln:FileName>openwsman-python3-2.6.8-13.cm2.aarch64.rpm</vuln:FileName>
-            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
-          </vuln:AffectedFile>
-          <vuln:AffectedFile>
-            <vuln:FileName>openwsman-perl-2.6.8-13.cm2.aarch64.rpm</vuln:FileName>
-            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
-          </vuln:AffectedFile>
-          <vuln:AffectedFile>
-            <vuln:FileName>openwsman-debuginfo-2.6.8-13.cm2.aarch64.rpm</vuln:FileName>
-            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
-          </vuln:AffectedFile>
-        </vuln:AffectedFiles>
-        <vuln:RestartRequired />
-        <vuln:SubType>CBL-Mariner</vuln:SubType>
-        <vuln:FixedBuild>2.6.8-13</vuln:FixedBuild>
-      </vuln:Remediation>
-    </vuln:Remediations>
-    <vuln:Acknowledgments />
-    <vuln:RevisionHistory>
-      <vuln:Revision>
-        <cvrf:Number>1.0</cvrf:Number>
-        <cvrf:Date>2024-04-02T00:00:00</cvrf:Date>
-        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
-</cvrf:Description>
-      </vuln:Revision>
-    </vuln:RevisionHistory>
-  </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="1">
-    <vuln:Title />
-    <vuln:Notes>
-      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2019-3833</vuln:Note>
-      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2019-3833</vuln:Note>
-      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
-      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
-      <vuln:Note Title="secalert@redhat.com" Type="CNA" Ordinal="30">secalert@redhat.com</vuln:Note>
-    </vuln:Notes>
-    <vuln:CVE>CVE-2019-3833</vuln:CVE>
-    <vuln:ProductStatuses>
-      <vuln:Status Type="Known Affected">
-        <vuln:ProductID>12139</vuln:ProductID>
-        <vuln:ProductID>12140</vuln:ProductID>
-      </vuln:Status>
-    </vuln:ProductStatuses>
-    <vuln:Threats>
-      <vuln:Threat Type="Impact">
-        <vuln:Description />
-        <vuln:ProductID>12139</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description />
-        <vuln:ProductID>12140</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description />
-        <vuln:ProductID>12139</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description />
-        <vuln:ProductID>12140</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Exploit Status">
-        <vuln:Description>DOS:N/A</vuln:Description>
-      </vuln:Threat>
-    </vuln:Threats>
-    <vuln:CVSSScoreSets>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>7.5</vuln:BaseScore>
-        <vuln:TemporalScore>7.5</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
-        <vuln:ProductID>12139</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>7.5</vuln:BaseScore>
-        <vuln:TemporalScore>7.5</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
-        <vuln:ProductID>12140</vuln:ProductID>
-      </vuln:ScoreSet>
-    </vuln:CVSSScoreSets>
-    <vuln:Remediations>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>openwsman</vuln:Description>
-        <vuln:URL />
-        <vuln:ProductID>12139</vuln:ProductID>
-        <vuln:AffectedFiles>
-          <vuln:AffectedFile>
-            <vuln:FileName>libwsman1-2.6.8-13.cm2.x86_64.rpm</vuln:FileName>
-            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
-          </vuln:AffectedFile>
-          <vuln:AffectedFile>
-            <vuln:FileName>libwsman-devel-2.6.8-13.cm2.x86_64.rpm</vuln:FileName>
-            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
-          </vuln:AffectedFile>
-          <vuln:AffectedFile>
-            <vuln:FileName>openwsman-client-2.6.8-13.cm2.x86_64.rpm</vuln:FileName>
-            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
-          </vuln:AffectedFile>
-          <vuln:AffectedFile>
-            <vuln:FileName>openwsman-server-2.6.8-13.cm2.x86_64.rpm</vuln:FileName>
-            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
-          </vuln:AffectedFile>
-          <vuln:AffectedFile>
-            <vuln:FileName>openwsman-python3-2.6.8-13.cm2.x86_64.rpm</vuln:FileName>
-            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
-          </vuln:AffectedFile>
-          <vuln:AffectedFile>
-            <vuln:FileName>openwsman-perl-2.6.8-13.cm2.x86_64.rpm</vuln:FileName>
-            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
-          </vuln:AffectedFile>
-          <vuln:AffectedFile>
-            <vuln:FileName>openwsman-debuginfo-2.6.8-13.cm2.x86_64.rpm</vuln:FileName>
-            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
-          </vuln:AffectedFile>
-        </vuln:AffectedFiles>
-        <vuln:RestartRequired />
-        <vuln:SubType>CBL-Mariner</vuln:SubType>
-        <vuln:FixedBuild>2.6.8-13</vuln:FixedBuild>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>openwsman</vuln:Description>
-        <vuln:URL />
-        <vuln:ProductID>12140</vuln:ProductID>
-        <vuln:AffectedFiles>
-          <vuln:AffectedFile>
-            <vuln:FileName>libwsman1-2.6.8-13.cm2.aarch64.rpm</vuln:FileName>
-            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
-          </vuln:AffectedFile>
-          <vuln:AffectedFile>
-            <vuln:FileName>libwsman-devel-2.6.8-13.cm2.aarch64.rpm</vuln:FileName>
-            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
-          </vuln:AffectedFile>
-          <vuln:AffectedFile>
-            <vuln:FileName>openwsman-client-2.6.8-13.cm2.aarch64.rpm</vuln:FileName>
-            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
-          </vuln:AffectedFile>
-          <vuln:AffectedFile>
-            <vuln:FileName>openwsman-server-2.6.8-13.cm2.aarch64.rpm</vuln:FileName>
-            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
-          </vuln:AffectedFile>
-          <vuln:AffectedFile>
-            <vuln:FileName>openwsman-python3-2.6.8-13.cm2.aarch64.rpm</vuln:FileName>
-            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
-          </vuln:AffectedFile>
-          <vuln:AffectedFile>
-            <vuln:FileName>openwsman-perl-2.6.8-13.cm2.aarch64.rpm</vuln:FileName>
-            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
-          </vuln:AffectedFile>
-          <vuln:AffectedFile>
-            <vuln:FileName>openwsman-debuginfo-2.6.8-13.cm2.aarch64.rpm</vuln:FileName>
-            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
-          </vuln:AffectedFile>
-        </vuln:AffectedFiles>
-        <vuln:RestartRequired />
-        <vuln:SubType>CBL-Mariner</vuln:SubType>
-        <vuln:FixedBuild>2.6.8-13</vuln:FixedBuild>
-      </vuln:Remediation>
-    </vuln:Remediations>
-    <vuln:Acknowledgments />
-    <vuln:RevisionHistory>
-      <vuln:Revision>
-        <cvrf:Number>1.0</cvrf:Number>
-        <cvrf:Date>2024-04-02T00:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
