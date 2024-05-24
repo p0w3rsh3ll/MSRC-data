@@ -37,8 +37,8 @@ End {
     . (Join-Path (Split-Path (Get-Module -Name MsrcSecurityUpdates -ListAvailable).Path) -ChildPath 'Private\Get-CVRFID.ps1')
     } else {
      # . /home/runner/.local/share/powershell/Modules/MsrcSecurityUpdates/1.9.6/Private/Get-CVRFID.ps1
-     $global:msrcApiUrl     = 'https://api.msrc.microsoft.com/cvrf/v2.0'
-     $global:msrcApiVersion = 'api-version=2016-08-01'
+     $global:msrcApiUrl     = 'https://api.msrc.microsoft.com/cvrf/v3.0'
+     $global:msrcApiVersion = 'api-version=2023-11-01'
      # . "/home/$env:USER/.local/share/powershell/Modules/msrcsecurityupdates/1.9.6/Private/Get-CVRFID.ps1"
      . (Join-Path -Path "$($PSScriptRoot)" -ChildPath 'MsrcSecurityUpdates/1.9.8/Private/Get-CVRFID.ps1')
     }
