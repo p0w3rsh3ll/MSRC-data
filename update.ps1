@@ -60,7 +60,7 @@ End {
          Format-XML -xml $cvrfDocumentXML -indent 2 |
          Out-File -FilePath (Join-Path -Path $Output -ChildPath "cvrfDocument-$($cvrfID).xml") -Encoding utf8
 
-         $cvrfDocument | Get-MsrcVulnerabilityReportHtml -WarningAction SilentlyContinue |
+         $cvrfDocument | Get-MsrcVulnerabilityReportHtml -ExcludeMarinerTag -WarningAction SilentlyContinue |
          Out-File -FilePath (Join-Path -Path $Output -ChildPath "Bulletin-$($cvrfID).html") -Encoding utf8
         }
 
@@ -154,5 +154,4 @@ End {
     }
 
     exit $ExitCode
-
 }
