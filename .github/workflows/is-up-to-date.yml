@@ -7,10 +7,10 @@ jobs:
     build:
       name: Update
       runs-on: ubuntu-latest
+      env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       steps:
         - uses: actions/checkout@v1
-          with:
-            token: ${{ secrets.GITHUB_TOKEN }}
         - name: Update
           run: ./update.ps1
           shell: pwsh
