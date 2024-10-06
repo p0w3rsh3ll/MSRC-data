@@ -127,6 +127,7 @@ End {
              'Update required, online release date: {0}, repo release date: {1}' -f $OnlineReleaseDate,$RepoReleaseDate
              Copy-Item -Path (Join-Path -Path $Output -ChildPath "cvrfDocument-$($cvrfID).xml") -Destination "$($PSScriptRoot)\$((Get-Date).Tostring('yyyy'))\xml-cvrf-document\cvrfDocument-$($cvrfID).xml"
              Copy-Item -Path (Join-Path -Path $Output -ChildPath "Bulletin-$($cvrfID).html") -Destination "$($PSScriptRoot)\$((Get-Date).Tostring('yyyy'))\html-bulletin\Bulletin-$($cvrfID).html"
+<#
              git switch -
              git config user.mail 'p0w3rsh3ll@users.noreply.github.com'
              git config user.name 'p0w3rsh3ll'
@@ -137,7 +138,8 @@ End {
              git add "$($PSScriptRoot)\$((Get-Date).Tostring('yyyy'))"
              git commit -m "Updating $($cvrfID)"
              git push
-             $exitCode =  1
+#>
+             # $exitCode =  1
          } else {
              'No update required, online version: {0}, repo version: {1}' -f $OnlineVer,$RepoVer
              'No update required, online release date: {0}, repo release date: {1}' -f $OnlineReleaseDate,$RepoReleaseDate
@@ -148,8 +150,8 @@ End {
        $exitCode = 1
      }
 
-     if ($RepoReleaseDate) {
-      $content | Where-Object { [datetime]($_.Date) -ge $RepoReleaseDate }
+     if ($content | Where-Object { [datetime]($_.Date) -ge (Get-Date).AddDays(-1)}) {
+      $content | Where-Object { [datetime]($_.Date) -ge (Get-Date).AddDays(-1)}
      } else {
       $content
      }
