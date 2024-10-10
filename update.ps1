@@ -114,10 +114,10 @@ End {
          $RepoCVECount = (([xml](Get-Content -Path "$($PSScriptRoot)\$((Get-Date).Tostring('yyyy'))\xml-cvrf-document\cvrfDocument-$($cvrfID).xml")).cvrfdoc.Vulnerability.CVE).Count
          if ($RepoCVECount -lt ($cvrfDocumentXML.cvrfdoc.Vulnerability.CVE).Count) {
                  'Update required, online CVE count: {0}, repo count: {1}' -f "$(($cvrfDocumentXML.cvrfdoc.Vulnerability.CVE).Count)",$RepoCVECount
-                 $exitCode = 1
+                 # $exitCode = 1
          } else {
                  'No update required, CVE count: {0}, repo count: {1}' -f  "$(($cvrfDocumentXML.cvrfdoc.Vulnerability.CVE).Count)",$RepoCVECount
-                 $exitCode = 0
+                 # $exitCode = 0
          }
      }
 
@@ -152,9 +152,9 @@ End {
 
      if ($content | Where-Object { [datetime]($_.Date) -ge (Get-Date).AddDays(-1)}) {
       $content | Where-Object { [datetime]($_.Date) -ge (Get-Date).AddDays(-1)}
-     } else {
-      $content
-     }
+     } # else {
+     # $content
+     # }
     } else {
      $ExitCode = 0
     }
