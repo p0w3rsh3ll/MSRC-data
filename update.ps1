@@ -150,8 +150,8 @@ End {
        $exitCode = 1
      }
 
-     if ($content | Where-Object { [datetime]($_.Date) -ge (Get-Date).AddDays(-1)}) {
-      $content | Where-Object { [datetime]($_.Date) -ge (Get-Date).AddDays(-1)}
+     if ($content | Where-Object { [datetime]($_.Date) -ge (Get-Date).AddDays(-2)}) {
+      $content | Where-Object { [datetime]($_.Date) -ge (Get-Date).AddDays(-2)}
       $exitCode =  1
      } # else {
      # $content
