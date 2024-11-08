@@ -1,5 +1,5 @@
 <cvrf:cvrfdoc xmlns:vuln="http://www.icasi.org/CVRF/schema/vuln/1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cvrf-common="http://www.icasi.org/CVRF/schema/common/1.1" xmlns:prod="http://www.icasi.org/CVRF/schema/prod/1.1" xmlns:scap-core="https://scap.nist.gov/schema/scap-core/1.0" xmlns:cvssv2="https://scap.nist.gov/schema/cvss-v2/1.0" xmlns:cpe-lang="http://cpe.mitre.org/language/2.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:cvrf="http://www.icasi.org/CVRF/schema/cvrf/1.1">
-  <cvrf:DocumentTitle>Mariner Release Notes</cvrf:DocumentTitle>
+  <cvrf:DocumentTitle>November 2024 Early Security Updates</cvrf:DocumentTitle>
   <cvrf:DocumentType>Security Update</cvrf:DocumentType>
   <cvrf:DocumentPublisher Type="Vendor">
     <cvrf:ContactDetails>secure@microsoft.com</cvrf:ContactDetails>
@@ -14,21 +14,40 @@
     <cvrf:Version>1.0</cvrf:Version>
     <cvrf:RevisionHistory>
       <cvrf:Revision>
-        <cvrf:Number>134</cvrf:Number>
-        <cvrf:Date>2024-11-02T00:00:00</cvrf:Date>
-        <cvrf:Description>Mariner Release Notes</cvrf:Description>
+        <cvrf:Number>138</cvrf:Number>
+        <cvrf:Date>2024-11-07T00:00:00</cvrf:Date>
+        <cvrf:Description>November 2024 Early Security Updates</cvrf:Description>
       </cvrf:Revision>
     </cvrf:RevisionHistory>
-    <cvrf:InitialReleaseDate>2024-11-02T00:00:00</cvrf:InitialReleaseDate>
-    <cvrf:CurrentReleaseDate>2024-11-02T00:00:00</cvrf:CurrentReleaseDate>
+    <cvrf:InitialReleaseDate>2024-11-07T08:00:00</cvrf:InitialReleaseDate>
+    <cvrf:CurrentReleaseDate>2024-11-07T00:00:00</cvrf:CurrentReleaseDate>
   </cvrf:DocumentTracking>
   <cvrf:DocumentNotes>
-    <cvrf:Note Title="Release Notes" Audience="Public" Type="Details" Ordinal="0">&lt;p&gt;Mariner Release notes&lt;/p&gt;
+    <cvrf:Note Title="Release Notes" Audience="Public" Type="Details" Ordinal="0">&lt;p&gt;A new version of Edge was released on November 7th 2024.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date RFAQ-Chromium-11-07-24 Releaseeleased&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;130.0.2849.80&lt;/td&gt;
+&lt;td&gt;11/07/2024&lt;/td&gt;
+&lt;td&gt;130.0.6723.117&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 </cvrf:Note>
     <cvrf:Note Title="Legal Disclaimer" Audience="Public" Type="Legal Disclaimer" Ordinal="1">The information provided in the Microsoft Knowledge Base is provided "as is" without warranty of any kind. Microsoft disclaims all warranties, either express or implied, including the warranties of merchantability and fitness for a particular purpose. In no event shall Microsoft Corporation or its suppliers be liable for any damages whatsoever including direct, indirect, incidental, consequential, loss of business profits or special damages, even if Microsoft Corporation or its suppliers have been advised of the possibility of such damages. Some states do not allow the exclusion or limitation of liability for consequential or incidental damages so the foregoing limitation may not apply.</cvrf:Note>
   </cvrf:DocumentNotes>
   <prod:ProductTree>
     <prod:Branch Type="Vendor" Name="Microsoft">
+      <prod:Branch Type="Product Family" Name="Browser">
+        <prod:FullProductName ProductID="11655">Microsoft Edge (Chromium-based)</prod:FullProductName>
+      </prod:Branch>
       <prod:Branch Type="Product Family" Name="Mariner">
         <prod:FullProductName ProductID="12139">CBL Mariner 2.0 x64</prod:FullProductName>
         <prod:FullProductName ProductID="12140">CBL Mariner 2.0 ARM</prod:FullProductName>
@@ -38,6 +57,7 @@
         <prod:FullProductName ProductID="12138">CBL Mariner 1.0 ARM</prod:FullProductName>
       </prod:Branch>
     </prod:Branch>
+    <prod:FullProductName ProductID="11655" CPE="cpe:2.3:a:microsoft:edge_chromium:*:*:*:*:*:*:*:*">Microsoft Edge (Chromium-based)</prod:FullProductName>
     <prod:FullProductName ProductID="12137" CPE="cpe:2.3:o:microsoft:cbl_mariner:1.0:*:*:*:*:*:*:x64">CBL Mariner 1.0 x64</prod:FullProductName>
     <prod:FullProductName ProductID="12138" CPE="cpe:2.3:o:microsoft:cbl_mariner:1.0:*:*:*:*:*:*:arm">CBL Mariner 1.0 ARM</prod:FullProductName>
     <prod:FullProductName ProductID="12139" CPE="cpe:2.3:o:microsoft:cbl_mariner:2.0:*:*:*:*:*:*:x64">CBL Mariner 2.0 x64</prod:FullProductName>
@@ -45,7 +65,7 @@
     <prod:FullProductName ProductID="12356" CPE="cpe:2.3:o:microsoft:azure_linux:3.0:*:*:*:*:*:*:x664">Azure Linux 3.0 x64</prod:FullProductName>
     <prod:FullProductName ProductID="12357" CPE="cpe:2.3:o:microsoft:azure_linux:3.0:*:*:*:*:*:*:arm">Azure Linux 3.0 ARM</prod:FullProductName>
   </prod:ProductTree>
-  <vuln:Vulnerability Ordinal="22">
+  <vuln:Vulnerability Ordinal="23">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2023-6237</vuln:Note>
@@ -428,7 +448,7 @@ Added openssl to Azure Linux 3.0&lt;/p&gt;
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="20">
+  <vuln:Vulnerability Ordinal="21">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2023-49582</vuln:Note>
@@ -528,7 +548,7 @@ Added openssl to Azure Linux 3.0&lt;/p&gt;
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="37">
+  <vuln:Vulnerability Ordinal="45">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-38588</vuln:Note>
@@ -694,7 +714,7 @@ Added openssl to Azure Linux 3.0&lt;/p&gt;
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="35">
+  <vuln:Vulnerability Ordinal="43">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-38381</vuln:Note>
@@ -1000,7 +1020,7 @@ Added kernel to Azure Linux 3.0&lt;/p&gt;
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="39">
+  <vuln:Vulnerability Ordinal="47">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-42228</vuln:Note>
@@ -1237,7 +1257,7 @@ Added kernel to Azure Linux 3.0&lt;/p&gt;
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="54">
+  <vuln:Vulnerability Ordinal="62">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-8006</vuln:Note>
@@ -1345,7 +1365,7 @@ Added kernel to Azure Linux 3.0&lt;/p&gt;
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="23">
+  <vuln:Vulnerability Ordinal="24">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-24786</vuln:Note>
@@ -2716,6 +2736,81 @@ Added node-problem-detector to Azure Linux 3.0&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
       <vuln:Revision>
+        <cvrf:Number>22.0</cvrf:Number>
+        <cvrf:Date>2024-11-04T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added gh to CBL-Mariner 2.0
+Added terraform to CBL-Mariner 2.0
+Added kubevirt to CBL-Mariner 2.0
+Added application-gateway-kubernetes-ingress to CBL-Mariner 2.0
+Added containerized-data-importer to CBL-Mariner 2.0
+Added keda to CBL-Mariner 2.0
+Added prometheus-adapter to CBL-Mariner 2.0
+Added cf-cli to CBL-Mariner 2.0
+Added influxdb to CBL-Mariner 2.0
+Added libcontainers-common to CBL-Mariner 2.0
+Added git-lfs to CBL-Mariner 2.0
+Added node-problem-detector to CBL-Mariner 2.0
+Added sriov-network-device-plugin to CBL-Mariner 2.0
+Added kured to CBL-Mariner 2.0
+Added cni to Azure Linux 3.0
+Added multus to Azure Linux 3.0
+Added keda to Azure Linux 3.0
+Added kubevirt to Azure Linux 3.0
+Added sriov-network-device-plugin to Azure Linux 3.0
+Added node-problem-detector to Azure Linux 3.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>23.0</cvrf:Number>
+        <cvrf:Date>2024-11-05T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added gh to CBL-Mariner 2.0
+Added terraform to CBL-Mariner 2.0
+Added kubevirt to CBL-Mariner 2.0
+Added application-gateway-kubernetes-ingress to CBL-Mariner 2.0
+Added containerized-data-importer to CBL-Mariner 2.0
+Added keda to CBL-Mariner 2.0
+Added prometheus-adapter to CBL-Mariner 2.0
+Added cf-cli to CBL-Mariner 2.0
+Added influxdb to CBL-Mariner 2.0
+Added libcontainers-common to CBL-Mariner 2.0
+Added git-lfs to CBL-Mariner 2.0
+Added node-problem-detector to CBL-Mariner 2.0
+Added sriov-network-device-plugin to CBL-Mariner 2.0
+Added kured to CBL-Mariner 2.0
+Added cni to Azure Linux 3.0
+Added multus to Azure Linux 3.0
+Added keda to Azure Linux 3.0
+Added kubevirt to Azure Linux 3.0
+Added sriov-network-device-plugin to Azure Linux 3.0
+Added node-problem-detector to Azure Linux 3.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>24.0</cvrf:Number>
+        <cvrf:Date>2024-11-06T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added gh to CBL-Mariner 2.0
+Added terraform to CBL-Mariner 2.0
+Added kubevirt to CBL-Mariner 2.0
+Added application-gateway-kubernetes-ingress to CBL-Mariner 2.0
+Added containerized-data-importer to CBL-Mariner 2.0
+Added keda to CBL-Mariner 2.0
+Added prometheus-adapter to CBL-Mariner 2.0
+Added cf-cli to CBL-Mariner 2.0
+Added influxdb to CBL-Mariner 2.0
+Added libcontainers-common to CBL-Mariner 2.0
+Added git-lfs to CBL-Mariner 2.0
+Added node-problem-detector to CBL-Mariner 2.0
+Added sriov-network-device-plugin to CBL-Mariner 2.0
+Added kured to CBL-Mariner 2.0
+Added cni to Azure Linux 3.0
+Added multus to Azure Linux 3.0
+Added keda to Azure Linux 3.0
+Added kubevirt to Azure Linux 3.0
+Added sriov-network-device-plugin to Azure Linux 3.0
+Added node-problem-detector to Azure Linux 3.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2023-11-08T00:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
@@ -3124,9 +3219,34 @@ Added sriov-network-device-plugin to Azure Linux 3.0
 Added node-problem-detector to Azure Linux 3.0&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>25.0</cvrf:Number>
+        <cvrf:Date>2024-11-07T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added gh to CBL-Mariner 2.0
+Added terraform to CBL-Mariner 2.0
+Added kubevirt to CBL-Mariner 2.0
+Added application-gateway-kubernetes-ingress to CBL-Mariner 2.0
+Added containerized-data-importer to CBL-Mariner 2.0
+Added keda to CBL-Mariner 2.0
+Added prometheus-adapter to CBL-Mariner 2.0
+Added cf-cli to CBL-Mariner 2.0
+Added influxdb to CBL-Mariner 2.0
+Added libcontainers-common to CBL-Mariner 2.0
+Added git-lfs to CBL-Mariner 2.0
+Added node-problem-detector to CBL-Mariner 2.0
+Added sriov-network-device-plugin to CBL-Mariner 2.0
+Added kured to CBL-Mariner 2.0
+Added cni to Azure Linux 3.0
+Added multus to Azure Linux 3.0
+Added keda to Azure Linux 3.0
+Added kubevirt to Azure Linux 3.0
+Added sriov-network-device-plugin to Azure Linux 3.0
+Added node-problem-detector to Azure Linux 3.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="33">
+  <vuln:Vulnerability Ordinal="41">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-34062</vuln:Note>
@@ -3313,6 +3433,24 @@ Added node-problem-detector to Azure Linux 3.0&lt;/p&gt;
       <vuln:Revision>
         <cvrf:Number>19.0</cvrf:Number>
         <cvrf:Date>2024-11-01T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added python-tqdm to CBL-Mariner 2.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>21.0</cvrf:Number>
+        <cvrf:Date>2024-11-04T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added python-tqdm to CBL-Mariner 2.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>22.0</cvrf:Number>
+        <cvrf:Date>2024-11-05T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added python-tqdm to CBL-Mariner 2.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>23.0</cvrf:Number>
+        <cvrf:Date>2024-11-06T00:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Added python-tqdm to CBL-Mariner 2.0&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
@@ -3613,6 +3751,12 @@ Added node-problem-detector to Azure Linux 3.0&lt;/p&gt;
       <vuln:Revision>
         <cvrf:Number>20.0</cvrf:Number>
         <cvrf:Date>2024-11-02T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added python-tqdm to CBL-Mariner 2.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>24.0</cvrf:Number>
+        <cvrf:Date>2024-11-07T00:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Added python-tqdm to CBL-Mariner 2.0&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
@@ -4038,6 +4182,20 @@ Added python2 to CBL-Mariner 1.0&lt;/p&gt;
       <vuln:Revision>
         <cvrf:Number>19.0</cvrf:Number>
         <cvrf:Date>2024-11-01T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added python3 to CBL-Mariner 1.0
+Added python2 to CBL-Mariner 1.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>21.0</cvrf:Number>
+        <cvrf:Date>2024-11-04T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added python3 to CBL-Mariner 1.0
+Added python2 to CBL-Mariner 1.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>23.0</cvrf:Number>
+        <cvrf:Date>2024-11-06T00:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Added python3 to CBL-Mariner 1.0
 Added python2 to CBL-Mariner 1.0&lt;/p&gt;
 </cvrf:Description>
@@ -4569,9 +4727,23 @@ Added python2 to CBL-Mariner 1.0&lt;/p&gt;
 Added python2 to CBL-Mariner 1.0&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>22.0</cvrf:Number>
+        <cvrf:Date>2024-11-05T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added python3 to CBL-Mariner 1.0
+Added python2 to CBL-Mariner 1.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>24.0</cvrf:Number>
+        <cvrf:Date>2024-11-07T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added python3 to CBL-Mariner 1.0
+Added python2 to CBL-Mariner 1.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="38">
+  <vuln:Vulnerability Ordinal="46">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-41098</vuln:Note>
@@ -4808,7 +4980,7 @@ Added kernel to Azure Linux 3.0&lt;/p&gt;
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="43">
+  <vuln:Vulnerability Ordinal="51">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-43853</vuln:Note>
@@ -5113,7 +5285,7 @@ Added kernel to Azure Linux 3.0&lt;/p&gt;
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="58">
+  <vuln:Vulnerability Ordinal="66">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-8927</vuln:Note>
@@ -5429,7 +5601,7 @@ Added kernel to Azure Linux 3.0&lt;/p&gt;
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="50">
+  <vuln:Vulnerability Ordinal="58">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-46863</vuln:Note>
@@ -5595,7 +5767,7 @@ Added kernel to Azure Linux 3.0&lt;/p&gt;
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="27">
+  <vuln:Vulnerability Ordinal="32">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-28182</vuln:Note>
@@ -6078,7 +6250,7 @@ Added nodejs to Azure Linux 3.0&lt;/p&gt;
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="28">
+  <vuln:Vulnerability Ordinal="33">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-31228</vuln:Note>
@@ -6170,7 +6342,7 @@ Added nodejs to Azure Linux 3.0&lt;/p&gt;
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="29">
+  <vuln:Vulnerability Ordinal="34">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-31449</vuln:Note>
@@ -6268,7 +6440,7 @@ Added nodejs to Azure Linux 3.0&lt;/p&gt;
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="25">
+  <vuln:Vulnerability Ordinal="28">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-27282</vuln:Note>
@@ -6557,7 +6729,7 @@ Added ruby to Azure Linux 3.0&lt;/p&gt;
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="53">
+  <vuln:Vulnerability Ordinal="61">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-7383</vuln:Note>
@@ -6774,6 +6946,18 @@ Added ruby to Azure Linux 3.0&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
       <vuln:Revision>
+        <cvrf:Number>21.0</cvrf:Number>
+        <cvrf:Date>2024-11-04T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added libnbd to CBL-Mariner 2.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>22.0</cvrf:Number>
+        <cvrf:Date>2024-11-05T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added libnbd to CBL-Mariner 2.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2024-09-11T00:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
@@ -6836,6 +7020,18 @@ Added ruby to Azure Linux 3.0&lt;/p&gt;
       <vuln:Revision>
         <cvrf:Number>20.0</cvrf:Number>
         <cvrf:Date>2024-11-02T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added libnbd to CBL-Mariner 2.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>23.0</cvrf:Number>
+        <cvrf:Date>2024-11-06T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added libnbd to CBL-Mariner 2.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>24.0</cvrf:Number>
+        <cvrf:Date>2024-11-07T00:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Added libnbd to CBL-Mariner 2.0&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
@@ -7042,6 +7238,24 @@ Added ruby to Azure Linux 3.0&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
       <vuln:Revision>
+        <cvrf:Number>21.0</cvrf:Number>
+        <cvrf:Date>2024-11-04T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added python-wheel to CBL-Mariner 2.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>22.0</cvrf:Number>
+        <cvrf:Date>2024-11-05T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added python-wheel to CBL-Mariner 2.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>23.0</cvrf:Number>
+        <cvrf:Date>2024-11-06T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added python-wheel to CBL-Mariner 2.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2024-09-13T00:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
@@ -7242,6 +7456,12 @@ Added ruby to Azure Linux 3.0&lt;/p&gt;
       <vuln:Revision>
         <cvrf:Number>20.0</cvrf:Number>
         <cvrf:Date>2024-11-02T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added python-wheel to CBL-Mariner 2.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>24.0</cvrf:Number>
+        <cvrf:Date>2024-11-07T00:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Added python-wheel to CBL-Mariner 2.0&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
@@ -7504,6 +7724,18 @@ Added ruby to Azure Linux 3.0&lt;/p&gt;
       <vuln:Revision>
         <cvrf:Number>17.0</cvrf:Number>
         <cvrf:Date>2024-10-30T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added libnbd to CBL-Mariner 2.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>21.0</cvrf:Number>
+        <cvrf:Date>2024-11-04T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added libnbd to CBL-Mariner 2.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>22.0</cvrf:Number>
+        <cvrf:Date>2024-11-05T00:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Added libnbd to CBL-Mariner 2.0&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
@@ -7795,6 +8027,18 @@ Added ruby to Azure Linux 3.0&lt;/p&gt;
         <cvrf:Description>&lt;p&gt;Added libnbd to CBL-Mariner 2.0&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>23.0</cvrf:Number>
+        <cvrf:Date>2024-11-06T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added libnbd to CBL-Mariner 2.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>24.0</cvrf:Number>
+        <cvrf:Date>2024-11-07T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added libnbd to CBL-Mariner 2.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
   <vuln:Vulnerability Ordinal="5">
@@ -8064,6 +8308,24 @@ Added ruby to Azure Linux 3.0&lt;/p&gt;
       <vuln:Revision>
         <cvrf:Number>17.0</cvrf:Number>
         <cvrf:Date>2024-10-30T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added openwsman to CBL-Mariner 2.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>21.0</cvrf:Number>
+        <cvrf:Date>2024-11-04T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added openwsman to CBL-Mariner 2.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>22.0</cvrf:Number>
+        <cvrf:Date>2024-11-05T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added openwsman to CBL-Mariner 2.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>23.0</cvrf:Number>
+        <cvrf:Date>2024-11-06T00:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Added openwsman to CBL-Mariner 2.0&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
@@ -8607,6 +8869,12 @@ Added ruby to Azure Linux 3.0&lt;/p&gt;
         <cvrf:Description>&lt;p&gt;Added openwsman to CBL-Mariner 2.0&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>24.0</cvrf:Number>
+        <cvrf:Date>2024-11-07T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added openwsman to CBL-Mariner 2.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
   <vuln:Vulnerability Ordinal="4">
@@ -8864,6 +9132,18 @@ Added ruby to Azure Linux 3.0&lt;/p&gt;
       <vuln:Revision>
         <cvrf:Number>18.0</cvrf:Number>
         <cvrf:Date>2024-10-31T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added openwsman to CBL-Mariner 2.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>21.0</cvrf:Number>
+        <cvrf:Date>2024-11-04T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added openwsman to CBL-Mariner 2.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>22.0</cvrf:Number>
+        <cvrf:Date>2024-11-05T00:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Added openwsman to CBL-Mariner 2.0&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
@@ -9455,9 +9735,470 @@ Added ruby to Azure Linux 3.0&lt;/p&gt;
         <cvrf:Description>&lt;p&gt;Added openwsman to CBL-Mariner 2.0&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>23.0</cvrf:Number>
+        <cvrf:Date>2024-11-06T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added openwsman to CBL-Mariner 2.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>24.0</cvrf:Number>
+        <cvrf:Date>2024-11-07T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added openwsman to CBL-Mariner 2.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="26">
+  <vuln:Vulnerability Ordinal="35">
+    <vuln:Title />
+    <vuln:Notes>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-31951</vuln:Note>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-31951</vuln:Note>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="cve@mitre.org" Type="CNA" Ordinal="30">cve@mitre.org</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2024-31951</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>6.5</vuln:BaseScore>
+        <vuln:TemporalScore>6.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>6.5</vuln:BaseScore>
+        <vuln:TemporalScore>6.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>frr</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>frr-8.5.5-2.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>8.5.5-2</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>frr</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12140</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>frr-8.5.5-2.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>8.5.5-2</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2024-09-11T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2024-11-05T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added frr to CBL-Mariner 2.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="39">
+    <vuln:Title />
+    <vuln:Notes>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-32607</vuln:Note>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-32607</vuln:Note>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-32607</vuln:Note>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-32607</vuln:Note>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="cve@mitre.org" Type="CNA" Ordinal="30">cve@mitre.org</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2024-32607</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:ProductID>12140</vuln:ProductID>
+        <vuln:ProductID>12356</vuln:ProductID>
+        <vuln:ProductID>12357</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12356</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12357</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12356</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12357</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.7</vuln:BaseScore>
+        <vuln:TemporalScore>5.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:H</vuln:Vector>
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.7</vuln:BaseScore>
+        <vuln:TemporalScore>5.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:H</vuln:Vector>
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.7</vuln:BaseScore>
+        <vuln:TemporalScore>5.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:H</vuln:Vector>
+        <vuln:ProductID>12356</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.7</vuln:BaseScore>
+        <vuln:TemporalScore>5.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:H</vuln:Vector>
+        <vuln:ProductID>12357</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>hdf5</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>hdf5-1.14.4-1.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hdf5-devel-1.14.4-1.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hdf5-static-1.14.4-1.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>1.14.4-1</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>hdf5</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12140</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>hdf5-1.14.4-1.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hdf5-devel-1.14.4-1.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hdf5-static-1.14.4-1.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>1.14.4-1</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>hdf5</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12356</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>hdf5-1.14.4.3-1.azl3.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hdf5-devel-1.14.4.3-1.azl3.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hdf5-static-1.14.4.3-1.azl3.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hdf5-debuginfo-1.14.4.3-1.azl3.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>1.14.4.3-1</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>hdf5</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12357</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>hdf5-1.14.4.3-1.azl3.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hdf5-devel-1.14.4.3-1.azl3.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hdf5-static-1.14.4.3-1.azl3.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hdf5-debuginfo-1.14.4.3-1.azl3.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>1.14.4.3-1</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2024-05-14T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2024-06-30T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2024-11-06T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added hdf5 to CBL-Mariner 2.0
+Added hdf5 to Azure Linux 3.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="30">
+    <vuln:Title />
+    <vuln:Notes>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-27435</vuln:Note>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-27435</vuln:Note>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="416baaa9-dc9f-4396-8d5f-8c081fb06d67" Type="CNA" Ordinal="30">416baaa9-dc9f-4396-8d5f-8c081fb06d67</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2024-27435</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>12356</vuln:ProductID>
+        <vuln:ProductID>12357</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12356</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12357</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12356</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12357</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.5</vuln:BaseScore>
+        <vuln:TemporalScore>5.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>12356</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.5</vuln:BaseScore>
+        <vuln:TemporalScore>5.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>12357</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>hyperv-daemons</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12356</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>hyperv-daemons-6.6.35.1-1.azl3.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hypervkvpd-6.6.35.1-1.azl3.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hypervvssd-6.6.35.1-1.azl3.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hypervfcopyd-6.6.35.1-1.azl3.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hyperv-daemons-license-6.6.35.1-1.azl3.noarch.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hyperv-tools-6.6.35.1-1.azl3.noarch.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hyperv-daemons-debuginfo-6.6.35.1-1.azl3.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>6.6.35.1-1</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>hyperv-daemons</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12357</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>hyperv-daemons-6.6.35.1-1.azl3.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hypervkvpd-6.6.35.1-1.azl3.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hypervvssd-6.6.35.1-1.azl3.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hypervfcopyd-6.6.35.1-1.azl3.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hyperv-daemons-license-6.6.35.1-1.azl3.noarch.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hyperv-tools-6.6.35.1-1.azl3.noarch.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hyperv-daemons-debuginfo-6.6.35.1-1.azl3.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>6.6.35.1-1</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2024-09-11T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2024-11-07T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added hyperv-daemons to Azure Linux 3.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="31">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-28180</vuln:Note>
@@ -10155,7 +10896,7 @@ Added keda to Azure Linux 3.0&lt;/p&gt;
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="16">
+  <vuln:Vulnerability Ordinal="17">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2023-39129</vuln:Note>
@@ -10247,7 +10988,7 @@ Added keda to Azure Linux 3.0&lt;/p&gt;
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="15">
+  <vuln:Vulnerability Ordinal="16">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2023-39128</vuln:Note>
@@ -10339,7 +11080,7 @@ Added keda to Azure Linux 3.0&lt;/p&gt;
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="18">
+  <vuln:Vulnerability Ordinal="19">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2023-3978</vuln:Note>
@@ -11032,7 +11773,7 @@ Added kubevirt to Azure Linux 3.0&lt;/p&gt;
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="42">
+  <vuln:Vulnerability Ordinal="50">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-43829</vuln:Note>
@@ -11198,7 +11939,7 @@ Added kubevirt to Azure Linux 3.0&lt;/p&gt;
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="40">
+  <vuln:Vulnerability Ordinal="48">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-42246</vuln:Note>
@@ -11435,7 +12176,7 @@ Added kernel to Azure Linux 3.0&lt;/p&gt;
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="41">
+  <vuln:Vulnerability Ordinal="49">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-42297</vuln:Note>
@@ -11601,7 +12342,7 @@ Added kernel to Azure Linux 3.0&lt;/p&gt;
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="46">
+  <vuln:Vulnerability Ordinal="54">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-43897</vuln:Note>
@@ -11767,7 +12508,7 @@ Added kernel to Azure Linux 3.0&lt;/p&gt;
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="51">
+  <vuln:Vulnerability Ordinal="59">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-47755</vuln:Note>
@@ -11914,7 +12655,7 @@ Added kernel to Azure Linux 3.0&lt;/p&gt;
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="57">
+  <vuln:Vulnerability Ordinal="65">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-8926</vuln:Note>
@@ -12230,7 +12971,7 @@ Added kernel to Azure Linux 3.0&lt;/p&gt;
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="56">
+  <vuln:Vulnerability Ordinal="64">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-8925</vuln:Note>
@@ -12546,7 +13287,7 @@ Added kernel to Azure Linux 3.0&lt;/p&gt;
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="59">
+  <vuln:Vulnerability Ordinal="67">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-9026</vuln:Note>
@@ -13153,6 +13894,18 @@ Added kernel to Azure Linux 3.0&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
       <vuln:Revision>
+        <cvrf:Number>21.0</cvrf:Number>
+        <cvrf:Date>2024-11-04T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added python2 to CBL-Mariner 1.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>23.0</cvrf:Number>
+        <cvrf:Date>2024-11-06T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added python2 to CBL-Mariner 1.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2020-08-18T00:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
@@ -13692,9 +14445,21 @@ Added kernel to Azure Linux 3.0&lt;/p&gt;
         <cvrf:Description>&lt;p&gt;Added python2 to CBL-Mariner 1.0&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>22.0</cvrf:Number>
+        <cvrf:Date>2024-11-05T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added python2 to CBL-Mariner 1.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>24.0</cvrf:Number>
+        <cvrf:Date>2024-11-07T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added python2 to CBL-Mariner 1.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="19">
+  <vuln:Vulnerability Ordinal="20">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2023-45288</vuln:Note>
@@ -14678,6 +15443,147 @@ Added vitess to Azure Linux 3.0&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
       <vuln:Revision>
+        <cvrf:Number>21.0</cvrf:Number>
+        <cvrf:Date>2024-11-04T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added nmi to CBL-Mariner 2.0
+Added azcopy to CBL-Mariner 2.0
+Added blobfuse2 to CBL-Mariner 2.0
+Added cert-manager to CBL-Mariner 2.0
+Added coredns to CBL-Mariner 2.0
+Added cri-tools to CBL-Mariner 2.0
+Added etcd to CBL-Mariner 2.0
+Added git-lfs to CBL-Mariner 2.0
+Added helm to CBL-Mariner 2.0
+Added kubernetes to CBL-Mariner 2.0
+Added kubevirt to CBL-Mariner 2.0
+Added kured to CBL-Mariner 2.0
+Added moby-cli to CBL-Mariner 2.0
+Added moby-compose to CBL-Mariner 2.0
+Added moby-containerd to CBL-Mariner 2.0
+Added moby-containerd-cc to CBL-Mariner 2.0
+Added moby-engine to CBL-Mariner 2.0
+Added multus to CBL-Mariner 2.0
+Added node-problem-detector to CBL-Mariner 2.0
+Added opa to CBL-Mariner 2.0
+Added skopeo to CBL-Mariner 2.0
+Added sriov-network-device-plugin to CBL-Mariner 2.0
+Added telegraf to CBL-Mariner 2.0
+Added vitess to CBL-Mariner 2.0
+Added jx to Azure Linux 3.0
+Added azcopy to Azure Linux 3.0
+Added blobfuse2 to Azure Linux 3.0
+Added cert-manager to Azure Linux 3.0
+Added coredns to Azure Linux 3.0
+Added cri-tools to Azure Linux 3.0
+Added docker-buildx to Azure Linux 3.0
+Added docker-compose to Azure Linux 3.0
+Added helm to Azure Linux 3.0
+Added ig to Azure Linux 3.0
+Added kubernetes to Azure Linux 3.0
+Added kube-vip-cloud-provider to Azure Linux 3.0
+Added libcontainers-common to Azure Linux 3.0
+Added opa to Azure Linux 3.0
+Added packer to Azure Linux 3.0
+Added prometheus-adapter to Azure Linux 3.0
+Added telegraf to Azure Linux 3.0
+Added vitess to Azure Linux 3.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>22.0</cvrf:Number>
+        <cvrf:Date>2024-11-05T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added nmi to CBL-Mariner 2.0
+Added azcopy to CBL-Mariner 2.0
+Added blobfuse2 to CBL-Mariner 2.0
+Added cert-manager to CBL-Mariner 2.0
+Added coredns to CBL-Mariner 2.0
+Added cri-tools to CBL-Mariner 2.0
+Added etcd to CBL-Mariner 2.0
+Added git-lfs to CBL-Mariner 2.0
+Added helm to CBL-Mariner 2.0
+Added kubernetes to CBL-Mariner 2.0
+Added kubevirt to CBL-Mariner 2.0
+Added kured to CBL-Mariner 2.0
+Added moby-cli to CBL-Mariner 2.0
+Added moby-compose to CBL-Mariner 2.0
+Added moby-containerd to CBL-Mariner 2.0
+Added moby-containerd-cc to CBL-Mariner 2.0
+Added moby-engine to CBL-Mariner 2.0
+Added multus to CBL-Mariner 2.0
+Added node-problem-detector to CBL-Mariner 2.0
+Added opa to CBL-Mariner 2.0
+Added skopeo to CBL-Mariner 2.0
+Added sriov-network-device-plugin to CBL-Mariner 2.0
+Added telegraf to CBL-Mariner 2.0
+Added vitess to CBL-Mariner 2.0
+Added jx to Azure Linux 3.0
+Added azcopy to Azure Linux 3.0
+Added blobfuse2 to Azure Linux 3.0
+Added cert-manager to Azure Linux 3.0
+Added coredns to Azure Linux 3.0
+Added cri-tools to Azure Linux 3.0
+Added docker-buildx to Azure Linux 3.0
+Added docker-compose to Azure Linux 3.0
+Added helm to Azure Linux 3.0
+Added ig to Azure Linux 3.0
+Added kubernetes to Azure Linux 3.0
+Added kube-vip-cloud-provider to Azure Linux 3.0
+Added libcontainers-common to Azure Linux 3.0
+Added opa to Azure Linux 3.0
+Added packer to Azure Linux 3.0
+Added prometheus-adapter to Azure Linux 3.0
+Added telegraf to Azure Linux 3.0
+Added vitess to Azure Linux 3.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>23.0</cvrf:Number>
+        <cvrf:Date>2024-11-06T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added nmi to CBL-Mariner 2.0
+Added azcopy to CBL-Mariner 2.0
+Added blobfuse2 to CBL-Mariner 2.0
+Added cert-manager to CBL-Mariner 2.0
+Added coredns to CBL-Mariner 2.0
+Added cri-tools to CBL-Mariner 2.0
+Added etcd to CBL-Mariner 2.0
+Added git-lfs to CBL-Mariner 2.0
+Added helm to CBL-Mariner 2.0
+Added kubernetes to CBL-Mariner 2.0
+Added kubevirt to CBL-Mariner 2.0
+Added kured to CBL-Mariner 2.0
+Added moby-cli to CBL-Mariner 2.0
+Added moby-compose to CBL-Mariner 2.0
+Added moby-containerd to CBL-Mariner 2.0
+Added moby-containerd-cc to CBL-Mariner 2.0
+Added moby-engine to CBL-Mariner 2.0
+Added multus to CBL-Mariner 2.0
+Added node-problem-detector to CBL-Mariner 2.0
+Added opa to CBL-Mariner 2.0
+Added skopeo to CBL-Mariner 2.0
+Added sriov-network-device-plugin to CBL-Mariner 2.0
+Added telegraf to CBL-Mariner 2.0
+Added vitess to CBL-Mariner 2.0
+Added jx to Azure Linux 3.0
+Added azcopy to Azure Linux 3.0
+Added blobfuse2 to Azure Linux 3.0
+Added cert-manager to Azure Linux 3.0
+Added coredns to Azure Linux 3.0
+Added cri-tools to Azure Linux 3.0
+Added docker-buildx to Azure Linux 3.0
+Added docker-compose to Azure Linux 3.0
+Added helm to Azure Linux 3.0
+Added ig to Azure Linux 3.0
+Added kubernetes to Azure Linux 3.0
+Added kube-vip-cloud-provider to Azure Linux 3.0
+Added libcontainers-common to Azure Linux 3.0
+Added opa to Azure Linux 3.0
+Added packer to Azure Linux 3.0
+Added prometheus-adapter to Azure Linux 3.0
+Added telegraf to Azure Linux 3.0
+Added vitess to Azure Linux 3.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2024-04-20T00:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
@@ -15329,9 +16235,56 @@ Added telegraf to Azure Linux 3.0
 Added vitess to Azure Linux 3.0&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>24.0</cvrf:Number>
+        <cvrf:Date>2024-11-07T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added nmi to CBL-Mariner 2.0
+Added azcopy to CBL-Mariner 2.0
+Added blobfuse2 to CBL-Mariner 2.0
+Added cert-manager to CBL-Mariner 2.0
+Added coredns to CBL-Mariner 2.0
+Added cri-tools to CBL-Mariner 2.0
+Added etcd to CBL-Mariner 2.0
+Added git-lfs to CBL-Mariner 2.0
+Added helm to CBL-Mariner 2.0
+Added kubernetes to CBL-Mariner 2.0
+Added kubevirt to CBL-Mariner 2.0
+Added kured to CBL-Mariner 2.0
+Added moby-cli to CBL-Mariner 2.0
+Added moby-compose to CBL-Mariner 2.0
+Added moby-containerd to CBL-Mariner 2.0
+Added moby-containerd-cc to CBL-Mariner 2.0
+Added moby-engine to CBL-Mariner 2.0
+Added multus to CBL-Mariner 2.0
+Added node-problem-detector to CBL-Mariner 2.0
+Added opa to CBL-Mariner 2.0
+Added skopeo to CBL-Mariner 2.0
+Added sriov-network-device-plugin to CBL-Mariner 2.0
+Added telegraf to CBL-Mariner 2.0
+Added vitess to CBL-Mariner 2.0
+Added jx to Azure Linux 3.0
+Added azcopy to Azure Linux 3.0
+Added blobfuse2 to Azure Linux 3.0
+Added cert-manager to Azure Linux 3.0
+Added coredns to Azure Linux 3.0
+Added cri-tools to Azure Linux 3.0
+Added docker-buildx to Azure Linux 3.0
+Added docker-compose to Azure Linux 3.0
+Added helm to Azure Linux 3.0
+Added ig to Azure Linux 3.0
+Added kubernetes to Azure Linux 3.0
+Added kube-vip-cloud-provider to Azure Linux 3.0
+Added libcontainers-common to Azure Linux 3.0
+Added opa to Azure Linux 3.0
+Added packer to Azure Linux 3.0
+Added prometheus-adapter to Azure Linux 3.0
+Added telegraf to Azure Linux 3.0
+Added vitess to Azure Linux 3.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="17">
+  <vuln:Vulnerability Ordinal="18">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2023-39130</vuln:Note>
@@ -15423,7 +16376,7 @@ Added vitess to Azure Linux 3.0&lt;/p&gt;
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="55">
+  <vuln:Vulnerability Ordinal="63">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-8096</vuln:Note>
@@ -15652,7 +16605,7 @@ Added cmake to Azure Linux 3.0&lt;/p&gt;
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="52">
+  <vuln:Vulnerability Ordinal="60">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-6104</vuln:Note>
@@ -16315,6 +17268,46 @@ Added prometheus to Azure Linux 3.0&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
       <vuln:Revision>
+        <cvrf:Number>21.0</cvrf:Number>
+        <cvrf:Date>2024-11-04T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added cert-manager to CBL-Mariner 2.0
+Added influxdb to CBL-Mariner 2.0
+Added keda to CBL-Mariner 2.0
+Added packer to CBL-Mariner 2.0
+Added prometheus to CBL-Mariner 2.0
+Added rook to CBL-Mariner 2.0
+Added skopeo to CBL-Mariner 2.0
+Added terraform to CBL-Mariner 2.0
+Added cert-manager to Azure Linux 3.0
+Added influxdb to Azure Linux 3.0
+Added keda to Azure Linux 3.0
+Added libcontainers-common to Azure Linux 3.0
+Added packer to Azure Linux 3.0
+Added skopeo to Azure Linux 3.0
+Added prometheus to Azure Linux 3.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>23.0</cvrf:Number>
+        <cvrf:Date>2024-11-06T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added cert-manager to CBL-Mariner 2.0
+Added influxdb to CBL-Mariner 2.0
+Added keda to CBL-Mariner 2.0
+Added packer to CBL-Mariner 2.0
+Added prometheus to CBL-Mariner 2.0
+Added rook to CBL-Mariner 2.0
+Added skopeo to CBL-Mariner 2.0
+Added terraform to CBL-Mariner 2.0
+Added cert-manager to Azure Linux 3.0
+Added influxdb to Azure Linux 3.0
+Added keda to Azure Linux 3.0
+Added libcontainers-common to Azure Linux 3.0
+Added packer to Azure Linux 3.0
+Added skopeo to Azure Linux 3.0
+Added prometheus to Azure Linux 3.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2024-08-05T00:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
@@ -16788,9 +17781,49 @@ Added skopeo to Azure Linux 3.0
 Added prometheus to Azure Linux 3.0&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>22.0</cvrf:Number>
+        <cvrf:Date>2024-11-05T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added cert-manager to CBL-Mariner 2.0
+Added influxdb to CBL-Mariner 2.0
+Added keda to CBL-Mariner 2.0
+Added packer to CBL-Mariner 2.0
+Added prometheus to CBL-Mariner 2.0
+Added rook to CBL-Mariner 2.0
+Added skopeo to CBL-Mariner 2.0
+Added terraform to CBL-Mariner 2.0
+Added cert-manager to Azure Linux 3.0
+Added influxdb to Azure Linux 3.0
+Added keda to Azure Linux 3.0
+Added libcontainers-common to Azure Linux 3.0
+Added packer to Azure Linux 3.0
+Added skopeo to Azure Linux 3.0
+Added prometheus to Azure Linux 3.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>24.0</cvrf:Number>
+        <cvrf:Date>2024-11-07T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added cert-manager to CBL-Mariner 2.0
+Added influxdb to CBL-Mariner 2.0
+Added keda to CBL-Mariner 2.0
+Added packer to CBL-Mariner 2.0
+Added prometheus to CBL-Mariner 2.0
+Added rook to CBL-Mariner 2.0
+Added skopeo to CBL-Mariner 2.0
+Added terraform to CBL-Mariner 2.0
+Added cert-manager to Azure Linux 3.0
+Added influxdb to Azure Linux 3.0
+Added keda to Azure Linux 3.0
+Added libcontainers-common to Azure Linux 3.0
+Added packer to Azure Linux 3.0
+Added skopeo to Azure Linux 3.0
+Added prometheus to Azure Linux 3.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="21">
+  <vuln:Vulnerability Ordinal="22">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2023-5981</vuln:Note>
@@ -16890,7 +17923,7 @@ Added prometheus to Azure Linux 3.0&lt;/p&gt;
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="36">
+  <vuln:Vulnerability Ordinal="44">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-38577</vuln:Note>
@@ -17195,7 +18228,7 @@ Added kernel to Azure Linux 3.0&lt;/p&gt;
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="44">
+  <vuln:Vulnerability Ordinal="52">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-43884</vuln:Note>
@@ -17501,7 +18534,7 @@ Added kernel to Azure Linux 3.0&lt;/p&gt;
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="45">
+  <vuln:Vulnerability Ordinal="53">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-43892</vuln:Note>
@@ -17667,7 +18700,7 @@ Added kernel to Azure Linux 3.0&lt;/p&gt;
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="47">
+  <vuln:Vulnerability Ordinal="55">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-43905</vuln:Note>
@@ -17833,7 +18866,7 @@ Added kernel to Azure Linux 3.0&lt;/p&gt;
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="48">
+  <vuln:Vulnerability Ordinal="56">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-44946</vuln:Note>
@@ -18139,7 +19172,7 @@ Added kernel to Azure Linux 3.0&lt;/p&gt;
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="49">
+  <vuln:Vulnerability Ordinal="57">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-44974</vuln:Note>
@@ -18724,6 +19757,24 @@ Added kernel to Azure Linux 3.0&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
       <vuln:Revision>
+        <cvrf:Number>21.0</cvrf:Number>
+        <cvrf:Date>2024-11-04T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added python2 to CBL-Mariner 1.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>22.0</cvrf:Number>
+        <cvrf:Date>2024-11-05T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added python2 to CBL-Mariner 1.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>23.0</cvrf:Number>
+        <cvrf:Date>2024-11-06T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added python2 to CBL-Mariner 1.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2020-08-18T00:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
@@ -19275,6 +20326,12 @@ Added kernel to Azure Linux 3.0&lt;/p&gt;
         <cvrf:Description>&lt;p&gt;Added python2 to CBL-Mariner 1.0&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>24.0</cvrf:Number>
+        <cvrf:Date>2024-11-07T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added python2 to CBL-Mariner 1.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
   <vuln:Vulnerability Ordinal="10">
@@ -19611,6 +20668,27 @@ Added python3 to CBL-Mariner 1.0&lt;/p&gt;
       <vuln:Revision>
         <cvrf:Number>17.0</cvrf:Number>
         <cvrf:Date>2024-10-30T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added python2 to CBL-Mariner 1.0
+Added python3 to CBL-Mariner 1.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>21.0</cvrf:Number>
+        <cvrf:Date>2024-11-04T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added python2 to CBL-Mariner 1.0
+Added python3 to CBL-Mariner 1.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>22.0</cvrf:Number>
+        <cvrf:Date>2024-11-05T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added python2 to CBL-Mariner 1.0
+Added python3 to CBL-Mariner 1.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>23.0</cvrf:Number>
+        <cvrf:Date>2024-11-06T00:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Added python2 to CBL-Mariner 1.0
 Added python3 to CBL-Mariner 1.0&lt;/p&gt;
 </cvrf:Description>
@@ -20228,6 +21306,13 @@ Added python3 to CBL-Mariner 1.0&lt;/p&gt;
 Added python3 to CBL-Mariner 1.0&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>24.0</cvrf:Number>
+        <cvrf:Date>2024-11-07T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added python2 to CBL-Mariner 1.0
+Added python3 to CBL-Mariner 1.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
   <vuln:Vulnerability Ordinal="0">
@@ -20558,6 +21643,27 @@ Added python2 to CBL-Mariner 1.0&lt;/p&gt;
       <vuln:Revision>
         <cvrf:Number>18.0</cvrf:Number>
         <cvrf:Date>2024-10-30T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added python3 to CBL-Mariner 2.0
+Added python2 to CBL-Mariner 1.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>22.0</cvrf:Number>
+        <cvrf:Date>2024-11-04T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added python3 to CBL-Mariner 2.0
+Added python2 to CBL-Mariner 1.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>23.0</cvrf:Number>
+        <cvrf:Date>2024-11-05T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added python3 to CBL-Mariner 2.0
+Added python2 to CBL-Mariner 1.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>24.0</cvrf:Number>
+        <cvrf:Date>2024-11-06T00:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Added python3 to CBL-Mariner 2.0
 Added python2 to CBL-Mariner 1.0&lt;/p&gt;
 </cvrf:Description>
@@ -21154,6 +22260,13 @@ Added python2 to CBL-Mariner 1.0&lt;/p&gt;
 Added python2 to CBL-Mariner 1.0&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>25.0</cvrf:Number>
+        <cvrf:Date>2024-11-07T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added python3 to CBL-Mariner 2.0
+Added python2 to CBL-Mariner 1.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
   <vuln:Vulnerability Ordinal="6">
@@ -21431,6 +22544,24 @@ Added python2 to CBL-Mariner 1.0&lt;/p&gt;
       <vuln:Revision>
         <cvrf:Number>17.0</cvrf:Number>
         <cvrf:Date>2024-10-30T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added python2 to CBL-Mariner 1.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>21.0</cvrf:Number>
+        <cvrf:Date>2024-11-04T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added python2 to CBL-Mariner 1.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>22.0</cvrf:Number>
+        <cvrf:Date>2024-11-05T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added python2 to CBL-Mariner 1.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>23.0</cvrf:Number>
+        <cvrf:Date>2024-11-06T00:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Added python2 to CBL-Mariner 1.0&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
@@ -21986,9 +23117,15 @@ Added python2 to CBL-Mariner 1.0&lt;/p&gt;
         <cvrf:Description>&lt;p&gt;Added python2 to CBL-Mariner 1.0&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>24.0</cvrf:Number>
+        <cvrf:Date>2024-11-07T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added python2 to CBL-Mariner 1.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="24">
+  <vuln:Vulnerability Ordinal="27">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-27058</vuln:Note>
@@ -22134,7 +23271,7 @@ Added python2 to CBL-Mariner 1.0&lt;/p&gt;
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="30">
+  <vuln:Vulnerability Ordinal="36">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-32020</vuln:Note>
@@ -22391,6 +23528,18 @@ Added python2 to CBL-Mariner 1.0&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
       <vuln:Revision>
+        <cvrf:Number>21.0</cvrf:Number>
+        <cvrf:Date>2024-11-04T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added git to CBL-Mariner 2.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>23.0</cvrf:Number>
+        <cvrf:Date>2024-11-06T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added git to CBL-Mariner 2.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2024-05-17T00:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
@@ -22678,9 +23827,21 @@ Added python2 to CBL-Mariner 1.0&lt;/p&gt;
         <cvrf:Description>&lt;p&gt;Added git to CBL-Mariner 2.0&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>22.0</cvrf:Number>
+        <cvrf:Date>2024-11-05T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added git to CBL-Mariner 2.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>24.0</cvrf:Number>
+        <cvrf:Date>2024-11-07T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added git to CBL-Mariner 2.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="31">
+  <vuln:Vulnerability Ordinal="37">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-32021</vuln:Note>
@@ -22921,6 +24082,12 @@ Added python2 to CBL-Mariner 1.0&lt;/p&gt;
       <vuln:Revision>
         <cvrf:Number>17.0</cvrf:Number>
         <cvrf:Date>2024-10-30T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added git to CBL-Mariner 2.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>21.0</cvrf:Number>
+        <cvrf:Date>2024-11-04T00:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Added git to CBL-Mariner 2.0&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
@@ -23224,9 +24391,27 @@ Added python2 to CBL-Mariner 1.0&lt;/p&gt;
         <cvrf:Description>&lt;p&gt;Added git to CBL-Mariner 2.0&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>22.0</cvrf:Number>
+        <cvrf:Date>2024-11-05T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added git to CBL-Mariner 2.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>23.0</cvrf:Number>
+        <cvrf:Date>2024-11-06T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added git to CBL-Mariner 2.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>24.0</cvrf:Number>
+        <cvrf:Date>2024-11-07T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added git to CBL-Mariner 2.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="32">
+  <vuln:Vulnerability Ordinal="38">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-32465</vuln:Note>
@@ -23489,6 +24674,24 @@ Added python2 to CBL-Mariner 1.0&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
       <vuln:Revision>
+        <cvrf:Number>21.0</cvrf:Number>
+        <cvrf:Date>2024-11-04T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added git to CBL-Mariner 2.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>22.0</cvrf:Number>
+        <cvrf:Date>2024-11-05T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added git to CBL-Mariner 2.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>23.0</cvrf:Number>
+        <cvrf:Date>2024-11-06T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added git to CBL-Mariner 2.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2024-05-17T00:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
@@ -23767,6 +24970,12 @@ Added python2 to CBL-Mariner 1.0&lt;/p&gt;
       <vuln:Revision>
         <cvrf:Number>20.0</cvrf:Number>
         <cvrf:Date>2024-11-02T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added git to CBL-Mariner 2.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>24.0</cvrf:Number>
+        <cvrf:Date>2024-11-07T00:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Added git to CBL-Mariner 2.0&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
@@ -24167,6 +25376,24 @@ Added python2 to CBL-Mariner 1.0&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
       <vuln:Revision>
+        <cvrf:Number>20.0</cvrf:Number>
+        <cvrf:Date>2024-11-04T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added samba to Azure Linux 3.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>21.0</cvrf:Number>
+        <cvrf:Date>2024-11-05T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added samba to Azure Linux 3.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>23.0</cvrf:Number>
+        <cvrf:Date>2024-11-07T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added samba to Azure Linux 3.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
         <cvrf:Number>2.0</cvrf:Number>
         <cvrf:Date>2024-10-16T00:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Added samba to Azure Linux 3.0&lt;/p&gt;
@@ -24199,6 +25426,12 @@ Added python2 to CBL-Mariner 1.0&lt;/p&gt;
       <vuln:Revision>
         <cvrf:Number>19.0</cvrf:Number>
         <cvrf:Date>2024-11-02T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added samba to Azure Linux 3.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>22.0</cvrf:Number>
+        <cvrf:Date>2024-11-06T00:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Added samba to Azure Linux 3.0&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
@@ -24593,6 +25826,12 @@ Added python2 to CBL-Mariner 1.0&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
       <vuln:Revision>
+        <cvrf:Number>20.0</cvrf:Number>
+        <cvrf:Date>2024-11-04T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added samba to Azure Linux 3.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
         <cvrf:Number>2.0</cvrf:Number>
         <cvrf:Date>2024-10-16T00:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Added samba to Azure Linux 3.0&lt;/p&gt;
@@ -24631,6 +25870,24 @@ Added python2 to CBL-Mariner 1.0&lt;/p&gt;
       <vuln:Revision>
         <cvrf:Number>19.0</cvrf:Number>
         <cvrf:Date>2024-11-02T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added samba to Azure Linux 3.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>21.0</cvrf:Number>
+        <cvrf:Date>2024-11-05T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added samba to Azure Linux 3.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>22.0</cvrf:Number>
+        <cvrf:Date>2024-11-06T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added samba to Azure Linux 3.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>23.0</cvrf:Number>
+        <cvrf:Date>2024-11-07T00:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Added samba to Azure Linux 3.0&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
@@ -25019,6 +26276,30 @@ Added python2 to CBL-Mariner 1.0&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
       <vuln:Revision>
+        <cvrf:Number>20.0</cvrf:Number>
+        <cvrf:Date>2024-11-04T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added samba to Azure Linux 3.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>21.0</cvrf:Number>
+        <cvrf:Date>2024-11-05T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added samba to Azure Linux 3.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>22.0</cvrf:Number>
+        <cvrf:Date>2024-11-06T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added samba to Azure Linux 3.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>23.0</cvrf:Number>
+        <cvrf:Date>2024-11-07T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added samba to Azure Linux 3.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
         <cvrf:Number>2.0</cvrf:Number>
         <cvrf:Date>2024-10-16T00:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Added samba to Azure Linux 3.0&lt;/p&gt;
@@ -25068,7 +26349,7 @@ Added python2 to CBL-Mariner 1.0&lt;/p&gt;
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="34">
+  <vuln:Vulnerability Ordinal="42">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-37535</vuln:Note>
@@ -25303,6 +26584,18 @@ Added python2 to CBL-Mariner 1.0&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
       <vuln:Revision>
+        <cvrf:Number>21.0</cvrf:Number>
+        <cvrf:Date>2024-11-04T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added vte291 to CBL-Mariner 2.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>23.0</cvrf:Number>
+        <cvrf:Date>2024-11-06T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added vte291 to CBL-Mariner 2.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2024-06-30T07:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
@@ -25479,6 +26772,18 @@ Added python2 to CBL-Mariner 1.0&lt;/p&gt;
       <vuln:Revision>
         <cvrf:Number>20.0</cvrf:Number>
         <cvrf:Date>2024-11-02T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added vte291 to CBL-Mariner 2.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>22.0</cvrf:Number>
+        <cvrf:Date>2024-11-05T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added vte291 to CBL-Mariner 2.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>24.0</cvrf:Number>
+        <cvrf:Date>2024-11-07T00:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Added vte291 to CBL-Mariner 2.0&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
@@ -25837,6 +27142,20 @@ Added xorg-x11-server to CBL-Mariner 2.0&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
       <vuln:Revision>
+        <cvrf:Number>21.0</cvrf:Number>
+        <cvrf:Date>2024-11-04T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added xorg-x11-server to Azure Linux 3.0
+Added xorg-x11-server to CBL-Mariner 2.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>23.0</cvrf:Number>
+        <cvrf:Date>2024-11-06T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added xorg-x11-server to Azure Linux 3.0
+Added xorg-x11-server to CBL-Mariner 2.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2023-04-03T00:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
@@ -26065,6 +27384,1102 @@ Added xorg-x11-server to CBL-Mariner 2.0&lt;/p&gt;
         <cvrf:Date>2024-11-02T00:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Added xorg-x11-server to Azure Linux 3.0
 Added xorg-x11-server to CBL-Mariner 2.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>22.0</cvrf:Number>
+        <cvrf:Date>2024-11-05T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added xorg-x11-server to Azure Linux 3.0
+Added xorg-x11-server to CBL-Mariner 2.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>24.0</cvrf:Number>
+        <cvrf:Date>2024-11-07T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added xorg-x11-server to Azure Linux 3.0
+Added xorg-x11-server to CBL-Mariner 2.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="25">
+    <vuln:Title />
+    <vuln:Notes>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-26940</vuln:Note>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-26940</vuln:Note>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="416baaa9-dc9f-4396-8d5f-8c081fb06d67" Type="CNA" Ordinal="30">416baaa9-dc9f-4396-8d5f-8c081fb06d67</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2024-26940</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>12356</vuln:ProductID>
+        <vuln:ProductID>12357</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12356</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12357</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12356</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12357</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.5</vuln:BaseScore>
+        <vuln:TemporalScore>5.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>12356</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.5</vuln:BaseScore>
+        <vuln:TemporalScore>5.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>12357</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>hyperv-daemons</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12356</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>hyperv-daemons-6.6.35.1-1.azl3.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hypervkvpd-6.6.35.1-1.azl3.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hypervvssd-6.6.35.1-1.azl3.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hypervfcopyd-6.6.35.1-1.azl3.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hyperv-daemons-license-6.6.35.1-1.azl3.noarch.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hyperv-tools-6.6.35.1-1.azl3.noarch.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hyperv-daemons-debuginfo-6.6.35.1-1.azl3.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>6.6.35.1-1</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>hyperv-daemons</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12357</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>hyperv-daemons-6.6.35.1-1.azl3.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hypervkvpd-6.6.35.1-1.azl3.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hypervvssd-6.6.35.1-1.azl3.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hypervfcopyd-6.6.35.1-1.azl3.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hyperv-daemons-license-6.6.35.1-1.azl3.noarch.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hyperv-tools-6.6.35.1-1.azl3.noarch.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hyperv-daemons-debuginfo-6.6.35.1-1.azl3.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>6.6.35.1-1</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2024-11-05T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added hyperv-daemons to Azure Linux 3.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2024-09-11T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="29">
+    <vuln:Title />
+    <vuln:Notes>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-27393</vuln:Note>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-27393</vuln:Note>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="416baaa9-dc9f-4396-8d5f-8c081fb06d67" Type="CNA" Ordinal="30">416baaa9-dc9f-4396-8d5f-8c081fb06d67</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2024-27393</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>12356</vuln:ProductID>
+        <vuln:ProductID>12357</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12356</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12357</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12356</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12357</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.5</vuln:BaseScore>
+        <vuln:TemporalScore>5.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>12356</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.5</vuln:BaseScore>
+        <vuln:TemporalScore>5.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>12357</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>hyperv-daemons</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12356</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>hyperv-daemons-6.6.35.1-1.azl3.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hypervkvpd-6.6.35.1-1.azl3.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hypervvssd-6.6.35.1-1.azl3.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hypervfcopyd-6.6.35.1-1.azl3.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hyperv-daemons-license-6.6.35.1-1.azl3.noarch.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hyperv-tools-6.6.35.1-1.azl3.noarch.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hyperv-daemons-debuginfo-6.6.35.1-1.azl3.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>6.6.35.1-1</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>hyperv-daemons</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12357</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>hyperv-daemons-6.6.35.1-1.azl3.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hypervkvpd-6.6.35.1-1.azl3.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hypervvssd-6.6.35.1-1.azl3.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hypervfcopyd-6.6.35.1-1.azl3.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hyperv-daemons-license-6.6.35.1-1.azl3.noarch.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hyperv-tools-6.6.35.1-1.azl3.noarch.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hyperv-daemons-debuginfo-6.6.35.1-1.azl3.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>6.6.35.1-1</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2024-09-11T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2024-11-05T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added hyperv-daemons to Azure Linux 3.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="15">
+    <vuln:Title />
+    <vuln:Notes>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2023-38709</vuln:Note>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2023-38709</vuln:Note>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2023-38709</vuln:Note>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2023-38709</vuln:Note>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="security@apache.org" Type="CNA" Ordinal="30">security@apache.org</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2023-38709</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:ProductID>12140</vuln:ProductID>
+        <vuln:ProductID>12356</vuln:ProductID>
+        <vuln:ProductID>12357</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12356</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12357</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12356</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12357</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.3</vuln:BaseScore>
+        <vuln:TemporalScore>7.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L</vuln:Vector>
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.3</vuln:BaseScore>
+        <vuln:TemporalScore>7.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L</vuln:Vector>
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.3</vuln:BaseScore>
+        <vuln:TemporalScore>7.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L</vuln:Vector>
+        <vuln:ProductID>12356</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.3</vuln:BaseScore>
+        <vuln:TemporalScore>7.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L</vuln:Vector>
+        <vuln:ProductID>12357</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>httpd</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>httpd-2.4.59-1.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>httpd-devel-2.4.59-1.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>httpd-docs-2.4.59-1.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>httpd-tools-2.4.59-1.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>mod_ldap-2.4.59-1.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>mod_proxy_html-2.4.59-1.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>mod_session-2.4.59-1.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>mod_ssl-2.4.59-1.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>2.4.59-1</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>httpd</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12140</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>httpd-2.4.59-1.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>httpd-devel-2.4.59-1.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>httpd-docs-2.4.59-1.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>httpd-tools-2.4.59-1.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>mod_ldap-2.4.59-1.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>mod_proxy_html-2.4.59-1.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>mod_session-2.4.59-1.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>mod_ssl-2.4.59-1.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>2.4.59-1</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>httpd</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12356</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>httpd-2.4.61-1.azl3.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>httpd-devel-2.4.61-1.azl3.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>httpd-docs-2.4.61-1.azl3.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>httpd-tools-2.4.61-1.azl3.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>mod_ldap-2.4.61-1.azl3.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>mod_proxy_html-2.4.61-1.azl3.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>mod_session-2.4.61-1.azl3.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>mod_ssl-2.4.61-1.azl3.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>httpd-debuginfo-2.4.61-1.azl3.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>2.4.61-1</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>httpd</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12357</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>httpd-2.4.61-1.azl3.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>httpd-devel-2.4.61-1.azl3.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>httpd-docs-2.4.61-1.azl3.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>httpd-tools-2.4.61-1.azl3.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>mod_ldap-2.4.61-1.azl3.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>mod_proxy_html-2.4.61-1.azl3.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>mod_session-2.4.61-1.azl3.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>mod_ssl-2.4.61-1.azl3.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>httpd-debuginfo-2.4.61-1.azl3.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>2.4.61-1</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2024-11-06T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added httpd to CBL-Mariner 2.0
+Added httpd to Azure Linux 3.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2024-04-08T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2024-08-15T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="26">
+    <vuln:Title />
+    <vuln:Notes>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-27005</vuln:Note>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-27005</vuln:Note>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="416baaa9-dc9f-4396-8d5f-8c081fb06d67" Type="CNA" Ordinal="30">416baaa9-dc9f-4396-8d5f-8c081fb06d67</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2024-27005</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>12356</vuln:ProductID>
+        <vuln:ProductID>12357</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12356</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12357</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12356</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12357</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>6.3</vuln:BaseScore>
+        <vuln:TemporalScore>6.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>12356</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>6.3</vuln:BaseScore>
+        <vuln:TemporalScore>6.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>12357</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>hyperv-daemons</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12356</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>hyperv-daemons-6.6.35.1-1.azl3.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hypervkvpd-6.6.35.1-1.azl3.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hypervvssd-6.6.35.1-1.azl3.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hypervfcopyd-6.6.35.1-1.azl3.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hyperv-daemons-license-6.6.35.1-1.azl3.noarch.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hyperv-tools-6.6.35.1-1.azl3.noarch.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hyperv-daemons-debuginfo-6.6.35.1-1.azl3.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>6.6.35.1-1</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>hyperv-daemons</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12357</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>hyperv-daemons-6.6.35.1-1.azl3.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hypervkvpd-6.6.35.1-1.azl3.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hypervvssd-6.6.35.1-1.azl3.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hypervfcopyd-6.6.35.1-1.azl3.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hyperv-daemons-license-6.6.35.1-1.azl3.noarch.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hyperv-tools-6.6.35.1-1.azl3.noarch.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hyperv-daemons-debuginfo-6.6.35.1-1.azl3.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>6.6.35.1-1</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2024-11-06T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added hyperv-daemons to Azure Linux 3.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2024-09-11T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="40">
+    <vuln:Title />
+    <vuln:Notes>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-33875</vuln:Note>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-33875</vuln:Note>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-33875</vuln:Note>
+      <vuln:Note Title="NIST NVD Details" Type="Other" Ordinal="1">https://nvd.nist.gov/vuln/detail/CVE-2024-33875</vuln:Note>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="cve@mitre.org" Type="CNA" Ordinal="30">cve@mitre.org</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2024-33875</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:ProductID>12140</vuln:ProductID>
+        <vuln:ProductID>12356</vuln:ProductID>
+        <vuln:ProductID>12357</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12356</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>12357</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12356</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>12357</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.7</vuln:BaseScore>
+        <vuln:TemporalScore>5.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:H</vuln:Vector>
+        <vuln:ProductID>12139</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.7</vuln:BaseScore>
+        <vuln:TemporalScore>5.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:H</vuln:Vector>
+        <vuln:ProductID>12140</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.7</vuln:BaseScore>
+        <vuln:TemporalScore>5.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:H</vuln:Vector>
+        <vuln:ProductID>12356</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.7</vuln:BaseScore>
+        <vuln:TemporalScore>5.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:H</vuln:Vector>
+        <vuln:ProductID>12357</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>hdf5</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12139</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>hdf5-1.14.4-1.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hdf5-devel-1.14.4-1.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hdf5-static-1.14.4-1.cm2.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>1.14.4-1</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>hdf5</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12140</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>hdf5-1.14.4-1.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hdf5-devel-1.14.4-1.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hdf5-static-1.14.4-1.cm2.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>1.14.4-1</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>hdf5</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12356</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>hdf5-1.14.4.3-1.azl3.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hdf5-devel-1.14.4.3-1.azl3.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hdf5-static-1.14.4.3-1.azl3.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hdf5-debuginfo-1.14.4.3-1.azl3.x86_64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>1.14.4.3-1</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>hdf5</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>12357</vuln:ProductID>
+        <vuln:AffectedFiles>
+          <vuln:AffectedFile>
+            <vuln:FileName>hdf5-1.14.4.3-1.azl3.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hdf5-devel-1.14.4.3-1.azl3.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hdf5-static-1.14.4.3-1.azl3.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+          <vuln:AffectedFile>
+            <vuln:FileName>hdf5-debuginfo-1.14.4.3-1.azl3.aarch64.rpm</vuln:FileName>
+            <vuln:FileLastModified>0001-01-01T00:00:00</vuln:FileLastModified>
+          </vuln:AffectedFile>
+        </vuln:AffectedFiles>
+        <vuln:RestartRequired />
+        <vuln:SubType>CBL-Mariner</vuln:SubType>
+        <vuln:FixedBuild>1.14.4.3-1</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2024-11-06T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added hdf5 to CBL-Mariner 2.0
+Added hdf5 to Azure Linux 3.0&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2024-05-14T00:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2024-06-30T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="25">
+    <vuln:Title>Chromium: CVE-2024-10827 Use after free in Serial</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2024"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;130.0.2849.80&lt;/td&gt;
+&lt;td&gt;11/07/2024&lt;/td&gt;
+&lt;td&gt;130.0.6723.117&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based). It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2024-10827</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>130.0.2849.80</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2024-11-07T08:00:26</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="24">
+    <vuln:Title>Chromium: CVE-2024-10826 Use after free in Family Experiences</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2024"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;130.0.2849.80&lt;/td&gt;
+&lt;td&gt;11/07/2024&lt;/td&gt;
+&lt;td&gt;130.0.6723.117&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based). It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2024-10826</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>DOS:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>130.0.2849.80</vuln:FixedBuild>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2024-11-07T08:00:20</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
     </vuln:RevisionHistory>
