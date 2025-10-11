@@ -1,5 +1,6 @@
 Function Get-CVRFID {
 [CmdletBinding()]
+[OutputType([System.String])]
 Param(
     [Parameter()]
     [Alias('CVRFID')]
@@ -8,6 +9,8 @@ Param(
 Begin {
 }
 Process {
+
+    #region PlanA
     $RestMethod = @{
         uri = '{0}/Updates?{1}' -f $global:msrcApiUrl,$global:msrcApiVersion
         Headers = @{
@@ -26,19 +29,49 @@ Process {
     }
     try {
         [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-
-        if ($ID) {
-            (Invoke-RestMethod @RestMethod).Value |
+        $r = if ($ID) {
+           (Invoke-RestMethod @RestMethod).Value |
             Where-Object { $_.ID -eq $ID } |
             Where-Object { $_ -ne '2017-May-B' }
         } else {
             ((Invoke-RestMethod @RestMethod).Value).ID |
             Where-Object { $_ -ne '2017-May-B' }
         }
-
+        if ((Get-Date).ToString('yyyy-MMM',[CultureInfo]::InvariantCulture) -in @(,$r)) {
+         $r
+        } else {
+         Write-Verbose -Message 'Finding cvrfId with plan A did not failed but test plan B because current month is missing'
+        $PlanB = $true
+       }
     } catch {
-        Throw $_
+     Write-Verbose -Message "Failed to find cvrfId with plan A because $($_.Exception.Message)"
+     $PlanB = $true
     }
+    #endregion
+
+    #region PlanB
+    if ($PlanB) {
+     # PlanB: test the full CVRFID Url
+     if ($ID) {
+      $RestMethod['uri']= 'https://api.msrc.microsoft.com/cvrf/v3.0/cvrf/{0}' -f $ID
+     } else {
+      $RestMethod['uri']= 'https://api.msrc.microsoft.com/cvrf/v3.0/cvrf/{0}' -f (Get-Date).ToString('yyyy-MMM',[CultureInfo]::InvariantCulture)
+     }
+     try {
+      $isAvailable = (Invoke-RestMethod @RestMethod)
+      Write-Verbose -Message 'Successfully executed planB to find cvrfID'
+     } catch {
+      Throw $_
+     }
+     if ($isAvailable) {
+      if ($ID) {
+       return $ID
+      } else {
+       return $r+(Get-Date).ToString('yyyy-MMM',[CultureInfo]::InvariantCulture)
+      }
+     }
+    }
+    #endregion
 }
 End {}
 }
