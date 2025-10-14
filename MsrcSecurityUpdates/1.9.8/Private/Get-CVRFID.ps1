@@ -37,7 +37,7 @@ Process {
             ((Invoke-RestMethod @RestMethod).Value).ID |
             Where-Object { $_ -ne '2017-May-B' }
         }
-        if ((Get-Date).ToString('yyyy-MMM',[CultureInfo]::InvariantCulture) -in @(,$r)) {
+        if ((Get-Date).ToString('yyyy-MMM',[CultureInfo]::InvariantCulture) -in @($r)) {
          $r
         } else {
          Write-Verbose -Message 'Finding cvrfId with plan A did not failed but test plan B because current month is missing'
