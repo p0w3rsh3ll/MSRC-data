@@ -37,13 +37,26 @@ Process {
             ((Invoke-RestMethod @RestMethod).Value).ID |
             Where-Object { $_ -ne '2017-May-B' }
         }
-        # if ((Get-Date).ToString('yyyy-MMM',[CultureInfo]::InvariantCulture) -in @($r)) {
-        if ($ID -in @($r)) {
-         $r
+        if ($ID) {
+         Write-Verbose -Message "Testing ID: $($ID)"
+         if ($ID -in $r.ID) {
+          Write-Verbose -Message 'Finding cvrfId with plan A succeeded'
+          $r.ID
+         } else {
+          Write-Verbose -Message 'Finding cvrfId with plan A did not failed but test plan B because current month is missing'
+          $PlanB = $true
+         }
         } else {
-         Write-Verbose -Message 'Finding cvrfId with plan A did not failed but test plan B because current month is missing'
-        $PlanB = $true
-       }
+         Write-Verbose -Message "Testing with no ID"
+         if ((Get-Date).ToString('yyyy-MMM',[CultureInfo]::InvariantCulture) -in @($r)) {
+          Write-Verbose -Message 'Finding current month with plan A succeeded'
+          $r
+         } else {
+          Write-Verbose -Message 'Finding current month with plan A did not failed but test plan B because current month is missing'
+          $PlanB = $true
+         }
+        }
+
     } catch {
      Write-Verbose -Message "Failed to find cvrfId with plan A because $($_.Exception.Message)"
      $PlanB = $true
