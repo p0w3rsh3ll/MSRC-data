@@ -41,7 +41,7 @@ Process {
          Write-Verbose -Message "Testing ID: $($ID)"
          if ($ID -in $r.ID) {
           Write-Verbose -Message 'Finding cvrfId with plan A succeeded'
-          $r.ID
+          # $r.ID
          } else {
           Write-Verbose -Message 'Finding cvrfId with plan A did not failed but test plan B because current month is missing'
           $PlanB = $true
@@ -79,12 +79,22 @@ Process {
        Write-Warning -Message 'Failed to execute plan B to find cvrfID'
      }
      if ($isAvailable) {
+      Write-Verbose -Message 'Inside PlanB: isAvailable'
       if ($ID) {
        return $ID
       } else {
        return $r+(Get-Date).ToString('yyyy-MMM',[CultureInfo]::InvariantCulture)
       }
      }
+    }
+
+    Write-Verbose -Message 'Inside PlanA: return'
+    # Plan B was tested but didn't return
+    if ($ID -in $r.ID) {
+     $r.ID
+    } else {
+    # Fix for Get-MsrcCvrfDocument has a dynamic block calling Get-CVRFID w/o parameter that will fail A and B
+     $r
     }
     #endregion
 }
