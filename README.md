@@ -13,6 +13,12 @@ See the MSRC blog posts:
 
 |Date	|Blog Post|
 | ------|---------|
+|October 31, 2025| [You asked, we delivered: Introducing new features for an improved security experience](https://www.microsoft.com/en-us/msrc/blog/2025/10/introducing-new-features-improved-security-experience)|
+|October 28, 2025| [Understanding CVE-2025-55315: What CISOs, security engineers, and sysadmins should know](https://www.microsoft.com/en-us/msrc/blog/2025/10/understanding-cve-2025-55315)|
+|October 22, 2025| [Toward greater transparency: Introducing machine-readable Vulnerability Exploitability Xchange (VEX) for Azure Linux and beyond](https://www.microsoft.com/en-us/msrc/blog/2025/10/toward-greater-transparency-machine-readable-vulnerability-exploitability-xchange-for-azure-linux)|
+|November 12, 2024| [Toward greater transparency: Publishing machine-readable CSAF files](https://www.microsoft.com/en-us/msrc/blog/2024/11/toward-greater-transparency-publishing-machine-readable-csaf-files/)|
+|June 27, 2024| [Toward greater transparency: Unveiling Cloud Service CVEs](https://www.microsoft.com/en-us/msrc/blog/2024/06/toward-greater-transparency-unveiling-cloud-service-cves/)|
+|April 9, 2024| [Toward greater transparency: Security Update Guide now shares CWEs for CVEs](https://www.microsoft.com/en-us/msrc/blog/2024/04/toward-greater-transparency-adopting-the-cwe-standard-for-microsoft-cves/)|
 |January 6, 2023|[Publishing CBL-Mariner CVEs on the Security Update Guide CVRF API](https://msrc-blog.microsoft.com/2023/01/06/publishing-cbl-mariner-cves-on-the-security-update-guide-cvrf-api/)|
 |December 29, 2022|[Security Update Guide Improvement – Representing Hotpatch Updates](https://msrc-blog.microsoft.com/2022/12/29/security-update-guide-improvement-representing-hotpatch-updates/)|
 |August 9, 2022|[Security Update Guide Notification System News: Create your profile now](https://aka.ms/SUGNotificationProfile2)|
