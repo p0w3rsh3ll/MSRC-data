@@ -113,6 +113,7 @@ End {
          } else {
              'No update required, online version: {0}, repo version: {1}' -f $OnlineVer,$RepoVer
              'No update required, online release date: {0}, repo release date: {1}' -f $OnlineReleaseDate,$RepoReleaseDate
+             Remove-Item $Output -Recurse -Force -ErrorAction SilentlyContinue
          }
      } else {
       $cvrfID | Foreach-Object {
