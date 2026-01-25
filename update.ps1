@@ -146,7 +146,9 @@ End {
              # exit 0
          }
      } else {
-      'Need to add {0} version {1}, released {2}' -f $cvrfID,$OnlineVer,$OnlineReleaseDate
+      $cvrfID | Foreach-Object {
+       'Need to add {0} version {1}, released {2}' -f $_,$OnlineVer,$OnlineReleaseDate
+      }
        $exitCode = 1
      }
 
