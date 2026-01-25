@@ -1,0 +1,24 @@
+name: Test-Update
+on: [workflow_dispatch]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    name: Update
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Run update script
+        run: ./update.push.ps1
+        shell: pwsh
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "[automated] update from workflow" || echo "No changes to commit"
+          git push origin HEAD:master
