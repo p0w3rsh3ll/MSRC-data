@@ -90,6 +90,7 @@ End {
         }
     } else {
         'Nothing online'
+        Remove-Item $Output -Recurse -Force -ErrorAction SilentlyContinue
         exit 0
     }
 
@@ -113,7 +114,6 @@ End {
          } else {
              'No update required, online version: {0}, repo version: {1}' -f $OnlineVer,$RepoVer
              'No update required, online release date: {0}, repo release date: {1}' -f $OnlineReleaseDate,$RepoReleaseDate
-             Remove-Item $Output -Recurse -Force -ErrorAction SilentlyContinue
          }
      } else {
       $cvrfID | Foreach-Object {
@@ -127,5 +127,6 @@ End {
       $content | Where-Object { [datetime]($_.Date) -ge (Get-Date).AddDays(-2)}
      }
     }
+    Remove-Item $Output -Recurse -Force -ErrorAction SilentlyContinue
     exit 0
 }
