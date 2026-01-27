@@ -121,15 +121,11 @@ End {
         Copy-Item -Path (Join-Path -Path $Output -ChildPath "cvrfDocument-$($_).xml") -Destination "$($PSScriptRoot)\$((Get-Date).Tostring('yyyy'))\xml-cvrf-document\cvrfDocument-$($_).xml"
         Copy-Item -Path (Join-Path -Path $Output -ChildPath "Bulletin-$($_).html") -Destination "$($PSScriptRoot)\$((Get-Date).Tostring('yyyy'))\html-bulletin\Bulletin-$($_).html"
       }
-       $exitCode = 1
      }
 
      if ($content | Where-Object { [datetime]($_.Date) -ge (Get-Date).AddDays(-2)}) {
       $content | Where-Object { [datetime]($_.Date) -ge (Get-Date).AddDays(-2)}
-      $exitCode =  1
      }
-    } else {
-     $ExitCode = 0
     }
-    exit $ExitCode
+    exit 0
 }
