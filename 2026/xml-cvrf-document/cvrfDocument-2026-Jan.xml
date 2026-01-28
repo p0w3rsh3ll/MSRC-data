@@ -14,16 +14,16 @@
     <cvrf:Version>1.0</cvrf:Version>
     <cvrf:RevisionHistory>
       <cvrf:Revision>
-        <cvrf:Number>32</cvrf:Number>
-        <cvrf:Date>2026-01-26T08:00:00</cvrf:Date>
+        <cvrf:Number>33</cvrf:Number>
+        <cvrf:Date>2026-01-27T08:00:00</cvrf:Date>
         <cvrf:Description>January 2026 Security Updates</cvrf:Description>
       </cvrf:Revision>
     </cvrf:RevisionHistory>
     <cvrf:InitialReleaseDate>2026-01-13T08:00:00</cvrf:InitialReleaseDate>
-    <cvrf:CurrentReleaseDate>2026-01-26T08:00:00</cvrf:CurrentReleaseDate>
+    <cvrf:CurrentReleaseDate>2026-01-27T08:00:00</cvrf:CurrentReleaseDate>
   </cvrf:DocumentTracking>
   <cvrf:DocumentNotes>
-    <cvrf:Note Title="Release Notes" Audience="Public" Type="Details" Ordinal="0">&lt;h2 id="this-release-consists-of-the-following-123-microsoft-cves"&gt;This release consists of the following 123 Microsoft CVEs:&lt;/h2&gt;
+    <cvrf:Note Title="Release Notes" Audience="Public" Type="Details" Ordinal="0">&lt;h2 id="this-release-consists-of-the-following-124-microsoft-cves"&gt;This release consists of the following 124 Microsoft CVEs:&lt;/h2&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -1199,6 +1199,16 @@
 &lt;td&gt;No&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
+&lt;td&gt;Microsoft Office&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-21509"&gt;CVE-2026-21509&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;7.8&lt;/td&gt;
+&lt;td&gt;CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C&lt;/td&gt;
+&lt;td&gt;Exploitation Detected&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Yes&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Yes&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
 &lt;td&gt;Copilot Studio&lt;/td&gt;
 &lt;td&gt;&lt;a href="https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-21520"&gt;CVE-2026-21520&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;7.5&lt;/td&gt;
@@ -1270,7 +1280,7 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h2 id="we-are-republishing-13-non-microsoft-cves"&gt;We are republishing 13 non-Microsoft CVEs:&lt;/h2&gt;
+&lt;h2 id="we-are-republishing-14-non-microsoft-cves"&gt;We are republishing 14 non-Microsoft CVEs:&lt;/h2&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -1383,6 +1393,14 @@
 &lt;td&gt;Chrome&lt;/td&gt;
 &lt;td&gt;Microsoft Edge (Chromium-based)&lt;/td&gt;
 &lt;td&gt;&lt;a href="https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-0908"&gt;CVE-2026-0908&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Yes&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Chrome&lt;/td&gt;
+&lt;td&gt;Microsoft Edge (Chromium-based)&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-1220"&gt;CVE-2026-1220&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;&lt;strong&gt;Yes&lt;/strong&gt;&lt;/td&gt;
 &lt;td&gt;No&lt;/td&gt;
 &lt;td&gt;No&lt;/td&gt;
@@ -5054,8 +5072,6 @@
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5073379</vuln:URL>
         <vuln:Supercedence>5072033</vuln:Supercedence>
         <vuln:ProductID>12437</vuln:ProductID>
-        <vuln:ProductID>20437</vuln:ProductID>
-        <vuln:ProductID>20438</vuln:ProductID>
         <vuln:ProductID>12436</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:RestartRequired>Yes</vuln:RestartRequired>
@@ -5065,8 +5081,6 @@
       <vuln:Remediation Type="Release Notes">
         <vuln:URL>https://support.microsoft.com/en-us/topic/a6021fd2-b3b7-45a7-b68e-35c28a2a77da</vuln:URL>
         <vuln:ProductID>12437</vuln:ProductID>
-        <vuln:ProductID>20437</vuln:ProductID>
-        <vuln:ProductID>20438</vuln:ProductID>
         <vuln:ProductID>12436</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:SubType>5073379</vuln:SubType>
@@ -5075,9 +5089,34 @@
         <vuln:Description>5073379</vuln:Description>
         <vuln:URL>https://support.microsoft.com/help/5073379</vuln:URL>
         <vuln:ProductID>12437</vuln:ProductID>
+        <vuln:ProductID>12436</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5074109</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5074109</vuln:URL>
+        <vuln:Supercedence>5072033</vuln:Supercedence>
         <vuln:ProductID>20437</vuln:ProductID>
         <vuln:ProductID>20438</vuln:ProductID>
-        <vuln:ProductID>12436</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>10.0.26200.7623</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://support.microsoft.com/help/5074109</vuln:URL>
+        <vuln:ProductID>20437</vuln:ProductID>
+        <vuln:ProductID>20438</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>5074109</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5074109</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5074109</vuln:URL>
+        <vuln:ProductID>20437</vuln:ProductID>
+        <vuln:ProductID>20438</vuln:ProductID>
+        <vuln:ProductID>12389</vuln:ProductID>
+        <vuln:ProductID>12390</vuln:ProductID>
         <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
@@ -5137,13 +5176,6 @@
         <vuln:ProductID>12390</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:SubType>5074109</vuln:SubType>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Known Issue">
-        <vuln:Description>5074109</vuln:Description>
-        <vuln:URL>https://support.microsoft.com/help/5074109</vuln:URL>
-        <vuln:ProductID>12389</vuln:ProductID>
-        <vuln:ProductID>12390</vuln:ProductID>
-        <vuln:AffectedFiles />
       </vuln:Remediation>
       <vuln:Remediation Type="Vendor Fix">
         <vuln:Description>5073722</vuln:Description>
@@ -5230,6 +5262,12 @@
       <vuln:Revision>
         <cvrf:Number>1.2</cvrf:Number>
         <cvrf:Date>2026-01-23T08:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Updated the build numbers.  This is an informational update only.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.3</cvrf:Number>
+        <cvrf:Date>2026-01-27T08:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Updated the build numbers.  This is an informational update only.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
@@ -43339,7 +43377,7 @@
 &lt;p&gt;The word &lt;strong&gt;Remote&lt;/strong&gt; in the title refers to the location of the attacker. This type of exploit is sometimes referred to as Arbitrary Code Execution (ACE). The attack itself is carried out locally. This means an attacker or victim needs to execute code from the local machine to exploit the vulnerability.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, user interaction is required (UI:R). What interaction would the user have to do?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;An attacker must send the user a malicious file and convince them to open it.&lt;/p&gt;
+&lt;p&gt;An attacker must send a user a malicious Office file and convince them to open it.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Is the Preview Pane an attack vector for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Yes, the Preview Pane is an attack vector.&lt;/p&gt;
@@ -43481,7 +43519,7 @@
 &lt;p&gt;The word &lt;strong&gt;Remote&lt;/strong&gt; in the title refers to the location of the attacker. This type of exploit is sometimes referred to as Arbitrary Code Execution (ACE). The attack itself is carried out locally. This means an attacker or victim needs to execute code from the local machine to exploit the vulnerability.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, user interaction is required (UI:R). What interaction would the user have to do?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;An attacker must send the user a malicious file and convince them to open it.&lt;/p&gt;
+&lt;p&gt;An attacker must send a user a malicious Office file and convince them to open it.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Is the Preview Pane an attack vector for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;No, the Preview Pane is not an attack vector.&lt;/p&gt;
@@ -44218,7 +44256,7 @@
 &lt;p&gt;The word &lt;strong&gt;Remote&lt;/strong&gt; in the title refers to the location of the attacker. This type of exploit is sometimes referred to as Arbitrary Code Execution (ACE). The attack itself is carried out locally. This means an attacker or victim needs to execute code from the local machine to exploit the vulnerability.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, user interaction is required (UI:R). What interaction would the user have to do?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;An attacker must send the user a malicious file and convince them to open it.&lt;/p&gt;
+&lt;p&gt;An attacker must send a user a malicious Office file and convince them to open it.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="Microsoft Office Excel" Type="Tag" Ordinal="20">Microsoft Office Excel</vuln:Note>
       <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
@@ -44490,7 +44528,7 @@
 &lt;p&gt;The word &lt;strong&gt;Remote&lt;/strong&gt; in the title refers to the location of the attacker. This type of exploit is sometimes referred to as Arbitrary Code Execution (ACE). The attack itself is carried out locally. This means an attacker or victim needs to execute code from the local machine to exploit the vulnerability.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, user interaction is required (UI:R). What interaction would the user have to do?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;An attacker must send the user a malicious file and convince them to open it.&lt;/p&gt;
+&lt;p&gt;An attacker must send a user a malicious Office file and convince them to open it.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Is the Preview Pane an attack vector for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;No, the Preview Pane is not an attack vector.&lt;/p&gt;
@@ -45626,7 +45664,11 @@
     </vuln:Remediations>
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
-        <vuln:Name>&lt;a href="https://www.linkedin.com/in/alasdair-gorniak/"&gt;Alasdair Gorniak&lt;/a&gt;</vuln:Name>
+        <vuln:Name>&lt;a href="https://www.linkedin.com/in/alasdair-gorniak/"&gt;Alasdair Gorniak&lt;/a&gt; and Tobias Diehl</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+      <vuln:Acknowledgment>
+        <vuln:Name>&lt;a href="https://www.linkedin.com/in/alasdair-gorniak/"&gt;Alasdair Gorniak&lt;/a&gt; and Tobias Diehl</vuln:Name>
         <vuln:URL />
       </vuln:Acknowledgment>
     </vuln:Acknowledgments>
@@ -49387,7 +49429,7 @@
 &lt;p&gt;The word &lt;strong&gt;Remote&lt;/strong&gt; in the title refers to the location of the attacker. This type of exploit is sometimes referred to as Arbitrary Code Execution (ACE). The attack itself is carried out locally. This means an attacker or victim needs to execute code from the local machine to exploit the vulnerability.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, user interaction is required (UI:R). What interaction would the user have to do?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;An attacker must send the user a malicious file and convince them to open it.&lt;/p&gt;
+&lt;p&gt;An attacker must send a user a malicious Office file and convince them to open it.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="Inbox COM Objects" Type="Tag" Ordinal="20">Inbox COM Objects</vuln:Note>
       <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
@@ -60564,7 +60606,7 @@
 &lt;p&gt;The word &lt;strong&gt;Remote&lt;/strong&gt; in the title refers to the location of the attacker. This type of exploit is sometimes referred to as Arbitrary Code Execution (ACE). The attack itself is carried out locally. This means an attacker or victim needs to execute code from the local machine to exploit the vulnerability.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, user interaction is required (UI:R). What interaction would the user have to do?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;An attacker must send the user a malicious file and convince them to open it.&lt;/p&gt;
+&lt;p&gt;An attacker must send a user a malicious Office file and convince them to open it.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;There are multiple update packages available for some of the affected software. Do I need to install all the updates listed in the Security Updates table for the software?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Yes. Customers should apply all updates offered for the software installed on their systems. If multiple updates apply, they can be installed in any order.&lt;/p&gt;
@@ -61177,7 +61219,7 @@
 &lt;p&gt;The word &lt;strong&gt;Remote&lt;/strong&gt; in the title refers to the location of the attacker. This type of exploit is sometimes referred to as Arbitrary Code Execution (ACE). The attack itself is carried out locally. This means an attacker or victim needs to execute code from the local machine to exploit the vulnerability.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, user interaction is required (UI:R). What interaction would the user have to do?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;An attacker must send the user a malicious file and convince them to open it.&lt;/p&gt;
+&lt;p&gt;An attacker must send a user a malicious Office file and convince them to open it.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Is the Preview Pane an attack vector for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;No, the Preview Pane is not an attack vector.&lt;/p&gt;
@@ -61799,7 +61841,7 @@
 &lt;p&gt;The word &lt;strong&gt;Remote&lt;/strong&gt; in the title refers to the location of the attacker. This type of exploit is sometimes referred to as Arbitrary Code Execution (ACE). The attack itself is carried out locally. This means an attacker or victim needs to execute code from the local machine to exploit the vulnerability.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, user interaction is required (UI:R). What interaction would the user have to do?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;An attacker must send the user a malicious file and convince them to open it.&lt;/p&gt;
+&lt;p&gt;An attacker must send a user a malicious Office file and convince them to open it.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="Microsoft Office Excel" Type="Tag" Ordinal="20">Microsoft Office Excel</vuln:Note>
       <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
@@ -63405,6 +63447,420 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="24">
+    <vuln:Title>Chromium: CVE-2026-1220 Race in V8</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2024"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;144.0.3719.92&lt;/td&gt;
+&lt;td&gt;01/23/2026&lt;/td&gt;
+&lt;td&gt;144.0.7559.96/.97&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based). It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2026-1220</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>144.0.3719.92</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://docs.microsoft.com/en-us/DeployEdge/microsoft-edge-relnotes-security</vuln:URL>
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>Release Notes</vuln:SubType>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2026-01-23T08:00:22</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="141">
+    <vuln:Title>Microsoft Office Security Feature Bypass Vulnerability</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;Reliance on untrusted inputs in a security decision in Microsoft Office allows an unauthorized attacker to bypass a security feature locally.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, user interaction is required (UI:R). What interaction would the user have to do?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;An attacker must send a user a malicious Office file and convince them to open it.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Are the updates for Microsoft Office 2016 and 2019 currently available?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Yes. As of January 26, 2026, the security update for Microsoft Office 2016 and 2019 is available. Customers running Microsoft Office 2016 and 2019 should ensure the update is installed to be protected from this vulnerability.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;How do I know what version of Office 2016 and 2019 I am running?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;On January 26 2026, Microsoft released build numbers for Office 2016 &lt;strong&gt;16.0.5539.1001&lt;/strong&gt; and Office 2019 &lt;strong&gt;16.0.10417.20095&lt;/strong&gt; to address this vulnerability.&lt;/p&gt;
+&lt;p&gt;To see what version you have installed:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In a document click the &lt;strong&gt;File&lt;/strong&gt; tab.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Account&lt;/strong&gt; in the left hand pane.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;About&lt;/strong&gt; . The top line of the About dialog box will display the Build number.&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What kind of security feature could be bypassed by successfully exploiting this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This update addresses a vulnerability that bypasses OLE mitigations in Microsoft 365 and Microsoft Office which protect users from vulnerable COM/OLE controls.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Is the Preview Pane an attack vector for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;No, the Preview Pane is not an attack vector.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Office" Type="Tag" Ordinal="20">Microsoft Office</vuln:Note>
+      <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2026-21509</vuln:CVE>
+    <vuln:CWE ID="CWE-807">Reliance on Untrusted Inputs in a Security Decision</vuln:CWE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11573</vuln:ProductID>
+        <vuln:ProductID>11574</vuln:ProductID>
+        <vuln:ProductID>11762</vuln:ProductID>
+        <vuln:ProductID>11763</vuln:ProductID>
+        <vuln:ProductID>11952</vuln:ProductID>
+        <vuln:ProductID>11953</vuln:ProductID>
+        <vuln:ProductID>12420</vuln:ProductID>
+        <vuln:ProductID>12421</vuln:ProductID>
+        <vuln:ProductID>10753</vuln:ProductID>
+        <vuln:ProductID>10754</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Security Feature Bypass</vuln:Description>
+        <vuln:ProductID>11573</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Security Feature Bypass</vuln:Description>
+        <vuln:ProductID>11574</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Security Feature Bypass</vuln:Description>
+        <vuln:ProductID>11762</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Security Feature Bypass</vuln:Description>
+        <vuln:ProductID>11763</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Security Feature Bypass</vuln:Description>
+        <vuln:ProductID>11952</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Security Feature Bypass</vuln:Description>
+        <vuln:ProductID>11953</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Security Feature Bypass</vuln:Description>
+        <vuln:ProductID>12420</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Security Feature Bypass</vuln:Description>
+        <vuln:ProductID>12421</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Security Feature Bypass</vuln:Description>
+        <vuln:ProductID>10753</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Security Feature Bypass</vuln:Description>
+        <vuln:ProductID>10754</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11573</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11574</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11762</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11763</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11952</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11953</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>12420</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>12421</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>10753</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>10754</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>Publicly Disclosed:No;Exploited:Yes;Latest Software Release:Exploitation Detected</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11573</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11574</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11762</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11763</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11952</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11953</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>12420</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>12421</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>10753</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.2</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>10754</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Click to Run</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11573</vuln:ProductID>
+        <vuln:ProductID>11574</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>16.0.10417.20095</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://learn.microsoft.com/en-us/officeupdates/update-history-office-2019</vuln:URL>
+        <vuln:ProductID>11573</vuln:ProductID>
+        <vuln:ProductID>11574</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>Click to Run</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Click to Run</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11762</vuln:ProductID>
+        <vuln:ProductID>11763</vuln:ProductID>
+        <vuln:ProductID>11952</vuln:ProductID>
+        <vuln:ProductID>11953</vuln:ProductID>
+        <vuln:ProductID>12420</vuln:ProductID>
+        <vuln:ProductID>12421</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>https://aka.ms/OfficeSecurityReleases</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://docs.microsoft.com/en-us/officeupdates/office365-proplus-security-updates</vuln:URL>
+        <vuln:ProductID>11762</vuln:ProductID>
+        <vuln:ProductID>11763</vuln:ProductID>
+        <vuln:ProductID>11952</vuln:ProductID>
+        <vuln:ProductID>11953</vuln:ProductID>
+        <vuln:ProductID>12420</vuln:ProductID>
+        <vuln:ProductID>12421</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>Click to Run</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5002713</vuln:Description>
+        <vuln:URL>https://www.microsoft.com/en-us/download/details.aspx?id=108535</vuln:URL>
+        <vuln:Supercedence>5002573</vuln:Supercedence>
+        <vuln:ProductID>10753</vuln:ProductID>
+        <vuln:ProductID>10754</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Maybe</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>16.0.5539.1001</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://support.microsoft.com/help/5002713</vuln:URL>
+        <vuln:ProductID>10753</vuln:ProductID>
+        <vuln:ProductID>10754</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>5002713</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Mitigation">
+        <vuln:Description>&lt;p&gt;&lt;a href="https://www.microsoft.com/en-us/msrc/glossary#Mitigation"&gt;Mitigation&lt;/a&gt; refers to a setting, common configuration, or general best-practice, existing in a default state, that could reduce the severity of exploitation of a vulnerability.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The following mitigating factors might be helpful in your situation:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Customers running Office 2021 and later will be &lt;strong&gt;automatically protected&lt;/strong&gt; via a service-side change, but will be required to &lt;strong&gt;restart&lt;/strong&gt; their Office applications for this to take effect.&lt;/p&gt;
+&lt;p&gt;Customers running Office 2016 and 2019 are not protected until they install the security update. Customers on these versions can apply the &lt;strong&gt;registry keys&lt;/strong&gt; described as follows to be immediately protected.&lt;/p&gt;
+&lt;p&gt;Microsoft Office:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;To start &lt;strong&gt;blocking&lt;/strong&gt; please add the following registry keys:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Caution: 
+Follow these steps carefully. Serious problems may occur if you modify the registry incorrectly. Before you start we recommend that you have a known good backup of your registry. See this article for more information: &lt;a href="https://support.microsoft.com/en-us/help/322756/how-to-back-up-and-restore-the-registry-in-windows"&gt;https://support.microsoft.com/en-us/help/322756/how-to-back-up-and-restore-the-registry-in-windows&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Exit all Microsoft Office applications.
+Start the Registry Editor by tapping Start (or pressing the Windows key on your keyboard) then typing regedit and pressing enter.&lt;/p&gt;
+&lt;ol start="2"&gt;
+&lt;li&gt;Locate the &lt;strong&gt;proper registry subkey&lt;/strong&gt;. It will be one of the following:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\16.0\Common\COM Compatibility\ (for 64-bit MSI Office, or 32-bit MSI Office on 32-bit Windows)&lt;/p&gt;
+&lt;p&gt;or&lt;/p&gt;
+&lt;p&gt;HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Office\16.0\Common\COM Compatibility\ (for 32-bit MSI Office on 64-bit Windows)&lt;/p&gt;
+&lt;p&gt;or&lt;/p&gt;
+&lt;p&gt;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\ClickToRun\REGISTRY\MACHINE\Software\Microsoft\Office\16.0\Common\COM Compatibility\ (for 64-bit Click2Run Office, or 32-bit Click2Run Office on 32-bit Windows)&lt;/p&gt;
+&lt;p&gt;or&lt;/p&gt;
+&lt;p&gt;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\ClickToRun\REGISTRY\MACHINE\Software\WOW6432Node\Microsoft\Office\16.0\Common\COM Compatibility\ (for 32-bit Click2Run Office on 64-bit Windows)&lt;/p&gt;
+&lt;p&gt;Note: The COM Compatibility node may not be present by default. If you don't see it, add it by right-clicking the Common node and choosing Add Key.&lt;/p&gt;
+&lt;ol start="3"&gt;
+&lt;li&gt;Add a new subkey named {EAB22AC3-30C1-11CF-A7EB-0000C05BAE0B} by right-clicking the COM Compatibility node and choosing Add Key.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Within that new subkey we're going to add one new value by right-clicking the new subkey and choosing  New &amp;gt; DWORD (32-bit) Value.&lt;/p&gt;
+&lt;p&gt;A REG_DWORD hexadecimal value called Compatibility Flags with a value of 400.&lt;/p&gt;
+&lt;p&gt;Exit Registry Editor and start your Office application.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;For example, in Office 2016, 64-bit, on Windows you would locate this registry key:&lt;/p&gt;
+&lt;p&gt;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\16.0\Common\COM Compatibility\&lt;/p&gt;
+&lt;p&gt;Note: Remember, if the COM Compatibility node doesn't exist yet you'll need to create it.&lt;/p&gt;
+&lt;p&gt;Then add a subkey with the name {EAB22AC3-30C1-11CF-A7EB-0000C05BAE0B}.&lt;/p&gt;
+&lt;p&gt;In this case, the resulting path is HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\16.0\Common\COM Compatibility\{EAB22AC3-30C1-11CF-A7EB-0000C05BAE0B}.&lt;/p&gt;
+&lt;p&gt;To that subkey you'll add a REG_DWORD value called Compatibility Flags with a value of 400.&lt;/p&gt;
+</vuln:Description>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments>
+      <vuln:Acknowledgment>
+        <vuln:Name>Microsoft Threat Intelligence Center (MSTIC), Microsoft Security Response Center (MSRC), and Office Product Group Security Team</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+    </vuln:Acknowledgments>
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2026-01-26T08:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2026-01-26T08:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Corrected CVSS score. This is an informational change only.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2026-01-26T08:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;The following revisions have been made: 1) Microsoft is announcing the availability of the security updates for Microsoft Office 2016 and 2019. Customers running these versions of Office should install the update for their product to be protected from this vulnerability. Customers whose systems are configured to receive automatic updates do not need to take any further action. 2) Updated FAQ and Mitigations.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>2.1</cvrf:Number>
+        <cvrf:Date>2026-01-26T08:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;The following revisions have been made: 1) Added the build numbers for Office 2019. 2) Added an FAQ describing how to view Office 2019 build numbers. 3) Updated Publicly Disclosed to No. 4) Added acknowledgement. These are informational changes only.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>2.2</cvrf:Number>
+        <cvrf:Date>2026-01-27T08:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Updated FAQ information. This is an informational change only.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
   <vuln:Vulnerability Ordinal="17">
     <vuln:Title>Chromium: CVE-2026-0902 Inappropriate implementation in V8</vuln:Title>
     <vuln:Notes>
@@ -63967,414 +64423,6 @@
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2026-01-07T01:01:25</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
-</cvrf:Description>
-      </vuln:Revision>
-    </vuln:RevisionHistory>
-  </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="24">
-    <vuln:Title>Chromium: CVE-2026-1220 Race in V8</vuln:Title>
-    <vuln:Notes>
-      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2024"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
-</vuln:Note>
-      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
-&lt;th&gt;Date Released&lt;/th&gt;
-&lt;th&gt;Based on Chromium Version&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;144.0.3719.92&lt;/td&gt;
-&lt;td&gt;01/23/2026&lt;/td&gt;
-&lt;td&gt;144.0.7559.96/.97&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-</vuln:Note>
-      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based). It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
-&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-</vuln:Note>
-      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
-      <vuln:Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</vuln:Note>
-      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
-    </vuln:Notes>
-    <vuln:CVE>CVE-2026-1220</vuln:CVE>
-    <vuln:ProductStatuses>
-      <vuln:Status Type="Known Affected">
-        <vuln:ProductID>11655</vuln:ProductID>
-      </vuln:Status>
-    </vuln:ProductStatuses>
-    <vuln:Threats>
-      <vuln:Threat Type="Impact">
-        <vuln:Description />
-        <vuln:ProductID>11655</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description />
-        <vuln:ProductID>11655</vuln:ProductID>
-      </vuln:Threat>
-    </vuln:Threats>
-    <vuln:CVSSScoreSets />
-    <vuln:Remediations>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>Release Notes</vuln:Description>
-        <vuln:URL />
-        <vuln:ProductID>11655</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:RestartRequired>No</vuln:RestartRequired>
-        <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>144.0.3719.92</vuln:FixedBuild>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Release Notes">
-        <vuln:URL>https://docs.microsoft.com/en-us/DeployEdge/microsoft-edge-relnotes-security</vuln:URL>
-        <vuln:ProductID>11655</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:SubType>Release Notes</vuln:SubType>
-      </vuln:Remediation>
-    </vuln:Remediations>
-    <vuln:Acknowledgments />
-    <vuln:RevisionHistory>
-      <vuln:Revision>
-        <cvrf:Number>1.0</cvrf:Number>
-        <cvrf:Date>2026-01-23T08:00:22</cvrf:Date>
-        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
-</cvrf:Description>
-      </vuln:Revision>
-    </vuln:RevisionHistory>
-  </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="141">
-    <vuln:Title>Microsoft Office Security Feature Bypass Vulnerability</vuln:Title>
-    <vuln:Notes>
-      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;Reliance on untrusted inputs in a security decision in Microsoft Office allows an unauthorized attacker to bypass a security feature locally.&lt;/p&gt;
-</vuln:Note>
-      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, user interaction is required (UI:R). What interaction would the user have to do?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;An attacker must send a user a malicious Office file and convince them to open it.&lt;/p&gt;
-</vuln:Note>
-      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Are the updates for Microsoft Office 2016 and 2019 currently available?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Yes. As of January 26, 2026, the security update for Microsoft Office 2016 and 2019 is available. Customers running Microsoft Office 2016 and 2019 should ensure the update is installed to be protected from this vulnerability.&lt;/p&gt;
-</vuln:Note>
-      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;How do I know what version of Office I am running?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;On January 26 2026, Microsoft released build number 16.0.10417.20095 to address this vulnerability.&lt;/p&gt;
-&lt;p&gt;To see what version you have installed:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;In a document click the &lt;strong&gt;File&lt;/strong&gt; tab.&lt;/li&gt;
-&lt;li&gt;Click &lt;strong&gt;Account&lt;/strong&gt; in the left hand pane.&lt;/li&gt;
-&lt;li&gt;Click &lt;strong&gt;About&lt;/strong&gt; . The top line of the About dialog box will display the Build number.&lt;/li&gt;
-&lt;/ol&gt;
-</vuln:Note>
-      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What kind of security feature could be bypassed by successfully exploiting this vulnerability?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;This update addresses a vulnerability that bypasses OLE mitigations in Microsoft 365 and Microsoft Office which protect users from vulnerable COM/OLE controls.&lt;/p&gt;
-</vuln:Note>
-      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Is the Preview Pane an attack vector for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;No, the Preview Pane is not an attack vector.&lt;/p&gt;
-</vuln:Note>
-      <vuln:Note Title="Microsoft Office" Type="Tag" Ordinal="20">Microsoft Office</vuln:Note>
-      <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
-      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
-    </vuln:Notes>
-    <vuln:CVE>CVE-2026-21509</vuln:CVE>
-    <vuln:CWE ID="CWE-807">Reliance on Untrusted Inputs in a Security Decision</vuln:CWE>
-    <vuln:ProductStatuses>
-      <vuln:Status Type="Known Affected">
-        <vuln:ProductID>11573</vuln:ProductID>
-        <vuln:ProductID>11574</vuln:ProductID>
-        <vuln:ProductID>11762</vuln:ProductID>
-        <vuln:ProductID>11763</vuln:ProductID>
-        <vuln:ProductID>11952</vuln:ProductID>
-        <vuln:ProductID>11953</vuln:ProductID>
-        <vuln:ProductID>12420</vuln:ProductID>
-        <vuln:ProductID>12421</vuln:ProductID>
-        <vuln:ProductID>10753</vuln:ProductID>
-        <vuln:ProductID>10754</vuln:ProductID>
-      </vuln:Status>
-    </vuln:ProductStatuses>
-    <vuln:Threats>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Security Feature Bypass</vuln:Description>
-        <vuln:ProductID>11573</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Security Feature Bypass</vuln:Description>
-        <vuln:ProductID>11574</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Security Feature Bypass</vuln:Description>
-        <vuln:ProductID>11762</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Security Feature Bypass</vuln:Description>
-        <vuln:ProductID>11763</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Security Feature Bypass</vuln:Description>
-        <vuln:ProductID>11952</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Security Feature Bypass</vuln:Description>
-        <vuln:ProductID>11953</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Security Feature Bypass</vuln:Description>
-        <vuln:ProductID>12420</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Security Feature Bypass</vuln:Description>
-        <vuln:ProductID>12421</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Security Feature Bypass</vuln:Description>
-        <vuln:ProductID>10753</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Security Feature Bypass</vuln:Description>
-        <vuln:ProductID>10754</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Important</vuln:Description>
-        <vuln:ProductID>11573</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Important</vuln:Description>
-        <vuln:ProductID>11574</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Important</vuln:Description>
-        <vuln:ProductID>11762</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Important</vuln:Description>
-        <vuln:ProductID>11763</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Important</vuln:Description>
-        <vuln:ProductID>11952</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Important</vuln:Description>
-        <vuln:ProductID>11953</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Important</vuln:Description>
-        <vuln:ProductID>12420</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Important</vuln:Description>
-        <vuln:ProductID>12421</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Important</vuln:Description>
-        <vuln:ProductID>10753</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Important</vuln:Description>
-        <vuln:ProductID>10754</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Exploit Status">
-        <vuln:Description>Publicly Disclosed:No;Exploited:Yes;Latest Software Release:Exploitation Detected</vuln:Description>
-      </vuln:Threat>
-    </vuln:Threats>
-    <vuln:CVSSScoreSets>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>7.8</vuln:BaseScore>
-        <vuln:TemporalScore>7.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>11573</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>7.8</vuln:BaseScore>
-        <vuln:TemporalScore>7.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>11574</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>7.8</vuln:BaseScore>
-        <vuln:TemporalScore>7.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>11762</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>7.8</vuln:BaseScore>
-        <vuln:TemporalScore>7.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>11763</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>7.8</vuln:BaseScore>
-        <vuln:TemporalScore>7.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>11952</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>7.8</vuln:BaseScore>
-        <vuln:TemporalScore>7.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>11953</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>7.8</vuln:BaseScore>
-        <vuln:TemporalScore>7.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>12420</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>7.8</vuln:BaseScore>
-        <vuln:TemporalScore>7.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>12421</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>7.8</vuln:BaseScore>
-        <vuln:TemporalScore>7.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>10753</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>7.8</vuln:BaseScore>
-        <vuln:TemporalScore>7.2</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>10754</vuln:ProductID>
-      </vuln:ScoreSet>
-    </vuln:CVSSScoreSets>
-    <vuln:Remediations>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>Click to Run</vuln:Description>
-        <vuln:URL />
-        <vuln:ProductID>11573</vuln:ProductID>
-        <vuln:ProductID>11574</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:RestartRequired>No</vuln:RestartRequired>
-        <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>16.0.10417.20095</vuln:FixedBuild>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Release Notes">
-        <vuln:URL>https://learn.microsoft.com/en-us/officeupdates/update-history-office-2019</vuln:URL>
-        <vuln:ProductID>11573</vuln:ProductID>
-        <vuln:ProductID>11574</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:SubType>Click to Run</vuln:SubType>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>Click to Run</vuln:Description>
-        <vuln:URL />
-        <vuln:ProductID>11762</vuln:ProductID>
-        <vuln:ProductID>11763</vuln:ProductID>
-        <vuln:ProductID>11952</vuln:ProductID>
-        <vuln:ProductID>11953</vuln:ProductID>
-        <vuln:ProductID>12420</vuln:ProductID>
-        <vuln:ProductID>12421</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:RestartRequired>No</vuln:RestartRequired>
-        <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>https://aka.ms/OfficeSecurityReleases</vuln:FixedBuild>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Release Notes">
-        <vuln:URL>https://docs.microsoft.com/en-us/officeupdates/office365-proplus-security-updates</vuln:URL>
-        <vuln:ProductID>11762</vuln:ProductID>
-        <vuln:ProductID>11763</vuln:ProductID>
-        <vuln:ProductID>11952</vuln:ProductID>
-        <vuln:ProductID>11953</vuln:ProductID>
-        <vuln:ProductID>12420</vuln:ProductID>
-        <vuln:ProductID>12421</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:SubType>Click to Run</vuln:SubType>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>5002713</vuln:Description>
-        <vuln:URL>https://www.microsoft.com/en-us/download/details.aspx?id=108535</vuln:URL>
-        <vuln:Supercedence>5002573</vuln:Supercedence>
-        <vuln:ProductID>10753</vuln:ProductID>
-        <vuln:ProductID>10754</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:RestartRequired>Maybe</vuln:RestartRequired>
-        <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>16.0.5539.1001</vuln:FixedBuild>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Release Notes">
-        <vuln:URL>https://support.microsoft.com/help/5002713</vuln:URL>
-        <vuln:ProductID>10753</vuln:ProductID>
-        <vuln:ProductID>10754</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:SubType>5002713</vuln:SubType>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Mitigation">
-        <vuln:Description>&lt;p&gt;&lt;a href="https://www.microsoft.com/en-us/msrc/glossary#Mitigation"&gt;Mitigation&lt;/a&gt; refers to a setting, common configuration, or general best-practice, existing in a default state, that could reduce the severity of exploitation of a vulnerability.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;The following mitigating factors might be helpful in your situation:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Customers running Office 2021 and later will be &lt;strong&gt;automatically protected&lt;/strong&gt; via a service-side change, but will be required to &lt;strong&gt;restart&lt;/strong&gt; their Office applications for this to take effect.&lt;/p&gt;
-&lt;p&gt;Customers running Office 2016 and 2019 are not protected until they install the security update. Customers on these versions can apply the &lt;strong&gt;registry keys&lt;/strong&gt; described as follows to be immediately protected.&lt;/p&gt;
-&lt;p&gt;Microsoft Office:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;To start &lt;strong&gt;blocking&lt;/strong&gt; please add the following registry keys:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Caution: 
-Follow these steps carefully. Serious problems may occur if you modify the registry incorrectly. Before you start we recommend that you have a known good backup of your registry. See this article for more information: &lt;a href="https://support.microsoft.com/en-us/help/322756/how-to-back-up-and-restore-the-registry-in-windows"&gt;https://support.microsoft.com/en-us/help/322756/how-to-back-up-and-restore-the-registry-in-windows&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Exit all Microsoft Office applications.
-Start the Registry Editor by tapping Start (or pressing the Windows key on your keyboard) then typing regedit and pressing enter.&lt;/p&gt;
-&lt;ol start="2"&gt;
-&lt;li&gt;Locate the &lt;strong&gt;proper registry subkey&lt;/strong&gt;. It will be one of the following:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\16.0\Common\COM Compatibility\ (for 64-bit MSI Office, or 32-bit MSI Office on 32-bit Windows)&lt;/p&gt;
-&lt;p&gt;or&lt;/p&gt;
-&lt;p&gt;HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Office\16.0\Common\COM Compatibility\ (for 32-bit MSI Office on 64-bit Windows)&lt;/p&gt;
-&lt;p&gt;or&lt;/p&gt;
-&lt;p&gt;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\ClickToRun\REGISTRY\MACHINE\Software\Microsoft\Office\16.0\Common\COM Compatibility\ (for 64-bit Click2Run Office, or 32-bit Click2Run Office on 32-bit Windows)&lt;/p&gt;
-&lt;p&gt;or&lt;/p&gt;
-&lt;p&gt;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\ClickToRun\REGISTRY\MACHINE\Software\WOW6432Node\Microsoft\Office\16.0\Common\COM Compatibility\ (for 32-bit Click2Run Office on 64-bit Windows)&lt;/p&gt;
-&lt;p&gt;Note: The COM Compatibility node may not be present by default. If you don't see it, add it by right-clicking the Common node and choosing Add Key.&lt;/p&gt;
-&lt;ol start="3"&gt;
-&lt;li&gt;Add a new subkey named {EAB22AC3-30C1-11CF-A7EB-0000C05BAE0B} by right-clicking the COM Compatibility node and choosing Add Key.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Within that new subkey we're going to add one new value by right-clicking the new subkey and choosing  New &amp;gt; DWORD (32-bit) Value.&lt;/p&gt;
-&lt;p&gt;A REG_DWORD hexadecimal value called Compatibility Flags with a value of 400.&lt;/p&gt;
-&lt;p&gt;Exit Registry Editor and start your Office application.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;For example, in Office 2016, 64-bit, on Windows you would locate this registry key:&lt;/p&gt;
-&lt;p&gt;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\16.0\Common\COM Compatibility\&lt;/p&gt;
-&lt;p&gt;Note: Remember, if the COM Compatibility node doesn't exist yet you'll need to create it.&lt;/p&gt;
-&lt;p&gt;Then add a subkey with the name {EAB22AC3-30C1-11CF-A7EB-0000C05BAE0B}.&lt;/p&gt;
-&lt;p&gt;In this case, the resulting path is HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\16.0\Common\COM Compatibility\{EAB22AC3-30C1-11CF-A7EB-0000C05BAE0B}.&lt;/p&gt;
-&lt;p&gt;To that subkey you'll add a REG_DWORD value called Compatibility Flags with a value of 400.&lt;/p&gt;
-</vuln:Description>
-        <vuln:AffectedFiles />
-      </vuln:Remediation>
-    </vuln:Remediations>
-    <vuln:Acknowledgments>
-      <vuln:Acknowledgment>
-        <vuln:Name>Microsoft Threat Intelligence Center (MSTIC), Microsoft Security Response Center (MSRC), and Office Product Group Security Team</vuln:Name>
-        <vuln:URL />
-      </vuln:Acknowledgment>
-    </vuln:Acknowledgments>
-    <vuln:RevisionHistory>
-      <vuln:Revision>
-        <cvrf:Number>1.0</cvrf:Number>
-        <cvrf:Date>2026-01-26T08:00:00</cvrf:Date>
-        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
-</cvrf:Description>
-      </vuln:Revision>
-      <vuln:Revision>
-        <cvrf:Number>1.1</cvrf:Number>
-        <cvrf:Date>2026-01-26T08:00:00</cvrf:Date>
-        <cvrf:Description>&lt;p&gt;Corrected CVSS score. This is an informational change only.&lt;/p&gt;
-</cvrf:Description>
-      </vuln:Revision>
-      <vuln:Revision>
-        <cvrf:Number>2.0</cvrf:Number>
-        <cvrf:Date>2026-01-26T08:00:00</cvrf:Date>
-        <cvrf:Description>&lt;p&gt;The following revisions have been made: 1) Microsoft is announcing the availability of the security updates for Microsoft Office 2016 and 2019. Customers running these versions of Office should install the update for their product to be protected from this vulnerability. Customers whose systems are configured to receive automatic updates do not need to take any further action. 2) Updated FAQ and Mitigations.&lt;/p&gt;
-</cvrf:Description>
-      </vuln:Revision>
-      <vuln:Revision>
-        <cvrf:Number>2.1</cvrf:Number>
-        <cvrf:Date>2026-01-26T08:00:00</cvrf:Date>
-        <cvrf:Description>&lt;p&gt;The following revisions have been made: 1) Added the build numbers for Office 2019. 2) Added an FAQ describing how to view Office 2019 build numbers. 3) Updated Publicly Disclosed to No. 4) Added acknowledgement. These are informational changes only.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
     </vuln:RevisionHistory>
