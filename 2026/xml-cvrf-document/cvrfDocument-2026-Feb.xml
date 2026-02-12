@@ -14,13 +14,13 @@
     <cvrf:Version>1.0</cvrf:Version>
     <cvrf:RevisionHistory>
       <cvrf:Revision>
-        <cvrf:Number>4</cvrf:Number>
-        <cvrf:Date>2026-02-10T08:00:00</cvrf:Date>
+        <cvrf:Number>5</cvrf:Number>
+        <cvrf:Date>2026-02-11T08:00:00</cvrf:Date>
         <cvrf:Description>February 2026 Security Updates</cvrf:Description>
       </cvrf:Revision>
     </cvrf:RevisionHistory>
     <cvrf:InitialReleaseDate>2026-02-10T08:00:00</cvrf:InitialReleaseDate>
-    <cvrf:CurrentReleaseDate>2026-02-10T08:00:00</cvrf:CurrentReleaseDate>
+    <cvrf:CurrentReleaseDate>2026-02-11T08:00:00</cvrf:CurrentReleaseDate>
   </cvrf:DocumentTracking>
   <cvrf:DocumentNotes>
     <cvrf:Note Title="Release Notes" Audience="Public" Type="Details" Ordinal="0">&lt;h2 id="this-release-consists-of-the-following-59-microsoft-cves"&gt;This release consists of the following 59 Microsoft CVEs:&lt;/h2&gt;
@@ -676,19 +676,19 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;November 12, 2024&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://aka.ms/MSRC-CSAF-Blog"&gt;Toward greater transparency: Publishing machine-readable CSAF files&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://www.microsoft.com/en-us/msrc/blog/2024/11/toward-greater-transparency-publishing-machine-readable-csaf-files"&gt;Toward greater transparency: Publishing machine-readable CSAF files&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;June 27, 2024&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://msrc.microsoft.com/blog/2024/06/toward-greater-transparency-unveiling-cloud-service-cves/"&gt;Toward greater transparency: Unveiling Cloud Service CVEs&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://msrc.microsoft.com/blog/2024/06/toward-greater-transparency-unveiling-cloud-service-cves1/"&gt;Toward greater transparency: Unveiling Cloud Service CVEs&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;April 9, 2024&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://aka.ms/MSRC-CWE-Blog"&gt;Toward greater transparency: Security Update Guide now shares CWEs for CVEs&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://www.microsoft.com/en-us/msrc/blog/2024/04/toward-greater-transparency-adopting-the-cwe-standard-for-microsoft-cves"&gt;Toward greater transparency: Security Update Guide now shares CWEs for CVEs&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;January 6, 2023&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://msrc.microsoft.com/blog/2023/01/publishing-cbl-mariner-cves-on-the-security-update-guide-cvrf-api/"&gt;Publishing CBL-Mariner CVEs on the Security Update Guide CVRF API&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://www.microsoft.com/en-us/msrc/blog/2023/01/publishing-cbl-mariner-cves-on-the-security-update-guide-cvrf-api/"&gt;Publishing CBL-Mariner CVEs on the Security Update Guide CVRF API&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;January 11, 2022&lt;/td&gt;
@@ -1808,9 +1808,6 @@
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, the attack complexity is high (AC:H). What does that mean for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Successful exploitation of this vulnerability requires an attacker to carefully time their actions to exploit the timing differences in the execution of specific operations.&lt;/p&gt;
 </vuln:Note>
-      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What privileges could be gained by an attacker who successfully exploited this vulnerability?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;An attacker who successfully exploited this vulnerability could gain SYSTEM privileges.&lt;/p&gt;
-</vuln:Note>
       <vuln:Note Title="Windows App for Mac" Type="Tag" Ordinal="20">Windows App for Mac</vuln:Note>
       <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
       <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
@@ -1835,17 +1832,10 @@
         <vuln:Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation Less Likely</vuln:Description>
       </vuln:Threat>
     </vuln:Threats>
-    <vuln:CVSSScoreSets>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>7.0</vuln:BaseScore>
-        <vuln:TemporalScore>6.1</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>20847</vuln:ProductID>
-      </vuln:ScoreSet>
-    </vuln:CVSSScoreSets>
+    <vuln:CVSSScoreSets />
     <vuln:Remediations>
       <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description />
+        <vuln:Description>868963</vuln:Description>
         <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB868963</vuln:URL>
         <vuln:ProductID>20847</vuln:ProductID>
         <vuln:AffectedFiles />
@@ -1857,6 +1847,7 @@
         <vuln:URL>https://go.microsoft.com/fwlink/?linkid=868963</vuln:URL>
         <vuln:ProductID>20847</vuln:ProductID>
         <vuln:AffectedFiles />
+        <vuln:SubType>868963</vuln:SubType>
       </vuln:Remediation>
     </vuln:Remediations>
     <vuln:Acknowledgments>
@@ -6936,10 +6927,6 @@
       </vuln:Remediation>
     </vuln:Remediations>
     <vuln:Acknowledgments>
-      <vuln:Acknowledgment>
-        <vuln:Name>Animesh Jain with Microsoft</vuln:Name>
-        <vuln:URL />
-      </vuln:Acknowledgment>
       <vuln:Acknowledgment>
         <vuln:Name>&lt;a href="https://twitter.com/hillstone_lab"&gt;Zhang WangJunJie, He YiSheng&lt;/a&gt; with &lt;a href="https://www.hillstonenet.com/"&gt;Hillstone Networks Security Research Institute&lt;/a&gt;</vuln:Name>
         <vuln:URL />
@@ -13499,11 +13486,7 @@
     </vuln:Remediations>
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
-        <vuln:Name>Google Threat Intelligence Group</vuln:Name>
-        <vuln:URL />
-      </vuln:Acknowledgment>
-      <vuln:Acknowledgment>
-        <vuln:Name>Microsoft Threat Intelligence Center (MSTIC), Microsoft Security Response Center (MSRC), and Office Product Group Security Team</vuln:Name>
+        <vuln:Name>Office Product Group Security Team</vuln:Name>
         <vuln:URL />
       </vuln:Acknowledgment>
       <vuln:Acknowledgment>
@@ -13516,6 +13499,12 @@
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2026-02-10T08:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2026-02-11T08:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Acknowledgement added. This is an informational change only.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
     </vuln:RevisionHistory>
@@ -14792,7 +14781,7 @@
         <vuln:FixedBuild>18.3.0</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Release Notes">
-        <vuln:URL>https://learn.microsoft.com/en-us/visualstudio/releases/2022/release-notes</vuln:URL>
+        <vuln:URL>https://learn.microsoft.com/en-us/visualstudio/releases/2026/release-notes</vuln:URL>
         <vuln:ProductID>20843</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:SubType>Release Notes</vuln:SubType>
@@ -14895,7 +14884,7 @@
         <vuln:FixedBuild>18.3.0</vuln:FixedBuild>
       </vuln:Remediation>
       <vuln:Remediation Type="Release Notes">
-        <vuln:URL>https://learn.microsoft.com/en-us/visualstudio/releases/2022/release-notes</vuln:URL>
+        <vuln:URL>https://learn.microsoft.com/en-us/visualstudio/releases/2026/release-notes</vuln:URL>
         <vuln:ProductID>20843</vuln:ProductID>
         <vuln:AffectedFiles />
         <vuln:SubType>Release Notes</vuln:SubType>
@@ -14909,9 +14898,693 @@
     </vuln:Acknowledgments>
     <vuln:RevisionHistory>
       <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2026-02-11T08:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Changes made to the security updates links and information.  This is an informational change only.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2026-02-10T08:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="31">
+    <vuln:Title>Windows Hyper-V Security Feature Bypass Vulnerability</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;Improper access control in Windows Hyper-V allows an authorized attacker to bypass a security feature locally.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What kind of security feature could be bypassed by successfully exploiting this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;An attacker who successfully exploited this vulnerability could bypass the &lt;a href="https://learn.microsoft.com/windows-hardware/design/device-experiences/oem-vbs"&gt;Virtualization-based Security&lt;/a&gt; feature.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;How could an attacker exploit this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Exploitation requires an attacker who already has local execution on a VBS‑enabled guest VM to run a specially crafted application or driver that abuses the hypervisor’s overlay handling to bypass VBS/VTL protections and compromise kernel integrity.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, a successful exploitation could lead to a scope change (S:C). What does this mean for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;An exploited vulnerability can affect resources beyond the security scope managed by the security authority of the vulnerable component. In this case, the vulnerable component and the impacted component are different and managed by different security authorities.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="Role: Windows Hyper-V" Type="Tag" Ordinal="20">Role: Windows Hyper-V</vuln:Note>
+      <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2026-21255</vuln:CVE>
+    <vuln:CWE ID="CWE-284">Improper Access Control</vuln:CWE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>20854</vuln:ProductID>
+        <vuln:ProductID>20853</vuln:ProductID>
+        <vuln:ProductID>11569</vuln:ProductID>
+        <vuln:ProductID>11571</vuln:ProductID>
+        <vuln:ProductID>11572</vuln:ProductID>
+        <vuln:ProductID>11923</vuln:ProductID>
+        <vuln:ProductID>11924</vuln:ProductID>
+        <vuln:ProductID>11931</vuln:ProductID>
+        <vuln:ProductID>12097</vuln:ProductID>
+        <vuln:ProductID>12437</vuln:ProductID>
+        <vuln:ProductID>20437</vuln:ProductID>
+        <vuln:ProductID>20438</vuln:ProductID>
+        <vuln:ProductID>12242</vuln:ProductID>
+        <vuln:ProductID>12243</vuln:ProductID>
+        <vuln:ProductID>12244</vuln:ProductID>
+        <vuln:ProductID>12389</vuln:ProductID>
+        <vuln:ProductID>12390</vuln:ProductID>
+        <vuln:ProductID>12436</vuln:ProductID>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Security Feature Bypass</vuln:Description>
+        <vuln:ProductID>20854</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Security Feature Bypass</vuln:Description>
+        <vuln:ProductID>20853</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Security Feature Bypass</vuln:Description>
+        <vuln:ProductID>11569</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Security Feature Bypass</vuln:Description>
+        <vuln:ProductID>11571</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Security Feature Bypass</vuln:Description>
+        <vuln:ProductID>11572</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Security Feature Bypass</vuln:Description>
+        <vuln:ProductID>11923</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Security Feature Bypass</vuln:Description>
+        <vuln:ProductID>11924</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Security Feature Bypass</vuln:Description>
+        <vuln:ProductID>11931</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Security Feature Bypass</vuln:Description>
+        <vuln:ProductID>12097</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Security Feature Bypass</vuln:Description>
+        <vuln:ProductID>12437</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Security Feature Bypass</vuln:Description>
+        <vuln:ProductID>20437</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Security Feature Bypass</vuln:Description>
+        <vuln:ProductID>20438</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Security Feature Bypass</vuln:Description>
+        <vuln:ProductID>12242</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Security Feature Bypass</vuln:Description>
+        <vuln:ProductID>12243</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Security Feature Bypass</vuln:Description>
+        <vuln:ProductID>12244</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Security Feature Bypass</vuln:Description>
+        <vuln:ProductID>12389</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Security Feature Bypass</vuln:Description>
+        <vuln:ProductID>12390</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Security Feature Bypass</vuln:Description>
+        <vuln:ProductID>12436</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Security Feature Bypass</vuln:Description>
+        <vuln:ProductID>10853</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Security Feature Bypass</vuln:Description>
+        <vuln:ProductID>10816</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Security Feature Bypass</vuln:Description>
+        <vuln:ProductID>10855</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>20854</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>20853</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11569</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11571</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11572</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11923</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11924</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>11931</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>12097</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>12437</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>20437</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>20438</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>12242</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>12243</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>12244</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>12389</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>12390</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>12436</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>10853</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>10816</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>10855</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation Less Likely</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>20854</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>20853</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11569</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11571</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11572</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11923</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11924</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11931</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>12097</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>12437</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>20437</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>20438</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>12242</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>12243</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>12244</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>12389</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>12390</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>12436</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>10853</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>10816</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>10855</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5077179</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5077179</vuln:URL>
+        <vuln:ProductID>20854</vuln:ProductID>
+        <vuln:ProductID>20853</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>10.0.28000.1575</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://support.microsoft.com/help/5077179</vuln:URL>
+        <vuln:ProductID>20854</vuln:ProductID>
+        <vuln:ProductID>20853</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>5077179</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5075904</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5075904</vuln:URL>
+        <vuln:ProductID>11569</vuln:ProductID>
+        <vuln:ProductID>11571</vuln:ProductID>
+        <vuln:ProductID>11572</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>10.0.17763.8389</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://support.microsoft.com/help/5075904</vuln:URL>
+        <vuln:ProductID>11569</vuln:ProductID>
+        <vuln:ProductID>11571</vuln:ProductID>
+        <vuln:ProductID>11572</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>5075904</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5075906</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5075906</vuln:URL>
+        <vuln:Supercedence>5073457</vuln:Supercedence>
+        <vuln:ProductID>11923</vuln:ProductID>
+        <vuln:ProductID>11924</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>10.0.20348.4773</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://support.microsoft.com/help/5075906</vuln:URL>
+        <vuln:ProductID>11923</vuln:ProductID>
+        <vuln:ProductID>11924</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>5075906</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5075906</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5075906</vuln:URL>
+        <vuln:ProductID>11923</vuln:ProductID>
+        <vuln:ProductID>11924</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5075943</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5075943</vuln:URL>
+        <vuln:ProductID>11923</vuln:ProductID>
+        <vuln:ProductID>11924</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Hotpatch Update</vuln:SubType>
+        <vuln:FixedBuild>10.0.20348.4711</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://support.microsoft.com/help/5075943</vuln:URL>
+        <vuln:ProductID>11923</vuln:ProductID>
+        <vuln:ProductID>11924</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>5075943</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5075943</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5075943</vuln:URL>
+        <vuln:ProductID>11923</vuln:ProductID>
+        <vuln:ProductID>11924</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5075912</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5075912</vuln:URL>
+        <vuln:Supercedence>5073724</vuln:Supercedence>
+        <vuln:ProductID>11931</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>10.0.19044.6937</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://support.microsoft.com/help/5075912</vuln:URL>
+        <vuln:ProductID>11931</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>5075912</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5075912</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5075912</vuln:URL>
+        <vuln:Supercedence>5073724</vuln:Supercedence>
+        <vuln:ProductID>12097</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>10.0.19045.6937</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://support.microsoft.com/help/5075912</vuln:URL>
+        <vuln:ProductID>12097</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>5075912</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5075899</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5075899</vuln:URL>
+        <vuln:Supercedence>5074109</vuln:Supercedence>
+        <vuln:ProductID>12437</vuln:ProductID>
+        <vuln:ProductID>12436</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>10.0.26100.32370</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://support.microsoft.com/help/5075899</vuln:URL>
+        <vuln:ProductID>12437</vuln:ProductID>
+        <vuln:ProductID>12436</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>5075899</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5075899</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5075899</vuln:URL>
+        <vuln:ProductID>12437</vuln:ProductID>
+        <vuln:ProductID>12436</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5075942</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5075942</vuln:URL>
+        <vuln:ProductID>12437</vuln:ProductID>
+        <vuln:ProductID>12436</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Hotpatch Update</vuln:SubType>
+        <vuln:FixedBuild>10.0.26100.32313</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://support.microsoft.com/help/5075942</vuln:URL>
+        <vuln:ProductID>12437</vuln:ProductID>
+        <vuln:ProductID>12436</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>5075942</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5075942</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5075942</vuln:URL>
+        <vuln:ProductID>12437</vuln:ProductID>
+        <vuln:ProductID>12436</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5077181</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5077181</vuln:URL>
+        <vuln:Supercedence>5074109</vuln:Supercedence>
+        <vuln:ProductID>20437</vuln:ProductID>
+        <vuln:ProductID>20438</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>10.0.26200.7840</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://support.microsoft.com/help/5077181</vuln:URL>
+        <vuln:ProductID>20437</vuln:ProductID>
+        <vuln:ProductID>20438</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>5077181</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5077212</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5077212</vuln:URL>
+        <vuln:ProductID>20437</vuln:ProductID>
+        <vuln:ProductID>20438</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Hotpatch Update</vuln:SubType>
+        <vuln:FixedBuild>10.0.26200.7781</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://support.microsoft.com/help/5077212</vuln:URL>
+        <vuln:ProductID>20437</vuln:ProductID>
+        <vuln:ProductID>20438</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>5077212</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5075941</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5075941</vuln:URL>
+        <vuln:Supercedence>5073455</vuln:Supercedence>
+        <vuln:ProductID>12242</vuln:ProductID>
+        <vuln:ProductID>12243</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>10.0.22631.6649</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://support.microsoft.com/help/5075941</vuln:URL>
+        <vuln:ProductID>12242</vuln:ProductID>
+        <vuln:ProductID>12243</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>5075941</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5075897</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5075897</vuln:URL>
+        <vuln:Supercedence>5073450</vuln:Supercedence>
+        <vuln:ProductID>12244</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>10.0.25398.2149</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://support.microsoft.com/help/5075897</vuln:URL>
+        <vuln:ProductID>12244</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>5075897</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5075897</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5075897</vuln:URL>
+        <vuln:ProductID>12244</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5077181</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5077181</vuln:URL>
+        <vuln:Supercedence>5073379</vuln:Supercedence>
+        <vuln:ProductID>12389</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>10.0.26100.7840</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://support.microsoft.com/help/5077181</vuln:URL>
+        <vuln:ProductID>12389</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>5077181</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5077212</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5077212</vuln:URL>
+        <vuln:ProductID>12389</vuln:ProductID>
+        <vuln:ProductID>12390</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Hotpatch Update</vuln:SubType>
+        <vuln:FixedBuild>10.0.26100.7781</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://support.microsoft.com/help/5077212</vuln:URL>
+        <vuln:ProductID>12389</vuln:ProductID>
+        <vuln:ProductID>12390</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>5077212</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5077181</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5077181</vuln:URL>
+        <vuln:Supercedence>5074109</vuln:Supercedence>
+        <vuln:ProductID>12390</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>10.0.26100.7840</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://support.microsoft.com/help/5077181</vuln:URL>
+        <vuln:ProductID>12390</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>5077181</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5075999</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5075999</vuln:URL>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>10.0.14393.8868</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://support.microsoft.com/help/5075999</vuln:URL>
+        <vuln:ProductID>10853</vuln:ProductID>
+        <vuln:ProductID>10816</vuln:ProductID>
+        <vuln:ProductID>10855</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>5075999</vuln:SubType>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments>
+      <vuln:Acknowledgment>
+        <vuln:Name>Sai Ganesh Ramachandran with Microsoft</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+    </vuln:Acknowledgments>
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2026-02-10T08:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2026-02-10T08:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;The FAQs have been updated for this CVE&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
     </vuln:RevisionHistory>
@@ -15771,6 +16444,93 @@
     <vuln:Acknowledgments>
       <vuln:Acknowledgment>
         <vuln:Name>Anonymous</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+    </vuln:Acknowledgments>
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2026-02-10T08:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="0">
+    <vuln:Title>Red Hat, Inc. CVE-2023-2804: Heap Based Overflow libjpeg-turbo</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;A heap‑based buffer overflow exists in libjpeg‑turbo’s h2v2_merged_upsample_internal() function when processing 12‑bit lossless JPEG images. An attacker could craft an image containing out‑of‑range 12‑bit samples that, when decompressed with merged upsampling enabled, may trigger a segmentation fault or buffer overflow, resulting in an application crash.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, privileges required is low (PR:L).  What does that mean for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Any authenticated attacker could trigger this vulnerability. It does not require admin or other elevated privileges.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;How could an attacker exploit this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;An authenticated attacker could exploit the vulnerability by uploading a malicious TIFF file to a server.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is Microsoft addressing CVE‑2023‑2804, a vulnerability originally reported by Red Hat?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Microsoft uses the open‑source libjpeg‑turbo component inside certain Windows imaging components. The vulnerability was fixed upstream in libjpeg‑turbo 3.0.2 (&lt;a href="http://https://github.com/libjpeg-turbo/libjpeg-turbo/releases/tag/3.0.2"&gt;3.0.2 release notes&lt;/a&gt;), so Microsoft updated our internal copy accordingly. Customers do not need to take action—this fix is delivered through Microsoft servicing.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What version contains the fix?&lt;/strong&gt;
+Microsoft integrated the upstream fix from libjpeg‑turbo 3.0.2, and later builds may include the newer 3.1.3 upstream version (latest release). Customers receive the corrected version automatically through Windows updates.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="Windows Win32K - GRFX" Type="Tag" Ordinal="20">Windows Win32K - GRFX</vuln:Note>
+      <vuln:Note Title="Red Hat, Inc." Type="CNA" Ordinal="30">Red Hat, Inc.</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2023-2804</vuln:CVE>
+    <vuln:CWE ID="CWE-122">Heap-based Buffer Overflow</vuln:CWE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>12244</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Remote Code Execution</vuln:Description>
+        <vuln:ProductID>12244</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>12244</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation Less Likely</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>6.5</vuln:BaseScore>
+        <vuln:TemporalScore>5.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>12244</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5075897</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5075897</vuln:URL>
+        <vuln:Supercedence>5073450</vuln:Supercedence>
+        <vuln:ProductID>12244</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>10.0.25398.2149</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://support.microsoft.com/help/5075897</vuln:URL>
+        <vuln:ProductID>12244</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>5075897</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5075897</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5075897</vuln:URL>
+        <vuln:ProductID>12244</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments>
+      <vuln:Acknowledgment>
+        <vuln:Name>Hussein Alrubaye with Microsoft</vuln:Name>
         <vuln:URL />
       </vuln:Acknowledgment>
     </vuln:Acknowledgments>
@@ -17290,6 +18050,324 @@
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2026-02-10T08:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="23">
+    <vuln:Title>Windows Kernel Elevation of Privilege Vulnerability</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;Heap-based buffer overflow in Windows Kernel allows an authorized attacker to elevate privileges locally.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What privileges could be gained by an attacker who successfully exploited this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;An attacker who successfully exploited this vulnerability could gain SYSTEM privileges.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="Windows Kernel" Type="Tag" Ordinal="20">Windows Kernel</vuln:Note>
+      <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2026-21245</vuln:CVE>
+    <vuln:CWE ID="CWE-122">Heap-based Buffer Overflow</vuln:CWE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>12437</vuln:ProductID>
+        <vuln:ProductID>20437</vuln:ProductID>
+        <vuln:ProductID>20438</vuln:ProductID>
+        <vuln:ProductID>12389</vuln:ProductID>
+        <vuln:ProductID>12390</vuln:ProductID>
+        <vuln:ProductID>12436</vuln:ProductID>
+        <vuln:ProductID>20854</vuln:ProductID>
+        <vuln:ProductID>20853</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>12437</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>20437</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>20438</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>12389</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>12390</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>12436</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>20854</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>20853</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>12437</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>20437</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>20438</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>12389</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>12390</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>12436</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>20854</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>20853</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation Less Likely</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>6.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>12437</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>6.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>20437</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>6.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>20438</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>6.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>12389</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>6.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>12390</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>6.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>12436</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>6.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>20854</vuln:ProductID>
+      </vuln:ScoreSet>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>6.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>20853</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5075899</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5075899</vuln:URL>
+        <vuln:Supercedence>5074109</vuln:Supercedence>
+        <vuln:ProductID>12437</vuln:ProductID>
+        <vuln:ProductID>12436</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>10.0.26100.32370</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://support.microsoft.com/help/5075899</vuln:URL>
+        <vuln:ProductID>12437</vuln:ProductID>
+        <vuln:ProductID>12436</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>5075899</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5075899</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5075899</vuln:URL>
+        <vuln:ProductID>12437</vuln:ProductID>
+        <vuln:ProductID>12436</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5075942</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5075942</vuln:URL>
+        <vuln:ProductID>12437</vuln:ProductID>
+        <vuln:ProductID>12436</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Hotpatch Update</vuln:SubType>
+        <vuln:FixedBuild>10.0.26100.32313</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://support.microsoft.com/help/5075942</vuln:URL>
+        <vuln:ProductID>12437</vuln:ProductID>
+        <vuln:ProductID>12436</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>5075942</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Known Issue">
+        <vuln:Description>5075942</vuln:Description>
+        <vuln:URL>https://support.microsoft.com/help/5075942</vuln:URL>
+        <vuln:ProductID>12437</vuln:ProductID>
+        <vuln:ProductID>12436</vuln:ProductID>
+        <vuln:AffectedFiles />
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5077181</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5077181</vuln:URL>
+        <vuln:Supercedence>5074109</vuln:Supercedence>
+        <vuln:ProductID>20437</vuln:ProductID>
+        <vuln:ProductID>20438</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>10.0.26200.7840</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://support.microsoft.com/help/5077181</vuln:URL>
+        <vuln:ProductID>20437</vuln:ProductID>
+        <vuln:ProductID>20438</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>5077181</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5077212</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5077212</vuln:URL>
+        <vuln:ProductID>20437</vuln:ProductID>
+        <vuln:ProductID>20438</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Hotpatch Update</vuln:SubType>
+        <vuln:FixedBuild>10.0.26200.7781</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://support.microsoft.com/help/5077212</vuln:URL>
+        <vuln:ProductID>20437</vuln:ProductID>
+        <vuln:ProductID>20438</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>5077212</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5077181</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5077181</vuln:URL>
+        <vuln:Supercedence>5073379</vuln:Supercedence>
+        <vuln:ProductID>12389</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>10.0.26100.7840</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://support.microsoft.com/help/5077181</vuln:URL>
+        <vuln:ProductID>12389</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>5077181</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5077212</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5077212</vuln:URL>
+        <vuln:ProductID>12389</vuln:ProductID>
+        <vuln:ProductID>12390</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Hotpatch Update</vuln:SubType>
+        <vuln:FixedBuild>10.0.26100.7781</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://support.microsoft.com/help/5077212</vuln:URL>
+        <vuln:ProductID>12389</vuln:ProductID>
+        <vuln:ProductID>12390</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>5077212</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5077181</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5077181</vuln:URL>
+        <vuln:Supercedence>5074109</vuln:Supercedence>
+        <vuln:ProductID>12390</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>10.0.26100.7840</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://support.microsoft.com/help/5077181</vuln:URL>
+        <vuln:ProductID>12390</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>5077181</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>5077179</vuln:Description>
+        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5077179</vuln:URL>
+        <vuln:ProductID>20854</vuln:ProductID>
+        <vuln:ProductID>20853</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>Yes</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>10.0.28000.1575</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://support.microsoft.com/help/5077179</vuln:URL>
+        <vuln:ProductID>20854</vuln:ProductID>
+        <vuln:ProductID>20853</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>5077179</vuln:SubType>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments>
+      <vuln:Acknowledgment>
+        <vuln:Name>Pedro Miguel Justo Teixeira</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+    </vuln:Acknowledgments>
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2026-02-10T08:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2026-02-10T08:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Acknowledgement Updated&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
     </vuln:RevisionHistory>
@@ -24696,1089 +25774,6 @@
         <cvrf:Date>2026-02-10T08:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
 </cvrf:Description>
-      </vuln:Revision>
-    </vuln:RevisionHistory>
-  </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="0">
-    <vuln:Title>Red Hat, Inc. CVE-2023-2804: Heap Based Overflow libjpeg-turbo</vuln:Title>
-    <vuln:Notes>
-      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;A heap‑based buffer overflow exists in libjpeg‑turbo’s h2v2_merged_upsample_internal() function when processing 12‑bit lossless JPEG images. An attacker could craft an image containing out‑of‑range 12‑bit samples that, when decompressed with merged upsampling enabled, may trigger a segmentation fault or buffer overflow, resulting in an application crash.&lt;/p&gt;
-</vuln:Note>
-      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, privileges required is low (PR:L).  What does that mean for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Any authenticated attacker could trigger this vulnerability. It does not require admin or other elevated privileges.&lt;/p&gt;
-</vuln:Note>
-      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;How could an attacker exploit this vulnerability?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;An authenticated attacker could exploit the vulnerability by uploading a malicious TIFF file to a server.&lt;/p&gt;
-</vuln:Note>
-      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is Microsoft addressing CVE‑2023‑2804, a vulnerability originally reported by Red Hat?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Microsoft uses the open‑source libjpeg‑turbo component inside certain Windows imaging components. The vulnerability was fixed upstream in libjpeg‑turbo 3.0.2 (&lt;a href="http://https://github.com/libjpeg-turbo/libjpeg-turbo/releases/tag/3.0.2"&gt;3.0.2 release notes&lt;/a&gt;), so Microsoft updated our internal copy accordingly. Customers do not need to take action—this fix is delivered through Microsoft servicing.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;What version contains the fix?&lt;/strong&gt;
-Microsoft integrated the upstream fix from libjpeg‑turbo 3.0.2, and later builds may include the newer 3.1.3 upstream version (latest release). Customers receive the corrected version automatically through Windows updates.&lt;/p&gt;
-</vuln:Note>
-      <vuln:Note Title="Windows Win32K - GRFX" Type="Tag" Ordinal="20">Windows Win32K - GRFX</vuln:Note>
-      <vuln:Note Title="Red Hat, Inc." Type="CNA" Ordinal="30">Red Hat, Inc.</vuln:Note>
-      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
-    </vuln:Notes>
-    <vuln:CVE>CVE-2023-2804</vuln:CVE>
-    <vuln:CWE ID="CWE-122">Heap-based Buffer Overflow</vuln:CWE>
-    <vuln:ProductStatuses>
-      <vuln:Status Type="Known Affected">
-        <vuln:ProductID>12244</vuln:ProductID>
-      </vuln:Status>
-    </vuln:ProductStatuses>
-    <vuln:Threats>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Remote Code Execution</vuln:Description>
-        <vuln:ProductID>12244</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Important</vuln:Description>
-        <vuln:ProductID>12244</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Exploit Status">
-        <vuln:Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation Less Likely</vuln:Description>
-      </vuln:Threat>
-    </vuln:Threats>
-    <vuln:CVSSScoreSets>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>6.5</vuln:BaseScore>
-        <vuln:TemporalScore>5.7</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H/E:U/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>12244</vuln:ProductID>
-      </vuln:ScoreSet>
-    </vuln:CVSSScoreSets>
-    <vuln:Remediations>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>5075897</vuln:Description>
-        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5075897</vuln:URL>
-        <vuln:Supercedence>5073450</vuln:Supercedence>
-        <vuln:ProductID>12244</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:RestartRequired>Yes</vuln:RestartRequired>
-        <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.25398.2149</vuln:FixedBuild>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Release Notes">
-        <vuln:URL>https://support.microsoft.com/help/5075897</vuln:URL>
-        <vuln:ProductID>12244</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:SubType>5075897</vuln:SubType>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Known Issue">
-        <vuln:Description>5075897</vuln:Description>
-        <vuln:URL>https://support.microsoft.com/help/5075897</vuln:URL>
-        <vuln:ProductID>12244</vuln:ProductID>
-        <vuln:AffectedFiles />
-      </vuln:Remediation>
-    </vuln:Remediations>
-    <vuln:Acknowledgments>
-      <vuln:Acknowledgment>
-        <vuln:Name>Hussein Alrubaye with Microsoft</vuln:Name>
-        <vuln:URL />
-      </vuln:Acknowledgment>
-    </vuln:Acknowledgments>
-    <vuln:RevisionHistory>
-      <vuln:Revision>
-        <cvrf:Number>1.0</cvrf:Number>
-        <cvrf:Date>2026-02-10T08:00:00</cvrf:Date>
-        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
-</cvrf:Description>
-      </vuln:Revision>
-    </vuln:RevisionHistory>
-  </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="31">
-    <vuln:Title>Windows Hyper-V Security Feature Bypass Vulnerability</vuln:Title>
-    <vuln:Notes>
-      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;Improper access control in Windows Hyper-V allows an authorized attacker to bypass a security feature locally.&lt;/p&gt;
-</vuln:Note>
-      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What kind of security feature could be bypassed by successfully exploiting this vulnerability?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;An attacker who successfully exploited this vulnerability could bypass the &lt;a href="https://learn.microsoft.com/windows-hardware/design/device-experiences/oem-vbs"&gt;Virtualization-based Security&lt;/a&gt; feature.&lt;/p&gt;
-</vuln:Note>
-      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;How could an attacker exploit this vulnerability?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Exploitation requires an attacker who already has local execution on a VBS‑enabled guest VM to run a specially crafted application or driver that abuses the hypervisor’s overlay handling to bypass VBS/VTL protections and compromise kernel integrity.&lt;/p&gt;
-</vuln:Note>
-      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, a successful exploitation could lead to a scope change (S:C). What does this mean for this vulnerability?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;An exploited vulnerability can affect resources beyond the security scope managed by the security authority of the vulnerable component. In this case, the vulnerable component and the impacted component are different and managed by different security authorities.&lt;/p&gt;
-</vuln:Note>
-      <vuln:Note Title="Role: Windows Hyper-V" Type="Tag" Ordinal="20">Role: Windows Hyper-V</vuln:Note>
-      <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
-      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
-    </vuln:Notes>
-    <vuln:CVE>CVE-2026-21255</vuln:CVE>
-    <vuln:CWE ID="CWE-284">Improper Access Control</vuln:CWE>
-    <vuln:ProductStatuses>
-      <vuln:Status Type="Known Affected">
-        <vuln:ProductID>20854</vuln:ProductID>
-        <vuln:ProductID>20853</vuln:ProductID>
-        <vuln:ProductID>11569</vuln:ProductID>
-        <vuln:ProductID>11571</vuln:ProductID>
-        <vuln:ProductID>11572</vuln:ProductID>
-        <vuln:ProductID>11923</vuln:ProductID>
-        <vuln:ProductID>11924</vuln:ProductID>
-        <vuln:ProductID>11931</vuln:ProductID>
-        <vuln:ProductID>12097</vuln:ProductID>
-        <vuln:ProductID>12437</vuln:ProductID>
-        <vuln:ProductID>20437</vuln:ProductID>
-        <vuln:ProductID>20438</vuln:ProductID>
-        <vuln:ProductID>12242</vuln:ProductID>
-        <vuln:ProductID>12243</vuln:ProductID>
-        <vuln:ProductID>12244</vuln:ProductID>
-        <vuln:ProductID>12389</vuln:ProductID>
-        <vuln:ProductID>12390</vuln:ProductID>
-        <vuln:ProductID>12436</vuln:ProductID>
-        <vuln:ProductID>10853</vuln:ProductID>
-        <vuln:ProductID>10816</vuln:ProductID>
-        <vuln:ProductID>10855</vuln:ProductID>
-      </vuln:Status>
-    </vuln:ProductStatuses>
-    <vuln:Threats>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Security Feature Bypass</vuln:Description>
-        <vuln:ProductID>20854</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Security Feature Bypass</vuln:Description>
-        <vuln:ProductID>20853</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Security Feature Bypass</vuln:Description>
-        <vuln:ProductID>11569</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Security Feature Bypass</vuln:Description>
-        <vuln:ProductID>11571</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Security Feature Bypass</vuln:Description>
-        <vuln:ProductID>11572</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Security Feature Bypass</vuln:Description>
-        <vuln:ProductID>11923</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Security Feature Bypass</vuln:Description>
-        <vuln:ProductID>11924</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Security Feature Bypass</vuln:Description>
-        <vuln:ProductID>11931</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Security Feature Bypass</vuln:Description>
-        <vuln:ProductID>12097</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Security Feature Bypass</vuln:Description>
-        <vuln:ProductID>12437</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Security Feature Bypass</vuln:Description>
-        <vuln:ProductID>20437</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Security Feature Bypass</vuln:Description>
-        <vuln:ProductID>20438</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Security Feature Bypass</vuln:Description>
-        <vuln:ProductID>12242</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Security Feature Bypass</vuln:Description>
-        <vuln:ProductID>12243</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Security Feature Bypass</vuln:Description>
-        <vuln:ProductID>12244</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Security Feature Bypass</vuln:Description>
-        <vuln:ProductID>12389</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Security Feature Bypass</vuln:Description>
-        <vuln:ProductID>12390</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Security Feature Bypass</vuln:Description>
-        <vuln:ProductID>12436</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Security Feature Bypass</vuln:Description>
-        <vuln:ProductID>10853</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Security Feature Bypass</vuln:Description>
-        <vuln:ProductID>10816</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Security Feature Bypass</vuln:Description>
-        <vuln:ProductID>10855</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Important</vuln:Description>
-        <vuln:ProductID>20854</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Important</vuln:Description>
-        <vuln:ProductID>20853</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Important</vuln:Description>
-        <vuln:ProductID>11569</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Important</vuln:Description>
-        <vuln:ProductID>11571</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Important</vuln:Description>
-        <vuln:ProductID>11572</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Important</vuln:Description>
-        <vuln:ProductID>11923</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Important</vuln:Description>
-        <vuln:ProductID>11924</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Important</vuln:Description>
-        <vuln:ProductID>11931</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Important</vuln:Description>
-        <vuln:ProductID>12097</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Important</vuln:Description>
-        <vuln:ProductID>12437</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Important</vuln:Description>
-        <vuln:ProductID>20437</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Important</vuln:Description>
-        <vuln:ProductID>20438</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Important</vuln:Description>
-        <vuln:ProductID>12242</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Important</vuln:Description>
-        <vuln:ProductID>12243</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Important</vuln:Description>
-        <vuln:ProductID>12244</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Important</vuln:Description>
-        <vuln:ProductID>12389</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Important</vuln:Description>
-        <vuln:ProductID>12390</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Important</vuln:Description>
-        <vuln:ProductID>12436</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Important</vuln:Description>
-        <vuln:ProductID>10853</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Important</vuln:Description>
-        <vuln:ProductID>10816</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Important</vuln:Description>
-        <vuln:ProductID>10855</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Exploit Status">
-        <vuln:Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation Less Likely</vuln:Description>
-      </vuln:Threat>
-    </vuln:Threats>
-    <vuln:CVSSScoreSets>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>8.8</vuln:BaseScore>
-        <vuln:TemporalScore>7.7</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>20854</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>8.8</vuln:BaseScore>
-        <vuln:TemporalScore>7.7</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>20853</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>8.8</vuln:BaseScore>
-        <vuln:TemporalScore>7.7</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>11569</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>8.8</vuln:BaseScore>
-        <vuln:TemporalScore>7.7</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>11571</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>8.8</vuln:BaseScore>
-        <vuln:TemporalScore>7.7</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>11572</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>8.8</vuln:BaseScore>
-        <vuln:TemporalScore>7.7</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>11923</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>8.8</vuln:BaseScore>
-        <vuln:TemporalScore>7.7</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>11924</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>8.8</vuln:BaseScore>
-        <vuln:TemporalScore>7.7</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>11931</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>8.8</vuln:BaseScore>
-        <vuln:TemporalScore>7.7</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>12097</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>8.8</vuln:BaseScore>
-        <vuln:TemporalScore>7.7</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>12437</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>8.8</vuln:BaseScore>
-        <vuln:TemporalScore>7.7</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>20437</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>8.8</vuln:BaseScore>
-        <vuln:TemporalScore>7.7</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>20438</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>8.8</vuln:BaseScore>
-        <vuln:TemporalScore>7.7</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>12242</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>8.8</vuln:BaseScore>
-        <vuln:TemporalScore>7.7</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>12243</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>8.8</vuln:BaseScore>
-        <vuln:TemporalScore>7.7</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>12244</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>8.8</vuln:BaseScore>
-        <vuln:TemporalScore>7.7</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>12389</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>8.8</vuln:BaseScore>
-        <vuln:TemporalScore>7.7</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>12390</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>8.8</vuln:BaseScore>
-        <vuln:TemporalScore>7.7</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>12436</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>8.8</vuln:BaseScore>
-        <vuln:TemporalScore>7.7</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>10853</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>8.8</vuln:BaseScore>
-        <vuln:TemporalScore>7.7</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>10816</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>8.8</vuln:BaseScore>
-        <vuln:TemporalScore>7.7</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>10855</vuln:ProductID>
-      </vuln:ScoreSet>
-    </vuln:CVSSScoreSets>
-    <vuln:Remediations>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>5077179</vuln:Description>
-        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5077179</vuln:URL>
-        <vuln:ProductID>20854</vuln:ProductID>
-        <vuln:ProductID>20853</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:RestartRequired>Yes</vuln:RestartRequired>
-        <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.28000.1575</vuln:FixedBuild>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Release Notes">
-        <vuln:URL>https://support.microsoft.com/help/5077179</vuln:URL>
-        <vuln:ProductID>20854</vuln:ProductID>
-        <vuln:ProductID>20853</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:SubType>5077179</vuln:SubType>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>5075904</vuln:Description>
-        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5075904</vuln:URL>
-        <vuln:ProductID>11569</vuln:ProductID>
-        <vuln:ProductID>11571</vuln:ProductID>
-        <vuln:ProductID>11572</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:RestartRequired>Yes</vuln:RestartRequired>
-        <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.17763.8389</vuln:FixedBuild>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Release Notes">
-        <vuln:URL>https://support.microsoft.com/help/5075904</vuln:URL>
-        <vuln:ProductID>11569</vuln:ProductID>
-        <vuln:ProductID>11571</vuln:ProductID>
-        <vuln:ProductID>11572</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:SubType>5075904</vuln:SubType>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>5075906</vuln:Description>
-        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5075906</vuln:URL>
-        <vuln:Supercedence>5073457</vuln:Supercedence>
-        <vuln:ProductID>11923</vuln:ProductID>
-        <vuln:ProductID>11924</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:RestartRequired>Yes</vuln:RestartRequired>
-        <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.20348.4773</vuln:FixedBuild>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Release Notes">
-        <vuln:URL>https://support.microsoft.com/help/5075906</vuln:URL>
-        <vuln:ProductID>11923</vuln:ProductID>
-        <vuln:ProductID>11924</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:SubType>5075906</vuln:SubType>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Known Issue">
-        <vuln:Description>5075906</vuln:Description>
-        <vuln:URL>https://support.microsoft.com/help/5075906</vuln:URL>
-        <vuln:ProductID>11923</vuln:ProductID>
-        <vuln:ProductID>11924</vuln:ProductID>
-        <vuln:AffectedFiles />
-      </vuln:Remediation>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>5075943</vuln:Description>
-        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5075943</vuln:URL>
-        <vuln:ProductID>11923</vuln:ProductID>
-        <vuln:ProductID>11924</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:RestartRequired>Yes</vuln:RestartRequired>
-        <vuln:SubType>Security Hotpatch Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.20348.4711</vuln:FixedBuild>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Release Notes">
-        <vuln:URL>https://support.microsoft.com/help/5075943</vuln:URL>
-        <vuln:ProductID>11923</vuln:ProductID>
-        <vuln:ProductID>11924</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:SubType>5075943</vuln:SubType>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Known Issue">
-        <vuln:Description>5075943</vuln:Description>
-        <vuln:URL>https://support.microsoft.com/help/5075943</vuln:URL>
-        <vuln:ProductID>11923</vuln:ProductID>
-        <vuln:ProductID>11924</vuln:ProductID>
-        <vuln:AffectedFiles />
-      </vuln:Remediation>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>5075912</vuln:Description>
-        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5075912</vuln:URL>
-        <vuln:Supercedence>5073724</vuln:Supercedence>
-        <vuln:ProductID>11931</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:RestartRequired>Yes</vuln:RestartRequired>
-        <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19044.6937</vuln:FixedBuild>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Release Notes">
-        <vuln:URL>https://support.microsoft.com/help/5075912</vuln:URL>
-        <vuln:ProductID>11931</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:SubType>5075912</vuln:SubType>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>5075912</vuln:Description>
-        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5075912</vuln:URL>
-        <vuln:Supercedence>5073724</vuln:Supercedence>
-        <vuln:ProductID>12097</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:RestartRequired>Yes</vuln:RestartRequired>
-        <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.19045.6937</vuln:FixedBuild>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Release Notes">
-        <vuln:URL>https://support.microsoft.com/help/5075912</vuln:URL>
-        <vuln:ProductID>12097</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:SubType>5075912</vuln:SubType>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>5075899</vuln:Description>
-        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5075899</vuln:URL>
-        <vuln:Supercedence>5074109</vuln:Supercedence>
-        <vuln:ProductID>12437</vuln:ProductID>
-        <vuln:ProductID>12436</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:RestartRequired>Yes</vuln:RestartRequired>
-        <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.26100.32370</vuln:FixedBuild>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Release Notes">
-        <vuln:URL>https://support.microsoft.com/help/5075899</vuln:URL>
-        <vuln:ProductID>12437</vuln:ProductID>
-        <vuln:ProductID>12436</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:SubType>5075899</vuln:SubType>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Known Issue">
-        <vuln:Description>5075899</vuln:Description>
-        <vuln:URL>https://support.microsoft.com/help/5075899</vuln:URL>
-        <vuln:ProductID>12437</vuln:ProductID>
-        <vuln:ProductID>12436</vuln:ProductID>
-        <vuln:AffectedFiles />
-      </vuln:Remediation>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>5075942</vuln:Description>
-        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5075942</vuln:URL>
-        <vuln:ProductID>12437</vuln:ProductID>
-        <vuln:ProductID>12436</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:RestartRequired>Yes</vuln:RestartRequired>
-        <vuln:SubType>Security Hotpatch Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.26100.32313</vuln:FixedBuild>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Release Notes">
-        <vuln:URL>https://support.microsoft.com/help/5075942</vuln:URL>
-        <vuln:ProductID>12437</vuln:ProductID>
-        <vuln:ProductID>12436</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:SubType>5075942</vuln:SubType>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Known Issue">
-        <vuln:Description>5075942</vuln:Description>
-        <vuln:URL>https://support.microsoft.com/help/5075942</vuln:URL>
-        <vuln:ProductID>12437</vuln:ProductID>
-        <vuln:ProductID>12436</vuln:ProductID>
-        <vuln:AffectedFiles />
-      </vuln:Remediation>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>5077181</vuln:Description>
-        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5077181</vuln:URL>
-        <vuln:Supercedence>5074109</vuln:Supercedence>
-        <vuln:ProductID>20437</vuln:ProductID>
-        <vuln:ProductID>20438</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:RestartRequired>Yes</vuln:RestartRequired>
-        <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.26200.7840</vuln:FixedBuild>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Release Notes">
-        <vuln:URL>https://support.microsoft.com/help/5077181</vuln:URL>
-        <vuln:ProductID>20437</vuln:ProductID>
-        <vuln:ProductID>20438</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:SubType>5077181</vuln:SubType>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>5077212</vuln:Description>
-        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5077212</vuln:URL>
-        <vuln:ProductID>20437</vuln:ProductID>
-        <vuln:ProductID>20438</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:RestartRequired>Yes</vuln:RestartRequired>
-        <vuln:SubType>Security Hotpatch Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.26200.7781</vuln:FixedBuild>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Release Notes">
-        <vuln:URL>https://support.microsoft.com/help/5077212</vuln:URL>
-        <vuln:ProductID>20437</vuln:ProductID>
-        <vuln:ProductID>20438</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:SubType>5077212</vuln:SubType>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>5075941</vuln:Description>
-        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5075941</vuln:URL>
-        <vuln:Supercedence>5073455</vuln:Supercedence>
-        <vuln:ProductID>12242</vuln:ProductID>
-        <vuln:ProductID>12243</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:RestartRequired>Yes</vuln:RestartRequired>
-        <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.22631.6649</vuln:FixedBuild>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Release Notes">
-        <vuln:URL>https://support.microsoft.com/help/5075941</vuln:URL>
-        <vuln:ProductID>12242</vuln:ProductID>
-        <vuln:ProductID>12243</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:SubType>5075941</vuln:SubType>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>5075897</vuln:Description>
-        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5075897</vuln:URL>
-        <vuln:Supercedence>5073450</vuln:Supercedence>
-        <vuln:ProductID>12244</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:RestartRequired>Yes</vuln:RestartRequired>
-        <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.25398.2149</vuln:FixedBuild>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Release Notes">
-        <vuln:URL>https://support.microsoft.com/help/5075897</vuln:URL>
-        <vuln:ProductID>12244</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:SubType>5075897</vuln:SubType>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Known Issue">
-        <vuln:Description>5075897</vuln:Description>
-        <vuln:URL>https://support.microsoft.com/help/5075897</vuln:URL>
-        <vuln:ProductID>12244</vuln:ProductID>
-        <vuln:AffectedFiles />
-      </vuln:Remediation>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>5077181</vuln:Description>
-        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5077181</vuln:URL>
-        <vuln:Supercedence>5073379</vuln:Supercedence>
-        <vuln:ProductID>12389</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:RestartRequired>Yes</vuln:RestartRequired>
-        <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.26100.7840</vuln:FixedBuild>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Release Notes">
-        <vuln:URL>https://support.microsoft.com/help/5077181</vuln:URL>
-        <vuln:ProductID>12389</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:SubType>5077181</vuln:SubType>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>5077212</vuln:Description>
-        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5077212</vuln:URL>
-        <vuln:ProductID>12389</vuln:ProductID>
-        <vuln:ProductID>12390</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:RestartRequired>Yes</vuln:RestartRequired>
-        <vuln:SubType>Security Hotpatch Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.26100.7781</vuln:FixedBuild>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Release Notes">
-        <vuln:URL>https://support.microsoft.com/help/5077212</vuln:URL>
-        <vuln:ProductID>12389</vuln:ProductID>
-        <vuln:ProductID>12390</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:SubType>5077212</vuln:SubType>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>5077181</vuln:Description>
-        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5077181</vuln:URL>
-        <vuln:Supercedence>5074109</vuln:Supercedence>
-        <vuln:ProductID>12390</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:RestartRequired>Yes</vuln:RestartRequired>
-        <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.26100.7840</vuln:FixedBuild>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Release Notes">
-        <vuln:URL>https://support.microsoft.com/help/5077181</vuln:URL>
-        <vuln:ProductID>12390</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:SubType>5077181</vuln:SubType>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>5075999</vuln:Description>
-        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5075999</vuln:URL>
-        <vuln:ProductID>10853</vuln:ProductID>
-        <vuln:ProductID>10816</vuln:ProductID>
-        <vuln:ProductID>10855</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:RestartRequired>Yes</vuln:RestartRequired>
-        <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.14393.8868</vuln:FixedBuild>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Release Notes">
-        <vuln:URL>https://support.microsoft.com/help/5075999</vuln:URL>
-        <vuln:ProductID>10853</vuln:ProductID>
-        <vuln:ProductID>10816</vuln:ProductID>
-        <vuln:ProductID>10855</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:SubType>5075999</vuln:SubType>
-      </vuln:Remediation>
-    </vuln:Remediations>
-    <vuln:Acknowledgments>
-      <vuln:Acknowledgment>
-        <vuln:Name>Sai Ganesh Ramachandran with Microsoft</vuln:Name>
-        <vuln:URL />
-      </vuln:Acknowledgment>
-    </vuln:Acknowledgments>
-    <vuln:RevisionHistory>
-      <vuln:Revision>
-        <cvrf:Number>1.0</cvrf:Number>
-        <cvrf:Date>2026-02-10T08:00:00</cvrf:Date>
-        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
-</cvrf:Description>
-      </vuln:Revision>
-      <vuln:Revision>
-        <cvrf:Number>1.1</cvrf:Number>
-        <cvrf:Date>2026-02-10T08:00:00</cvrf:Date>
-        <cvrf:Description>&lt;p&gt;&lt;strong&gt;How could an attacker exploit this vulnerability?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Exploitation requires an attacker who already has local execution on a VBS‑enabled guest VM to run a specially crafted application or driver that abuses the hypervisor’s overlay handling to bypass VBS/VTL protections and compromise kernel integrity.&lt;/p&gt;
-</cvrf:Description>
-      </vuln:Revision>
-    </vuln:RevisionHistory>
-  </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="23">
-    <vuln:Title>Windows Kernel Elevation of Privilege Vulnerability</vuln:Title>
-    <vuln:Notes>
-      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;Heap-based buffer overflow in Windows Kernel allows an authorized attacker to elevate privileges locally.&lt;/p&gt;
-</vuln:Note>
-      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What privileges could be gained by an attacker who successfully exploited this vulnerability?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;An attacker who successfully exploited this vulnerability could gain SYSTEM privileges.&lt;/p&gt;
-</vuln:Note>
-      <vuln:Note Title="Windows Kernel" Type="Tag" Ordinal="20">Windows Kernel</vuln:Note>
-      <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
-      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
-    </vuln:Notes>
-    <vuln:CVE>CVE-2026-21245</vuln:CVE>
-    <vuln:CWE ID="CWE-122">Heap-based Buffer Overflow</vuln:CWE>
-    <vuln:ProductStatuses>
-      <vuln:Status Type="Known Affected">
-        <vuln:ProductID>12437</vuln:ProductID>
-        <vuln:ProductID>20437</vuln:ProductID>
-        <vuln:ProductID>20438</vuln:ProductID>
-        <vuln:ProductID>12389</vuln:ProductID>
-        <vuln:ProductID>12390</vuln:ProductID>
-        <vuln:ProductID>12436</vuln:ProductID>
-        <vuln:ProductID>20854</vuln:ProductID>
-        <vuln:ProductID>20853</vuln:ProductID>
-      </vuln:Status>
-    </vuln:ProductStatuses>
-    <vuln:Threats>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Elevation of Privilege</vuln:Description>
-        <vuln:ProductID>12437</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Elevation of Privilege</vuln:Description>
-        <vuln:ProductID>20437</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Elevation of Privilege</vuln:Description>
-        <vuln:ProductID>20438</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Elevation of Privilege</vuln:Description>
-        <vuln:ProductID>12389</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Elevation of Privilege</vuln:Description>
-        <vuln:ProductID>12390</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Elevation of Privilege</vuln:Description>
-        <vuln:ProductID>12436</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Elevation of Privilege</vuln:Description>
-        <vuln:ProductID>20854</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Impact">
-        <vuln:Description>Elevation of Privilege</vuln:Description>
-        <vuln:ProductID>20853</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Important</vuln:Description>
-        <vuln:ProductID>12437</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Important</vuln:Description>
-        <vuln:ProductID>20437</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Important</vuln:Description>
-        <vuln:ProductID>20438</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Important</vuln:Description>
-        <vuln:ProductID>12389</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Important</vuln:Description>
-        <vuln:ProductID>12390</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Important</vuln:Description>
-        <vuln:ProductID>12436</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Important</vuln:Description>
-        <vuln:ProductID>20854</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Severity">
-        <vuln:Description>Important</vuln:Description>
-        <vuln:ProductID>20853</vuln:ProductID>
-      </vuln:Threat>
-      <vuln:Threat Type="Exploit Status">
-        <vuln:Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation Less Likely</vuln:Description>
-      </vuln:Threat>
-    </vuln:Threats>
-    <vuln:CVSSScoreSets>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>7.8</vuln:BaseScore>
-        <vuln:TemporalScore>6.8</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>12437</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>7.8</vuln:BaseScore>
-        <vuln:TemporalScore>6.8</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>20437</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>7.8</vuln:BaseScore>
-        <vuln:TemporalScore>6.8</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>20438</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>7.8</vuln:BaseScore>
-        <vuln:TemporalScore>6.8</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>12389</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>7.8</vuln:BaseScore>
-        <vuln:TemporalScore>6.8</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>12390</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>7.8</vuln:BaseScore>
-        <vuln:TemporalScore>6.8</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>12436</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>7.8</vuln:BaseScore>
-        <vuln:TemporalScore>6.8</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>20854</vuln:ProductID>
-      </vuln:ScoreSet>
-      <vuln:ScoreSet>
-        <vuln:BaseScore>7.8</vuln:BaseScore>
-        <vuln:TemporalScore>6.8</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
-        <vuln:ProductID>20853</vuln:ProductID>
-      </vuln:ScoreSet>
-    </vuln:CVSSScoreSets>
-    <vuln:Remediations>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>5075899</vuln:Description>
-        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5075899</vuln:URL>
-        <vuln:Supercedence>5074109</vuln:Supercedence>
-        <vuln:ProductID>12437</vuln:ProductID>
-        <vuln:ProductID>12436</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:RestartRequired>Yes</vuln:RestartRequired>
-        <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.26100.32370</vuln:FixedBuild>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Release Notes">
-        <vuln:URL>https://support.microsoft.com/help/5075899</vuln:URL>
-        <vuln:ProductID>12437</vuln:ProductID>
-        <vuln:ProductID>12436</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:SubType>5075899</vuln:SubType>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Known Issue">
-        <vuln:Description>5075899</vuln:Description>
-        <vuln:URL>https://support.microsoft.com/help/5075899</vuln:URL>
-        <vuln:ProductID>12437</vuln:ProductID>
-        <vuln:ProductID>12436</vuln:ProductID>
-        <vuln:AffectedFiles />
-      </vuln:Remediation>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>5075942</vuln:Description>
-        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5075942</vuln:URL>
-        <vuln:ProductID>12437</vuln:ProductID>
-        <vuln:ProductID>12436</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:RestartRequired>Yes</vuln:RestartRequired>
-        <vuln:SubType>Security Hotpatch Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.26100.32313</vuln:FixedBuild>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Release Notes">
-        <vuln:URL>https://support.microsoft.com/help/5075942</vuln:URL>
-        <vuln:ProductID>12437</vuln:ProductID>
-        <vuln:ProductID>12436</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:SubType>5075942</vuln:SubType>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Known Issue">
-        <vuln:Description>5075942</vuln:Description>
-        <vuln:URL>https://support.microsoft.com/help/5075942</vuln:URL>
-        <vuln:ProductID>12437</vuln:ProductID>
-        <vuln:ProductID>12436</vuln:ProductID>
-        <vuln:AffectedFiles />
-      </vuln:Remediation>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>5077181</vuln:Description>
-        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5077181</vuln:URL>
-        <vuln:Supercedence>5074109</vuln:Supercedence>
-        <vuln:ProductID>20437</vuln:ProductID>
-        <vuln:ProductID>20438</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:RestartRequired>Yes</vuln:RestartRequired>
-        <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.26200.7840</vuln:FixedBuild>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Release Notes">
-        <vuln:URL>https://support.microsoft.com/help/5077181</vuln:URL>
-        <vuln:ProductID>20437</vuln:ProductID>
-        <vuln:ProductID>20438</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:SubType>5077181</vuln:SubType>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>5077212</vuln:Description>
-        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5077212</vuln:URL>
-        <vuln:ProductID>20437</vuln:ProductID>
-        <vuln:ProductID>20438</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:RestartRequired>Yes</vuln:RestartRequired>
-        <vuln:SubType>Security Hotpatch Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.26200.7781</vuln:FixedBuild>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Release Notes">
-        <vuln:URL>https://support.microsoft.com/help/5077212</vuln:URL>
-        <vuln:ProductID>20437</vuln:ProductID>
-        <vuln:ProductID>20438</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:SubType>5077212</vuln:SubType>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>5077181</vuln:Description>
-        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5077181</vuln:URL>
-        <vuln:Supercedence>5073379</vuln:Supercedence>
-        <vuln:ProductID>12389</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:RestartRequired>Yes</vuln:RestartRequired>
-        <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.26100.7840</vuln:FixedBuild>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Release Notes">
-        <vuln:URL>https://support.microsoft.com/help/5077181</vuln:URL>
-        <vuln:ProductID>12389</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:SubType>5077181</vuln:SubType>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>5077212</vuln:Description>
-        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5077212</vuln:URL>
-        <vuln:ProductID>12389</vuln:ProductID>
-        <vuln:ProductID>12390</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:RestartRequired>Yes</vuln:RestartRequired>
-        <vuln:SubType>Security Hotpatch Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.26100.7781</vuln:FixedBuild>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Release Notes">
-        <vuln:URL>https://support.microsoft.com/help/5077212</vuln:URL>
-        <vuln:ProductID>12389</vuln:ProductID>
-        <vuln:ProductID>12390</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:SubType>5077212</vuln:SubType>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>5077181</vuln:Description>
-        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5077181</vuln:URL>
-        <vuln:Supercedence>5074109</vuln:Supercedence>
-        <vuln:ProductID>12390</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:RestartRequired>Yes</vuln:RestartRequired>
-        <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.26100.7840</vuln:FixedBuild>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Release Notes">
-        <vuln:URL>https://support.microsoft.com/help/5077181</vuln:URL>
-        <vuln:ProductID>12390</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:SubType>5077181</vuln:SubType>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Vendor Fix">
-        <vuln:Description>5077179</vuln:Description>
-        <vuln:URL>https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5077179</vuln:URL>
-        <vuln:ProductID>20854</vuln:ProductID>
-        <vuln:ProductID>20853</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:RestartRequired>Yes</vuln:RestartRequired>
-        <vuln:SubType>Security Update</vuln:SubType>
-        <vuln:FixedBuild>10.0.28000.1575</vuln:FixedBuild>
-      </vuln:Remediation>
-      <vuln:Remediation Type="Release Notes">
-        <vuln:URL>https://support.microsoft.com/help/5077179</vuln:URL>
-        <vuln:ProductID>20854</vuln:ProductID>
-        <vuln:ProductID>20853</vuln:ProductID>
-        <vuln:AffectedFiles />
-        <vuln:SubType>5077179</vuln:SubType>
-      </vuln:Remediation>
-    </vuln:Remediations>
-    <vuln:Acknowledgments>
-      <vuln:Acknowledgment>
-        <vuln:Name>Pedro Miguel Justo Teixeira</vuln:Name>
-        <vuln:URL />
-      </vuln:Acknowledgment>
-    </vuln:Acknowledgments>
-    <vuln:RevisionHistory>
-      <vuln:Revision>
-        <cvrf:Number>1.0</cvrf:Number>
-        <cvrf:Date>2026-02-10T08:00:00</cvrf:Date>
-        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
-</cvrf:Description>
-      </vuln:Revision>
-      <vuln:Revision>
-        <cvrf:Number>1.1</cvrf:Number>
-        <cvrf:Date>2026-02-10T08:00:00</cvrf:Date>
-        <cvrf:Description />
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
