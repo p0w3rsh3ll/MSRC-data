@@ -14,13 +14,13 @@
     <cvrf:Version>1.0</cvrf:Version>
     <cvrf:RevisionHistory>
       <cvrf:Revision>
-        <cvrf:Number>5</cvrf:Number>
-        <cvrf:Date>2026-02-11T08:00:00</cvrf:Date>
+        <cvrf:Number>6</cvrf:Number>
+        <cvrf:Date>2026-02-12T08:00:00</cvrf:Date>
         <cvrf:Description>February 2026 Security Updates</cvrf:Description>
       </cvrf:Revision>
     </cvrf:RevisionHistory>
     <cvrf:InitialReleaseDate>2026-02-10T08:00:00</cvrf:InitialReleaseDate>
-    <cvrf:CurrentReleaseDate>2026-02-11T08:00:00</cvrf:CurrentReleaseDate>
+    <cvrf:CurrentReleaseDate>2026-02-12T08:00:00</cvrf:CurrentReleaseDate>
   </cvrf:DocumentTracking>
   <cvrf:DocumentNotes>
     <cvrf:Note Title="Release Notes" Audience="Public" Type="Details" Ordinal="0">&lt;h2 id="this-release-consists-of-the-following-59-microsoft-cves"&gt;This release consists of the following 59 Microsoft CVEs:&lt;/h2&gt;
@@ -25697,13 +25697,14 @@ Microsoft integrated the upstream fix from libjpeg‑turbo 3.0.2, and later bu
   <vuln:Vulnerability Ordinal="4">
     <vuln:Title>Windows Notepad App Remote Code Execution Vulnerability</vuln:Title>
     <vuln:Notes>
-      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;Improper neutralization of special elements used in a command ('command injection') in Windows Notepad App allows an unauthorized attacker to execute code over a network.&lt;/p&gt;
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;Improper neutralization of special elements used in a command ('command injection') in Windows Notepad App allows an unauthorized attacker to execute code locally.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;How could an attacker exploit this vulnerability?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;An attacker could trick a user into clicking a malicious link inside a Markdown file opened in Notepad, causing the application to launch unverified protocols that load and execute remote files.&lt;/p&gt;
 </vuln:Note>
-      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, the attack vector is network (AV:N) and user interaction is required (UI:R). What is the target context of the remote code execution?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;The malicious code would execute in the security context of the user who opened the Markdown file, giving the attacker the same permissions as that user.&lt;/p&gt;
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;According to the CVSS metric, the attack vector is local (AV:L). Why does the CVE title indicate that this is a remote code execution?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The word &lt;strong&gt;Remote&lt;/strong&gt; in the title refers to the location of the attacker. This type of exploit is sometimes referred to as Arbitrary Code Execution (ACE). The attack itself is carried out locally.&lt;/p&gt;
+&lt;p&gt;For example, when the score indicates that the &lt;strong&gt;Attack Vector&lt;/strong&gt; is &lt;strong&gt;Local&lt;/strong&gt; and &lt;strong&gt;User Interaction&lt;/strong&gt; is &lt;strong&gt;Required&lt;/strong&gt;, this could describe an exploit in which an attacker, through social engineering, convinces a victim to download and open a specially crafted file from a website which leads to a local attack on their computer.&lt;/p&gt;
 </vuln:Note>
       <vuln:Note Title="Windows Notepad App" Type="Tag" Ordinal="20">Windows Notepad App</vuln:Note>
       <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
@@ -25731,9 +25732,9 @@ Microsoft integrated the upstream fix from libjpeg‑turbo 3.0.2, and later bu
     </vuln:Threats>
     <vuln:CVSSScoreSets>
       <vuln:ScoreSet>
-        <vuln:BaseScore>8.8</vuln:BaseScore>
-        <vuln:TemporalScore>7.7</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>6.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
         <vuln:ProductID>20763</vuln:ProductID>
       </vuln:ScoreSet>
     </vuln:CVSSScoreSets>
@@ -25773,6 +25774,18 @@ Microsoft integrated the upstream fix from libjpeg‑turbo 3.0.2, and later bu
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2026-02-10T08:00:00</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.1</cvrf:Number>
+        <cvrf:Date>2026-02-12T08:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added FAQ information. This is an informational change only.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>1.3</cvrf:Number>
+        <cvrf:Date>2026-02-12T08:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Added an FAQ and updated the CVSS score. This is an informational change only.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
     </vuln:RevisionHistory>
