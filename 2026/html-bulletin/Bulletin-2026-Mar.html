@@ -85,6 +85,15 @@
 <tr><td>Microsoft</td><td>Azure Compute Gallery</td>    <td><a href="#CVE-2026-26124">CVE-2026-26124</a></td>    <td>Microsoft ACI Confidential Containers Elevation of Privilege Vulnerability</td></tr>
 <tr><td>Microsoft</td><td>Azure Compute Gallery</td>    <td><a href="#CVE-2026-26122">CVE-2026-26122</a></td>    <td>Microsoft ACI Confidential Containers Information Disclosure Vulnerability</td></tr>
 <tr><td>Microsoft</td><td>Microsoft Devices Pricing Program</td>    <td><a href="#CVE-2026-21536">CVE-2026-21536</a></td>    <td>Microsoft Devices Pricing Program Remote Code Execution Vulnerability</td></tr>
+<tr><td>Chrome</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2026-3545">CVE-2026-3545</a></td>    <td>Chromium: CVE-2026-3545 Insufficient data validation in Navigation</td></tr>
+<tr><td>Chrome</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2026-3544">CVE-2026-3544</a></td>    <td>Chromium: CVE-2026-3544 Heap buffer overflow in WebCodecs</td></tr>
+<tr><td>Chrome</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2026-3542">CVE-2026-3542</a></td>    <td>Chromium: CVE-2026-3542 Inappropriate implementation in WebAssembly</td></tr>
+<tr><td>Chrome</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2026-3540">CVE-2026-3540</a></td>    <td>Chromium: CVE-2026-3540 Inappropriate implementation in WebAudio</td></tr>
+<tr><td>Chrome</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2026-3536">CVE-2026-3536</a></td>    <td>Chromium: CVE-2026-3536 Integer overflow in ANGLE</td></tr>
+<tr><td>Chrome</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2026-3538">CVE-2026-3538</a></td>    <td>Chromium: CVE-2026-3538 Integer overflow in Skia</td></tr>
+<tr><td>Chrome</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2026-3543">CVE-2026-3543</a></td>    <td>Chromium: CVE-2026-3543 Inappropriate implementation in V8</td></tr>
+<tr><td>Chrome</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2026-3541">CVE-2026-3541</a></td>    <td>Chromium: CVE-2026-3541 Inappropriate implementation in CSS</td></tr>
+<tr><td>Chrome</td><td>Microsoft Edge (Chromium-based)</td>    <td><a href="#CVE-2026-3539">CVE-2026-3539</a></td>    <td>Chromium: CVE-2026-3539 Object lifecycle issue in DevTools</td></tr>
 <tr><td>Microsoft</td><td>Payment Orchestrator Service</td>    <td><a href="#CVE-2026-26125">CVE-2026-26125</a></td>    <td>Payment Orchestrator Service Elevation of Privilege Vulnerability</td></tr>
 </table>
 <h1 id="CVE-2026-23651">CVE-2026-23651 - Microsoft ACI Confidential Containers Elevation of Privilege Vulnerability</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
@@ -128,13 +137,19 @@
         <b>Executive Summary:</b> <br><p>Permissive regular expression in Azure Compute Gallery allows an authorized attacker to elevate privileges locally.</p>
 
         <br>
-        <b>FAQ:</b><br>None
+        <b>FAQ:</b><br><p><strong>Why are there no links to an update or instructions with steps that must be taken to protect from this vulnerability?</strong></p>
+<p>This vulnerability has been mitigated by Microsoft in the Azure Confidential ACI service. No service update, patch, reboot, or upgrade is required.</p>
+<p>In Azure Confidential ACI scenarios, customers are responsible for enforcing existing Confidential Compute security policies. Customers should verify that their policies enforce the documented minimum Security Version Number (SVN) for the Utility VM (UVM), as described in the Confidential ACI configuration guidance.</p>
+<p>If a customer determines that their policy configuration does not align with the published minimum SVN guidance, correcting the configuration is part of normal policy enforcement and not a remediation action introduced by this CVE. No additional customer action is required beyond adherence to existing guidance.</p>
+<p>Please refer to the following for more information: <a href="https://github.com/microsoft/confidential-aci-examples/blob/main/docs/Confidential_ACI_SCHEME.md">https://github.com/microsoft/confidential-aci-examples/blob/main/docs/Confidential_ACI_SCHEME.md</a></p>
+
         <br>
         <b>Mitigations:</b><br>None
         <br>
         <b>Workarounds:</b><br>None
         <br>
         <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp03/05/2026&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+<br>1.1&nbsp&nbsp&nbsp&nbsp03/06/2026&nbsp&nbsp&nbsp&nbsp<p>Added FAQ information. This is an informational change only.</p>
 
         <br></td>
      <td>Critical</td>
@@ -353,9 +368,15 @@
                             <tr><td title="This metric measures the likelihood of the vulnerability being attacked, and is typically based on the current state of exploit techniques, exploit code availability, or active, 'in-the-wild' exploitation."><b>Exploit Code Maturity</b></td><td title="Proof-of-concept exploit code is available, or an attack demonstration is not practical for most systems. The code or technique is not functional in all situations and may require substantial modification by a skilled attacker."><b>Proof-of-Concept</b></td></tr><tr><td title="The Remediation Level of a vulnerability is an important factor for prioritization. The typical vulnerability is unpatched when initially published. Workarounds or hotfixes may offer interim remediation until an official patch or upgrade is issued. Each of these respective stages adjusts the temporal score downwards, reflecting the decreasing urgency as remediation becomes final."><b>Remediation Level</b></td><td title="A complete vendor solution is available. Either the vendor has issued an official patch, or an upgrade is available."><b>Official Fix</b></td></tr><tr><td title="This metric measures the degree of confidence in the existence of the vulnerability and the credibility of the known technical details. Sometimes only the existence of vulnerabilities are publicized, but without specific details. For example, an impact may be recognized as undesirable, but the root cause may not be known. The vulnerability may later be corroborated by research which suggests where the vulnerability may lie, though the research may not be certain. Finally, a vulnerability may be confirmed through acknowledgement by the author or vendor of the affected technology. The urgency of a vulnerability is higher when a vulnerability is known to exist with certainty. This metric also suggests the level of technical knowledge available to would-be attackers."><b>Report Confidence</b></td><td title="Detailed reports exist, or functional reproduction is possible (functional exploits may provide this). Source code is available to independently verify the assertions of the research, or the author or vendor of the affected code has confirmed the presence of the vulnerability."><b>Confirmed</b></td></tr>
                         </table>
         <br>
-        <b>Executive Summary:</b> <br>None
+        <b>Executive Summary:</b> <br><p>'.../...//' in Azure Compute Gallery allows an authorized attacker to elevate privileges locally.</p>
+
         <br>
         <b>FAQ:</b><br><p><strong>Why are there no links to an update or instructions with steps that must be taken to protect from this vulnerability?</strong></p>
+<p>This vulnerability has been mitigated by Microsoft in the Azure Confidential ACI service. No service update, patch, reboot, or upgrade is required.</p>
+<p>For Azure Confidential ACI workloads, customers are expected to enforce existing Confidential Compute policies. Customers should verify that their Confidential Compute Environment (CCE) policy enforces the documented minimum Security Version Number (SVN) for infrastructure sidecar components, as described in the Confidential ACI configuration guidance.</p>
+<p>If a customer finds that their policy configuration does not align with the published minimum SVN guidance, updating the configuration is considered standard policy enforcement and not a vulnerability‑specific remediation. No additional customer action is required beyond following existing guidance.</p>
+<p>Please refer to the follwoing for more information: <a href="https://github.com/microsoft/confidential-aci-examples/blob/main/docs/Confidential_ACI_SCHEME.md">https://github.com/microsoft/confidential-aci-examples/blob/main/docs/Confidential_ACI_SCHEME.md</a></p>
+<br><p><strong>Why are there no links to an update or instructions with steps that must be taken to protect from this vulnerability?</strong></p>
 <p>This vulnerability has already been fully mitigated by Microsoft. There is no action for users of this service to take. The purpose of this CVE is to provide further transparency.</p>
 <p>Please see <a href="https://aka.ms/MSRC-Cloud-CVEs">Toward greater transparency: Unveiling Cloud Service CVEs</a> for more information.</p>
 
@@ -365,6 +386,7 @@
         <b>Workarounds:</b><br>None
         <br>
         <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp03/05/2026&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+<br>1.1&nbsp&nbsp&nbsp&nbsp03/06/2026&nbsp&nbsp&nbsp&nbsp<p>Added FAQ information. This is an informational change only.</p>
 
         <br></td>
      <td>Critical</td>
@@ -563,7 +585,7 @@
 <p>Issuing CNA: Microsoft</p></td>
      <td>        <b>CVE Title:</b> Microsoft ACI Confidential Containers Information Disclosure Vulnerability
         <br>
-        <b>Weakness:</b> N/A
+        <b>Weakness:</b> CWE-1188 : Initialization of a Resource with an Insecure Default
         <br>
         <b>CVSS:</b> <br>                        <br> <b>CVSS:3.1 Highest BaseScore:6.5/TemporalScore:5.7</b>
                         <table class="cvss_table" border=1 cellpadding=0 width="99%">
@@ -583,9 +605,15 @@
                             <tr><td title="This metric measures the likelihood of the vulnerability being attacked, and is typically based on the current state of exploit techniques, exploit code availability, or active, 'in-the-wild' exploitation."><b>Exploit Code Maturity</b></td><td title="No exploit code is available, or an exploit is theoretical."><b>Unproven</b></td></tr><tr><td title="The Remediation Level of a vulnerability is an important factor for prioritization. The typical vulnerability is unpatched when initially published. Workarounds or hotfixes may offer interim remediation until an official patch or upgrade is issued. Each of these respective stages adjusts the temporal score downwards, reflecting the decreasing urgency as remediation becomes final."><b>Remediation Level</b></td><td title="A complete vendor solution is available. Either the vendor has issued an official patch, or an upgrade is available."><b>Official Fix</b></td></tr><tr><td title="This metric measures the degree of confidence in the existence of the vulnerability and the credibility of the known technical details. Sometimes only the existence of vulnerabilities are publicized, but without specific details. For example, an impact may be recognized as undesirable, but the root cause may not be known. The vulnerability may later be corroborated by research which suggests where the vulnerability may lie, though the research may not be certain. Finally, a vulnerability may be confirmed through acknowledgement by the author or vendor of the affected technology. The urgency of a vulnerability is higher when a vulnerability is known to exist with certainty. This metric also suggests the level of technical knowledge available to would-be attackers."><b>Report Confidence</b></td><td title="Detailed reports exist, or functional reproduction is possible (functional exploits may provide this). Source code is available to independently verify the assertions of the research, or the author or vendor of the affected code has confirmed the presence of the vulnerability."><b>Confirmed</b></td></tr>
                         </table>
         <br>
-        <b>Executive Summary:</b> <br>None
+        <b>Executive Summary:</b> <br><p>Initialization of a resource with an insecure default in Azure Compute Gallery allows an authorized attacker to disclose information over a network.</p>
+
         <br>
         <b>FAQ:</b><br><p><strong>Why are there no links to an update or instructions with steps that must be taken to protect from this vulnerability?</strong></p>
+<p>This vulnerability has been mitigated by Microsoft in the Azure Confidential ACI service. No service update, patch, reboot, or upgrade is required.</p>
+<p>This issue does not require customers to take any specific action beyond standard operation of Azure Confidential ACI. Existing Confidential Compute guidance continues to apply, and no additional policy checks or configuration changes are required for this vulnerability.</p>
+<p>Customers can refer to the Confidential ACI configuration guidance to ensure they are following current platform recommendations.</p>
+<p>Please refer to the follwoing for more information: <a href="https://github.com/microsoft/confidential-aci-examples/blob/main/docs/Confidential_ACI_SCHEME.md">https://github.com/microsoft/confidential-aci-examples/blob/main/docs/Confidential_ACI_SCHEME.md</a></p>
+<br><p><strong>Why are there no links to an update or instructions with steps that must be taken to protect from this vulnerability?</strong></p>
 <p>This vulnerability has already been fully mitigated by Microsoft. There is no action for users of this service to take. The purpose of this CVE is to provide further transparency.</p>
 <p>Please see <a href="https://aka.ms/MSRC-Cloud-CVEs">Toward greater transparency: Unveiling Cloud Service CVEs</a> for more information.</p>
 
@@ -595,6 +623,8 @@
         <b>Workarounds:</b><br>None
         <br>
         <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp03/05/2026&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+<br>1.2&nbsp&nbsp&nbsp&nbsp03/06/2026&nbsp&nbsp&nbsp&nbsp<p>Added FAQ information. This is an informational change only.</p>
+<br>1.1&nbsp&nbsp&nbsp&nbsp03/06/2026&nbsp&nbsp&nbsp&nbsp<p>Updated CWE value.  This is an informational change only.</p>
 
         <br></td>
      <td>Critical</td>
@@ -659,6 +689,1104 @@
  <tr>
      <td>CVE-2026-26122</td>
      <td>Microsoft Offensive Research &amp; Security Engineering<br><br><br></td>
+ </tr>
+</table><h1 id="CVE-2026-3545">CVE-2026-3545 - Chromium: CVE-2026-3545 Insufficient data validation in Navigation</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2026-3545">CVE-2026-3545</a>
+<br>
+<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-3545">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2026-3545">NVD</a>
+<p>Issuing CNA: Chrome</p></td>
+     <td>        <b>CVE Title:</b> Chromium: CVE-2026-3545 Insufficient data validation in Navigation
+        <br>
+        <b>Weakness:</b> N/A
+        <br>
+        <b>CVSS:</b> <br>None
+        <br>
+        <b>Executive Summary:</b> <br><p>This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see <a href="https://chromereleases.googleblog.com/2021">Google Chrome Releases</a> for more information.</p>
+
+        <br>
+        <b>FAQ:</b><br><p><strong>What is the version information for this release?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Microsoft Edge Version</th>
+<th>Date Released</th>
+<th>Based on Chromium Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>145.0.3800.97</td>
+<td>03/06/2026</td>
+<td>145.0.7632.159/160</td>
+</tr>
+</tbody>
+</table>
+<br><p><strong>Why is this Chrome CVE included in the Security Update Guide?</strong></p>
+<p>The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based). It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.</p>
+<p><strong>How can I see the version of the browser?</strong></p>
+<ol>
+<li>In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window</li>
+<li>Click on <strong>Help and Feedback</strong></li>
+<li>Click on <strong>About Microsoft Edge</strong></li>
+</ol>
+
+        <br>
+        <b>Mitigations:</b><br>None
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp03/06/2026&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Unknown</td>
+     <td>Unknown</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an <a href="https://www.microsoft.com/en-us/msrc/exploitability-index?rtc=1">exploitability assessment</a> for this vulnerability at the time of original publication.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Exploitation Less Likely</td>
+     <td>No</td>
+     <td>No</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="9"><b>CVE-2026-3545</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Fixed Build</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Edge (Chromium-based)</td>
+                <td><a href="https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnote-stable-channel" >Release Notes (Security Update)</td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td></td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>145.0.3800.97<br /></td>
+                <td>No</td>
+                <td>None</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2026-3545</td>
+     <td>None</td>
+ </tr>
+</table><h1 id="CVE-2026-3544">CVE-2026-3544 - Chromium: CVE-2026-3544 Heap buffer overflow in WebCodecs</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2026-3544">CVE-2026-3544</a>
+<br>
+<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-3544">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2026-3544">NVD</a>
+<p>Issuing CNA: Chrome</p></td>
+     <td>        <b>CVE Title:</b> Chromium: CVE-2026-3544 Heap buffer overflow in WebCodecs
+        <br>
+        <b>Weakness:</b> N/A
+        <br>
+        <b>CVSS:</b> <br>None
+        <br>
+        <b>Executive Summary:</b> <br><p>This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see <a href="https://chromereleases.googleblog.com/2021">Google Chrome Releases</a> for more information.</p>
+
+        <br>
+        <b>FAQ:</b><br><p><strong>What is the version information for this release?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Microsoft Edge Version</th>
+<th>Date Released</th>
+<th>Based on Chromium Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>145.0.3800.97</td>
+<td>03/06/2026</td>
+<td>145.0.7632.159/160</td>
+</tr>
+</tbody>
+</table>
+<br><p><strong>Why is this Chrome CVE included in the Security Update Guide?</strong></p>
+<p>The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based). It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.</p>
+<p><strong>How can I see the version of the browser?</strong></p>
+<ol>
+<li>In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window</li>
+<li>Click on <strong>Help and Feedback</strong></li>
+<li>Click on <strong>About Microsoft Edge</strong></li>
+</ol>
+
+        <br>
+        <b>Mitigations:</b><br>None
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp03/06/2026&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Unknown</td>
+     <td>Unknown</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an <a href="https://www.microsoft.com/en-us/msrc/exploitability-index?rtc=1">exploitability assessment</a> for this vulnerability at the time of original publication.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Exploitation Less Likely</td>
+     <td>No</td>
+     <td>No</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="9"><b>CVE-2026-3544</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Fixed Build</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Edge (Chromium-based)</td>
+                <td><a href="https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnote-stable-channel" >Release Notes (Security Update)</td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td></td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>145.0.3800.97<br /></td>
+                <td>No</td>
+                <td>None</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2026-3544</td>
+     <td>None</td>
+ </tr>
+</table><h1 id="CVE-2026-3542">CVE-2026-3542 - Chromium: CVE-2026-3542 Inappropriate implementation in WebAssembly</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2026-3542">CVE-2026-3542</a>
+<br>
+<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-3542">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2026-3542">NVD</a>
+<p>Issuing CNA: Chrome</p></td>
+     <td>        <b>CVE Title:</b> Chromium: CVE-2026-3542 Inappropriate implementation in WebAssembly
+        <br>
+        <b>Weakness:</b> N/A
+        <br>
+        <b>CVSS:</b> <br>None
+        <br>
+        <b>Executive Summary:</b> <br><p>This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see <a href="https://chromereleases.googleblog.com/2021">Google Chrome Releases</a> for more information.</p>
+
+        <br>
+        <b>FAQ:</b><br><p><strong>What is the version information for this release?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Microsoft Edge Version</th>
+<th>Date Released</th>
+<th>Based on Chromium Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>145.0.3800.97</td>
+<td>03/06/2026</td>
+<td>145.0.7632.159/160</td>
+</tr>
+</tbody>
+</table>
+<br><p><strong>Why is this Chrome CVE included in the Security Update Guide?</strong></p>
+<p>The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based). It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.</p>
+<p><strong>How can I see the version of the browser?</strong></p>
+<ol>
+<li>In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window</li>
+<li>Click on <strong>Help and Feedback</strong></li>
+<li>Click on <strong>About Microsoft Edge</strong></li>
+</ol>
+
+        <br>
+        <b>Mitigations:</b><br>None
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp03/06/2026&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Unknown</td>
+     <td>Unknown</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an <a href="https://www.microsoft.com/en-us/msrc/exploitability-index?rtc=1">exploitability assessment</a> for this vulnerability at the time of original publication.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Exploitation Less Likely</td>
+     <td>No</td>
+     <td>No</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="9"><b>CVE-2026-3542</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Fixed Build</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Edge (Chromium-based)</td>
+                <td><a href="https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnote-stable-channel" >Release Notes (Security Update)</td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td></td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>145.0.3800.97<br /></td>
+                <td>No</td>
+                <td>None</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2026-3542</td>
+     <td>None</td>
+ </tr>
+</table><h1 id="CVE-2026-3540">CVE-2026-3540 - Chromium: CVE-2026-3540 Inappropriate implementation in WebAudio</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2026-3540">CVE-2026-3540</a>
+<br>
+<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-3540">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2026-3540">NVD</a>
+<p>Issuing CNA: Chrome</p></td>
+     <td>        <b>CVE Title:</b> Chromium: CVE-2026-3540 Inappropriate implementation in WebAudio
+        <br>
+        <b>Weakness:</b> N/A
+        <br>
+        <b>CVSS:</b> <br>None
+        <br>
+        <b>Executive Summary:</b> <br><p>This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see <a href="https://chromereleases.googleblog.com/2021">Google Chrome Releases</a> for more information.</p>
+
+        <br>
+        <b>FAQ:</b><br><p><strong>What is the version information for this release?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Microsoft Edge Version</th>
+<th>Date Released</th>
+<th>Based on Chromium Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>145.0.3800.97</td>
+<td>03/06/2026</td>
+<td>145.0.7632.159/160</td>
+</tr>
+</tbody>
+</table>
+<br><p><strong>Why is this Chrome CVE included in the Security Update Guide?</strong></p>
+<p>The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based). It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.</p>
+<p><strong>How can I see the version of the browser?</strong></p>
+<ol>
+<li>In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window</li>
+<li>Click on <strong>Help and Feedback</strong></li>
+<li>Click on <strong>About Microsoft Edge</strong></li>
+</ol>
+
+        <br>
+        <b>Mitigations:</b><br>None
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp03/06/2026&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Unknown</td>
+     <td>Unknown</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an <a href="https://www.microsoft.com/en-us/msrc/exploitability-index?rtc=1">exploitability assessment</a> for this vulnerability at the time of original publication.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Exploitation Less Likely</td>
+     <td>No</td>
+     <td>No</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="9"><b>CVE-2026-3540</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Fixed Build</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Edge (Chromium-based)</td>
+                <td><a href="https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnote-stable-channel" >Release Notes (Security Update)</td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td></td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>145.0.3800.97<br /></td>
+                <td>No</td>
+                <td>None</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2026-3540</td>
+     <td>None</td>
+ </tr>
+</table><h1 id="CVE-2026-3536">CVE-2026-3536 - Chromium: CVE-2026-3536 Integer overflow in ANGLE</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2026-3536">CVE-2026-3536</a>
+<br>
+<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-3536">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2026-3536">NVD</a>
+<p>Issuing CNA: Chrome</p></td>
+     <td>        <b>CVE Title:</b> Chromium: CVE-2026-3536 Integer overflow in ANGLE
+        <br>
+        <b>Weakness:</b> N/A
+        <br>
+        <b>CVSS:</b> <br>None
+        <br>
+        <b>Executive Summary:</b> <br><p>This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see <a href="https://chromereleases.googleblog.com/2021">Google Chrome Releases</a> for more information.</p>
+
+        <br>
+        <b>FAQ:</b><br><p><strong>What is the version information for this release?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Microsoft Edge Version</th>
+<th>Date Released</th>
+<th>Based on Chromium Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>145.0.3800.97</td>
+<td>03/06/2026</td>
+<td>145.0.7632.159/160</td>
+</tr>
+</tbody>
+</table>
+<br><p><strong>Why is this Chrome CVE included in the Security Update Guide?</strong></p>
+<p>The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based). It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.</p>
+<p><strong>How can I see the version of the browser?</strong></p>
+<ol>
+<li>In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window</li>
+<li>Click on <strong>Help and Feedback</strong></li>
+<li>Click on <strong>About Microsoft Edge</strong></li>
+</ol>
+
+        <br>
+        <b>Mitigations:</b><br>None
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp03/06/2026&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Unknown</td>
+     <td>Unknown</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an <a href="https://www.microsoft.com/en-us/msrc/exploitability-index?rtc=1">exploitability assessment</a> for this vulnerability at the time of original publication.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Exploitation Less Likely</td>
+     <td>No</td>
+     <td>No</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="9"><b>CVE-2026-3536</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Fixed Build</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Edge (Chromium-based)</td>
+                <td><a href="https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnote-stable-channel" >Release Notes (Security Update)</td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td></td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>145.0.3800.97<br /></td>
+                <td>No</td>
+                <td>None</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2026-3536</td>
+     <td>None</td>
+ </tr>
+</table><h1 id="CVE-2026-3538">CVE-2026-3538 - Chromium: CVE-2026-3538 Integer overflow in Skia</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2026-3538">CVE-2026-3538</a>
+<br>
+<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-3538">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2026-3538">NVD</a>
+<p>Issuing CNA: Chrome</p></td>
+     <td>        <b>CVE Title:</b> Chromium: CVE-2026-3538 Integer overflow in Skia
+        <br>
+        <b>Weakness:</b> N/A
+        <br>
+        <b>CVSS:</b> <br>None
+        <br>
+        <b>Executive Summary:</b> <br><p>This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see <a href="https://chromereleases.googleblog.com/2021">Google Chrome Releases</a> for more information.</p>
+
+        <br>
+        <b>FAQ:</b><br><p><strong>What is the version information for this release?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Microsoft Edge Version</th>
+<th>Date Released</th>
+<th>Based on Chromium Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>145.0.3800.97</td>
+<td>03/06/2026</td>
+<td>145.0.7632.159/160</td>
+</tr>
+</tbody>
+</table>
+<br><p><strong>Why is this Chrome CVE included in the Security Update Guide?</strong></p>
+<p>The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based). It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.</p>
+<p><strong>How can I see the version of the browser?</strong></p>
+<ol>
+<li>In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window</li>
+<li>Click on <strong>Help and Feedback</strong></li>
+<li>Click on <strong>About Microsoft Edge</strong></li>
+</ol>
+
+        <br>
+        <b>Mitigations:</b><br>None
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp03/06/2026&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Unknown</td>
+     <td>Unknown</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an <a href="https://www.microsoft.com/en-us/msrc/exploitability-index?rtc=1">exploitability assessment</a> for this vulnerability at the time of original publication.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Exploitation Less Likely</td>
+     <td>No</td>
+     <td>No</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="9"><b>CVE-2026-3538</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Fixed Build</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Edge (Chromium-based)</td>
+                <td><a href="https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnote-stable-channel" >Release Notes (Security Update)</td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td></td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>145.0.3800.97<br /></td>
+                <td>No</td>
+                <td>None</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2026-3538</td>
+     <td>None</td>
+ </tr>
+</table><h1 id="CVE-2026-3543">CVE-2026-3543 - Chromium: CVE-2026-3543 Inappropriate implementation in V8</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2026-3543">CVE-2026-3543</a>
+<br>
+<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-3543">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2026-3543">NVD</a>
+<p>Issuing CNA: Chrome</p></td>
+     <td>        <b>CVE Title:</b> Chromium: CVE-2026-3543 Inappropriate implementation in V8
+        <br>
+        <b>Weakness:</b> N/A
+        <br>
+        <b>CVSS:</b> <br>None
+        <br>
+        <b>Executive Summary:</b> <br><p>This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see <a href="https://chromereleases.googleblog.com/2021">Google Chrome Releases</a> for more information.</p>
+
+        <br>
+        <b>FAQ:</b><br><p><strong>What is the version information for this release?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Microsoft Edge Version</th>
+<th>Date Released</th>
+<th>Based on Chromium Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>145.0.3800.97</td>
+<td>03/06/2026</td>
+<td>145.0.7632.159/160</td>
+</tr>
+</tbody>
+</table>
+<br><p><strong>Why is this Chrome CVE included in the Security Update Guide?</strong></p>
+<p>The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based). It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.</p>
+<p><strong>How can I see the version of the browser?</strong></p>
+<ol>
+<li>In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window</li>
+<li>Click on <strong>Help and Feedback</strong></li>
+<li>Click on <strong>About Microsoft Edge</strong></li>
+</ol>
+
+        <br>
+        <b>Mitigations:</b><br>None
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp03/06/2026&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Unknown</td>
+     <td>Unknown</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an <a href="https://www.microsoft.com/en-us/msrc/exploitability-index?rtc=1">exploitability assessment</a> for this vulnerability at the time of original publication.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Exploitation Less Likely</td>
+     <td>No</td>
+     <td>No</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="9"><b>CVE-2026-3543</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Fixed Build</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Edge (Chromium-based)</td>
+                <td><a href="https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnote-stable-channel" >Release Notes (Security Update)</td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td></td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>145.0.3800.97<br /></td>
+                <td>No</td>
+                <td>None</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2026-3543</td>
+     <td>None</td>
+ </tr>
+</table><h1 id="CVE-2026-3541">CVE-2026-3541 - Chromium: CVE-2026-3541 Inappropriate implementation in CSS</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2026-3541">CVE-2026-3541</a>
+<br>
+<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-3541">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2026-3541">NVD</a>
+<p>Issuing CNA: Chrome</p></td>
+     <td>        <b>CVE Title:</b> Chromium: CVE-2026-3541 Inappropriate implementation in CSS
+        <br>
+        <b>Weakness:</b> N/A
+        <br>
+        <b>CVSS:</b> <br>None
+        <br>
+        <b>Executive Summary:</b> <br><p>This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see <a href="https://chromereleases.googleblog.com/2021">Google Chrome Releases</a> for more information.</p>
+
+        <br>
+        <b>FAQ:</b><br><p><strong>What is the version information for this release?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Microsoft Edge Version</th>
+<th>Date Released</th>
+<th>Based on Chromium Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>145.0.3800.97</td>
+<td>03/06/2026</td>
+<td>145.0.7632.159/160</td>
+</tr>
+</tbody>
+</table>
+<br><p><strong>Why is this Chrome CVE included in the Security Update Guide?</strong></p>
+<p>The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based). It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.</p>
+<p><strong>How can I see the version of the browser?</strong></p>
+<ol>
+<li>In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window</li>
+<li>Click on <strong>Help and Feedback</strong></li>
+<li>Click on <strong>About Microsoft Edge</strong></li>
+</ol>
+
+        <br>
+        <b>Mitigations:</b><br>None
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp03/06/2026&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Unknown</td>
+     <td>Unknown</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an <a href="https://www.microsoft.com/en-us/msrc/exploitability-index?rtc=1">exploitability assessment</a> for this vulnerability at the time of original publication.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Exploitation Less Likely</td>
+     <td>No</td>
+     <td>No</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="9"><b>CVE-2026-3541</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Fixed Build</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Edge (Chromium-based)</td>
+                <td><a href="https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnote-stable-channel" >Release Notes (Security Update)</td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td></td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>145.0.3800.97<br /></td>
+                <td>No</td>
+                <td>None</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2026-3541</td>
+     <td>None</td>
+ </tr>
+</table><h1 id="CVE-2026-3539">CVE-2026-3539 - Chromium: CVE-2026-3539 Object lifecycle issue in DevTools</h1> (<a href="#top">top</a>)<table id="execHeader" border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>CVE ID</b></td>
+   <td><b>Vulnerability Description</b></td>
+   <td><b>Maximum Severity Rating</b></td>
+   <td><b>Vulnerability Impact</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2026-3539">CVE-2026-3539</a>
+<br>
+<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-3539">MITRE</a>
+<br>
+<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2026-3539">NVD</a>
+<p>Issuing CNA: Chrome</p></td>
+     <td>        <b>CVE Title:</b> Chromium: CVE-2026-3539 Object lifecycle issue in DevTools
+        <br>
+        <b>Weakness:</b> N/A
+        <br>
+        <b>CVSS:</b> <br>None
+        <br>
+        <b>Executive Summary:</b> <br><p>This CVE was assigned by Chrome.  Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see <a href="https://chromereleases.googleblog.com/2021">Google Chrome Releases</a> for more information.</p>
+
+        <br>
+        <b>FAQ:</b><br><p><strong>What is the version information for this release?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Microsoft Edge Version</th>
+<th>Date Released</th>
+<th>Based on Chromium Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>145.0.3800.97</td>
+<td>03/06/2026</td>
+<td>145.0.7632.159/160</td>
+</tr>
+</tbody>
+</table>
+<br><p><strong>Why is this Chrome CVE included in the Security Update Guide?</strong></p>
+<p>The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based). It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.</p>
+<p><strong>How can I see the version of the browser?</strong></p>
+<ol>
+<li>In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window</li>
+<li>Click on <strong>Help and Feedback</strong></li>
+<li>Click on <strong>About Microsoft Edge</strong></li>
+</ol>
+
+        <br>
+        <b>Mitigations:</b><br>None
+        <br>
+        <b>Workarounds:</b><br>None
+        <br>
+        <b>Revision:</b><br>1.0&nbsp&nbsp&nbsp&nbsp03/06/2026&nbsp&nbsp&nbsp&nbsp<p>Information published.</p>
+
+        <br></td>
+     <td>Unknown</td>
+     <td>Unknown</td>
+ </tr>
+</table><h2>Exploitability Index</h2>
+
+<p>The following table provides an <a href="https://www.microsoft.com/en-us/msrc/exploitability-index?rtc=1">exploitability assessment</a> for this vulnerability at the time of original publication.</p>
+
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+  <tr>
+   <td><b>Exploitability Assessment</b></td>
+   <td><b>Publicly Disclosed</b></td>
+   <td><b>Exploited</b></td>
+  </tr>
+ </thead>
+ <tr>
+     <td>Exploitation Less Likely</td>
+     <td>No</td>
+     <td>No</td>
+ </tr>
+</table><h2>Affected Software</h2>
+
+<p>The following tables list the affected software details for the vulnerability.</p><table class="affected_software" border=1 cellpadding=0 width="99%">
+    <thead style="background-color: #ededed">
+        <tr>
+            <td colspan="9"><b>CVE-2026-3539</b></td>
+        </tr>
+    </thead>
+        <tr>
+            <td><b>Product</b></td>
+            <td><b>KB Article</b></td>
+            <td><b>Severity</b></td>
+            <td><b>Impact</b></td>
+            <td><b>Supercedence</b></td>
+            <td><b>CVSS Score Set</b></td>
+            <td><b>Fixed Build</b></td>
+            <td><b>Restart Required</b></td>
+            <td><b>Known Issue</b></td>
+        </tr>
+                <tr>
+                <td>Microsoft Edge (Chromium-based)</td>
+                <td><a href="https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnote-stable-channel" >Release Notes (Security Update)</td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td></td>
+                <td>Base: N/A<br />Temporal: N/A<br />Vector: N/A<br /></td>
+                <td>145.0.3800.97<br /></td>
+                <td>No</td>
+                <td>None</td>
+        </tr>
+</table>
+<br><h2>Acknowledgements</h2>
+<table border=1 cellpadding=0 width="99%">
+ <thead style="background-color: #ededed">
+    <tr>
+        <td><b>CVE ID</b></td>
+        <td><b>Acknowledgements</b></td>
+    </tr>
+    </thead>
+ <tr>
+     <td>CVE-2026-3539</td>
+     <td>None</td>
  </tr>
 </table>
 </div>
