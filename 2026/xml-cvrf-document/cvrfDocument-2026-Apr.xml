@@ -1,0 +1,2193 @@
+<cvrf:cvrfdoc xmlns:vuln="http://www.icasi.org/CVRF/schema/vuln/1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cvrf-common="http://www.icasi.org/CVRF/schema/common/1.1" xmlns:prod="http://www.icasi.org/CVRF/schema/prod/1.1" xmlns:scap-core="https://scap.nist.gov/schema/scap-core/1.0" xmlns:cvssv2="https://scap.nist.gov/schema/cvss-v2/1.0" xmlns:cpe-lang="http://cpe.mitre.org/language/2.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:cvrf="http://www.icasi.org/CVRF/schema/cvrf/1.1">
+  <cvrf:DocumentTitle>April 2026 Security Updates</cvrf:DocumentTitle>
+  <cvrf:DocumentType>Security Update</cvrf:DocumentType>
+  <cvrf:DocumentPublisher Type="Vendor">
+    <cvrf:ContactDetails>secure@microsoft.com</cvrf:ContactDetails>
+    <cvrf:IssuingAuthority>The Microsoft Security Response Center (MSRC) identifies, monitors, resolves, and responds to security incidents and Microsoft software security vulnerabilities. For more information, see http://www.microsoft.com/security/msrc.</cvrf:IssuingAuthority>
+  </cvrf:DocumentPublisher>
+  <cvrf:DocumentTracking>
+    <cvrf:Identification>
+      <cvrf:ID>2026-Apr</cvrf:ID>
+      <cvrf:Alias>2026-Apr</cvrf:Alias>
+    </cvrf:Identification>
+    <cvrf:Status>Final</cvrf:Status>
+    <cvrf:Version>1.0</cvrf:Version>
+    <cvrf:RevisionHistory>
+      <cvrf:Revision>
+        <cvrf:Number>2</cvrf:Number>
+        <cvrf:Date>2026-04-03T01:39:03</cvrf:Date>
+        <cvrf:Description>April 2026 Security Updates</cvrf:Description>
+      </cvrf:Revision>
+    </cvrf:RevisionHistory>
+    <cvrf:InitialReleaseDate>2026-04-02T07:00:00</cvrf:InitialReleaseDate>
+    <cvrf:CurrentReleaseDate>2026-04-03T01:39:03</cvrf:CurrentReleaseDate>
+  </cvrf:DocumentTracking>
+  <cvrf:DocumentNotes>
+    <cvrf:Note Title="Release Notes" Audience="Public" Type="Details" Ordinal="0">&lt;h2 id="this-release-consists-of-the-following-7-microsoft-cves"&gt;This release consists of the following 7 Microsoft CVEs:&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Tag&lt;/th&gt;
+&lt;th&gt;CVE&lt;/th&gt;
+&lt;th&gt;Base Score&lt;/th&gt;
+&lt;th&gt;CVSS Vector&lt;/th&gt;
+&lt;th&gt;Exploitability&lt;/th&gt;
+&lt;th&gt;FAQs?&lt;/th&gt;
+&lt;th&gt;Workarounds?&lt;/th&gt;
+&lt;th&gt;Mitigations?&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Azure Custom Locations Resource Provider (RP)&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-26135"&gt;CVE-2026-26135&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;9.6&lt;/td&gt;
+&lt;td&gt;CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N/E:U/RL:O/RC:C&lt;/td&gt;
+&lt;td&gt;N/A&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Yes&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Azure SRE Agent&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-32173"&gt;CVE-2026-32173&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;8.6&lt;/td&gt;
+&lt;td&gt;CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N/E:U/RL:O/RC:C&lt;/td&gt;
+&lt;td&gt;N/A&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Yes&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Microsoft Bing&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-32186"&gt;CVE-2026-32186&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;N/A&lt;/td&gt;
+&lt;td&gt;N/A&lt;/td&gt;
+&lt;td&gt;N/A&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Yes&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Azure MCP Server&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-32211"&gt;CVE-2026-32211&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;9.1&lt;/td&gt;
+&lt;td&gt;CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N/E:U/RL:O/RC:C&lt;/td&gt;
+&lt;td&gt;N/A&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Yes&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Azure AI Foundry&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-32213"&gt;CVE-2026-32213&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;10.0&lt;/td&gt;
+&lt;td&gt;CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C&lt;/td&gt;
+&lt;td&gt;N/A&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Yes&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Microsoft Azure Kubernetes Service&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-33105"&gt;CVE-2026-33105&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;10.0&lt;/td&gt;
+&lt;td&gt;CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C&lt;/td&gt;
+&lt;td&gt;N/A&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Yes&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Azure Databricks&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-33107"&gt;CVE-2026-33107&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;10.0&lt;/td&gt;
+&lt;td&gt;CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C&lt;/td&gt;
+&lt;td&gt;N/A&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Yes&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="we-are-republishing-18-non-microsoft-cves"&gt;We are republishing 18 non-Microsoft CVEs:&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;CNA&lt;/th&gt;
+&lt;th&gt;Tag&lt;/th&gt;
+&lt;th&gt;CVE&lt;/th&gt;
+&lt;th&gt;FAQs?&lt;/th&gt;
+&lt;th&gt;Workarounds?&lt;/th&gt;
+&lt;th&gt;Mitigations?&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Chrome&lt;/td&gt;
+&lt;td&gt;Microsoft Edge (Chromium-based)&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-5272"&gt;CVE-2026-5272&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Yes&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Chrome&lt;/td&gt;
+&lt;td&gt;Microsoft Edge (Chromium-based)&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-5273"&gt;CVE-2026-5273&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Yes&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Chrome&lt;/td&gt;
+&lt;td&gt;Microsoft Edge (Chromium-based)&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-5274"&gt;CVE-2026-5274&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Yes&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Chrome&lt;/td&gt;
+&lt;td&gt;Microsoft Edge (Chromium-based)&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-5275"&gt;CVE-2026-5275&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Yes&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Chrome&lt;/td&gt;
+&lt;td&gt;Microsoft Edge (Chromium-based)&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-5276"&gt;CVE-2026-5276&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Yes&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Chrome&lt;/td&gt;
+&lt;td&gt;Microsoft Edge (Chromium-based)&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-5277"&gt;CVE-2026-5277&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Yes&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Chrome&lt;/td&gt;
+&lt;td&gt;Microsoft Edge (Chromium-based)&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-5279"&gt;CVE-2026-5279&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Yes&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Chrome&lt;/td&gt;
+&lt;td&gt;Microsoft Edge (Chromium-based)&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-5280"&gt;CVE-2026-5280&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Yes&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Chrome&lt;/td&gt;
+&lt;td&gt;Microsoft Edge (Chromium-based)&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-5281"&gt;CVE-2026-5281&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Yes&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Chrome&lt;/td&gt;
+&lt;td&gt;Microsoft Edge (Chromium-based)&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-5283"&gt;CVE-2026-5283&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Yes&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Chrome&lt;/td&gt;
+&lt;td&gt;Microsoft Edge (Chromium-based)&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-5284"&gt;CVE-2026-5284&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Yes&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Chrome&lt;/td&gt;
+&lt;td&gt;Microsoft Edge (Chromium-based)&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-5285"&gt;CVE-2026-5285&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Yes&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Chrome&lt;/td&gt;
+&lt;td&gt;Microsoft Edge (Chromium-based)&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-5286"&gt;CVE-2026-5286&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Yes&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Chrome&lt;/td&gt;
+&lt;td&gt;Microsoft Edge (Chromium-based)&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-5287"&gt;CVE-2026-5287&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Yes&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Chrome&lt;/td&gt;
+&lt;td&gt;Microsoft Edge (Chromium-based)&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-5289"&gt;CVE-2026-5289&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Yes&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Chrome&lt;/td&gt;
+&lt;td&gt;Microsoft Edge (Chromium-based)&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-5290"&gt;CVE-2026-5290&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Yes&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Chrome&lt;/td&gt;
+&lt;td&gt;Microsoft Edge (Chromium-based)&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-5291"&gt;CVE-2026-5291&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Yes&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Chrome&lt;/td&gt;
+&lt;td&gt;Microsoft Edge (Chromium-based)&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-5292"&gt;CVE-2026-5292&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Yes&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</cvrf:Note>
+    <cvrf:Note Title="Legal Disclaimer" Audience="Public" Type="Legal Disclaimer" Ordinal="1">The information provided in the Microsoft Knowledge Base is provided "as is" without warranty of any kind. Microsoft disclaims all warranties, either express or implied, including the warranties of merchantability and fitness for a particular purpose. In no event shall Microsoft Corporation or its suppliers be liable for any damages whatsoever including direct, indirect, incidental, consequential, loss of business profits or special damages, even if Microsoft Corporation or its suppliers have been advised of the possibility of such damages. Some states do not allow the exclusion or limitation of liability for consequential or incidental damages so the foregoing limitation may not apply.</cvrf:Note>
+  </cvrf:DocumentNotes>
+  <prod:ProductTree>
+    <prod:Branch Type="Vendor" Name="Microsoft">
+      <prod:Branch Type="Product Family" Name="Azure">
+        <prod:FullProductName ProductID="12505">Azure AI Foundry</prod:FullProductName>
+        <prod:FullProductName ProductID="11994">Azure Databricks</prod:FullProductName>
+        <prod:FullProductName ProductID="21164">Azure Custom Locations Resource Provider</prod:FullProductName>
+        <prod:FullProductName ProductID="11870">Azure Kubernetes Service</prod:FullProductName>
+        <prod:FullProductName ProductID="21062">Azure SRE Agent Gateway - SignalR Hub</prod:FullProductName>
+        <prod:FullProductName ProductID="12385">Azure Web Apps</prod:FullProductName>
+      </prod:Branch>
+      <prod:Branch Type="Product Family" Name="Browser">
+        <prod:FullProductName ProductID="11655">Microsoft Edge (Chromium-based)</prod:FullProductName>
+      </prod:Branch>
+      <prod:Branch Type="Product Family" Name="Open Source Software">
+        <prod:FullProductName ProductID="21094-17084">azl3 kernel 6.6.130.1-3 on Azure Linux 3.0</prod:FullProductName>
+      </prod:Branch>
+      <prod:Branch Type="Product Family" Name="Apps">
+        <prod:FullProductName ProductID="12500">Microsoft Bing</prod:FullProductName>
+      </prod:Branch>
+    </prod:Branch>
+    <prod:FullProductName ProductID="11655" CPE="cpe:2.3:a:microsoft:edge_chromium:*:*:*:*:*:*:*:*">Microsoft Edge (Chromium-based)</prod:FullProductName>
+    <prod:FullProductName ProductID="11870" CPE="cpe:2.3:a:microsoft:azure_kubernetes_service:-:*:*:*:*:*:*:*">Azure Kubernetes Service</prod:FullProductName>
+    <prod:FullProductName ProductID="11994" CPE="cpe:2.3:a:microsoft:azure_databricks:*:*:*:*:*:*:*:*">Azure Databricks</prod:FullProductName>
+    <prod:FullProductName ProductID="12385" CPE="cpe:2.3:a:microsoft:azure_web_apps:-:*:*:*:*:*:*:*">Azure Web Apps</prod:FullProductName>
+    <prod:FullProductName ProductID="12500" CPE="cpe:2.3:a:microsoft:bing:*:*:*:*:*:*:*:*">Microsoft Bing</prod:FullProductName>
+    <prod:FullProductName ProductID="12505" CPE="cpe:2.3:a:microsoft:azure_ai_foundry:*:*:*:*:*:*:*:*">Azure AI Foundry</prod:FullProductName>
+    <prod:FullProductName ProductID="21062" CPE="cpe:2.3:a:microsoft:azure_sre_agent_gateway_signalR_hub:*:*:*:*:*:*:*:*">Azure SRE Agent Gateway - SignalR Hub</prod:FullProductName>
+    <prod:FullProductName ProductID="21094-17084" CPE="cpe:2.3:a:microsoft:azl3_kernel_6.6.130.1-3:*:*:*:*:*:*:*:*">azl3 kernel 6.6.130.1-3 on Azure Linux 3.0</prod:FullProductName>
+    <prod:FullProductName ProductID="21164" CPE="cpe:2.3:a:microsoft:azure_custom_locations_resource_provider:-:*:*:*:*:*:*:*">Azure Custom Locations Resource Provider</prod:FullProductName>
+  </prod:ProductTree>
+  <vuln:Vulnerability Ordinal="0">
+    <vuln:Title>KVM: x86/mmu: Drop/zap existing present SPTE even when creating an MMIO SPTE</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="Linux" Type="CNA" Ordinal="30">Linux</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2026-23401</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.4</vuln:BaseScore>
+        <vuln:TemporalScore>7.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:H/E:U</vuln:Vector>
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations />
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2026-04-02T01:01:28</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2026-04-03T01:39:03</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="5">
+    <vuln:Title>Azure AI Foundry Elevation of Privilege Vulnerability</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;Improper authorization in Azure AI Foundry allows an unauthorized attacker to elevate privileges over a network.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why are there no links to an update or instructions with steps that must be taken to protect from this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This vulnerability has already been fully mitigated by Microsoft. There is no action for users of this service to take. The purpose of this CVE is to provide further transparency.&lt;/p&gt;
+&lt;p&gt;Please see &lt;a href="https://aka.ms/MSRC-Cloud-CVEs"&gt;Toward greater transparency: Unveiling Cloud Service CVEs&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="Azure AI Foundry" Type="Tag" Ordinal="20">Azure AI Foundry</vuln:Note>
+      <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">No</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2026-32213</vuln:CVE>
+    <vuln:CWE ID="CWE-285">Improper Authorization</vuln:CWE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>12505</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>12505</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>12505</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>10.0</vuln:BaseScore>
+        <vuln:TemporalScore>8.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>12505</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations />
+    <vuln:Acknowledgments>
+      <vuln:Acknowledgment>
+        <vuln:Name>Anonymous</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+    </vuln:Acknowledgments>
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2026-04-02T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="22">
+    <vuln:Title>Chromium: CVE-2026-5289 Use after free in Navigation</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2026"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based). It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;146.0.3856.97&lt;/td&gt;
+&lt;td&gt;04/02/2026&lt;/td&gt;
+&lt;td&gt;146.0.7680.178&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2026-5289</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>146.0.3856.97</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://docs.microsoft.com/en-us/DeployEdge/microsoft-edge-relnotes-security</vuln:URL>
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>Release Notes</vuln:SubType>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2026-04-02T18:46:55</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="20">
+    <vuln:Title>Chromium: CVE-2026-5286 Use after free in Dawn</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2026"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based). It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;146.0.3856.97&lt;/td&gt;
+&lt;td&gt;04/02/2026&lt;/td&gt;
+&lt;td&gt;146.0.7680.178&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2026-5286</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>146.0.3856.97</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://docs.microsoft.com/en-us/DeployEdge/microsoft-edge-relnotes-security</vuln:URL>
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>Release Notes</vuln:SubType>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2026-04-02T18:46:53</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="21">
+    <vuln:Title>Chromium: CVE-2026-5287 Use after free in PDF</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2026"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based). It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;146.0.3856.97&lt;/td&gt;
+&lt;td&gt;04/02/2026&lt;/td&gt;
+&lt;td&gt;146.0.7680.178&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2026-5287</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>146.0.3856.97</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://docs.microsoft.com/en-us/DeployEdge/microsoft-edge-relnotes-security</vuln:URL>
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>Release Notes</vuln:SubType>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2026-04-02T18:46:54</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="19">
+    <vuln:Title>Chromium: CVE-2026-5285 Use after free in WebGL</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2026"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based). It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;146.0.3856.97&lt;/td&gt;
+&lt;td&gt;04/02/2026&lt;/td&gt;
+&lt;td&gt;146.0.7680.178&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2026-5285</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>146.0.3856.97</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://docs.microsoft.com/en-us/DeployEdge/microsoft-edge-relnotes-security</vuln:URL>
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>Release Notes</vuln:SubType>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2026-04-02T18:46:52</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="18">
+    <vuln:Title>Chromium: CVE-2026-5284 Use after free in Dawn</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2026"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based). It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;146.0.3856.97&lt;/td&gt;
+&lt;td&gt;04/02/2026&lt;/td&gt;
+&lt;td&gt;146.0.7680.178&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2026-5284</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>146.0.3856.97</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://docs.microsoft.com/en-us/DeployEdge/microsoft-edge-relnotes-security</vuln:URL>
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>Release Notes</vuln:SubType>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2026-04-02T18:46:51</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="17">
+    <vuln:Title>Chromium: CVE-2026-5283 Inappropriate implementation in ANGLE</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2026"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based). It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;146.0.3856.97&lt;/td&gt;
+&lt;td&gt;04/02/2026&lt;/td&gt;
+&lt;td&gt;146.0.7680.178&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2026-5283</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>146.0.3856.97</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://docs.microsoft.com/en-us/DeployEdge/microsoft-edge-relnotes-security</vuln:URL>
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>Release Notes</vuln:SubType>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2026-04-02T18:46:50</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="16">
+    <vuln:Title>Chromium: CVE-2026-5281 Use after free in Dawn</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2026"&gt;Google Chrome Releases&lt;/a&gt; for more information. Google is aware that an exploit for CVE-2026-5281 exists in the wild.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based). It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;146.0.3856.97&lt;/td&gt;
+&lt;td&gt;04/02/2026&lt;/td&gt;
+&lt;td&gt;146.0.7680.178&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2026-5281</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>146.0.3856.97</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://docs.microsoft.com/en-us/DeployEdge/microsoft-edge-relnotes-security</vuln:URL>
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>Release Notes</vuln:SubType>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2026-04-02T18:46:49</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="15">
+    <vuln:Title>Chromium: CVE-2026-5280 Use after free in WebCodecs</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2026"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based). It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;146.0.3856.97&lt;/td&gt;
+&lt;td&gt;04/02/2026&lt;/td&gt;
+&lt;td&gt;146.0.7680.178&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2026-5280</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>146.0.3856.97</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://docs.microsoft.com/en-us/DeployEdge/microsoft-edge-relnotes-security</vuln:URL>
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>Release Notes</vuln:SubType>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2026-04-02T18:46:48</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="14">
+    <vuln:Title>Chromium: CVE-2026-5279 Object corruption in V8</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2026"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based). It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;146.0.3856.97&lt;/td&gt;
+&lt;td&gt;04/02/2026&lt;/td&gt;
+&lt;td&gt;146.0.7680.178&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2026-5279</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>146.0.3856.97</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://docs.microsoft.com/en-us/DeployEdge/microsoft-edge-relnotes-security</vuln:URL>
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>Release Notes</vuln:SubType>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2026-04-02T18:46:47</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="25">
+    <vuln:Title>Chromium: CVE-2026-5292 Out of bounds read in WebCodecs</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2026"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;146.0.3856.97&lt;/td&gt;
+&lt;td&gt;04/02/2026&lt;/td&gt;
+&lt;td&gt;146.0.7680.178&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based). It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2026-5292</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>146.0.3856.97</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://docs.microsoft.com/en-us/DeployEdge/microsoft-edge-relnotes-security</vuln:URL>
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>Release Notes</vuln:SubType>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2026-04-02T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="23">
+    <vuln:Title>Chromium: CVE-2026-5290 Use after free in Compositing</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2026"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based). It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;146.0.3856.97&lt;/td&gt;
+&lt;td&gt;04/02/2026&lt;/td&gt;
+&lt;td&gt;146.0.7680.178&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2026-5290</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>146.0.3856.97</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://docs.microsoft.com/en-us/DeployEdge/microsoft-edge-relnotes-security</vuln:URL>
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>Release Notes</vuln:SubType>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2026-04-02T18:46:55</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="13">
+    <vuln:Title>Chromium: CVE-2026-5277 Integer overflow in ANGLE</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2026"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based). It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;146.0.3856.97&lt;/td&gt;
+&lt;td&gt;04/02/2026&lt;/td&gt;
+&lt;td&gt;146.0.7680.178&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2026-5277</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>146.0.3856.97</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://docs.microsoft.com/en-us/DeployEdge/microsoft-edge-relnotes-security</vuln:URL>
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>Release Notes</vuln:SubType>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2026-04-02T18:46:46</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="12">
+    <vuln:Title>Chromium: CVE-2026-5276 Insufficient policy enforcement in WebUSB</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2026"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based). It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;146.0.3856.97&lt;/td&gt;
+&lt;td&gt;04/02/2026&lt;/td&gt;
+&lt;td&gt;146.0.7680.178&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2026-5276</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>146.0.3856.97</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://docs.microsoft.com/en-us/DeployEdge/microsoft-edge-relnotes-security</vuln:URL>
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>Release Notes</vuln:SubType>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2026-04-02T18:46:45</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="11">
+    <vuln:Title>Chromium: CVE-2026-5275 Heap buffer overflow in ANGLE</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2026"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based). It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;146.0.3856.97&lt;/td&gt;
+&lt;td&gt;04/02/2026&lt;/td&gt;
+&lt;td&gt;146.0.7680.178&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2026-5275</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>146.0.3856.97</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://docs.microsoft.com/en-us/DeployEdge/microsoft-edge-relnotes-security</vuln:URL>
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>Release Notes</vuln:SubType>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2026-04-02T18:46:44</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="10">
+    <vuln:Title>Chromium: CVE-2026-5274 Integer overflow in Codecs</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2026"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based). It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;146.0.3856.97&lt;/td&gt;
+&lt;td&gt;04/02/2026&lt;/td&gt;
+&lt;td&gt;146.0.7680.178&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2026-5274</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>146.0.3856.97</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://docs.microsoft.com/en-us/DeployEdge/microsoft-edge-relnotes-security</vuln:URL>
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>Release Notes</vuln:SubType>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2026-04-02T18:46:43</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="9">
+    <vuln:Title>Chromium: CVE-2026-5273 Use after free in CSS</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2026"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based). It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;146.0.3856.97&lt;/td&gt;
+&lt;td&gt;04/02/2026&lt;/td&gt;
+&lt;td&gt;146.0.7680.178&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2026-5273</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>146.0.3856.97</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://docs.microsoft.com/en-us/DeployEdge/microsoft-edge-relnotes-security</vuln:URL>
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>Release Notes</vuln:SubType>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2026-04-02T18:46:42</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="8">
+    <vuln:Title>Chromium: CVE-2026-5272 Heap buffer overflow in GPU</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2026"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based). It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;146.0.3856.97&lt;/td&gt;
+&lt;td&gt;04/02/2026&lt;/td&gt;
+&lt;td&gt;146.0.7680.178&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2026-5272</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>146.0.3856.97</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://docs.microsoft.com/en-us/DeployEdge/microsoft-edge-relnotes-security</vuln:URL>
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>Release Notes</vuln:SubType>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2026-04-02T18:46:41</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="7">
+    <vuln:Title>Azure Databricks Elevation of Privilege Vulnerability</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;Server-side request forgery (ssrf) in Azure Databricks allows an unauthorized attacker to elevate privileges over a network.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why are there no links to an update or instructions with steps that must be taken to protect from this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This vulnerability has already been fully mitigated by Microsoft. There is no action for users of this service to take. The purpose of this CVE is to provide further transparency.&lt;/p&gt;
+&lt;p&gt;Please see &lt;a href="https://aka.ms/MSRC-Cloud-CVEs"&gt;Toward greater transparency: Unveiling Cloud Service CVEs&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="Azure Databricks" Type="Tag" Ordinal="20">Azure Databricks</vuln:Note>
+      <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">No</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2026-33107</vuln:CVE>
+    <vuln:CWE ID="CWE-918">Server-Side Request Forgery (SSRF)</vuln:CWE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11994</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>11994</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>11994</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>10.0</vuln:BaseScore>
+        <vuln:TemporalScore>8.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11994</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations />
+    <vuln:Acknowledgments>
+      <vuln:Acknowledgment>
+        <vuln:Name>&lt;a href="https://twitter.com/stargravy"&gt;Evan Grant&lt;/a&gt;</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+    </vuln:Acknowledgments>
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2026-04-02T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="1">
+    <vuln:Title>Azure Custom Locations Resource Provider (RP) Elevation of Privilege Vulnerability</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;Server-side request forgery (ssrf) in Azure Custom Locations Resource Provider (RP) allows an authorized attacker to elevate privileges over a network.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why are there no links to an update or instructions with steps that must be taken to protect from this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This vulnerability has already been fully mitigated by Microsoft. There is no action for users of this service to take. The purpose of this CVE is to provide further transparency.&lt;/p&gt;
+&lt;p&gt;Please see &lt;a href="https://aka.ms/MSRC-Cloud-CVEs"&gt;Toward greater transparency: Unveiling Cloud Service CVEs&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="Azure Custom Locations Resource Provider (RP)" Type="Tag" Ordinal="20">Azure Custom Locations Resource Provider (RP)</vuln:Note>
+      <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">No</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2026-26135</vuln:CVE>
+    <vuln:CWE ID="CWE-918">Server-Side Request Forgery (SSRF)</vuln:CWE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>21164</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>21164</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>21164</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>9.6</vuln:BaseScore>
+        <vuln:TemporalScore>8.3</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>21164</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations />
+    <vuln:Acknowledgments>
+      <vuln:Acknowledgment>
+        <vuln:Name>&lt;a href="https://www.linkedin.com/in/amir-gombo-39771b25a/"&gt;Amir Gombo&lt;/a&gt; with Microsoft</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+      <vuln:Acknowledgment>
+        <vuln:Name>&lt;a href="https://www.linkedin.com/in/yonatan-migdal-57998a115"&gt;Yonatan Migdal&lt;/a&gt; with Microsoft</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+    </vuln:Acknowledgments>
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2026-04-02T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="6">
+    <vuln:Title>Microsoft Azure Kubernetes Service Elevation of Privilege Vulnerability</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;Improper authorization in Microsoft Azure Kubernetes Service allows an unauthorized attacker to elevate privileges over a network.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why are there no links to an update or instructions with steps that must be taken to protect from this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This vulnerability has already been fully mitigated by Microsoft. There is no action for users of this service to take. The purpose of this CVE is to provide further transparency.&lt;/p&gt;
+&lt;p&gt;Please see &lt;a href="https://aka.ms/MSRC-Cloud-CVEs"&gt;Toward greater transparency: Unveiling Cloud Service CVEs&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Azure Kubernetes Service" Type="Tag" Ordinal="20">Microsoft Azure Kubernetes Service</vuln:Note>
+      <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">No</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2026-33105</vuln:CVE>
+    <vuln:CWE ID="CWE-285">Improper Authorization</vuln:CWE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11870</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>11870</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>11870</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>10.0</vuln:BaseScore>
+        <vuln:TemporalScore>8.7</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>11870</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations />
+    <vuln:Acknowledgments>
+      <vuln:Acknowledgment>
+        <vuln:Name>&lt;a href="https://www.linkedin.com/in/amir-gombo-39771b25a/"&gt;Amir Gombo&lt;/a&gt; with Microsoft</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+    </vuln:Acknowledgments>
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2026-04-02T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="2">
+    <vuln:Title>Azure SRE Agent Information Disclosure Vulnerability</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;Improper authentication in Azure SRE Agent allows an unauthorized attacker to disclose information over a network.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why are there no links to an update or instructions with steps that must be taken to protect from this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This vulnerability has already been fully mitigated by Microsoft. There is no action for users of this service to take. The purpose of this CVE is to provide further transparency.&lt;/p&gt;
+&lt;p&gt;Please see &lt;a href="https://aka.ms/MSRC-Cloud-CVEs"&gt;Toward greater transparency: Unveiling Cloud Service CVEs&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="Azure SRE Agent" Type="Tag" Ordinal="20">Azure SRE Agent</vuln:Note>
+      <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">No</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2026-32173</vuln:CVE>
+    <vuln:CWE ID="CWE-287">Improper Authentication</vuln:CWE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>21062</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Information Disclosure</vuln:Description>
+        <vuln:ProductID>21062</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>21062</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.6</vuln:BaseScore>
+        <vuln:TemporalScore>7.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>21062</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations />
+    <vuln:Acknowledgments>
+      <vuln:Acknowledgment>
+        <vuln:Name>&lt;a href="https://twitter.com/yanir_"&gt;Yanir Tsarimi&lt;/a&gt; with &lt;a href="https://enclave.ai/"&gt;Enclave&lt;/a&gt;</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+    </vuln:Acknowledgments>
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2026-04-02T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="4">
+    <vuln:Title>Azure MCP Server Information Disclosure Vulnerability</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;Missing authentication for critical function in Azure MCP Server allows an unauthorized attacker to disclose information over a network.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why are there no links to an update or instructions with steps that must be taken to protect from this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This vulnerability has already been fully mitigated by Microsoft. There is no action for users of this service to take. The purpose of this CVE is to provide further transparency.&lt;/p&gt;
+&lt;p&gt;Please see &lt;a href="https://aka.ms/MSRC-Cloud-CVEs"&gt;Toward greater transparency: Unveiling Cloud Service CVEs&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="Azure MCP Server" Type="Tag" Ordinal="20">Azure MCP Server</vuln:Note>
+      <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">No</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2026-32211</vuln:CVE>
+    <vuln:CWE ID="CWE-306">Missing Authentication for Critical Function</vuln:CWE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>12385</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Information Disclosure</vuln:Description>
+        <vuln:ProductID>12385</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>12385</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>9.1</vuln:BaseScore>
+        <vuln:TemporalScore>7.9</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N/E:U/RL:O/RC:C</vuln:Vector>
+        <vuln:ProductID>12385</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations />
+    <vuln:Acknowledgments>
+      <vuln:Acknowledgment>
+        <vuln:Name>Sriharsha Pallekonda with &lt;a href="https://www.microsoft.com/"&gt;Microsoft&lt;/a&gt;</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+      <vuln:Acknowledgment>
+        <vuln:Name>&lt;a href="https://www.linkedin.com/in/vamsi-nukavarapu/"&gt;Vamsi Nukavarapu&lt;/a&gt; with &lt;a href="https://www.microsoft.com/"&gt;Microsoft&lt;/a&gt;</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+    </vuln:Acknowledgments>
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2026-04-02T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="24">
+    <vuln:Title>Chromium: CVE-2026-5291 Inappropriate implementation in WebGL</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0">&lt;p&gt;This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see &lt;a href="https://chromereleases.googleblog.com/2026"&gt;Google Chrome Releases&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why is this Chrome CVE included in the Security Update Guide?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vulnerability assigned to this CVE is in Chromium Open Source Software (OSS) which is consumed by Microsoft Edge (Chromium-based). It is being documented in the Security Update Guide to announce that the latest version of Microsoft Edge (Chromium-based) is no longer vulnerable.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How can I see the version of the browser?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Microsoft Edge browser, click on the 3 dots (...) on the very right-hand side of the window&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Help and Feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;About Microsoft Edge&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</vuln:Note>
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;What is the version information for this release?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Microsoft Edge Version&lt;/th&gt;
+&lt;th&gt;Date Released&lt;/th&gt;
+&lt;th&gt;Based on Chromium Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;146.0.3856.97&lt;/td&gt;
+&lt;td&gt;04/02/2026&lt;/td&gt;
+&lt;td&gt;146.0.7680.178&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Edge (Chromium-based)" Type="Tag" Ordinal="20">Microsoft Edge (Chromium-based)</vuln:Note>
+      <vuln:Note Title="Chrome" Type="CNA" Ordinal="30">Chrome</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2026-5291</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description />
+        <vuln:ProductID>11655</vuln:ProductID>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>Release Notes</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>146.0.3856.97</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://docs.microsoft.com/en-us/DeployEdge/microsoft-edge-relnotes-security</vuln:URL>
+        <vuln:ProductID>11655</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>Release Notes</vuln:SubType>
+      </vuln:Remediation>
+    </vuln:Remediations>
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2026-04-02T18:46:56</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="3">
+    <vuln:Title>Microsoft Bing Elevation of Privilege Vulnerability</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="FAQ" Type="FAQ" Ordinal="10">&lt;p&gt;&lt;strong&gt;Why are there no links to an update or instructions with steps that must be taken to protect from this vulnerability?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This vulnerability has already been fully mitigated by Microsoft. There is no action for users of this service to take. The purpose of this CVE is to provide further transparency.&lt;/p&gt;
+&lt;p&gt;Please see &lt;a href="https://aka.ms/MSRC-Cloud-CVEs"&gt;Toward greater transparency: Unveiling Cloud Service CVEs&lt;/a&gt; for more information.&lt;/p&gt;
+</vuln:Note>
+      <vuln:Note Title="Microsoft Bing" Type="Tag" Ordinal="20">Microsoft Bing</vuln:Note>
+      <vuln:Note Title="Microsoft" Type="CNA" Ordinal="30">Microsoft</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">No</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2026-32186</vuln:CVE>
+    <vuln:CWE ID="CWE-918">Server-Side Request Forgery (SSRF)</vuln:CWE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>12500</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description>Elevation of Privilege</vuln:Description>
+        <vuln:ProductID>12500</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Critical</vuln:Description>
+        <vuln:ProductID>12500</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Exploit Status">
+        <vuln:Description>Publicly Disclosed:No;Exploited:No;Latest Software Release:N/A</vuln:Description>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations />
+    <vuln:Acknowledgments>
+      <vuln:Acknowledgment>
+        <vuln:Name>Sriharsha Pallekonda with Microsoft</vuln:Name>
+        <vuln:URL />
+      </vuln:Acknowledgment>
+    </vuln:Acknowledgments>
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2026-04-02T07:00:00</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+</cvrf:cvrfdoc>
