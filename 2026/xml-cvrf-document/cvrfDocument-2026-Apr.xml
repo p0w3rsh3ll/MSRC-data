@@ -14,13 +14,13 @@
     <cvrf:Version>1.0</cvrf:Version>
     <cvrf:RevisionHistory>
       <cvrf:Revision>
-        <cvrf:Number>129</cvrf:Number>
-        <cvrf:Date>2026-04-12T01:02:25</cvrf:Date>
+        <cvrf:Number>161</cvrf:Number>
+        <cvrf:Date>2026-04-14T01:44:36</cvrf:Date>
         <cvrf:Description>April 2026 Early Security Updates</cvrf:Description>
       </cvrf:Revision>
     </cvrf:RevisionHistory>
     <cvrf:InitialReleaseDate>2026-04-02T07:00:00</cvrf:InitialReleaseDate>
-    <cvrf:CurrentReleaseDate>2026-04-12T01:02:25</cvrf:CurrentReleaseDate>
+    <cvrf:CurrentReleaseDate>2026-04-14T01:44:36</cvrf:CurrentReleaseDate>
   </cvrf:DocumentTracking>
   <cvrf:DocumentNotes>
     <cvrf:Note Title="Release Notes" Audience="Public" Type="Details" Ordinal="0">&lt;h2 id="this-release-consists-of-the-following-9-microsoft-cves"&gt;This release consists of the following 9 Microsoft CVEs:&lt;/h2&gt;
@@ -956,8 +956,11 @@
     <prod:FullProductName ProductID="21190-17086" CPE="cpe:2.3:a:microsoft:cbl2_libcap_2.60-7:*:*:*:*:*:*:*:*">cbl2 libcap 2.60-7 on CBL Mariner 2.0</prod:FullProductName>
     <prod:FullProductName ProductID="21191-17084" CPE="cpe:2.3:a:microsoft:azl3_libcap_2.69-13:*:*:*:*:*:*:*:*">azl3 libcap 2.69-13 on Azure Linux 3.0</prod:FullProductName>
     <prod:FullProductName ProductID="21193-17086" CPE="cpe:2.3:a:microsoft:cbl2_sleuthkit_4.9.0-4:*:*:*:*:*:*:*:*">cbl2 sleuthkit 4.9.0-4 on CBL Mariner 2.0</prod:FullProductName>
+    <prod:FullProductName ProductID="21194-17084" CPE="cpe:2.3:a:microsoft:azl3_javapackages-bootstrap_1.14.0-4:*:*:*:*:*:*:*:*">azl3 javapackages-bootstrap 1.14.0-4 on Azure Linux 3.0</prod:FullProductName>
+    <prod:FullProductName ProductID="21198-17084" CPE="cpe:2.3:a:microsoft:azl3_libexif_0.6.24-2:*:*:*:*:*:*:*:*">azl3 libexif 0.6.24-2 on Azure Linux 3.0</prod:FullProductName>
+    <prod:FullProductName ProductID="21199-17084" CPE="cpe:2.3:a:microsoft:azl3_mesa_24.0.1-6:*:*:*:*:*:*:*:*">azl3 mesa 24.0.1-6 on Azure Linux 3.0</prod:FullProductName>
   </prod:ProductTree>
-  <vuln:Vulnerability Ordinal="59">
+  <vuln:Vulnerability Ordinal="73">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -1028,7 +1031,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="56">
+  <vuln:Vulnerability Ordinal="70">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -1115,7 +1118,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="44">
+  <vuln:Vulnerability Ordinal="58">
     <vuln:Title>XZ Utils: Buffer overflow in lzma_index_append()</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -1246,7 +1249,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="47">
+  <vuln:Vulnerability Ordinal="61">
     <vuln:Title>OpenPrinting CUPS: Path traversal in RSS notify-recipient-uri enables file write outside CacheDir/rss (and clobbering of job.cache)</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -1648,7 +1651,23 @@
         <vuln:ProductID>20786-17086</vuln:ProductID>
       </vuln:ScoreSet>
     </vuln:CVSSScoreSets>
-    <vuln:Remediations />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>CBL-Mariner Releases</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>20804-17084</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>2.40.2-4</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade</vuln:URL>
+        <vuln:ProductID>20804-17084</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>CBL-Mariner Releases</vuln:SubType>
+      </vuln:Remediation>
+    </vuln:Remediations>
     <vuln:Acknowledgments />
     <vuln:RevisionHistory>
       <vuln:Revision>
@@ -1675,9 +1694,15 @@
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>4.0</cvrf:Number>
+        <cvrf:Date>2026-04-14T01:41:50</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="60">
+  <vuln:Vulnerability Ordinal="74">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -1850,7 +1875,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="32">
+  <vuln:Vulnerability Ordinal="45">
     <vuln:Title>Util-linux: util-linux: access control bypass due to improper hostname canonicalization</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -1898,7 +1923,23 @@
         <vuln:ProductID>20804-17084</vuln:ProductID>
       </vuln:ScoreSet>
     </vuln:CVSSScoreSets>
-    <vuln:Remediations />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>CBL-Mariner Releases</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>20804-17084</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>2.40.2-4</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade</vuln:URL>
+        <vuln:ProductID>20804-17084</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>CBL-Mariner Releases</vuln:SubType>
+      </vuln:Remediation>
+    </vuln:Remediations>
     <vuln:Acknowledgments />
     <vuln:RevisionHistory>
       <vuln:Revision>
@@ -1907,9 +1948,15 @@
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2026-04-14T01:41:57</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="42">
+  <vuln:Vulnerability Ordinal="56">
     <vuln:Title>Poetry Has Wheel Path Traversal Which Can Lead to Arbitrary File Write</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -1946,7 +1993,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="50">
+  <vuln:Vulnerability Ordinal="64">
     <vuln:Title>Vim modeline bypass via various options affects Vim &lt; 9.2.0276</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -2027,7 +2074,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="46">
+  <vuln:Vulnerability Ordinal="60">
     <vuln:Title>Avahi: Reachable assertion in `transport_flags_from_domain()` via conflicting publish flags crashes avahi-daemon</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -2075,7 +2122,38 @@
         <vuln:ProductID>20862-17084</vuln:ProductID>
       </vuln:ScoreSet>
     </vuln:CVSSScoreSets>
-    <vuln:Remediations />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>CBL-Mariner Releases</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>20861-17086</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>0.8-6</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade</vuln:URL>
+        <vuln:ProductID>20861-17086</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>CBL-Mariner Releases</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>CBL-Mariner Releases</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>20862-17084</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>0.8-8</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade</vuln:URL>
+        <vuln:ProductID>20862-17084</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>CBL-Mariner Releases</vuln:SubType>
+      </vuln:Remediation>
+    </vuln:Remediations>
     <vuln:Acknowledgments />
     <vuln:RevisionHistory>
       <vuln:Revision>
@@ -2084,9 +2162,15 @@
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2026-04-13T14:38:48</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="63">
+  <vuln:Vulnerability Ordinal="77">
     <vuln:Title>CUPS has an integer underflow in `_ppdCreateFromIPP` causes root cupsd crash via negative `job-password-supported`</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -2151,7 +2235,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="30">
+  <vuln:Vulnerability Ordinal="43">
     <vuln:Title>Heap Buffer Overflow in Hexadecimal Conversion</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -2489,7 +2573,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="31">
+  <vuln:Vulnerability Ordinal="44">
     <vuln:Title>Incorrect Failure Handling in RSA KEM RSASVE Encapsulation</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -2777,7 +2861,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="41">
+  <vuln:Vulnerability Ordinal="54">
     <vuln:Title>ONNX: Arbitrary File Read via ExternalData Hardlink Bypass in ONNX load</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -3265,7 +3349,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="35">
+  <vuln:Vulnerability Ordinal="48">
     <vuln:Title>TOCTOU permits root escape on Linux via Root.Chmod in os in internal/syscall/unix</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -3404,7 +3488,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="39">
+  <vuln:Vulnerability Ordinal="52">
     <vuln:Title>Case-sensitive excludedSubtrees name constraints cause Auth Bypass in crypto/x509</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -3462,7 +3546,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="74">
+  <vuln:Vulnerability Ordinal="91">
     <vuln:Title>Libcap: libcap: privilege escalation via toctou race condition in cap_set_file()</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -3510,7 +3594,38 @@
         <vuln:ProductID>21191-17084</vuln:ProductID>
       </vuln:ScoreSet>
     </vuln:CVSSScoreSets>
-    <vuln:Remediations />
+    <vuln:Remediations>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>CBL-Mariner Releases</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>21190-17086</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>2.60-8</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade</vuln:URL>
+        <vuln:ProductID>21190-17086</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>CBL-Mariner Releases</vuln:SubType>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Vendor Fix">
+        <vuln:Description>CBL-Mariner Releases</vuln:Description>
+        <vuln:URL />
+        <vuln:ProductID>21191-17084</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:RestartRequired>No</vuln:RestartRequired>
+        <vuln:SubType>Security Update</vuln:SubType>
+        <vuln:FixedBuild>2.69-14</vuln:FixedBuild>
+      </vuln:Remediation>
+      <vuln:Remediation Type="Release Notes">
+        <vuln:URL>https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade</vuln:URL>
+        <vuln:ProductID>21191-17084</vuln:ProductID>
+        <vuln:AffectedFiles />
+        <vuln:SubType>CBL-Mariner Releases</vuln:SubType>
+      </vuln:Remediation>
+    </vuln:Remediations>
     <vuln:Acknowledgments />
     <vuln:RevisionHistory>
       <vuln:Revision>
@@ -3519,9 +3634,15 @@
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2026-04-13T14:40:25</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="54">
+  <vuln:Vulnerability Ordinal="68">
     <vuln:Title>Helm Chart extraction output directory collapse via `Chart.yaml` name dot-segment</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -3542,7 +3663,7 @@
         <vuln:ProductID>20941-17086</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
-        <vuln:Description />
+        <vuln:Description>Moderate</vuln:Description>
         <vuln:ProductID>20941-17086</vuln:ProductID>
       </vuln:Threat>
     </vuln:Threats>
@@ -3556,9 +3677,15 @@
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2026-04-13T14:40:33</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="45">
+  <vuln:Vulnerability Ordinal="59">
     <vuln:Title>LIBPNG has a yse-after-free in png_set_PLTE, png_set_tRNS and png_set_hIST leading to corrupted chunk data and potential heap information disclosure</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -3584,11 +3711,11 @@
         <vuln:ProductID>21105-17086</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
-        <vuln:Description />
+        <vuln:Description>Moderate</vuln:Description>
         <vuln:ProductID>21104-17084</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
-        <vuln:Description />
+        <vuln:Description>Moderate</vuln:Description>
         <vuln:ProductID>21105-17086</vuln:ProductID>
       </vuln:Threat>
     </vuln:Threats>
@@ -3615,9 +3742,15 @@
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2026-04-13T14:40:40</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="73">
+  <vuln:Vulnerability Ordinal="87">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -3643,11 +3776,11 @@
         <vuln:ProductID>21125-17086</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
-        <vuln:Description />
+        <vuln:Description>Moderate</vuln:Description>
         <vuln:ProductID>21060-17084</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
-        <vuln:Description />
+        <vuln:Description>Moderate</vuln:Description>
         <vuln:ProductID>21125-17086</vuln:ProductID>
       </vuln:Threat>
     </vuln:Threats>
@@ -3674,9 +3807,15 @@
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2026-04-13T14:40:48</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="65">
+  <vuln:Vulnerability Ordinal="79">
     <vuln:Title>osslsigncode has a Stack Buffer Overflow via Unbounded Digest Copy During Signature Verification</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -3697,7 +3836,7 @@
         <vuln:ProductID>21087-17086</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
-        <vuln:Description />
+        <vuln:Description>Important</vuln:Description>
         <vuln:ProductID>21087-17086</vuln:ProductID>
       </vuln:Threat>
     </vuln:Threats>
@@ -3718,9 +3857,15 @@
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2026-04-13T14:40:53</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="66">
+  <vuln:Vulnerability Ordinal="80">
     <vuln:Title>osslsigncode has an Integer Underflow in PE Page Hash Calculation Can Cause Out-of-Bounds Read</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -3741,7 +3886,7 @@
         <vuln:ProductID>21087-17086</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
-        <vuln:Description />
+        <vuln:Description>Moderate</vuln:Description>
         <vuln:ProductID>21087-17086</vuln:ProductID>
       </vuln:Threat>
     </vuln:Threats>
@@ -3762,9 +3907,15 @@
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2026-04-13T14:40:58</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="67">
+  <vuln:Vulnerability Ordinal="81">
     <vuln:Title>osslsigncode has an Out-of-Bounds Read via Unvalidated Section Bounds in PE Page Hash Calculation</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -3785,7 +3936,7 @@
         <vuln:ProductID>21087-17086</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
-        <vuln:Description />
+        <vuln:Description>Moderate</vuln:Description>
         <vuln:ProductID>21087-17086</vuln:ProductID>
       </vuln:Threat>
     </vuln:Threats>
@@ -3803,6 +3954,450 @@
       <vuln:Revision>
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2026-04-12T01:02:25</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2026-04-13T14:41:03</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="88">
+    <vuln:Title />
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="mitre" Type="CNA" Ordinal="30">mitre</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2026-40385</vuln:CVE>
+    <vuln:CWE ID="CWE-190">Integer Overflow or Wraparound</vuln:CWE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>21198-17084</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>21198-17084</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Moderate</vuln:Description>
+        <vuln:ProductID>21198-17084</vuln:ProductID>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>4.0</vuln:BaseScore>
+        <vuln:TemporalScore>4.0</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:L</vuln:Vector>
+        <vuln:ProductID>21198-17084</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations />
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2026-04-14T01:01:26</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="90">
+    <vuln:Title />
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="mitre" Type="CNA" Ordinal="30">mitre</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2026-40393</vuln:CVE>
+    <vuln:CWE ID="CWE-787">Out-of-bounds Write</vuln:CWE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>21199-17084</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>21199-17084</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>21199-17084</vuln:ProductID>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.1</vuln:BaseScore>
+        <vuln:TemporalScore>8.1</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H</vuln:Vector>
+        <vuln:ProductID>21199-17084</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations />
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2026-04-14T01:01:32</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="31">
+    <vuln:Title>netfilter: nfnetlink_log: account for netlink header size</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="Linux" Type="CNA" Ordinal="30">Linux</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2026-31416</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.1</vuln:BaseScore>
+        <vuln:TemporalScore>8.1</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H</vuln:Vector>
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations />
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2026-04-14T01:01:38</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="38">
+    <vuln:Title>net/sched: sch_hfsc: fix divide-by-zero in rtsc_min()</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="Linux" Type="CNA" Ordinal="30">Linux</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2026-31423</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Moderate</vuln:Description>
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.5</vuln:BaseScore>
+        <vuln:TemporalScore>5.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations />
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2026-04-14T01:01:43</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="39">
+    <vuln:Title>netfilter: x_tables: restrict xt_check_match/xt_check_target extensions for NFPROTO_ARP</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="Linux" Type="CNA" Ordinal="30">Linux</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2026-31424</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Moderate</vuln:Description>
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.5</vuln:BaseScore>
+        <vuln:TemporalScore>5.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations />
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2026-04-14T01:01:49</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="41">
+    <vuln:Title>netfilter: nf_conntrack_sip: fix use of uninitialized rtp_addr in process_sdp</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="Linux" Type="CNA" Ordinal="30">Linux</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2026-31427</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.8</vuln:BaseScore>
+        <vuln:TemporalScore>7.8</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H</vuln:Vector>
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations />
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2026-04-14T01:02:11</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="34">
+    <vuln:Title>net: bonding: fix use-after-free in bond_xmit_broadcast()</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="Linux" Type="CNA" Ordinal="30">Linux</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2026-31419</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>7.1</vuln:BaseScore>
+        <vuln:TemporalScore>7.1</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations />
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2026-04-14T01:02:22</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="36">
+    <vuln:Title>net/sched: cls_fw: fix NULL pointer dereference on shared blocks</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="Linux" Type="CNA" Ordinal="30">Linux</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2026-31421</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Moderate</vuln:Description>
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.5</vuln:BaseScore>
+        <vuln:TemporalScore>5.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations />
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2026-04-14T01:02:33</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="42">
+    <vuln:Title>netfilter: nfnetlink_log: fix uninitialized padding leak in NFULA_PAYLOAD</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="Linux" Type="CNA" Ordinal="30">Linux</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2026-31428</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Moderate</vuln:Description>
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.5</vuln:BaseScore>
+        <vuln:TemporalScore>5.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N</vuln:Vector>
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations />
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2026-04-14T01:02:38</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="33">
+    <vuln:Title>netfilter: ipset: drop logically empty buckets in mtype_del</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="Linux" Type="CNA" Ordinal="30">Linux</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2026-31418</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.1</vuln:BaseScore>
+        <vuln:TemporalScore>8.1</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H</vuln:Vector>
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations />
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2026-04-14T01:02:44</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2026-04-14T01:44:36</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
@@ -3857,7 +4452,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="58">
+  <vuln:Vulnerability Ordinal="72">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -3944,7 +4539,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="57">
+  <vuln:Vulnerability Ordinal="71">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -4009,7 +4604,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="55">
+  <vuln:Vulnerability Ordinal="69">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -4096,7 +4691,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="43">
+  <vuln:Vulnerability Ordinal="57">
     <vuln:Title>xmldom: XML injection via unsafe CDATA serialization allows attacker-controlled markup insertion</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -4155,7 +4750,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="61">
+  <vuln:Vulnerability Ordinal="75">
     <vuln:Title />
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -4199,7 +4794,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="48">
+  <vuln:Vulnerability Ordinal="62">
     <vuln:Title>OpenPrinting CUPS: Heap overflow in `get_options()`</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -4270,7 +4865,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="49">
+  <vuln:Vulnerability Ordinal="63">
     <vuln:Title>OpenPrinting CUPS: Shared PostScript queue lets anonymous Print-Job requests reach `lp` code execution over the network</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -4328,7 +4923,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="51">
+  <vuln:Vulnerability Ordinal="65">
     <vuln:Title>OpenPrinting CUPS: Local print admin token disclosure using temporary printers</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -4527,7 +5122,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="53">
+  <vuln:Vulnerability Ordinal="67">
     <vuln:Title>Path traversal issue with zip.vim in Vim</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -4608,7 +5203,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="64">
+  <vuln:Vulnerability Ordinal="78">
     <vuln:Title>CUPS has a use-after-free in `cupsdDeleteTemporaryPrinters` via dangling subscription pointer</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -4673,7 +5268,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="52">
+  <vuln:Vulnerability Ordinal="66">
     <vuln:Title>Libinput: libinput: unauthorized code execution and information disclosure through lua bytecode plugins</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -4732,7 +5327,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="40">
+  <vuln:Vulnerability Ordinal="53">
     <vuln:Title>ONNX: Malicious ONNX models can crash servers by exploiting unprotected object settings.</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -4791,7 +5386,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="72">
+  <vuln:Vulnerability Ordinal="86">
     <vuln:Title>Sleuth Kit ISO9660 SUSP Extension Reference Out-of-Bounds Read</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -4878,7 +5473,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="71">
+  <vuln:Vulnerability Ordinal="85">
     <vuln:Title>Sleuth Kit APFS Keybag Parser Out-of-Bounds Read</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -4965,7 +5560,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="70">
+  <vuln:Vulnerability Ordinal="84">
     <vuln:Title>Sleuth Kit tsk_recover Path Traversal</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -5052,7 +5647,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="68">
+  <vuln:Vulnerability Ordinal="82">
     <vuln:Title>Vim Ex command injection in Vims NetBeans integration</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -5611,7 +6206,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="62">
+  <vuln:Vulnerability Ordinal="76">
     <vuln:Title>Addressable has a Regular Expression Denial of Service in Addressable templates</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -5763,7 +6358,7 @@
         <vuln:ProductID>21123-17084</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
-        <vuln:Description />
+        <vuln:Description>Important</vuln:Description>
         <vuln:ProductID>21185-17086</vuln:ProductID>
       </vuln:Threat>
     </vuln:Threats>
@@ -5851,6 +6446,12 @@
       <vuln:Revision>
         <cvrf:Number>2.0</cvrf:Number>
         <cvrf:Date>2026-04-12T01:02:02</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>3.0</cvrf:Number>
+        <cvrf:Date>2026-04-13T14:40:14</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
@@ -5949,7 +6550,7 @@
         <vuln:ProductID>21123-17084</vuln:ProductID>
       </vuln:Threat>
       <vuln:Threat Type="Severity">
-        <vuln:Description />
+        <vuln:Description>Moderate</vuln:Description>
         <vuln:ProductID>21185-17086</vuln:ProductID>
       </vuln:Threat>
     </vuln:Threats>
@@ -6003,9 +6604,9 @@
         <vuln:ProductID>21123-17084</vuln:ProductID>
       </vuln:ScoreSet>
       <vuln:ScoreSet>
-        <vuln:BaseScore>7.5</vuln:BaseScore>
-        <vuln:TemporalScore>7.5</vuln:TemporalScore>
-        <vuln:Vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
+        <vuln:BaseScore>5.9</vuln:BaseScore>
+        <vuln:TemporalScore>5.9</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
         <vuln:ProductID>21185-17086</vuln:ProductID>
       </vuln:ScoreSet>
     </vuln:CVSSScoreSets>
@@ -6040,9 +6641,21 @@
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>3.0</cvrf:Number>
+        <cvrf:Date>2026-04-13T14:40:01</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>3.1</cvrf:Number>
+        <cvrf:Date>2026-04-14T01:44:07</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="69">
+  <vuln:Vulnerability Ordinal="83">
     <vuln:Title>OpenTelemetry-Go OTLP HTTP exporters read unbounded HTTP response bodies</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -6251,7 +6864,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="37">
+  <vuln:Vulnerability Ordinal="50">
     <vuln:Title>Unbounded allocation for old GNU sparse in archive/tar</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -6558,7 +7171,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="34">
+  <vuln:Vulnerability Ordinal="47">
     <vuln:Title>Inefficient policy validation in crypto/x509</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -6727,7 +7340,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="38">
+  <vuln:Vulnerability Ordinal="51">
     <vuln:Title>JsBraceDepth Context Tracking Bugs (XSS) in html/template</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -6896,7 +7509,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="36">
+  <vuln:Vulnerability Ordinal="49">
     <vuln:Title>Unauthenticated TLS 1.3 KeyUpdate record can cause persistent connection retention and DoS in crypto/tls</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -7065,7 +7678,7 @@
       </vuln:Revision>
     </vuln:RevisionHistory>
   </vuln:Vulnerability>
-  <vuln:Vulnerability Ordinal="33">
+  <vuln:Vulnerability Ordinal="46">
     <vuln:Title>Unexpected work during chain building in crypto/x509</vuln:Title>
     <vuln:Notes>
       <vuln:Note Title="Description" Type="Description" Ordinal="0" />
@@ -7531,6 +8144,308 @@
       <vuln:Revision>
         <cvrf:Number>1.0</cvrf:Number>
         <cvrf:Date>2026-04-11T01:10:08</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="55">
+    <vuln:Title>Apache Log4j Core: verifyHostName attribute silently ignored in TLS configuration, allowing hostname verification bypass</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="apache" Type="CNA" Ordinal="30">apache</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2026-34477</vuln:CVE>
+    <vuln:CWE ID="CWE-297">Improper Validation of Certificate with Host Mismatch</vuln:CWE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>21194-17084</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>21194-17084</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Moderate</vuln:Description>
+        <vuln:ProductID>21194-17084</vuln:ProductID>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets />
+    <vuln:Remediations />
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2026-04-13T01:09:45</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+      <vuln:Revision>
+        <cvrf:Number>2.0</cvrf:Number>
+        <cvrf:Date>2026-04-13T14:41:08</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="89">
+    <vuln:Title />
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="mitre" Type="CNA" Ordinal="30">mitre</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2026-40386</vuln:CVE>
+    <vuln:CWE ID="CWE-191">Integer Underflow (Wrap or Wraparound)</vuln:CWE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>21198-17084</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>21198-17084</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Moderate</vuln:Description>
+        <vuln:ProductID>21198-17084</vuln:ProductID>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>4.0</vuln:BaseScore>
+        <vuln:TemporalScore>4.0</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:L</vuln:Vector>
+        <vuln:ProductID>21198-17084</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations />
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2026-04-14T01:01:20</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="32">
+    <vuln:Title>net/x25: Fix overflow when accumulating packets</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="Linux" Type="CNA" Ordinal="30">Linux</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2026-31417</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.1</vuln:BaseScore>
+        <vuln:TemporalScore>8.1</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H</vuln:Vector>
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations />
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2026-04-14T01:01:54</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="37">
+    <vuln:Title>net/sched: cls_flow: fix NULL pointer dereference on shared blocks</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="Linux" Type="CNA" Ordinal="30">Linux</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2026-31422</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Moderate</vuln:Description>
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.5</vuln:BaseScore>
+        <vuln:TemporalScore>5.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations />
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2026-04-14T01:01:59</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="30">
+    <vuln:Title>netfilter: nf_conntrack_expect: use expect-&gt;helper</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="Linux" Type="CNA" Ordinal="30">Linux</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2026-31414</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Important</vuln:Description>
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>8.1</vuln:BaseScore>
+        <vuln:TemporalScore>8.1</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H</vuln:Vector>
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations />
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2026-04-14T01:02:05</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="40">
+    <vuln:Title>ACPI: EC: clean up handlers on probe failure in acpi_ec_setup()</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="Linux" Type="CNA" Ordinal="30">Linux</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2026-31426</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Moderate</vuln:Description>
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.5</vuln:BaseScore>
+        <vuln:TemporalScore>5.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations />
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2026-04-14T01:02:16</cvrf:Date>
+        <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
+</cvrf:Description>
+      </vuln:Revision>
+    </vuln:RevisionHistory>
+  </vuln:Vulnerability>
+  <vuln:Vulnerability Ordinal="35">
+    <vuln:Title>bridge: mrp: reject zero test interval to avoid OOM panic</vuln:Title>
+    <vuln:Notes>
+      <vuln:Note Title="Description" Type="Description" Ordinal="0" />
+      <vuln:Note Title="Mariner" Type="Tag" Ordinal="20">Mariner</vuln:Note>
+      <vuln:Note Title="Linux" Type="CNA" Ordinal="30">Linux</vuln:Note>
+      <vuln:Note Title="Customer Action Required" Type="Other" Ordinal="40">Yes</vuln:Note>
+    </vuln:Notes>
+    <vuln:CVE>CVE-2026-31420</vuln:CVE>
+    <vuln:ProductStatuses>
+      <vuln:Status Type="Known Affected">
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:Status>
+    </vuln:ProductStatuses>
+    <vuln:Threats>
+      <vuln:Threat Type="Impact">
+        <vuln:Description />
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:Threat>
+      <vuln:Threat Type="Severity">
+        <vuln:Description>Moderate</vuln:Description>
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:Threat>
+    </vuln:Threats>
+    <vuln:CVSSScoreSets>
+      <vuln:ScoreSet>
+        <vuln:BaseScore>5.5</vuln:BaseScore>
+        <vuln:TemporalScore>5.5</vuln:TemporalScore>
+        <vuln:Vector>CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H</vuln:Vector>
+        <vuln:ProductID>21094-17084</vuln:ProductID>
+      </vuln:ScoreSet>
+    </vuln:CVSSScoreSets>
+    <vuln:Remediations />
+    <vuln:Acknowledgments />
+    <vuln:RevisionHistory>
+      <vuln:Revision>
+        <cvrf:Number>1.0</cvrf:Number>
+        <cvrf:Date>2026-04-14T01:02:27</cvrf:Date>
         <cvrf:Description>&lt;p&gt;Information published.&lt;/p&gt;
 </cvrf:Description>
       </vuln:Revision>
